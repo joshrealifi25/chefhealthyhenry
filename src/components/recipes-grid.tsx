@@ -43,8 +43,6 @@ export function RecipesGrid({
               {c}
             </button>
           ))}
-        </div>
-        <div className="flex items-center gap-3">
           <button
             onClick={() => setProteinFlipOnly((v) => !v)}
             className={cn(
@@ -56,15 +54,15 @@ export function RecipesGrid({
           >
             Protein Flip™
           </button>
-          <div className="relative sm:w-64">
-            <Search className="absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
-            <input
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search recipes…"
-              className="w-full rounded-full border border-input bg-card py-2 pl-9 pr-4 text-sm outline-none focus:ring-2 focus:ring-ring/40"
-            />
-          </div>
+        </div>
+        <div className="relative sm:w-64">
+          <Search className="absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+          <input
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search recipes…"
+            className="w-full rounded-full border border-input bg-card py-2 pl-9 pr-4 text-sm outline-none focus:ring-2 focus:ring-ring/40"
+          />
         </div>
       </div>
 
