@@ -15,12 +15,14 @@ export function RecipesGrid({
 }) {
   const [category, setCategory] = useState("All");
   const [query, setQuery] = useState("");
+  const [proteinFlipOnly, setProteinFlipOnly] = useState(false);
 
   const filtered = recipes.filter((r) => {
     const matchesCategory = category === "All" || r.category === category;
     const matchesQuery =
       query === "" || r.title.toLowerCase().includes(query.toLowerCase());
-    return matchesCategory && matchesQuery;
+    const matchesFlip = !proteinFlipOnly || r.proteinFlip;
+    return matchesCategory && matchesQuery && matchesFlip;
   });
 
   return (
@@ -41,6 +43,17 @@ export function RecipesGrid({
               {c}
             </button>
           ))}
+          <button
+            onClick={() => setProteinFlipOnly((v) => !v)}
+            className={cn(
+              "rounded-full border px-4 py-1.5 text-sm transition-colors whitespace-nowrap",
+              proteinFlipOnly
+                ? "border-primary bg-primary text-primary-foreground"
+                : "border-border bg-card text-muted-foreground hover:border-primary/40"
+            )}
+          >
+            Protein Flip™
+          </button>
         </div>
         <div className="relative sm:w-64">
           <Search className="absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
