@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Clock, Users } from "lucide-react";
 import { recipes, getRecipe, relatedRecipes } from "@/lib/recipes";
+import { SITE_URL } from "@/lib/site";
 import { RecipeCard } from "@/components/recipe-card";
 import { PrintButton } from "@/components/print-button";
 import { IngredientsList } from "@/components/ingredients-list";
@@ -45,9 +46,7 @@ export default async function RecipePage({
     "@type": "Recipe",
     name: recipe.title,
     description: recipe.description || recipe.title,
-    image: recipe.image
-      ? [`https://chef-healthy-henry.vercel.app${recipe.image}`]
-      : undefined,
+    image: recipe.image ? [`${SITE_URL}${recipe.image}`] : undefined,
     author: { "@type": "Person", name: "Chef Healthy Henry" },
     recipeCategory: recipe.category,
     recipeYield: recipe.serves ? `${recipe.serves} servings` : undefined,
