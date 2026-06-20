@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Baker-Spooner is a separate project nested in this directory, not part of this app.
+    "Baker-Spooner/**",
   ]),
 ]);
 

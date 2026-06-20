@@ -18,19 +18,18 @@ export const flagship: Cookbook = {
     "You don't have to give up meat. You don't need to count every gram. This is the full Protein Flip™ framework: redistribute your plate to keep the flavors you love while prioritizing satiety and blood sugar stability.",
   price: "$27.99",
   image: "/images/cookbook-cover.jpg",
-  buyUrl: "https://chefhealthyhenry.com/product/protein-flip-deluxe-pdf",
+  buyUrl: "https://buy.stripe.com/aFa6oI2JB4Ar3t0dIt4Vy00",
   badge: "Bestseller",
   formats: [
     {
       name: "Digital PDF",
       price: "$27.99",
-      buyUrl: "https://chefhealthyhenry.com/product/protein-flip-deluxe-pdf",
+      buyUrl: "https://buy.stripe.com/aFa6oI2JB4Ar3t0dIt4Vy00",
     },
     {
       name: "Signed Softcover",
       price: "$34.99",
-      buyUrl:
-        "https://chefhealthyhenry.com/product/protein-flip-deluxe-edition-signed-softcopy",
+      buyUrl: "https://buy.stripe.com/bJe5kE2JB1ofe7E8o94Vy01",
     },
   ],
 };
@@ -44,8 +43,7 @@ export const cookbooks: Cookbook[] = [
       "A chef's playbook for eating well on Tirzepatide, Ozempic, Wegovy, Zepbound, or Mounjaro: protein targets that fit a smaller appetite, meal frameworks for low-hunger days, and food that still tastes like food.",
     price: "$13.99",
     image: "/images/books/glp1-guide.png",
-    buyUrl:
-      "https://chefhealthyhenry.com/product/glp-1-bariatric-success-guide-protein-flip-tm-edition",
+    buyUrl: "https://buy.stripe.com/14A6oI83VaYPbZw33P4Vy02",
     badge: "New",
   },
   {
@@ -56,7 +54,7 @@ export const cookbooks: Cookbook[] = [
       "The recipes Henry returns to in warmer months: meals that feel lighter, fresher, and more energizing without sacrificing satisfaction or flavor.",
     price: "$13.99",
     image: "/images/books/spring-summer.png",
-    buyUrl: "https://chefhealthyhenry.com/product/2025-spring-cookbook",
+    buyUrl: "https://buy.stripe.com/dRmbJ22JB2sj8NkgUF4Vy03",
   },
   {
     slug: "confident-cook-fall-winter",
@@ -66,8 +64,7 @@ export const cookbooks: Cookbook[] = [
       "Warm, nourishing meals built around protein, plants, and deep flavor, designed to keep you satisfied and grounded when the days get shorter, without heaviness.",
     price: "$13.99",
     image: "/images/books/confident-cook.png",
-    buyUrl:
-      "https://chefhealthyhenry.com/product/confident-cooking-the-simple-start-guide",
+    buyUrl: "https://buy.stripe.com/bJeaEYckb8QH6Fc5bX4Vy04",
   },
   {
     slug: "family-flip",
@@ -77,8 +74,7 @@ export const cookbooks: Cookbook[] = [
       "The method Henry used with his own daughter, written out for parents: how small moments in the kitchen turn into lifelong healthy habits, no nutrition lectures required.",
     price: "$8.99",
     image: "/images/books/family-flip.png",
-    buyUrl:
-      "https://chefhealthyhenry.com/product/the-family-flip-tm-a-protein-flip-tm-companion",
+    buyUrl: "https://buy.stripe.com/cNi7sM3NFeb1e7E47T4Vy05",
   },
   {
     slug: "dining-out-guide",
@@ -88,7 +84,6 @@ export const cookbooks: Cookbook[] = [
       "Smart orders for the cuisines you eat most: Italian, Mexican, Japanese, Thai, steakhouses, brunch, fast casual. No restriction, no shame, just better defaults built for real life.",
     price: "$8.99",
     image: "/images/books/dining-out.jpg",
-    buyUrl:
-      "https://chefhealthyhenry.com/product/the-protein-flip-tm-dining-out-guide",
+    buyUrl: "https://buy.stripe.com/bJe7sM97Zc2T3t0bAl4Vy06",
   },
 ];
