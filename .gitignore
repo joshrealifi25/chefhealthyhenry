@@ -50,3 +50,7 @@ temp/
 
 # Nested separate project
 Baker-Spooner/
+.env*
+
+# Local cookbook source files (uploaded to private Blob, never commit)
+Cookbook PDFS/
