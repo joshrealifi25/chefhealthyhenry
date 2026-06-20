@@ -86,4 +86,24 @@ export const cookbooks: Cookbook[] = [
     image: "/images/books/dining-out.jpg",
     buyUrl: "https://buy.stripe.com/bJe7sM97Zc2T3t0bAl4Vy06",
   },
+  {
+    slug: "protein-flip-starter-guide",
+    title: "The Protein Flip™ Starter Guide",
+    tagline: "Your first steps to a balanced plate",
+    description:
+      "New to the Protein Flip™? Start here. A short, no-pressure introduction to building balanced plates one meal at a time, with the core ideas and a few easy wins to get going.",
+    price: "$8.99",
+    image: "/images/books/starter-guide.png",
+    buyUrl: "https://buy.stripe.com/00w5kEfwneb1e7E0VH4Vy07",
+  },
+  {
+    slug: "grocery-store-test",
+    title: "The Protein Flip™ Grocery Store Test",
+    tagline: "Shop smart in any aisle",
+    description:
+      "A quick field guide to filling your cart the Protein Flip™ way: what to reach for, what to skip, and how to read a label in seconds so good choices start before you cook.",
+    price: "$8.99",
+    image: "/images/books/grocery-store-test.png",
+    buyUrl: "https://buy.stripe.com/7sY5kEfwn4Ar2oW47T4Vy08",
+  },
 ];

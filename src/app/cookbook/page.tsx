@@ -127,7 +127,8 @@ export default function CookbookPage() {
       </div>
 
       <p className="mt-12 text-center text-sm text-muted-foreground">
-        Orders are fulfilled securely through chefhealthyhenry.com.
+        Secure checkout powered by Stripe. Digital guides are delivered by
+        email right after purchase.
       </p>
     </div>
   );
