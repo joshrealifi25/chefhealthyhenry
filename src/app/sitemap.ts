@@ -1,9 +1,10 @@
 import type { MetadataRoute } from "next";
 import { recipes } from "@/lib/recipes";
+import { posts } from "@/lib/posts";
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages = ["", "/recipes", "/cookbook", "/about", "/contact"].map(
+  const staticPages = ["", "/recipes", "/cookbook", "/blog", "/about", "/contact"].map(
     (path) => ({
       url: `${SITE_URL}${path}`,
       lastModified: new Date(),
@@ -19,5 +20,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...recipePages];
+  const postPages = posts.map((p) => ({
+    url: `${SITE_URL}/post/${p.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...recipePages, ...postPages];
 }
