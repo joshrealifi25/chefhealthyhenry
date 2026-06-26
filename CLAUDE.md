@@ -25,3 +25,11 @@
 - Never push directly to main. Branch + PR; check the Vercel preview before merging.
 - Run `npm run check` (lint + typecheck + build) before every commit.
 - Deploys happen automatically via Vercel Git integration on merge to main.
+
+## Publishing a change (follow these steps EVERY time, in order)
+1. Start clean: `git checkout main` then `git pull` so you are on the latest `main`. Never reuse or commit onto an old/existing feature branch.
+2. Create a NEW branch off main with a short descriptive name (e.g. `recipe-harissa-salmon`, `tweak-home-subtitle`).
+3. Make the change, then run `npm run check`.
+4. Commit, push the new branch, open a pull request, and merge it.
+5. If the merge is blocked because the change touches protected files (Stripe/checkout, delivery, config — see `.github/CODEOWNERS`), stop and tell the user it needs Josh's review. Do not try to bypass it.
+6. After merging, the change deploys automatically to chefhealthyhenry.com in about a minute.
