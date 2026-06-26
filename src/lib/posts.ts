@@ -28,6 +28,10 @@ export function getPost(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);
 }
 
+export function postsByCategory(category: string): Post[] {
+  return posts.filter((p) => p.category === category);
+}
+
 export function relatedPosts(post: Post, count = 3): Post[] {
   const sameCategory = posts.filter(
     (p) => p.slug !== post.slug && p.category === post.category
