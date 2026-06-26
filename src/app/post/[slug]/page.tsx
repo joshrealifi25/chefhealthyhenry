@@ -146,7 +146,7 @@ export default async function PostPage({
         </div>
       )}
 
-      <div className="mt-8">
+      <div className="mt-8 [&_a]:text-primary [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:opacity-80">
         {post.blocks.map((block, i) => (
           <Block key={i} block={block} />
         ))}
