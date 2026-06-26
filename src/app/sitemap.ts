@@ -1,10 +1,11 @@
 import type { MetadataRoute } from "next";
 import { recipes } from "@/lib/recipes";
-import { posts } from "@/lib/posts";
+import { posts, postCategories } from "@/lib/posts";
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages = ["", "/recipes", "/cookbook", "/blog", "/blog/notes", "/blog/table-talk", "/about", "/contact"].map(
+  const categoryPaths = postCategories.map((c) => `/blog/${c.slug}`);
+  const staticPages = ["", "/recipes", "/cookbook", "/blog", ...categoryPaths, "/about", "/contact"].map(
     (path) => ({
       url: `${SITE_URL}${path}`,
       lastModified: new Date(),

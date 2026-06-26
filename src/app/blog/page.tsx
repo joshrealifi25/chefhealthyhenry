@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { posts } from "@/lib/posts";
+import { posts, postCategories } from "@/lib/posts";
 import { PostCard } from "@/components/post-card";
 
 export const metadata: Metadata = {
@@ -21,18 +21,15 @@ export default function BlogPage() {
           the way Henry teaches: honestly, generously, and with flavor first.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
-          <Link
-            href="/blog/notes"
-            className="rounded-full border border-border bg-card px-4 py-1.5 text-sm text-muted-foreground transition-colors hover:border-primary/40 hover:text-primary"
-          >
-            Chef&apos;s Notes
-          </Link>
-          <Link
-            href="/blog/table-talk"
-            className="rounded-full border border-border bg-card px-4 py-1.5 text-sm text-muted-foreground transition-colors hover:border-primary/40 hover:text-primary"
-          >
-            Table Talk
-          </Link>
+          {postCategories.map((c) => (
+            <Link
+              key={c.slug}
+              href={`/blog/${c.slug}`}
+              className="rounded-full border border-border bg-card px-4 py-1.5 text-sm text-muted-foreground transition-colors hover:border-primary/40 hover:text-primary"
+            >
+              {c.name}
+            </Link>
+          ))}
         </div>
       </div>
       <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

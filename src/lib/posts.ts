@@ -32,6 +32,33 @@ export function postsByCategory(category: string): Post[] {
   return posts.filter((p) => p.category === category);
 }
 
+// Clean URL slugs for the known categories; falls back to a generated slug.
+const CATEGORY_SLUGS: Record<string, string> = {
+  "Chef's Notes": "notes",
+  "Table Talk": "table-talk",
+  "Fast Food": "fast-food",
+};
+
+function slugify(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+export function categorySlug(category: string): string {
+  return CATEGORY_SLUGS[category] ?? slugify(category);
+}
+
+/** All categories present in the posts, in first-seen order, with their slugs. */
+export const postCategories: { name: string; slug: string }[] = Array.from(
+  new Set(posts.map((p) => p.category))
+).map((name) => ({ name, slug: categorySlug(name) }));
+
+export function categoryFromSlug(slug: string): string | undefined {
+  return postCategories.find((c) => c.slug === slug)?.name;
+}
+
 export function relatedPosts(post: Post, count = 3): Post[] {
   const sameCategory = posts.filter(
     (p) => p.slug !== post.slug && p.category === post.category
