@@ -1,0 +1,18 @@
+# Code ownership for chefhealthyhenry.com
+#
+# Files listed here require @joshrealifi25's review before merging.
+# Everything NOT listed (recipes, blog posts, components, pages, styles,
+# images) can be changed and self-merged by any collaborator (Henry) with
+# no review, so day-to-day content stays friction-free.
+
+# Commerce + automated PDF delivery (a mistake here = broken checkout / lost sales)
+/src/app/api/            @joshrealifi25
+/src/lib/fulfillment.ts  @joshrealifi25
+/src/data/cookbooks.ts   @joshrealifi25
+
+# Site config: redirects, canonical URL, dependencies, CI/ownership
+/next.config.ts          @joshrealifi25
+/src/lib/site.ts         @joshrealifi25
+/package.json            @joshrealifi25
+/package-lock.json       @joshrealifi25
+/.github/                @joshrealifi25
