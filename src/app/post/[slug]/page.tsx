@@ -3,7 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
-import { posts, getPost, relatedPosts, isoDate, type PostBlock } from "@/lib/posts";
+import {
+  posts,
+  getPost,
+  relatedPosts,
+  isoDate,
+  categorySlug,
+  type PostBlock,
+} from "@/lib/posts";
 import { PostCard } from "@/components/post-card";
 import { SITE_URL } from "@/lib/site";
 
@@ -111,7 +118,12 @@ export default async function PostPage({
 
       <header className="mt-6">
         <div className="flex items-center gap-2 text-sm uppercase tracking-wide text-muted-foreground">
-          <span className="text-primary">{post.category}</span>
+          <Link
+            href={`/blog/${categorySlug(post.category)}`}
+            className="text-primary hover:underline"
+          >
+            {post.category}
+          </Link>
           {post.date && (
             <time dateTime={isoDate(post.date)}>· {post.date}</time>
           )}
