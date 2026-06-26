@@ -16,7 +16,7 @@ export default function RecipesPage() {
           Recipes
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">
-          Every recipe is built on the Protein Flip™ method: protein leads,
+          Many of these recipes follow the Protein Flip™ method: protein leads,
           flavor stays, and you leave the table full and satisfied.
         </p>
       </div>
