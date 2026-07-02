@@ -19,6 +19,7 @@ export function SiteFooter() {
             <ul className="space-y-2 text-muted-foreground">
               <li><Link href="/recipes" className="hover:text-primary">Recipes</Link></li>
               <li><Link href="/cookbook" className="hover:text-primary">Cookbook</Link></li>
+              <li><Link href="/blog" className="hover:text-primary">Blog</Link></li>
               <li><Link href="/about" className="hover:text-primary">About</Link></li>
               <li><Link href="/contact" className="hover:text-primary">Contact</Link></li>
             </ul>
