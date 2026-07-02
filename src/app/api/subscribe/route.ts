@@ -5,7 +5,7 @@ import { deliveryEmailHtml } from "@/lib/delivery-email";
 
 export const runtime = "nodejs";
 
-const STARTER_GUIDE_PATHNAME = "cookbooks/protein-flip-starter-guide.pdf";
+const FREE_GUIDE_PATHNAME = "cookbooks/grocery-store-test.pdf";
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function POST(req: NextRequest) {
@@ -46,16 +46,16 @@ export async function POST(req: NextRequest) {
 
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? req.nextUrl.origin;
   const downloadUrl = `${baseUrl}/api/download?token=${createDownloadToken(
-    STARTER_GUIDE_PATHNAME,
+    FREE_GUIDE_PATHNAME,
     signingSecret
   )}`;
 
   const { error: sendError } = await resend.emails.send({
     from: process.env.EMAIL_FROM ?? "Chef Healthy Henry <onboarding@resend.dev>",
     to: email,
-    subject: "Your free Protein Flip™ Starter Guide",
+    subject: "Your free Protein Flip™ Grocery Store Test",
     html: deliveryEmailHtml([
-      { name: "The Protein Flip™ Starter Guide (free)", url: downloadUrl },
+      { name: "The Protein Flip™ Grocery Store Test (free)", url: downloadUrl },
     ]),
   });
   if (sendError) {

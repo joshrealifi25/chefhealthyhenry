@@ -11,7 +11,7 @@ export function NewsletterForm() {
   if (status === "done") {
     return (
       <p role="status" className="text-sm text-primary">
-        Check your inbox. Your free Starter Guide is on its way.
+        Check your inbox. Your free Grocery Store Test is on its way.
       </p>
     );
   }

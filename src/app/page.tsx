@@ -51,7 +51,7 @@ export default function HomePage() {
               href="#free-guide"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3 font-medium text-primary-foreground transition-opacity hover:opacity-90"
             >
-              Get the Free Starter Guide <ArrowRight className="size-4" aria-hidden="true" />
+              Get the Free Grocery Store Test <ArrowRight className="size-4" aria-hidden="true" />
             </a>
             <Link
               href="/recipes"
@@ -205,12 +205,11 @@ export default function HomePage() {
       >
         <div className="mx-auto max-w-xl px-4 text-center sm:px-6">
           <h2 className="font-heading text-2xl font-semibold sm:text-3xl">
-            Get the free Protein Flip™ Starter Guide
+            Get the free Protein Flip™ Grocery Store Test
           </h2>
           <p className="mt-3 text-muted-foreground">
-            Your first steps to a balanced plate, delivered to your inbox.
-            Plus one new nutrition-smart recipe every week. No spam, just
-            dinner solved.
+            Shop smart in any aisle, delivered to your inbox. Plus one new
+            nutrition-smart recipe every week. No spam, just dinner solved.
           </p>
           <div className="mx-auto mt-6 max-w-md">
             <NewsletterForm />

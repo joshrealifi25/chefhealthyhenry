@@ -81,11 +81,11 @@ export function ExitIntentPopup() {
           id="exit-popup-title"
           className="mt-2 font-heading text-2xl font-semibold leading-snug"
         >
-          Take the free Protein Flip™ Starter Guide with you
+          Take the free Protein Flip™ Grocery Store Test with you
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Your first steps to a balanced plate, from Chef Healthy Henry.
-          Delivered to your inbox, plus one new recipe every week.
+          Shop smart in any aisle, from Chef Healthy Henry. Delivered to your
+          inbox, plus one new recipe every week.
         </p>
         <div className="mt-5">
           <NewsletterForm />

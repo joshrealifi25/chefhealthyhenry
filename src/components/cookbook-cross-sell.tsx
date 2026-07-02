@@ -44,8 +44,8 @@ export function CookbookCrossSell() {
           Get a recipe like this every week
         </p>
         <p className="mt-1 text-sm text-muted-foreground">
-          Join the list and we&apos;ll send you the free Protein Flip™ Starter
-          Guide today.
+          Join the list and we&apos;ll send you the free Protein Flip™ Grocery
+          Store Test today.
         </p>
         <div className="mt-4 max-w-md">
           <NewsletterForm />
