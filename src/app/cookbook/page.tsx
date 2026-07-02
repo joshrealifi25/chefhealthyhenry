@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import { flagship, cookbooks } from "@/data/cookbooks";
 
@@ -128,7 +129,15 @@ export default function CookbookPage() {
 
       <p className="mt-12 text-center text-sm text-muted-foreground">
         Secure checkout powered by Stripe. Digital guides are delivered by
-        email right after purchase.
+        email right after purchase. Our books share cooking guidance, not
+        medical advice. See the{" "}
+        <Link
+          href="/disclaimer"
+          className="text-primary hover:underline"
+        >
+          Health &amp; Nutrition Disclaimer
+        </Link>
+        .
       </p>
     </div>
   );
