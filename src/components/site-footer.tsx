@@ -40,7 +40,19 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-border py-6 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Chef Healthy Henry LLC. All rights reserved.
+        <p>
+          © {new Date().getFullYear()} Chef Healthy Henry LLC. All rights
+          reserved.
+        </p>
+        <p className="mt-2 space-x-3">
+          <Link href="/privacy" className="hover:text-primary">Privacy Policy</Link>
+          <span aria-hidden="true">·</span>
+          <Link href="/terms" className="hover:text-primary">Terms &amp; Purchases</Link>
+          <span aria-hidden="true">·</span>
+          <Link href="/disclaimer" className="hover:text-primary">Health Disclaimer</Link>
+          <span aria-hidden="true">·</span>
+          <Link href="/accessibility" className="hover:text-primary">Accessibility</Link>
+        </p>
       </div>
     </footer>
   );

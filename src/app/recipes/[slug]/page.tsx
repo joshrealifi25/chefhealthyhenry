@@ -200,6 +200,15 @@ export default async function RecipePage({
         </section>
       )}
 
+      <p className="mt-10 text-sm text-muted-foreground print:hidden">
+        Check every ingredient against your own allergies and dietary needs.
+        See our{" "}
+        <Link href="/disclaimer" className="text-primary hover:underline">
+          Health &amp; Nutrition Disclaimer
+        </Link>
+        .
+      </p>
+
       <p className="mt-10 hidden border-t border-border pt-4 text-center text-sm text-muted-foreground print:block">
         Recipe by Chef Healthy Henry · A Healthy &amp; Tasty Life ·
         chef-healthy-henry.vercel.app
