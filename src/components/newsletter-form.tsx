@@ -21,7 +21,11 @@ export function NewsletterForm() {
         setSubmitted(true);
       }}
     >
+      <label htmlFor="newsletter-email" className="sr-only">
+        Email address
+      </label>
       <input
+        id="newsletter-email"
         type="email"
         required
         placeholder="Your email address"
