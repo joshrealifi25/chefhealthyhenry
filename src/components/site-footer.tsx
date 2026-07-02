@@ -35,7 +35,9 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <p className="mb-3 text-sm font-medium">Get one new recipe every week</p>
+          <p className="mb-3 text-sm font-medium">
+            Free Starter Guide + one new recipe every week
+          </p>
           <NewsletterForm />
         </div>
       </div>

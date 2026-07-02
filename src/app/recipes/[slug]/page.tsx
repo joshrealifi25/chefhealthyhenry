@@ -8,6 +8,7 @@ import { SITE_URL } from "@/lib/site";
 import { RecipeCard } from "@/components/recipe-card";
 import { PrintButton } from "@/components/print-button";
 import { IngredientsList } from "@/components/ingredients-list";
+import { CookbookCrossSell } from "@/components/cookbook-cross-sell";
 
 export function generateStaticParams() {
   return recipes.map((r) => ({ slug: r.slug }));
@@ -181,6 +182,8 @@ export default async function RecipePage({
           )}
         </section>
       </div>
+
+      <CookbookCrossSell />
 
       {recipe.youtubeId && (
         <section className="mt-16 print:hidden">

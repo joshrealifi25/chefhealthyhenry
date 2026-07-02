@@ -3,6 +3,7 @@ import { Fraunces, Inter } from "next/font/google";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { SITE_URL } from "@/lib/site";
+import { ExitIntentPopup } from "@/components/exit-intent-popup";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
@@ -47,6 +48,7 @@ export default function RootLayout({
           {children}
         </main>
         <SiteFooter />
+        <ExitIntentPopup />
         <Analytics />
         <SpeedInsights />
       </body>

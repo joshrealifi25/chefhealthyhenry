@@ -47,17 +47,17 @@ export default function HomePage() {
             sugar steady. No calorie counting required.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Link
-              href="/recipes"
+            <a
+              href="#free-guide"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3 font-medium text-primary-foreground transition-opacity hover:opacity-90"
             >
-              Browse Recipes <ArrowRight className="size-4" />
-            </Link>
+              Get the Free Starter Guide <ArrowRight className="size-4" aria-hidden="true" />
+            </a>
             <Link
-              href="/cookbook"
+              href="/recipes"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-7 py-3 font-medium transition-colors hover:bg-secondary"
             >
-              Get the Cookbook
+              Browse Recipes
             </Link>
           </div>
         </div>
@@ -198,15 +198,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Newsletter */}
-      <section className="border-t border-border bg-secondary/50 py-16">
+      {/* Newsletter / free guide */}
+      <section
+        id="free-guide"
+        className="scroll-mt-20 border-t border-border bg-secondary/50 py-16"
+      >
         <div className="mx-auto max-w-xl px-4 text-center sm:px-6">
           <h2 className="font-heading text-2xl font-semibold sm:text-3xl">
-            Follow the flavor
+            Get the free Protein Flip™ Starter Guide
           </h2>
           <p className="mt-3 text-muted-foreground">
-            One new nutrition-smart recipe in your inbox every week. No spam,
-            just dinner solved.
+            Your first steps to a balanced plate, delivered to your inbox.
+            Plus one new nutrition-smart recipe every week. No spam, just
+            dinner solved.
           </p>
           <div className="mx-auto mt-6 max-w-md">
             <NewsletterForm />
