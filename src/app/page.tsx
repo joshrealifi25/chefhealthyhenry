@@ -208,8 +208,9 @@ export default function HomePage() {
             Get the free Protein Flip™ Grocery Store Test
           </h2>
           <p className="mt-3 text-muted-foreground">
-            Shop smart in any aisle, delivered to your inbox. Plus one new
-            nutrition-smart recipe every week. No spam, just dinner solved.
+            Shop smart in any aisle. An $8.99 guide, free in your inbox. Plus
+            one new nutrition-smart recipe every week. No spam, just dinner
+            solved.
           </p>
           <div className="mx-auto mt-6 max-w-md">
             <NewsletterForm />

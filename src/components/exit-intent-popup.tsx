@@ -84,8 +84,8 @@ export function ExitIntentPopup() {
           Take the free Protein Flip™ Grocery Store Test with you
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Shop smart in any aisle, from Chef Healthy Henry. Delivered to your
-          inbox, plus one new recipe every week.
+          Shop smart in any aisle, from Chef Healthy Henry. An $8.99 value,
+          free in your inbox, plus one new recipe every week.
         </p>
         <div className="mt-5">
           <NewsletterForm />
