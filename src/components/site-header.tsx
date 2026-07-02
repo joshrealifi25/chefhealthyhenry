@@ -42,6 +42,7 @@ export function SiteHeader() {
             <Link
               key={link.href}
               href={link.href}
+              aria-current={pathname === link.href ? "page" : undefined}
               className={cn(
                 "text-sm transition-colors hover:text-primary",
                 pathname === link.href
@@ -63,14 +64,20 @@ export function SiteHeader() {
         <button
           className="lg:hidden"
           onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          aria-controls="mobile-nav"
         >
           {open ? <X className="size-6" /> : <Menu className="size-6" />}
         </button>
       </div>
 
       {open && (
-        <nav className="border-t border-border/60 bg-background px-4 py-4 lg:hidden">
+        <nav
+          id="mobile-nav"
+          aria-label="Mobile"
+          className="border-t border-border/60 bg-background px-4 py-4 lg:hidden"
+        >
           {links.map((link) => (
             <Link
               key={link.href}

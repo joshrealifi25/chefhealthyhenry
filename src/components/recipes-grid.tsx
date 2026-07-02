@@ -33,6 +33,7 @@ export function RecipesGrid({
             <button
               key={c}
               onClick={() => setCategory(c)}
+              aria-pressed={category === c}
               className={cn(
                 "rounded-full border px-4 py-1.5 text-sm transition-colors",
                 category === c
@@ -45,6 +46,7 @@ export function RecipesGrid({
           ))}
           <button
             onClick={() => setProteinFlipOnly((v) => !v)}
+            aria-pressed={proteinFlipOnly}
             className={cn(
               "rounded-full border px-4 py-1.5 text-sm transition-colors whitespace-nowrap",
               proteinFlipOnly
@@ -56,8 +58,16 @@ export function RecipesGrid({
           </button>
         </div>
         <div className="relative sm:w-64">
-          <Search className="absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+          <Search
+            aria-hidden="true"
+            className="absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground"
+          />
+          <label htmlFor="recipe-search" className="sr-only">
+            Search recipes
+          </label>
           <input
+            id="recipe-search"
+            type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search recipes…"
@@ -65,6 +75,10 @@ export function RecipesGrid({
           />
         </div>
       </div>
+
+      <p role="status" aria-live="polite" className="sr-only">
+        {filtered.length} recipes shown
+      </p>
 
       {filtered.length === 0 ? (
         <p className="py-20 text-center text-muted-foreground">
