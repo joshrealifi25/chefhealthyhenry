@@ -35,7 +35,9 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <p className="mb-3 text-sm font-medium">Get one new recipe every week</p>
+          <p className="mb-3 text-sm font-medium">
+            Free Grocery Store Test ($8.99 value) + a new recipe every week
+          </p>
           <NewsletterForm />
         </div>
       </div>
