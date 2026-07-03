@@ -2,6 +2,10 @@
 
 # Chef Healthy Henry — House Rules
 
+## Strategy
+- Marketing plan: `docs/marketing-plan.md` (funnel, priorities, email rules). Read it before marketing, copy, or growth work.
+- Welcome email sequence: `docs/emails/` (sent via Resend Broadcasts).
+
 ## Site overview
 - Live site: https://chef-healthy-henry.vercel.app (Vercel project `chef-healthy-henry`, account josh-2807)
 - Design: Deliciously Ella-inspired. Clean white/cream, Fraunces serif headings, sage-green accents (oklch tokens in `src/app/globals.css`).
