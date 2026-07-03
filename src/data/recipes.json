@@ -13178,5 +13178,105 @@
     ]
    }
   ]
+ },
+ {
+  "slug": "turkey-lentil-meatball-salad-greek-yogurt",
+  "title": "Protein Flip™ Turkey Lentil Meatball Salad with Herby Greek Yogurt Sauce",
+  "image": "/images/recipes/turkey-lentil-meatball-salad-greek-yogurt.jpg",
+  "description": "Lean turkey meatballs packed with brown lentils and zucchini, served over a colorful Mediterranean salad with chickpeas, feta, olives, and a bright herby Greek yogurt sauce. All the comfort of meatballs, built on a plate that does more.",
+  "serves": "4",
+  "prepTime": "25 min",
+  "totalTime": "45 min",
+  "ingredients": [
+   "For the Turkey Lentil Meatballs",
+   "1 lb 93% lean ground turkey",
+   "1/2 cup dry brown lentils",
+   "1 1/2 cups water",
+   "1 small zucchini, julienned into thin strands, roughly chopped, and squeezed very dry (about 3/4 cup after squeezing)",
+   "1/3 cup whole wheat breadcrumbs or oat flour",
+   "1/4 cup grated Parmesan cheese",
+   "1 large egg",
+   "2 garlic cloves, finely grated",
+   "2 tablespoons chopped fresh parsley",
+   "1 tablespoon chopped fresh dill or mint",
+   "1 teaspoon dried oregano",
+   "1 teaspoon lemon zest",
+   "3/4 teaspoon kosher salt",
+   "1/2 teaspoon black pepper",
+   "1/4 teaspoon crushed red pepper flakes (optional)",
+   "1 1/2 tablespoons olive oil, for brushing",
+   "For the Herby Greek Yogurt Sauce",
+   "1 cup plain nonfat Greek yogurt",
+   "2 tablespoons fresh lemon juice",
+   "1 teaspoon lemon zest",
+   "1 small garlic clove, finely grated",
+   "2 tablespoons chopped parsley",
+   "1 tablespoon chopped dill",
+   "1 tablespoon chopped mint",
+   "1 tablespoon extra-virgin olive oil",
+   "Salt and black pepper, to taste",
+   "1 to 2 tablespoons water, if needed",
+   "For the Mediterranean Salad",
+   "5 ounces baby arugula and chopped romaine",
+   "1 English cucumber, diced",
+   "2 cups cherry tomatoes, halved",
+   "1/2 cup roasted red peppers, sliced",
+   "1/2 cup cooked chickpeas, drained and rinsed",
+   "1/4 cup Kalamata olives, halved",
+   "1/4 cup thinly sliced pickled red onions",
+   "1/4 cup crumbled feta cheese",
+   "2 tablespoons chopped parsley",
+   "1 tablespoon chopped dill",
+   "For Serving",
+   "Lemon wedges",
+   "Fresh cracked black pepper",
+   "Fresh dill, parsley, or mint"
+  ],
+  "directions": [
+   {
+    "title": "Cook the Lentils",
+    "text": "Rinse the brown lentils and combine them with the water in a small saucepan. Bring to a boil, reduce to a gentle simmer, and cook for 20 to 25 minutes, or until tender but not mushy. Drain well, allow to cool, and measure 1 cup cooked lentils for the recipe."
+   },
+   {
+    "title": "Prep the Oven",
+    "text": "Preheat the oven to 425°F. Line a sheet pan with parchment paper."
+   },
+   {
+    "title": "Prepare the Zucchini",
+    "text": "Using a julienne peeler, cut the zucchini into thin strands. Roughly chop the strands, then wrap them in a clean kitchen towel and squeeze firmly to remove as much moisture as possible. Measure about 3/4 cup after squeezing."
+   },
+   {
+    "title": "Mix the Meatballs",
+    "text": "Add the cooked lentils, zucchini, breadcrumbs, Parmesan, egg, garlic, parsley, dill, oregano, lemon zest, salt, pepper, and crushed red pepper to a large bowl. Mix to combine while lightly breaking down some of the lentils. Add the ground turkey and mix just until evenly combined. Avoid overmixing."
+   },
+   {
+    "title": "Shape the Meatballs",
+    "text": "Portion the mixture into about 24 to 28 meatballs, roughly 1 1/2 tablespoons each. Arrange them on the prepared baking sheet, leaving a little space between each. Lightly brush each meatball with olive oil."
+   },
+   {
+    "title": "Bake",
+    "text": "Bake for 14 to 16 minutes, or until the meatballs reach about 160°F internally. Switch the oven to High Broil and broil for 1 to 2 minutes, rotating the pan if needed, until the tops are golden brown. Remove from the oven and let rest for 5 minutes. Internal temperature will finish at 165°F."
+   },
+   {
+    "title": "Make the Herby Yogurt Sauce",
+    "text": "Whisk together the Greek yogurt, lemon juice, lemon zest, garlic, parsley, dill, mint, olive oil, salt, and pepper. Add a tablespoon or two of water if needed until the sauce reaches a smooth, drizzleable consistency."
+   },
+   {
+    "title": "Build the Salad",
+    "text": "Arrange the arugula and romaine in four shallow bowls. Create sections of cucumber, tomatoes, roasted red peppers, chickpeas, olives, pickled onions, and feta around the greens. Top each bowl with 6 to 7 warm meatballs. Drizzle generously with the herby Greek yogurt sauce and finish with fresh herbs, cracked black pepper, and a lemon wedge."
+   }
+  ],
+  "category": "Meat & Poultry",
+  "proteinFlip": true,
+  "youtubeId": null,
+  "extras": [
+   {
+    "title": "Protein Flip™ Note",
+    "items": [
+     "Lean turkey provides the traditional meatball texture while brown lentils, zucchini, chickpeas, and a colorful Mediterranean salad shift the plate toward more plant protein, fiber, and fresh vegetables.",
+     "It's a lighter, brighter way to enjoy meatballs without sacrificing flavor."
+    ]
+   }
+  ]
  }
 ]
