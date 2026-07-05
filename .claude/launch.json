@@ -4,8 +4,26 @@
     {
       "name": "prod",
       "runtimeExecutable": "/opt/homebrew/bin/npm",
-      "runtimeArgs": ["run", "start", "--", "-p", "3456"],
+      "runtimeArgs": [
+        "run",
+        "start",
+        "--",
+        "-p",
+        "3456"
+      ],
       "port": 3456
+    },
+    {
+      "name": "emails",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "3457",
+        "-d",
+        "docs/emails"
+      ],
+      "port": 3457
     }
   ]
 }
