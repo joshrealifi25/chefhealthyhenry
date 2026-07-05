@@ -25,7 +25,7 @@ export default function HomePage() {
     .map((slug) => recipes.find((r) => r.slug === slug))
     .filter((r) => r !== undefined);
   const hero = recipes.find(
-    (r) => r.slug === "seared-salmon-with-warm-tomato-white-bean-vinaigrette"
+    (r) => r.slug === "grilled-peach-salad-with-marinated-chicken-blakc-rice-75hzb"
   );
 
   return (
