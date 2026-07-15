@@ -13278,5 +13278,90 @@
     ]
    }
   ]
+ },
+ {
+  "slug": "savory-dutch-baby-arugula-lupini-bean-salad",
+  "title": "Protein Flip™ Savory Dutch Baby with Arugula & Lupini Bean Salad",
+  "image": "/images/recipes/savory-dutch-baby-arugula-lupini-bean-salad.jpg",
+  "description": "A dramatic, oven-puffed Dutch baby topped with a vibrant Mediterranean-inspired salad. The crispy, golden edges pair perfectly with peppery arugula, creamy goat cheese, sweet tomatoes, toasted pepitas, and protein-rich lupini beans. Adding Just Better Fiber (JBF) to the batter is an easy way to boost fiber without changing the flavor or texture.",
+  "serves": "4",
+  "prepTime": "15 min",
+  "cookTime": "15 min",
+  "totalTime": "30 min",
+  "ingredients": [
+   "Savory Dutch Baby",
+   "4 large eggs, room temperature",
+   "1/2 cup (120 ml) 2% milk, room temperature",
+   "1/2 cup (60 g) all-purpose flour",
+   "2 tablespoons Just Better Fiber (JBF)",
+   "1/4 cup (25 g) grated Parmesan cheese",
+   "3/4 teaspoon kosher salt",
+   "1/4 teaspoon freshly ground black pepper",
+   "1/2 teaspoon dried oregano",
+   "2 tablespoons unsalted butter",
+   "Red Wine Vinaigrette",
+   "1/2 cup (120 ml) extra-virgin olive oil",
+   "1/2 cup (120 ml) red wine vinegar",
+   "1 teaspoon Dijon mustard",
+   "1 teaspoon honey",
+   "1 garlic clove, minced",
+   "1 teaspoon dried oregano",
+   "1/2 teaspoon kosher salt",
+   "1/4 teaspoon freshly ground black pepper",
+   "Arugula Salad",
+   "5 ounces (140 g) baby arugula",
+   "1 cup lupini beans, drained, rinsed, and patted dry",
+   "2 ounces (60 g) goat cheese, crumbled",
+   "1/2 cup yellow cherry tomatoes, halved",
+   "1/4 cup (20 g) chopped sun-dried tomatoes",
+   "1/4 cup roasted pepitas (pumpkin seeds), lightly toasted",
+   "Fresh basil leaves, for garnish",
+   "Freshly grated Parmesan cheese, for garnish",
+   "Freshly cracked black pepper"
+  ],
+  "directions": [
+   {
+    "title": "Preheat the Oven",
+    "text": "Preheat the oven to 425°F (220°C). Place a 12-inch cast iron skillet in the oven while it preheats so it's thoroughly hot before adding the batter."
+   },
+   {
+    "title": "Prepare the Dutch Baby Batter",
+    "text": "Attach the Wire Whip to the Hauswirt M5 Max Stand Mixer. Add the eggs, milk, flour, Just Better Fiber (JBF), Parmesan cheese, salt, pepper, and oregano to the mixer bowl. Mix on Speed 2 for about 30 seconds, just until the ingredients come together. Increase to Speed 6 and mix for 2 minutes, until the batter is smooth and lump-free. Let the batter rest for 10 minutes while the skillet continues to heat."
+   },
+   {
+    "title": "Bake the Dutch Baby",
+    "text": "Carefully remove the hot skillet from the oven. Add the butter and swirl to coat the bottom and sides of the pan. Immediately pour the batter into the hot skillet. Bake for 14 to 16 minutes, without opening the oven door, until dramatically puffed, deeply golden, and crisp around the edges."
+   },
+   {
+    "title": "Prepare the Vinaigrette",
+    "text": "While the Dutch baby bakes, rinse the mixer bowl and wire whip. Add the olive oil, red wine vinegar, Dijon mustard, honey, garlic, oregano, salt, and pepper. Mix on Speed 6 for about 2 minutes, until smooth and emulsified."
+   },
+   {
+    "title": "Assemble the Salad",
+    "text": "In a large bowl, combine the baby arugula, lupini beans, goat cheese, yellow cherry tomatoes, sun-dried tomatoes, and toasted pepitas. Lightly drizzle with the vinaigrette and gently toss until just coated."
+   },
+   {
+    "title": "Finish and Serve",
+    "text": "Transfer the hot Dutch baby to a serving platter or leave it in the skillet for a rustic presentation. Pile the salad into the center. Finish with fresh basil, a sprinkle of freshly grated Parmesan, and freshly cracked black pepper. Slice into wedges and serve immediately."
+   }
+  ],
+  "category": "Breakfast",
+  "proteinFlip": true,
+  "youtubeId": null,
+  "extras": [
+   {
+    "title": "Chef's Tips",
+    "items": [
+     "Ovens vary, so begin checking at the 14-minute mark. Remove the Dutch baby when the edges are deeply golden and the center is just set. It will naturally deflate as it cools, creating the perfect base for the salad.",
+     "This recipe makes extra vinaigrette. Use only enough to lightly dress the salad and refrigerate the remaining dressing in an airtight container for up to one week."
+    ]
+   },
+   {
+    "title": "Protein Flip™ Note",
+    "items": [
+     "Lupini beans and Just Better Fiber (JBF) add plant protein and fiber to a traditionally carb-heavy brunch dish, so it holds you longer without losing the dramatic, crowd-pleasing presentation."
+    ]
+   }
+  ]
  }
 ]
