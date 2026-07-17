@@ -132,6 +132,24 @@ export default async function RecipePage({
         </div>
       )}
 
+      {recipe.youtubeId && (
+        <section className="mt-10 print:hidden">
+          <h2 className="font-heading text-2xl font-semibold">
+            Watch Henry make it
+          </h2>
+          <div className="mt-5 aspect-video overflow-hidden rounded-2xl shadow-md">
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${recipe.youtubeId}`}
+              title={`Video: ${recipe.title}`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              loading="lazy"
+              className="size-full"
+            />
+          </div>
+        </section>
+      )}
+
       <div className="mt-12 grid gap-12 md:grid-cols-[1fr_1.6fr]">
         <section>
           <h2 className="font-heading text-2xl font-semibold">Ingredients</h2>
@@ -184,24 +202,6 @@ export default async function RecipePage({
       </div>
 
       <CookbookCrossSell />
-
-      {recipe.youtubeId && (
-        <section className="mt-16 print:hidden">
-          <h2 className="font-heading text-2xl font-semibold">
-            Watch Henry make it
-          </h2>
-          <div className="mt-5 aspect-video overflow-hidden rounded-2xl shadow-md">
-            <iframe
-              src={`https://www.youtube-nocookie.com/embed/${recipe.youtubeId}`}
-              title={`Video: ${recipe.title}`}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              loading="lazy"
-              className="size-full"
-            />
-          </div>
-        </section>
-      )}
 
       <p className="mt-10 text-sm text-muted-foreground print:hidden">
         Check every ingredient against your own allergies and dietary needs.
