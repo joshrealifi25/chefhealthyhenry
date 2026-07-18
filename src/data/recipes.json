@@ -83,6 +83,10 @@
      "These are still crackers, but the structure is flipped with chickpea flour, flax, seeds, whole grains, and beets. Pair them with a protein-rich spread, tuna, vegetables, or fruit to turn them into a more satisfying Protein Flip snack board."
     ]
    }
+  ],
+  "keyIngredients": [
+   "beets",
+   "chickpea flour"
   ]
  },
  {
@@ -138,7 +142,12 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "artichokes",
+   "almond flour",
+   "shredded chicken"
+  ]
  },
  {
   "slug": "asian-inspired-ginger-soy-cod-high-protein-delicious-fy73o",
@@ -179,7 +188,10 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "cod"
+  ]
  },
  {
   "slug": "authentic-chiles-rellenos-g1tu9",
@@ -234,7 +246,12 @@
   "category": "Kitchen Skills",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "poblano peppers",
+   "oaxaca cheese",
+   "cotija cheese"
+  ]
  },
  {
   "slug": "authentic-tortilla-soup-with-pasilla-chiles-n5nin",
@@ -294,7 +311,13 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "pasilla chiles",
+   "queso fresco",
+   "epazote",
+   "chicken breast"
+  ]
  },
  {
   "slug": "caponata-sicilian-eggplant-with-bold-flavors-made-simple-oofnk",
@@ -345,7 +368,12 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "eggplant",
+   "castelvetrano olives",
+   "allulose"
+  ]
  },
  {
   "slug": "citrus-supreme-tutorial-perfect-orange-segments-for-salads-desserts-qk7rj",
@@ -383,7 +411,8 @@
   "category": "Kitchen Skills",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": []
  },
  {
   "slug": "creamy-lentil-chicken-soup-with-parmesan-rind",
@@ -469,6 +498,11 @@
      "Use ½ green + ½ brown"
     ]
    }
+  ],
+  "keyIngredients": [
+   "lentils",
+   "parmesan rind",
+   "chicken breast"
   ]
  },
  {
@@ -536,7 +570,12 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "chickpeas",
+   "cannellini beans",
+   "sun-dried tomatoes"
+  ]
  },
  {
   "slug": "elegant-spring-appetizer-sweet-potato-rounds-with-burrata-sage-pesto",
@@ -589,7 +628,11 @@
   "category": "Kitchen Skills",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "burrata",
+   "sweet potatoes"
+  ]
  },
  {
   "slug": "fish-and-long-bean-stir-fry-x3qqa",
@@ -641,7 +684,10 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "chinese long beans"
+  ]
  },
  {
   "slug": "grillechicken-with-creamy-avocado-yogurt-sauce-3pbw3",
@@ -694,7 +740,10 @@
   "category": "Meat & Poultry",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "chicken breast"
+  ]
  },
  {
   "slug": "grilled-branzino-with-tomato-salad-h95sx",
@@ -769,7 +818,10 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "branzino"
+  ]
  },
  {
   "slug": "grilled-chicken-quinoa-power-salad-rf5ua",
@@ -826,7 +878,11 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "quinoa",
+   "chicken breast"
+  ]
  },
  {
   "slug": "grilled-peach-salad-with-marinated-chicken-blakc-rice-75hzb",
@@ -887,7 +943,11 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "black rice",
+   "chicken thighs"
+  ]
  },
  {
   "slug": "grilled-shrimp-with-green-papaya-mango-salad-rbuig",
@@ -956,7 +1016,11 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "shrimp",
+   "green papaya"
+  ]
  },
  {
   "slug": "grillicious-garlic-shrimp-xprxy",
@@ -999,7 +1063,10 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "shrimp"
+  ]
  },
  {
   "slug": "healthy-20chicken-skewers-with-creamy-garlic-yogurt-sauce-easy-high-protein-dinner",
@@ -1050,7 +1117,10 @@
   "category": "Meat & Poultry",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "chicken breast"
+  ]
  },
  {
   "slug": "healthy-homemade-nutella-recipe-qxyt3",
@@ -1093,7 +1163,11 @@
   "category": "Sweets & Snacks",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "hazelnuts",
+   "just better fiber"
+  ]
  },
  {
   "slug": "healthy-matcha-moringa-almond-butter-cookies-a12ii",
@@ -1138,7 +1212,12 @@
   "category": "Sweets & Snacks",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "matcha",
+   "moringa",
+   "just better fiber"
+  ]
  },
  {
   "slug": "healthy-summer-plate-tofu-veggies-pesto-unjury-flavorless-protein-kal9i",
@@ -1191,7 +1270,12 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "tofu",
+   "unjury protein powder",
+   "just better fiber"
+  ]
  },
  {
   "slug": "korean-inspired-gochujang-glazed-salmon-with-garlic-spinach-5ay5k",
@@ -1251,7 +1335,11 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "gochujang",
+   "salmon"
+  ]
  },
  {
   "slug": "lemon-herb-quinoa-with-roasted-vegetables-7f79i",
@@ -1309,7 +1397,11 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "quinoa",
+   "tahini"
+  ]
  },
  {
   "slug": "marry-me-chickpea-soup-with-kale-zptq5",
@@ -1379,6 +1471,10 @@
      "For a thinner consistency, stir in an extra splash of vegetable broth before serving."
     ]
    }
+  ],
+  "keyIngredients": [
+   "chickpeas",
+   "sun-dried tomatoes"
   ]
  },
  {
@@ -1428,7 +1524,11 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "matcha",
+   "moringa"
+  ]
  },
  {
   "slug": "mediterranean-lentil-bowl-with-zesty-sun-dried-tomato-dressing-qrx0p",
@@ -1485,7 +1585,11 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "lentils",
+   "sun-dried tomatoes"
+  ]
  },
  {
   "slug": "moroccan-lamb-stew-kfetv",
@@ -1544,7 +1648,11 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "lamb",
+   "dried apricots"
+  ]
  },
  {
   "slug": "pan-seared-halibut-with-mango-salsa-saffron-black-rice-summer-on-a-plate-tlfuu",
@@ -1601,7 +1709,12 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "halibut",
+   "black rice",
+   "saffron"
+  ]
  },
  {
   "slug": "peruvian-grilled-chicken-with-green-sauce-and-air-fried-peruvian-sweet-potatoes-irloz",
@@ -1669,7 +1782,11 @@
   "category": "Meat & Poultry",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "peruvian sweet potatoes",
+   "chicken thighs"
+  ]
  },
  {
   "slug": "pollo-agrodolce-sweet-sour-italian-chicken-recipe-sbfzw",
@@ -1718,7 +1835,10 @@
   "category": "Meat & Poultry",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "chicken thighs"
+  ]
  },
  {
   "slug": "protein-flip-blueberry-peach-quinoa-bake-8tt2y",
@@ -1780,7 +1900,12 @@
   "category": "Sweets & Snacks",
   "proteinFlip": true,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "quinoa",
+   "unjury protein powder",
+   "just better fiber"
+  ]
  },
  {
   "slug": "protein-flip-tm-nutty-banana-bread-soft-baked-protein-bars",
@@ -1862,7 +1987,12 @@
   "category": "Sweets & Snacks",
   "proteinFlip": true,
   "youtubeId": "GHIBSt_1trI",
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "almond flour",
+   "just better fiber",
+   "unjury protein powder"
+  ]
  },
  {
   "slug": "quick-and-healthy-tuna-quinoa-bowl-vcbt9",
@@ -1906,7 +2036,11 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "canned tuna",
+   "quinoa"
+  ]
  },
  {
   "slug": "refreshing-jicama-citrus-salad-with-perfect-citrus-segments-summer-salad-idea-gbz0q",
@@ -1972,7 +2106,11 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "jicama",
+   "tajin"
+  ]
  },
  {
   "slug": "roasted-beet-carrot-salad-92j3p",
@@ -2038,7 +2176,10 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "beets"
+  ]
  },
  {
   "slug": "royal-tempeh-sweet-potato-tacos-with-chili-lime-yogurt-protein-flip-tm-weeknight-meal",
@@ -2132,6 +2273,10 @@
      "Pairing Suggestion: Try with a light Mexican lager or a sparkling lime agua fresca for a refreshing, complementary finish."
     ]
    }
+  ],
+  "keyIngredients": [
+   "tempeh",
+   "sweet potatoes"
   ]
  },
  {
@@ -2190,7 +2335,12 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "salmon",
+   "cannellini beans",
+   "shichimi togarashi"
+  ]
  },
  {
   "slug": "savory-vegetable-clafoutis-with-french-herb-beans-9in2f",
@@ -2278,7 +2428,12 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": "uM8bO9T3MoE",
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "chickpea flour",
+   "cottage cheese",
+   "just better fiber"
+  ]
  },
  {
   "slug": "seared-salmon-with-warm-tomato-white-bean-vinaigrette",
@@ -2325,7 +2480,11 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": "iAgxLxBvp4U",
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "salmon",
+   "cannellini beans"
+  ]
  },
  {
   "slug": "seared-scallops-with-ot-ga-den-hot-sauce",
@@ -2411,7 +2570,12 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "scallops",
+   "ot ga den hot sauce",
+   "fennel"
+  ]
  },
  {
   "slug": "sheet-pan-fish-tacos-with-creamy-avocado-sauce-807no",
@@ -2492,6 +2656,10 @@
      "Store leftover fish, slaw, and sauce separately in airtight containers in the refrigerator. The fish and slaw will keep for up to 3 days. The avocado sauce is best enjoyed within 1 to 2 days."
     ]
    }
+  ],
+  "keyIngredients": [
+   "tilapia",
+   "cottage cheese"
   ]
  },
  {
@@ -2593,6 +2761,11 @@
      "Finishing Touch: Toasted almonds on top add natural crunch, aroma, and a boost of plant protein - a visual and nutritional win."
     ]
    }
+  ],
+  "keyIngredients": [
+   "cannellini beans",
+   "unjury protein powder",
+   "almonds"
   ]
  },
  {
@@ -2655,7 +2828,12 @@
   "category": "Meat & Poultry",
   "proteinFlip": false,
   "youtubeId": "42kxz-wUJvg",
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "french lentils",
+   "edamame",
+   "chicken breast"
+  ]
  },
  {
   "slug": "spicy-grilled-eggplant-fresh-tomatoes-easy-mediterranean-e1y51",
@@ -2705,7 +2883,10 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "eggplant"
+  ]
  },
  {
   "slug": "strawberry-cobb-salad-with-halloumi-tarragon-dressing-mrcdr",
@@ -2757,7 +2938,11 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "halloumi",
+   "tarragon"
+  ]
  },
  {
   "slug": "the-secret-to-easy-to-peel-hard-boiled-eggs-vs1fq",
@@ -2781,7 +2966,10 @@
   "category": "Kitchen Skills",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "eggs"
+  ]
  },
  {
   "slug": "tuna-chickpea-salad-ux9zw",
@@ -2842,6 +3030,11 @@
      "If the salad thickens after chilling, stir in a small squeeze of lemon juice before serving."
     ]
    }
+  ],
+  "keyIngredients": [
+   "albacore tuna",
+   "chickpeas",
+   "nori"
   ]
  },
  {
@@ -2895,7 +3088,11 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "lupini beans",
+   "cauliflower"
+  ]
  },
  {
   "slug": "vibrant-broccolini-salad-with-crispy-chickpeas-sumac-dressing-and-albacore-tuna-stdsh",
@@ -2964,7 +3161,13 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "broccolini",
+   "chickpeas",
+   "sumac",
+   "albacore tuna"
+  ]
  },
  {
   "slug": "warm-balsamic-mushroom-and-lentil-salad-recipe-ivzia",
@@ -3016,7 +3219,12 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "mushrooms",
+   "lentils",
+   "cashew butter"
+  ]
  },
  {
   "slug": "yakiniku-garlic-black-rice-bowl",
@@ -3086,7 +3294,12 @@
   "category": "Meat & Poultry",
   "proteinFlip": false,
   "youtubeId": "J8MHdGO9QzA",
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "black rice",
+   "tofu",
+   "doubanjiang"
+  ]
  },
  {
   "slug": "air-fried-potato-chips-tpjnb",
@@ -3156,7 +3369,8 @@
   "category": "Sweets & Snacks",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": []
  },
  {
   "slug": "air-fryer-garlic-and-herb-baby-potatoes-4262b",
@@ -3198,7 +3412,8 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": []
  },
  {
   "slug": "arugula-and-persimmon-salad-lp523",
@@ -3266,7 +3481,12 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "persimmons",
+   "halloumi",
+   "beets"
+  ]
  },
  {
   "slug": "asparagus-sorrel-bisque",
@@ -3328,7 +3548,11 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "asparagus",
+   "sorrel"
+  ]
  },
  {
   "slug": "authentic-ribollita-soup-recipe-classic-italian-vegetable-and-bread-soup",
@@ -3420,7 +3644,11 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "cannellini beans",
+   "parmesan rind"
+  ]
  },
  {
   "slug": "autumn-butternut-squash-with-sage-and-apple",
@@ -3493,7 +3721,10 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "butternut squash"
+  ]
  },
  {
   "slug": "baked-peaches",
@@ -3549,7 +3780,11 @@
   "category": "Sweets & Snacks",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "peaches",
+   "just better fiber"
+  ]
  },
  {
   "slug": "baked-halibut-with-brussel-sprouts-and-quinoa",
@@ -3629,7 +3864,11 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "halibut",
+   "quinoa"
+  ]
  },
  {
   "slug": "barramundi-fish",
@@ -3711,7 +3950,10 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "barramundi"
+  ]
  },
  {
   "slug": "berry-tart-with-sweet-potato-crust",
@@ -3802,7 +4044,11 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "sweet potatoes",
+   "just better fiber"
+  ]
  },
  {
   "slug": "black-rice-sushi-rolls",
@@ -3890,7 +4136,10 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "black rice"
+  ]
  },
  {
   "slug": "blackened-salmon-with-caramelized-onion-and-sweet-potato-salad",
@@ -4012,7 +4261,11 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "salmon",
+   "sweet potatoes"
+  ]
  },
  {
   "slug": "boiled-egg-hummus-on-keto-toast",
@@ -4060,7 +4313,10 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "hummus"
+  ]
  },
  {
   "slug": "bok-choy-and-broccoli-with-caramelized-onion",
@@ -4139,7 +4395,10 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "bok choy"
+  ]
  },
  {
   "slug": "bok-choy-pork-salad",
@@ -4207,7 +4466,12 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "bok choy",
+   "pork shoulder",
+   "gochujang"
+  ]
  },
  {
   "slug": "breaded-tofu-with-panko-crumbs",
@@ -4313,7 +4577,11 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "tofu",
+   "panko"
+  ]
  },
  {
   "slug": "broccoli-soup-with-cactus-and-gruyere-cheese",
@@ -4369,7 +4637,11 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "cactus",
+   "gruyere cheese"
+  ]
  },
  {
   "slug": "butternut-squash-soup-with-beans-and-escarole",
@@ -4430,7 +4702,12 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "butternut squash",
+   "escarole",
+   "cannellini beans"
+  ]
  },
  {
   "slug": "cauliflower-chicken-fried-rice-with-scrambled-egg-peas-edamame",
@@ -4535,7 +4812,12 @@
   "category": "Meat & Poultry",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "cauliflower rice",
+   "edamame",
+   "chicken breast"
+  ]
  },
  {
   "slug": "chicken-fajita-bowl-quick-and-flavorful-dinner-idea-3l291",
@@ -4613,6 +4895,11 @@
      "Balanced Protein. Better Living. Healthier Planet."
     ]
    }
+  ],
+  "keyIngredients": [
+   "poblano peppers",
+   "black beans",
+   "chicken breast"
   ]
  },
  {
@@ -4699,7 +4986,12 @@
   "category": "Meat & Poultry",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "garam masala",
+   "fenugreek leaves",
+   "chicken thighs"
+  ]
  },
  {
   "slug": "chickpea-chocolate-chip-cookies",
@@ -4775,7 +5067,11 @@
   "category": "Sweets & Snacks",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "chickpeas",
+   "just better fiber"
+  ]
  },
  {
   "slug": "chili-colorado",
@@ -4881,7 +5177,12 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "dried mexican chiles",
+   "masa harina",
+   "ground beef"
+  ]
  },
  {
   "slug": "protein-flip-creamy-clam-chowder-with-zesty-lime-tofu-flatbread",
@@ -4986,7 +5287,11 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "clams",
+   "silken tofu"
+  ]
  },
  {
   "slug": "classic-salsa-verde",
@@ -5044,7 +5349,10 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "tomatillos"
+  ]
  },
  {
   "slug": "classic-mussels-with-white-wine",
@@ -5131,7 +5439,10 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "mussels"
+  ]
  },
  {
   "slug": "cozy-chicken-and-barley-stew-lt8dx",
@@ -5181,7 +5492,11 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "barley",
+   "chicken thighs"
+  ]
  },
  {
   "slug": "creme-brulee-with-almond-milk-and-cream",
@@ -5278,7 +5593,10 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "just better fiber"
+  ]
  },
  {
   "slug": "crispy-air-fry-falafel-with-fresh-herbs-k3lfh",
@@ -5307,7 +5625,10 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "dried chickpeas"
+  ]
  },
  {
   "slug": "crispy-air-fryer-tilapia-with-brussels-sprouts-n6tk6",
@@ -5380,7 +5701,10 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "tilapia"
+  ]
  },
  {
   "slug": "crispy-black-bean-cakes-with-sun-dried-tomato-and-lime-crema",
@@ -5461,7 +5785,11 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "black beans",
+   "sun-dried tomatoes"
+  ]
  },
  {
   "slug": "crispy-pretzel-crust-lemon-herb-chicken-quick-high-protein-meal-idbug",
@@ -5540,7 +5868,11 @@
   "category": "Meat & Poultry",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "pretzels",
+   "chicken breast"
+  ]
  },
  {
   "slug": "cucumber-jicama-salad-with-fresh-red-onion",
@@ -5591,7 +5923,10 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "jicama"
+  ]
  },
  {
   "slug": "cucumber-salad",
@@ -5641,7 +5976,8 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": []
  },
  {
   "slug": "curried-cauliflower",
@@ -5701,7 +6037,10 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "cauliflower"
+  ]
  },
  {
   "slug": "daal-palak-recipe-ilb6x",
@@ -5755,7 +6094,11 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "lentils",
+   "dal"
+  ]
  },
  {
   "slug": "delicious-berry-chia-pudding-with-greek-yogurt-and-granola-tvgmk",
@@ -5797,7 +6140,11 @@
   "category": "Sweets & Snacks",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "chia seeds",
+   "just better fiber"
+  ]
  },
  {
   "slug": "delicious-tofu-saag-with-garam-masala-and-spinach-42lkj",
@@ -5857,7 +6204,12 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "tofu",
+   "black rice",
+   "garam masala"
+  ]
  },
  {
   "slug": "dubu-jorim-korean-braised-tofu-recipe-aka98",
@@ -5909,7 +6261,11 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "tofu",
+   "gochugaru"
+  ]
  },
  {
   "slug": "lemon-asparagus-pasta-bplgk",
@@ -6007,7 +6363,11 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "asparagus",
+   "nutritional yeast"
+  ]
  },
  {
   "slug": "pork-tenderloin-with-chickpeas-qpgf3",
@@ -6065,7 +6425,11 @@
   "category": "Meat & Poultry",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "pork tenderloin",
+   "chickpeas"
+  ]
  },
  {
   "slug": "vegetarian-chili-recipe-with-sweet-potatoes-beans-4ffhu",
@@ -6125,7 +6489,11 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "sweet potatoes",
+   "black beans"
+  ]
  },
  {
   "slug": "edamame-salad-withsalmon",
@@ -6193,7 +6561,11 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "edamame",
+   "salmon"
+  ]
  },
  {
   "slug": "artichokes-with-saffron-tofu-sauce-and-olive-tapenade-tk755",
@@ -6247,7 +6619,12 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "artichokes",
+   "silken tofu",
+   "saffron"
+  ]
  },
  {
   "slug": "elegant-crostini-with-roasted-grapes-and-ricotta-amgwt",
@@ -6285,7 +6662,10 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "ricotta"
+  ]
  },
  {
   "slug": "elegant-and-healthy-risotto-recipe-no-heavy-ingredients-2uhcv",
@@ -6345,7 +6725,11 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "arborio rice",
+   "radicchio"
+  ]
  },
  {
   "slug": "fish-taco-salad-y0a4n",
@@ -6415,7 +6799,11 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "mahi mahi",
+   "queso fresco"
+  ]
  },
  {
   "slug": "fluffy-sourdough-discard-pancakes-0tgfp",
@@ -6476,7 +6864,11 @@
   "category": "Sweets & Snacks",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "sourdough discard",
+   "just better fiber"
+  ]
  },
  {
   "slug": "french-bouillabaisse-recipe-perfect-mediterranean-seafood-stew-syszn",
@@ -6552,7 +6944,12 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "saffron",
+   "mussels",
+   "clams"
+  ]
  },
  {
   "slug": "fresh-pistachio-crusted-chicken-and-barley-salad-r0fqz",
@@ -6616,7 +7013,12 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "pistachios",
+   "barley",
+   "chicken breast"
+  ]
  },
  {
   "slug": "fresh-salmon-and-avocado-salad-with-dill-dressing-healthy-and-delicious-y8z18",
@@ -6679,7 +7081,10 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "salmon"
+  ]
  },
  {
   "slug": "gourmet-mushroom-medley-with-spinach-and-bean-puree-49ppv",
@@ -6739,7 +7144,11 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "mushrooms",
+   "cannellini beans"
+  ]
  },
  {
   "slug": "grilled-salmon-with-a-jicama-salad-lime-cilantro-vinaigrette-and-white-bean-stew",
@@ -6875,7 +7284,12 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "salmon",
+   "jicama",
+   "navy beans"
+  ]
  },
  {
   "slug": "halibut-piccata-with-black-rice-broccoli-pepitas",
@@ -6930,7 +7344,11 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "halibut",
+   "black rice"
+  ]
  },
  {
   "slug": "halibut-in-corn-husks-with-fresh-vegetable-saute-7smvk",
@@ -6980,7 +7398,11 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "halibut",
+   "fresno chiles"
+  ]
  },
  {
   "slug": "harira-moroccan-lentil-and-chickpea-soup-ac4m4",
@@ -7041,7 +7463,12 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "red lentils",
+   "chickpeas",
+   "harissa"
+  ]
  },
  {
   "slug": "healthy-asian-salad-with-gochujang-dressing-and-black-rice-j119r",
@@ -7106,7 +7533,13 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "gochujang",
+   "black rice",
+   "tofu",
+   "daikon"
+  ]
  },
  {
   "slug": "healthy-baked-peaches-recipe-fn3h5",
@@ -7159,7 +7592,11 @@
   "category": "Sweets & Snacks",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "peaches",
+   "just better fiber"
+  ]
  },
  {
   "slug": "healthy-coconut-oil-granola-with-added-fiber-yogurt",
@@ -7213,7 +7650,10 @@
   "category": "Sweets & Snacks",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "just better fiber"
+  ]
  },
  {
   "slug": "healthy-french-carrot-salad-with-chickpeas-1mahm",
@@ -7259,7 +7699,10 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "chickpeas"
+  ]
  },
  {
   "slug": "healthy-mexican-rice",
@@ -7315,7 +7758,10 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "cauliflower rice"
+  ]
  },
  {
   "slug": "vegetable-soup-with-white-beans",
@@ -7375,7 +7821,10 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "great northern beans"
+  ]
  },
  {
   "slug": "hearty-veggie-burger-with-sweet-potato-and-tofu-294n5",
@@ -7447,7 +7896,12 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "sweet potatoes",
+   "tofu",
+   "panko"
+  ]
  },
  {
   "slug": "fish-stock-for-soups-and-stews-vmbsd",
@@ -7511,7 +7965,10 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "fish bones"
+  ]
  },
  {
   "slug": "hungarian-chicken-paprika",
@@ -7586,7 +8043,11 @@
   "category": "Meat & Poultry",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "hungarian paprika",
+   "chicken thighs"
+  ]
  },
  {
   "slug": "hungarian-goulash",
@@ -7653,7 +8114,12 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "hungarian paprika",
+   "caraway seeds",
+   "beef"
+  ]
  },
  {
   "slug": "classic-caprese-salad",
@@ -7688,7 +8154,10 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "fresh mozzarella"
+  ]
  },
  {
   "slug": "recipes-italian-shakshuka-baked-eggs",
@@ -7762,7 +8231,8 @@
   "category": "Sweets & Snacks",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": []
  },
  {
   "slug": "italian-soup-with-red-potato",
@@ -7844,6 +8314,11 @@
      "This version lands beautifully as Protein Flip™ verified . The beans remain the foundation, bringing plant-based protein and fiber, while the Italian sausage adds traditional flavor and enough extra protein to bring the soup to about 22 g protein per serving . It feels hearty and satisfying without relying on an oversized meat portion."
     ]
    }
+  ],
+  "keyIngredients": [
+   "cannellini beans",
+   "parmesan rind",
+   "italian sausage"
   ]
  },
  {
@@ -7891,7 +8366,10 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "zucchini"
+  ]
  },
  {
   "slug": "italian-soup-with-lupini-beans-and-kale",
@@ -7972,7 +8450,10 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "lupini beans"
+  ]
  },
  {
   "slug": "jicama-tomato-and-black-bean-salad",
@@ -8016,7 +8497,11 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "jicama",
+   "black beans"
+  ]
  },
  {
   "slug": "korean-barbecue",
@@ -8113,7 +8598,12 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "gochujang",
+   "doenjang",
+   "korean pear"
+  ]
  },
  {
   "slug": "lemongrass-salmon-fish-cakes-a2n0s",
@@ -8168,7 +8658,12 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "lemongrass",
+   "salmon",
+   "chili jam"
+  ]
  },
  {
   "slug": "lentil-soup-with-collards-greens-with-red-potatoes",
@@ -8244,7 +8739,11 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "lentils",
+   "collard greens"
+  ]
  },
  {
   "slug": "lentil-pasta-with-tofu-and-vegetables",
@@ -8332,7 +8831,11 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "lentil pasta",
+   "tofu"
+  ]
  },
  {
   "slug": "lentil-spinach-stew-with-lemon",
@@ -8417,7 +8920,10 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "lentils"
+  ]
  },
  {
   "slug": "lotus-root-stir-fry-with-carrots-and-snow-peas-9mtw6",
@@ -8470,7 +8976,11 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "lotus root",
+   "wood ear mushrooms"
+  ]
  },
  {
   "slug": "lupini-bean-salad-with-asiago-cheese-pine-nuts-and-balsamic-vinaigrette",
@@ -8522,7 +9032,11 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "lupini beans",
+   "asiago cheese"
+  ]
  },
  {
   "slug": "mahi-mahi-black-rice-bowl-a-protein-flip-classic",
@@ -8585,7 +9099,12 @@
   "category": "Seafood",
   "proteinFlip": true,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "mahi mahi",
+   "black rice",
+   "edamame"
+  ]
  },
  {
   "slug": "mediterranean-baked-tilapia-with-cherry-tomatoes-and-capers-c8dqa",
@@ -8656,7 +9175,12 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "tilapia",
+   "hemp seeds",
+   "quinoa"
+  ]
  },
  {
   "slug": "mediterranean-branzino-with-zucchini-and-tomatoes-32we6",
@@ -8712,7 +9236,12 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "branzino",
+   "sumac",
+   "aleppo pepper"
+  ]
  },
  {
   "slug": "mediterranean-cod-white-bean-stew-with-toasted-pine-nuts",
@@ -8784,7 +9313,11 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "cod",
+   "cannellini beans"
+  ]
  },
  {
   "slug": "mediterranean-herb-crusted-tilapia-ef6c3",
@@ -8858,7 +9391,10 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "tilapia"
+  ]
  },
  {
   "slug": "mediterranean-lentil-salad",
@@ -8935,7 +9471,11 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "lentils",
+   "sun-dried tomatoes"
+  ]
  },
  {
   "slug": "mediterranean-lentil-stuffed-summer-squash-bowls",
@@ -8990,7 +9530,11 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "french lentils",
+   "pattypan squash"
+  ]
  },
  {
   "slug": "mediterranean-salad-with-shredded-chicken-and-homemade-vinaigrette-ys2i6",
@@ -9057,7 +9601,12 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "shredded chicken",
+   "silken tofu",
+   "chickpeas"
+  ]
  },
  {
   "slug": "mediterranean-salmon-and-lentil-salad-r8wfz",
@@ -9116,7 +9665,11 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "salmon",
+   "lentils"
+  ]
  },
  {
   "slug": "mediterranean-sweet-potato-salad-with-basil-and-pine-nuts-xmw03",
@@ -9155,7 +9708,10 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "sweet potatoes"
+  ]
  },
  {
   "slug": "mini-blueberry-lemon-cheesecakes-light-and-refreshing-dessert-mggko",
@@ -9221,7 +9777,8 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": []
  },
  {
   "slug": "miso-soup",
@@ -9270,7 +9827,13 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "miso",
+   "dashi",
+   "tofu",
+   "enoki mushrooms"
+  ]
  },
  {
   "slug": "protein-flip-mustard-rosemary-salmon-with-leeks-fennel-edamame",
@@ -9361,7 +9924,11 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "salmon",
+   "edamame"
+  ]
  },
  {
   "slug": "nopal-cactus-salad",
@@ -9433,7 +10000,11 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "cactus",
+   "queso fresco"
+  ]
  },
  {
   "slug": "poblano-sweet-potato-and-queso-fresco-soup",
@@ -9510,7 +10081,12 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "poblano peppers",
+   "sweet potatoes",
+   "queso fresco"
+  ]
  },
  {
   "slug": "porcini-dusted-cod-w-asparagus-puree",
@@ -9644,7 +10220,12 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "cod",
+   "porcini mushrooms",
+   "asparagus"
+  ]
  },
  {
   "slug": "pozole-verde-with-mushrooms",
@@ -9768,7 +10349,12 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "tomatillos",
+   "hominy",
+   "mushrooms"
+  ]
  },
  {
   "slug": "protein-flip-huevos-rancheros-with-pinto-beans-greek-yogurt-pepitas",
@@ -9823,7 +10409,11 @@
   "category": "Breakfast",
   "proteinFlip": true,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "pinto beans",
+   "pepitas"
+  ]
  },
  {
   "slug": "pumpkin-mousse-high-protein-fiber-low-sugar-fall-dessert-recipe-sc3r2",
@@ -9859,7 +10449,12 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "pumpkin puree",
+   "cottage cheese",
+   "just better fiber"
+  ]
  },
  {
   "slug": "chefhealthyhenry-com-recipes-quinoa-zucchini-salad-the-perfect-protein-flip-tm-side",
@@ -9918,7 +10513,12 @@
   "category": "Sides & Appetizers",
   "proteinFlip": true,
   "youtubeId": "l9Nmg5QT2w8",
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "quinoa",
+   "zucchini",
+   "just better fiber"
+  ]
  },
  {
   "slug": "dragon-fruit-salad-zn21m",
@@ -9966,7 +10566,12 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "dragon fruit",
+   "persimmons",
+   "just better fiber"
+  ]
  },
  {
   "slug": "roasted-branzino-with-greek-ladolemono-n6g8y",
@@ -10041,7 +10646,10 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "branzino"
+  ]
  },
  {
   "slug": "roasted-carrots-with-radishes-and-white-beans-sauce",
@@ -10121,7 +10729,11 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "white beans",
+   "tahini"
+  ]
  },
  {
   "slug": "roasted-cauliflower-and-crispy-harissa-chickpeas-fx2ch",
@@ -10177,7 +10789,13 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "cauliflower",
+   "chickpeas",
+   "harissa",
+   "medjool dates"
+  ]
  },
  {
   "slug": "roasted-pear-butternut-squash-soup-with-crumbled-stilton",
@@ -10249,7 +10867,11 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "butternut squash",
+   "stilton cheese"
+  ]
  },
  {
   "slug": "roasted-red-pepper-salad-with-homemade-balsamic-vinaigrette-xfolb",
@@ -10330,7 +10952,10 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "roasted red peppers"
+  ]
  },
  {
   "slug": "roasted-stuffed-squash-blossoms-gor8c",
@@ -10398,7 +11023,10 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "squash blossoms"
+  ]
  },
  {
   "slug": "roasted-sumac-salmon-with-brussel-sprouts-and-pomegranate",
@@ -10480,7 +11108,12 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "salmon",
+   "sumac",
+   "pomegranate"
+  ]
  },
  {
   "slug": "roasted-vegetable-with-chestnuts-and-caramelized-onion",
@@ -10588,7 +11221,10 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "chestnuts"
+  ]
  },
  {
   "slug": "rolled-oat-breaded-eggplant-with-sweet-and-spicy-sauce",
@@ -10678,7 +11314,11 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "eggplant",
+   "silken tofu"
+  ]
  },
  {
   "slug": "mediterranean-sauce-with-red-peppers-saffron",
@@ -10736,7 +11376,10 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "saffron"
+  ]
  },
  {
   "slug": "salmon-with-mint-pistachio-and-pickled-red-onion",
@@ -10878,7 +11521,11 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "salmon",
+   "pistachios"
+  ]
  },
  {
   "slug": "salsa-verde-molcajete-ep09y",
@@ -10940,7 +11587,10 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "tomatillos"
+  ]
  },
  {
   "slug": "savory-corn-and-mushroom-saute-with-pancetta-zc2pw",
@@ -11018,7 +11668,12 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "corn",
+   "cremini mushrooms",
+   "pancetta"
+  ]
  },
  {
   "slug": "scallops-with-black-bean-pasta",
@@ -11100,7 +11755,11 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "scallops",
+   "black bean pasta"
+  ]
  },
  {
   "slug": "sea-bass-soup-with-shiitake-and-bok-choy",
@@ -11149,7 +11808,11 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "sea bass",
+   "bok choy"
+  ]
  },
  {
   "slug": "crispy-sweet-potato-matchsticks-with-saucy-sesame-tofu",
@@ -11241,7 +11904,11 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "tofu",
+   "sweet potatoes"
+  ]
  },
  {
   "slug": "fresh-potato-salad-zc9oo",
@@ -11296,7 +11963,8 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": []
  },
  {
   "slug": "simple-frittata-b9tmo",
@@ -11333,7 +12001,8 @@
   "category": "Breakfast",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": []
  },
  {
   "slug": "simple-hummus-eo5q7",
@@ -11383,7 +12052,11 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "chickpeas",
+   "tahini"
+  ]
  },
  {
   "slug": "roasted-chestnut-and-arugula-salad-x0dca",
@@ -11426,7 +12099,11 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "chestnuts",
+   "just better fiber"
+  ]
  },
  {
   "slug": "spaghetti-squash-with-garbanzo-beans-and-feta",
@@ -11495,7 +12172,11 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "spaghetti squash",
+   "chickpeas"
+  ]
  },
  {
   "slug": "spicy-ginger-garlic-chicken-red-lentil-soup-with-bok-choy",
@@ -11576,7 +12257,12 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "red lentils",
+   "bok choy",
+   "chicken thighs"
+  ]
  },
  {
   "slug": "spicy-garbanzo-beans",
@@ -11626,7 +12312,10 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "chickpeas"
+  ]
  },
  {
   "slug": "spinach-stuffed-spaghetti-squash",
@@ -11709,7 +12398,10 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "spaghetti squash"
+  ]
  },
  {
   "slug": "squash-blossom-tostada-with-oaxaca-cheese",
@@ -11781,7 +12473,11 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "squash blossoms",
+   "oaxaca cheese"
+  ]
  },
  {
   "slug": "stuffed-turkey-breast",
@@ -11927,7 +12623,10 @@
   "category": "Meat & Poultry",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "turkey breast"
+  ]
  },
  {
   "slug": "sushi-tacos",
@@ -12053,7 +12752,12 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "cauliflower rice",
+   "tofu",
+   "nori"
+  ]
  },
  {
   "slug": "sweet-potato-brownies-vc5r1",
@@ -12115,7 +12819,11 @@
   "category": "Sweets & Snacks",
   "proteinFlip": false,
   "youtubeId": "6cts1vte5M0",
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "sweet potatoes",
+   "almond flour"
+  ]
  },
  {
   "slug": "sweet-potato-cinnamon-rolls-rjh1v",
@@ -12189,7 +12897,10 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "sweet potatoes"
+  ]
  },
  {
   "slug": "sweet-potato-and-lemongrass-almond-butter-curry",
@@ -12253,7 +12964,12 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "sweet potatoes",
+   "lemongrass",
+   "almond butter"
+  ]
  },
  {
   "slug": "swordfish-with-an-olive-tapenade",
@@ -12330,7 +13046,10 @@
   "category": "Seafood",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "swordfish"
+  ]
  },
  {
   "slug": "thai-tom-yum-soup-w0m0f",
@@ -12402,7 +13121,12 @@
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "lemongrass",
+   "galangal",
+   "kaffir lime leaves"
+  ]
  },
  {
   "slug": "tilapia-stew-with-nopal-cactus",
@@ -12468,7 +13192,11 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "tilapia",
+   "cactus"
+  ]
  },
  {
   "slug": "tofu-with-brussel-sprouts-and-almonds",
@@ -12523,7 +13251,10 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "tofu"
+  ]
  },
  {
   "slug": "traditional-crepes-1zciv",
@@ -12594,7 +13325,8 @@
   "category": "Breakfast",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": []
  },
  {
   "slug": "traditional-salsa-rojo-with-tomatillos-and-lime-iwzpn",
@@ -12638,7 +13370,11 @@
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "tomatillos",
+   "guajillo chiles"
+  ]
  },
  {
   "slug": "tuna-asparagus-salad",
@@ -12731,7 +13467,11 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "tuna",
+   "asparagus"
+  ]
  },
  {
   "slug": "vegetables-in-mint-vinaigrette",
@@ -12797,7 +13537,8 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": []
  },
  {
   "slug": "vegetarian-egg-bites-with-spinach-beans-and-feta-cktbg",
@@ -12850,7 +13591,10 @@
   "category": "Breakfast",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "black beans"
+  ]
  },
  {
   "slug": "high-protein-meatless-burger-with-black-beans-quinoa-cilantro-chimichurri",
@@ -12917,7 +13661,12 @@
   "category": "Plant-Forward",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "plant-based ground meat",
+   "black beans",
+   "keto buns"
+  ]
  },
  {
   "slug": "vibrant-mediterranean-salad-with-chickpeas-4hcgc",
@@ -13003,7 +13752,11 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "chickpeas",
+   "sun-dried tomatoes"
+  ]
  },
  {
   "slug": "vibrant-sweet-potato-kale-salad-with-black-beans-ltlry",
@@ -13056,7 +13809,12 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "sweet potatoes",
+   "black beans",
+   "quinoa"
+  ]
  },
  {
   "slug": "zucchini-orzo-salad-with-pepperoncini-hmpfk",
@@ -13107,7 +13865,11 @@
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": []
+  "extras": [],
+  "keyIngredients": [
+   "zucchini",
+   "pepperoncini"
+  ]
  },
  {
   "slug": "warm-zucchini-feta-salad-lemon-caper-halibut",
@@ -13183,6 +13945,10 @@
      "The halibut brings the lean protein, the chickpeas add plant protein and fiber, the zucchini adds volume and freshness, and the feta and pistachios bring richness, crunch, and extra staying power."
     ]
    }
+  ],
+  "keyIngredients": [
+   "halibut",
+   "zucchini"
   ]
  },
  {
@@ -13283,6 +14049,11 @@
      "It's a lighter, brighter way to enjoy meatballs without sacrificing flavor."
     ]
    }
+  ],
+  "keyIngredients": [
+   "ground turkey",
+   "lentils",
+   "chickpeas"
   ]
  },
  {
@@ -13368,6 +14139,10 @@
      "Lupini beans and Just Better Fiber (JBF) add plant protein and fiber to a traditionally carb-heavy brunch dish, so it holds you longer without losing the dramatic, crowd-pleasing presentation."
     ]
    }
+  ],
+  "keyIngredients": [
+   "lupini beans",
+   "just better fiber"
   ]
  }
 ]
