@@ -1315,47 +1315,71 @@
   "slug": "marry-me-chickpea-soup-with-kale-zptq5",
   "title": "Marry Me Chickpea Soup with Kale",
   "image": "/images/recipes/marry-me-chickpea-soup-with-kale-zptq5.jpg",
-  "description": "",
-  "serves": "4",
-  "prepTime": "10 min",
-  "totalTime": "25 min",
+  "description": "Creamy, cozy, and packed with irresistible flavor, this plant-forward soup is inspired by the viral Marry Me Chicken. Chickpeas replace the chicken, while sun-dried tomatoes, Parmesan, Greek yogurt, and basil create a rich, savory broth with just the right amount of tang.",
+  "serves": "6",
+  "prepTime": "15 min",
+  "cookTime": "30 min",
+  "totalTime": "45 min",
   "ingredients": [
-   "1 1/2 pounds tilapia",
-   "2 tbls olive oil",
-   "2 tsp cumin",
-   "1 tsp paprika",
-   "1 tb chili powder",
-   "2 tsp onion powder",
-   "1 tsp salt",
-   "1 tsp ground black pepper",
-   "8 taco size tortillas of choice Slaw",
-   "1 cup green cabbage, shredded",
-   "1 cup red cabbage, shredded",
-   "1/2 cup cilantro, chopped",
-   "1 tbls olive oil 1 lime Avocado Sauce 2 small avocados (or 1 large) 3/4 cup cottage cheese 3 tbls avocado oil 1/4 water 1 lime 1/2 cup parsley 1 tsp cumin 1/4 tsp salt"
+   "1 tablespoon extra-virgin olive oil",
+   "1 tablespoon unsalted butter",
+   "2 large shallots, chopped",
+   "4 cloves garlic, chopped",
+   "2 tablespoons tomato paste",
+   "1/2 cup drained julienne-cut sun-dried tomatoes",
+   "2 (15-ounce) cans chickpeas, rinsed and drained",
+   "6 cups vegetable broth",
+   "1 small bunch Tuscan kale, stems removed and leaves roughly chopped, about 3 1/2 packed cups",
+   "1/2 teaspoon kosher salt, plus more to taste",
+   "Freshly ground black pepper, to taste",
+   "2 tablespoons whipped light cream cheese",
+   "1/4 cup plain Greek yogurt",
+   "1/4 cup grated Parmesan cheese, plus more for serving",
+   "2 tablespoons chopped fresh basil, plus small leaves for garnish"
   ],
   "directions": [
    {
-    "title": null,
-    "text": "Preheat oven to 425F and line a baking sheet with parchment paper or foil. Combine the cumin, paprika, chili powder, onion powder, and salt and pepper. Drizzle the olive oil on the fish and add to the pan in a single layer. Rub with seasonings. Bake for 12-14 minutes until fish is cooked through."
+    "title": "Sauté the Aromatics",
+    "text": "Heat the olive oil and butter in a large pot over medium heat. Add the shallots and cook for 2 to 3 minutes, stirring occasionally, until softened and translucent."
    },
    {
-    "title": null,
-    "text": "Remove from oven and shred with a fork and set aside. For the avocado sauce: Add all ingredients to a blender and blend until smooth. Taste and adjust seasonings as needed and set aside."
+    "title": "Build the Tomato Base",
+    "text": "Add the garlic, tomato paste, and sun-dried tomatoes. Cook for about 2 minutes, stirring frequently, until fragrant and the tomato paste begins to deepen in color."
    },
    {
-    "title": null,
-    "text": "For the slaw: In a large bowl combine the cabbage, cilantro, olive oil and lime mix well. Just before serving wrap the tortillas with wet paper towels and microwave them 30-45 seconds to softened. Alternatively roast the tortillas over an open flame using tongs to turn frequently so they don’t burn."
+    "title": "Simmer the Chickpeas",
+    "text": "Stir in the chickpeas and vegetable broth. Increase the heat and bring the soup to a gentle boil. Reduce the heat to maintain a simmer and cook for 10 minutes, allowing the chickpeas to absorb the flavors of the broth."
    },
    {
-    "title": null,
-    "text": "Assemble the tacos: Spread 1 tbls avocado sauce on the tortilla, add the fish and slaw, then garnish with a drizzle of avocado sauce and a pinch of salt."
+    "title": "Add the Kale",
+    "text": "Add the kale, salt, and a few grinds of black pepper. Continue simmering for 5 to 8 minutes, or until the kale is tender."
+   },
+   {
+    "title": "Make It Creamy",
+    "text": "Reduce the heat to low. Stir in the cream cheese until melted and fully incorporated. Place the Greek yogurt in a small bowl. Stir in a few spoonfuls of the warm broth to temper it, then gradually stir the yogurt mixture back into the soup."
+   },
+   {
+    "title": "Finish the Soup",
+    "text": "Remove the pot from the heat. Stir in the Parmesan and chopped basil until the cheese is melted and the soup is creamy. Taste and adjust the seasoning with additional salt and black pepper as needed."
+   },
+   {
+    "title": "Garnish and Serve",
+    "text": "Ladle the soup into bowls and garnish with fresh basil leaves and an extra sprinkle of Parmesan. Serve warm."
    }
   ],
   "category": "Soups & Stews",
-  "proteinFlip": false,
+  "proteinFlip": true,
   "youtubeId": null,
-  "extras": []
+  "extras": [
+   {
+    "title": "Recipe Notes",
+    "items": [
+     "For a slightly thicker soup, mash some of the chickpeas against the side of the pot before adding the kale.",
+     "Avoid boiling the soup after adding the Greek yogurt, as high heat can cause it to separate.",
+     "For a thinner consistency, stir in an extra splash of vegetable broth before serving."
+    ]
+   }
+  ]
  },
  {
   "slug": "matcha-moringa-pesto-mushroom-zoodles-healthy-flavorful-pasta-wy79z",
