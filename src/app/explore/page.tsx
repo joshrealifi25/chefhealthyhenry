@@ -17,8 +17,11 @@ export default function ExplorePage() {
           Explore
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">
-          Quick answers to the questions that come up in the kitchen: what an
-          ingredient is, how to use it, and which recipes put it to work.
+          Practical guidance for cooking with more confidence, curiosity, and
+          intention. Discover new ingredients, build better flavor,
+          strengthen your kitchen skills, make smarter grocery choices, and
+          learn how the Protein Flip™ Method can help you create balanced,
+          satisfying meals.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           {EXPLORE_COLLECTIONS.map((c) => (
