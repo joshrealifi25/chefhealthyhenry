@@ -9,6 +9,7 @@ import { RecipeCard } from "@/components/recipe-card";
 import { PrintButton } from "@/components/print-button";
 import { IngredientsList } from "@/components/ingredients-list";
 import { CookbookCrossSell } from "@/components/cookbook-cross-sell";
+import { YouTubeEmbed } from "@/components/youtube-embed";
 
 export function generateStaticParams() {
   return recipes.map((r) => ({ slug: r.slug }));
@@ -137,15 +138,8 @@ export default async function RecipePage({
           <h2 className="font-heading text-2xl font-semibold">
             Watch Henry make it
           </h2>
-          <div className="mt-5 aspect-video overflow-hidden rounded-2xl shadow-md">
-            <iframe
-              src={`https://www.youtube-nocookie.com/embed/${recipe.youtubeId}`}
-              title={`Video: ${recipe.title}`}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              loading="lazy"
-              className="size-full"
-            />
+          <div className="mt-5">
+            <YouTubeEmbed videoId={recipe.youtubeId} title={recipe.title} />
           </div>
         </section>
       )}
