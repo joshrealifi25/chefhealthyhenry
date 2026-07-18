@@ -18,6 +18,7 @@ export function SiteFooter() {
             <p className="mb-3 font-medium">Explore</p>
             <ul className="space-y-2 text-muted-foreground">
               <li><Link href="/recipes" className="hover:text-primary">Recipes</Link></li>
+              <li><Link href="/explore" className="hover:text-primary">Explore</Link></li>
               <li><Link href="/cookbook" className="hover:text-primary">Cookbook</Link></li>
               <li><Link href="/blog" className="hover:text-primary">Blog</Link></li>
               <li><Link href="/about" className="hover:text-primary">About</Link></li>
