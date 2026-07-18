@@ -2415,58 +2415,84 @@
  },
  {
   "slug": "sheet-pan-fish-tacos-with-creamy-avocado-sauce-807no",
-  "title": "Sheet Pan Fish Tacos with Creamy Avocado Sauce (High Protein + Easy!)",
+  "title": "Sheet Pan Fish Tacos with Creamy High-Protein Avocado Sauce",
   "image": "/images/recipes/sheet-pan-fish-tacos-with-creamy-avocado-sauce-807no.jpg",
-  "description": "",
+  "description": "These easy sheet pan fish tacos are fresh, flavorful, and perfect for a quick weeknight dinner. Seasoned tilapia is roasted until tender, then layered into warm tortillas with a crisp cabbage slaw and a creamy avocado sauce made with cottage cheese for an extra boost of protein.",
   "serves": "4",
-  "prepTime": "15 min",
-  "totalTime": "20 min",
+  "prepTime": "20 min",
+  "cookTime": "14 min",
+  "totalTime": "34 min",
   "ingredients": [
-   "Cooking spray",
-   "1 cup almond flour",
-   "1 tablespoon cornstarch",
-   "12 teaspoon salt",
-   "1  can quartered artichoke hearts",
-   "2 large egg",
-   "1/2 cup cold water",
-   "2 cups baby spinach",
-   "1 cup shaved asparagus",
+   "Fish Tacos",
+   "1 1/2 pounds tilapia fillets",
+   "2 tablespoons olive oil",
+   "2 teaspoons ground cumin",
+   "1 teaspoon paprika",
+   "1 tablespoon chili powder",
+   "2 teaspoons onion powder",
+   "1 teaspoon kosher salt",
+   "1 teaspoon freshly ground black pepper",
+   "8 taco-size tortillas of choice",
+   "Cabbage Slaw",
    "1 cup shredded green cabbage",
-   "1 lb shredded chicken",
-   "1/2 cup plain greek yogurt",
-   "1 tablespoon lemon juice",
-   "1 tablespoon chopped fresh dill",
-   "1 teaspoon honey",
-   "⅞ teaspoon salt",
-   "1 tablespoon sliced almonds, toasted",
-   "Shaved parmesan cheese"
+   "1 cup shredded red cabbage",
+   "1/2 cup chopped fresh cilantro",
+   "1 tablespoon olive oil",
+   "Juice of 1 lime",
+   "Pinch of kosher salt",
+   "Creamy High-Protein Avocado Sauce",
+   "2 small avocados or 1 large avocado",
+   "3/4 cup cottage cheese",
+   "3 tablespoons avocado oil",
+   "1/4 cup water, plus more as needed",
+   "Juice of 1 lime",
+   "1/2 cup fresh parsley",
+   "1 teaspoon ground cumin",
+   "1/4 teaspoon kosher salt"
   ],
   "directions": [
    {
-    "title": null,
-    "text": "Preheat your air fryer to 400°F (200°C) for about 3 minutes. Drain and pat dry the artichoke hearts with paper towels."
+    "title": "Prepare the Oven and Pan",
+    "text": "Preheat the oven to 425°F. Line a large rimmed baking sheet with parchment paper or aluminum foil."
    },
    {
-    "title": null,
-    "text": "In a shallow bowl, mix: almond flour, cornstarch, and salt In another bowl, whisk: The egg and cold water. Dip each artichoke piece into the egg mixture, then dredge in the flour mix to coat evenly."
+    "title": "Season the Fish",
+    "text": "In a small bowl, combine the cumin, paprika, chili powder, onion powder, salt, and black pepper. Arrange the tilapia fillets in a single layer on the prepared baking sheet. Drizzle with the olive oil, then rub the seasoning mixture evenly over both sides of the fish."
    },
    {
-    "title": null,
-    "text": "Lightly spray the coated artichokes with cooking spray on all sides. Arrange them in a single layer in the air fryer basket, working in batches if needed. Air fry for 10–12 minutes, shaking halfway through, until golden and crispy."
+    "title": "Bake the Fish",
+    "text": "Bake for 12 to 14 minutes, or until the fish is opaque, flakes easily with a fork, and reaches an internal temperature of 145°F. Remove the fish from the oven and break it into large pieces with a fork. Set aside."
    },
    {
-    "title": null,
-    "text": "For the dressing: Combine yogurt, lemon juice, dill and honey in a small bowl. Mix well To assemble combine, spinach, asparagus, and cabbage in a large bowl."
+    "title": "Make the Avocado Sauce",
+    "text": "Add the avocados, cottage cheese, avocado oil, water, lime juice, parsley, cumin, and salt to a blender or food processor. Blend until smooth and creamy, scraping down the sides as needed. Add additional water, 1 tablespoon at a time, until the sauce reaches your preferred consistency. Taste and adjust the lime juice, salt, or cumin as needed."
    },
    {
-    "title": null,
-    "text": "Drizzle the dressing on the salad and mix. Arrange the salad on a platter. Top with the tempura artichokes, chicken and sprinkle with almonds and cheese"
+    "title": "Prepare the Slaw",
+    "text": "In a large bowl, combine the green cabbage, red cabbage, cilantro, olive oil, lime juice, and a pinch of salt. Toss well until the cabbage is evenly coated."
+   },
+   {
+    "title": "Warm the Tortillas",
+    "text": "Wrap the tortillas in damp paper towels and microwave for 30 to 45 seconds, or until softened and warm. Alternatively, warm the tortillas individually over a gas flame using tongs, turning frequently so they soften and lightly char without burning."
+   },
+   {
+    "title": "Assemble the Tacos",
+    "text": "Spread about 1 tablespoon of avocado sauce over each tortilla. Top with the roasted fish and cabbage slaw. Finish with an additional drizzle of avocado sauce and a small pinch of salt. Serve immediately with lime wedges, if desired."
    }
   ],
   "category": "Seafood",
-  "proteinFlip": false,
+  "proteinFlip": true,
   "youtubeId": null,
-  "extras": []
+  "extras": [
+   {
+    "title": "Recipe Notes",
+    "items": [
+     "Tilapia cooks quickly, so begin checking it at the 12-minute mark. Thicker fillets may need an additional minute or two.",
+     "The avocado sauce will thicken as it sits. Stir in a splash of water before serving if needed.",
+     "Store leftover fish, slaw, and sauce separately in airtight containers in the refrigerator. The fish and slaw will keep for up to 3 days. The avocado sauce is best enjoyed within 1 to 2 days."
+    ]
+   }
+  ]
  },
  {
   "slug": "smoky-autumn-vegetable-romesco-soup-the-protein-flip-way",
