@@ -27,7 +27,10 @@ export interface Recipe {
   keyIngredients?: string[];
 }
 
-export const recipes = recipesData as Recipe[];
+// recipes.json has no explicit date field; new recipes are always appended
+// to the end of the file, so array order already tracks when each recipe
+// was added. Reverse it so the newest recipe shows first everywhere.
+export const recipes = [...(recipesData as Recipe[])].reverse();
 
 export const categories = [
   "All",
