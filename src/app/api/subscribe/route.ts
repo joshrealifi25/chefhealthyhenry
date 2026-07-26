@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { createDownloadToken } from "@/lib/fulfillment";
 import { deliveryEmailHtml } from "@/lib/delivery-email";
+import { notifyHenry, escapeHtml } from "@/lib/notify";
 
 export const runtime = "nodejs";
 
@@ -62,6 +63,14 @@ export async function POST(req: NextRequest) {
     console.error("Subscribe: guide email failed:", sendError);
     return NextResponse.json({ error: "Email failed" }, { status: 500 });
   }
+
+  await notifyHenry(
+    `New newsletter signup: ${email}`,
+    `<p><strong>${escapeHtml(email)}</strong> just joined the list and was
+     sent the free Grocery Store Test.</p>
+     <p style="color:#8a938b;font-size:13px;">Full list in Resend under
+     Audiences.</p>`
+  );
 
   return NextResponse.json({ ok: true });
 }
