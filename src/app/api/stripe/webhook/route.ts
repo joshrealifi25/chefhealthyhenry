@@ -7,6 +7,7 @@ import {
   type DigitalProduct,
 } from "@/lib/fulfillment";
 import { deliveryEmailHtml } from "@/lib/delivery-email";
+import { notifyHenry, escapeHtml } from "@/lib/notify";
 
 export const runtime = "nodejs";
 
@@ -45,6 +46,10 @@ export async function POST(req: NextRequest) {
         .map((li) => (li.price?.id ? PRICE_TO_PRODUCT[li.price.id] : undefined))
         .filter((p): p is DigitalProduct => Boolean(p));
 
+      // Owner notification: every order, digital or physical. Never blocks
+      // customer delivery.
+      await sendOrderNotification(session, lineItems.data, products.length);
+
       if (products.length > 0) {
         const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? req.nextUrl.origin;
         const links = products.map((p) => ({
@@ -77,4 +82,74 @@ export async function POST(req: NextRequest) {
   }
 
   return NextResponse.json({ received: true });
+}
+
+async function sendOrderNotification(
+  session: Stripe.Checkout.Session,
+  lineItems: Stripe.LineItem[],
+  digitalCount: number
+): Promise<void> {
+  const cd = session.customer_details;
+  const name = cd?.name ?? "Unknown";
+  const email = cd?.email ?? "unknown";
+  const total = ((session.amount_total ?? 0) / 100).toFixed(2);
+
+  const itemsHtml = lineItems
+    .map((li) => {
+      const qty = li.quantity && li.quantity > 1 ? ` x${li.quantity}` : "";
+      return `<li>${escapeHtml(li.description ?? "Item")}${qty}</li>`;
+    })
+    .join("");
+
+  // Physical orders collect a shipping address; surface it prominently.
+  // Stripe has moved this field across API versions, so check both homes.
+  interface ShippingInfo {
+    name?: string | null;
+    address?: {
+      line1?: string | null;
+      line2?: string | null;
+      city?: string | null;
+      state?: string | null;
+      postal_code?: string | null;
+      country?: string | null;
+    } | null;
+  }
+  const s = session as unknown as {
+    shipping_details?: ShippingInfo | null;
+    collected_information?: { shipping_details?: ShippingInfo | null } | null;
+  };
+  const shipping = s.shipping_details ?? s.collected_information?.shipping_details;
+  const addr = shipping?.address;
+  const needsShipping = Boolean(addr?.line1);
+
+  const shippingHtml = needsShipping
+    ? `<div style="background:#f5f1e7;border-radius:10px;padding:14px 16px;margin:14px 0;">
+        <strong>SHIP THIS ORDER</strong><br>
+        ${escapeHtml(shipping?.name ?? name)}<br>
+        ${escapeHtml(addr?.line1 ?? "")}${addr?.line2 ? "<br>" + escapeHtml(addr.line2) : ""}<br>
+        ${escapeHtml(addr?.city ?? "")}, ${escapeHtml(addr?.state ?? "")} ${escapeHtml(addr?.postal_code ?? "")}<br>
+        ${escapeHtml(addr?.country ?? "")}
+      </div>`
+    : "";
+
+  const kind = needsShipping
+    ? "Physical order, needs shipping"
+    : "Digital order, delivered automatically";
+  const subject = needsShipping
+    ? `Ship it: $${total} order from ${name}`
+    : `New order: $${total} from ${name}`;
+
+  await notifyHenry(
+    subject,
+    `<p><strong>${kind}</strong></p>
+     <p>From: ${escapeHtml(name)} &lt;${escapeHtml(email)}&gt;<br>
+     Total: $${total}</p>
+     <ul>${itemsHtml}</ul>
+     ${shippingHtml}
+     <p style="color:#8a938b;font-size:13px;">${
+       digitalCount > 0
+         ? "The buyer's download email has been sent automatically."
+         : "No digital items in this order."
+     } Details in the Stripe dashboard.</p>`
+  );
 }
