@@ -24,8 +24,8 @@ export async function generateMetadata({
   const recipe = getRecipe(slug);
   if (!recipe) return {};
   return {
-    title: recipe.title,
-    description: recipe.description || recipe.title,
+    title: recipe.seoTitle || recipe.title,
+    description: recipe.seoDescription || recipe.description || recipe.title,
   };
 }
 
