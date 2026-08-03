@@ -4,9 +4,9 @@ import { posts, postCategories } from "@/lib/posts";
 import { PostCard } from "@/components/post-card";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "Recipes & Cooking Tips Blog",
   description:
-    "Notes from the kitchen: Chef Healthy Henry on the Protein Flip™ method, satiety, comfort cooking, and why dinner still matters.",
+    "Cooking tips, nutrition guides, and behind-the-scenes stories from Chef Healthy Henry, practical, protein-forward advice for real home cooks.",
 };
 
 export default function BlogPage() {

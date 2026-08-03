@@ -4,9 +4,9 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About Chef Henry: The Story Behind the Protein Flip™ Method",
   description:
-    "Chef Healthy Henry trained in Chicago 20 years ago and rebuilt his life around wellness-centered cooking. Today he's coached 200+ people and reaches 1.3M monthly with the Protein Flip™ method.",
+    "Meet the chef behind Chef Healthy Henry: a protein-forward approach to real food, no fad diets, no shortcuts. Here's the story, the philosophy, and why it works.",
 };
 
 const services = [

@@ -3,9 +3,9 @@ import { recipes, categories } from "@/lib/recipes";
 import { RecipesGrid } from "@/components/recipes-grid";
 
 export const metadata: Metadata = {
-  title: "Recipes",
+  title: "Healthy Recipes",
   description:
-    "Nutrition-smart recipes built on the Protein Flip™ method: seafood, salads, soups, plant-forward bowls, and more. Most ready in under 30 minutes.",
+    "Browse all recipes from Chef Healthy Henry: protein-forward, flavor-first dishes for real home cooking, from quick weeknight dinners to make-ahead meals.",
 };
 
 export default function RecipesPage() {
