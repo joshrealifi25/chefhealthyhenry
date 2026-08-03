@@ -5,9 +5,9 @@ import { ArrowRight, Check } from "lucide-react";
 import { flagship, cookbooks } from "@/data/cookbooks";
 
 export const metadata: Metadata = {
-  title: "Cookbooks & Guides",
+  title: "Protein Flip™ Cookbook",
   description:
-    "The Protein Flip™ Deluxe Edition cookbook plus seasonal collections, the GLP-1 & Bariatric Success Guide, The Family Flip™, and the Dining Out Guide, from $8.99.",
+    "The Protein Flip™ Cookbook: real recipes built around Henry's signature protein-flip method, high-protein comfort food without the fuss. Get your copy today.",
 };
 
 export default function CookbookPage() {
