@@ -412,7 +412,9 @@
   "proteinFlip": false,
   "youtubeId": null,
   "extras": [],
-  "keyIngredients": []
+  "keyIngredients": [],
+  "seoTitle": "How to Supreme Citrus – Perfect Orange Segments Every Time",
+  "seoDescription": "A step-by-step tutorial for supreming citrus, cutting clean, membrane-free orange segments for salads, desserts, and plating like a pro."
  },
  {
   "slug": "creamy-lentil-chicken-soup-with-parmesan-rind",
@@ -1716,7 +1718,9 @@
    "halibut",
    "black rice",
    "saffron"
-  ]
+  ],
+  "seoTitle": "Pan-Seared Halibut with Mango Salsa and Saffron Black Rice",
+  "seoDescription": "Pan-seared halibut topped with fresh mango salsa, served over saffron black rice, a vibrant, restaurant-style dinner you can make at home."
  },
  {
   "slug": "peruvian-grilled-chicken-with-green-sauce-and-air-fried-peruvian-sweet-potatoes-irloz",
@@ -1840,7 +1844,9 @@
   "extras": [],
   "keyIngredients": [
    "chicken thighs"
-  ]
+  ],
+  "seoTitle": "Pollo Agrodolce Recipe – Sweet and Sour Italian Chicken",
+  "seoDescription": "A classic Italian pollo agrodolce, tender chicken in a sweet and sour sauce balancing vinegar and honey. An easy, flavor-packed dinner with restaurant-quality results."
  },
  {
   "slug": "protein-flip-blueberry-peach-quinoa-bake",
@@ -3874,7 +3880,9 @@
   "keyIngredients": [
    "halibut",
    "quinoa"
-  ]
+  ],
+  "seoTitle": "Baked Halibut Recipe with Brussels Sprouts and Quinoa",
+  "seoDescription": "Oven-baked halibut served over quinoa with roasted Brussels sprouts, a light, protein-rich dinner that's easy enough for a weeknight."
  },
  {
   "slug": "barramundi-fish",
@@ -5087,7 +5095,9 @@
   "keyIngredients": [
    "chickpeas",
    "just better fiber"
-  ]
+  ],
+  "seoTitle": "Healthy Chickpea Chocolate Chip Cookies (Flourless, High Protein)",
+  "seoDescription": "Soft, chewy chickpea chocolate chip cookies made with almond butter and no flour, a protein- and fiber-packed treat perfect for holiday gatherings without the guilt."
  },
  {
   "slug": "chili-colorado",
@@ -5372,7 +5382,9 @@
   "extras": [],
   "keyIngredients": [
    "tomatillos"
-  ]
+  ],
+  "seoTitle": "Classic Salsa Verde Recipe (Easy Homemade Green Salsa)",
+  "seoDescription": "A classic tomatillo-based salsa verde, bright, tangy, and easy to make at home. A versatile green salsa for tacos, eggs, grilled meats, or chips."
  },
  {
   "slug": "classic-mussels-with-white-wine",
@@ -13662,7 +13674,9 @@
   "extras": [],
   "keyIngredients": [
    "black beans"
-  ]
+  ],
+  "seoTitle": "Vegetarian Egg Bites with Spinach, Beans, and Feta",
+  "seoDescription": "Protein-packed vegetarian egg bites baked with spinach, beans, and feta, an easy make-ahead breakfast you can grab and go all week."
  },
  {
   "slug": "high-protein-meatless-burger-with-black-beans-quinoa-cilantro-chimichurri",
