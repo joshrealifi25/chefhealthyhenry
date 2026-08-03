@@ -25,6 +25,11 @@ export interface Recipe {
   proteinFlip: boolean;
   youtubeId: string | null;
   keyIngredients?: string[];
+  /** Overrides for the <title>/meta description search engines see, when
+   * they need to differ from the on-page title/description (e.g. a CTR
+   * fix). Falls back to title/description when unset. */
+  seoTitle?: string;
+  seoDescription?: string;
 }
 
 // recipes.json has no explicit date field; new recipes are always appended
