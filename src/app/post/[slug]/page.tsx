@@ -26,12 +26,14 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) return {};
+  const title = post.seoTitle || post.title;
+  const description = post.seoDescription || post.excerpt;
   return {
-    title: post.title,
-    description: post.excerpt,
+    title,
+    description,
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
+      title,
+      description,
       type: "article",
       images: post.hero ? [post.hero] : undefined,
     },
