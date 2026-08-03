@@ -1169,7 +1169,9 @@
   "keyIngredients": [
    "hazelnuts",
    "just better fiber"
-  ]
+  ],
+  "seoTitle": "Healthy Homemade Nutella Recipe (Easy Chocolate Hazelnut Spread)",
+  "seoDescription": "A healthier homemade Nutella-style chocolate hazelnut spread, rich and creamy without the processed ingredients. Ready in minutes and perfect on toast, fruit, or by the spoonful."
  },
  {
   "slug": "healthy-matcha-moringa-almond-butter-cookies",
@@ -2780,7 +2782,9 @@
    "cannellini beans",
    "unjury protein powder",
    "almonds"
-  ]
+  ],
+  "seoTitle": "Smoky Romesco Soup Recipe – A Protein Flip™ Autumn Vegetable Soup",
+  "seoDescription": "A smoky, roasted vegetable romesco soup made the Protein Flip™ way, warming, nutrient-dense, and packed with real flavor for cooler days."
  },
  {
   "slug": "spicy-chicken-french-lentil-bowl",
@@ -7644,7 +7648,9 @@
   "keyIngredients": [
    "peaches",
    "just better fiber"
-  ]
+  ],
+  "seoTitle": "Healthy Baked Peaches Recipe (Simple, Naturally Sweet)",
+  "seoDescription": "Tender baked peaches with a warm, naturally sweet finish, a simple, healthy dessert or breakfast topper that takes minutes to prep."
  },
  {
   "slug": "healthy-coconut-oil-granola-with-added-fiber-yogurt",
@@ -8286,7 +8292,9 @@
   "proteinFlip": false,
   "youtubeId": null,
   "extras": [],
-  "keyIngredients": []
+  "keyIngredients": [],
+  "seoTitle": "Italian Shakshuka Recipe – Baked Eggs in Tomato Sauce",
+  "seoDescription": "A comforting Italian-style shakshuka, eggs baked in a rich, herby tomato sauce, perfect for a hearty breakfast, brunch, or easy dinner."
  },
  {
   "slug": "italian-soup-with-red-potato",
@@ -9381,7 +9389,9 @@
   "keyIngredients": [
    "cod",
    "cannellini beans"
-  ]
+  ],
+  "seoTitle": "Mediterranean Cod and White Bean Stew with Toasted Pine Nuts",
+  "seoDescription": "A hearty Mediterranean cod and white bean stew finished with toasted pine nuts, a comforting, protein-rich one-pot dinner."
  },
  {
   "slug": "mediterranean-herb-crusted-tilapia",
