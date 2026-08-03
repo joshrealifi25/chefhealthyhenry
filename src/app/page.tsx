@@ -8,9 +8,9 @@ import { NewsletterForm } from "@/components/newsletter-form";
 const featuredSlugs = [
   "seared-salmon-with-warm-tomato-white-bean-vinaigrette",
   "spicy-chicken-french-lentil-bowl",
-  "marry-me-chickpea-soup-with-kale-zptq5",
-  "korean-inspired-gochujang-glazed-salmon-with-garlic-spinach-5ay5k",
-  "grilled-peach-salad-with-marinated-chicken-blakc-rice-75hzb",
+  "marry-me-chickpea-soup-with-kale",
+  "korean-inspired-gochujang-glazed-salmon-with-garlic-spinach",
+  "grilled-peach-salad-with-marinated-chicken-black-rice",
   "royal-tempeh-sweet-potato-tacos-with-chili-lime-yogurt-protein-flip-tm-weeknight-meal",
 ];
 
@@ -25,7 +25,7 @@ export default function HomePage() {
     .map((slug) => recipes.find((r) => r.slug === slug))
     .filter((r) => r !== undefined);
   const hero = recipes.find(
-    (r) => r.slug === "grilled-peach-salad-with-marinated-chicken-blakc-rice-75hzb"
+    (r) => r.slug === "grilled-peach-salad-with-marinated-chicken-black-rice"
   );
 
   return (
