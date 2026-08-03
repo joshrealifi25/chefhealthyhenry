@@ -17,6 +17,11 @@ export interface Post {
   date: string;
   hero: string | null;
   excerpt: string;
+  /** Overrides for the <title>/meta description search engines see, when
+   * they need to differ from the on-page title/excerpt (e.g. a CTR fix).
+   * Falls back to title/excerpt when unset. */
+  seoTitle?: string;
+  seoDescription?: string;
   blocks: PostBlock[];
 }
 
