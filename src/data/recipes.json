@@ -2672,7 +2672,9 @@
   "keyIngredients": [
    "tilapia",
    "cottage cheese"
-  ]
+  ],
+  "seoTitle": "Sheet Pan Fish Tacos with High-Protein Avocado Crema",
+  "seoDescription": "Sheet pan fish tacos topped with a creamy, high-protein avocado crema, a quick, hands-off dinner with big flavor and easy cleanup."
  },
  {
   "slug": "smoky-autumn-vegetable-romesco-soup-the-protein-flip-way",
@@ -5738,7 +5740,9 @@
   "extras": [],
   "keyIngredients": [
    "tilapia"
-  ]
+  ],
+  "seoTitle": "Crispy Air Fryer Tilapia Recipe with Brussels Sprouts",
+  "seoDescription": "Crispy air fryer tilapia paired with roasted Brussels sprouts, a fast, protein-packed dinner that's ready in under 30 minutes."
  },
  {
   "slug": "crispy-black-bean-cakes-with-sun-dried-tomato-and-lime-crema",
@@ -6703,7 +6707,9 @@
   "extras": [],
   "keyIngredients": [
    "ricotta"
-  ]
+  ],
+  "seoTitle": "Elegant Crostini Recipe with Roasted Grapes and Ricotta",
+  "seoDescription": "Crisp crostini topped with creamy ricotta and sweet roasted grapes, an elegant, effortless appetizer for entertaining."
  },
  {
   "slug": "elegant-and-healthy-risotto-recipe-no-heavy-ingredients-2uhcv",
@@ -9838,7 +9844,9 @@
   "proteinFlip": false,
   "youtubeId": null,
   "extras": [],
-  "keyIngredients": []
+  "keyIngredients": [],
+  "seoTitle": "Mini Blueberry Lemon Cheesecakes Recipe (Light & Refreshing)",
+  "seoDescription": "Individual mini blueberry lemon cheesecakes with a bright, tangy filling, light enough for a make-ahead dessert that still feels special."
  },
  {
   "slug": "miso-soup",
@@ -11290,7 +11298,9 @@
   "extras": [],
   "keyIngredients": [
    "chestnuts"
-  ]
+  ],
+  "seoTitle": "Roasted Vegetables with Chestnuts and Caramelized Onion",
+  "seoDescription": "A warm, seasonal roasted vegetable medley with chestnuts and sweet caramelized onion, an easy holiday-ready side dish."
  },
  {
   "slug": "rolled-oat-breaded-eggplant-with-sweet-and-spicy-sauce",
