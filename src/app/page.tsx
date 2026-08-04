@@ -20,13 +20,15 @@ const stats = [
   { value: "1.3M", label: "Monthly reach" },
 ];
 
+const heroImage = {
+  src: "/images/homepage-hero-grilled-peach-chicken-salad.jpg",
+  alt: "Grilled chicken and peach salad with cucumber, arugula, and pistachios on a white platter",
+};
+
 export default function HomePage() {
   const featured = featuredSlugs
     .map((slug) => recipes.find((r) => r.slug === slug))
     .filter((r) => r !== undefined);
-  const hero = recipes.find(
-    (r) => r.slug === "grilled-peach-salad-with-marinated-chicken-black-rice"
-  );
 
   return (
     <>
@@ -61,18 +63,16 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-        {hero?.image && (
-          <div className="relative aspect-square overflow-hidden rounded-3xl shadow-lg">
-            <Image
-              src={hero.image}
-              alt={hero.title}
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
-        )}
+        <div className="relative aspect-square overflow-hidden rounded-3xl shadow-lg">
+          <Image
+            src={heroImage.src}
+            alt={heroImage.alt}
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover"
+          />
+        </div>
       </section>
 
       {/* Stats */}
