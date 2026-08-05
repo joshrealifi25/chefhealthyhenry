@@ -63,7 +63,7 @@ export default async function BlogCategoryPage({
       <div className="max-w-2xl">
         <p className="text-sm font-medium uppercase tracking-widest text-primary">
           <Link href="/blog" className="hover:underline">
-            Blog
+            Journal
           </Link>{" "}
           / {name}
         </p>

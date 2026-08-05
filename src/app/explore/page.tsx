@@ -50,7 +50,7 @@ export default function ExplorePage() {
           </Link>{" "}
           and the{" "}
           <Link href="/blog" className="text-primary hover:underline">
-            blog
+            Journal
           </Link>{" "}
           in the meantime.
         </p>
