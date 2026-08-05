@@ -14354,5 +14354,113 @@
    "roasted red peppers",
    "cherokee purple tomato"
   ]
+ },
+ {
+  "slug": "chicken-tinga-tostadas",
+  "title": "Chicken Tinga Tostadas",
+  "image": "/images/recipes/chicken-tinga-tostadas.jpg",
+  "description": "Smoky roasted tomatoes, sweet onions, fresh garden habaneros, and black garlic create a bold tinga sauce that tastes like it simmered all day. Rotisserie chicken keeps this recipe weeknight friendly, while a modest amount of lentils quietly boosts the fiber without changing the classic character of tinga.",
+  "serves": "6 (2 tostadas per serving)",
+  "prepTime": "25 min",
+  "cookTime": "30 min",
+  "totalTime": "55 min",
+  "ingredients": [
+   "Roasted Garden Tinga Sauce",
+   "1 1/2 pounds ripe tomatoes, cored",
+   "1 large yellow onion, cut into wedges",
+   "5 garlic cloves, unpeeled",
+   "1 to 2 habanero peppers, halved (seeded for less heat, if desired)",
+   "2 black garlic cloves",
+   "2 chipotle peppers in adobo",
+   "1 tablespoon tomato paste",
+   "1 teaspoon smoked paprika",
+   "1 teaspoon Mexican oregano",
+   "1 teaspoon ground cumin",
+   "1/2 teaspoon kosher salt",
+   "2 teaspoons extra-virgin olive oil",
+   "Protein Flip™ Filling",
+   "4 cups shredded rotisserie chicken, skin removed",
+   "3/4 cup cooked brown lentils",
+   "1/2 cup low-sodium chicken broth",
+   "Juice of 1/2 lime",
+   "Avocado Greek Yogurt Crema",
+   "3/4 cup plain nonfat Greek yogurt",
+   "1 ripe avocado",
+   "Juice of 1 lime",
+   "2 tablespoons chopped fresh cilantro",
+   "1 garlic clove",
+   "Pinch of kosher salt",
+   "Seasoned Black Bean Spread",
+   "1 (15-ounce) can black beans, drained and rinsed",
+   "1 teaspoon ground cumin",
+   "1 garlic clove, grated",
+   "Juice of 1/2 lime",
+   "2 to 3 tablespoons water or reserved bean liquid",
+   "Kosher salt and freshly ground black pepper, to taste",
+   "For Serving",
+   "12 baked corn tostadas",
+   "2 cups finely shredded cabbage",
+   "1/2 cup crumbled Cotija cheese",
+   "Pickled red onions",
+   "Fresh cilantro leaves",
+   "Lime wedges",
+   "Fresh Habanero Salsa Macha (optional)"
+  ],
+  "directions": [
+   {
+    "title": "Roast the Vegetables",
+    "text": "Preheat the oven to 425°F. Arrange the tomatoes, onion, garlic, and habaneros on a sheet pan. Drizzle with the olive oil and roast for 25 to 30 minutes, until the tomatoes collapse, the onions are caramelized, and the peppers are lightly blistered. Let cool slightly, then peel the garlic."
+   },
+   {
+    "title": "Make the Tinga Sauce",
+    "text": "Add the roasted tomatoes, onion, peeled garlic, habanero, black garlic, chipotle peppers, tomato paste, smoked paprika, oregano, cumin, and salt to the mixer bowl. Blend until mostly smooth, leaving a little texture."
+   },
+   {
+    "title": "Finish the Filling",
+    "text": "Transfer the sauce to a large skillet over medium heat. Stir in the chicken broth and simmer for about 5 minutes. Fold in the shredded chicken and cooked lentils. Continue cooking until the chicken is heated through and coated in the sauce, about 5 to 8 minutes. Finish with the lime juice."
+   },
+   {
+    "title": "Make the Black Bean Spread",
+    "text": "Mash the black beans with the cumin, garlic, lime juice, and enough water or reserved bean liquid to create a spreadable consistency. Season with salt and pepper."
+   },
+   {
+    "title": "Make the Avocado Greek Yogurt Crema",
+    "text": "Rinse the mixer bowl. Combine the Greek yogurt, avocado, lime juice, cilantro, garlic, and salt. Blend until smooth and creamy."
+   },
+   {
+    "title": "Assemble the Tostadas",
+    "text": "Spread each baked tostada with the black bean spread. Spoon the warm chicken tinga over the beans. Top with shredded cabbage, avocado crema, Cotija, pickled red onions, and fresh cilantro. Serve with lime wedges and a spoonful of Fresh Habanero Salsa Macha, if desired."
+   }
+  ],
+  "category": "Meat & Poultry",
+  "proteinFlip": true,
+  "youtubeId": null,
+  "extras": [
+   {
+    "title": "Chef's Tips",
+    "items": [
+     "Rotisserie chicken makes this recipe weeknight friendly without sacrificing flavor.",
+     "Roasting the vegetables creates a naturally rich, smoky sauce that tastes like it simmered for hours.",
+     "Remove the seeds and white ribs from the habaneros for a milder heat, or leave some in if you enjoy extra spice.",
+     "The tinga filling tastes even better the next day, making it perfect for meal prep."
+    ]
+   },
+   {
+    "title": "Protein Flip™",
+    "items": [
+     "Classic chicken tinga is built around the meat. This version quietly shifts the balance by adding cooked lentils, increasing fiber while keeping chicken as the star. The result is a satisfying meal that's every bit as comforting, with more plants and less meat."
+    ]
+   }
+  ],
+  "keyIngredients": [
+   "black garlic",
+   "habanero peppers",
+   "chipotle peppers in adobo",
+   "rotisserie chicken",
+   "brown lentils",
+   "black beans",
+   "cotija cheese",
+   "tostadas"
+  ]
  }
 ]
