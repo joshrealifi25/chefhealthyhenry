@@ -107,7 +107,7 @@ export function SousChat({ capNote }: { capNote: string }) {
           m.role === "user" ? (
             <p
               key={i}
-              className="max-w-[85%] self-end rounded-2xl rounded-br-sm bg-primary px-4 py-3 text-sm text-primary-foreground"
+              className="max-w-[85%] self-end whitespace-pre-wrap rounded-2xl rounded-br-sm bg-primary px-4 py-3 text-sm text-primary-foreground"
             >
               {m.content}
             </p>
@@ -149,12 +149,19 @@ export function SousChat({ capNote }: { capNote: string }) {
         }}
         className="mt-4 flex gap-2"
       >
-        <input
+        <textarea
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && !e.shiftKey) {
+              e.preventDefault();
+              send(input);
+            }
+          }}
+          rows={Math.min(5, Math.max(1, input.split("\n").length))}
           placeholder="Ask Sous anything about cooking..."
           aria-label="Ask Sous"
-          className="flex-1 rounded-full border border-input bg-background px-5 py-3 text-sm outline-none focus:ring-2 focus:ring-ring"
+          className="flex-1 resize-none rounded-3xl border border-input bg-background px-5 py-3 text-sm outline-none focus:ring-2 focus:ring-ring"
         />
         <button
           type="submit"
