@@ -8,6 +8,7 @@ import {
 } from "@/lib/fulfillment";
 import { deliveryEmailHtml } from "@/lib/delivery-email";
 import { notifyHenry, escapeHtml } from "@/lib/notify";
+import { syncSubscription } from "@/lib/membership-sync";
 
 export const runtime = "nodejs";
 
@@ -79,6 +80,15 @@ export async function POST(req: NextRequest) {
         }
       }
     }
+  }
+
+  // Membership subscriptions: keep tier access in sync with Stripe.
+  if (
+    event.type === "customer.subscription.created" ||
+    event.type === "customer.subscription.updated" ||
+    event.type === "customer.subscription.deleted"
+  ) {
+    await syncSubscription(stripe, event.data.object as Stripe.Subscription);
   }
 
   return NextResponse.json({ received: true });
