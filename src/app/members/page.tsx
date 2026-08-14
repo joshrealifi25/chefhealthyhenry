@@ -136,10 +136,12 @@ export default async function MembersPage() {
               </p>
               <div className="mt-3 space-y-2 text-sm">
                 <p>{tier ? TIER_NAMES[tier] : ""}</p>
-                <p className="text-muted-foreground">
-                  Manage billing, upgrades, and cancellation from the billing
-                  portal (coming with launch).
-                </p>
+                <a
+                  href="/api/billing"
+                  className="inline-block text-muted-foreground underline underline-offset-4 hover:text-primary"
+                >
+                  Manage billing, upgrade, or cancel
+                </a>
               </div>
             </section>
           </div>
