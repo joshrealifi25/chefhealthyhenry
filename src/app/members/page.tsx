@@ -3,6 +3,8 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { getMember } from "@/lib/auth";
 import { TIER_NAMES } from "@/lib/membership";
+import { SOUS_DAILY_CAP } from "@/lib/sous";
+import { SousChat } from "@/components/sous-chat";
 
 export const metadata: Metadata = {
   title: "My Kitchen",
@@ -16,6 +18,11 @@ export default async function MembersPage() {
   if (!member) redirect("/members/login");
 
   const firstName = member.name?.split(" ")[0];
+  const tier = member.tier;
+  const cap = tier ? SOUS_DAILY_CAP[tier] : 0;
+  const capNote = Number.isFinite(cap)
+    ? `Up to ${cap} questions a day with your membership.`
+    : "Unlimited questions with your membership.";
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
@@ -28,9 +35,9 @@ export default async function MembersPage() {
             Here&apos;s what&apos;s new in your kitchen this month.
           </p>
         </div>
-        {member.tier ? (
+        {tier ? (
           <span className="rounded-full bg-accent px-4 py-2 text-sm font-medium">
-            {TIER_NAMES[member.tier]} member
+            {TIER_NAMES[tier]} member
           </span>
         ) : (
           <span className="rounded-full bg-secondary px-4 py-2 text-sm font-medium">
@@ -39,24 +46,103 @@ export default async function MembersPage() {
         )}
       </div>
 
-      {member.tier ? (
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
-          <section className="rounded-2xl border border-border bg-card p-6">
-            <h2 className="font-heading text-xl font-semibold">
-              This month&apos;s lesson
-            </h2>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Member Application Lessons land here when the membership content
-              launches.
-            </p>
-          </section>
-          <section className="rounded-2xl border border-border bg-card p-6">
-            <h2 className="font-heading text-xl font-semibold">My Lists</h2>
-            <p className="mt-2 text-sm text-muted-foreground">
-              The grocery combo builder is coming soon. Your saved lists will
-              live here.
-            </p>
-          </section>
+      {tier ? (
+        <div className="mt-12 grid gap-6 lg:grid-cols-[1.55fr_1fr]">
+          {/* Main column */}
+          <div className="flex min-w-0 flex-col gap-6">
+            <section className="rounded-2xl border border-border bg-card p-6">
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                Ask anything, anytime
+              </p>
+              <h2 className="mt-1 font-heading text-2xl font-semibold">Sous</h2>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Your Protein Flip™ sous chef, trained on Chef Henry&apos;s
+                recipes and method.
+              </p>
+              <SousChat capNote={capNote} />
+            </section>
+
+            <section className="rounded-2xl border border-border bg-card p-6">
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                This month&apos;s application lesson
+              </p>
+              <h2 className="mt-1 font-heading text-xl font-semibold">
+                Coming with launch
+              </h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Chef Henry&apos;s first Member Application Lesson lands here.
+                Each month teaches one transferable cooking decision you can
+                use across your whole kitchen.
+              </p>
+            </section>
+
+            {tier === "kitchen" && (
+              <section className="rounded-2xl border border-dashed border-border bg-secondary/50 p-6">
+                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                  Protein Flip™ Community
+                </p>
+                <h2 className="mt-1 font-heading text-xl font-semibold">
+                  Join the conversation
+                </h2>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Recipe Makeovers, seasonal features, and a private community
+                  cooking alongside you. Included with Community membership.
+                </p>
+              </section>
+            )}
+
+            {(tier === "community" || tier === "chefs_table") && (
+              <section className="rounded-2xl border border-border bg-card p-6">
+                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                  Protein Flip™ Community
+                </p>
+                <h2 className="mt-1 font-heading text-xl font-semibold">
+                  Your community
+                </h2>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  The private Protein Flip™ group is where members share meals,
+                  swaps, and questions.
+                </p>
+                <a
+                  href="https://www.facebook.com/groups/proteinflipcommunity"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-4 inline-block rounded-full border border-border px-5 py-2 text-sm font-medium text-primary transition-colors hover:bg-secondary"
+                >
+                  Open the community
+                </a>
+              </section>
+            )}
+          </div>
+
+          {/* Sidebar */}
+          <div className="flex min-w-0 flex-col gap-6">
+            <section className="rounded-2xl border border-border bg-card p-6">
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                Grocery combo builder
+              </p>
+              <h2 className="mt-1 font-heading text-xl font-semibold">
+                My Lists
+              </h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Pick your ingredients, get every recipe that shares them, plus
+                one combined grocery list. Coming soon to your membership.
+              </p>
+            </section>
+
+            <section className="rounded-2xl border border-border bg-card p-6">
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                Your membership
+              </p>
+              <div className="mt-3 space-y-2 text-sm">
+                <p>{tier ? TIER_NAMES[tier] : ""}</p>
+                <p className="text-muted-foreground">
+                  Manage billing, upgrades, and cancellation from the billing
+                  portal (coming with launch).
+                </p>
+              </div>
+            </section>
+          </div>
         </div>
       ) : (
         <div className="mt-12 rounded-2xl border border-border bg-card p-8">
