@@ -12,6 +12,7 @@ interface TierDef {
   price: string;
   cadence: string;
   annual?: string;
+  annualHref?: string;
   tagline: string;
   features: string[];
   cta: { label: string; href: string };
@@ -32,7 +33,11 @@ const TIERS: TierDef[] = [
       "The growing lesson library and Kitchen Guides",
       "Grocery combo builder with saved lists (coming soon)",
     ],
-    cta: { label: "Join Protein Flip™ Kitchen", href: "#join" },
+    cta: {
+      label: "Join Protein Flip™ Kitchen",
+      href: "/api/checkout?plan=kitchen_monthly",
+    },
+    annualHref: "/api/checkout?plan=kitchen_annual",
   },
   {
     name: "Protein Flip™ Community",
@@ -46,7 +51,10 @@ const TIERS: TierDef[] = [
       "Monthly Recipe Makeover: submit a dish you love, watch Chef Henry rethink it",
       "This Season's Featured Ingredient, every other month",
     ],
-    cta: { label: "Join Protein Flip™ Community", href: "#join" },
+    cta: {
+      label: "Join Protein Flip™ Community",
+      href: "/api/checkout?plan=community_monthly",
+    },
     highlight: true,
   },
   {
@@ -133,9 +141,21 @@ export default function MembershipPage() {
                 {tier.cadence}
               </span>
             </p>
-            {tier.annual && (
-              <p className="mt-1 text-sm text-muted-foreground">{tier.annual}</p>
-            )}
+            {tier.annual &&
+              (tier.annualHref ? (
+                <p className="mt-1 text-sm text-muted-foreground">
+                  <Link
+                    href={tier.annualHref}
+                    className="underline underline-offset-4 hover:text-primary"
+                  >
+                    {tier.annual}
+                  </Link>
+                </p>
+              ) : (
+                <p className="mt-1 text-sm text-muted-foreground">
+                  {tier.annual}
+                </p>
+              ))}
             <ul className="mt-6 flex-1 space-y-3 text-sm">
               {tier.features.map((f) => (
                 <li key={f} className="flex gap-2.5">
