@@ -8,7 +8,7 @@ export async function GET(req: NextRequest) {
   const token = req.nextUrl.searchParams.get("token") ?? "";
   const email = verifyLoginToken(token);
   const baseUrl =
-    process.env.NODE_ENV === "production"
+    process.env.VERCEL_ENV === "production"
       ? (process.env.NEXT_PUBLIC_SITE_URL ?? req.nextUrl.origin)
       : req.nextUrl.origin;
 

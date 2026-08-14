@@ -25,10 +25,11 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid email" }, { status: 400 });
   }
 
-  // In development, always link back to the local server; the configured
-  // site URL points at production, where this branch may not be deployed.
+  // Only the real production deployment links to the configured site URL.
+  // Local dev and Vercel previews link back to their own origin, where this
+  // branch is actually running.
   const baseUrl =
-    process.env.NODE_ENV === "production"
+    process.env.VERCEL_ENV === "production"
       ? (process.env.NEXT_PUBLIC_SITE_URL ?? req.nextUrl.origin)
       : req.nextUrl.origin;
   const url = `${baseUrl}/api/auth/callback?token=${createLoginToken(email)}`;
