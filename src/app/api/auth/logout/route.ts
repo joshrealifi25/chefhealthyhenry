@@ -5,6 +5,9 @@ export const runtime = "nodejs";
 
 export async function POST(req: NextRequest) {
   await clearSession();
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? req.nextUrl.origin;
+  const baseUrl =
+    process.env.NODE_ENV === "production"
+      ? (process.env.NEXT_PUBLIC_SITE_URL ?? req.nextUrl.origin)
+      : req.nextUrl.origin;
   return NextResponse.redirect(`${baseUrl}/`, { status: 303 });
 }

@@ -13,23 +13,27 @@ const SUGGESTIONS = [
   "What's a good swap for heavy cream?",
 ];
 
-/** Renders assistant text, turning markdown links into real links. */
+/** Renders assistant text, handling markdown links and bold. */
 function AssistantText({ text }: { text: string }) {
-  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*)/g);
   return (
     <>
       {parts.map((part, i) => {
-        const m = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
-        if (m && (m[2].startsWith("/") || m[2].startsWith("https://"))) {
+        const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+        if (link && (link[2].startsWith("/") || link[2].startsWith("https://"))) {
           return (
             <a
               key={i}
-              href={m[2]}
+              href={link[2]}
               className="font-medium text-primary underline underline-offset-2"
             >
-              {m[1]}
+              {link[1]}
             </a>
           );
+        }
+        const bold = part.match(/^\*\*([^*]+)\*\*$/);
+        if (bold) {
+          return <strong key={i}>{bold[1]}</strong>;
         }
         return <span key={i}>{part}</span>;
       })}

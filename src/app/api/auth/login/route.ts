@@ -25,7 +25,12 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid email" }, { status: 400 });
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? req.nextUrl.origin;
+  // In development, always link back to the local server; the configured
+  // site URL points at production, where this branch may not be deployed.
+  const baseUrl =
+    process.env.NODE_ENV === "production"
+      ? (process.env.NEXT_PUBLIC_SITE_URL ?? req.nextUrl.origin)
+      : req.nextUrl.origin;
   const url = `${baseUrl}/api/auth/callback?token=${createLoginToken(email)}`;
 
   const resend = new Resend(resendKey);
