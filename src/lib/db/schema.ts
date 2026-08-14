@@ -57,6 +57,21 @@ export const memberships = pgTable("memberships", {
     .defaultNow(),
 });
 
+/** One row per member question to Sous, used for daily message caps. */
+export const sousMessages = pgTable(
+  "sous_messages",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => [index("sous_messages_user_idx").on(t.userId, t.createdAt)]
+);
+
 /** Saved grocery combos from the Tier 1 combo builder. */
 export const savedLists = pgTable(
   "saved_lists",
