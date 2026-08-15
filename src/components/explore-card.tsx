@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import {
@@ -15,9 +16,27 @@ export function ExploreCard({ card }: { card: ExploreCardData }) {
   const seeAllTag = ingredientTagForCard(card);
   const relatedPost = card.relatedPostSlug ? getPost(card.relatedPostSlug) : undefined;
   const article = hasArticle(card);
+  const heroHref = article ? `/explore/article/${card.slug}` : undefined;
 
   return (
     <article className="overflow-hidden rounded-2xl bg-card p-6 shadow-sm ring-1 ring-border/60 sm:p-7">
+      {card.hero && (
+        <Link
+          href={heroHref ?? "#"}
+          aria-hidden={!heroHref}
+          tabIndex={heroHref ? undefined : -1}
+          className={`-mx-6 -mt-6 mb-5 block aspect-square overflow-hidden sm:-mx-7 sm:-mt-7 ${heroHref ? "" : "pointer-events-none"}`}
+        >
+          <Image
+            src={card.hero}
+            alt={card.title}
+            width={800}
+            height={800}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            className="size-full object-cover"
+          />
+        </Link>
+      )}
       <div className="flex flex-wrap gap-2">
         {card.collections.map((name) => {
           const slug = collectionSlug(name);
