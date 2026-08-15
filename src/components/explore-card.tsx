@@ -5,6 +5,7 @@ import {
   collectionSlug,
   recipesForCard,
   ingredientTagForCard,
+  hasArticle,
 } from "@/lib/explore";
 import { getPost } from "@/lib/posts";
 import { YouTubeEmbed } from "@/components/youtube-embed";
@@ -13,6 +14,7 @@ export function ExploreCard({ card }: { card: ExploreCardData }) {
   const teaserRecipes = recipesForCard(card);
   const seeAllTag = ingredientTagForCard(card);
   const relatedPost = card.relatedPostSlug ? getPost(card.relatedPostSlug) : undefined;
+  const article = hasArticle(card);
 
   return (
     <article className="overflow-hidden rounded-2xl bg-card p-6 shadow-sm ring-1 ring-border/60 sm:p-7">
@@ -37,6 +39,15 @@ export function ExploreCard({ card }: { card: ExploreCardData }) {
       <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">
         {card.blurb}
       </p>
+
+      {article && (
+        <Link
+          href={`/explore/article/${card.slug}`}
+          className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+        >
+          Read the full guide <ArrowUpRight className="size-3.5" />
+        </Link>
+      )}
 
       {card.videoId && (
         <div className="mt-5">
