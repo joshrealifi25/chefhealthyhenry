@@ -26,6 +26,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const card = getExploreCard(slug);
   if (!card || !hasArticle(card)) return {};
+  const heroImage = card.articleHero ?? card.hero;
   return {
     title: card.title,
     description: card.blurb,
@@ -33,7 +34,7 @@ export async function generateMetadata({
       title: card.title,
       description: card.blurb,
       type: "article",
-      images: card.hero ? [card.hero] : undefined,
+      images: heroImage ? [heroImage] : undefined,
     },
   };
 }
@@ -50,6 +51,7 @@ export default async function ExploreArticlePage({
   const teaserRecipes = recipesForCard(card);
   const seeAllTag = ingredientTagForCard(card);
   const relatedPost = card.relatedPostSlug ? getPost(card.relatedPostSlug) : undefined;
+  const heroImage = card.articleHero ?? card.hero;
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
@@ -85,10 +87,10 @@ export default async function ExploreArticlePage({
         )}
       </header>
 
-      {card.hero && (
+      {heroImage && (
         <div className="relative mx-auto mt-8 aspect-square w-full max-w-[440px] overflow-hidden rounded-2xl shadow-md">
           <Image
-            src={card.hero}
+            src={heroImage}
             alt={card.title}
             fill
             priority
