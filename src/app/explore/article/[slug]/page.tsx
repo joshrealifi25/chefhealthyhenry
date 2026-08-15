@@ -86,13 +86,13 @@ export default async function ExploreArticlePage({
       </header>
 
       {card.hero && (
-        <div className="relative mt-8 aspect-square overflow-hidden rounded-2xl shadow-md">
+        <div className="relative mx-auto mt-8 aspect-square w-full max-w-[440px] overflow-hidden rounded-2xl shadow-md">
           <Image
             src={card.hero}
             alt={card.title}
             fill
             priority
-            sizes="(max-width: 768px) 100vw, 768px"
+            sizes="(max-width: 480px) 100vw, 440px"
             className="object-cover"
           />
         </div>
