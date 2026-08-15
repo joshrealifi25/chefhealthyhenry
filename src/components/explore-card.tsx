@@ -20,23 +20,6 @@ export function ExploreCard({ card }: { card: ExploreCardData }) {
 
   return (
     <article className="overflow-hidden rounded-2xl bg-card p-6 shadow-sm ring-1 ring-border/60 sm:p-7">
-      {card.hero && (
-        <Link
-          href={heroHref ?? "#"}
-          aria-hidden={!heroHref}
-          tabIndex={heroHref ? undefined : -1}
-          className={`-mx-6 -mt-6 mb-5 block aspect-square overflow-hidden sm:-mx-7 sm:-mt-7 ${heroHref ? "" : "pointer-events-none"}`}
-        >
-          <Image
-            src={card.hero}
-            alt={card.title}
-            width={800}
-            height={800}
-            sizes="(max-width: 640px) 100vw, 50vw"
-            className="size-full object-cover"
-          />
-        </Link>
-      )}
       <div className="flex flex-wrap gap-2">
         {card.collections.map((name) => {
           const slug = collectionSlug(name);
@@ -52,12 +35,32 @@ export function ExploreCard({ card }: { card: ExploreCardData }) {
         })}
       </div>
 
-      <h3 className="mt-3 font-heading text-xl font-semibold leading-snug sm:text-2xl">
-        {card.title}
-      </h3>
-      <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">
-        {card.blurb}
-      </p>
+      <div className="mt-3 flex items-start gap-4">
+        {card.hero && (
+          <Link
+            href={heroHref ?? "#"}
+            aria-hidden={!heroHref}
+            tabIndex={heroHref ? undefined : -1}
+            className={`relative size-16 shrink-0 overflow-hidden rounded-xl sm:size-20 ${heroHref ? "" : "pointer-events-none"}`}
+          >
+            <Image
+              src={card.hero}
+              alt={card.title}
+              fill
+              sizes="80px"
+              className="object-cover"
+            />
+          </Link>
+        )}
+        <div className="min-w-0 flex-1">
+          <h3 className="font-heading text-xl font-semibold leading-snug sm:text-2xl">
+            {card.title}
+          </h3>
+          <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">
+            {card.blurb}
+          </p>
+        </div>
+      </div>
 
       {article && (
         <Link
