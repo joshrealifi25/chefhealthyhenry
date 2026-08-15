@@ -23,6 +23,8 @@ export interface ExploreCard {
   blurb: string;
   /** Publish date, used to sort /explore newest-first. */
   date: string;
+  /** Optional cover image shown on the teaser card and the article page. */
+  hero?: string | null;
   videoId: string | null;
   /**
    * Manual curated list of recipe slugs. Leave empty to auto-derive: recipes

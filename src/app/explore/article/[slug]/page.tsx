@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
@@ -28,6 +29,12 @@ export async function generateMetadata({
   return {
     title: card.title,
     description: card.blurb,
+    openGraph: {
+      title: card.title,
+      description: card.blurb,
+      type: "article",
+      images: card.hero ? [card.hero] : undefined,
+    },
   };
 }
 
@@ -77,6 +84,19 @@ export default async function ExploreArticlePage({
           </p>
         )}
       </header>
+
+      {card.hero && (
+        <div className="relative mt-8 aspect-square overflow-hidden rounded-2xl shadow-md">
+          <Image
+            src={card.hero}
+            alt={card.title}
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 768px"
+            className="object-cover"
+          />
+        </div>
+      )}
 
       <div className="mt-8">
         <ContentBlocks blocks={card.blocks ?? []} />
