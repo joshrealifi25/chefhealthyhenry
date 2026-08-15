@@ -1,14 +1,8 @@
 import postsData from "@/data/posts.json";
+import type { ContentBlock } from "@/lib/content-blocks";
 
-export interface PostBlock {
-  type: "paragraph" | "heading" | "list" | "quote" | "image";
-  html?: string;
-  text?: string;
-  level?: number;
-  ordered?: boolean;
-  items?: string[];
-  src?: string;
-}
+/** Alias kept so existing `PostBlock` imports keep working. */
+export type PostBlock = ContentBlock;
 
 export interface Post {
   slug: string;

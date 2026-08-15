@@ -1,9 +1,18 @@
 import exploreData from "@/data/explore.json";
 import { recipes, recipesByIngredient, ingredientFromSlug, type Recipe } from "@/lib/recipes";
+import type { ContentBlock } from "@/lib/content-blocks";
 
 export interface ProductLink {
   name: string;
   url: string;
+}
+
+/** Closing call-to-action shown at the end of a long-form article page. */
+export interface ExploreCta {
+  heading: string;
+  text: string;
+  label: string;
+  href: string;
 }
 
 export interface ExploreCard {
@@ -24,6 +33,17 @@ export interface ExploreCard {
   recipeSlugs: string[];
   productLinks: ProductLink[];
   relatedPostSlug: string | null;
+  /** Optional italic tagline shown under the title on the article page. */
+  subtitle?: string;
+  /**
+   * Optional full article body. When present, the card gets a "Read the
+   * full guide" link to /explore/article/[slug], a dedicated detail page
+   * generated for it, and it becomes eligible for that page's sitemap entry.
+   * Cards without blocks stay teaser-only, same as before this field existed.
+   */
+  blocks?: ContentBlock[];
+  /** Optional closing CTA rendered at the end of the article page. */
+  cta?: ExploreCta;
 }
 
 export const exploreCards = [...(exploreData as ExploreCard[])].sort(
@@ -32,6 +52,12 @@ export const exploreCards = [...(exploreData as ExploreCard[])].sort(
 
 export function getExploreCard(slug: string): ExploreCard | undefined {
   return exploreCards.find((c) => c.slug === slug);
+}
+
+/** True when this card has a full article body and should get its own
+ * /explore/article/[slug] detail page. */
+export function hasArticle(card: ExploreCard): boolean {
+  return Boolean(card.blocks && card.blocks.length > 0);
 }
 
 /** The six fixed Explore collections. Not derived from content, since the
