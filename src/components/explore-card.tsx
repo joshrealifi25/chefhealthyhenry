@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import {
@@ -5,6 +6,7 @@ import {
   collectionSlug,
   recipesForCard,
   ingredientTagForCard,
+  hasArticle,
 } from "@/lib/explore";
 import { getPost } from "@/lib/posts";
 import { YouTubeEmbed } from "@/components/youtube-embed";
@@ -13,6 +15,8 @@ export function ExploreCard({ card }: { card: ExploreCardData }) {
   const teaserRecipes = recipesForCard(card);
   const seeAllTag = ingredientTagForCard(card);
   const relatedPost = card.relatedPostSlug ? getPost(card.relatedPostSlug) : undefined;
+  const article = hasArticle(card);
+  const heroHref = article ? `/explore/article/${card.slug}` : undefined;
 
   return (
     <article className="overflow-hidden rounded-2xl bg-card p-6 shadow-sm ring-1 ring-border/60 sm:p-7">
@@ -31,12 +35,41 @@ export function ExploreCard({ card }: { card: ExploreCardData }) {
         })}
       </div>
 
-      <h3 className="mt-3 font-heading text-xl font-semibold leading-snug sm:text-2xl">
-        {card.title}
-      </h3>
-      <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">
-        {card.blurb}
-      </p>
+      <div className="mt-3 flex items-start gap-4">
+        {card.hero && (
+          <Link
+            href={heroHref ?? "#"}
+            aria-hidden={!heroHref}
+            tabIndex={heroHref ? undefined : -1}
+            className={`relative size-16 shrink-0 overflow-hidden rounded-xl sm:size-20 ${heroHref ? "" : "pointer-events-none"}`}
+          >
+            <Image
+              src={card.hero}
+              alt={card.title}
+              fill
+              sizes="80px"
+              className="object-cover"
+            />
+          </Link>
+        )}
+        <div className="min-w-0 flex-1">
+          <h3 className="font-heading text-xl font-semibold leading-snug sm:text-2xl">
+            {card.title}
+          </h3>
+          <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">
+            {card.blurb}
+          </p>
+        </div>
+      </div>
+
+      {article && (
+        <Link
+          href={`/explore/article/${card.slug}`}
+          className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+        >
+          Read the full guide <ArrowUpRight className="size-3.5" />
+        </Link>
+      )}
 
       {card.videoId && (
         <div className="mt-5">
