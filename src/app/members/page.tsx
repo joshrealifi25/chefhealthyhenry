@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import { getMember } from "@/lib/auth";
 import { TIER_NAMES } from "@/lib/membership";
 import { SOUS_DAILY_CAP } from "@/lib/sous";
+import { currentLesson } from "@/lib/lessons";
 import { SousChat } from "@/components/sous-chat";
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default async function MembersPage() {
   const capNote = Number.isFinite(cap)
     ? `Up to ${cap} questions a day with your membership.`
     : "Unlimited questions with your membership.";
+  const lesson = currentLesson();
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
@@ -66,14 +68,38 @@ export default async function MembersPage() {
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
                 This month&apos;s application lesson
               </p>
-              <h2 className="mt-1 font-heading text-xl font-semibold">
-                Coming with launch
-              </h2>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Chef Henry&apos;s first Member Application Lesson lands here.
-                Each month teaches one transferable cooking decision you can
-                use across your whole kitchen.
-              </p>
+              {lesson ? (
+                <>
+                  <h2 className="mt-1 font-heading text-xl font-semibold">
+                    <Link
+                      href={`/members/library/lessons/${lesson.slug}`}
+                      className="hover:text-primary"
+                    >
+                      {lesson.title}
+                    </Link>
+                  </h2>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    {lesson.blurb}
+                  </p>
+                  <Link
+                    href={`/members/library/lessons/${lesson.slug}`}
+                    className="mt-4 inline-block rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+                  >
+                    Read the lesson
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <h2 className="mt-1 font-heading text-xl font-semibold">
+                    Coming with launch
+                  </h2>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Chef Henry&apos;s first Member Application Lesson lands
+                    here. Each month teaches one transferable cooking decision
+                    you can use across your whole kitchen.
+                  </p>
+                </>
+              )}
             </section>
 
             {tier === "kitchen" && (
@@ -128,6 +154,25 @@ export default async function MembersPage() {
                 Pick your ingredients, get every recipe that shares them, plus
                 one combined grocery list. Coming soon to your membership.
               </p>
+            </section>
+
+            <section className="rounded-2xl border border-border bg-card p-6">
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                Member library
+              </p>
+              <h2 className="mt-1 font-heading text-xl font-semibold">
+                Lessons and Kitchen Guides
+              </h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Every Application Lesson and one-page Kitchen Guide, browsable
+                by category.
+              </p>
+              <Link
+                href="/members/library"
+                className="mt-4 inline-block rounded-full border border-border px-5 py-2 text-sm font-medium text-primary transition-colors hover:bg-secondary"
+              >
+                Open the library
+              </Link>
             </section>
 
             <section className="rounded-2xl border border-border bg-card p-6">

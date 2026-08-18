@@ -1,0 +1,37 @@
+[
+  {
+    "slug": "what-to-change-what-to-protect",
+    "title": "What to Change, What to Protect",
+    "categories": ["Kitchen Guides", "Recipe Applications", "Grocery Decisions"],
+    "blurb": "A one-page reference for deciding which parts of a recipe are safe to adapt and which ones carry the dish's identity.",
+    "date": "2026-09-01",
+    "relatedLessonSlugs": [
+      "whats-flexible-and-whats-protected",
+      "when-convenience-products-make-sense"
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Placeholder Kitchen Guide. This one intentionally relates to two lessons, which is the test case for the many-to-many guide and lesson relationship in the navigation spec."
+      },
+      { "type": "heading", "level": 2, "text": "Usually safe to change" },
+      {
+        "type": "list",
+        "items": [
+          "The protein, when the cooking method stays similar.",
+          "Vegetables that play a supporting role.",
+          "Garnishes and finishing herbs."
+        ]
+      },
+      { "type": "heading", "level": 2, "text": "Protect these" },
+      {
+        "type": "list",
+        "items": [
+          "The ingredient the dish is named for.",
+          "The acid or fat that balances the whole plate.",
+          "Anything tied to the memory the dish carries."
+        ]
+      }
+    ]
+  }
+]
