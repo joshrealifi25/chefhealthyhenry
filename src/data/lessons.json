@@ -1,0 +1,56 @@
+[
+  {
+    "slug": "whats-flexible-and-whats-protected",
+    "title": "What's Flexible and What's Protected",
+    "categories": ["Recipe Applications", "Protein Flip™ Foundation Applications"],
+    "blurb": "Every recipe has parts you can move and parts that hold the dish together. Learning to tell them apart is the difference between adapting a recipe and breaking it.",
+    "date": "2026-09-01",
+    "hero": null,
+    "subtitle": "Placeholder lesson. Chef Henry's final text replaces this before launch.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "This is a placeholder Application Lesson so the member library, navigation, and Kitchen Guide links can be built and tested before Chef Henry's launch content is written. The structure here matches what a finished lesson looks like."
+      },
+      { "type": "heading", "level": 2, "text": "The decision this lesson teaches" },
+      {
+        "type": "paragraph",
+        "html": "A short statement of the judgment call a member will be able to make after reading."
+      },
+      { "type": "heading", "level": 2, "text": "Why it works" },
+      {
+        "type": "paragraph",
+        "html": "The reasoning: what flavor, texture, moisture, or nutrition is doing in the dish, and why the change holds up."
+      },
+      { "type": "heading", "level": 2, "text": "Try it this week" },
+      {
+        "type": "list",
+        "items": [
+          "One concrete way to apply the idea to a recipe the member already cooks.",
+          "One way to apply it while grocery shopping.",
+          "One way to notice whether it worked."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "when-convenience-products-make-sense",
+    "title": "When Convenience Products Make Sense",
+    "categories": ["Grocery Decisions", "Kitchen Skills Applications"],
+    "blurb": "Not every shortcut costs you something. Here's how to tell which convenience products earn their place and which ones quietly flatten a dish.",
+    "date": "2026-08-01",
+    "hero": null,
+    "subtitle": "Placeholder lesson. Chef Henry's final text replaces this before launch.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Placeholder body for the second seed lesson, used to verify multi-category tagging and the many-to-many relationship between lessons and Kitchen Guides."
+      },
+      { "type": "heading", "level": 2, "text": "The decision this lesson teaches" },
+      {
+        "type": "paragraph",
+        "html": "A short statement of the judgment call a member will be able to make after reading."
+      }
+    ]
+  }
+]
