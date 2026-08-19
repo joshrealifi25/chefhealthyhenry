@@ -51,6 +51,8 @@ temp/
 # Nested separate project
 Baker-Spooner/
 .env*
+# ...but the documented list of variable names is committed on purpose.
+!.env.example
 
 # Local cookbook source files (uploaded to private Blob, never commit)
 Cookbook PDFS/
