@@ -4,9 +4,24 @@ import type { ContentBlock } from "@/lib/content-blocks";
 
 /**
  * Tier 1 member library: Application Lessons and Kitchen Guides.
- * Per Member_Library_Navigation spec, both carry multiple category tags, and
- * a guide relates to many lessons (not one parent).
+ * Shapes follow Tier1_Protein_Flip_Kitchen_Spec_Final.md (lesson structure,
+ * library categories) and Kitchen_Guides_Presentation_Spec.md (guide pages,
+ * callout cards, many-to-many lesson links).
  */
+
+/** A link out to free content, another lesson, or a companion offer. */
+export interface RelatedLink {
+  label: string;
+  href: string;
+}
+
+/** Optional closing offer (Tier 2, a Cooking Course) shown after a lesson. */
+export interface LessonCta {
+  heading: string;
+  text: string;
+  label: string;
+  href: string;
+}
 
 export interface Lesson {
   slug: string;
@@ -18,6 +33,17 @@ export interface Lesson {
   date: string;
   hero?: string | null;
   subtitle?: string;
+  /**
+   * The free content that introduced this subject (spec §3.1): the recipe,
+   * Explore page, or Journal article the lesson builds on.
+   */
+  fromFreeContent?: RelatedLink[];
+  /** Focused demonstration, only when seeing the technique matters (§3.6). */
+  videoId?: string | null;
+  /** Other Tier 1 lessons to read next (§3.10). */
+  relatedLessonSlugs?: string[];
+  /** Optional companion Cooking Course or Tier 2 offer (§5). */
+  cta?: LessonCta;
   blocks: ContentBlock[];
 }
 
@@ -32,7 +58,7 @@ export interface Guide {
   blocks: ContentBlock[];
 }
 
-/** The nine Tier 1 library categories, in the spec's order. */
+/** The nine Tier 1 library categories, per spec §6. */
 export const LIBRARY_CATEGORIES: { name: string; slug: string }[] = [
   { name: "Latest", slug: "latest" },
   { name: "Recipe Applications", slug: "recipe-applications" },
@@ -90,6 +116,13 @@ export function lessonsForGuide(guide: Guide): Lesson[] {
   return guide.relatedLessonSlugs
     .map((slug) => getLesson(slug))
     .filter((l): l is Lesson => Boolean(l));
+}
+
+/** Other Tier 1 lessons this lesson points forward to. */
+export function relatedLessons(lesson: Lesson): Lesson[] {
+  return (lesson.relatedLessonSlugs ?? [])
+    .map((slug) => getLesson(slug))
+    .filter((l): l is Lesson => Boolean(l) && l!.slug !== lesson.slug);
 }
 
 /** A library card is either a lesson or a guide; both browse in one grid. */
