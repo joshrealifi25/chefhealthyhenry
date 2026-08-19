@@ -4,7 +4,7 @@
 
 **Builds on:** What Is a Protein-First Plate?, [Chicken Tinga Tostadas](../../src/data/recipes.json) (see the `chicken-tinga-tostadas` entry)
 
-**Companion Kitchen Guide:** What to Change, What to Protect
+**Companion Kitchen Guide:** [What to Change, What to Protect](what-to-change-what-to-protect.md)
 
 ---
 
