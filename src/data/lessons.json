@@ -7,28 +7,58 @@
     "date": "2026-09-01",
     "hero": null,
     "subtitle": "Placeholder lesson. Chef Henry's final text replaces this before launch.",
+    "fromFreeContent": [
+      { "label": "What Is a Protein-First Plate?", "href": "/explore/article/what-is-a-protein-first-plate" },
+      { "label": "Chicken Tinga Tostadas", "href": "/recipes/chicken-tinga-tostadas" }
+    ],
+    "videoId": null,
+    "relatedLessonSlugs": ["when-convenience-products-make-sense"],
     "blocks": [
       {
         "type": "paragraph",
-        "html": "This is a placeholder Application Lesson so the member library, navigation, and Kitchen Guide links can be built and tested before Chef Henry's launch content is written. The structure here matches what a finished lesson looks like."
+        "html": "This placeholder follows the standard Tier 1 lesson structure so the page template, navigation, and Kitchen Guide links can be built and tested before Chef Henry's launch content is written. Each heading below is one section of that structure. Not every lesson needs every section."
       },
-      { "type": "heading", "level": 2, "text": "The decision this lesson teaches" },
+      { "type": "heading", "level": 2, "text": "The application question" },
       {
         "type": "paragraph",
-        "html": "A short statement of the judgment call a member will be able to make after reading."
+        "html": "The single decision this lesson helps a member make on their own, stated plainly."
       },
-      { "type": "heading", "level": 2, "text": "Why it works" },
-      {
-        "type": "paragraph",
-        "html": "The reasoning: what flavor, texture, moisture, or nutrition is doing in the dish, and why the change holds up."
-      },
-      { "type": "heading", "level": 2, "text": "Try it this week" },
+      { "type": "heading", "level": 2, "text": "The variables that matter" },
       {
         "type": "list",
         "items": [
-          "One concrete way to apply the idea to a recipe the member already cooks.",
-          "One way to apply it while grocery shopping.",
-          "One way to notice whether it worked."
+          "Flavor: what the ingredient contributes, and what disappears without it.",
+          "Texture and moisture: what changes in the pan if it is swapped.",
+          "Cost and availability: when the substitution is worth making at all."
+        ]
+      },
+      { "type": "heading", "level": 2, "text": "The culinary reasoning" },
+      {
+        "type": "paragraph",
+        "html": "Why Chef Henry makes this call the way he does, so the member can make the same call in a dish he has never written about."
+      },
+      { "type": "heading", "level": 2, "text": "Applying it across several dishes" },
+      {
+        "type": "paragraph",
+        "html": "The same decision shown in two or three different contexts, which is what turns a rule into judgment."
+      },
+      { "type": "heading", "level": 2, "text": "Substitutions and their consequences" },
+      {
+        "type": "paragraph",
+        "html": "Each swap named alongside what it actually does to the finished dish, not just listed as an equivalent."
+      },
+      { "type": "heading", "level": 2, "text": "The Protein Flip™ application" },
+      {
+        "type": "paragraph",
+        "html": "How the decision changes when the goal is a nutritionally dispersed plate rather than one dominant protein."
+      },
+      { "type": "heading", "level": 2, "text": "Key takeaways" },
+      {
+        "type": "list",
+        "items": [
+          "One sentence a member could repeat to themselves at the stove.",
+          "One thing to try this week.",
+          "One sign the change worked."
         ]
       }
     ]
@@ -41,15 +71,26 @@
     "date": "2026-08-01",
     "hero": null,
     "subtitle": "Placeholder lesson. Chef Henry's final text replaces this before launch.",
+    "fromFreeContent": [
+      { "label": "What Is a Protein-First Plate?", "href": "/explore/article/what-is-a-protein-first-plate" }
+    ],
+    "videoId": null,
+    "relatedLessonSlugs": ["whats-flexible-and-whats-protected"],
+    "cta": {
+      "heading": "Want the full grocery system?",
+      "text": "This lesson stands on its own. When you want the seasonal version, with a featured ingredient every other month and the community working through it alongside you, Protein Flip™ Community adds it.",
+      "label": "See Protein Flip™ Community",
+      "href": "/membership"
+    },
     "blocks": [
       {
         "type": "paragraph",
-        "html": "Placeholder body for the second seed lesson, used to verify multi-category tagging and the many-to-many relationship between lessons and Kitchen Guides."
+        "html": "Second placeholder lesson, used to verify multi-category tagging, the many-to-many relationship with Kitchen Guides, and the optional companion offer at the end of a lesson."
       },
-      { "type": "heading", "level": 2, "text": "The decision this lesson teaches" },
+      { "type": "heading", "level": 2, "text": "The application question" },
       {
         "type": "paragraph",
-        "html": "A short statement of the judgment call a member will be able to make after reading."
+        "html": "Which convenience products save real time without costing the dish anything a member would notice."
       }
     ]
   }
