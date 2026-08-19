@@ -2,7 +2,11 @@
   {
     "slug": "what-to-change-what-to-protect",
     "title": "What to Change, What to Protect",
-    "categories": ["Kitchen Guides", "Recipe Applications", "Grocery Decisions"],
+    "categories": [
+      "Kitchen Guides",
+      "Recipe Applications",
+      "Grocery Decisions"
+    ],
     "blurb": "A one-page reference for deciding which parts of a recipe are safe to adapt and which ones carry the dish's identity.",
     "date": "2026-09-01",
     "relatedLessonSlugs": [
@@ -11,26 +15,106 @@
     ],
     "blocks": [
       {
+        "type": "heading",
+        "level": 2,
+        "text": "The two questions to ask before any swap"
+      },
+      {
+        "type": "list",
+        "ordered": true,
+        "items": [
+          "Does this ingredient define what the dish is, or does it fill a role the dish needs? If it defines the dish, it is protected. If it fills a role, it is flexible.",
+          "If this dish comes from a culinary tradition, does my swap stay within it? Substitute within the tradition first. Cross out of it only when you have a real reason to."
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Protected ingredients"
+      },
+      {
         "type": "paragraph",
-        "html": "Placeholder Kitchen Guide. This one intentionally relates to two lessons, which is the test case for the many-to-many guide and lesson relationship in the navigation spec."
+        "html": "These carry the dish's identity. Swap them and you are making something else."
       },
-      { "type": "heading", "level": 2, "text": "Usually safe to change" },
       {
         "type": "list",
         "items": [
-          "The protein, when the cooking method stays similar.",
-          "Vegetables that play a supporting role.",
-          "Garnishes and finishing herbs."
+          "Signature spices and chiles that give the dish its characteristic flavor profile",
+          "The cooking method that creates the sauce, base, or texture the dish is known for",
+          "Traditional aromatics that define the flavor foundation",
+          "The format the dish is served in, when that format is part of what the dish is (corn tostadas in tinga, for example, not flour)"
         ]
       },
-      { "type": "heading", "level": 2, "text": "Protect these" },
+      {
+        "type": "paragraph",
+        "html": "When a dish has cultural roots: the protected ingredients often include things that seem substitutable on the surface. Mexican oregano and Italian oregano are not the same. Chipotle in adobo and smoked paprika are not the same. Cotija and feta are not the same. Know what you are working with before you decide something is optional."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Flexible ingredients"
+      },
+      {
+        "type": "paragraph",
+        "html": "These fill a role. Other ingredients can do the same job without changing what the dish is."
+      },
       {
         "type": "list",
         "items": [
-          "The ingredient the dish is named for.",
-          "The acid or fat that balances the whole plate.",
-          "Anything tied to the memory the dish carries."
+          "The protein source, when the dish is not defined by a specific one",
+          "The heat level within a chile family (habanero, serrano, jalapeño can flex depending on what you have and how much heat you want)",
+          "The quantity of an ingredient when the dish does not depend on a precise ratio",
+          "Finishing toppings that add freshness, crunch, or brightness",
+          "Add-ins that extend the dish without displacing what defines it"
         ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "The Protein Flip™ approach to this"
+      },
+      {
+        "type": "paragraph",
+        "html": "The goal is never to subtract what makes a dish worth cooking. The goal is to add better things around it."
+      },
+      {
+        "type": "paragraph",
+        "html": "Lentils can join the chicken. Greek yogurt can join the crema. Black beans can extend the plate. None of these moves require removing the ingredients that make the dish what it is."
+      },
+      {
+        "type": "paragraph",
+        "html": "If a swap requires taking away a protected ingredient to work, it is not a Protein Flip™ swap. It is a different dish."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "A quick test for any substitution"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Does removing this change what the dish is called?</strong> Yes: protected. No: likely flexible.",
+          "<strong>Does removing this change a flavor no other ingredient provides?</strong> Yes: protected. No: likely flexible.",
+          "<strong>Is this ingredient from a specific culinary tradition?</strong> Yes: substitute within that tradition first. No: open to broader swaps.",
+          "<strong>Does my swap add something without taking away the original?</strong> Yes: a good Protein Flip™ move. No: reconsider."
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Applied to Chicken Tinga Tostadas"
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>Protected:</strong> chipotle peppers in adobo, roasted tomatoes, Mexican oregano, black garlic, corn tostadas, Cotija cheese, the roasting step that builds the sauce."
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>Flexible:</strong> the chile pepper for heat (habanero, serrano, or jalapeño), the chicken preparation (rotisserie or braised), the amount of lentils, the ratio of crema to Greek yogurt in the avocado crema."
+      },
+      {
+        "type": "paragraph",
+        "html": "The Protein Flip™ additions in this recipe: lentils join the chicken filling. Greek yogurt joins the Mexican crema. Black beans and fresh vegetables extend the plate. The tinga stays tinga."
       }
     ]
   }
