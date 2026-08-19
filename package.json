@@ -32,7 +32,9 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "check": "npm run lint && npm run typecheck && npm run build"
+    "check:content": "node scripts/check-content.mjs",
+    "check:style": "node scripts/check-style.mjs",
+    "check": "npm run lint && npm run typecheck && npm run check:content && npm run check:style && npm run build"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",

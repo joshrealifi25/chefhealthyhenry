@@ -1,0 +1,58 @@
+name: CI
+
+# Runs on the MERGE RESULT, not the branch head.
+#
+# This is the gap Vercel previews leave open. A preview builds the branch as it
+# forked, so a branch that went green days ago can still break main if main has
+# moved since. GitHub checks out the simulated merge commit for `pull_request`,
+# so a green check here means "main will be green after this merges".
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+# A new push supersedes the run already in flight for that branch.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Lint, types, content, build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history so the style check can diff against the base branch.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      # Catches what a build cannot: duplicate slugs, images that are not in
+      # public/, links to pages that do not exist, recipes missing ingredients
+      # or directions, and env vars the code reads but nobody documented.
+      - name: Content integrity
+        run: npm run check:content
+
+      # House writing rules from CLAUDE.md, on changed lines only.
+      - name: Writing style
+        if: github.event_name == 'pull_request'
+        run: npm run check:style -- --base origin/${{ github.base_ref }}
+
+      - name: Build
+        run: npm run build
