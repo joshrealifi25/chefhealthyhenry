@@ -4,18 +4,38 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import type { IngredientTag, GroceryItem } from "@/lib/ingredients";
 
-const CART_KEY = "chh-combo-cart";
+const TRIP_KEY = "chh-combo-trip";
 
-/** The grocery list only renders after the cook picks recipes, so it is never
- *  part of the server-rendered markup and this cannot cause a hydration gap. */
-function readCart(): string[] {
-  if (typeof window === "undefined") return [];
+interface Trip {
+  selected: string[];
+  chosen: string[];
+  inCart: string[];
+}
+
+const EMPTY_TRIP: Trip = { selected: [], chosen: [], inCart: [] };
+
+/**
+ * The whole trip is restored together: the ingredients, the meals chosen, and
+ * what is already in the cart. Persisting only the ticks would leave a shopper
+ * who reloads mid-aisle with an empty page and meaningless checkmarks.
+ *
+ * Restoring happens after mount, never during the server render, so the
+ * markup the server produced and the markup React hydrates always match.
+ */
+function readTrip(): Trip {
+  if (typeof window === "undefined") return EMPTY_TRIP;
   try {
-    const saved = window.localStorage.getItem(CART_KEY);
-    return saved ? (JSON.parse(saved) as string[]) : [];
+    const saved = window.localStorage.getItem(TRIP_KEY);
+    if (!saved) return EMPTY_TRIP;
+    const t = JSON.parse(saved) as Partial<Trip>;
+    return {
+      selected: Array.isArray(t.selected) ? t.selected : [],
+      chosen: Array.isArray(t.chosen) ? t.chosen : [],
+      inCart: Array.isArray(t.inCart) ? t.inCart : [],
+    };
   } catch {
-    // Private browsing or blocked storage: ticking still works this session.
-    return [];
+    // Private browsing or blocked storage: the tool still works this session.
+    return EMPTY_TRIP;
   }
 }
 
@@ -37,22 +57,28 @@ interface Props {
 }
 
 export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props) {
-  const [selected, setSelected] = useState<string[]>(initial);
+  const restored = initial.length > 0 ? EMPTY_TRIP : readTrip();
+  const [selected, setSelected] = useState<string[]>(
+    initial.length > 0 ? initial : restored.selected
+  );
   const [query, setQuery] = useState("");
   const [view, setView] = useState<"full" | "byRecipe">("full");
   /** Recipe slugs the cook actually plans to make. */
-  const [chosen, setChosen] = useState<string[]>([]);
+  const [chosen, setChosen] = useState<string[]>(restored.chosen);
   /** Ingredients already in the cart. Kept in localStorage so a phone that
    *  reloads mid-aisle does not lose the trip. */
-  const [inCart, setInCart] = useState<string[]>(readCart);
+  const [inCart, setInCart] = useState<string[]>(restored.inCart);
 
   useEffect(() => {
     try {
-      window.localStorage.setItem(CART_KEY, JSON.stringify(inCart));
+      window.localStorage.setItem(
+        TRIP_KEY,
+        JSON.stringify({ selected, chosen, inCart })
+      );
     } catch {
       // Ignore: persistence is a convenience, not a requirement.
     }
-  }, [inCart]);
+  }, [selected, chosen, inCart]);
 
   const matches = useMemo(
     () =>
@@ -172,7 +198,11 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
               </span>
             ))}
             <button
-              onClick={() => setSelected([])}
+              onClick={() => {
+                setSelected([]);
+                setChosen([]);
+                setInCart([]);
+              }}
               className="ml-auto text-xs text-muted-foreground underline underline-offset-4 hover:text-primary"
             >
               Start over
