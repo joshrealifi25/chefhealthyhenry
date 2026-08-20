@@ -5,6 +5,8 @@ import { getMember } from "@/lib/auth";
 import { TIER_NAMES } from "@/lib/membership";
 import { SOUS_DAILY_CAP } from "@/lib/sous";
 import { currentLesson } from "@/lib/lessons";
+import { db, savedLists } from "@/lib/db";
+import { desc, eq } from "drizzle-orm";
 import { SousChat } from "@/components/sous-chat";
 
 export const metadata: Metadata = {
@@ -25,6 +27,14 @@ export default async function MembersPage() {
     ? `Up to ${cap} questions a day with your membership.`
     : "Unlimited questions with your membership.";
   const lesson = currentLesson();
+  const lists = tier
+    ? await db()
+        .select({ id: savedLists.id, name: savedLists.name })
+        .from(savedLists)
+        .where(eq(savedLists.userId, member.id))
+        .orderBy(desc(savedLists.updatedAt))
+        .limit(3)
+    : [];
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
@@ -152,8 +162,28 @@ export default async function MembersPage() {
               </h2>
               <p className="mt-2 text-sm text-muted-foreground">
                 Pick your ingredients, get every recipe that shares them, plus
-                one combined grocery list. Coming soon to your membership.
+                one combined grocery list.
               </p>
+              {lists.length > 0 && (
+                <ul className="mt-4 space-y-1.5 text-sm">
+                  {lists.map((l) => (
+                    <li key={l.id}>
+                      <Link
+                        href="/members/combos"
+                        className="text-primary hover:underline"
+                      >
+                        {l.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <Link
+                href="/members/combos"
+                className="mt-4 inline-block rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+              >
+                {lists.length > 0 ? "Build a new list" : "Build your first list"}
+              </Link>
             </section>
 
             <section className="rounded-2xl border border-border bg-card p-6">

@@ -1,0 +1,9284 @@
+{
+ "_comment": "Canonical shopping-ingredient tags per recipe, reviewed and corrected by Chef Henry. Staples (salt, oils, dried spices) are deliberately excluded: they match nearly every recipe and add noise to combo matching. recipeTags drives matching; recipeLines holds the original recipe wording for each tag so grocery lists can show real quantities. Regenerate from the ingredient review workbook, do not hand-edit. Em dashes from recipe wording are normalized to commas to match the house writing rules.",
+ "ingredients": [
+  {
+   "name": "garlic",
+   "slug": "garlic",
+   "recipeCount": 119
+  },
+  {
+   "name": "lemon",
+   "slug": "lemon",
+   "recipeCount": 61
+  },
+  {
+   "name": "onion",
+   "slug": "onion",
+   "recipeCount": 45
+  },
+  {
+   "name": "tomato",
+   "slug": "tomato",
+   "recipeCount": 43
+  },
+  {
+   "name": "parsley",
+   "slug": "parsley",
+   "recipeCount": 38
+  },
+  {
+   "name": "cilantro",
+   "slug": "cilantro",
+   "recipeCount": 33
+  },
+  {
+   "name": "red onion",
+   "slug": "red-onion",
+   "recipeCount": 28
+  },
+  {
+   "name": "carrots",
+   "slug": "carrots",
+   "recipeCount": 27
+  },
+  {
+   "name": "cherry tomatoes",
+   "slug": "cherry-tomatoes",
+   "recipeCount": 26
+  },
+  {
+   "name": "greek yogurt",
+   "slug": "greek-yogurt",
+   "recipeCount": 26
+  },
+  {
+   "name": "eggs",
+   "slug": "eggs",
+   "recipeCount": 25
+  },
+  {
+   "name": "lime",
+   "slug": "lime",
+   "recipeCount": 25
+  },
+  {
+   "name": "basil",
+   "slug": "basil",
+   "recipeCount": 23
+  },
+  {
+   "name": "shallots",
+   "slug": "shallots",
+   "recipeCount": 21
+  },
+  {
+   "name": "green onions",
+   "slug": "green-onions",
+   "recipeCount": 20
+  },
+  {
+   "name": "parmesan cheese",
+   "slug": "parmesan-cheese",
+   "recipeCount": 20
+  },
+  {
+   "name": "chickpeas",
+   "slug": "chickpeas",
+   "recipeCount": 19
+  },
+  {
+   "name": "ginger",
+   "slug": "ginger",
+   "recipeCount": 19
+  },
+  {
+   "name": "spinach",
+   "slug": "spinach",
+   "recipeCount": 18
+  },
+  {
+   "name": "avocado",
+   "slug": "avocado",
+   "recipeCount": 17
+  },
+  {
+   "name": "zucchini",
+   "slug": "zucchini",
+   "recipeCount": 16
+  },
+  {
+   "name": "feta cheese",
+   "slug": "feta-cheese",
+   "recipeCount": 15
+  },
+  {
+   "name": "celery",
+   "slug": "celery",
+   "recipeCount": 14
+  },
+  {
+   "name": "jalapeño",
+   "slug": "jalape-o",
+   "recipeCount": 14
+  },
+  {
+   "name": "lentils",
+   "slug": "lentils",
+   "recipeCount": 14
+  },
+  {
+   "name": "sweet potatoes",
+   "slug": "sweet-potatoes",
+   "recipeCount": 14
+  },
+  {
+   "name": "cannellini beans",
+   "slug": "cannellini-beans",
+   "recipeCount": 13
+  },
+  {
+   "name": "thyme",
+   "slug": "thyme",
+   "recipeCount": 13
+  },
+  {
+   "name": "peppers",
+   "slug": "peppers",
+   "recipeCount": 12
+  },
+  {
+   "name": "salmon",
+   "slug": "salmon",
+   "recipeCount": 12
+  },
+  {
+   "name": "sun-dried tomatoes",
+   "slug": "sun-dried-tomatoes",
+   "recipeCount": 12
+  },
+  {
+   "name": "arugula",
+   "slug": "arugula",
+   "recipeCount": 11
+  },
+  {
+   "name": "dill",
+   "slug": "dill",
+   "recipeCount": 11
+  },
+  {
+   "name": "bell pepper",
+   "slug": "bell-pepper",
+   "recipeCount": 10
+  },
+  {
+   "name": "capers",
+   "slug": "capers",
+   "recipeCount": 10
+  },
+  {
+   "name": "mint",
+   "slug": "mint",
+   "recipeCount": 10
+  },
+  {
+   "name": "pine nuts",
+   "slug": "pine-nuts",
+   "recipeCount": 10
+  },
+  {
+   "name": "tofu",
+   "slug": "tofu",
+   "recipeCount": 10
+  },
+  {
+   "name": "sesame seeds",
+   "slug": "sesame-seeds",
+   "recipeCount": 9
+  },
+  {
+   "name": "black beans",
+   "slug": "black-beans",
+   "recipeCount": 8
+  },
+  {
+   "name": "lemon zest",
+   "slug": "lemon-zest",
+   "recipeCount": 8
+  },
+  {
+   "name": "mexican oregano",
+   "slug": "mexican-oregano",
+   "recipeCount": 8
+  },
+  {
+   "name": "mushrooms",
+   "slug": "mushrooms",
+   "recipeCount": 8
+  },
+  {
+   "name": "pistachios",
+   "slug": "pistachios",
+   "recipeCount": 8
+  },
+  {
+   "name": "potato",
+   "slug": "potato",
+   "recipeCount": 8
+  },
+  {
+   "name": "quinoa",
+   "slug": "quinoa",
+   "recipeCount": 8
+  },
+  {
+   "name": "red pepper",
+   "slug": "red-pepper",
+   "recipeCount": 8
+  },
+  {
+   "name": "allulose",
+   "slug": "allulose",
+   "recipeCount": 7
+  },
+  {
+   "name": "almond butter",
+   "slug": "almond-butter",
+   "recipeCount": 7
+  },
+  {
+   "name": "asparagus",
+   "slug": "asparagus",
+   "recipeCount": 7
+  },
+  {
+   "name": "broth",
+   "slug": "broth",
+   "recipeCount": 7
+  },
+  {
+   "name": "cucumber",
+   "slug": "cucumber",
+   "recipeCount": 7
+  },
+  {
+   "name": "leeks",
+   "slug": "leeks",
+   "recipeCount": 7
+  },
+  {
+   "name": "rosemary",
+   "slug": "rosemary",
+   "recipeCount": 7
+  },
+  {
+   "name": "white wine vinegar",
+   "slug": "white-wine-vinegar",
+   "recipeCount": 7
+  },
+  {
+   "name": "almonds",
+   "slug": "almonds",
+   "recipeCount": 6
+  },
+  {
+   "name": "black rice",
+   "slug": "black-rice",
+   "recipeCount": 6
+  },
+  {
+   "name": "kale",
+   "slug": "kale",
+   "recipeCount": 6
+  },
+  {
+   "name": "pepitas",
+   "slug": "pepitas",
+   "recipeCount": 6
+  },
+  {
+   "name": "tortillas",
+   "slug": "tortillas",
+   "recipeCount": 6
+  },
+  {
+   "name": "walnuts",
+   "slug": "walnuts",
+   "recipeCount": 6
+  },
+  {
+   "name": "castelvetrano olives",
+   "slug": "castelvetrano-olives",
+   "recipeCount": 5
+  },
+  {
+   "name": "cauliflower",
+   "slug": "cauliflower",
+   "recipeCount": 5
+  },
+  {
+   "name": "chia seeds",
+   "slug": "chia-seeds",
+   "recipeCount": 5
+  },
+  {
+   "name": "edamame",
+   "slug": "edamame",
+   "recipeCount": 5
+  },
+  {
+   "name": "eggplant",
+   "slug": "eggplant",
+   "recipeCount": 5
+  },
+  {
+   "name": "goat cheese",
+   "slug": "goat-cheese",
+   "recipeCount": 5
+  },
+  {
+   "name": "kalamata olives",
+   "slug": "kalamata-olives",
+   "recipeCount": 5
+  },
+  {
+   "name": "peaches",
+   "slug": "peaches",
+   "recipeCount": 5
+  },
+  {
+   "name": "serrano chile",
+   "slug": "serrano-chile",
+   "recipeCount": 5
+  },
+  {
+   "name": "tomato paste",
+   "slug": "tomato-paste",
+   "recipeCount": 5
+  },
+  {
+   "name": "white wine",
+   "slug": "white-wine",
+   "recipeCount": 5
+  },
+  {
+   "name": "almond milk",
+   "slug": "almond-milk",
+   "recipeCount": 4
+  },
+  {
+   "name": "broccoli",
+   "slug": "broccoli",
+   "recipeCount": 4
+  },
+  {
+   "name": "chicken breast",
+   "slug": "chicken-breast",
+   "recipeCount": 4
+  },
+  {
+   "name": "chives",
+   "slug": "chives",
+   "recipeCount": 4
+  },
+  {
+   "name": "corn",
+   "slug": "corn",
+   "recipeCount": 4
+  },
+  {
+   "name": "dijon mustard",
+   "slug": "dijon-mustard",
+   "recipeCount": 4
+  },
+  {
+   "name": "fennel bulb",
+   "slug": "fennel-bulb",
+   "recipeCount": 4
+  },
+  {
+   "name": "fish sauce",
+   "slug": "fish-sauce",
+   "recipeCount": 4
+  },
+  {
+   "name": "gochujang",
+   "slug": "gochujang",
+   "recipeCount": 4
+  },
+  {
+   "name": "milk",
+   "slug": "milk",
+   "recipeCount": 4
+  },
+  {
+   "name": "mirin",
+   "slug": "mirin",
+   "recipeCount": 4
+  },
+  {
+   "name": "orange",
+   "slug": "orange",
+   "recipeCount": 4
+  },
+  {
+   "name": "oregano",
+   "slug": "oregano",
+   "recipeCount": 4
+  },
+  {
+   "name": "saffron",
+   "slug": "saffron",
+   "recipeCount": 4
+  },
+  {
+   "name": "sage",
+   "slug": "sage",
+   "recipeCount": 4
+  },
+  {
+   "name": "sherry vinegar",
+   "slug": "sherry-vinegar",
+   "recipeCount": 4
+  },
+  {
+   "name": "tahini",
+   "slug": "tahini",
+   "recipeCount": 4
+  },
+  {
+   "name": "tarragon",
+   "slug": "tarragon",
+   "recipeCount": 4
+  },
+  {
+   "name": "tomatillos",
+   "slug": "tomatillos",
+   "recipeCount": 4
+  },
+  {
+   "name": "unsweetened almond milk",
+   "slug": "unsweetened-almond-milk",
+   "recipeCount": 4
+  },
+  {
+   "name": "wheat flour",
+   "slug": "wheat-flour",
+   "recipeCount": 4
+  },
+  {
+   "name": "almond flour",
+   "slug": "almond-flour",
+   "recipeCount": 3
+  },
+  {
+   "name": "beets",
+   "slug": "beets",
+   "recipeCount": 3
+  },
+  {
+   "name": "blueberries",
+   "slug": "blueberries",
+   "recipeCount": 3
+  },
+  {
+   "name": "brussel sprouts",
+   "slug": "brussel-sprouts",
+   "recipeCount": 3
+  },
+  {
+   "name": "butternut squash",
+   "slug": "butternut-squash",
+   "recipeCount": 3
+  },
+  {
+   "name": "cabbage",
+   "slug": "cabbage",
+   "recipeCount": 3
+  },
+  {
+   "name": "cactus",
+   "slug": "cactus",
+   "recipeCount": 3
+  },
+  {
+   "name": "chicken",
+   "slug": "chicken",
+   "recipeCount": 3
+  },
+  {
+   "name": "chickpea flour",
+   "slug": "chickpea-flour",
+   "recipeCount": 3
+  },
+  {
+   "name": "cottage cheese",
+   "slug": "cottage-cheese",
+   "recipeCount": 3
+  },
+  {
+   "name": "fennel seed",
+   "slug": "fennel-seed",
+   "recipeCount": 3
+  },
+  {
+   "name": "garam masala",
+   "slug": "garam-masala",
+   "recipeCount": 3
+  },
+  {
+   "name": "heavy cream",
+   "slug": "heavy-cream",
+   "recipeCount": 3
+  },
+  {
+   "name": "jicama",
+   "slug": "jicama",
+   "recipeCount": 3
+  },
+  {
+   "name": "kidney beans",
+   "slug": "kidney-beans",
+   "recipeCount": 3
+  },
+  {
+   "name": "lemon wedges",
+   "slug": "lemon-wedges",
+   "recipeCount": 3
+  },
+  {
+   "name": "lemongrass",
+   "slug": "lemongrass",
+   "recipeCount": 3
+  },
+  {
+   "name": "lettuce",
+   "slug": "lettuce",
+   "recipeCount": 3
+  },
+  {
+   "name": "lupini beans",
+   "slug": "lupini-beans",
+   "recipeCount": 3
+  },
+  {
+   "name": "nutritional yeast",
+   "slug": "nutritional-yeast",
+   "recipeCount": 3
+  },
+  {
+   "name": "nuts",
+   "slug": "nuts",
+   "recipeCount": 3
+  },
+  {
+   "name": "pasta",
+   "slug": "pasta",
+   "recipeCount": 3
+  },
+  {
+   "name": "peas",
+   "slug": "peas",
+   "recipeCount": 3
+  },
+  {
+   "name": "pickled red onion",
+   "slug": "pickled-red-onion",
+   "recipeCount": 3
+  },
+  {
+   "name": "poblano chiles",
+   "slug": "poblano-chiles",
+   "recipeCount": 3
+  },
+  {
+   "name": "poblano peppers",
+   "slug": "poblano-peppers",
+   "recipeCount": 3
+  },
+  {
+   "name": "queso fresco",
+   "slug": "queso-fresco",
+   "recipeCount": 3
+  },
+  {
+   "name": "red cabbage",
+   "slug": "red-cabbage",
+   "recipeCount": 3
+  },
+  {
+   "name": "romaine",
+   "slug": "romaine",
+   "recipeCount": 3
+  },
+  {
+   "name": "serrano peppers",
+   "slug": "serrano-peppers",
+   "recipeCount": 3
+  },
+  {
+   "name": "shiitake mushrooms",
+   "slug": "shiitake-mushrooms",
+   "recipeCount": 3
+  },
+  {
+   "name": "shrimp",
+   "slug": "shrimp",
+   "recipeCount": 3
+  },
+  {
+   "name": "silken tofu",
+   "slug": "silken-tofu",
+   "recipeCount": 3
+  },
+  {
+   "name": "sumac",
+   "slug": "sumac",
+   "recipeCount": 3
+  },
+  {
+   "name": "tilapia fillets",
+   "slug": "tilapia-fillets",
+   "recipeCount": 3
+  },
+  {
+   "name": "white-wine vinegar",
+   "slug": "white-wine-vinegar",
+   "recipeCount": 3
+  },
+  {
+   "name": "aleppo pepper",
+   "slug": "aleppo-pepper",
+   "recipeCount": 2
+  },
+  {
+   "name": "artichoke hearts",
+   "slug": "artichoke-hearts",
+   "recipeCount": 2
+  },
+  {
+   "name": "artichokes",
+   "slug": "artichokes",
+   "recipeCount": 2
+  },
+  {
+   "name": "barley",
+   "slug": "barley",
+   "recipeCount": 2
+  },
+  {
+   "name": "bok choy",
+   "slug": "bok-choy",
+   "recipeCount": 2
+  },
+  {
+   "name": "branzino fish",
+   "slug": "branzino-fish",
+   "recipeCount": 2
+  },
+  {
+   "name": "breadcrumbs",
+   "slug": "breadcrumbs",
+   "recipeCount": 2
+  },
+  {
+   "name": "broccolini",
+   "slug": "broccolini",
+   "recipeCount": 2
+  },
+  {
+   "name": "brown sugar",
+   "slug": "brown-sugar",
+   "recipeCount": 2
+  },
+  {
+   "name": "bulb fennel",
+   "slug": "bulb-fennel",
+   "recipeCount": 2
+  },
+  {
+   "name": "caraway seed",
+   "slug": "caraway-seed",
+   "recipeCount": 2
+  },
+  {
+   "name": "cheese",
+   "slug": "cheese",
+   "recipeCount": 2
+  },
+  {
+   "name": "chestnuts",
+   "slug": "chestnuts",
+   "recipeCount": 2
+  },
+  {
+   "name": "chicken thighs",
+   "slug": "chicken-thighs",
+   "recipeCount": 2
+  },
+  {
+   "name": "chili garlic sauce",
+   "slug": "chili-garlic-sauce",
+   "recipeCount": 2
+  },
+  {
+   "name": "clams",
+   "slug": "clams",
+   "recipeCount": 2
+  },
+  {
+   "name": "coconut flour",
+   "slug": "coconut-flour",
+   "recipeCount": 2
+  },
+  {
+   "name": "coconut milk",
+   "slug": "coconut-milk",
+   "recipeCount": 2
+  },
+  {
+   "name": "cod",
+   "slug": "cod",
+   "recipeCount": 2
+  },
+  {
+   "name": "cotija cheese",
+   "slug": "cotija-cheese",
+   "recipeCount": 2
+  },
+  {
+   "name": "cream cheese",
+   "slug": "cream-cheese",
+   "recipeCount": 2
+  },
+  {
+   "name": "curry powder",
+   "slug": "curry-powder",
+   "recipeCount": 2
+  },
+  {
+   "name": "dry white wine",
+   "slug": "dry-white-wine",
+   "recipeCount": 2
+  },
+  {
+   "name": "fennel",
+   "slug": "fennel",
+   "recipeCount": 2
+  },
+  {
+   "name": "fiber",
+   "slug": "fiber",
+   "recipeCount": 2
+  },
+  {
+   "name": "gluten free flour",
+   "slug": "gluten-free-flour",
+   "recipeCount": 2
+  },
+  {
+   "name": "golden raisins",
+   "slug": "golden-raisins",
+   "recipeCount": 2
+  },
+  {
+   "name": "granola",
+   "slug": "granola",
+   "recipeCount": 2
+  },
+  {
+   "name": "green olives",
+   "slug": "green-olives",
+   "recipeCount": 2
+  },
+  {
+   "name": "ground flaxseed",
+   "slug": "ground-flaxseed",
+   "recipeCount": 2
+  },
+  {
+   "name": "halibut",
+   "slug": "halibut",
+   "recipeCount": 2
+  },
+  {
+   "name": "halibut fillet",
+   "slug": "halibut-fillet",
+   "recipeCount": 2
+  },
+  {
+   "name": "hard-boiled eggs",
+   "slug": "hard-boiled-eggs",
+   "recipeCount": 2
+  },
+  {
+   "name": "hazelnuts",
+   "slug": "hazelnuts",
+   "recipeCount": 2
+  },
+  {
+   "name": "hungarian paprika",
+   "slug": "hungarian-paprika",
+   "recipeCount": 2
+  },
+  {
+   "name": "lemon juice",
+   "slug": "lemon-juice",
+   "recipeCount": 2
+  },
+  {
+   "name": "mahi mahi",
+   "slug": "mahi-mahi",
+   "recipeCount": 2
+  },
+  {
+   "name": "matcha powder",
+   "slug": "matcha-powder",
+   "recipeCount": 2
+  },
+  {
+   "name": "mexican crema",
+   "slug": "mexican-crema",
+   "recipeCount": 2
+  },
+  {
+   "name": "moringa powder",
+   "slug": "moringa-powder",
+   "recipeCount": 2
+  },
+  {
+   "name": "mozzarella",
+   "slug": "mozzarella",
+   "recipeCount": 2
+  },
+  {
+   "name": "mussels",
+   "slug": "mussels",
+   "recipeCount": 2
+  },
+  {
+   "name": "navy beans",
+   "slug": "navy-beans",
+   "recipeCount": 2
+  },
+  {
+   "name": "nutmeg",
+   "slug": "nutmeg",
+   "recipeCount": 2
+  },
+  {
+   "name": "oaxaca cheese",
+   "slug": "oaxaca-cheese",
+   "recipeCount": 2
+  },
+  {
+   "name": "oil",
+   "slug": "oil",
+   "recipeCount": 2
+  },
+  {
+   "name": "olives",
+   "slug": "olives",
+   "recipeCount": 2
+  },
+  {
+   "name": "oyster sauce",
+   "slug": "oyster-sauce",
+   "recipeCount": 2
+  },
+  {
+   "name": "pancetta",
+   "slug": "pancetta",
+   "recipeCount": 2
+  },
+  {
+   "name": "panko",
+   "slug": "panko",
+   "recipeCount": 2
+  },
+  {
+   "name": "parmesan cheese rind",
+   "slug": "parmesan-cheese-rind",
+   "recipeCount": 2
+  },
+  {
+   "name": "pear",
+   "slug": "pear",
+   "recipeCount": 2
+  },
+  {
+   "name": "protein powder",
+   "slug": "protein-powder",
+   "recipeCount": 2
+  },
+  {
+   "name": "radish",
+   "slug": "radish",
+   "recipeCount": 2
+  },
+  {
+   "name": "radishes",
+   "slug": "radishes",
+   "recipeCount": 2
+  },
+  {
+   "name": "ricotta",
+   "slug": "ricotta",
+   "recipeCount": 2
+  },
+  {
+   "name": "rolled oats",
+   "slug": "rolled-oats",
+   "recipeCount": 2
+  },
+  {
+   "name": "seaweed",
+   "slug": "seaweed",
+   "recipeCount": 2
+  },
+  {
+   "name": "sour cream",
+   "slug": "sour-cream",
+   "recipeCount": 2
+  },
+  {
+   "name": "spaghetti squash",
+   "slug": "spaghetti-squash",
+   "recipeCount": 2
+  },
+  {
+   "name": "tilapia",
+   "slug": "tilapia",
+   "recipeCount": 2
+  },
+  {
+   "name": "tuna",
+   "slug": "tuna",
+   "recipeCount": 2
+  },
+  {
+   "name": "turmeric powder",
+   "slug": "turmeric-powder",
+   "recipeCount": 2
+  },
+  {
+   "name": "unsalted butter",
+   "slug": "unsalted-butter",
+   "recipeCount": 2
+  },
+  {
+   "name": "vanilla",
+   "slug": "vanilla",
+   "recipeCount": 2
+  },
+  {
+   "name": "wholegrain mustard",
+   "slug": "wholegrain-mustard",
+   "recipeCount": 2
+  },
+  {
+   "name": "albacore tuna",
+   "slug": "albacore-tuna",
+   "recipeCount": 1
+  },
+  {
+   "name": "all spice",
+   "slug": "all-spice",
+   "recipeCount": 1
+  },
+  {
+   "name": "alulose",
+   "slug": "alulose",
+   "recipeCount": 1
+  },
+  {
+   "name": "ancho chile powder",
+   "slug": "ancho-chile-powder",
+   "recipeCount": 1
+  },
+  {
+   "name": "ancho chilis",
+   "slug": "ancho-chilis",
+   "recipeCount": 1
+  },
+  {
+   "name": "arborio rice",
+   "slug": "arborio-rice",
+   "recipeCount": 1
+  },
+  {
+   "name": "arrowroot powder",
+   "slug": "arrowroot-powder",
+   "recipeCount": 1
+  },
+  {
+   "name": "bacon",
+   "slug": "bacon",
+   "recipeCount": 1
+  },
+  {
+   "name": "baguette",
+   "slug": "baguette",
+   "recipeCount": 1
+  },
+  {
+   "name": "balsamic vinaigrette",
+   "slug": "balsamic-vinaigrette",
+   "recipeCount": 1
+  },
+  {
+   "name": "banana",
+   "slug": "banana",
+   "recipeCount": 1
+  },
+  {
+   "name": "barramundi fillets",
+   "slug": "barramundi-fillets",
+   "recipeCount": 1
+  },
+  {
+   "name": "bay leaf",
+   "slug": "bay-leaf",
+   "recipeCount": 1
+  },
+  {
+   "name": "bean sauce",
+   "slug": "bean-sauce",
+   "recipeCount": 1
+  },
+  {
+   "name": "beans",
+   "slug": "beans",
+   "recipeCount": 1
+  },
+  {
+   "name": "beef",
+   "slug": "beef",
+   "recipeCount": 1
+  },
+  {
+   "name": "berries",
+   "slug": "berries",
+   "recipeCount": 1
+  },
+  {
+   "name": "blackberries",
+   "slug": "blackberries",
+   "recipeCount": 1
+  },
+  {
+   "name": "blanched almond flour",
+   "slug": "blanched-almond-flour",
+   "recipeCount": 1
+  },
+  {
+   "name": "bourbon",
+   "slug": "bourbon",
+   "recipeCount": 1
+  },
+  {
+   "name": "branzino",
+   "slug": "branzino",
+   "recipeCount": 1
+  },
+  {
+   "name": "brown rice",
+   "slug": "brown-rice",
+   "recipeCount": 1
+  },
+  {
+   "name": "brussels sprouts trimmed and",
+   "slug": "brussels-sprouts-trimmed-and",
+   "recipeCount": 1
+  },
+  {
+   "name": "burrata cheese",
+   "slug": "burrata-cheese",
+   "recipeCount": 1
+  },
+  {
+   "name": "cardamom",
+   "slug": "cardamom",
+   "recipeCount": 1
+  },
+  {
+   "name": "cashew butter",
+   "slug": "cashew-butter",
+   "recipeCount": 1
+  },
+  {
+   "name": "cauliflower rice",
+   "slug": "cauliflower-rice",
+   "recipeCount": 1
+  },
+  {
+   "name": "cayenne pepper",
+   "slug": "cayenne-pepper",
+   "recipeCount": 1
+  },
+  {
+   "name": "chard",
+   "slug": "chard",
+   "recipeCount": 1
+  },
+  {
+   "name": "chick peas",
+   "slug": "chick-peas",
+   "recipeCount": 1
+  },
+  {
+   "name": "chile de arbol",
+   "slug": "chile-de-arbol",
+   "recipeCount": 1
+  },
+  {
+   "name": "chili flakes",
+   "slug": "chili-flakes",
+   "recipeCount": 1
+  },
+  {
+   "name": "chili jam",
+   "slug": "chili-jam",
+   "recipeCount": 1
+  },
+  {
+   "name": "chilies",
+   "slug": "chilies",
+   "recipeCount": 1
+  },
+  {
+   "name": "chinese long beans",
+   "slug": "chinese-long-beans",
+   "recipeCount": 1
+  },
+  {
+   "name": "chipotle chile",
+   "slug": "chipotle-chile",
+   "recipeCount": 1
+  },
+  {
+   "name": "chipotle chili powder",
+   "slug": "chipotle-chili-powder",
+   "recipeCount": 1
+  },
+  {
+   "name": "chipotle peppers",
+   "slug": "chipotle-peppers",
+   "recipeCount": 1
+  },
+  {
+   "name": "chocolate chips",
+   "slug": "chocolate-chips",
+   "recipeCount": 1
+  },
+  {
+   "name": "cinnamon stick",
+   "slug": "cinnamon-stick",
+   "recipeCount": 1
+  },
+  {
+   "name": "clam juice",
+   "slug": "clam-juice",
+   "recipeCount": 1
+  },
+  {
+   "name": "cocoa",
+   "slug": "cocoa",
+   "recipeCount": 1
+  },
+  {
+   "name": "coconut",
+   "slug": "coconut",
+   "recipeCount": 1
+  },
+  {
+   "name": "coconut oil",
+   "slug": "coconut-oil",
+   "recipeCount": 1
+  },
+  {
+   "name": "cod fillets",
+   "slug": "cod-fillets",
+   "recipeCount": 1
+  },
+  {
+   "name": "collard greens",
+   "slug": "collard-greens",
+   "recipeCount": 1
+  },
+  {
+   "name": "coriander",
+   "slug": "coriander",
+   "recipeCount": 1
+  },
+  {
+   "name": "crushed tomatoes",
+   "slug": "crushed-tomatoes",
+   "recipeCount": 1
+  },
+  {
+   "name": "crust 2 medium sweet potatoes",
+   "slug": "crust-2-medium-sweet-potatoes",
+   "recipeCount": 1
+  },
+  {
+   "name": "crusty bread",
+   "slug": "crusty-bread",
+   "recipeCount": 1
+  },
+  {
+   "name": "crème fraîche",
+   "slug": "cr-me-fra-che",
+   "recipeCount": 1
+  },
+  {
+   "name": "cumin power",
+   "slug": "cumin-power",
+   "recipeCount": 1
+  },
+  {
+   "name": "daikon",
+   "slug": "daikon",
+   "recipeCount": 1
+  },
+  {
+   "name": "dark chocolate",
+   "slug": "dark-chocolate",
+   "recipeCount": 1
+  },
+  {
+   "name": "dark chocolate chips",
+   "slug": "dark-chocolate-chips",
+   "recipeCount": 1
+  },
+  {
+   "name": "dashi",
+   "slug": "dashi",
+   "recipeCount": 1
+  },
+  {
+   "name": "dates",
+   "slug": "dates",
+   "recipeCount": 1
+  },
+  {
+   "name": "donjong",
+   "slug": "donjong",
+   "recipeCount": 1
+  },
+  {
+   "name": "doubanjiang",
+   "slug": "doubanjiang",
+   "recipeCount": 1
+  },
+  {
+   "name": "dragon fruit",
+   "slug": "dragon-fruit",
+   "recipeCount": 1
+  },
+  {
+   "name": "dried apricots",
+   "slug": "dried-apricots",
+   "recipeCount": 1
+  },
+  {
+   "name": "dried pasilla chille’s",
+   "slug": "dried-pasilla-chille-s",
+   "recipeCount": 1
+  },
+  {
+   "name": "epazote",
+   "slug": "epazote",
+   "recipeCount": 1
+  },
+  {
+   "name": "escarole",
+   "slug": "escarole",
+   "recipeCount": 1
+  },
+  {
+   "name": "fenugreek leaves",
+   "slug": "fenugreek-leaves",
+   "recipeCount": 1
+  },
+  {
+   "name": "feta",
+   "slug": "feta",
+   "recipeCount": 1
+  },
+  {
+   "name": "fuji apple",
+   "slug": "fuji-apple",
+   "recipeCount": 1
+  },
+  {
+   "name": "fuyu persimmons",
+   "slug": "fuyu-persimmons",
+   "recipeCount": 1
+  },
+  {
+   "name": "gala apples",
+   "slug": "gala-apples",
+   "recipeCount": 1
+  },
+  {
+   "name": "garlic chili sauce",
+   "slug": "garlic-chili-sauce",
+   "recipeCount": 1
+  },
+  {
+   "name": "gochugaru",
+   "slug": "gochugaru",
+   "recipeCount": 1
+  },
+  {
+   "name": "grain mustard",
+   "slug": "grain-mustard",
+   "recipeCount": 1
+  },
+  {
+   "name": "grapes",
+   "slug": "grapes",
+   "recipeCount": 1
+  },
+  {
+   "name": "green papaya",
+   "slug": "green-papaya",
+   "recipeCount": 1
+  },
+  {
+   "name": "ground allspice",
+   "slug": "ground-allspice",
+   "recipeCount": 1
+  },
+  {
+   "name": "ground chili powder",
+   "slug": "ground-chili-powder",
+   "recipeCount": 1
+  },
+  {
+   "name": "gruyere cheese",
+   "slug": "gruyere-cheese",
+   "recipeCount": 1
+  },
+  {
+   "name": "gruyère",
+   "slug": "gruy-re",
+   "recipeCount": 1
+  },
+  {
+   "name": "guajillo chiles",
+   "slug": "guajillo-chiles",
+   "recipeCount": 1
+  },
+  {
+   "name": "guajillo chilies",
+   "slug": "guajillo-chilies",
+   "recipeCount": 1
+  },
+  {
+   "name": "habanero",
+   "slug": "habanero",
+   "recipeCount": 1
+  },
+  {
+   "name": "halibut or cod",
+   "slug": "halibut-or-cod",
+   "recipeCount": 1
+  },
+  {
+   "name": "halloumi",
+   "slug": "halloumi",
+   "recipeCount": 1
+  },
+  {
+   "name": "halloumi cheese",
+   "slug": "halloumi-cheese",
+   "recipeCount": 1
+  },
+  {
+   "name": "haricot vert",
+   "slug": "haricot-vert",
+   "recipeCount": 1
+  },
+  {
+   "name": "harissa",
+   "slug": "harissa",
+   "recipeCount": 1
+  },
+  {
+   "name": "hemp",
+   "slug": "hemp",
+   "recipeCount": 1
+  },
+  {
+   "name": "hominy",
+   "slug": "hominy",
+   "recipeCount": 1
+  },
+  {
+   "name": "hummus",
+   "slug": "hummus",
+   "recipeCount": 1
+  },
+  {
+   "name": "kalamata",
+   "slug": "kalamata",
+   "recipeCount": 1
+  },
+  {
+   "name": "kalamata olives chopped and pitted",
+   "slug": "kalamata-olives-chopped-and-pitted",
+   "recipeCount": 1
+  },
+  {
+   "name": "kashmiri",
+   "slug": "kashmiri",
+   "recipeCount": 1
+  },
+  {
+   "name": "kiwi",
+   "slug": "kiwi",
+   "recipeCount": 1
+  },
+  {
+   "name": "korean peppers",
+   "slug": "korean-peppers",
+   "recipeCount": 1
+  },
+  {
+   "name": "ladolemono",
+   "slug": "ladolemono",
+   "recipeCount": 1
+  },
+  {
+   "name": "lamb",
+   "slug": "lamb",
+   "recipeCount": 1
+  },
+  {
+   "name": "lemon pepper",
+   "slug": "lemon-pepper",
+   "recipeCount": 1
+  },
+  {
+   "name": "lotus root",
+   "slug": "lotus-root",
+   "recipeCount": 1
+  },
+  {
+   "name": "mango",
+   "slug": "mango",
+   "recipeCount": 1
+  },
+  {
+   "name": "marjoram",
+   "slug": "marjoram",
+   "recipeCount": 1
+  },
+  {
+   "name": "marsala wine",
+   "slug": "marsala-wine",
+   "recipeCount": 1
+  },
+  {
+   "name": "masa harina",
+   "slug": "masa-harina",
+   "recipeCount": 1
+  },
+  {
+   "name": "mashed ripe banana",
+   "slug": "mashed-ripe-banana",
+   "recipeCount": 1
+  },
+  {
+   "name": "mexican crème",
+   "slug": "mexican-cr-me",
+   "recipeCount": 1
+  },
+  {
+   "name": "mexican cumin",
+   "slug": "mexican-cumin",
+   "recipeCount": 1
+  },
+  {
+   "name": "miso",
+   "slug": "miso",
+   "recipeCount": 1
+  },
+  {
+   "name": "mixed fresh herbs",
+   "slug": "mixed-fresh-herbs",
+   "recipeCount": 1
+  },
+  {
+   "name": "molasses",
+   "slug": "molasses",
+   "recipeCount": 1
+  },
+  {
+   "name": "mustard seed",
+   "slug": "mustard-seed",
+   "recipeCount": 1
+  },
+  {
+   "name": "nori",
+   "slug": "nori",
+   "recipeCount": 1
+  },
+  {
+   "name": "oats",
+   "slug": "oats",
+   "recipeCount": 1
+  },
+  {
+   "name": "parmigiano-reggiano",
+   "slug": "parmigiano-reggiano",
+   "recipeCount": 1
+  },
+  {
+   "name": "peanuts",
+   "slug": "peanuts",
+   "recipeCount": 1
+  },
+  {
+   "name": "pecans",
+   "slug": "pecans",
+   "recipeCount": 1
+  },
+  {
+   "name": "pepperoncini",
+   "slug": "pepperoncini",
+   "recipeCount": 1
+  },
+  {
+   "name": "persian cucumber",
+   "slug": "persian-cucumber",
+   "recipeCount": 1
+  },
+  {
+   "name": "persimmons",
+   "slug": "persimmons",
+   "recipeCount": 1
+  },
+  {
+   "name": "pickle",
+   "slug": "pickle",
+   "recipeCount": 1
+  },
+  {
+   "name": "pico de gallo",
+   "slug": "pico-de-gallo",
+   "recipeCount": 1
+  },
+  {
+   "name": "pineapple",
+   "slug": "pineapple",
+   "recipeCount": 1
+  },
+  {
+   "name": "pinto beans",
+   "slug": "pinto-beans",
+   "recipeCount": 1
+  },
+  {
+   "name": "plum vinegar",
+   "slug": "plum-vinegar",
+   "recipeCount": 1
+  },
+  {
+   "name": "pomegranate seeds",
+   "slug": "pomegranate-seeds",
+   "recipeCount": 1
+  },
+  {
+   "name": "porcini powder",
+   "slug": "porcini-powder",
+   "recipeCount": 1
+  },
+  {
+   "name": "pork tenderloin",
+   "slug": "pork-tenderloin",
+   "recipeCount": 1
+  },
+  {
+   "name": "pretzels",
+   "slug": "pretzels",
+   "recipeCount": 1
+  },
+  {
+   "name": "prosciutto",
+   "slug": "prosciutto",
+   "recipeCount": 1
+  },
+  {
+   "name": "pumpkin pie spice",
+   "slug": "pumpkin-pie-spice",
+   "recipeCount": 1
+  },
+  {
+   "name": "pumpkin puree",
+   "slug": "pumpkin-puree",
+   "recipeCount": 1
+  },
+  {
+   "name": "pumpkin seeds",
+   "slug": "pumpkin-seeds",
+   "recipeCount": 1
+  },
+  {
+   "name": "radicchio",
+   "slug": "radicchio",
+   "recipeCount": 1
+  },
+  {
+   "name": "raspberries",
+   "slug": "raspberries",
+   "recipeCount": 1
+  },
+  {
+   "name": "red chili flakes",
+   "slug": "red-chili-flakes",
+   "recipeCount": 1
+  },
+  {
+   "name": "relish",
+   "slug": "relish",
+   "recipeCount": 1
+  },
+  {
+   "name": "rice wine",
+   "slug": "rice-wine",
+   "recipeCount": 1
+  },
+  {
+   "name": "rouille",
+   "slug": "rouille",
+   "recipeCount": 1
+  },
+  {
+   "name": "samjang sauce",
+   "slug": "samjang-sauce",
+   "recipeCount": 1
+  },
+  {
+   "name": "scallops",
+   "slug": "scallops",
+   "recipeCount": 1
+  },
+  {
+   "name": "scoop unjury flavorless protein powder",
+   "slug": "scoop-unjury-flavorless-protein-powder",
+   "recipeCount": 1
+  },
+  {
+   "name": "sea bass",
+   "slug": "sea-bass",
+   "recipeCount": 1
+  },
+  {
+   "name": "sea scallops",
+   "slug": "sea-scallops",
+   "recipeCount": 1
+  },
+  {
+   "name": "sesame garlic sauce",
+   "slug": "sesame-garlic-sauce",
+   "recipeCount": 1
+  },
+  {
+   "name": "shaoxing wine",
+   "slug": "shaoxing-wine",
+   "recipeCount": 1
+  },
+  {
+   "name": "sherry",
+   "slug": "sherry",
+   "recipeCount": 1
+  },
+  {
+   "name": "shichimi togarashi",
+   "slug": "shichimi-togarashi",
+   "recipeCount": 1
+  },
+  {
+   "name": "snap peas",
+   "slug": "snap-peas",
+   "recipeCount": 1
+  },
+  {
+   "name": "snow peas",
+   "slug": "snow-peas",
+   "recipeCount": 1
+  },
+  {
+   "name": "sourdough bread",
+   "slug": "sourdough-bread",
+   "recipeCount": 1
+  },
+  {
+   "name": "squash",
+   "slug": "squash",
+   "recipeCount": 1
+  },
+  {
+   "name": "strawberries",
+   "slug": "strawberries",
+   "recipeCount": 1
+  },
+  {
+   "name": "swordfish",
+   "slug": "swordfish",
+   "recipeCount": 1
+  },
+  {
+   "name": "tables apple cider vinegar",
+   "slug": "tables-apple-cider-vinegar",
+   "recipeCount": 1
+  },
+  {
+   "name": "tajín",
+   "slug": "taj-n",
+   "recipeCount": 1
+  },
+  {
+   "name": "tempeh",
+   "slug": "tempeh",
+   "recipeCount": 1
+  },
+  {
+   "name": "tomato puree",
+   "slug": "tomato-puree",
+   "recipeCount": 1
+  },
+  {
+   "name": "tomato sauce",
+   "slug": "tomato-sauce",
+   "recipeCount": 1
+  },
+  {
+   "name": "tostadas",
+   "slug": "tostadas",
+   "recipeCount": 1
+  },
+  {
+   "name": "turkey",
+   "slug": "turkey",
+   "recipeCount": 1
+  },
+  {
+   "name": "unsweetened cocoa powder",
+   "slug": "unsweetened-cocoa-powder",
+   "recipeCount": 1
+  },
+  {
+   "name": "vegetable stock",
+   "slug": "vegetable-stock",
+   "recipeCount": 1
+  },
+  {
+   "name": "white bean",
+   "slug": "white-bean",
+   "recipeCount": 1
+  },
+  {
+   "name": "white pepper",
+   "slug": "white-pepper",
+   "recipeCount": 1
+  },
+  {
+   "name": "yellow curry powder",
+   "slug": "yellow-curry-powder",
+   "recipeCount": 1
+  },
+  {
+   "name": "yellow onions",
+   "slug": "yellow-onions",
+   "recipeCount": 1
+  },
+  {
+   "name": "⁄2 teaspoon vanilla extract/paste",
+   "slug": "2-teaspoon-vanilla-extract-paste",
+   "recipeCount": 1
+  }
+ ],
+ "recipeTags": {
+  "air-fried-potato-chips-tpjnb": [
+   "parmesan cheese",
+   "potato",
+   "rosemary",
+   "sage"
+  ],
+  "air-fryer-garlic-and-herb-baby-potatoes": [
+   "potato"
+  ],
+  "air-fryer-tempura-artichokes-lemon-dill-dressing": [
+   "almond flour",
+   "almonds",
+   "artichoke hearts",
+   "asparagus",
+   "cabbage",
+   "chicken",
+   "dill",
+   "eggs",
+   "greek yogurt",
+   "lemon",
+   "parmesan cheese",
+   "spinach"
+  ],
+  "artichokes-with-saffron-tofu-sauce-and-olive-tapenade": [
+   "artichokes",
+   "kalamata olives",
+   "lemon",
+   "saffron",
+   "silken tofu",
+   "sun-dried tomatoes"
+  ],
+  "arugula-and-persimmon-salad": [
+   "arugula",
+   "avocado",
+   "fuyu persimmons",
+   "halloumi cheese",
+   "pecans",
+   "shallots"
+  ],
+  "asian-inspired-ginger-soy-cod-high-protein-delicious": [
+   "cilantro",
+   "cod fillets",
+   "garlic",
+   "ginger",
+   "green onions",
+   "lime",
+   "sesame seeds"
+  ],
+  "asparagus-sorrel-bisque": [
+   "asparagus",
+   "garlic",
+   "greek yogurt",
+   "leeks"
+  ],
+  "authentic-chiles-rellenos-g1tu9": [
+   "cotija cheese",
+   "eggs",
+   "garlic",
+   "mexican oregano",
+   "oaxaca cheese",
+   "onion",
+   "poblano chiles",
+   "red onion",
+   "tomato"
+  ],
+  "authentic-ribollita-soup-recipe-classic-italian-vegetable-and-bread-soup": [
+   "carrots",
+   "celery",
+   "crushed tomatoes",
+   "garlic",
+   "kale",
+   "onion",
+   "parmesan cheese rind",
+   "potato"
+  ],
+  "authentic-tortilla-soup-with-pasilla-chiles": [
+   "avocado",
+   "chicken",
+   "cilantro",
+   "dried pasilla chille’s",
+   "epazote",
+   "garlic",
+   "lime",
+   "mexican oregano",
+   "onion",
+   "queso fresco",
+   "tomato",
+   "tortillas"
+  ],
+  "autumn-butternut-squash-with-sage-and-apple": [
+   "butternut squash",
+   "carrots",
+   "gala apples",
+   "garlic",
+   "greek yogurt",
+   "hazelnuts",
+   "heavy cream",
+   "onion",
+   "sage"
+  ],
+  "baked-halibut-with-brussel-sprouts-and-quinoa": [
+   "brussels sprouts trimmed and",
+   "fennel bulb",
+   "garlic",
+   "halibut fillet",
+   "kalamata olives chopped and pitted",
+   "lemon",
+   "parsley",
+   "quinoa",
+   "sun-dried tomatoes"
+  ],
+  "baked-peaches": [
+   "allulose",
+   "peaches",
+   "unsalted butter",
+   "⁄2 teaspoon vanilla extract/paste"
+  ],
+  "barramundi-fish": [
+   "barramundi fillets",
+   "basil",
+   "garlic",
+   "lemon juice",
+   "lemon zest"
+  ],
+  "beet-chickpea-seed-crackers": [
+   "beets",
+   "chia seeds",
+   "chickpea flour",
+   "ground flaxseed",
+   "lemon",
+   "pumpkin seeds",
+   "sesame seeds",
+   "wheat flour"
+  ],
+  "berry-tart-with-sweet-potato-crust": [
+   "berries",
+   "crust 2 medium sweet potatoes",
+   "gluten free flour",
+   "lemon",
+   "mint"
+  ],
+  "black-rice-sushi-rolls": [
+   "black rice",
+   "seaweed"
+  ],
+  "blackened-salmon-with-caramelized-onion-and-sweet-potato-salad": [
+   "basil",
+   "feta cheese",
+   "oregano",
+   "parsley",
+   "red onion",
+   "salmon",
+   "spinach",
+   "sweet potatoes",
+   "thyme",
+   "white pepper",
+   "wholegrain mustard"
+  ],
+  "boiled-egg-hummus-on-keto-toast": [
+   "eggs",
+   "hummus",
+   "lemon",
+   "mint",
+   "pickle"
+  ],
+  "bok-choy-and-broccoli-with-caramelized-onion": [
+   "broccoli",
+   "garlic",
+   "ginger",
+   "korean peppers",
+   "lime",
+   "peppers",
+   "red cabbage",
+   "red onion"
+  ],
+  "bok-choy-pork-salad": [
+   "cherry tomatoes",
+   "feta",
+   "gochujang",
+   "green onions",
+   "lemon",
+   "peppers",
+   "walnuts"
+  ],
+  "bourbon-black-garlic-salmon-with-roasted-sweet-potato-fries-lemon-parmesan-broccoli": [
+   "bourbon",
+   "broccoli",
+   "cherry tomatoes",
+   "dijon mustard",
+   "garlic",
+   "lemon zest",
+   "orange",
+   "parmesan cheese",
+   "pepitas",
+   "salmon",
+   "shallots",
+   "sherry vinegar",
+   "sweet potatoes",
+   "thyme"
+  ],
+  "breaded-tofu-with-panko-crumbs": [
+   "garlic chili sauce",
+   "gluten free flour",
+   "panko",
+   "tofu"
+  ],
+  "broccoli-soup-with-cactus-and-gruyere-cheese": [
+   "broccoli",
+   "cactus",
+   "cannellini beans",
+   "gruyere cheese"
+  ],
+  "butternut-squash-soup-with-beans-and-escarole": [
+   "butternut squash",
+   "cannellini beans",
+   "escarole",
+   "garlic",
+   "onion",
+   "thyme",
+   "tomato"
+  ],
+  "caponata-sicilian-eggplant-with-bold-flavors-made-simple-oofnk": [
+   "basil",
+   "capers",
+   "castelvetrano olives",
+   "celery",
+   "crusty bread",
+   "eggplant",
+   "golden raisins",
+   "onion",
+   "parsley",
+   "tomato puree"
+  ],
+  "cauliflower-chicken-fried-rice-with-scrambled-egg-peas-edamame": [
+   "carrots",
+   "cauliflower rice",
+   "edamame",
+   "eggs",
+   "garlic",
+   "green onions",
+   "onion",
+   "peas",
+   "sesame seeds"
+  ],
+  "chefhealthyhenry-com-recipes-quinoa-zucchini-salad-the-perfect-protein-flip-tm-side": [
+   "garlic",
+   "green onions",
+   "lemon",
+   "mint",
+   "pistachios",
+   "quinoa",
+   "white wine vinegar",
+   "zucchini"
+  ],
+  "chicken-fajita-bowl-quick-and-flavorful-dinner-idea": [
+   "avocado",
+   "bell pepper",
+   "black beans",
+   "chicken breast",
+   "cilantro",
+   "corn",
+   "jalapeño",
+   "lettuce",
+   "lime",
+   "peppers",
+   "poblano peppers",
+   "tomato",
+   "yellow onions"
+  ],
+  "chicken-tika-masala": [
+   "chicken thighs",
+   "cilantro",
+   "fenugreek leaves",
+   "garam masala",
+   "garlic",
+   "ginger",
+   "greek yogurt",
+   "hungarian paprika",
+   "kashmiri",
+   "onion",
+   "tomato"
+  ],
+  "chicken-tinga-tostadas": [
+   "avocado",
+   "black beans",
+   "chicken",
+   "chipotle peppers",
+   "cilantro",
+   "cotija cheese",
+   "habanero",
+   "lentils",
+   "lime",
+   "mexican crema",
+   "radish",
+   "tomato",
+   "tostadas"
+  ],
+  "chickpea-chocolate-chip-cookies": [
+   "almond butter",
+   "chickpeas",
+   "chocolate chips",
+   "rolled oats"
+  ],
+  "chili-colorado": [
+   "all spice",
+   "ancho chilis",
+   "broth",
+   "chile de arbol",
+   "garlic",
+   "guajillo chilies",
+   "masa harina",
+   "mexican oregano",
+   "onion",
+   "tables apple cider vinegar",
+   "tomato"
+  ],
+  "chocolate-sweet-potato-protein-donuts-with-whipped-chocolate-topping": [
+   "allulose",
+   "banana",
+   "dark chocolate",
+   "eggs",
+   "greek yogurt",
+   "pistachios",
+   "protein powder",
+   "sweet potatoes"
+  ],
+  "citrus-supreme-tutorial-perfect-orange-segments-for-salads-desserts": [],
+  "classic-caprese-salad": [
+   "basil",
+   "mozzarella",
+   "tomato"
+  ],
+  "classic-mussels-with-white-wine": [
+   "celery",
+   "garlic",
+   "lemon",
+   "mussels",
+   "shallots",
+   "tarragon",
+   "tomato",
+   "white wine"
+  ],
+  "classic-salsa-verde": [
+   "cilantro",
+   "garlic",
+   "lime",
+   "mexican oregano",
+   "onion",
+   "poblano peppers",
+   "serrano peppers",
+   "tomatillos"
+  ],
+  "cozy-chicken-and-barley-stew-lt8dx": [
+   "barley",
+   "carrots",
+   "celery",
+   "garlic",
+   "leeks",
+   "lemon",
+   "marjoram",
+   "parsley",
+   "rosemary",
+   "tarragon",
+   "thyme"
+  ],
+  "creamy-lentil-chicken-soup-with-parmesan-rind": [
+   "carrots",
+   "chicken breast",
+   "coconut milk",
+   "garlic",
+   "lentils",
+   "onion",
+   "parmesan cheese",
+   "parsley",
+   "spinach",
+   "tomato",
+   "white-wine vinegar"
+  ],
+  "creme-brulee-with-almond-milk-and-cream": [
+   "alulose",
+   "eggs",
+   "heavy cream",
+   "unsweetened almond milk"
+  ],
+  "crispy-air-fry-falafel-with-fresh-herbs": [
+   "chickpeas",
+   "dill",
+   "garlic",
+   "onion"
+  ],
+  "crispy-air-fryer-tilapia-with-brussels-sprouts": [
+   "lemon pepper",
+   "lemon wedges",
+   "parsley",
+   "tilapia"
+  ],
+  "crispy-black-bean-cakes-with-sun-dried-tomato-and-lime-crema": [
+   "black beans",
+   "cilantro",
+   "eggs",
+   "garlic",
+   "greek yogurt",
+   "jalapeño",
+   "lime",
+   "onion",
+   "sour cream",
+   "sun-dried tomatoes"
+  ],
+  "crispy-pretzel-crust-lemon-herb-chicken-quick-high-protein-meal-idbug": [
+   "eggs",
+   "garlic",
+   "lemon",
+   "pretzels"
+  ],
+  "crispy-sweet-potato-matchsticks-with-saucy-sesame-tofu": [
+   "allulose",
+   "almond butter",
+   "basil",
+   "garlic",
+   "green onions",
+   "sesame seeds"
+  ],
+  "cucumber-jicama-salad-with-fresh-red-onion": [
+   "cherry tomatoes",
+   "red onion"
+  ],
+  "cucumber-salad": [
+   "chives",
+   "cucumber",
+   "sesame seeds"
+  ],
+  "curried-cauliflower": [
+   "cardamom",
+   "cauliflower",
+   "ginger",
+   "lemon",
+   "mustard seed"
+  ],
+  "daal-palak-recipe": [
+   "cilantro",
+   "garlic",
+   "ginger",
+   "lentils",
+   "onion",
+   "spinach",
+   "tomato",
+   "turmeric powder"
+  ],
+  "delicious-berry-chia-pudding-with-greek-yogurt-and-granola-tvgmk": [
+   "blackberries",
+   "chia seeds",
+   "granola",
+   "greek yogurt",
+   "raspberries",
+   "unsweetened almond milk"
+  ],
+  "delicious-tofu-saag-with-garam-masala-and-spinach": [
+   "almonds",
+   "black rice",
+   "garam masala",
+   "garlic",
+   "ginger",
+   "greek yogurt",
+   "lemon",
+   "onion",
+   "serrano chile",
+   "spinach",
+   "tofu"
+  ],
+  "dragon-fruit-salad": [
+   "blueberries",
+   "dragon fruit",
+   "kiwi",
+   "lemon",
+   "mint",
+   "persimmons"
+  ],
+  "dubu-jorim-korean-braised-tofu-recipe-aka98": [
+   "bell pepper",
+   "fish sauce",
+   "garlic",
+   "gochugaru",
+   "green onions",
+   "jalapeño",
+   "onion",
+   "plum vinegar",
+   "serrano chile",
+   "tofu"
+  ],
+  "easy-mediterranean-bean-bowl-with-crispy-sourdough-healthy-flavor-packed-q4h13": [
+   "avocado",
+   "cannellini beans",
+   "capers",
+   "chickpeas",
+   "garlic",
+   "greek yogurt",
+   "green onions",
+   "lemon zest",
+   "parsley",
+   "shallots",
+   "sun-dried tomatoes",
+   "white wine vinegar"
+  ],
+  "edamame-salad-withsalmon": [
+   "artichokes",
+   "cherry tomatoes",
+   "edamame",
+   "fennel",
+   "garlic",
+   "parsley",
+   "salmon"
+  ],
+  "elegant-and-healthy-risotto-recipe-no-heavy-ingredients-2uhcv": [
+   "arborio rice",
+   "carrots",
+   "celery",
+   "dry white wine",
+   "garlic",
+   "onion",
+   "pancetta",
+   "radicchio",
+   "red onion"
+  ],
+  "elegant-crostini-with-roasted-grapes-and-ricotta-amgwt": [
+   "baguette",
+   "cherry tomatoes",
+   "grapes",
+   "olives",
+   "ricotta",
+   "rosemary"
+  ],
+  "elegant-spring-appetizer-sweet-potato-rounds-with-burrata-sage-pesto": [
+   "beets",
+   "burrata cheese",
+   "garlic",
+   "lemon",
+   "parmesan cheese",
+   "parsley",
+   "sage",
+   "sweet potatoes",
+   "walnuts"
+  ],
+  "fish-and-long-bean-stir-fry": [
+   "almonds",
+   "carrots",
+   "chinese long beans",
+   "ginger",
+   "halibut or cod",
+   "onion",
+   "oyster sauce",
+   "rice wine"
+  ],
+  "fish-stock-for-soups-and-stews-vmbsd": [
+   "carrots",
+   "celery",
+   "onion",
+   "tomato",
+   "white wine"
+  ],
+  "fish-taco-salad-y0a4n": [
+   "cabbage",
+   "cilantro",
+   "greek yogurt",
+   "lettuce",
+   "lime",
+   "mahi mahi",
+   "mexican crème",
+   "onion",
+   "pico de gallo",
+   "tomato",
+   "tortillas"
+  ],
+  "fluffy-sourdough-discard-pancakes-0tgfp": [
+   "eggs",
+   "milk",
+   "protein powder",
+   "wheat flour"
+  ],
+  "french-bouillabaisse-recipe-perfect-mediterranean-seafood-stew-syszn": [
+   "bulb fennel",
+   "clams",
+   "leeks",
+   "mussels",
+   "potato",
+   "rouille",
+   "saffron",
+   "sourdough bread",
+   "tomato"
+  ],
+  "fresh-pistachio-crusted-chicken-and-barley-salad": [
+   "barley",
+   "castelvetrano olives",
+   "cherry tomatoes",
+   "eggs",
+   "lemon",
+   "orange",
+   "parsley",
+   "pistachios",
+   "white-wine vinegar"
+  ],
+  "fresh-potato-salad-zc9oo": [
+   "dijon mustard",
+   "dill",
+   "hard-boiled eggs",
+   "potato",
+   "red onion",
+   "white-wine vinegar"
+  ],
+  "fresh-salmon-and-avocado-salad-with-dill-dressing-healthy-and-delicious-y8z18": [
+   "avocado",
+   "carrots",
+   "dill",
+   "garlic",
+   "lemon",
+   "red cabbage",
+   "salmon",
+   "white wine vinegar"
+  ],
+  "gourmet-mushroom-medley-with-spinach-and-bean-puree": [
+   "cannellini beans",
+   "garlic",
+   "green onions",
+   "lemon",
+   "mushrooms",
+   "shiitake mushrooms",
+   "spinach"
+  ],
+  "grillechicken-with-creamy-avocado-yogurt-sauce-3pbw3": [
+   "avocado",
+   "corn",
+   "garlic",
+   "greek yogurt",
+   "green onions",
+   "lemon zest",
+   "lime",
+   "red pepper",
+   "zucchini"
+  ],
+  "grilled-branzino-with-tomato-salad": [
+   "basil",
+   "branzino",
+   "cherry tomatoes",
+   "garlic",
+   "lemon"
+  ],
+  "grilled-chicken-quinoa-power-salad-rf5ua": [
+   "allulose",
+   "avocado",
+   "cherry tomatoes",
+   "cucumber",
+   "lemon",
+   "red onion",
+   "shallots"
+  ],
+  "grilled-peach-salad-with-marinated-chicken-black-rice": [
+   "arugula",
+   "basil",
+   "black rice",
+   "cilantro",
+   "garlic",
+   "goat cheese",
+   "grain mustard",
+   "lemon",
+   "parsley",
+   "peaches",
+   "persian cucumber",
+   "pistachios",
+   "red onion",
+   "yellow curry powder"
+  ],
+  "grilled-salmon-with-a-jicama-salad-lime-cilantro-vinaigrette-and-white-bean-stew": [
+   "chives",
+   "garlic",
+   "haricot vert",
+   "jalapeño",
+   "jicama",
+   "lime",
+   "navy beans",
+   "parsley",
+   "peppers",
+   "red onion",
+   "salmon",
+   "sherry vinegar",
+   "thyme",
+   "tomato",
+   "white bean"
+  ],
+  "grilled-shrimp-with-green-papaya-mango-salad-rbuig": [
+   "allulose",
+   "cilantro",
+   "fish sauce",
+   "garlic",
+   "green papaya",
+   "jalapeño",
+   "lime",
+   "mango",
+   "mint",
+   "peanuts",
+   "red onion",
+   "shrimp"
+  ],
+  "grillicious-garlic-shrimp-xprxy": [
+   "lemon",
+   "shrimp"
+  ],
+  "halibut-in-corn-husks-with-fresh-vegetable-saute": [
+   "cherry tomatoes",
+   "chilies",
+   "corn",
+   "garlic",
+   "halibut fillet",
+   "red onion",
+   "zucchini"
+  ],
+  "halibut-piccata-with-black-rice-broccoli-pepitas": [
+   "almond flour",
+   "capers",
+   "garlic",
+   "halibut",
+   "lemon",
+   "white wine"
+  ],
+  "harira-moroccan-lentil-and-chickpea-soup-ac4m4": [
+   "caraway seed",
+   "chickpeas",
+   "cilantro",
+   "garlic",
+   "lemon",
+   "lentils",
+   "onion",
+   "parsley",
+   "red pepper",
+   "saffron",
+   "tomato",
+   "tomato paste"
+  ],
+  "healthy-20chicken-skewers-with-creamy-garlic-yogurt-sauce-easy-high-protein-dinner": [
+   "chicken breast",
+   "garlic",
+   "greek yogurt",
+   "parmesan cheese",
+   "parsley",
+   "red chili flakes"
+  ],
+  "healthy-asian-salad-with-gochujang-dressing-and-black-rice": [
+   "asparagus",
+   "black rice",
+   "carrots",
+   "daikon",
+   "garlic",
+   "ginger",
+   "gochujang",
+   "green onions",
+   "sesame seeds",
+   "snap peas"
+  ],
+  "healthy-baked-peaches-recipe": [
+   "greek yogurt",
+   "peaches",
+   "unsalted butter",
+   "vanilla"
+  ],
+  "healthy-coconut-oil-granola-with-added-fiber-yogurt": [
+   "coconut",
+   "coconut oil",
+   "granola",
+   "nuts"
+  ],
+  "healthy-french-carrot-salad-with-chickpeas": [
+   "carrots",
+   "chickpeas",
+   "chives",
+   "lemon",
+   "parsley"
+  ],
+  "healthy-homemade-nutella-recipe": [
+   "almond milk",
+   "hazelnuts",
+   "unsweetened cocoa powder",
+   "vanilla"
+  ],
+  "healthy-matcha-moringa-almond-butter-cookies": [
+   "almond butter",
+   "coconut flour",
+   "dark chocolate chips",
+   "eggs",
+   "matcha powder",
+   "moringa powder"
+  ],
+  "healthy-mexican-rice": [
+   "cauliflower",
+   "cilantro",
+   "garlic",
+   "lime",
+   "mexican cumin",
+   "onion",
+   "tomato"
+  ],
+  "healthy-summer-plate-tofu-veggies-pesto-unjury-flavorless-protein": [
+   "basil",
+   "garlic",
+   "lemon",
+   "parmesan cheese",
+   "pine nuts",
+   "scoop unjury flavorless protein powder",
+   "tofu"
+  ],
+  "hearty-veggie-burger-with-sweet-potato-and-tofu": [
+   "avocado",
+   "brown rice",
+   "cayenne pepper",
+   "chives",
+   "cilantro",
+   "curry powder",
+   "garlic",
+   "jalapeño",
+   "onion",
+   "panko",
+   "parsley",
+   "sweet potatoes",
+   "tofu",
+   "tomato paste",
+   "vegetable stock"
+  ],
+  "herbed-flatbreads-roasted-red-pepper-feta-prosciutto-cherokee-tomato": [
+   "arugula",
+   "basil",
+   "cannellini beans",
+   "chickpea flour",
+   "feta cheese",
+   "garlic",
+   "greek yogurt",
+   "lemon",
+   "parmesan cheese",
+   "parsley",
+   "prosciutto",
+   "red pepper",
+   "tomato",
+   "wheat flour"
+  ],
+  "high-protein-meatless-burger-with-black-beans-quinoa-cilantro-chimichurri": [
+   "avocado",
+   "black beans",
+   "chia seeds",
+   "cilantro",
+   "garlic",
+   "jalapeño",
+   "oats",
+   "parsley",
+   "quinoa",
+   "red onion",
+   "spinach",
+   "tomato"
+  ],
+  "hungarian-chicken-paprika": [
+   "bell pepper",
+   "garlic",
+   "greek yogurt",
+   "onion",
+   "parsley"
+  ],
+  "hungarian-goulash": [
+   "beef",
+   "bell pepper",
+   "broth",
+   "caraway seed",
+   "garlic",
+   "hungarian paprika",
+   "onion",
+   "sweet potatoes",
+   "tomato",
+   "tomato paste"
+  ],
+  "italian-soup-with-lupini-beans-and-kale": [
+   "almond milk",
+   "fennel seed",
+   "garlic",
+   "kale",
+   "lemon",
+   "lupini beans",
+   "parmesan cheese",
+   "shallots",
+   "sun-dried tomatoes"
+  ],
+  "italian-soup-with-red-potato": [
+   "basil",
+   "broth",
+   "cannellini beans",
+   "carrots",
+   "celery",
+   "garlic",
+   "kidney beans",
+   "onion",
+   "parmesan cheese",
+   "parmesan cheese rind",
+   "potato",
+   "tomato"
+  ],
+  "italian-zucchini-and-tomato-casserole-with-mozzarella-and-parmesan-1l68t": [
+   "mozzarella",
+   "onion",
+   "parmesan cheese",
+   "parsley",
+   "thyme",
+   "tomato",
+   "zucchini"
+  ],
+  "jicama-tomato-and-black-bean-salad": [
+   "black beans",
+   "cilantro",
+   "garlic",
+   "jicama",
+   "lime",
+   "red onion",
+   "tomato"
+  ],
+  "korean-barbecue": [
+   "brown sugar",
+   "chili garlic sauce",
+   "donjong",
+   "garlic",
+   "gochujang",
+   "green onions",
+   "lemon",
+   "mirin",
+   "pear",
+   "samjang sauce",
+   "sesame garlic sauce",
+   "sesame seeds",
+   "tofu"
+  ],
+  "korean-inspired-gochujang-glazed-salmon-with-garlic-spinach": [
+   "garlic",
+   "ginger",
+   "gochujang",
+   "green onions",
+   "mirin",
+   "salmon",
+   "sesame seeds",
+   "spinach"
+  ],
+  "lemon-asparagus-pasta-bplgk": [
+   "basil",
+   "capers",
+   "castelvetrano olives",
+   "cherry tomatoes",
+   "garlic",
+   "lemon zest",
+   "navy beans",
+   "nutritional yeast",
+   "pasta",
+   "shallots",
+   "walnuts"
+  ],
+  "lemon-herb-quinoa-with-roasted-vegetables-7f79i": [
+   "asparagus",
+   "basil",
+   "bell pepper",
+   "cherry tomatoes",
+   "lemon",
+   "parsley",
+   "quinoa",
+   "tahini",
+   "zucchini"
+  ],
+  "lemongrass-salmon-fish-cakes": [
+   "chili jam",
+   "ginger",
+   "lemongrass",
+   "salmon"
+  ],
+  "lentil-pasta-with-tofu-and-vegetables": [
+   "garlic",
+   "lentils",
+   "peppers",
+   "shallots",
+   "tofu",
+   "tomato",
+   "white wine vinegar",
+   "zucchini"
+  ],
+  "lentil-soup-with-collards-greens-with-red-potatoes": [
+   "carrots",
+   "celery",
+   "cilantro",
+   "collard greens",
+   "coriander",
+   "garlic",
+   "lemon",
+   "lentils",
+   "onion",
+   "potato"
+  ],
+  "lentil-spinach-stew-with-lemon": [
+   "bay leaf",
+   "carrots",
+   "cilantro",
+   "garlic",
+   "lemon",
+   "onion",
+   "spinach",
+   "tomato paste"
+  ],
+  "lotus-root-stir-fry-with-carrots-and-snow-peas": [
+   "bell pepper",
+   "carrots",
+   "garlic",
+   "ginger",
+   "green onions",
+   "lotus root",
+   "mushrooms",
+   "oil",
+   "oyster sauce",
+   "shaoxing wine",
+   "snow peas"
+  ],
+  "lupini-bean-salad-with-asiago-cheese-pine-nuts-and-balsamic-vinaigrette": [
+   "arugula",
+   "beans",
+   "cherry tomatoes",
+   "lemon",
+   "pine nuts"
+  ],
+  "mahi-mahi-black-rice-bowl-a-protein-flip-classic": [
+   "basil",
+   "black rice",
+   "edamame",
+   "garlic",
+   "lemon",
+   "mahi mahi",
+   "nuts",
+   "spinach"
+  ],
+  "marry-me-chickpea-soup-with-kale": [
+   "basil",
+   "chickpeas",
+   "cream cheese",
+   "garlic",
+   "greek yogurt",
+   "kale",
+   "parmesan cheese",
+   "shallots",
+   "sun-dried tomatoes",
+   "tomato paste"
+  ],
+  "matcha-moringa-pesto-mushroom-zoodles-healthy-flavorful-pasta": [
+   "garlic",
+   "lemon",
+   "matcha powder",
+   "moringa powder",
+   "mushrooms",
+   "parmesan cheese",
+   "pine nuts"
+  ],
+  "mediterranean-baked-tilapia-with-cherry-tomatoes-and-capers": [
+   "capers",
+   "cherry tomatoes",
+   "dill",
+   "feta cheese",
+   "garlic",
+   "greek yogurt",
+   "hemp",
+   "lemon",
+   "lemon zest",
+   "quinoa",
+   "shallots",
+   "tilapia fillets"
+  ],
+  "mediterranean-branzino-with-zucchini-and-tomatoes": [
+   "aleppo pepper",
+   "branzino fish",
+   "garlic",
+   "shallots",
+   "sumac",
+   "thyme",
+   "tomato",
+   "zucchini"
+  ],
+  "mediterranean-cod-white-bean-stew-with-toasted-pine-nuts": [
+   "basil",
+   "bulb fennel",
+   "cannellini beans",
+   "cherry tomatoes",
+   "cod",
+   "dry white wine",
+   "fennel bulb",
+   "garlic",
+   "kalamata olives",
+   "lemon wedges",
+   "onion",
+   "pine nuts",
+   "tomato",
+   "white wine",
+   "zucchini"
+  ],
+  "mediterranean-herb-crusted-tilapia": [
+   "breadcrumbs",
+   "eggs",
+   "garlic",
+   "mixed fresh herbs",
+   "parmigiano-reggiano",
+   "tilapia fillets",
+   "tomato"
+  ],
+  "mediterranean-lentil-bowl-with-zesty-sun-dried-tomato-dressing": [
+   "cherry tomatoes",
+   "cucumber",
+   "eggplant",
+   "feta cheese",
+   "garlic",
+   "kalamata",
+   "lemon",
+   "lentils",
+   "sun-dried tomatoes"
+  ],
+  "mediterranean-lentil-salad": [
+   "celery",
+   "dijon mustard",
+   "fennel",
+   "garlic",
+   "lentils",
+   "parsley",
+   "peppers",
+   "red onion",
+   "sun-dried tomatoes",
+   "thyme"
+  ],
+  "mediterranean-lentil-stuffed-summer-squash-bowls": [
+   "carrots",
+   "green onions",
+   "lentils",
+   "squash"
+  ],
+  "mediterranean-salad-with-shredded-chicken-and-homemade-vinaigrette-ys2i6": [
+   "almonds",
+   "arrowroot powder",
+   "artichoke hearts",
+   "cherry tomatoes",
+   "chickpeas",
+   "cucumber",
+   "feta cheese",
+   "garlic",
+   "kalamata olives",
+   "parsley",
+   "red onion",
+   "silken tofu",
+   "wheat flour"
+  ],
+  "mediterranean-salmon-and-lentil-salad": [
+   "bell pepper",
+   "broccoli",
+   "cucumber",
+   "dill",
+   "feta cheese",
+   "lemon",
+   "lentils",
+   "red onion",
+   "salmon"
+  ],
+  "mediterranean-sauce-with-red-peppers-saffron": [
+   "eggs",
+   "garlic",
+   "lemon",
+   "parsley",
+   "red pepper"
+  ],
+  "mediterranean-sweet-potato-salad-with-basil-and-pine-nuts": [
+   "basil",
+   "cherry tomatoes",
+   "parmesan cheese",
+   "pine nuts",
+   "sweet potatoes"
+  ],
+  "mini-blueberry-lemon-cheesecakes-light-and-refreshing-dessert-mggko": [
+   "blueberries",
+   "cream cheese",
+   "eggs",
+   "lemon",
+   "ricotta"
+  ],
+  "miso-soup": [
+   "carrots",
+   "dashi",
+   "ginger",
+   "mirin",
+   "miso",
+   "tofu"
+  ],
+  "moroccan-lamb-stew-kfetv": [
+   "chickpeas",
+   "cinnamon stick",
+   "dried apricots",
+   "garlic",
+   "ginger",
+   "ground allspice",
+   "lamb",
+   "onion",
+   "parsley",
+   "pistachios",
+   "tomato"
+  ],
+  "nopal-cactus-salad": [
+   "cactus",
+   "oregano",
+   "queso fresco",
+   "tomato"
+  ],
+  "pan-seared-halibut-with-mango-salsa-saffron-black-rice-summer-on-a-plate-tlfuu": [
+   "broth",
+   "cilantro",
+   "greek yogurt",
+   "lime",
+   "parmesan cheese",
+   "red onion",
+   "saffron"
+  ],
+  "peruvian-grilled-chicken-with-green-sauce-and-air-fried-peruvian-sweet-potatoes-irloz": [
+   "cilantro",
+   "garlic",
+   "greek yogurt",
+   "jalapeño",
+   "lime",
+   "sour cream",
+   "sweet potatoes"
+  ],
+  "poblano-sweet-potato-and-queso-fresco-soup": [
+   "almond milk",
+   "cilantro",
+   "garlic",
+   "mexican oregano",
+   "onion",
+   "poblano chiles",
+   "queso fresco",
+   "tomato"
+  ],
+  "pollo-agrodolce-sweet-sour-italian-chicken-recipe-sbfzw": [
+   "basil",
+   "capers",
+   "cherry tomatoes",
+   "chicken thighs",
+   "garlic",
+   "parsley",
+   "peppers",
+   "pine nuts",
+   "shallots"
+  ],
+  "porcini-dusted-cod-w-asparagus-puree": [
+   "asparagus",
+   "cod",
+   "garlic",
+   "lemon",
+   "peas",
+   "porcini powder",
+   "shallots",
+   "shiitake mushrooms",
+   "tarragon"
+  ],
+  "pork-tenderloin-with-chickpeas": [
+   "arugula",
+   "chickpeas",
+   "fennel seed",
+   "garlic",
+   "pork tenderloin",
+   "spinach"
+  ],
+  "pozole-verde-with-mushrooms": [
+   "basil",
+   "cilantro",
+   "garlic",
+   "hominy",
+   "jalapeño",
+   "lettuce",
+   "mushrooms",
+   "onion",
+   "oregano",
+   "pepitas",
+   "poblano chiles",
+   "radish",
+   "serrano chile",
+   "spinach",
+   "tomatillos"
+  ],
+  "protein-flip-blueberry-peach-quinoa-bake": [
+   "almond butter",
+   "blueberries",
+   "chia seeds",
+   "eggs",
+   "greek yogurt",
+   "milk",
+   "peaches",
+   "quinoa",
+   "walnuts"
+  ],
+  "protein-flip-creamy-clam-chowder-with-zesty-lime-tofu-flatbread": [
+   "carrots",
+   "celery",
+   "clam juice",
+   "clams",
+   "garlic",
+   "lime",
+   "onion",
+   "potato",
+   "thyme",
+   "unsweetened almond milk"
+  ],
+  "protein-flip-huevos-rancheros-with-pinto-beans-greek-yogurt-pepitas": [
+   "avocado",
+   "cheese",
+   "eggs",
+   "greek yogurt",
+   "jalapeño",
+   "pepitas",
+   "pinto beans",
+   "tomato",
+   "tortillas"
+  ],
+  "protein-flip-mustard-rosemary-salmon-with-leeks-fennel-edamame": [
+   "edamame",
+   "fennel bulb",
+   "fennel seed",
+   "leeks",
+   "parsley",
+   "rosemary",
+   "wholegrain mustard"
+  ],
+  "protein-flip-tm-nutty-banana-bread-soft-baked-protein-bars": [
+   "almond butter",
+   "almond milk",
+   "blanched almond flour",
+   "chia seeds",
+   "coconut flour",
+   "eggs",
+   "ground flaxseed",
+   "mashed ripe banana",
+   "molasses",
+   "nutmeg",
+   "walnuts"
+  ],
+  "pumpkin-mousse-high-protein-fiber-low-sugar-fall-dessert-recipe-sc3r2": [
+   "cottage cheese",
+   "pumpkin pie spice",
+   "pumpkin puree"
+  ],
+  "quick-and-healthy-tuna-quinoa-bowl": [
+   "avocado",
+   "cherry tomatoes",
+   "dill",
+   "lemon juice",
+   "quinoa",
+   "tuna"
+  ],
+  "recipes-italian-shakshuka-baked-eggs": [
+   "carrots",
+   "eggs",
+   "garlic",
+   "kale",
+   "onion",
+   "parsley",
+   "tomato",
+   "tomato sauce"
+  ],
+  "refreshing-jicama-citrus-salad-with-perfect-citrus-segments-summer-salad-idea": [
+   "cucumber",
+   "jicama",
+   "orange",
+   "pepitas",
+   "pineapple",
+   "red onion",
+   "romaine",
+   "serrano chile",
+   "tajín"
+  ],
+  "roasted-beet-carrot-salad": [
+   "beets",
+   "carrots",
+   "goat cheese",
+   "nuts",
+   "white wine vinegar"
+  ],
+  "roasted-branzino-with-greek-ladolemono": [
+   "branzino fish",
+   "castelvetrano olives",
+   "cherry tomatoes",
+   "dill",
+   "garlic",
+   "ladolemono",
+   "lemon",
+   "oregano",
+   "red onion"
+  ],
+  "roasted-carrots-with-radishes-and-white-beans-sauce": [
+   "bean sauce",
+   "cannellini beans",
+   "carrots",
+   "nutritional yeast",
+   "radishes",
+   "tahini"
+  ],
+  "roasted-cauliflower-and-crispy-harissa-chickpeas": [
+   "cauliflower",
+   "chickpeas",
+   "dates",
+   "feta cheese",
+   "garam masala",
+   "greek yogurt",
+   "harissa",
+   "lemon",
+   "pine nuts",
+   "tahini"
+  ],
+  "roasted-chestnut-and-arugula-salad": [
+   "arugula",
+   "chestnuts",
+   "parmesan cheese",
+   "pomegranate seeds"
+  ],
+  "roasted-pear-butternut-squash-soup-with-crumbled-stilton": [
+   "butternut squash",
+   "cheese",
+   "garlic",
+   "green onions",
+   "pear",
+   "tomato"
+  ],
+  "roasted-red-pepper-salad-with-homemade-balsamic-vinaigrette-xfolb": [
+   "balsamic vinaigrette",
+   "basil",
+   "cherry tomatoes",
+   "garlic",
+   "golden raisins",
+   "jalapeño",
+   "olives",
+   "pine nuts",
+   "red onion",
+   "red pepper"
+  ],
+  "roasted-stuffed-squash-blossoms": [
+   "basil",
+   "chard",
+   "garlic",
+   "goat cheese",
+   "zucchini"
+  ],
+  "roasted-sumac-salmon-with-brussel-sprouts-and-pomegranate": [
+   "brussel sprouts",
+   "garlic",
+   "lemon",
+   "parsley",
+   "salmon",
+   "sumac"
+  ],
+  "roasted-vegetable-with-chestnuts-and-caramelized-onion": [
+   "brussel sprouts",
+   "chestnuts",
+   "eggplant",
+   "mushrooms",
+   "red onion",
+   "thyme"
+  ],
+  "rolled-oat-breaded-eggplant-with-sweet-and-spicy-sauce": [
+   "celery",
+   "chili garlic sauce",
+   "eggplant",
+   "garlic",
+   "onion",
+   "rolled oats",
+   "silken tofu",
+   "tomato"
+  ],
+  "royal-tempeh-sweet-potato-tacos-with-chili-lime-yogurt-protein-flip-tm-weeknight-meal": [
+   "avocado",
+   "chipotle chili powder",
+   "cilantro",
+   "greek yogurt",
+   "ground chili powder",
+   "jalapeño",
+   "lime",
+   "mexican crema",
+   "sweet potatoes",
+   "tempeh",
+   "tortillas"
+  ],
+  "salmon-salad-with-crispy-white-beans": [
+   "bell pepper",
+   "cannellini beans",
+   "carrots",
+   "garlic",
+   "ginger",
+   "green onions",
+   "kale",
+   "salmon",
+   "shichimi togarashi"
+  ],
+  "salmon-with-mint-pistachio-and-pickled-red-onion": [
+   "cilantro",
+   "fiber",
+   "lime",
+   "mint",
+   "pickled red onion",
+   "pistachios",
+   "red onion",
+   "salmon"
+  ],
+  "salsa-verde-molcajete": [
+   "cilantro",
+   "garlic",
+   "lime",
+   "mexican oregano",
+   "onion",
+   "poblano peppers",
+   "serrano peppers",
+   "tomatillos"
+  ],
+  "savory-corn-and-mushroom-saute-with-pancetta": [
+   "corn",
+   "heavy cream",
+   "leeks",
+   "lemon",
+   "mushrooms",
+   "pancetta",
+   "parsley"
+  ],
+  "savory-dutch-baby-arugula-lupini-bean-salad": [
+   "arugula",
+   "basil",
+   "cherry tomatoes",
+   "eggs",
+   "garlic",
+   "goat cheese",
+   "lupini beans",
+   "milk",
+   "parmesan cheese",
+   "pepitas",
+   "sun-dried tomatoes"
+  ],
+  "savory-vegetable-clafoutis-with-french-herb-beans": [
+   "broth",
+   "cannellini beans",
+   "cherry tomatoes",
+   "chickpea flour",
+   "cottage cheese",
+   "eggs",
+   "garlic",
+   "goat cheese",
+   "gruyère",
+   "leeks",
+   "nutritional yeast",
+   "rosemary",
+   "shallots",
+   "spinach",
+   "sun-dried tomatoes",
+   "thyme",
+   "unsweetened almond milk",
+   "zucchini"
+  ],
+  "scallops-with-black-bean-pasta": [
+   "asparagus",
+   "carrots",
+   "cherry tomatoes",
+   "parsley",
+   "scallops"
+  ],
+  "sea-bass-soup-with-shiitake-and-bok-choy": [
+   "bok choy",
+   "green onions",
+   "red pepper",
+   "sea bass",
+   "shiitake mushrooms"
+  ],
+  "seared-salmon-with-warm-tomato-white-bean-vinaigrette": [
+   "cannellini beans",
+   "cherry tomatoes",
+   "feta cheese",
+   "garlic",
+   "lemon",
+   "pistachios",
+   "salmon",
+   "shallots",
+   "sherry vinegar"
+  ],
+  "seared-scallops-with-ot-ga-den-hot-sauce": [
+   "fennel bulb",
+   "garlic",
+   "lemon",
+   "mint",
+   "orange",
+   "peas",
+   "red onion",
+   "sea scallops"
+  ],
+  "sheet-pan-fish-tacos-with-creamy-avocado-sauce": [
+   "avocado",
+   "cabbage",
+   "cilantro",
+   "cottage cheese",
+   "lime",
+   "parsley",
+   "red cabbage",
+   "tilapia fillets",
+   "tortillas"
+  ],
+  "simple-frittata": [
+   "eggs",
+   "feta cheese",
+   "kalamata olives",
+   "peppers"
+  ],
+  "simple-hummus-eo5q7": [
+   "chickpeas",
+   "garlic",
+   "lemon",
+   "tahini"
+  ],
+  "smoky-autumn-vegetable-romesco-soup-the-protein-flip-way": [
+   "almonds",
+   "bell pepper",
+   "cannellini beans",
+   "crème fraîche",
+   "garlic",
+   "sherry vinegar",
+   "sweet potatoes",
+   "tomato"
+  ],
+  "spaghetti-squash-with-garbanzo-beans-and-feta": [
+   "chickpeas",
+   "feta cheese",
+   "garlic",
+   "lemon",
+   "red onion",
+   "spaghetti squash"
+  ],
+  "spicy-chicken-french-lentil-bowl": [
+   "avocado",
+   "chicken breast",
+   "edamame",
+   "lemon",
+   "lentils",
+   "lime"
+  ],
+  "spicy-garbanzo-beans": [
+   "chickpeas",
+   "lime"
+  ],
+  "spicy-ginger-garlic-chicken-red-lentil-soup-with-bok-choy": [
+   "bok choy",
+   "broth",
+   "carrots",
+   "celery",
+   "cilantro",
+   "garlic",
+   "ginger",
+   "jalapeño",
+   "lentils",
+   "onion"
+  ],
+  "spicy-grilled-eggplant-fresh-tomatoes-easy-mediterranean": [
+   "garlic",
+   "parsley",
+   "tomato"
+  ],
+  "spinach-stuffed-spaghetti-squash": [
+   "feta cheese",
+   "garlic",
+   "parmesan cheese",
+   "pine nuts",
+   "spaghetti squash",
+   "spinach",
+   "thyme",
+   "tomato"
+  ],
+  "squash-blossom-tostada-with-oaxaca-cheese": [
+   "garlic",
+   "mexican oregano",
+   "oaxaca cheese",
+   "onion",
+   "tomato",
+   "tortillas",
+   "zucchini"
+  ],
+  "strawberry-cobb-salad-with-halloumi-tarragon-dressing-mrcdr": [
+   "avocado",
+   "dill",
+   "garlic",
+   "greek yogurt",
+   "halloumi",
+   "hard-boiled eggs",
+   "radishes",
+   "romaine",
+   "strawberries",
+   "tarragon",
+   "white wine vinegar"
+  ],
+  "stuffed-turkey-breast": [
+   "bacon",
+   "chick peas",
+   "marsala wine",
+   "onion",
+   "parsley",
+   "rosemary",
+   "sage",
+   "sherry",
+   "spinach"
+  ],
+  "sushi-tacos": [
+   "cauliflower",
+   "fiber",
+   "garlic",
+   "jalapeño",
+   "oil",
+   "pickled red onion",
+   "red onion",
+   "relish",
+   "seaweed",
+   "serrano peppers"
+  ],
+  "sweet-potato-and-lemongrass-almond-butter-curry": [
+   "almond butter",
+   "chickpeas",
+   "chili flakes",
+   "coconut milk",
+   "cumin power",
+   "curry powder",
+   "garlic",
+   "ginger",
+   "lemongrass",
+   "peppers",
+   "shallots",
+   "spinach",
+   "tomato",
+   "turmeric powder"
+  ],
+  "sweet-potato-brownies-vc5r1": [
+   "almond butter",
+   "almond flour",
+   "cocoa",
+   "sweet potatoes"
+  ],
+  "sweet-potato-cinnamon-rolls-rjh1v": [
+   "brown sugar",
+   "sweet potatoes"
+  ],
+  "swordfish-with-an-olive-tapenade": [
+   "capers",
+   "garlic",
+   "green olives",
+   "lemon",
+   "parsley",
+   "peppers",
+   "shallots",
+   "swordfish",
+   "white wine"
+  ],
+  "thai-tom-yum-soup-w0m0f": [
+   "broth",
+   "cilantro",
+   "fish sauce",
+   "garlic",
+   "lemongrass",
+   "lime",
+   "mushrooms",
+   "onion",
+   "shrimp",
+   "tomato"
+  ],
+  "the-secret-to-easy-to-peel-hard-boiled-eggs": [
+   "eggs"
+  ],
+  "tilapia-stew-with-nopal-cactus": [
+   "cactus",
+   "capers",
+   "cilantro",
+   "garlic",
+   "green olives",
+   "mexican oregano",
+   "onion",
+   "tilapia",
+   "tomato"
+  ],
+  "tofu-with-brussel-sprouts-and-almonds": [
+   "almonds",
+   "brussel sprouts",
+   "carrots",
+   "garlic",
+   "lemon",
+   "shallots",
+   "tofu",
+   "tomato"
+  ],
+  "traditional-crepes": [
+   "eggs",
+   "milk"
+  ],
+  "traditional-salsa-rojo-with-tomatillos-and-lime-iwzpn": [
+   "cilantro",
+   "guajillo chiles",
+   "lime",
+   "onion",
+   "tomatillos"
+  ],
+  "tuna-asparagus-salad": [
+   "asparagus",
+   "cilantro",
+   "garlic",
+   "ginger",
+   "lemon zest",
+   "red onion",
+   "rosemary",
+   "tuna"
+  ],
+  "tuna-chickpea-salad": [
+   "albacore tuna",
+   "capers",
+   "celery",
+   "chickpeas",
+   "dijon mustard",
+   "lemon",
+   "nori",
+   "red onion"
+  ],
+  "turkey-lentil-meatball-salad-greek-yogurt": [
+   "arugula",
+   "breadcrumbs",
+   "cherry tomatoes",
+   "chickpeas",
+   "cucumber",
+   "dill",
+   "eggs",
+   "feta cheese",
+   "garlic",
+   "greek yogurt",
+   "kalamata olives",
+   "lemon",
+   "lemon wedges",
+   "lentils",
+   "mint",
+   "parmesan cheese",
+   "parsley",
+   "pickled red onion",
+   "red pepper",
+   "turkey",
+   "zucchini"
+  ],
+  "tuscany-inspired-salad-with-roasted-20cauliflower-lupini-beans": [
+   "arugula",
+   "basil",
+   "carrots",
+   "castelvetrano olives",
+   "cauliflower",
+   "garlic",
+   "lemon",
+   "lupini beans",
+   "pine nuts",
+   "sun-dried tomatoes",
+   "white wine vinegar"
+  ],
+  "vegetable-soup-with-white-beans": [
+   "cannellini beans",
+   "carrots",
+   "celery",
+   "garlic",
+   "ginger",
+   "leeks",
+   "lemon",
+   "peppers"
+  ],
+  "vegetables-in-mint-vinaigrette": [
+   "bell pepper",
+   "garlic",
+   "green onions",
+   "mint",
+   "onion",
+   "parsley",
+   "zucchini"
+  ],
+  "vegetarian-chili-recipe-with-sweet-potatoes-beans": [
+   "black beans",
+   "chipotle chile",
+   "cilantro",
+   "garlic",
+   "kidney beans",
+   "lime",
+   "onion",
+   "sweet potatoes",
+   "tomato"
+  ],
+  "vegetarian-egg-bites-with-spinach-beans-and-feta-cktbg": [
+   "black beans",
+   "eggs",
+   "feta cheese",
+   "garlic",
+   "green onions",
+   "kidney beans",
+   "nutmeg",
+   "serrano chile",
+   "spinach"
+  ],
+  "vibrant-broccolini-salad-with-crispy-chickpeas-sumac-dressing-and-albacore-tuna-stdsh": [
+   "aleppo pepper",
+   "allulose",
+   "broccolini",
+   "chickpeas",
+   "garlic",
+   "greek yogurt",
+   "lemon zest",
+   "mint",
+   "red onion",
+   "sumac"
+  ],
+  "vibrant-mediterranean-salad-with-chickpeas-4hcgc": [
+   "arugula",
+   "avocado",
+   "basil",
+   "chickpeas",
+   "garlic",
+   "lemon",
+   "peaches",
+   "peppers",
+   "red pepper",
+   "romaine",
+   "spinach",
+   "sun-dried tomatoes",
+   "zucchini"
+  ],
+  "vibrant-sweet-potato-kale-salad-with-black-beans-ltlry": [
+   "ancho chile powder",
+   "black beans",
+   "feta cheese",
+   "garlic",
+   "kale",
+   "lemon",
+   "pepitas",
+   "quinoa",
+   "shallots",
+   "sweet potatoes"
+  ],
+  "warm-balsamic-mushroom-and-lentil-salad-recipe-ivzia": [
+   "arugula",
+   "cashew butter",
+   "garlic",
+   "lemon",
+   "lentils",
+   "mushrooms",
+   "parmesan cheese",
+   "shallots",
+   "thyme"
+  ],
+  "warm-zucchini-feta-salad-lemon-caper-halibut": [
+   "capers",
+   "chickpeas",
+   "dill",
+   "feta cheese",
+   "garlic",
+   "halibut",
+   "lemon",
+   "parsley",
+   "pasta",
+   "pistachios",
+   "shallots",
+   "zucchini"
+  ],
+  "yakiniku-garlic-black-rice-bowl": [
+   "allulose",
+   "black rice",
+   "broccolini",
+   "cilantro",
+   "doubanjiang",
+   "eggplant",
+   "fish sauce",
+   "fuji apple",
+   "garlic",
+   "ginger",
+   "mirin",
+   "sesame seeds",
+   "tofu"
+  ],
+  "zucchini-orzo-salad-with-pepperoncini-hmpfk": [
+   "garlic",
+   "green onions",
+   "lemon",
+   "pasta",
+   "pepperoncini",
+   "walnuts",
+   "zucchini"
+  ]
+ },
+ "recipeLines": {
+  "beet-chickpea-seed-crackers": {
+   "beets": [
+    "3 to 4 oz cooked red beet, peeled and cooled"
+   ],
+   "chickpea flour": [
+    "1 cup chickpea flour"
+   ],
+   "wheat flour": [
+    "1/2 cup whole wheat flour"
+   ],
+   "ground flaxseed": [
+    "1/4 cup ground flaxseed"
+   ],
+   "sesame seeds": [
+    "2 tablespoons sesame seeds"
+   ],
+   "pumpkin seeds": [
+    "2 tablespoons pumpkin seeds, finely chopped"
+   ],
+   "chia seeds": [
+    "1 tablespoon chia seeds or hemp hearts"
+   ],
+   "lemon zest": [
+    "1 teaspoon lemon zest, optional"
+   ]
+  },
+  "air-fryer-tempura-artichokes-lemon-dill-dressing": {
+   "almond flour": [
+    "1 cup almond flour"
+   ],
+   "artichoke hearts": [
+    "1  can quartered artichoke hearts"
+   ],
+   "spinach": [
+    "2 cups baby spinach"
+   ],
+   "asparagus": [
+    "1 cup shaved asparagus"
+   ],
+   "cabbage": [
+    "1 cup shredded green cabbage"
+   ],
+   "chicken": [
+    "1 lb shredded chicken"
+   ],
+   "greek yogurt": [
+    "1/2 cup plain greek yogurt"
+   ],
+   "lemon juice": [
+    "1 tablespoon lemon juice"
+   ],
+   "dill": [
+    "1 tablespoon chopped fresh dill"
+   ],
+   "almonds": [
+    "1 tablespoon sliced almonds, toasted"
+   ],
+   "parmesan cheese": [
+    "Shaved parmesan cheese"
+   ]
+  },
+  "asian-inspired-ginger-soy-cod-high-protein-delicious": {
+   "cod fillets": [
+    "4 cod fillets (6 oz each)"
+   ],
+   "ginger": [
+    "1 tbs fresh ginger, grated"
+   ],
+   "garlic": [
+    "2 cloves garlic, minced"
+   ],
+   "green onions": [
+    "2 green onions, thinly sliced"
+   ],
+   "sesame seeds": [
+    "1 tbs sesame seeds"
+   ],
+   "cilantro": [
+    "Fresh cilantro, chopped"
+   ],
+   "lime": [
+    "Lime wedges for serving"
+   ]
+  },
+  "authentic-chiles-rellenos-g1tu9": {
+   "poblano chiles": [
+    "4 poblano chiles, roasted"
+   ],
+   "oaxaca cheese": [
+    "3 1/2 cups shredded Oaxaca cheese"
+   ],
+   "red onion": [
+    "1/2 small red onion, sliced"
+   ],
+   "eggs": [
+    "4 eggs"
+   ],
+   "onion": [
+    "1/2 small onion, sliced in strips"
+   ],
+   "mexican oregano": [
+    "1 1/2 tbls Mexican oregano"
+   ],
+   "cotija cheese": [
+    "crumbled cotija cheese"
+   ],
+   "garlic": [
+    "3-4  garlic clove, sliced in half"
+   ],
+   "tomato": [
+    "Tomato Sauce:"
+   ]
+  },
+  "authentic-tortilla-soup-with-pasilla-chiles": {
+   "tortillas": [
+    "12 corn tortillas Salt Lime"
+   ],
+   "dried pasilla chille’s": [
+    "3 dried pasilla chille’s"
+   ],
+   "tomato": [
+    "1-15oz can quality tomatoes"
+   ],
+   "chicken": [
+    "1 lb chicken breast or thighs"
+   ],
+   "broth": [
+    "6 cups vegetable broth"
+   ],
+   "mexican oregano": [
+    "1 tbls Mexican oregano"
+   ],
+   "epazote": [
+    "1 large sprig epazote"
+   ],
+   "queso fresco": [
+    "6oz queso fresco"
+   ],
+   "avocado": [
+    "2 avocados cut into cubes"
+   ],
+   "cilantro": [
+    "1/2 cup cilantro chopped"
+   ],
+   "garlic": [
+    "4 garlic cloves whole"
+   ],
+   "lime": [
+    "2 limes"
+   ],
+   "onion": [
+    "1 white onion sliced"
+   ]
+  },
+  "caponata-sicilian-eggplant-with-bold-flavors-made-simple-oofnk": {
+   "eggplant": [
+    "2 large eggplants, cut into 1-inch cubes"
+   ],
+   "castelvetrano olives": [
+    "8 Castelvetrano olives, pitted and chopped"
+   ],
+   "capers": [
+    "2 tbls capers, rinsed and drained"
+   ],
+   "golden raisins": [
+    "2 tbls golden raisins"
+   ],
+   "tomato puree": [
+    "1 cup tomato puree"
+   ],
+   "allulose": [
+    "1 tbls allulose (or any sugar substitute)"
+   ],
+   "basil": [
+    "1/4 cup fresh basil leaves, torn"
+   ],
+   "celery": [
+    "2 celery stalks, finely diced"
+   ],
+   "crusty bread": [
+    "Crusty bread for serving"
+   ],
+   "onion": [
+    "1 small yellow onion, finely diced"
+   ],
+   "parsley": [
+    "2 tbls chopped fresh Italian parsley"
+   ]
+  },
+  "creamy-lentil-chicken-soup-with-parmesan-rind": {
+   "lentils": [
+    "1 cup green or brown lentils, picked over and rinsed"
+   ],
+   "onion": [
+    "1 cup chopped onion"
+   ],
+   "carrots": [
+    "1 cup diced carrots"
+   ],
+   "garlic": [
+    "2 tablespoons finely chopped garlic"
+   ],
+   "tomato": [
+    "1 (15-oz) can diced tomatoes"
+   ],
+   "chicken breast": [
+    "2 cups cooked shredded chicken breast"
+   ],
+   "coconut milk": [
+    "⅔ cup lite coconut milk"
+   ],
+   "spinach": [
+    "2 cups coarsely chopped spinach"
+   ],
+   "parsley": [
+    "¼ cup chopped fresh parsley"
+   ],
+   "white-wine vinegar": [
+    "1 tablespoon white-wine vinegar"
+   ],
+   "parmesan cheese": [
+    "1 Parmesan rind"
+   ]
+  },
+  "easy-mediterranean-bean-bowl-with-crispy-sourdough-healthy-flavor-packed-q4h13": {
+   "greek yogurt": [
+    "2 tablespoons plain nonfat Greek yogurt"
+   ],
+   "dijon mustard": [
+    "1 tablespoon Dijon mustard"
+   ],
+   "white wine vinegar": [
+    "1 tablespoon white wine vinegar"
+   ],
+   "capers": [
+    "2 teaspoons caper brine",
+    "1 tablespoon capers, minced"
+   ],
+   "allulose": [
+    "1 teaspoon allulose (or 1 tsp agave syrup)"
+   ],
+   "lemon zest": [
+    "Zest and juice of 1 lemon"
+   ],
+   "shallots": [
+    "1 shallot, thinly sliced"
+   ],
+   "chickpeas": [
+    "1 (15 oz) can chickpeas, drained and rinsed"
+   ],
+   "cannellini beans": [
+    "1 (15 oz) can cannellini beans, drained and rinsed"
+   ],
+   "sun-dried tomatoes": [
+    "⅓ cup sun-dried tomatoes (preferably oil-packed, drained and julienned)"
+   ],
+   "avocado": [
+    "1 ripe avocado, cubed"
+   ],
+   "garlic": [
+    "1 garlic clove, halved"
+   ],
+   "parsley": [
+    "½ cup fresh parsley, minced (divided)"
+   ]
+  },
+  "elegant-spring-appetizer-sweet-potato-rounds-with-burrata-sage-pesto": {
+   "sweet potatoes": [
+    "2 medium sweet potatoes (sliced into ½-inch rounds)"
+   ],
+   "beets": [
+    "2 medium beets (peeled and sliced)"
+   ],
+   "walnuts": [
+    "1/2 cup toasted walnuts plus more for garnish"
+   ],
+   "garlic": [
+    "1 clove garlic"
+   ],
+   "parmesan cheese": [
+    "¼ cup grated Parmesan cheese"
+   ],
+   "lemon juice": [
+    "2 tablespoons lemon juice"
+   ],
+   "burrata cheese": [
+    "1 ball burrata cheese (torn into pieces)"
+   ],
+   "parsley": [
+    "fresh parsley"
+   ],
+   "sage": [
+    "For the Walnut Sage Pesto:"
+   ]
+  },
+  "fish-and-long-bean-stir-fry": {
+   "white pepper": [
+    "1/8 tsp white pepper"
+   ],
+   "halibut or cod": [
+    "1 pound halibut or cod thinly sliced"
+   ],
+   "chinese long beans": [
+    "1/2 pound Chinese long beans, cut into 1-inch pieces"
+   ],
+   "ginger": [
+    "2 tsp minced ginger"
+   ],
+   "carrots": [
+    "2 carrots sliced."
+   ],
+   "oyster sauce": [
+    "2 tbls oyster-flavored sauce"
+   ],
+   "rice wine": [
+    "1 tbls Chinese rice wine or dry sherry"
+   ],
+   "almonds": [
+    "Toasted slivered almonds"
+   ],
+   "onion": [
+    "1/2 yellow onion, thinly sliced"
+   ]
+  },
+  "grillechicken-with-creamy-avocado-yogurt-sauce-3pbw3": {
+   "green onions": [
+    "4-5 Green onions"
+   ],
+   "garlic": [
+    "2 cloves garlic, chopped",
+    "1 clove garlic, minced"
+   ],
+   "lemon zest": [
+    "Juice and zest of 1 lemon"
+   ],
+   "zucchini": [
+    "1 zucchini diced"
+   ],
+   "red pepper": [
+    "1 red pepper diced"
+   ],
+   "corn": [
+    "1 cup roasted corn"
+   ],
+   "avocado": [
+    "1 ripe avocado"
+   ],
+   "greek yogurt": [
+    "1/2 cup Greek yogurt"
+   ],
+   "lime": [
+    "Juice of 1 lime"
+   ]
+  },
+  "grilled-branzino-with-tomato-salad": {
+   "branzino": [
+    "2 branzino fillets, skin-on"
+   ],
+   "cherry tomatoes": [
+    "2 cups cherry tomatoes, halved"
+   ],
+   "basil": [
+    "1 tbsp fresh basil, chopped"
+   ],
+   "lemon juice": [
+    "1 tbsp fresh lemon juice"
+   ],
+   "dijon mustard": [
+    "1 tsp Dijon mustard"
+   ],
+   "garlic": [
+    "1 garlic clove, minced"
+   ],
+   "lemon": [
+    "juice of ½ lemon"
+   ]
+  },
+  "grilled-chicken-quinoa-power-salad-rf5ua": {
+   "avocado": [
+    "½ avocado, sliced or diced"
+   ],
+   "cherry tomatoes": [
+    "½ cup cherry tomatoes, halved"
+   ],
+   "cucumber": [
+    "¼ cucumber, thinly sliced"
+   ],
+   "red onion": [
+    "2 tablespoons red onion, thinly sliced"
+   ],
+   "lemon juice": [
+    "2 tablespoons fresh lemon juice"
+   ],
+   "dijon mustard": [
+    "1 teaspoon Dijon mustard"
+   ],
+   "allulose": [
+    "½ teaspoon honey or allulose"
+   ],
+   "shallots": [
+    "1 teaspoon finely minced shallot"
+   ],
+   "lemon": [
+    "For the Lemon-Shallot Vinaigrette: 2 tablespoons extra virgin olive oil"
+   ]
+  },
+  "grilled-peach-salad-with-marinated-chicken-black-rice": {
+   "grain mustard": [
+    "½ cup whole grain mustard"
+   ],
+   "lemon juice": [
+    "¼ cup fresh lemon juice"
+   ],
+   "cilantro": [
+    "2 tbsp chopped fresh cilantro"
+   ],
+   "garlic": [
+    "1 clove garlic, grated"
+   ],
+   "yellow curry powder": [
+    "1 tbsp yellow curry powder"
+   ],
+   "arugula": [
+    "4 cups baby arugula or mixed greens"
+   ],
+   "peaches": [
+    "2 ripe peaches, halved and pitted"
+   ],
+   "black rice": [
+    "2 cups cooked black rice"
+   ],
+   "persian cucumber": [
+    "1 cup Persian cucumber, thinly sliced"
+   ],
+   "basil": [
+    "¼ cup chopped fresh basil"
+   ],
+   "parsley": [
+    "¼ cup chopped fresh parsley"
+   ],
+   "red onion": [
+    "¼ cup chopped red onion"
+   ],
+   "goat cheese": [
+    "¼ cup crumbled goat cheese or feta"
+   ],
+   "pistachios": [
+    "¼ cup toasted pistachios Lemon wedges, for serving"
+   ]
+  },
+  "grilled-shrimp-with-green-papaya-mango-salad-rbuig": {
+   "shrimp": [
+    "1 lb large shrimp, peeled and deveined"
+   ],
+   "green papaya": [
+    "2 cups green (not ripe) papaya"
+   ],
+   "mango": [
+    "1 ripe mango, peeled and julienned"
+   ],
+   "red onion": [
+    "¼ cup red onion"
+   ],
+   "jalapeño": [
+    "1 small jalapeño or red chili, thinly sliced (optional)"
+   ],
+   "fish sauce": [
+    "1 tbsp fish sauce (or soy sauce)"
+   ],
+   "allulose": [
+    "1 tsp honey or allulose"
+   ],
+   "mint": [
+    "2 tbsp fresh mint, chopped"
+   ],
+   "cilantro": [
+    "2 tbsp fresh cilantro, chopped"
+   ],
+   "peanuts": [
+    "2 tbsp crushed peanuts or cashews (optional)"
+   ],
+   "garlic": [
+    "1 garlic clove, minced"
+   ],
+   "lime": [
+    "2 tbsp lime juice"
+   ]
+  },
+  "grillicious-garlic-shrimp-xprxy": {
+   "shrimp": [
+    "1 lb large raw shrimp, peeled and deveined"
+   ],
+   "lemon": [
+    "1 lemon (half for juice, half for wedges)"
+   ]
+  },
+  "healthy-20chicken-skewers-with-creamy-garlic-yogurt-sauce-easy-high-protein-dinner": {
+   "greek yogurt": [
+    "1/4 cup plain nonfat Greek yogurt"
+   ],
+   "parmesan cheese": [
+    "2 tbsp grated parmesan cheese"
+   ],
+   "red chili flakes": [
+    "Pinch of red chili flakes"
+   ],
+   "chicken breast": [
+    "For the Chicken:"
+   ],
+   "garlic": [
+    "1 tsp garlic powder"
+   ],
+   "parsley": [
+    "1 tbsp fresh parsley, chopped"
+   ]
+  },
+  "healthy-homemade-nutella-recipe": {
+   "hazelnuts": [
+    "1½ cups raw hazelnuts"
+   ],
+   "unsweetened cocoa powder": [
+    "1 tbsp unsweetened cocoa powder"
+   ],
+   "vanilla": [
+    "2 tsps pure vanilla extract"
+   ],
+   "almond milk": [
+    "4-6 tbsp almond milk (adjust for desired consistency)"
+   ]
+  },
+  "healthy-matcha-moringa-almond-butter-cookies": {
+   "almond butter": [
+    "1 cup almond butter (or peanut butter)"
+   ],
+   "coconut flour": [
+    "1/4 cup coconut flour (or gluten-free flour)"
+   ],
+   "matcha powder": [
+    "1 tbsp matcha powder"
+   ],
+   "moringa powder": [
+    "1 tbsp moringa powder"
+   ],
+   "dark chocolate chips": [
+    "1/4 cup dark chocolate chips (optional, for a chocolatey twist)"
+   ]
+  },
+  "healthy-summer-plate-tofu-veggies-pesto-unjury-flavorless-protein": {
+   "tofu": [
+    "1 (14 oz) block extra-firm tofu, pressed and cut into 1-inch cubes"
+   ],
+   "basil": [
+    "1 cup fresh basil leaves, packed"
+   ],
+   "parmesan cheese": [
+    "2 tbsp grated Parmesan cheese"
+   ],
+   "pine nuts": [
+    "2 tbsp toasted pine nuts"
+   ],
+   "lemon juice": [
+    "1 tbsp fresh lemon juice"
+   ],
+   "scoop unjury flavorless protein powder": [
+    "1 scoop Unjury Flavorless Protein Powder"
+   ],
+   "garlic": [
+    "1/2 tsp garlic powder"
+   ]
+  },
+  "korean-inspired-gochujang-glazed-salmon-with-garlic-spinach": {
+   "gochujang": [
+    "2 tablespoons gochujang"
+   ],
+   "mirin": [
+    "1 tablespoon mirin"
+   ],
+   "garlic": [
+    "4 cloves garlic, grated, divided"
+   ],
+   "ginger": [
+    "2 teaspoons grated fresh ginger"
+   ],
+   "salmon": [
+    "1 ¼ pounds salmon, cut into 4 portions"
+   ],
+   "spinach": [
+    "8 cups baby spinach"
+   ],
+   "sesame seeds": [
+    "1 ½ teaspoons toasted sesame oil, divided"
+   ]
+  },
+  "lemon-herb-quinoa-with-roasted-vegetables-7f79i": {
+   "quinoa": [
+    "1/2 cup quinoa, rinsed"
+   ],
+   "parsley": [
+    "2 tbls fresh parsley, chopped"
+   ],
+   "basil": [
+    "1 tbls fresh basil or mint, chopped"
+   ],
+   "zucchini": [
+    "1 zucchini, sliced into half-moons"
+   ],
+   "cherry tomatoes": [
+    "1 cup cherry tomatoes, halved"
+   ],
+   "asparagus": [
+    "1 cup asparagus, trimmed and cut into 2-inch pieces"
+   ],
+   "tahini": [
+    "2 tbls tahini"
+   ],
+   "lemon juice": [
+    "2 tbls lemon juice"
+   ],
+   "bell pepper": [
+    "Salt and black pepper to taste"
+   ],
+   "lemon": [
+    "Zest of 1 lemon"
+   ]
+  },
+  "marry-me-chickpea-soup-with-kale": {
+   "shallots": [
+    "2 large shallots, chopped"
+   ],
+   "garlic": [
+    "4 cloves garlic, chopped"
+   ],
+   "tomato paste": [
+    "2 tablespoons tomato paste"
+   ],
+   "sun-dried tomatoes": [
+    "1/2 cup drained julienne-cut sun-dried tomatoes"
+   ],
+   "chickpeas": [
+    "2 (15-ounce) cans chickpeas, rinsed and drained"
+   ],
+   "broth": [
+    "6 cups vegetable broth"
+   ],
+   "kale": [
+    "1 small bunch Tuscan kale, stems removed and leaves roughly chopped, about 3 1/2 packed cups"
+   ],
+   "cream cheese": [
+    "2 tablespoons whipped light cream cheese"
+   ],
+   "greek yogurt": [
+    "1/4 cup plain Greek yogurt"
+   ],
+   "parmesan cheese": [
+    "1/4 cup grated Parmesan cheese, plus more for serving"
+   ],
+   "basil": [
+    "2 tablespoons chopped fresh basil, plus small leaves for garnish"
+   ]
+  },
+  "matcha-moringa-pesto-mushroom-zoodles-healthy-flavorful-pasta": {
+   "moringa powder": [
+    "2 teaspoons moringa powder"
+   ],
+   "matcha powder": [
+    "1 tablespoon matcha powder"
+   ],
+   "pine nuts": [
+    "1/4 cup toasted pine nuts or almonds"
+   ],
+   "garlic": [
+    "2 cloves garlic, roughly chopped",
+    "2 cloves garlic, minced"
+   ],
+   "parmesan cheese": [
+    "1/4 cup grated Parmesan cheese (optional for vegan: nutritional yeast)"
+   ],
+   "lemon juice": [
+    "1 tablespoon lemon juice"
+   ],
+   "mushrooms": [
+    "2 cups mushrooms (shiitake, cremini, or a mix), sliced"
+   ]
+  },
+  "mediterranean-lentil-bowl-with-zesty-sun-dried-tomato-dressing": {
+   "eggplant": [
+    "1 medium eggplant, diced into 1-inch cubes"
+   ],
+   "cherry tomatoes": [
+    "1 cup cherry tomatoes, halved"
+   ],
+   "cucumber": [
+    "1 cup cucumber, diced"
+   ],
+   "kalamata": [
+    "1/2 cup Kalamata, or Castelvetrano olives or a mix pitted and sliced"
+   ],
+   "feta cheese": [
+    "1/4 cup crumbled feta cheese"
+   ],
+   "sun-dried tomatoes": [
+    "1/4 cup sun-dried tomatoes in oil, finely chopped"
+   ],
+   "lemon juice": [
+    "2 tablespoons fresh lemon juice"
+   ],
+   "lemon zest": [
+    "1 teaspoon lemon zest"
+   ],
+   "dijon mustard": [
+    "1 teaspoon Dijon mustard"
+   ],
+   "garlic": [
+    "1 clove garlic, finely grated or minced"
+   ],
+   "lentils": [
+    "1 cup brown lentils, rinsed"
+   ]
+  },
+  "moroccan-lamb-stew-kfetv": {
+   "lamb": [
+    "2lb bone-in lamb stew meat"
+   ],
+   "garlic": [
+    "2 cloves garlic, chopped"
+   ],
+   "onion": [
+    "1 small onion, chopped"
+   ],
+   "ginger": [
+    "2 tsp minced fresh ginger"
+   ],
+   "ground allspice": [
+    "½ tsp ground allspice"
+   ],
+   "cayenne pepper": [
+    "¼ tsp cayenne"
+   ],
+   "cinnamon stick": [
+    "1 cinnamon stick"
+   ],
+   "tomato": [
+    "1 cup canned diced tomatoes"
+   ],
+   "dried apricots": [
+    "½ cup dried apricots, chopped"
+   ],
+   "chickpeas": [
+    "1 (15oz) can chickpeas, drained and rinsed"
+   ],
+   "pistachios": [
+    "½ cup shelled pistachios, roughly chopped"
+   ],
+   "parsley": [
+    "½ cup chopped fresh parsley"
+   ]
+  },
+  "pan-seared-halibut-with-mango-salsa-saffron-black-rice-summer-on-a-plate-tlfuu": {
+   "broth": [
+    "2 ¼ cups low-sodium vegetable or chicken broth"
+   ],
+   "saffron": [
+    "1 tbsp warm water a pinch of saffron threads"
+   ],
+   "greek yogurt": [
+    "¼ cup Greek yogurt"
+   ],
+   "parmesan cheese": [
+    "1 tbsp grated Parmesan cheese"
+   ],
+   "red onion": [
+    "2 tbsp red onion, finely chopped"
+   ],
+   "cilantro": [
+    "2 tsp fresh cilantro, chopped"
+   ],
+   "aleppo pepper": [
+    "1/2 tsp Aleppo pepper or chopped jalapeño for heat"
+   ],
+   "lime": [
+    "Juice of 1 lime"
+   ]
+  },
+  "peruvian-grilled-chicken-with-green-sauce-and-air-fried-peruvian-sweet-potatoes-irloz": {
+   "garlic": [
+    "4 cloves garlic, minced",
+    "1 clove garlic"
+   ],
+   "jalapeño": [
+    "1 jalapeño, seeds removed"
+   ],
+   "greek yogurt": [
+    "1/2 cup plain yogurt"
+   ],
+   "sour cream": [
+    "1/4 cup sour cream"
+   ],
+   "sweet potatoes": [
+    "2 large Peruvian sweet potatoes (or regular sweet potatoes)"
+   ],
+   "cilantro": [
+    "1 cup cilantro leaves, packed"
+   ],
+   "lime": [
+    "Juice of 1 lime"
+   ]
+  },
+  "pollo-agrodolce-sweet-sour-italian-chicken-recipe-sbfzw": {
+   "chicken thighs": [
+    "2lbs chicken thighs"
+   ],
+   "peppers": [
+    "3 sweet peppers assorted colors (red, orange, yellow), cut into large chunks"
+   ],
+   "shallots": [
+    "6 medium shallots, halved and peeled"
+   ],
+   "cherry tomatoes": [
+    "1 cup cherry tomatoes, halved"
+   ],
+   "capers": [
+    "2 tbls capers"
+   ],
+   "basil": [
+    "1/4c basil leaves chopped"
+   ],
+   "pine nuts": [
+    "1/4 cup pine nuts toasted"
+   ],
+   "garlic": [
+    "4-5 garlic cloves chopped"
+   ],
+   "parsley": [
+    "2 tablespoons chopped fresh Italian parsley"
+   ]
+  },
+  "protein-flip-blueberry-peach-quinoa-bake": {
+   "peaches": [
+    "3 ripe peaches, sliced (reserve half for topping)"
+   ],
+   "blueberries": [
+    "1 ½ cups fresh blueberries, tossed with 1 tsp cornstarch"
+   ],
+   "quinoa": [
+    "1 cup quinoa, rinsed but uncooked"
+   ],
+   "milk": [
+    "2 cups milk of choice (unsweetened almond, oat, dairy, etc.)"
+   ],
+   "eggs": [
+    "2 large eggs"
+   ],
+   "allulose": [
+    "2 tbsp allulose (plus 1 tsp for topping)"
+   ],
+   "almond butter": [
+    "2 tbsp almond butter, softened"
+   ],
+   "walnuts": [
+    "¼ cup chopped walnuts (plus extra for topping)"
+   ],
+   "greek yogurt": [
+    "¼ cup plain Greek yogurt"
+   ],
+   "chia seeds": [
+    "1 tbsp chia seeds"
+   ]
+  },
+  "protein-flip-tm-nutty-banana-bread-soft-baked-protein-bars": {
+   "blanched almond flour": [
+    "1 cup blanched almond flour (96g)"
+   ],
+   "coconut flour": [
+    "2 tbsp coconut flour (14g)"
+   ],
+   "ground flaxseed": [
+    "2 tbsp ground flaxseed (14g)"
+   ],
+   "chia seeds": [
+    "1 tbsp chia seeds (12g)"
+   ],
+   "walnuts": [
+    "2 tbsp chopped walnuts (14g)"
+   ],
+   "nutmeg": [
+    "Pinch nutmeg & clove (optional)"
+   ],
+   "mashed ripe banana": [
+    "½ cup mashed ripe banana (~118g; about 1 medium)"
+   ],
+   "almond butter": [
+    "2 tbsp almond butter (32g)"
+   ],
+   "molasses": [
+    "1 tbsp blackstrap molasses (20g)"
+   ],
+   "almond milk": [
+    "2 tbsp almond milk (or milk of choice)"
+   ]
+  },
+  "quick-and-healthy-tuna-quinoa-bowl": {
+   "quinoa": [
+    "1 cup leftover quinoa"
+   ],
+   "tuna": [
+    "1 can of tuna (in water drained)"
+   ],
+   "avocado": [
+    "1 avocado, diced"
+   ],
+   "cherry tomatoes": [
+    "1/4 cup cherry tomatoes, halved"
+   ],
+   "lemon juice": [
+    "2 tsps lemon juice"
+   ],
+   "dill": [
+    "2 tsps dill"
+   ]
+  },
+  "refreshing-jicama-citrus-salad-with-perfect-citrus-segments-summer-salad-idea": {
+   "serrano chile": [
+    "½ serrano chile, finely chopped",
+    "1 serrano chile, thinly sliced (seeds removed if desired)"
+   ],
+   "tajín": [
+    "1 teaspoon Tajín (down from 1 tbsp to reduce sodium)",
+    "2 teaspoons Tajín, or to taste as garnish Flaky sea salt, for finish"
+   ],
+   "pepitas": [
+    "¼ cup pepitas, toasted"
+   ],
+   "jicama": [
+    "1 small jicama, peeled, halved, then sliced"
+   ],
+   "pineapple": [
+    "¼ cup pineapple, halved then sliced (fresh or grilled for smoky depth)"
+   ],
+   "orange": [
+    "2 navel orange, segmented"
+   ],
+   "romaine": [
+    "1 head romaine, leaves"
+   ],
+   "red onion": [
+    "½ small red onion, thinly sliced"
+   ],
+   "cucumber": [
+    "2 Persian cucumbers, thinly sliced"
+   ]
+  },
+  "roasted-beet-carrot-salad": {
+   "beets": [
+    "3 medium beets (with stems and greens)"
+   ],
+   "carrots": [
+    "4 medium carrots (with tops)"
+   ],
+   "goat cheese": [
+    "2 oz goat cheese (or crumbled feta)"
+   ],
+   "nuts": [
+    "¼ cup toasted nuts (e.g. pistachios, walnuts, or almonds)"
+   ],
+   "white wine vinegar": [
+    "½ cup white wine vinegar (or apple cider vinegar)"
+   ],
+   "mustard seed": [
+    "½ tsp mustard seeds Pinch of red pepper flakes"
+   ],
+   "dijon mustard": [
+    "1 tsp Dijon mustard"
+   ]
+  },
+  "royal-tempeh-sweet-potato-tacos-with-chili-lime-yogurt-protein-flip-tm-weeknight-meal": {
+   "lime": [
+    "1 medium lime,"
+   ],
+   "ground chili powder": [
+    "2½ tsp ground chili powder"
+   ],
+   "chipotle chili powder": [
+    "½ tsp chipotle chili powder"
+   ],
+   "sweet potatoes": [
+    "1 small sweet potato,"
+   ],
+   "tempeh": [
+    "10 oz tempeh"
+   ],
+   "greek yogurt": [
+    "½ cup low-fat plain yogurt"
+   ],
+   "mexican crema": [
+    "¼ cup Mexican crema"
+   ],
+   "tortillas": [
+    "8 corn or flour tortillas"
+   ],
+   "avocado": [
+    "Diced avocado"
+   ],
+   "cilantro": [
+    "Chopped fresh cilantro"
+   ],
+   "jalapeño": [
+    "Thinly sliced jalapeño"
+   ]
+  },
+  "salmon-salad-with-crispy-white-beans": {
+   "cannellini beans": [
+    "1 (15-ounce) can no-salt-added cannellini beans, rinsed and patted dry"
+   ],
+   "salmon": [
+    "1 pound skinless center-cut salmon fillet (about 1-inch thick), cut into 1-inch pieces"
+   ],
+   "shichimi togarashi": [
+    "2 tablespoons shichimi togarashi"
+   ],
+   "dijon mustard": [
+    "1 teaspoon Dijon mustard"
+   ],
+   "garlic": [
+    "1 clove garlic, grated on a microplane"
+   ],
+   "ginger": [
+    "1/4 teaspoon grated fresh ginger"
+   ],
+   "carrots": [
+    "1 cup matchstick carrots"
+   ],
+   "bell pepper": [
+    "1/2 teaspoon crushed red pepper"
+   ],
+   "kale": [
+    "2 bunches lacinato kale, stemmed and coarsely chopped (about 8 packed cups)"
+   ]
+  },
+  "savory-vegetable-clafoutis-with-french-herb-beans": {
+   "leeks": [
+    "½ small leek, thinly sliced (white/light green part only)"
+   ],
+   "zucchini": [
+    "½ small zucchini, diced"
+   ],
+   "spinach": [
+    "½ cup baby spinach, roughly chopped"
+   ],
+   "cherry tomatoes": [
+    "¼ cup cherry tomatoes, halved"
+   ],
+   "eggs": [
+    "2 large eggs"
+   ],
+   "cottage cheese": [
+    "¾ cup low-fat cottage cheese"
+   ],
+   "goat cheese": [
+    "¼ cup soft goat cheese (chèvre)"
+   ],
+   "unsweetened almond milk": [
+    "¾ cup unsweetened almond milk"
+   ],
+   "chickpea flour": [
+    "¼ cup chickpea flour"
+   ],
+   "dijon mustard": [
+    "½ tsp Dijon mustard",
+    "1 tsp Dijon mustard (optional, stirred in at the end)"
+   ],
+   "nutritional yeast": [
+    "2 tbsp nutritional yeast"
+   ],
+   "gruyère": [
+    "2 tbsp shredded Gruyère"
+   ],
+   "sun-dried tomatoes": [
+    "2 tbsp chopped sun-dried tomatoes Extra fresh herbs, for garnish French Herb Beans"
+   ],
+   "shallots": [
+    "1 small shallot, finely diced"
+   ],
+   "thyme": [
+    "1 tsp chopped fresh thyme"
+   ],
+   "rosemary": [
+    "1 tsp chopped fresh rosemary"
+   ],
+   "broth": [
+    "Splash of vegetable broth or water"
+   ],
+   "cannellini beans": [
+    "2 cups cooked white beans (cannellini or black lentils work)"
+   ],
+   "garlic": [
+    "1 garlic clove, minced"
+   ]
+  },
+  "seared-salmon-with-warm-tomato-white-bean-vinaigrette": {
+   "cherry tomatoes": [
+    "2 cups multicolored cherry tomatoes, halved"
+   ],
+   "cannellini beans": [
+    "2 cups cannellini beans, drained and rinsed"
+   ],
+   "shallots": [
+    "1 large shallot, finely diced"
+   ],
+   "sherry vinegar": [
+    "2 tbsp white wine or sherry vinegar"
+   ],
+   "feta cheese": [
+    "4 oz feta cheese, lightly crumbled"
+   ],
+   "pistachios": [
+    "¼ cup pistachios, finely chopped"
+   ],
+   "garlic": [
+    "2 garlic cloves, grated"
+   ],
+   "lemon": [
+    "Zest of 1 lemon"
+   ],
+   "salmon": [
+    "4 salmon fillets (3-4 oz each)"
+   ]
+  },
+  "seared-scallops-with-ot-ga-den-hot-sauce": {
+   "sea scallops": [
+    "8 large sea scallops, patted dry"
+   ],
+   "peas": [
+    "1 cup frozen peas (or fresh if in season)"
+   ],
+   "broth": [
+    "2-3 tablespoons vegetable broth, chicken broth, or water (adjust as needed)"
+   ],
+   "lemon juice": [
+    "1-2 teaspoons fresh lemon juice (brightens it up) - Shaved Fennel & Orange Salad",
+    "1 tablespoon lemon juice (or orange juice from the segments)"
+   ],
+   "fennel bulb": [
+    "1 fennel bulb (fronds reserved)"
+   ],
+   "orange": [
+    "1 large orange"
+   ],
+   "red onion": [
+    "½ small red onion very thinly sliced"
+   ],
+   "garlic": [
+    "1 small garlic clove, chopped"
+   ],
+   "mint": [
+    "1 tablespoon fresh mint leaves (for brightness)"
+   ]
+  },
+  "sheet-pan-fish-tacos-with-creamy-avocado-sauce": {
+   "tilapia fillets": [
+    "1 1/2 pounds tilapia fillets"
+   ],
+   "tortillas": [
+    "8 taco-size tortillas of choice"
+   ],
+   "cabbage": [
+    "1 cup shredded green cabbage"
+   ],
+   "red cabbage": [
+    "1 cup shredded red cabbage"
+   ],
+   "cilantro": [
+    "1/2 cup chopped fresh cilantro"
+   ],
+   "avocado": [
+    "2 small avocados or 1 large avocado"
+   ],
+   "cottage cheese": [
+    "3/4 cup cottage cheese"
+   ],
+   "lime": [
+    "Juice of 1 lime"
+   ],
+   "parsley": [
+    "1/2 cup fresh parsley"
+   ]
+  },
+  "smoky-autumn-vegetable-romesco-soup-the-protein-flip-way": {
+   "sherry vinegar": [
+    "5 tsp sherry vinegar"
+   ],
+   "almonds": [
+    "⅓ cup toasted whole almonds:",
+    "Toasted chopped almonds (1 tbsp per serving)"
+   ],
+   "sweet potatoes": [
+    "4-5 cups sliced autumn vegetables: sweet potatoes, delicata or acorn squash (½\" slices), zucchini (½\" diagonals), carrots (thin coins), onions (½\" wedges), red bell pepper strips"
+   ],
+   "tomato": [
+    "1 can (15 oz) fire-roasted or stewed tomatoes"
+   ],
+   "cannellini beans": [
+    "1 can (15 oz) cannellini beans, drained and rinsed"
+   ],
+   "broth": [
+    "3-4 cups vegetable broth (start with 3)"
+   ],
+   "crème fraîche": [
+    "Crème fraîche, Greek yogurt, or labneh"
+   ],
+   "bell pepper": [
+    "Red Pepper-Almond Sauce (Romesco Base)"
+   ],
+   "garlic": [
+    "1 garlic clove, minced"
+   ]
+  },
+  "spicy-chicken-french-lentil-bowl": {
+   "lentils": [
+    "½ cup dried French (Puy) lentils"
+   ],
+   "chicken breast": [
+    "3 oz grilled chicken breast, sliced thin"
+   ],
+   "edamame": [
+    "½ cup shelled edamame"
+   ],
+   "avocado": [
+    "¼ avocado, sliced"
+   ],
+   "lime": [
+    "Juice of ½ lime"
+   ],
+   "lemon": [
+    "Lemon zest"
+   ]
+  },
+  "spicy-grilled-eggplant-fresh-tomatoes-easy-mediterranean": {
+   "eggplant": [
+    "9 slender (Asian) eggplants or 2 small globe eggplants (about 2 lb / 1 kg total weight)"
+   ],
+   "garlic": [
+    "3 cloves garlic, minced"
+   ],
+   "parsley": [
+    "2 tablespoons chopped fresh parsley, plus extra for garnish"
+   ],
+   "tomato": [
+    "2 fresh ripe tomatoes, sliced"
+   ]
+  },
+  "strawberry-cobb-salad-with-halloumi-tarragon-dressing-mrcdr": {
+   "greek yogurt": [
+    "3 Tbsp plain yogurt"
+   ],
+   "white wine vinegar": [
+    "2 Tbsp white wine vinegar"
+   ],
+   "tarragon": [
+    "1 Tbsp finely chopped fresh tarragon"
+   ],
+   "halloumi": [
+    "1 (8-oz.) block halloumi or feta cheese"
+   ],
+   "hard-boiled eggs": [
+    "4 hard-boiled eggs, sliced"
+   ],
+   "avocado": [
+    "1 ripe avocado, thinly sliced"
+   ],
+   "strawberries": [
+    "1 1/2 cups strawberries, thinly sliced"
+   ],
+   "radishes": [
+    "1/3 cup radishes, julienned"
+   ],
+   "dill": [
+    "3 Tbsp fresh dill, chopped"
+   ],
+   "garlic": [
+    "1 garlic clove, finely chopped"
+   ],
+   "romaine": [
+    "1 head (or 2 hearts) romaine lettuce, chopped"
+   ]
+  },
+  "the-secret-to-easy-to-peel-hard-boiled-eggs": {
+   "eggs": [
+    "Eggs (7-10 days old)"
+   ]
+  },
+  "tuna-chickpea-salad": {
+   "chickpeas": [
+    "2 (15-ounce) cans chickpeas, rinsed and drained"
+   ],
+   "albacore tuna": [
+    "2 cans albacore tuna, drained"
+   ],
+   "dijon mustard": [
+    "1 tablespoon Dijon or yellow mustard"
+   ],
+   "nori": [
+    "1 sheet nori, crushed into flakes or finely chopped"
+   ],
+   "red onion": [
+    "1/2 medium red onion, finely chopped"
+   ],
+   "capers": [
+    "1 tablespoon capers, drained and chopped"
+   ],
+   "celery": [
+    "1 celery stalk, finely chopped"
+   ],
+   "lemon": [
+    "Juice of 1 lemon"
+   ]
+  },
+  "tuscany-inspired-salad-with-roasted-20cauliflower-lupini-beans": {
+   "cauliflower": [
+    "3 cups multi-colored cauliflower florets (purple, yellow, white, and green)"
+   ],
+   "carrots": [
+    "2 cups carrots shaved"
+   ],
+   "lupini beans": [
+    "1 1/2 cups lupini beans, rinsed and drained"
+   ],
+   "arugula": [
+    "2 cups baby arugula or mixed greens"
+   ],
+   "pine nuts": [
+    "1/4 cup toasted pine nuts"
+   ],
+   "sun-dried tomatoes": [
+    "1/2 cup sun-dried tomatoes, julienned"
+   ],
+   "castelvetrano olives": [
+    "1/2 cup Castelvetrano olives, halved"
+   ],
+   "basil": [
+    "2 tbsp fresh basil, chopped"
+   ],
+   "lemon juice": [
+    "2 tbsp lemon juice"
+   ],
+   "white wine vinegar": [
+    "2 tsp white wine vinegar"
+   ],
+   "dijon mustard": [
+    "1 tsp Dijon mustard"
+   ],
+   "garlic": [
+    "1/2 tsp garlic powder"
+   ],
+   "lemon": [
+    "Lemon-Herb Dressing:"
+   ]
+  },
+  "vibrant-broccolini-salad-with-crispy-chickpeas-sumac-dressing-and-albacore-tuna-stdsh": {
+   "chickpeas": [
+    "1 (15 oz) can chickpeas, drained, rinsed, and patted dry"
+   ],
+   "aleppo pepper": [
+    "1/2 tsp Aleppo pepper or red pepper flakes"
+   ],
+   "red onion": [
+    "1/2 small red onion, thinly sliced"
+   ],
+   "sumac": [
+    "1/2 tsp sumac",
+    "1 tsp sumac Salt and pepper to taste"
+   ],
+   "lemon zest": [
+    "Juice and zest of 1 lemon"
+   ],
+   "allulose": [
+    "1 tsp allulose or honey",
+    "2 tsp allulose"
+   ],
+   "garlic": [
+    "5 cloves garlic, thinly sliced",
+    "1 clove garlic, finely grated"
+   ],
+   "broccolini": [
+    "2 bunches broccolini, ends trimmed, stems thinly sliced, tops halved"
+   ],
+   "mint": [
+    "Small handful fresh mint leaves, torn"
+   ],
+   "greek yogurt": [
+    "1/2 cup plain Greek yogurt"
+   ],
+   "dijon mustard": [
+    "1 tsp Dijon mustard"
+   ]
+  },
+  "warm-balsamic-mushroom-and-lentil-salad-recipe-ivzia": {
+   "mushrooms": [
+    "12 oz. mixed mushrooms (cremini, shiitake), sliced"
+   ],
+   "shallots": [
+    "1 medium shallot, thinly sliced"
+   ],
+   "lentils": [
+    "11/2 cups cooked brown or green lentils (canned or cooked from dry)"
+   ],
+   "parmesan cheese": [
+    "3 Tosp. grated Parmesan cheese (or nutritional yeast if making vegan)"
+   ],
+   "arugula": [
+    "Arugula, spinach, or mixed greens for serving (about 2 cups per salad)"
+   ],
+   "cashew butter": [
+    "3 Tosp. creamy cashew butter"
+   ],
+   "lemon juice": [
+    "2 Tbsp. fresh lemon juice"
+   ],
+   "dijon mustard": [
+    "1 tsp. Dijon mustard"
+   ],
+   "garlic": [
+    "1 tsp. grated garlic (about 2 cloves)"
+   ],
+   "thyme": [
+    "2 tsp. fresh thyme leaves"
+   ]
+  },
+  "yakiniku-garlic-black-rice-bowl": {
+   "mirin": [
+    "1 cup mirin"
+   ],
+   "allulose": [
+    "1 tablespoon allulose or honey"
+   ],
+   "doubanjiang": [
+    "1 tablespoon doubanjiang (adjust to taste)"
+   ],
+   "garlic": [
+    "3 cloves garlic, minced",
+    "4-5 cloves garlic, finely chopped"
+   ],
+   "ginger": [
+    "1-inch piece fresh ginger, grated"
+   ],
+   "fuji apple": [
+    "½ Fuji apple, grated"
+   ],
+   "black rice": [
+    "1 cup dry black rice"
+   ],
+   "broth": [
+    "2¼ cups vegetable broth (or water with bouillon)"
+   ],
+   "tofu": [
+    "1 block extra-firm tofu, pressed and cut into thick slabs"
+   ],
+   "eggplant": [
+    "1 medium eggplant, cut into large chunks"
+   ],
+   "broccolini": [
+    "1 bunch broccolini, trimmed"
+   ],
+   "fish sauce": [
+    "1-2 tablespoons fish sauce (to taste)"
+   ],
+   "cilantro": [
+    "Chopped cilantro"
+   ],
+   "sesame seeds": [
+    "2 tablespoons sesame oil"
+   ]
+  },
+  "air-fried-potato-chips-tpjnb": {
+   "potato": [
+    "1 large russet potato, peeled"
+   ],
+   "rosemary": [
+    "1/4 cup rosemary"
+   ],
+   "sage": [
+    "1/4 cup sage"
+   ],
+   "parmesan cheese": [
+    "1/2 cup Parmesan cheese"
+   ]
+  },
+  "arugula-and-persimmon-salad": {
+   "pecans": [
+    "3/4 cup pecan halves 6 to 8 oz."
+   ],
+   "fuyu persimmons": [
+    "2 ripe fuyu persimmons"
+   ],
+   "arugula": [
+    "6-8oz baby arugula"
+   ],
+   "shallots": [
+    "2 Tbsp. minced shallots"
+   ],
+   "dijon mustard": [
+    "1 tsp Dijon mustard"
+   ],
+   "avocado": [
+    "2 medium avocados, sliced"
+   ],
+   "halloumi cheese": [
+    "halloumi cheese"
+   ]
+  },
+  "asparagus-sorrel-bisque": {
+   "leeks": [
+    "2 large leeks, white and pale green parts only, halved"
+   ],
+   "broth": [
+    "4 cups vegetable broth"
+   ],
+   "asparagus": [
+    "2 pounds asparagus, trimmed and cut into ½-inch pieces"
+   ],
+   "greek yogurt": [
+    "1/2 cup plain yogurt"
+   ],
+   "radish": [
+    "Garnish: Sliced radishes & ground pepper"
+   ],
+   "garlic": [
+    "2-3 garlic cloves chopped"
+   ]
+  },
+  "authentic-ribollita-soup-recipe-classic-italian-vegetable-and-bread-soup": {
+   "carrots": [
+    "1 large carrot, finely chopped"
+   ],
+   "crushed tomatoes": [
+    "1 15oz can crushed tomatoes (preferably San Marzano)"
+   ],
+   "kale": [
+    "1 large bunch of kale, stemmed and thinly sliced into 1-inch pieces"
+   ],
+   "parmesan cheese rind": [
+    "1 (4-inch) Parmesan cheese rind"
+   ],
+   "cannellini beans": [
+    "2 15oz cans cooked cannellini beans divided Fresh ground black pepper Grated Parmesan cheese, for serving"
+   ],
+   "celery": [
+    "1 celery stalk, finely chopped"
+   ],
+   "garlic": [
+    "8 garlic cloves, finely chopped"
+   ],
+   "onion": [
+    "1 large yellow onion, finely chopped"
+   ],
+   "potato": [
+    "2 medium Yukon Gold potatoes, peeled and diced"
+   ]
+  },
+  "autumn-butternut-squash-with-sage-and-apple": {
+   "butternut squash": [
+    "1 butternut squash, peeled and cut into 2 inch chunks"
+   ],
+   "carrots": [
+    "2 medium carrots, quartered"
+   ],
+   "onion": [
+    "1 medium onion, quartered"
+   ],
+   "gala apples": [
+    "2 Gala apples, cored and peeled and cut into quarters"
+   ],
+   "garlic": [
+    "3 cloves garlic"
+   ],
+   "sage": [
+    "1 tsp dried sage"
+   ],
+   "white pepper": [
+    "¼ tsp white pepper"
+   ],
+   "vegetable stock": [
+    "32 oz vegetable stock"
+   ],
+   "heavy cream": [
+    "1 cup heavy cream or substitute"
+   ],
+   "greek yogurt": [
+    "1/2c Greek Yogurt"
+   ],
+   "hazelnuts": [
+    "Chopped Hazelnuts for garnish"
+   ]
+  },
+  "baked-peaches": {
+   "allulose": [
+    "softened 1 tablespoon Allulose (sweetener)"
+   ],
+   "⁄2 teaspoon vanilla extract/paste": [
+    "1⁄2 teaspoon vanilla extract/paste"
+   ],
+   "peaches": [
+    "4 small fresh peaches"
+   ],
+   "unsalted butter": [
+    "1⁄4 cup unsalted butter"
+   ]
+  },
+  "baked-halibut-with-brussel-sprouts-and-quinoa": {
+   "brussels sprouts trimmed and": [
+    "1 pound Brussels sprouts trimmed and sliced"
+   ],
+   "fennel bulb": [
+    "1 fennel bulb, trimmed and cut into strips (instructional video embedded)"
+   ],
+   "halibut fillet": [
+    "4-4oz halibut fillet"
+   ],
+   "garlic": [
+    "6 cloves garlic, minced, divided"
+   ],
+   "lemon juice": [
+    "3 tablespoons lemon juice"
+   ],
+   "quinoa": [
+    "2 cups cooked quinoa (according to package)"
+   ],
+   "sun-dried tomatoes": [
+    "1/4 cup chopped sun-dried tomatoes"
+   ],
+   "kalamata olives chopped and pitted": [
+    "1/4 cup Kalamata olives chopped and pitted"
+   ],
+   "lemon": [
+    "Lemon for garnish"
+   ],
+   "parsley": [
+    "2 tablespoons chopped fresh Italian parsley"
+   ]
+  },
+  "barramundi-fish": {
+   "garlic": [
+    "2 TB garlic minced"
+   ],
+   "basil": [
+    "1 TB basil chopped"
+   ],
+   "lemon juice": [
+    "1 TB lemon juice"
+   ],
+   "lemon zest": [
+    "1 TB lemon zest"
+   ],
+   "barramundi fillets": [
+    "4 barramundi fillets"
+   ],
+   "vanilla": [
+    "Garnishes 4 cups Spinach Freshly chopped basil Lemon slices Cherry tomato sliced"
+   ]
+  },
+  "berry-tart-with-sweet-potato-crust": {
+   "crust 2 medium sweet potatoes": [
+    "Crust 2 medium Sweet Potatoes"
+   ],
+   "gluten free flour": [
+    "2 cups gluten free flour"
+   ],
+   "mint": [
+    "2 tbls mint"
+   ],
+   "lemon": [
+    "1 tbls lemon"
+   ],
+   "berries": [
+    "3 cup frozen mixed berries"
+   ]
+  },
+  "black-rice-sushi-rolls": {
+   "black rice": [
+    "2 cups black rice"
+   ],
+   "seaweed": [
+    "10 seaweed sheets"
+   ]
+  },
+  "blackened-salmon-with-caramelized-onion-and-sweet-potato-salad": {
+   "cayenne pepper": [
+    "1 tbls ground cayenne pepper"
+   ],
+   "white pepper": [
+    "1/2 tsps ground white pepper"
+   ],
+   "thyme": [
+    "1/4 tsps dried thyme"
+   ],
+   "basil": [
+    "1/4 tsps dried basil"
+   ],
+   "oregano": [
+    "1/4 tsps dried oregano"
+   ],
+   "sweet potatoes": [
+    "2 large sweet potatoes, thinly sliced on the round"
+   ],
+   "parsley": [
+    "1/4 cup parsley finely chopped"
+   ],
+   "feta cheese": [
+    "1/2 cup feta cheese (omit for dairy-free)"
+   ],
+   "wholegrain mustard": [
+    "2 tsps wholegrain mustard"
+   ],
+   "red onion": [
+    "1 tbls onion powder"
+   ],
+   "salmon": [
+    "For the salmon:"
+   ],
+   "spinach": [
+    "2 cups baby spinach leaves"
+   ]
+  },
+  "boiled-egg-hummus-on-keto-toast": {
+   "eggs": [
+    "3 eggs"
+   ],
+   "pickle": [
+    "2 oz chopped pickle"
+   ],
+   "hummus": [
+    "1 oz hummus"
+   ],
+   "lemon": [
+    "1 teaspoon lemon"
+   ],
+   "mint": [
+    "1/2 teaspoon chopped mint"
+   ]
+  },
+  "bok-choy-and-broccoli-with-caramelized-onion": {
+   "red onion": [
+    "1 Red onion thinly sliced"
+   ],
+   "ginger": [
+    "2 tbls Ginger chopped"
+   ],
+   "broccoli": [
+    "2 cups Broccoli cut into bite size pieces"
+   ],
+   "bok choy": [
+    "2 heads of Bok Choy cut into bite size pieces (leaves separated from stems)"
+   ],
+   "peppers": [
+    "2 yellow or Orange peppers"
+   ],
+   "red cabbage": [
+    "2 cups Red cabbage"
+   ],
+   "korean peppers": [
+    "2 tbls Korean peppers (or any pepper of your choice)"
+   ],
+   "lime": [
+    "(optional) 1 Lime (plus extra for garnish)"
+   ],
+   "garlic": [
+    "3-4 Garlic cloves chopped"
+   ]
+  },
+  "bok-choy-pork-salad": {
+   "bok choy": [
+    "4-5 small Bok Choy sliced into strips (green parts and about half of the white."
+   ],
+   "peppers": [
+    "2-3 Sweet peppers sliced"
+   ],
+   "green onions": [
+    "6 Green onion preferably the bigger Mexican onions",
+    "2 green onion thin sliced"
+   ],
+   "cherry tomatoes": [
+    "1 pc Cherry tomatoes halved"
+   ],
+   "walnuts": [
+    "1/4c Walnuts"
+   ],
+   "feta": [
+    "1/4c Feta"
+   ],
+   "gochujang": [
+    "2 tbls gochujang"
+   ],
+   "lemon": [
+    "Juice of 1 lemon"
+   ]
+  },
+  "breaded-tofu-with-panko-crumbs": {
+   "tofu": [
+    "1 (12 oz block) firm or extra-firm tofu pressed"
+   ],
+   "panko": [
+    "1 cup Panko crumbs Batter"
+   ],
+   "gluten free flour": [
+    "1/4 cup Gluten Free flour"
+   ],
+   "garlic chili sauce": [
+    "1/3 cup garlic chili sauce"
+   ]
+  },
+  "broccoli-soup-with-cactus-and-gruyere-cheese": {
+   "broth": [
+    "2 1/2-3 cups vegetable broth"
+   ],
+   "broccoli": [
+    "6 cups broccoli crowns"
+   ],
+   "cannellini beans": [
+    "1 14-ounce can white beans like cannellini beans, rinsed"
+   ],
+   "cactus": [
+    "1 cup cactus diced"
+   ],
+   "gruyere cheese": [
+    "1 cup gruyere cheese"
+   ]
+  },
+  "butternut-squash-soup-with-beans-and-escarole": {
+   "escarole": [
+    "1 head escarole, chopped"
+   ],
+   "garlic": [
+    "3 cloves garlic, chopped"
+   ],
+   "onion": [
+    "1 onion, chopped"
+   ],
+   "tomato": [
+    "1 (15oz) can good quality diced tomatoes"
+   ],
+   "butternut squash": [
+    "1 medium butternut squash, peeled and diced"
+   ],
+   "cannellini beans": [
+    "1 (15oz) can cannellini beans, drained and rinsed"
+   ],
+   "thyme": [
+    "2 tsp fresh thyme leaves chopped"
+   ]
+  },
+  "cauliflower-chicken-fried-rice-with-scrambled-egg-peas-edamame": {
+   "eggs": [
+    "6 large eggs, beaten"
+   ],
+   "carrots": [
+    "1 cup diced carrot (about 2 medium carrots)"
+   ],
+   "edamame": [
+    "½ cup shelled edamame, cooked"
+   ],
+   "cauliflower rice": [
+    "6 cups fresh cauliflower rice (about 1 medium head), see Cook’s Note"
+   ],
+   "sesame seeds": [
+    "2 tbsp sesame seeds, toasted"
+   ],
+   "garlic": [
+    "3 garlic cloves, minced"
+   ],
+   "onion": [
+    "1 medium yellow onion, diced (about 1 cup)"
+   ],
+   "peas": [
+    "¾ cup green peas (fresh or frozen)"
+   ]
+  },
+  "chicken-fajita-bowl-quick-and-flavorful-dinner-idea": {
+   "chicken breast": [
+    "1 lb boneless skinless chicken breast, thinly sliced"
+   ],
+   "yellow onions": [
+    "1½ yellow onions, sliced"
+   ],
+   "peppers": [
+    "2 green bell peppers, sliced"
+   ],
+   "poblano peppers": [
+    "2 poblano peppers, sliced"
+   ],
+   "jalapeño": [
+    "1-2 jalapeños, thinly sliced (optional)"
+   ],
+   "black beans": [
+    "2 (15 oz) cans black beans, drained and rinsed"
+   ],
+   "corn": [
+    "2 cups roasted corn"
+   ],
+   "tomato": [
+    "2 large tomatoes, diced"
+   ],
+   "cilantro": [
+    "Fresh cilantro, for garnish"
+   ],
+   "avocado": [
+    "1 tbsp avocado oil"
+   ],
+   "bell pepper": [
+    "1/4 tsp cayenne pepper (optional)"
+   ],
+   "lettuce": [
+    "Shredded lettuce"
+   ],
+   "lime": [
+    "Juice of 2 limes"
+   ]
+  },
+  "chicken-tika-masala": {
+   "chicken thighs": [
+    "1 lb boneless chicken thighs, cut into bite-sized pieces"
+   ],
+   "onion": [
+    "1 onion medium, diced"
+   ],
+   "ginger": [
+    "1 tbsp ginger, minced"
+   ],
+   "fenugreek leaves": [
+    "2 tsp fenugreek leaves dried"
+   ],
+   "kashmiri": [
+    "1 tsp Kashmiri red chili powder"
+   ],
+   "hungarian paprika": [
+    "1 tsp Hungarian paprika"
+   ],
+   "garam masala": [
+    "1 tbsp garam masala"
+   ],
+   "tomato": [
+    "1 can (14 oz) diced tomatoes"
+   ],
+   "greek yogurt": [
+    "1/4 cup low-fat plain Greek yogurt"
+   ],
+   "cilantro": [
+    "fresh cilantro, chopped, for garnish"
+   ],
+   "garlic": [
+    "4 garlic cloves, minced"
+   ]
+  },
+  "chickpea-chocolate-chip-cookies": {
+   "chickpeas": [
+    "1-15 oz can of chickpeas rinsed and drained"
+   ],
+   "almond butter": [
+    "1/2 cup creamy almond butter"
+   ],
+   "rolled oats": [
+    "1/4 cup rolled oats"
+   ],
+   "allulose": [
+    "1/4 cup allulose sugar or your preferred substitute 1 tbls Just better fiber website: https://getjustbetter.com"
+   ],
+   "chocolate chips": [
+    "1/2 cup chocolate chips",
+    "Garnish: Top with Mini chocolate chips"
+   ],
+   "vanilla": [
+    "1 tsp vanilla"
+   ]
+  },
+  "chili-colorado": {
+   "guajillo chilies": [
+    "3 dried Guajillo chilis"
+   ],
+   "ancho chilis": [
+    "4 dried Ancho chilis"
+   ],
+   "chile de arbol": [
+    "3 dried Chile de Arbol"
+   ],
+   "broth": [
+    "4 cups of beef or chicken broth (divided in half)"
+   ],
+   "tomato": [
+    "2 roasted tomatoes"
+   ],
+   "onion": [
+    "1 medium onion, diced"
+   ],
+   "garlic": [
+    "2 cloves garlic, minced"
+   ],
+   "mexican oregano": [
+    "2 tsp ground Mexican oregano"
+   ],
+   "all spice": [
+    "1/4 tsp all spice"
+   ],
+   "tables apple cider vinegar": [
+    "2 tables apple cider vinegar"
+   ],
+   "masa harina": [
+    "3 tbls masa harina (or corn starch)"
+   ]
+  },
+  "protein-flip-creamy-clam-chowder-with-zesty-lime-tofu-flatbread": {
+   "carrots": [
+    "1 carrot, diced"
+   ],
+   "thyme": [
+    "1 tsp fresh thyme"
+   ],
+   "clam juice": [
+    "1 cup clam juice"
+   ],
+   "unsweetened almond milk": [
+    "2 cups unsweetened almond milk"
+   ],
+   "clams": [
+    "2 (6.5 oz) cans chopped clams, with juice reserved"
+   ],
+   "celery": [
+    "1 celery stalk, diced"
+   ],
+   "garlic": [
+    "2 garlic cloves, minced"
+   ],
+   "lime": [
+    "Juice of 1 lime"
+   ],
+   "onion": [
+    "1 yellow onion, chopped"
+   ],
+   "potato": [
+    "2 medium potatoes, peeled and diced"
+   ]
+  },
+  "classic-salsa-verde": {
+   "tomatillos": [
+    "8-10 Tomatillos peel off the husks"
+   ],
+   "poblano peppers": [
+    "6 Poblano peppers"
+   ],
+   "serrano peppers": [
+    "4 Serrano peppers"
+   ],
+   "onion": [
+    "1 Onion small quartered"
+   ],
+   "garlic": [
+    "4-5 Garlic cloves unpeeled"
+   ],
+   "mexican oregano": [
+    "2 tbls Mexican Oregano"
+   ],
+   "cilantro": [
+    "1/4 cup Cilantro chopped"
+   ],
+   "lime": [
+    "2 Limes"
+   ]
+  },
+  "classic-mussels-with-white-wine": {
+   "mussels": [
+    "1lb mussels"
+   ],
+   "shallots": [
+    "2 shallots chopped"
+   ],
+   "tarragon": [
+    "2 tbsp fresh tarragon leaves"
+   ],
+   "tomato": [
+    "2 medium quality tomatoes chopped"
+   ],
+   "lemon": [
+    "1/2 lemon",
+    "Garnish with a lemon wedge, parsley, and a nice crusty bread (sourdough)"
+   ],
+   "white wine": [
+    "3/4 cup white wine (french chardonnay or a nice sauvignon blanc)"
+   ],
+   "broth": [
+    "1 cup vegetable broth"
+   ],
+   "celery": [
+    "2 celery stalks sliced"
+   ],
+   "garlic": [
+    "4 garlic cloves sliced"
+   ]
+  },
+  "cozy-chicken-and-barley-stew-lt8dx": {
+   "leeks": [
+    "3-4 leeks, trimmed and cut into 1/4 in half moons"
+   ],
+   "carrots": [
+    "2 carrots, sliced"
+   ],
+   "celery": [
+    "2 stalks celery, sliced"
+   ],
+   "garlic": [
+    "4-5 cloves garlic, sliced"
+   ],
+   "marjoram": [
+    "1/2 tsp marjoram"
+   ],
+   "thyme": [
+    "1/2 tsp thyme"
+   ],
+   "tarragon": [
+    "1/4 tsp tarragon"
+   ],
+   "rosemary": [
+    "1/4 tsp rosemary"
+   ],
+   "parsley": [
+    "1/4 tsp parsley"
+   ],
+   "chicken thighs": [
+    "2lb chicken thighs sliced into 1/2 inch pieces"
+   ],
+   "barley": [
+    "4 oz pearled barley"
+   ],
+   "lemon juice": [
+    "2 tbls fresh lemon juice"
+   ]
+  },
+  "creme-brulee-with-almond-milk-and-cream": {
+   "heavy cream": [
+    "1/2 cup heavy cream"
+   ],
+   "unsweetened almond milk": [
+    "1/2 cup unsweetened almond milk"
+   ],
+   "alulose": [
+    "2 tablespoons Alulose"
+   ]
+  },
+  "crispy-air-fry-falafel-with-fresh-herbs": {
+   "chickpeas": [
+    "2c dried chickpeas"
+   ],
+   "dill": [
+    "1/2c fresh dill, stems removed"
+   ],
+   "onion": [
+    "1 small onion, quartered"
+   ],
+   "garlic": [
+    "7-8 garlic cloves, peeled Salt to taste"
+   ]
+  },
+  "crispy-air-fryer-tilapia-with-brussels-sprouts": {
+   "tilapia": [
+    "12 ounces tilapia filets"
+   ],
+   "lemon pepper": [
+    "1/2 tsp lemon pepper seasoning"
+   ],
+   "parsley": [
+    "1/4c fresh parsley chopped"
+   ],
+   "lemon wedges": [
+    "lemon wedges"
+   ]
+  },
+  "crispy-black-bean-cakes-with-sun-dried-tomato-and-lime-crema": {
+   "black beans": [
+    "1 15oz can black beans"
+   ],
+   "sun-dried tomatoes": [
+    "2 tbls of the oil from the sun-dried tomatoes",
+    "1/2 cup sun-dried tomatoes (oil reserved for sautéing)"
+   ],
+   "garlic": [
+    "4-5 garlic chopped"
+   ],
+   "onion": [
+    "3oz diced onion"
+   ],
+   "jalapeño": [
+    "1 jalapeño, seeded and minced"
+   ],
+   "cilantro": [
+    "2 tbsp chopped cilantro"
+   ],
+   "greek yogurt": [
+    "1 1/2 oz nonfat yogurt"
+   ],
+   "sour cream": [
+    "1 1/2 oz sour cream"
+   ],
+   "lime": [
+    "3 tsp fresh lime juice"
+   ]
+  },
+  "crispy-pretzel-crust-lemon-herb-chicken-quick-high-protein-meal-idbug": {
+   "lemon juice": [
+    "1 tbls fresh lemon juice"
+   ],
+   "lemon zest": [
+    "1 tsp lemon zest"
+   ],
+   "pretzels": [
+    "1/2 cup crushed pretzels"
+   ],
+   "dijon mustard": [
+    "1 tbls Dijon mustard"
+   ],
+   "garlic": [
+    "2-3 garlic cloves chopped"
+   ]
+  },
+  "cucumber-jicama-salad-with-fresh-red-onion": {
+   "cherry tomatoes": [
+    "2 cups cherry tomatoes halved (love the multi tomatoes here)"
+   ],
+   "red onion": [
+    "1/4c thinly sliced red onion",
+    "1 red onion, thinly sliced"
+   ]
+  },
+  "cucumber-salad": {
+   "chives": [
+    "1/4 cup of green chives, chopped"
+   ],
+   "sesame seeds": [
+    "1/2 Tbsp sesame seeds"
+   ],
+   "cucumber": [
+    "6 Persian cucumbers, sliced"
+   ]
+  },
+  "curried-cauliflower": {
+   "cauliflower": [
+    "1 medium head cauliflower"
+   ],
+   "mustard seed": [
+    "1 teaspoon black or brown mustard seeds (yellow is ok if you can’t find black or brown)"
+   ],
+   "ginger": [
+    "2 teaspoons grated fresh ginger"
+   ],
+   "cardamom": [
+    "1/4 teaspoon ground cardamom"
+   ],
+   "cayenne pepper": [
+    "1/4 teaspoon cayenne (or to taste)"
+   ],
+   "lemon juice": [
+    "2 tablespoons fresh lemon juice"
+   ]
+  },
+  "daal-palak-recipe": {
+   "lentils": [
+    "1 cup lentils (toor, moong, or masoor dal)"
+   ],
+   "spinach": [
+    "2 cups fresh spinach, chopped"
+   ],
+   "onion": [
+    "1 onion, finely chopped"
+   ],
+   "tomato": [
+    "2 tomatoes, diced"
+   ],
+   "ginger": [
+    "1-inch ginger, grated"
+   ],
+   "turmeric powder": [
+    "1/2 tsp turmeric powder"
+   ],
+   "cilantro": [
+    "Fresh cilantro, for garnish"
+   ],
+   "garlic": [
+    "2-3 garlic cloves, minced"
+   ]
+  },
+  "delicious-berry-chia-pudding-with-greek-yogurt-and-granola-tvgmk": {
+   "blackberries": [
+    "2c blackberries,"
+   ],
+   "raspberries": [
+    "raspberries, (or your favorite berries) divided"
+   ],
+   "unsweetened almond milk": [
+    "1 cup unsweetened almond milk"
+   ],
+   "chia seeds": [
+    "1/4c chia seeds"
+   ],
+   "greek yogurt": [
+    "1/2c plain Greek yogurt (vanilla yogurt if you like a little sweeter)"
+   ],
+   "granola": [
+    "1/4c granola"
+   ]
+  },
+  "delicious-tofu-saag-with-garam-masala-and-spinach": {
+   "black rice": [
+    "1 cup uncooked black rice (makes about 2 cups cooked)"
+   ],
+   "ginger": [
+    "1-inch piece fresh ginger, grated"
+   ],
+   "serrano chile": [
+    "1 serrano chile, chopped (optional)"
+   ],
+   "garam masala": [
+    "2 tsp garam masala"
+   ],
+   "tofu": [
+    "1 (14 oz) block extra-firm tofu, cubed"
+   ],
+   "spinach": [
+    "6 cups fresh spinach (or 1 package frozen, thawed)"
+   ],
+   "greek yogurt": [
+    "1/3 cup plain Greek yogurt"
+   ],
+   "lemon": [
+    "Juice of 1/2 lemon"
+   ],
+   "almonds": [
+    "2 tbsp sliced almonds, toasted"
+   ],
+   "garlic": [
+    "3 garlic cloves, minced"
+   ],
+   "onion": [
+    "1 yellow onion, chopped"
+   ]
+  },
+  "dubu-jorim-korean-braised-tofu-recipe-aka98": {
+   "tofu": [
+    "1 (14 or 16-ounce) firm tofu block, pressed and sliced into ½-inch-thick pieces"
+   ],
+   "plum vinegar": [
+    "2 tbsp plum vinegar"
+   ],
+   "fish sauce": [
+    "1 1/2 tbsp fish sauce"
+   ],
+   "garlic": [
+    "1/2 tbsp chopped garlic"
+   ],
+   "gochugaru": [
+    "1/2 tbsp gochugaru (Korean red pepper flakes)"
+   ],
+   "serrano chile": [
+    "1 tbls finely chopped serrano"
+   ],
+   "jalapeño": [
+    "1 tbls finely chopped green jalapeño"
+   ],
+   "green onions": [
+    "1 tbls chopped green onion, divided"
+   ],
+   "bell pepper": [
+    "1/2 red bell pepper, thinly sliced"
+   ],
+   "onion": [
+    "1/2 cup finely chopped yellow onion"
+   ]
+  },
+  "lemon-asparagus-pasta-bplgk": {
+   "pasta": [
+    "10 oz spaghetti or fettuccine"
+   ],
+   "lemon zest": [
+    "2 large lemons juiced zest from lemons (divided)"
+   ],
+   "dijon mustard": [
+    "1/2 tsp Dijon mustard"
+   ],
+   "shallots": [
+    "2 shallots thinly sliced"
+   ],
+   "asparagus": [
+    "14oz asparagus sliced on bias into 1-in pieces"
+   ],
+   "walnuts": [
+    "1/2c toasted walnuts, crushed"
+   ],
+   "nutritional yeast": [
+    "3 tbls nutritional yeast"
+   ],
+   "basil": [
+    "1/2c fresh basil, julienned"
+   ],
+   "capers": [
+    "3 tbls capers"
+   ],
+   "castelvetrano olives": [
+    "1/2c Castelvetrano olives, halved"
+   ],
+   "navy beans": [
+    "1-15oz can navy beans rinsed and drained"
+   ],
+   "cherry tomatoes": [
+    "Cherry tomatoes for garnish"
+   ],
+   "garlic": [
+    "4 garlic cloves thinly sliced"
+   ]
+  },
+  "pork-tenderloin-with-chickpeas": {
+   "pork tenderloin": [
+    "1 lb pork tenderloin"
+   ],
+   "peppers": [
+    "3 peppers (assorted colors) roasted and diced into medium sized pieces"
+   ],
+   "arugula": [
+    "3c arugula torn"
+   ],
+   "spinach": [
+    "3c spinach torn"
+   ],
+   "fennel seed": [
+    "1 heaping tsp. fennel seed"
+   ],
+   "chickpeas": [
+    "1 15oz jar of chickpeas with its juice"
+   ],
+   "garlic": [
+    "4-5 garlic cloves chopped"
+   ]
+  },
+  "vegetarian-chili-recipe-with-sweet-potatoes-beans": {
+   "sweet potatoes": [
+    "1 medium-large sweet potato, peeled and diced"
+   ],
+   "onion": [
+    "1 large onion, diced"
+   ],
+   "garlic": [
+    "4 cloves garlic, chopped"
+   ],
+   "chipotle chile": [
+    "1/2 tsp ground chipotle chile"
+   ],
+   "black beans": [
+    "1 (15 ounce) can black beans, rinsed"
+   ],
+   "kidney beans": [
+    "1 (15 ounce) can kidney beans, rinsed"
+   ],
+   "tomato": [
+    "1 (14 ounce) can diced tomatoes"
+   ],
+   "cilantro": [
+    "1/2 cup cilantro"
+   ],
+   "lime": [
+    "4 tsp lime juice"
+   ]
+  },
+  "edamame-salad-withsalmon": {
+   "fennel": [
+    "4 cups Fennel sliced"
+   ],
+   "garlic": [
+    "4-5 garlic chopped"
+   ],
+   "edamame": [
+    "8 oz edamame"
+   ],
+   "artichokes": [
+    "1-15oz can artichoke sliced"
+   ],
+   "cherry tomatoes": [
+    "1/4 cup lemon 1 cup cherry tomatoes sliced"
+   ],
+   "parsley": [
+    "1/4 cup parsley chopped"
+   ],
+   "salmon": [
+    "4-6oz salmon fillet"
+   ]
+  },
+  "artichokes-with-saffron-tofu-sauce-and-olive-tapenade": {
+   "artichokes": [
+    "2 artichokes"
+   ],
+   "silken tofu": [
+    "14 oz silken tofu"
+   ],
+   "lemon juice": [
+    "3 tbls lemon juice"
+   ],
+   "saffron": [
+    "1/4 tsp saffron threads"
+   ],
+   "dijon mustard": [
+    "2 tsp dijon mustard"
+   ],
+   "cayenne pepper": [
+    "1/4 tsp cayenne"
+   ],
+   "kalamata olives": [
+    "1/4 c kalamata olives"
+   ],
+   "sun-dried tomatoes": [
+    "1/4 c sun dried tomato"
+   ]
+  },
+  "elegant-crostini-with-roasted-grapes-and-ricotta-amgwt": {
+   "grapes": [
+    "1 cup grapes, seedless"
+   ],
+   "olives": [
+    "1 cup olives"
+   ],
+   "cherry tomatoes": [
+    "1 cup mixed cherry tomatoes"
+   ],
+   "rosemary": [
+    "1 1/2 tsp chopped rosemary"
+   ],
+   "baguette": [
+    "12 baguette slices, toasted"
+   ],
+   "ricotta": [
+    "3/4 cup ricotta"
+   ]
+  },
+  "elegant-and-healthy-risotto-recipe-no-heavy-ingredients-2uhcv": {
+   "pancetta": [
+    "3 oz pancetta, finely chopped"
+   ],
+   "carrots": [
+    "2 large carrots diced"
+   ],
+   "celery": [
+    "2 large celery diced"
+   ],
+   "red onion": [
+    "1 large red onion sliced"
+   ],
+   "radicchio": [
+    "2 heads radicchio, thinly sliced crosswise,",
+    "plus 12 small whole radicchio leaves for serving"
+   ],
+   "arborio rice": [
+    "3 cups Arborio rice"
+   ],
+   "dry white wine": [
+    "1 cup dry white wine, at room temperature"
+   ],
+   "garlic": [
+    "4-5 garlic cloves chopped"
+   ],
+   "onion": [
+    "1/2 cup yellow onion finely chopped"
+   ]
+  },
+  "fish-taco-salad-y0a4n": {
+   "tortillas": [
+    "3-4 corn tortillas"
+   ],
+   "mahi mahi": [
+    "1lb mahi mahi"
+   ],
+   "lettuce": [
+    "3 cups Lettuce thinly sliced"
+   ],
+   "cabbage": [
+    "2 cups Cabbage (preferably red) thinly sliced"
+   ],
+   "greek yogurt": [
+    "1/2 cup Low fat plain yogurt"
+   ],
+   "mexican crème": [
+    "1/4 cup Mexican crème (watered down plain sour cream)"
+   ],
+   "tomato": [
+    "3-4 quality Tomatoes diced"
+   ],
+   "serrano chile": [
+    "1-2 Serrano peppers depending on your heat tolerance chopped"
+   ],
+   "cilantro": [
+    "1/2 cup Cilantro chopped"
+   ],
+   "lime": [
+    "2 tbls lime juice"
+   ],
+   "onion": [
+    "1/4 cup White onion chopped"
+   ],
+   "pico de gallo": [
+    "Pico de gallo:"
+   ]
+  },
+  "fluffy-sourdough-discard-pancakes-0tgfp": {
+   "wheat flour": [
+    "1 cup wheat flour"
+   ],
+   "allulose": [
+    "1 tbls allulose"
+   ],
+   "protein powder": [
+    "1 scoop flavorless protein powder"
+   ],
+   "milk": [
+    "1 1/4 cup milk (or more for desired consistency)"
+   ],
+   "greek yogurt": [
+    "Yogurt Mixture: Mix 1 cup plain unsweetened yogurt + 1/4 cup water + 1/4 cup flour."
+   ],
+   "banana": [
+    "Mashed Bananas: Use 1/2 cup mashed banana and reduce the milk by 1/4 cup."
+   ]
+  },
+  "french-bouillabaisse-recipe-perfect-mediterranean-seafood-stew-syszn": {
+   "leeks": [
+    "2 large leeks, chopped"
+   ],
+   "bulb fennel": [
+    "1 large bulb fennel, chopped"
+   ],
+   "potato": [
+    "1 large potato, peeled and chopped"
+   ],
+   "saffron": [
+    "About 20 threads of saffron"
+   ],
+   "tomato": [
+    "4 large ripe tomatoes peeled, seeded, and chopped; juice reserved"
+   ],
+   "clams": [
+    "1 1/2 lb clams, rinsed"
+   ],
+   "mussels": [
+    "1 1/2 lb mussels, scrubbed and rinsed"
+   ],
+   "sourdough bread": [
+    "10 slices garlic sourdough bread (see bonus video)"
+   ],
+   "rouille": [
+    "1 recipe rouille (see previous recipe)"
+   ]
+  },
+  "fresh-pistachio-crusted-chicken-and-barley-salad": {
+   "barley": [
+    "1 cup barley"
+   ],
+   "pistachios": [
+    "3/4 cup shelled pistachios",
+    "1/4 cup shelled pistachios chopped"
+   ],
+   "cherry tomatoes": [
+    "1 cup cherry tomatoes, halved"
+   ],
+   "castelvetrano olives": [
+    "1 cup castelvetrano olives halved"
+   ],
+   "white-wine vinegar": [
+    "1 tablespoon white-wine vinegar"
+   ],
+   "lemon": [
+    "2 tbls fresh lemon",
+    "Garnish with lemon wedge"
+   ],
+   "parsley": [
+    "1/2 cup chopped fresh parsley"
+   ],
+   "orange": [
+    "2 tsp orange zest"
+   ]
+  },
+  "fresh-salmon-and-avocado-salad-with-dill-dressing-healthy-and-delicious-y8z18": {
+   "dill": [
+    "1/2 cup loosely packed fresh dill"
+   ],
+   "lemon juice": [
+    "2 tbls lemon juice"
+   ],
+   "white wine vinegar": [
+    "2 tbls white wine vinegar"
+   ],
+   "dijon mustard": [
+    "1 tsp Dijon mustard"
+   ],
+   "red cabbage": [
+    "2 cups thinly sliced red cabbage"
+   ],
+   "carrots": [
+    "1 cup carrots julienne"
+   ],
+   "avocado": [
+    "2 avocados, sliced, divided"
+   ],
+   "garlic": [
+    "1 small clove garlic"
+   ],
+   "salmon": [
+    "4-5 oz skinless salmon fillets"
+   ]
+  },
+  "gourmet-mushroom-medley-with-spinach-and-bean-puree": {
+   "mushrooms": [
+    "4oz maitake mushrooms, broken into large pieces",
+    "4oz bunashimeji mushrooms broken off"
+   ],
+   "shiitake mushrooms": [
+    "4oz shiitake mushrooms, cut into 1/2 inch slices"
+   ],
+   "cannellini beans": [
+    "1-15oz can cannellini beans, rinsed, drained"
+   ],
+   "lemon juice": [
+    "2 Tbsp fresh lemon juice, plus wedges for serving"
+   ],
+   "green onions": [
+    "4 scallions cut into 1 inch pieces"
+   ],
+   "spinach": [
+    "16oz spinach leaves torn"
+   ],
+   "garlic": [
+    "4 garlic cloves, divided"
+   ]
+  },
+  "grilled-salmon-with-a-jicama-salad-lime-cilantro-vinaigrette-and-white-bean-stew": {
+   "parsley": [
+    "2 Tbl chopped parsley"
+   ],
+   "chives": [
+    "2 Tbl Chopped chives"
+   ],
+   "thyme": [
+    "2 tbl chopped thyme"
+   ],
+   "vegetable stock": [
+    "8 oz vegetable stock"
+   ],
+   "lime": [
+    "4 oz lime"
+   ],
+   "white bean": [
+    "1 tsp cilantro White Bean Stew"
+   ],
+   "navy beans": [
+    "2-15oz can navy beans, drained"
+   ],
+   "red onion": [
+    "4 oz red onion diced"
+   ],
+   "garlic": [
+    "4-5 garlic chopped"
+   ],
+   "peppers": [
+    "4 ozbell peppers, assorted colors diced"
+   ],
+   "jalapeño": [
+    "2 oz jalapeño diced"
+   ],
+   "sherry vinegar": [
+    "1/4 cup sherry vinegar"
+   ],
+   "tomato": [
+    "1-15oz can quality tomatoes"
+   ],
+   "jicama": [
+    "2 tbsp chopped cilantro Jicama salad",
+    "2c jicama cut into match sticks"
+   ],
+   "haricot vert": [
+    "2c haricot vert (or thin green beans if you can’t find the haricot vert) sliced lengthwise."
+   ],
+   "salmon": [
+    "Salmon marinated:"
+   ]
+  },
+  "halibut-piccata-with-black-rice-broccoli-pepitas": {
+   "halibut": [
+    "4 [6-ounce] halibut filets, skin removed and pat dry"
+   ],
+   "almond flour": [
+    "1c almond flour"
+   ],
+   "white wine": [
+    "1/2 cup white wine"
+   ],
+   "garlic": [
+    "4-5 cloves garlic, chopped"
+   ],
+   "capers": [
+    "2 tbsp capers, drained"
+   ],
+   "lemon": [
+    "Juice of 1/2 lemon"
+   ]
+  },
+  "halibut-in-corn-husks-with-fresh-vegetable-saute": {
+   "corn": [
+    "4 Ears of corn"
+   ],
+   "halibut fillet": [
+    "4 5-6oz halibut fillet"
+   ],
+   "red onion": [
+    "1c red onion"
+   ],
+   "chilies": [
+    "2 tbls fresno chilis"
+   ],
+   "zucchini": [
+    "1c zucchini"
+   ],
+   "cherry tomatoes": [
+    "1c mixed cherry tomatoes halved"
+   ],
+   "garlic": [
+    "4-5 garlic cloves chopped"
+   ]
+  },
+  "harira-moroccan-lentil-and-chickpea-soup-ac4m4": {
+   "tomato": [
+    "1 (14oz) can diced tomatoes"
+   ],
+   "chickpeas": [
+    "1 (14oz) can of chickpeas (with juice)"
+   ],
+   "cilantro": [
+    "2 tbsp cilantro, chopped"
+   ],
+   "parsley": [
+    "2 tbsp parsley, chopped"
+   ],
+   "saffron": [
+    "1/2 tsp saffron"
+   ],
+   "lentils": [
+    "1 cup dry red lentils"
+   ],
+   "harissa": [
+    "Harissa 7 Dried New Mexico Chiles or Guaillo Chiles"
+   ],
+   "red pepper": [
+    "6 oz jarred roasted red peppers drained rinsed, and dried (2 large peppers)"
+   ],
+   "tomato paste": [
+    "2 tbls tomato paste"
+   ],
+   "caraway seed": [
+    "1 tsp caraway seeds toasted and ground (use a mortar and pestle, grinder or food processor)"
+   ],
+   "lemon": [
+    "Juice of 1 large lemon"
+   ],
+   "garlic": [
+    "4 large garlic cloves peeled"
+   ],
+   "onion": [
+    "1/2 large white onion, diced"
+   ]
+  },
+  "healthy-asian-salad-with-gochujang-dressing-and-black-rice": {
+   "gochujang": [
+    "1½ Tbs gochujang"
+   ],
+   "ginger": [
+    "1 tsp ginger minced"
+   ],
+   "broth": [
+    "1 3/4 cups vegetable broth"
+   ],
+   "black rice": [
+    "1 cup black rice"
+   ],
+   "snap peas": [
+    "1/2 cup snap peas, trimmed"
+   ],
+   "asparagus": [
+    "1 lb. asparagus, cut on the bias"
+   ],
+   "tofu": [
+    "6 to 8 oz tofu cut into cubes"
+   ],
+   "daikon": [
+    "1c daikon, julienned"
+   ],
+   "carrots": [
+    "2c carrot, julienned"
+   ],
+   "garlic": [
+    "1 medium clove garlic"
+   ],
+   "sesame seeds": [
+    "1½ Tbs sesame oil"
+   ]
+  },
+  "healthy-baked-peaches-recipe": {
+   "allulose": [
+    "1 tbls Allulose"
+   ],
+   "vanilla": [
+    "1⁄2 tsp vanilla extract"
+   ],
+   "peaches": [
+    "4 fresh peaches, halved and pitted"
+   ],
+   "greek yogurt": [
+    "1 cup Greek yogurt"
+   ],
+   "unsalted butter": [
+    "1⁄4 cup unsalted butter, softened"
+   ]
+  },
+  "healthy-coconut-oil-granola-with-added-fiber-yogurt": {
+   "granola": [
+    "Granola: 3 cups old-fashioned rolled oats"
+   ],
+   "nuts": [
+    "1 cup nuts (almonds, walnuts, pecans), roughly chopped"
+   ],
+   "coconut": [
+    "½ cup unsweetened shredded coconut"
+   ],
+   "allulose": [
+    "¼ cup allulose"
+   ],
+   "coconut oil": [
+    "¼ cup coconut oil, melted"
+   ],
+   "greek yogurt": [
+    "To Serve (per portion): ½ cup plain Greek yogurt"
+   ]
+  },
+  "healthy-french-carrot-salad-with-chickpeas": {
+   "carrots": [
+    "1 pound carrots, peeled"
+   ],
+   "chives": [
+    "2 tablespoons finely snipped chives"
+   ],
+   "parsley": [
+    "2 tablespoons finely chopped fresh parsley"
+   ],
+   "chickpeas": [
+    "1-15oz can chickpeas, rinsed and drained, Dressing"
+   ],
+   "lemon juice": [
+    "2 tablespoons lemon juice"
+   ],
+   "dijon mustard": [
+    "1 teaspoon Dijon mustard"
+   ]
+  },
+  "healthy-mexican-rice": {
+   "cauliflower": [
+    "1 head of fresh cauliflower roughly diced"
+   ],
+   "onion": [
+    "1 cup onion chopped"
+   ],
+   "tomato": [
+    "1 15oz can quality diced tomatoes"
+   ],
+   "mexican cumin": [
+    "2 teaspoons Mexican cumin"
+   ],
+   "cilantro": [
+    "1/2 cup cilantro chopped"
+   ],
+   "lime": [
+    "Juice 1 lime"
+   ],
+   "garlic": [
+    "4-5 garlic cloves"
+   ]
+  },
+  "vegetable-soup-with-white-beans": {
+   "garlic": [
+    "3 cloves garlic chopped"
+   ],
+   "leeks": [
+    "1 large leek cut on the bias"
+   ],
+   "celery": [
+    "5 ribs celery cut on the bias"
+   ],
+   "carrots": [
+    "5 large carrots cut on the bias"
+   ],
+   "peppers": [
+    "1 cup peppers (combination of red, yellow, and orange)"
+   ],
+   "ginger": [
+    "1 1/2 inch chunk ginger minced"
+   ],
+   "broth": [
+    "8 cups vegetable broth"
+   ],
+   "lemon": [
+    "1 lemon juiced"
+   ]
+  },
+  "hearty-veggie-burger-with-sweet-potato-and-tofu": {
+   "sweet potatoes": [
+    "2c cooked mashed sweet potato"
+   ],
+   "vegetable stock": [
+    "1/2c vegetable stock"
+   ],
+   "curry powder": [
+    "1/2 tbl curry powder"
+   ],
+   "chives": [
+    "1/2 tbl fresh chives"
+   ],
+   "cilantro": [
+    "1/2 tbl fresh cilantro",
+    "1/2 cup cilantro, coarsely chopped"
+   ],
+   "tomato paste": [
+    "2 tsp tomato paste"
+   ],
+   "cayenne pepper": [
+    "1/2 tsp ground cayenne"
+   ],
+   "panko": [
+    "2c panko"
+   ],
+   "brown rice": [
+    "1c cooked brown rice"
+   ],
+   "garlic": [
+    "3 cloves garlic, coarsely chopped"
+   ],
+   "jalapeño": [
+    "1 medium jalapeño, seeded"
+   ],
+   "parsley": [
+    "1/2 cup parsley, coarsely chopped"
+   ],
+   "avocado": [
+    "2 avocados, sliced."
+   ],
+   "onion": [
+    "1 cup diced yellow onion"
+   ],
+   "tofu": [
+    "10 oz. extra-firm tofu, dried"
+   ]
+  },
+  "fish-stock-for-soups-and-stews-vmbsd": {
+   "white wine": [
+    "2 cups dry French white wine, such as Sauvignon Blanc or Chablis"
+   ],
+   "celery": [
+    "2 ribs celery roughly chopped"
+   ],
+   "onion": [
+    "1 large onion roughly chopped"
+   ],
+   "carrots": [
+    "3 carrots, peeled and roughly chopped"
+   ],
+   "tomato": [
+    "4 large ripe tomatoes (or one 28-oz. can tomatoes, drained), peeled, seeded, and chopped"
+   ],
+   "fennel": [
+    "Feathery tops from 1 large bulb fennel (reserve the bulb for the bouillabaisse)"
+   ]
+  },
+  "hungarian-chicken-paprika": {
+   "chicken": [
+    "4 boneless chicken thighs cut into bite sized pieces"
+   ],
+   "onion": [
+    "1 onion chopped"
+   ],
+   "garlic": [
+    "4 cloves garlic minced"
+   ],
+   "greek yogurt": [
+    "1 cup plain Greek yogurt"
+   ],
+   "bell pepper": [
+    "1/2 tsp black pepper"
+   ],
+   "parsley": [
+    "Fresh parsley chopped"
+   ]
+  },
+  "hungarian-goulash": {
+   "beef": [
+    "1 pound lean beef, cut into small cubes"
+   ],
+   "onion": [
+    "1 onion, chopped"
+   ],
+   "garlic": [
+    "4 cloves garlic, minced"
+   ],
+   "sweet potatoes": [
+    "1 lb sweet potato cubed"
+   ],
+   "tomato": [
+    "1 can (14.5 oz) diced tomatoes"
+   ],
+   "tomato paste": [
+    "1 can (6 oz) tomato paste"
+   ],
+   "broth": [
+    "2 cups low-sodium beef or vegetable broth"
+   ],
+   "hungarian paprika": [
+    "2 teaspoons Hungarian paprika"
+   ],
+   "caraway seed": [
+    "1/2 teaspoon caraway seeds"
+   ],
+   "bell pepper": [
+    "2 red bell pepper diced"
+   ]
+  },
+  "classic-caprese-salad": {
+   "tomato": [
+    "4 medium tomatoes"
+   ],
+   "mozzarella": [
+    "sliced 1/2 pound fresh mozzarella cheese"
+   ],
+   "basil": [
+    "sliced 1/4 cup fresh basil leaves"
+   ]
+  },
+  "recipes-italian-shakshuka-baked-eggs": {
+   "onion": [
+    "1 cup onion chopped"
+   ],
+   "carrots": [
+    "2 large carrots chopped"
+   ],
+   "garlic": [
+    "5-6 garlic chopped"
+   ],
+   "kale": [
+    "10-ounce fresh kale chopped"
+   ],
+   "tomato": [
+    "1 28 oz can quality diced tomatoes",
+    "1 cup fresh tomato preferably yellow or orange roughly diced into large chunks"
+   ],
+   "tomato sauce": [
+    "1 15oz can tomato sauce"
+   ],
+   "eggs": [
+    "8 large eggs"
+   ],
+   "parsley": [
+    "1/2 cup parsley"
+   ]
+  },
+  "italian-soup-with-red-potato": {
+   "carrots": [
+    "2 carrots, chopped"
+   ],
+   "tomato": [
+    "1 28-ounce can fire-roasted diced tomatoes"
+   ],
+   "broth": [
+    "5 to 6 cups vegetable broth"
+   ],
+   "parmesan cheese rind": [
+    "1 Parmesan cheese rind"
+   ],
+   "cannellini beans": [
+    "2 15-ounce cans cannellini beans, rinsed and drained"
+   ],
+   "kidney beans": [
+    "1 15-ounce can kidney beans, rinsed and drained"
+   ],
+   "basil": [
+    "1/2 cup fresh basil leaves, cut into ribbons"
+   ],
+   "parmesan cheese": [
+    "Grated Parmesan cheese, for garnish"
+   ],
+   "celery": [
+    "2 celery stalks, chopped"
+   ],
+   "garlic": [
+    "2 garlic cloves, chopped"
+   ],
+   "onion": [
+    "1 yellow onion, chopped"
+   ],
+   "potato": [
+    "8 oz red potatoes, medium diced"
+   ]
+  },
+  "italian-zucchini-and-tomato-casserole-with-mozzarella-and-parmesan-1l68t": {
+   "zucchini": [
+    "Olive oil 6 medium zucchini, thinly sliced"
+   ],
+   "onion": [
+    "1c sliced onion"
+   ],
+   "tomato": [
+    "3-4 large ripe tomatoes (I prefer a fresh Italian tomato) thinly sliced"
+   ],
+   "oregano": [
+    "2 tsp oregano"
+   ],
+   "thyme": [
+    "1tsp thyme"
+   ],
+   "mozzarella": [
+    "1c mozzarella, shredded"
+   ],
+   "parmesan cheese": [
+    "1/2c freshly grated Parmesan cheese"
+   ],
+   "parsley": [
+    "2 tbls chopped fresh parsley"
+   ]
+  },
+  "italian-soup-with-lupini-beans-and-kale": {
+   "shallots": [
+    "3 small shallots chopped"
+   ],
+   "garlic": [
+    "4 cloves garlic chopped"
+   ],
+   "kale": [
+    "2 cups kale"
+   ],
+   "sun-dried tomatoes": [
+    "7 ounce jar of sun-dried tomatoes, packed in oil"
+   ],
+   "fennel seed": [
+    "1 tsp fennel seeds"
+   ],
+   "vegetable stock": [
+    "4 cups vegetable stock"
+   ],
+   "lupini beans": [
+    "10 oz lupini beans"
+   ],
+   "almond milk": [
+    "1.5 cups almond milk"
+   ],
+   "lemon": [
+    "1 lemon"
+   ],
+   "parmesan cheese": [
+    "1 parmesan rind"
+   ]
+  },
+  "jicama-tomato-and-black-bean-salad": {
+   "black beans": [
+    "1 (15 ounce) can black beans, rinsed and drained"
+   ],
+   "jicama": [
+    "1 small jicama, peeled and diced"
+   ],
+   "cilantro": [
+    "1⁄4 cup cilantro, chopped"
+   ],
+   "garlic": [
+    "1 garlic clove minced"
+   ],
+   "lime": [
+    "3 tablespoons fresh lime juice"
+   ],
+   "red onion": [
+    "3 tablespoons red onions chopped"
+   ],
+   "tomato": [
+    "2 plum tomatoes, chopped"
+   ]
+  },
+  "korean-barbecue": {
+   "brown sugar": [
+    "1/4c brown sugar"
+   ],
+   "white pepper": [
+    "Pinch white pepper"
+   ],
+   "mirin": [
+    "4 tbls mirin"
+   ],
+   "pear": [
+    "1 Korean pear pureed (or any pear will do)"
+   ],
+   "green onions": [
+    "6 green onion thin sliced",
+    "2 green onion thin sliced",
+    "2 green onion thin slice"
+   ],
+   "gochujang": [
+    "2 tbls gochujang",
+    "1/4c gochujang"
+   ],
+   "donjong": [
+    "1/2 donjong or soybean paste"
+   ],
+   "chili garlic sauce": [
+    "1 tbl Chili garlic sauce"
+   ],
+   "tofu": [
+    "Tofu sliced thinly lengthwise Fish… Scallops, prawns, salmon (skin on to keep it together but it will easily flake off when it’s grilled)."
+   ],
+   "garlic": [
+    "6 garlic cloves chopped"
+   ],
+   "lemon": [
+    "Juice of 1 lemon"
+   ],
+   "samjang sauce": [
+    "Samjang sauce"
+   ],
+   "sesame garlic sauce": [
+    "4 tsp sesame oil"
+   ],
+   "sesame seeds": [
+    "1 tsp sesame oil"
+   ]
+  },
+  "lemongrass-salmon-fish-cakes": {
+   "lemongrass": [
+    "1 stick of lemongrass"
+   ],
+   "ginger": [
+    "1/4 cup 21/2 in. piece of fresh ginger"
+   ],
+   "cilantro": [
+    "1/2 a bunch of fresh cilantro"
+   ],
+   "salmon": [
+    "1 lb salmon fillets skin off"
+   ],
+   "chili jam": [
+    "4 tsp. chili jam"
+   ]
+  },
+  "lentil-soup-with-collards-greens-with-red-potatoes": {
+   "onion": [
+    "1 medium onion, chopped"
+   ],
+   "carrots": [
+    "2 carrots, diced"
+   ],
+   "garlic": [
+    "2 cloves garlic, minced"
+   ],
+   "lentils": [
+    "1 cup dried lentils brown"
+   ],
+   "broth": [
+    "4 cups low-sodium vegetable broth"
+   ],
+   "collard greens": [
+    "2 cups chopped collard greens"
+   ],
+   "coriander": [
+    "1 teaspoon dried coriander"
+   ],
+   "cilantro": [
+    "1/2c cilantro"
+   ],
+   "celery": [
+    "2 celery stalks, diced"
+   ],
+   "lemon": [
+    "Fresh lemon juice"
+   ],
+   "potato": [
+    "1 lb red potatoes"
+   ]
+  },
+  "lentil-pasta-with-tofu-and-vegetables": {
+   "white wine vinegar": [
+    "1 tsp white wine vinegar"
+   ],
+   "chili garlic sauce": [
+    "1 tsp chili garlic sauce or more if you like more heat"
+   ],
+   "shallots": [
+    "2 large shallots"
+   ],
+   "garlic": [
+    "3-4 garlics"
+   ],
+   "zucchini": [
+    "2 large zucchini small dice"
+   ],
+   "peppers": [
+    "2 red pepper small dice"
+   ],
+   "tomato": [
+    "2 medium tomatoes small dice"
+   ],
+   "lentils": [
+    "red lentils pasta"
+   ],
+   "tofu": [
+    "1 package firm tofu"
+   ]
+  },
+  "lentil-spinach-stew-with-lemon": {
+   "onion": [
+    "1 onion, diced"
+   ],
+   "carrots": [
+    "1 carrot, peeled and diced"
+   ],
+   "tomato paste": [
+    "1 tablespoon tomato paste"
+   ],
+   "vegetable stock": [
+    "4 cups vegetable stock"
+   ],
+   "bay leaf": [
+    "1 bay leaf"
+   ],
+   "cilantro": [
+    "1/4 cup chopped cilantro"
+   ],
+   "lemon": [
+    "1 whole lemon"
+   ],
+   "garlic": [
+    "3-4 garlic cloves chopped"
+   ],
+   "spinach": [
+    "2 cups fresh spinach leaves"
+   ]
+  },
+  "lotus-root-stir-fry-with-carrots-and-snow-peas": {
+   "lotus root": [
+    "12 ounces lotus root, peeled, trimmed, and thinly sliced"
+   ],
+   "mushrooms": [
+    "8 wood ear mushrooms, rehydrated and cut in half or thirds"
+   ],
+   "carrots": [
+    "1/2 cup carrots, thinly sliced into matchsticks or diagonally"
+   ],
+   "snow peas": [
+    "1/2 cup snow peas, trimmed"
+   ],
+   "oyster sauce": [
+    "2 tsps oyster sauce (or vegetarian/gluten-free oyster sauce)"
+   ],
+   "white pepper": [
+    "1/8 tsp white pepper"
+   ],
+   "oil": [
+    "2 tbls oil"
+   ],
+   "ginger": [
+    "6 slices ginger"
+   ],
+   "garlic": [
+    "2 cloves garlic, chopped"
+   ],
+   "shaoxing wine": [
+    "1 tablespoon Shaoxing wine (or dry sherry)"
+   ],
+   "bell pepper": [
+    "1/2 cup red bell pepper, cut into small chunks"
+   ]
+  },
+  "lupini-bean-salad-with-asiago-cheese-pine-nuts-and-balsamic-vinaigrette": {
+   "beans": [
+    "3 cups beans"
+   ],
+   "arugula": [
+    "6 cups fresh arugula"
+   ],
+   "cherry tomatoes": [
+    "1 cup cherry tomatoes halved"
+   ],
+   "pine nuts": [
+    "1 cup pine nuts (roasted)"
+   ],
+   "lemon": [
+    "2 tbls lemons"
+   ]
+  },
+  "mahi-mahi-black-rice-bowl-a-protein-flip-classic": {
+   "mahi mahi": [
+    "(Serves 4) 4 mahi mahi fillets (4 oz each)"
+   ],
+   "black rice": [
+    "2 cups cooked black rice (½ cup per serving)"
+   ],
+   "edamame": [
+    "1 cup shelled edamame (¼ cup per serving)",
+    "1 cup shelled edamame"
+   ],
+   "spinach": [
+    "4 cups fresh spinach (1 cup per serving)"
+   ],
+   "nuts": [
+    "¼ cup nuts (almonds, walnuts, or pistachios)"
+   ],
+   "basil": [
+    "¼ cup fresh basil leaves"
+   ],
+   "lemon juice": [
+    "1 Tbsp lemon juice"
+   ],
+   "garlic": [
+    "1 small garlic clove"
+   ]
+  },
+  "mediterranean-baked-tilapia-with-cherry-tomatoes-and-capers": {
+   "quinoa": [
+    "Hemp-Quinoa Base 2 cups cooked quinoa (about 1 cup dry)"
+   ],
+   "hemp": [
+    "8 tbsp shelled hemp seeds (2 tbsp per serving)"
+   ],
+   "lemon": [
+    "½ lemon Greens",
+    "1 lemon, thinly sliced (plus extra wedges for serving)"
+   ],
+   "tilapia fillets": [
+    "4 tilapia fillets (4 oz each)"
+   ],
+   "cherry tomatoes": [
+    "1½ cups cherry tomatoes, halved"
+   ],
+   "shallots": [
+    "2 large shallots, thinly sliced"
+   ],
+   "feta cheese": [
+    "4 oz feta cheese, crumbled (about 1 oz per serving)"
+   ],
+   "capers": [
+    "2 tbsp capers, drained"
+   ],
+   "lemon zest": [
+    "Zest and juice of 1 lemon",
+    "1 tsp lemon zest"
+   ],
+   "greek yogurt": [
+    "1 cup nonfat plain Greek yogurt"
+   ],
+   "lemon juice": [
+    "2 tbsp fresh lemon juice"
+   ],
+   "dill": [
+    "2 tbsp chopped fresh dill (or parsley/basil)"
+   ],
+   "garlic": [
+    "4 garlic cloves, chopped"
+   ]
+  },
+  "mediterranean-branzino-with-zucchini-and-tomatoes": {
+   "branzino fish": [
+    "1 lb branzino fish"
+   ],
+   "zucchini": [
+    "1 lb zucchini cut into 1-inch half-moons"
+   ],
+   "tomato": [
+    "1 lb quality fresh smaller tomatoes quartered (Campari)"
+   ],
+   "shallots": [
+    "3/4c shallots sliced"
+   ],
+   "thyme": [
+    "2 tbls fresh thyme"
+   ],
+   "sumac": [
+    "1 tbl sumac"
+   ],
+   "aleppo pepper": [
+    "2 tsp aleppo pepper"
+   ],
+   "garlic": [
+    "4-5 garlic cloves, sliced"
+   ]
+  },
+  "mediterranean-cod-white-bean-stew-with-toasted-pine-nuts": {
+   "cod": [
+    "4 co 4 cod fillets (4 oz each)"
+   ],
+   "fennel bulb": [
+    "1 fennel bulb, thinly sliced"
+   ],
+   "zucchini": [
+    "1 zucchini, halved lengthwise and sliced into half-moons",
+    "1 medium zucchini, sliced into half-moons"
+   ],
+   "cherry tomatoes": [
+    "1 cup cherry tomatoes, halved",
+    "2c cherry tomatoes, halved"
+   ],
+   "tomato": [
+    "1 (14.5 oz) can diced tomatoes with juice",
+    "1-14.5 oz can diced tomatoes with juice"
+   ],
+   "dry white wine": [
+    "1/2 cup dry white wine"
+   ],
+   "cannellini beans": [
+    "2 cups cooked cannellini beans (about 2 [15 oz] cans, drained and rinsed)"
+   ],
+   "pine nuts": [
+    "1/4 cup pine nuts"
+   ],
+   "kalamata olives": [
+    "1/4 cup pitted Kalamata olives",
+    "1/2c Kalamata olives, pitted and halved S"
+   ],
+   "basil": [
+    "2 tbsp chopped fresh basil",
+    "1/2c fresh basil leaves, chopped"
+   ],
+   "lemon wedges": [
+    "Lemon wedges, for garnish",
+    "Lemon wedges"
+   ],
+   "onion": [
+    "1 onion, finely chopped"
+   ],
+   "bulb fennel": [
+    "1 bulb fennel, thinly sliced"
+   ],
+   "garlic": [
+    "3 cloves garlic, chopped"
+   ],
+   "white wine": [
+    "1/4c dry white wine"
+   ]
+  },
+  "mediterranean-herb-crusted-tilapia": {
+   "tomato": [
+    "1-15oz can diced tomatoes Pinch of sugar"
+   ],
+   "breadcrumbs": [
+    "3/4c breadcrumbs"
+   ],
+   "parmigiano-reggiano": [
+    "3/4c finely grated Parmigiano-Reggiano"
+   ],
+   "mixed fresh herbs": [
+    "1/2c chopped mixed fresh herbs (thyme, parsley, or oregano)"
+   ],
+   "tilapia fillets": [
+    "4-6oz skinless tilapia fillets"
+   ],
+   "garlic": [
+    "2 large cloves garlic, chopped"
+   ]
+  },
+  "mediterranean-lentil-salad": {
+   "lentils": [
+    "1 cup brown or green lentils"
+   ],
+   "thyme": [
+    "1 teaspoon fresh thyme (dried)"
+   ],
+   "sun-dried tomatoes": [
+    "1/2 cup sun-dried tomatoes (not packed in oil) boiling water"
+   ],
+   "celery": [
+    "1/2 cup diced celery"
+   ],
+   "peppers": [
+    "1/2 cup diced red or yellow bell pepper"
+   ],
+   "red onion": [
+    "1/2 cup minced red onion"
+   ],
+   "parsley": [
+    "1/2 cup chopped fresh parsley"
+   ],
+   "fennel": [
+    "1 teaspoon ground fennel"
+   ],
+   "dijon mustard": [
+    "1 rounded teaspoon Dijon mustard"
+   ],
+   "garlic": [
+    "2 garlic cloves, peeled"
+   ]
+  },
+  "mediterranean-lentil-stuffed-summer-squash-bowls": {
+   "squash": [
+    "4 round yellow summer squash (pattypan), tops sliced off and seeds scooped out"
+   ],
+   "carrots": [
+    "2 carrots, shredded 1 cup sun-dried tomatoes (in oil, drained and julienned) or rehydrated dry 4 garlic cloves, minced 2 tsp dried thyme Salt to taste"
+   ],
+   "lentils": [
+    "1/2 cup French lentils"
+   ]
+  },
+  "mediterranean-salad-with-shredded-chicken-and-homemade-vinaigrette-ys2i6": {
+   "chicken": [
+    "Salad 2 cups shredded cooked chicken breast"
+   ],
+   "artichoke hearts": [
+    "1 cup canned artichoke hearts, drained and chopped"
+   ],
+   "cherry tomatoes": [
+    "1/2 cup cherry tomatoes, halved"
+   ],
+   "kalamata olives": [
+    "1/2 cup kalamata olives"
+   ],
+   "feta cheese": [
+    "1/2 cup crumbled feta cheese"
+   ],
+   "red onion": [
+    "1/4 cup red onion, thinly sliced"
+   ],
+   "chickpeas": [
+    "1 cup canned chickpeas, rinsed and drained"
+   ],
+   "parsley": [
+    "2 tbsp chopped fresh parsley (for garnish)"
+   ],
+   "vegetable stock": [
+    "2 tbsp low-sodium vegetable stock"
+   ],
+   "arrowroot powder": [
+    "1/2 tsp arrowroot powder"
+   ],
+   "dijon mustard": [
+    "1 tsp Dijon mustard"
+   ],
+   "silken tofu": [
+    "6 oz (1/2 block) silken tofu"
+   ],
+   "wheat flour": [
+    "1 cup whole wheat flour"
+   ],
+   "almonds": [
+    "1/4 cup slivered almonds"
+   ],
+   "cucumber": [
+    "1/2 cup sliced cucumbers"
+   ],
+   "garlic": [
+    "1 garlic clove, minced"
+   ]
+  },
+  "mediterranean-salmon-and-lentil-salad": {
+   "broccoli": [
+    "1 cup lightly steamed broccoli florets"
+   ],
+   "cucumber": [
+    "1 cup seedless cucumber, diced"
+   ],
+   "red onion": [
+    "½ cup finely chopped red onion"
+   ],
+   "feta cheese": [
+    "½ cup crumbled feta cheese"
+   ],
+   "lemon juice": [
+    "¼ cup lemon juice"
+   ],
+   "dill": [
+    "⅓ cup chopped fresh dill"
+   ],
+   "dijon mustard": [
+    "2 tsp Dijon mustard"
+   ],
+   "bell pepper": [
+    "1 cup red bell pepper, diced"
+   ],
+   "lemon": [
+    "Lemon-Dill Vinaigrette:"
+   ],
+   "lentils": [
+    "1 cup uncooked brown lentils (yields ~2 cups cooked)"
+   ],
+   "salmon": [
+    "Salmon:"
+   ]
+  },
+  "mediterranean-sweet-potato-salad-with-basil-and-pine-nuts": {
+   "sweet potatoes": [
+    "4 medium sweet potatoes, peeled and cubed"
+   ],
+   "parmesan cheese": [
+    "1/2 c grated Parmesan cheese"
+   ],
+   "basil": [
+    "1/4 c chopped fresh basil"
+   ],
+   "pine nuts": [
+    "1/4 c pine nuts, toasted"
+   ],
+   "cherry tomatoes": [
+    "1/2 c cherry tomatoes, halved"
+   ]
+  },
+  "mini-blueberry-lemon-cheesecakes-light-and-refreshing-dessert-mggko": {
+   "ricotta": [
+    "1 15-ounce container part-skim ricotta cheese"
+   ],
+   "cream cheese": [
+    "2 8-ounce packages reduced-fat cream cheese, at room temperature"
+   ],
+   "eggs": [
+    "4 large eggs"
+   ],
+   "lemon zest": [
+    "2 tsp lemon zest"
+   ],
+   "lemon juice": [
+    "5 tbls lemon juice"
+   ],
+   "blueberries": [
+    "2 1/2 cups blueberries, fresh or frozen (not thawed), divided"
+   ]
+  },
+  "miso-soup": {
+   "dashi": [
+    "6 cups dashi or broth"
+   ],
+   "ginger": [
+    "1 tablespoon grated ginger"
+   ],
+   "carrots": [
+    "½ cup shredded carrot"
+   ],
+   "mirin": [
+    "⅓ cup mirin"
+   ],
+   "miso": [
+    "⅓ cup white miso"
+   ],
+   "tofu": [
+    "1/2-16-ounce package soft or firm tofu"
+   ],
+   "mushrooms": [
+    "1 package Enoki mushrooms (if you can’t find use any small mushrooms or omit) drained and cut into 1/4 inch cubes"
+   ],
+   "green onions": [
+    "2 green onions cut into 1/4 inch dice"
+   ]
+  },
+  "protein-flip-mustard-rosemary-salmon-with-leeks-fennel-edamame": {
+   "salmon": [
+    "Salmon & Glaze 4 skinless salmon fillets (4 oz each)"
+   ],
+   "wholegrain mustard": [
+    "1 tbsp whole-grain mustard"
+   ],
+   "rosemary": [
+    "1 tbsp chopped fresh rosemary"
+   ],
+   "fennel seed": [
+    "1/2 tsp toasted fennel seeds"
+   ],
+   "leeks": [
+    "1 large leek, sliced (white and light green parts only)"
+   ],
+   "fennel bulb": [
+    "1 small fennel bulb, thinly sliced"
+   ],
+   "edamame": [
+    "2 cups shelled edamame (thawed if frozen)"
+   ],
+   "parsley": [
+    "2 tbsp chopped parsley, for garnish"
+   ]
+  },
+  "nopal-cactus-salad": {
+   "cactus": [
+    "2 pounds cooked cactus from recipe below"
+   ],
+   "tomato": [
+    "I cup chopped Roma tomatoes"
+   ],
+   "oregano": [
+    "chopped 1/2 teaspoon dried oregano (preferably Mexican oregano)"
+   ],
+   "queso fresco": [
+    "3/4 cup crumbled queso fresco"
+   ]
+  },
+  "poblano-sweet-potato-and-queso-fresco-soup": {
+   "tomato": [
+    "2 cups chopped Roma tomato"
+   ],
+   "sweet potatoes": [
+    "4 cups peeled and chopped sweet potato"
+   ],
+   "mexican oregano": [
+    "1/4 teaspoon Mexican oregano"
+   ],
+   "cilantro": [
+    "1/2 cup fresh chopped cilantro"
+   ],
+   "broth": [
+    "4 cups vegetable broth"
+   ],
+   "almond milk": [
+    "1 cup almond milk, room temperature"
+   ],
+   "poblano chiles": [
+    "3 poblano chiles, roasted and sliced in strips"
+   ],
+   "queso fresco": [
+    "1 1/2 cups queso fresco, cubed"
+   ],
+   "garlic": [
+    "2 garlic cloves, finely chopped"
+   ],
+   "onion": [
+    "¾ cup roughly chopped white onion"
+   ]
+  },
+  "porcini-dusted-cod-w-asparagus-puree": {
+   "asparagus": [
+    "5 jumbo asparagus"
+   ],
+   "lemon juice": [
+    "¼ teaspoon lemon juice"
+   ],
+   "shallots": [
+    "1 small shallot, peeled and minced"
+   ],
+   "garlic": [
+    "2 cloves garlic, peeled and minced"
+   ],
+   "shiitake mushrooms": [
+    "1 cup shiitake mushrooms,"
+   ],
+   "peas": [
+    "Sliced ½ cup English peas"
+   ],
+   "cod": [
+    "4 6-ounce cod filets"
+   ],
+   "porcini powder": [
+    "2 tablespoons porcini powder"
+   ],
+   "tarragon": [
+    "+ sprigs tarragon"
+   ],
+   "lemon": [
+    "Juice of ½ lemon"
+   ]
+  },
+  "pozole-verde-with-mushrooms": {
+   "tomatillos": [
+    "8 medium tomatillos, husked and rinsed"
+   ],
+   "serrano chile": [
+    "2 serrano chiles, stems removed"
+   ],
+   "jalapeño": [
+    "3 jalapeños, stems removed"
+   ],
+   "pepitas": [
+    "1 cup raw pepitas"
+   ],
+   "poblano chiles": [
+    "3 poblano chiles, roasted"
+   ],
+   "lettuce": [
+    "2 large iceberg lettuce leaves"
+   ],
+   "cilantro": [
+    "1 cup fresh cilantro sprigs"
+   ],
+   "basil": [
+    "4 basil leaves"
+   ],
+   "spinach": [
+    "1/2 cup baby spinach"
+   ],
+   "radish": [
+    "1/2 cup radish leaves",
+    "Torn TOPPINGS radish slices finely diced white onion chopped cilantro shredded iceberg lettuce Dried Mexican oregano lime juice"
+   ],
+   "oregano": [
+    "3 fresh oregano sprigs"
+   ],
+   "hominy": [
+    "8c water 1 (10-ounce) can hominy, drained and rinsed"
+   ],
+   "mushrooms": [
+    "7 cups of a combination of shiitake or any other brown mushrooms,",
+    "Sliced 4 cups oyster mushrooms,"
+   ],
+   "garlic": [
+    "4 garlic cloves"
+   ],
+   "onion": [
+    "1/2white onion"
+   ]
+  },
+  "protein-flip-huevos-rancheros-with-pinto-beans-greek-yogurt-pepitas": {
+   "tortillas": [
+    "4 corn tortillas"
+   ],
+   "jalapeño": [
+    "1 jalapeño, minced (remove seeds for less heat)"
+   ],
+   "tomato": [
+    "1 (15 oz) can diced tomatoes with green chiles"
+   ],
+   "eggs": [
+    "8 large eggs"
+   ],
+   "cheese": [
+    "½ cup shredded Chihuahua or Monterey Jack cheese"
+   ],
+   "pinto beans": [
+    "2 cups cooked pinto beans (½ cup per serving)"
+   ],
+   "greek yogurt": [
+    "½ cup nonfat plain Greek yogurt (2 tbsp per serving)"
+   ],
+   "avocado": [
+    "1 avocado, sliced"
+   ],
+   "pepitas": [
+    "4 tbsp pepitas (1 tbsp per serving)"
+   ]
+  },
+  "pumpkin-mousse-high-protein-fiber-low-sugar-fall-dessert-recipe-sc3r2": {
+   "cottage cheese": [
+    "1 cup fat-free cottage cheese"
+   ],
+   "pumpkin puree": [
+    "1 cup pumpkin puree"
+   ],
+   "pumpkin pie spice": [
+    "1 tsp pumpkin pie spice"
+   ],
+   "allulose": [
+    "1 tsp allulose"
+   ]
+  },
+  "chefhealthyhenry-com-recipes-quinoa-zucchini-salad-the-perfect-protein-flip-tm-side": {
+   "quinoa": [
+    "1 cup quinoa, rinsed well"
+   ],
+   "zucchini": [
+    "2 medium zucchini, thinly sliced (about 2½ cups)"
+   ],
+   "garlic": [
+    "3 cloves garlic, minced"
+   ],
+   "green onions": [
+    "3 green onions, thinly sliced"
+   ],
+   "pistachios": [
+    "¼ cup roasted salted pistachios, chopped"
+   ],
+   "lemon": [
+    "Zest of 1 lemon plus ¼ teaspoon extra"
+   ],
+   "white wine vinegar": [
+    "1 tablespoon white wine vinegar"
+   ],
+   "mint": [
+    "½ cup packed fresh mint leaves, chopped (plus more for garnish)"
+   ]
+  },
+  "dragon-fruit-salad": {
+   "dragon fruit": [
+    "1 red dragon fruit",
+    "1 white dragon fruit"
+   ],
+   "persimmons": [
+    "2 persimmons quartered"
+   ],
+   "blueberries": [
+    "1 cup blueberries"
+   ],
+   "kiwi": [
+    "2 kiwi peeled and quartered"
+   ],
+   "lemon juice": [
+    "3 tablespoons lemon juice"
+   ],
+   "allulose": [
+    "1 tsp allulose"
+   ],
+   "mint": [
+    "2 tablespoons fresh mint chopped finely, plus garnish"
+   ]
+  },
+  "roasted-branzino-with-greek-ladolemono": {
+   "branzino fish": [
+    "1 lb branzino fish (or striped bass, sea bass, red snapper)"
+   ],
+   "lemon": [
+    "1 lemon, sliced into rounds"
+   ],
+   "red onion": [
+    "1/2 red onion, sliced"
+   ],
+   "castelvetrano olives": [
+    "1/2c Castelvetrano olives, halved"
+   ],
+   "cherry tomatoes": [
+    "1 cup cherry tomatoes, halved"
+   ],
+   "dill": [
+    "1/2 cup chopped fresh dill"
+   ],
+   "ladolemono": [
+    "1 Ladolemono recipe"
+   ],
+   "dijon mustard": [
+    "1 tsp Dijon mustard"
+   ],
+   "oregano": [
+    "2 tsps dried oregano"
+   ],
+   "garlic": [
+    "4-5 garlic cloves sliced"
+   ]
+  },
+  "roasted-carrots-with-radishes-and-white-beans-sauce": {
+   "carrots": [
+    "2 bunches organic carrots with the tops on"
+   ],
+   "radishes": [
+    "1 bunch radishes"
+   ],
+   "tahini": [
+    "1 tbls tahini"
+   ],
+   "nutritional yeast": [
+    "2 tbls nutritional yeast"
+   ],
+   "bean sauce": [
+    "Bean sauce:"
+   ]
+  },
+  "roasted-cauliflower-and-crispy-harissa-chickpeas": {
+   "cauliflower": [
+    "1 head cauliflower, broken into florets"
+   ],
+   "chickpeas": [
+    "1-15 oz can chickpeas, drained"
+   ],
+   "tahini": [
+    "1/4c tahini"
+   ],
+   "lemon": [
+    "1 lemon"
+   ],
+   "garam masala": [
+    "1-2 tsp garam masala"
+   ],
+   "harissa": [
+    "1 Tbls Harissa Pinch smoked paprika"
+   ],
+   "dates": [
+    "3-4 large pitted medjool dates, chopped"
+   ],
+   "feta": [
+    "4 oz crumbled feta"
+   ],
+   "pine nuts": [
+    "2 heaping Tbs pine nuts"
+   ],
+   "greek yogurt": [
+    "6 oz Greek yogurt"
+   ]
+  },
+  "roasted-pear-butternut-squash-soup-with-crumbled-stilton": {
+   "pear": [
+    "2 ripe pears, peeled, quartered and cored"
+   ],
+   "butternut squash": [
+    "2 pounds butternut squash, peeled, seeded and cut into 2-inch chunks"
+   ],
+   "tomato": [
+    "2 medium tomatoes, cored and quartered"
+   ],
+   "leeks": [
+    "1 large leek white and pale green parts only washed, halved lengthwise, and sliced"
+   ],
+   "garlic": [
+    "2 cloves garlic, crushed"
+   ],
+   "broth": [
+    "4 cups vegetable broth"
+   ],
+   "cheese": [
+    "2/3 cup crumbled Stilton or other blue veined cheese"
+   ],
+   "green onions": [
+    "1 tablespoon thinly sliced fresh chives or scallion greens"
+   ]
+  },
+  "roasted-red-pepper-salad-with-homemade-balsamic-vinaigrette-xfolb": {
+   "red pepper": [
+    "3 large red peppers, halved"
+   ],
+   "golden raisins": [
+    "2 oz golden raisins"
+   ],
+   "balsamic vinaigrette": [
+    "3/4 cup Balsamic Vinaigrette"
+   ],
+   "cherry tomatoes": [
+    "7 oz cherry tomato halved"
+   ],
+   "red onion": [
+    "2 oz julienned red onion"
+   ],
+   "olives": [
+    "2 oz quartered black olives"
+   ],
+   "garlic": [
+    "1/2 oz minced garlic"
+   ],
+   "jalapeño": [
+    "1/2 oz minced jalapeño"
+   ],
+   "pine nuts": [
+    "3/4 oz pine nuts, toasted"
+   ],
+   "vegetable stock": [
+    "2 cups Vegetable Stock"
+   ],
+   "basil": [
+    "1 tbsp basil chiffonade"
+   ]
+  },
+  "roasted-stuffed-squash-blossoms": {
+   "zucchini": [
+    "8-10 zucchini/squash blossoms"
+   ],
+   "garlic": [
+    "3 cloves garlic chopped"
+   ],
+   "chard": [
+    "1 bunch rainbow chard, stems removed and leaves chopped"
+   ],
+   "basil": [
+    "3 tbls fresh basil chopped"
+   ],
+   "goat cheese": [
+    "3 ounces goat cheese"
+   ]
+  },
+  "roasted-sumac-salmon-with-brussel-sprouts-and-pomegranate": {
+   "salmon": [
+    "2 lbs salmon"
+   ],
+   "parsley": [
+    "2 tbls fresh chopped parsley"
+   ],
+   "garlic": [
+    "2 cloves garlic, crushed"
+   ],
+   "lemon zest": [
+    "1 tbls lemon zest"
+   ],
+   "sumac": [
+    "1 tbls sumac"
+   ],
+   "brussel sprouts": [
+    "Brussel sprouts: 1lb Brussel sprouts (cut off the bottoms then slice)"
+   ],
+   "lemon": [
+    "Thinly sliced lemon and blood oranges slices"
+   ]
+  },
+  "roasted-vegetable-with-chestnuts-and-caramelized-onion": {
+   "brussel sprouts": [
+    "1 lb Brussel sprouts"
+   ],
+   "eggplant": [
+    "2 medium eggplants cut into bite sized pieces"
+   ],
+   "mushrooms": [
+    "16oz mushrooms sliced"
+   ],
+   "thyme": [
+    "2 tbls thyme"
+   ],
+   "red onion": [
+    "2 medium red onion sliced"
+   ],
+   "chestnuts": [
+    "1 lb chestnuts"
+   ]
+  },
+  "rolled-oat-breaded-eggplant-with-sweet-and-spicy-sauce": {
+   "silken tofu": [
+    "12-ounce silken tofu"
+   ],
+   "rolled oats": [
+    "3 cups rolled oats"
+   ],
+   "eggplant": [
+    "1 large eggplant"
+   ],
+   "tomato": [
+    "2 pounds tomatoes, coarsely chopped, with juices or 15oz can of diced tomatoes"
+   ],
+   "chili garlic sauce": [
+    "1 tablespoon chili garlic sauce"
+   ],
+   "celery": [
+    "1/2 teaspoon celery seed"
+   ],
+   "garlic": [
+    "4-5 garlic cloves chopped"
+   ],
+   "onion": [
+    "1 medium yellow onion, diced"
+   ]
+  },
+  "mediterranean-sauce-with-red-peppers-saffron": {
+   "red pepper": [
+    "2 large red peppers roasted, peeled, reserving the juice, and finely chopped pinch of powdered saffron (1 gram)"
+   ],
+   "garlic": [
+    "2 cloves garlic"
+   ],
+   "parsley": [
+    "1/4 cup parsley"
+   ],
+   "breadcrumbs": [
+    "1/4 cup breadcrumbs"
+   ],
+   "lemon juice": [
+    "1 tsp. lemon juice"
+   ]
+  },
+  "salmon-with-mint-pistachio-and-pickled-red-onion": {
+   "vegetable stock": [
+    "4oz vegetable stock"
+   ],
+   "cilantro": [
+    "1/4 tsp cilantro"
+   ],
+   "pickled red onion": [
+    "1/4 cup pickled red onion sliced (recipe below)"
+   ],
+   "mint": [
+    "1 tbls mint chopped"
+   ],
+   "red onion": [
+    "1 large red onion, thinly sliced"
+   ],
+   "fiber": [
+    "1 Tbls fiber"
+   ],
+   "lime": [
+    "Lime-Cilantro Vinaigrette:"
+   ],
+   "salmon": [
+    "Salmon"
+   ]
+  },
+  "salsa-verde-molcajete": {
+   "tomatillos": [
+    "8-10 Tomatillos peel off the husks"
+   ],
+   "poblano peppers": [
+    "6 Poblano peppers"
+   ],
+   "serrano peppers": [
+    "4 Serrano peppers"
+   ],
+   "onion": [
+    "1 Onion small quartered"
+   ],
+   "garlic": [
+    "4-5 Garlic cloves unpeeled"
+   ],
+   "mexican oregano": [
+    "2 tabls Mexican Oregano"
+   ],
+   "cilantro": [
+    "1/4c Cilantro chopped"
+   ],
+   "lime": [
+    "2 Limes"
+   ]
+  },
+  "savory-corn-and-mushroom-saute-with-pancetta": {
+   "pancetta": [
+    "1 1/2 oz thinly sliced pancetta (4 to 5 slices)"
+   ],
+   "leeks": [
+    "1 cup small-diced leeks"
+   ],
+   "parsley": [
+    "2 Tbs fresh parsley chopped"
+   ],
+   "lemon": [
+    "1 lemon"
+   ],
+   "heavy cream": [
+    "2 tbls heavy cream"
+   ],
+   "corn": [
+    "2 cups fresh corn kernels (4 corn ears)"
+   ],
+   "mushrooms": [
+    "2 cups medium diced cremini mushrooms"
+   ]
+  },
+  "scallops-with-black-bean-pasta": {
+   "pasta": [
+    "1/2lb black bean pasta cooked as directed on package"
+   ],
+   "carrots": [
+    "2 Large carrots julienned"
+   ],
+   "asparagus": [
+    "6 Asparagus jullienned"
+   ],
+   "cherry tomatoes": [
+    "1c cherry tomato sliced"
+   ],
+   "parsley": [
+    "1/4c parsley"
+   ],
+   "scallops": [
+    "6-8 scallops"
+   ]
+  },
+  "sea-bass-soup-with-shiitake-and-bok-choy": {
+   "sea bass": [
+    "1 1/2 lb Sea Bass"
+   ],
+   "vegetable stock": [
+    "2 cups vegetable stock"
+   ],
+   "shiitake mushrooms": [
+    "4 oz Shiitake mushrooms sliced"
+   ],
+   "red pepper": [
+    "4 oz red pepper sliced"
+   ],
+   "bok choy": [
+    "4 oz baby bok choy"
+   ]
+  },
+  "crispy-sweet-potato-matchsticks-with-saucy-sesame-tofu": {
+   "tofu": [
+    "Tofu & Sauce 1 (14 oz) block extra-firm tofu, pressed for at least 15 minutes, cut into 1-inch cubes"
+   ],
+   "almond butter": [
+    "2 tbsp almond butter"
+   ],
+   "allulose": [
+    "1 tbsp allulose or honey"
+   ],
+   "sweet potatoes": [
+    "Sweet Potato Matchsticks 2 medium sweet potatoes (about 1 lb total), peeled if desired, cut into thin matchsticks (about 1/4-inch thick)"
+   ],
+   "lime": [
+    "Garnishes Juice of 1 lime"
+   ],
+   "sesame seeds": [
+    "1 tbsp sesame seeds, toasted if possible"
+   ],
+   "basil": [
+    "Fresh basil leaves"
+   ],
+   "garlic": [
+    "1 garlic clove, grated"
+   ]
+  },
+  "fresh-potato-salad-zc9oo": {
+   "red onion": [
+    "1/4 cup finely chopped red onion"
+   ],
+   "dill": [
+    "1/4 cup chopped fresh dill"
+   ],
+   "white-wine vinegar": [
+    "3 tbls white-wine vinegar"
+   ],
+   "dijon mustard": [
+    "2 tsp Dijon or yellow mustard"
+   ],
+   "hard-boiled eggs": [
+    "3 hard-boiled eggs, coarsely chopped"
+   ],
+   "potato": [
+    "8 ounces baby potatoes"
+   ]
+  },
+  "simple-frittata": {
+   "kalamata olives": [
+    "1 cup Kalamata olives sliced"
+   ],
+   "peppers": [
+    "1 cup mixed sweet peppers sliced"
+   ],
+   "eggs": [
+    "8-10 eggs whisked"
+   ],
+   "feta cheese": [
+    "1/2 cup feta cheese"
+   ]
+  },
+  "simple-hummus-eo5q7": {
+   "chickpeas": [
+    "3 cups cooked chickpeas, peeled (1 1/4 cup dry chickpeas or 2-15oz cans of quality chickpeas)"
+   ],
+   "garlic": [
+    "1 to 2 garlic cloves, minced"
+   ],
+   "tahini": [
+    "1/3 cup tahini paste"
+   ],
+   "lemon": [
+    "Juice of 1 lemon"
+   ]
+  },
+  "roasted-chestnut-and-arugula-salad": {
+   "chestnuts": [
+    "1 cup roasted chestnuts, roughly chopped"
+   ],
+   "arugula": [
+    "4 cups fresh arugula"
+   ],
+   "pomegranate seeds": [
+    "1/4 cup pomegranate seeds (or dried cranberries for sweetness)"
+   ],
+   "parmesan cheese": [
+    "1/4 cup shaved Parmesan cheese"
+   ],
+   "dijon mustard": [
+    "1 tsp Dijon mustard"
+   ]
+  },
+  "spaghetti-squash-with-garbanzo-beans-and-feta": {
+   "spaghetti squash": [
+    "3 lb. spaghetti squash"
+   ],
+   "red onion": [
+    "1 small red onion, finely chopped"
+   ],
+   "lemon juice": [
+    "4 tbsp. fresh lemon juice"
+   ],
+   "garlic": [
+    "2 cloves chopped garlic"
+   ],
+   "chickpeas": [
+    "1 15-ounce can chickpeas, rinsed"
+   ],
+   "feta": [
+    "2 oz. crumbled feta"
+   ]
+  },
+  "spicy-ginger-garlic-chicken-red-lentil-soup-with-bok-choy": {
+   "onion": [
+    "1/2 onion, chopped"
+   ],
+   "ginger": [
+    "2 tbsp grated fresh ginger"
+   ],
+   "broth": [
+    "6 cups chicken or vegetable broth"
+   ],
+   "carrots": [
+    "2 medium carrots, thinly sliced"
+   ],
+   "jalapeño": [
+    "1 jalapeño, sliced (optional)"
+   ],
+   "bok choy": [
+    "2 cups chopped bok choy"
+   ],
+   "cilantro": [
+    "2 tbsp chopped fresh cilantro"
+   ],
+   "celery": [
+    "2 celery stalks, chopped"
+   ],
+   "garlic": [
+    "4 garlic cloves, minced"
+   ],
+   "lentils": [
+    "3/4 cup red lentils, rinsed"
+   ]
+  },
+  "spinach-stuffed-spaghetti-squash": {
+   "spaghetti squash": [
+    "1 spaghetti squash"
+   ],
+   "spinach": [
+    "7 oz spinach fresh or frozen"
+   ],
+   "tomato": [
+    "1 cup diced tomatoes"
+   ],
+   "feta cheese": [
+    "1 cup feta cheese"
+   ],
+   "pine nuts": [
+    "1/2 cup pine nuts"
+   ],
+   "garlic": [
+    "3 garlic cloves"
+   ],
+   "parmesan cheese": [
+    "1/4 cup Parmesan"
+   ],
+   "thyme": [
+    "fresh thyme for garnish"
+   ]
+  },
+  "squash-blossom-tostada-with-oaxaca-cheese": {
+   "tortillas": [
+    "6-8 Mini Tortillas"
+   ],
+   "zucchini": [
+    "2 medium Zucchini thinly sliced"
+   ],
+   "tomato": [
+    "1 15oz can diced tomatoes"
+   ],
+   "mexican oregano": [
+    "1 tsp dried Mexican oregano"
+   ],
+   "garlic": [
+    "Garlic chopped"
+   ],
+   "oaxaca cheese": [
+    "Oaxaca cheese thinly sliced."
+   ],
+   "onion": [
+    "1 cup white onion, chopped"
+   ]
+  },
+  "stuffed-turkey-breast": {
+   "onion": [
+    "⅓ cup finely chopped onion"
+   ],
+   "hazelnuts": [
+    "3 tablespoons toasted and chopped hazelnuts"
+   ],
+   "chick peas": [
+    "1 15oz can chick peas"
+   ],
+   "spinach": [
+    "3c Spinach"
+   ],
+   "sage": [
+    "2 teaspoons chopped fresh sage"
+   ],
+   "rosemary": [
+    "2 sprigs rosemary"
+   ],
+   "bacon": [
+    "2 slices thick-sliced bacon (about 3 ounces)"
+   ],
+   "marsala wine": [
+    "1 cup sweet Marsala wine"
+   ],
+   "sherry": [
+    "1/2 cup Sherry"
+   ],
+   "parsley": [
+    "2 tablespoons chopped fresh flat-leaf parsley"
+   ]
+  },
+  "sushi-tacos": {
+   "red onion": [
+    "1 large red onion, thinly sliced"
+   ],
+   "fiber": [
+    "1 tbls fiber"
+   ],
+   "cauliflower": [
+    "1 head Cauliflower"
+   ],
+   "oil": [
+    "1 Tbls oil",
+    "1 tbls oil"
+   ],
+   "tofu": [
+    "Tofu cut into 1/2 by /14 inch cubes"
+   ],
+   "jalapeño": [
+    "6 jalapeños"
+   ],
+   "serrano peppers": [
+    "2 serrano peppers"
+   ],
+   "garlic": [
+    "3 garlic cloves peeled"
+   ],
+   "pickled red onion": [
+    "Pickled red onion:"
+   ],
+   "relish": [
+    "Jalapeño relish:"
+   ],
+   "seaweed": [
+    "Seaweed wraps (Nori)"
+   ]
+  },
+  "sweet-potato-brownies-vc5r1": {
+   "sweet potatoes": [
+    "1.5 cups cooked sweet potato"
+   ],
+   "almond butter": [
+    "1/2 cup almond butter"
+   ],
+   "almond flour": [
+    "1/4 cup almond flour"
+   ],
+   "cocoa": [
+    "1/4 cup cocoa"
+   ],
+   "vanilla": [
+    "1 tsp vanilla"
+   ]
+  },
+  "sweet-potato-cinnamon-rolls-rjh1v": {
+   "sweet potatoes": [
+    "2 sweet potatoes, medium, cooked, peeled and mashed"
+   ],
+   "brown sugar": [
+    "⅓ cup brown sugar"
+   ]
+  },
+  "sweet-potato-and-lemongrass-almond-butter-curry": {
+   "shallots": [
+    "2 shallots chopped"
+   ],
+   "garlic": [
+    "3 cloves of garlic chopped"
+   ],
+   "ginger": [
+    "2 tablespoons of ginger chopped"
+   ],
+   "peppers": [
+    "2 red peppers cut into small dice"
+   ],
+   "chickpeas": [
+    "1 15oz can of chickpeas"
+   ],
+   "coconut milk": [
+    "1 15 ounce can of coconut milk"
+   ],
+   "lemongrass": [
+    "1 two inch piece of Lemongrass bruised"
+   ],
+   "tomato": [
+    "1 15oz can diced tomatoes"
+   ],
+   "almond butter": [
+    "1 tablespoon of almond butter"
+   ],
+   "turmeric powder": [
+    "1 teaspoon of turmeric powder"
+   ],
+   "curry powder": [
+    "1 tablespoon of curry powder"
+   ],
+   "cumin power": [
+    "1/2 teaspoon of cumin power"
+   ],
+   "spinach": [
+    "6 ounces of spinach torn"
+   ],
+   "chili flakes": [
+    "1 lime Chili flakes"
+   ]
+  },
+  "swordfish-with-an-olive-tapenade": {
+   "swordfish": [
+    "2 Large swordfish steaks"
+   ],
+   "shallots": [
+    "2 large Shallot chopped"
+   ],
+   "peppers": [
+    "2 cup Sweet pepper mix"
+   ],
+   "green olives": [
+    "1/2cup Green olives"
+   ],
+   "capers": [
+    "1/4 cup Capers"
+   ],
+   "white wine": [
+    "1 cup White wine"
+   ],
+   "lemon": [
+    "1 Lemon"
+   ],
+   "parsley": [
+    "1/4 cup Parsley"
+   ],
+   "garlic": [
+    "4-5 Garlic cloves chopped"
+   ]
+  },
+  "thai-tom-yum-soup-w0m0f": {
+   "broth": [
+    "6 cups broth"
+   ],
+   "lemongrass": [
+    "2 stalks of lemongrass"
+   ],
+   "ginger": [
+    "1 inch chunk of galangal or ginger peels and sliced"
+   ],
+   "chilies": [
+    "6 Thai chilies depending on your heat tolerance. sliced in half or crushed with the side of your knife"
+   ],
+   "garlic": [
+    "5 cloves of garlic roughly chopped"
+   ],
+   "shrimp": [
+    "1lb shrimp or any protein you prefer (14oz tofu cubed)"
+   ],
+   "mushrooms": [
+    "2 cups oyster mushrooms"
+   ],
+   "tomato": [
+    "2 roma tomatoes chopped into wedges"
+   ],
+   "onion": [
+    "1 medium white onion chopped into wedges"
+   ],
+   "fish sauce": [
+    "4-6 tablespoons of fish sauce (depending on your taste)"
+   ],
+   "cilantro": [
+    "1 cup cilantro"
+   ],
+   "lime": [
+    "10 kaffir lime leaves Coarsely torn to help release the flavor"
+   ]
+  },
+  "tilapia-stew-with-nopal-cactus": {
+   "tilapia": [
+    "3-4 6oz pieces of Tilapia"
+   ],
+   "onion": [
+    "1 small onion diced"
+   ],
+   "cactus": [
+    "1 cup cactus diced"
+   ],
+   "green olives": [
+    "1/2 cup green olives chopped"
+   ],
+   "capers": [
+    "1/4 cup capers chopped"
+   ],
+   "tomato": [
+    "1 15oz can quality Tomatoes diced"
+   ],
+   "vegetable stock": [
+    "4 cups vegetable stock"
+   ],
+   "mexican oregano": [
+    "2 tbls Mexican oregano"
+   ],
+   "cilantro": [
+    "1/4 cup Cilantro chopped"
+   ],
+   "garlic": [
+    "4-5 Garlic cloves chopped"
+   ]
+  },
+  "tofu-with-brussel-sprouts-and-almonds": {
+   "shallots": [
+    "2 medium shallots chopped"
+   ],
+   "brussel sprouts": [
+    "16 oz brussel sprouts shaved"
+   ],
+   "carrots": [
+    "1 large carrot julienned"
+   ],
+   "tomato": [
+    "2 cups fresh quality tomatoes"
+   ],
+   "tofu": [
+    "14 oz tofu cubed"
+   ],
+   "almonds": [
+    "1/4 cup sliced almonds"
+   ],
+   "lemon": [
+    "2 tsp lemon"
+   ],
+   "garlic": [
+    "4-5 garlic cloves chopped"
+   ]
+  },
+  "traditional-crepes": {
+   "eggs": [
+    "2 large eggs"
+   ],
+   "milk": [
+    "1/2 cup milk"
+   ]
+  },
+  "traditional-salsa-rojo-with-tomatillos-and-lime-iwzpn": {
+   "tomatillos": [
+    "8 tomatillos, husked and rinsed"
+   ],
+   "guajillo chiles": [
+    "6 guajillo chiles, stems and seeds removed"
+   ],
+   "onion": [
+    "1/2 onion, roughly chopped"
+   ],
+   "cilantro": [
+    "Fresh cilantro, chopped (a small handful or to taste)"
+   ],
+   "lime": [
+    "Juice of 1 lime"
+   ]
+  },
+  "tuna-asparagus-salad": {
+   "cilantro": [
+    "1 cup Cilantro"
+   ],
+   "ginger": [
+    "1/4 cup Ginger"
+   ],
+   "lemon zest": [
+    "1 Lemon Lemon zest"
+   ],
+   "garlic": [
+    "4 cloves Garlic"
+   ],
+   "tuna": [
+    "2 tuna steaks"
+   ],
+   "asparagus": [
+    "12oz asparagus"
+   ],
+   "red onion": [
+    "1/2 cup red onion"
+   ],
+   "rosemary": [
+    "2 tbls rosemary"
+   ]
+  },
+  "vegetables-in-mint-vinaigrette": {
+   "onion": [
+    "1 medium onion diced"
+   ],
+   "zucchini": [
+    "1 large zucchini, diced"
+   ],
+   "corn": [
+    "2 cups fresh or frozen cut corn"
+   ],
+   "parsley": [
+    "1/4 cup chopped fresh parsley"
+   ],
+   "bell pepper": [
+    "1 red bell pepper diced"
+   ],
+   "garlic": [
+    "4 garlic cloves chopped"
+   ],
+   "mint": [
+    "1/2 cup fresh mint leaves chopped"
+   ]
+  },
+  "vegetarian-egg-bites-with-spinach-beans-and-feta-cktbg": {
+   "spinach": [
+    "20 oz spinach chopped"
+   ],
+   "garlic": [
+    "1/4c Garlic chopped"
+   ],
+   "green onions": [
+    "1/4c Green onions chopped"
+   ],
+   "black beans": [
+    "2-15oz cans Black beans"
+   ],
+   "kidney beans": [
+    "1-15oz can Kidney beans"
+   ],
+   "feta": [
+    "8oz Feta"
+   ],
+   "serrano chile": [
+    "2-3 Serrano chopped (optional)"
+   ],
+   "nutmeg": [
+    "1 tbl Nutmeg"
+   ],
+   "eggs": [
+    "15 Eggs"
+   ]
+  },
+  "high-protein-meatless-burger-with-black-beans-quinoa-cilantro-chimichurri": {
+   "black beans": [
+    "1 (15 oz) can black beans, drained, rinsed, and mashed"
+   ],
+   "quinoa": [
+    "¼ cup quinoa, cooked"
+   ],
+   "chia seeds": [
+    "1 tbsp chia seeds"
+   ],
+   "oats": [
+    "¼ cup oats, finely ground"
+   ],
+   "jalapeño": [
+    "1 small jalapeño, seeded for less heat"
+   ],
+   "spinach": [
+    "1 cup fresh spinach"
+   ],
+   "avocado": [
+    "1 avocado, sliced"
+   ],
+   "tomato": [
+    "1 tomato, sliced"
+   ],
+   "red onion": [
+    "½ red onion, thinly sliced"
+   ],
+   "cilantro": [
+    "Cilantro Chimichurri"
+   ],
+   "garlic": [
+    "1 tsp garlic powder"
+   ],
+   "parsley": [
+    "¼ cup fresh parsley leaves"
+   ]
+  },
+  "vibrant-mediterranean-salad-with-chickpeas-4hcgc": {
+   "romaine": [
+    "1 heads romaine chopped"
+   ],
+   "arugula": [
+    "6oz arugula"
+   ],
+   "spinach": [
+    "6oz spinach"
+   ],
+   "chickpeas": [
+    "1 spicy chickpea recipe (below)",
+    "blend 1 15oz can chickpeas"
+   ],
+   "zucchini": [
+    "1 zucchini, cut into moon shapes"
+   ],
+   "peaches": [
+    "1-2 nectarines or peaches 1"
+   ],
+   "red pepper": [
+    "red pepper, diced"
+   ],
+   "peppers": [
+    "1 yellow pepper, diced"
+   ],
+   "avocado": [
+    "1-2 avocado"
+   ],
+   "sun-dried tomatoes": [
+    "3 tbls sun-dried tomatoes(packed in oil)"
+   ],
+   "basil": [
+    "1/2c packed basil leaves"
+   ],
+   "lemon juice": [
+    "2 tbls lemon juice"
+   ],
+   "coriander": [
+    "1 tsp coriander"
+   ],
+   "garlic": [
+    "2 garlic cloves"
+   ],
+   "lemon": [
+    "Lemon-Basil Vinaigrette:"
+   ]
+  },
+  "vibrant-sweet-potato-kale-salad-with-black-beans-ltlry": {
+   "sweet potatoes": [
+    "1 large sweet potato, cut into ½-inch-thick wedges"
+   ],
+   "ancho chile powder": [
+    "2 tsps ancho chile powder"
+   ],
+   "shallots": [
+    "6 medium shallots, peeled and quartered"
+   ],
+   "lemon juice": [
+    "3 tbls lemon juice"
+   ],
+   "kale": [
+    "1 lb kale, stemmed and torn"
+   ],
+   "black beans": [
+    "1 15-oz can black beans, rinsed"
+   ],
+   "quinoa": [
+    "1 cup cooked quinoa"
+   ],
+   "feta cheese": [
+    "1/2 cup crumbled feta cheese"
+   ],
+   "pepitas": [
+    "1/2 cup pepitas, toasted"
+   ],
+   "garlic": [
+    "2 large clove garlic, grated"
+   ]
+  },
+  "zucchini-orzo-salad-with-pepperoncini-hmpfk": {
+   "pasta": [
+    "1 cup dry orzo pasta"
+   ],
+   "walnuts": [
+    "1/2 cup walnut halves"
+   ],
+   "zucchini": [
+    "2 medium zucchini, halved lengthwise, sliced into half moons"
+   ],
+   "lemon juice": [
+    "2 tbls fresh lemon juice"
+   ],
+   "pepperoncini": [
+    "1/4 cup sliced pickled pepperoncini, roughly chopped"
+   ],
+   "parmesan cheese": [
+    "1/4 cup grated or shaved Parmesan cheese"
+   ],
+   "garlic": [
+    "1 garlic clove, chopped"
+   ]
+  },
+  "warm-zucchini-feta-salad-lemon-caper-halibut": {
+   "pasta": [
+    "1 cup dry white short-cut pasta, such as ditalini or orzo"
+   ],
+   "zucchini": [
+    "1 lb zucchini"
+   ],
+   "shallots": [
+    "1 medium shallot, finely chopped, about 1/3 cup"
+   ],
+   "garlic": [
+    "2 to 3 garlic cloves, minced"
+   ],
+   "capers": [
+    "2 tablespoons capers, drained"
+   ],
+   "chickpeas": [
+    "1 15-ounce can chickpeas, drained and rinsed"
+   ],
+   "feta cheese": [
+    "1/2 cup crumbled feta cheese"
+   ],
+   "pistachios": [
+    "1/3 cup roasted salted pistachios, roughly chopped"
+   ],
+   "parsley": [
+    "1/4 cup chopped fresh parsley"
+   ],
+   "dill": [
+    "3 tablespoons chopped fresh dill"
+   ],
+   "halibut": [
+    "1 lb halibut, cut into 4 portions"
+   ],
+   "lemon": [
+    "Juice of 1 lemon, about 2 tablespoons"
+   ]
+  },
+  "turkey-lentil-meatball-salad-greek-yogurt": {
+   "turkey": [
+    "1 lb 93% lean ground turkey"
+   ],
+   "lentils": [
+    "1/2 cup dry brown lentils"
+   ],
+   "zucchini": [
+    "1 small zucchini, julienned into thin strands, roughly chopped, and squeezed very dry (about 3/4 cup after squeezing)"
+   ],
+   "breadcrumbs": [
+    "1/3 cup whole wheat breadcrumbs or oat flour"
+   ],
+   "parmesan cheese": [
+    "1/4 cup grated Parmesan cheese"
+   ],
+   "parsley": [
+    "2 tablespoons chopped fresh parsley",
+    "2 tablespoons chopped parsley",
+    "2 tablespoons chopped parsley"
+   ],
+   "lemon zest": [
+    "1 teaspoon lemon zest",
+    "1 teaspoon lemon zest"
+   ],
+   "greek yogurt": [
+    "1 cup plain nonfat Greek yogurt"
+   ],
+   "lemon juice": [
+    "2 tablespoons fresh lemon juice"
+   ],
+   "dill": [
+    "1 tablespoon chopped dill",
+    "1 tablespoon chopped dill",
+    "Fresh dill, parsley, or mint"
+   ],
+   "mint": [
+    "1 tablespoon chopped mint"
+   ],
+   "arugula": [
+    "5 ounces baby arugula and chopped romaine"
+   ],
+   "cherry tomatoes": [
+    "2 cups cherry tomatoes, halved"
+   ],
+   "red pepper": [
+    "1/2 cup roasted red peppers, sliced"
+   ],
+   "chickpeas": [
+    "1/2 cup cooked chickpeas, drained and rinsed"
+   ],
+   "kalamata olives": [
+    "1/4 cup Kalamata olives, halved"
+   ],
+   "pickled red onion": [
+    "1/4 cup thinly sliced pickled red onions"
+   ],
+   "feta cheese": [
+    "1/4 cup crumbled feta cheese"
+   ],
+   "lemon wedges": [
+    "Lemon wedges"
+   ],
+   "cucumber": [
+    "1 English cucumber, diced"
+   ],
+   "garlic": [
+    "2 garlic cloves, finely grated"
+   ]
+  },
+  "savory-dutch-baby-arugula-lupini-bean-salad": {
+   "eggs": [
+    "4 large eggs, room temperature"
+   ],
+   "milk": [
+    "1/2 cup (120 ml) 2% milk, room temperature"
+   ],
+   "parmesan cheese": [
+    "1/4 cup (25 g) grated Parmesan cheese",
+    "Freshly grated Parmesan cheese, for garnish"
+   ],
+   "dijon mustard": [
+    "1 teaspoon Dijon mustard"
+   ],
+   "arugula": [
+    "5 ounces (140 g) baby arugula"
+   ],
+   "lupini beans": [
+    "1 cup lupini beans, drained, rinsed, and patted dry"
+   ],
+   "goat cheese": [
+    "2 ounces (60 g) goat cheese, crumbled"
+   ],
+   "cherry tomatoes": [
+    "1/2 cup yellow cherry tomatoes, halved"
+   ],
+   "sun-dried tomatoes": [
+    "1/4 cup (20 g) chopped sun-dried tomatoes"
+   ],
+   "pepitas": [
+    "1/4 cup roasted pepitas (pumpkin seeds), lightly toasted"
+   ],
+   "basil": [
+    "Fresh basil leaves, for garnish"
+   ],
+   "garlic": [
+    "1 garlic clove, minced"
+   ]
+  },
+  "herbed-flatbreads-roasted-red-pepper-feta-prosciutto-cherokee-tomato": {
+   "wheat flour": [
+    "1/2 cup whole wheat flour"
+   ],
+   "chickpea flour": [
+    "1/2 cup chickpea flour"
+   ],
+   "parsley": [
+    "2 tablespoons finely chopped parsley"
+   ],
+   "lemon zest": [
+    "1 teaspoon lemon zest",
+    "1 teaspoon lemon zest",
+    "Lemon zest, optional"
+   ],
+   "greek yogurt": [
+    "1 cup plain Greek yogurt",
+    "1/3 cup plain Greek yogurt"
+   ],
+   "cannellini beans": [
+    "1 cup cannellini beans, rinsed and drained well"
+   ],
+   "feta cheese": [
+    "4 oz feta cheese"
+   ],
+   "red pepper": [
+    "1/2 cup roasted red peppers, drained and patted dry"
+   ],
+   "lemon juice": [
+    "1 tablespoon lemon juice"
+   ],
+   "arugula": [
+    "2 to 3 cups arugula"
+   ],
+   "prosciutto": [
+    "4 to 8 slices prosciutto, torn into ribbons"
+   ],
+   "tomato": [
+    "1 large Cherokee Purple tomato, thinly sliced"
+   ],
+   "parmesan cheese": [
+    "1/4 cup shaved or grated Parmesan cheese"
+   ],
+   "basil": [
+    "Fresh basil leaves"
+   ],
+   "garlic": [
+    "1 small garlic clove, grated"
+   ]
+  },
+  "chicken-tinga-tostadas": {
+   "tomato": [
+    "1 1/2 pounds ripe tomatoes, cored"
+   ],
+   "habanero": [
+    "1 to 2 habanero peppers, halved and seeded for less heat, if desired"
+   ],
+   "chipotle peppers": [
+    "2 chipotle peppers in adobo"
+   ],
+   "tomato paste": [
+    "1 tablespoon tomato paste"
+   ],
+   "mexican oregano": [
+    "1 teaspoon Mexican oregano"
+   ],
+   "chicken": [
+    "4 cups shredded rotisserie chicken, skin removed"
+   ],
+   "lime": [
+    "Juice of 1/2 lime",
+    "Juice of 1/2 lime"
+   ],
+   "mexican crema": [
+    "1/2 cup Mexican crema"
+   ],
+   "greek yogurt": [
+    "1/2 cup plain nonfat Greek yogurt"
+   ],
+   "avocado": [
+    "1 ripe avocado"
+   ],
+   "cilantro": [
+    "2 tablespoons chopped fresh cilantro"
+   ],
+   "black beans": [
+    "1 (15-ounce) can black beans, drained and rinsed"
+   ],
+   "tostadas": [
+    "12 baked corn tostadas"
+   ],
+   "cabbage": [
+    "2 cups finely shredded cabbage"
+   ],
+   "cotija cheese": [
+    "1/2 cup crumbled Cotija cheese"
+   ],
+   "lentils": [
+    "3/4 cup cooked brown lentils"
+   ]
+  },
+  "bourbon-black-garlic-salmon-with-roasted-sweet-potato-fries-lemon-parmesan-broccoli": {
+   "bourbon": [
+    "1/3 cup bourbon"
+   ],
+   "garlic": [
+    "2 cloves black garlic, mashed into a paste (or 2 cloves fresh garlic, finely minced)",
+    "2 cloves garlic, minced"
+   ],
+   "shallots": [
+    "1 small shallot, finely minced"
+   ],
+   "dijon mustard": [
+    "2 tablespoons Dijon mustard",
+    "1 tablespoon whole grain Dijon mustard"
+   ],
+   "sherry vinegar": [
+    "1 tablespoon sherry vinegar"
+   ],
+   "allulose": [
+    "1½ tablespoons allulose"
+   ],
+   "sweet potatoes": [
+    "2 medium sweet potatoes (about 1¼ pounds), cut into thick fries"
+   ],
+   "parmesan cheese": [
+    "2 tablespoons grated Parmesan cheese",
+    "¼ cup grated Parmesan cheese"
+   ],
+   "broccoli": [
+    "1 large head broccoli, cut into florets"
+   ],
+   "lemon zest": [
+    "Zest of ½ lemon"
+   ],
+   "pepitas": [
+    "½ cup toasted pepitas"
+   ],
+   "cherry tomatoes": [
+    "Sweet yellow or mixed cherry tomatoes"
+   ],
+   "orange": [
+    "3 tablespoons fresh orange juice"
+   ],
+   "salmon": [
+    "Salmon"
+   ],
+   "thyme": [
+    "½ teaspoon fresh thyme leaves, chopped"
+   ]
+  },
+  "chocolate-sweet-potato-protein-donuts-with-whipped-chocolate-topping": {
+   "sweet potatoes": [
+    "1 medium sweet potato, enough to yield 1 packed cup cooked flesh, about 225 to 230 grams"
+   ],
+   "eggs": [
+    "2 large eggs"
+   ],
+   "greek yogurt": [
+    "½ cup plain nonfat Greek yogurt",
+    "⅓ cup plain nonfat Greek yogurt, close to room temperature"
+   ],
+   "dark chocolate": [
+    "2 ounces dark chocolate, finely chopped"
+   ],
+   "allulose": [
+    "¼ cup granulated allulose"
+   ],
+   "banana": [
+    "1 very ripe medium banana"
+   ],
+   "pistachios": [
+    "Finely chopped unsalted pistachios"
+   ],
+   "protein powder": [
+    "1 scoop UNJURY unflavored protein powder, about 27 to 30 grams"
+   ]
+  },
+  "air-fryer-garlic-and-herb-baby-potatoes": {
+   "potato": [
+    "1 lb baby potatoes, halved"
+   ]
+  },
+  "citrus-supreme-tutorial-perfect-orange-segments-for-salads-desserts": {},
+  "spicy-garbanzo-beans": {
+   "lime": [
+    "1 tablespoon of lime zest"
+   ]
+  }
+ }
+}

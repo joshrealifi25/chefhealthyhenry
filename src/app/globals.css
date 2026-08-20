@@ -131,6 +131,21 @@
   a[href]::after {
     content: none !important;
   }
+
+  /* Grocery lists are printed to be carried and ticked off, so keep the
+     checkboxes and drop the browsing chrome around them. */
+  .print-list input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12pt;
+    height: 12pt;
+    border: 1pt solid #333;
+    border-radius: 2pt;
+    margin-top: 2pt;
+  }
+  .print-list li {
+    break-inside: avoid;
+  }
 }
 
 @layer base {
