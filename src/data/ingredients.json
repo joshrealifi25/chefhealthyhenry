@@ -1,5 +1,5 @@
 {
- "_comment": "Canonical shopping-ingredient tags per recipe, reviewed and corrected by Chef Henry. Staples (salt, oils, dried spices) are deliberately excluded: they match nearly every recipe and add noise to combo matching. recipeTags drives matching; recipeLines holds the original recipe wording for each tag so grocery lists can show real quantities. Regenerate from the ingredient review workbook, do not hand-edit.",
+ "_comment": "Canonical shopping-ingredient tags per recipe, reviewed and corrected by Chef Henry. Staples (salt, oils, dried spices) are deliberately excluded: they match nearly every recipe and add noise to combo matching. recipeTags drives matching; recipeLines holds the original recipe wording for each tag so grocery lists can show real quantities. Regenerate from the ingredient review workbook, do not hand-edit. Em dashes from recipe wording are normalized to commas to match the house writing rules.",
  "ingredients": [
   {
    "name": "garlic",
@@ -4924,10 +4924,10 @@
     "1 cup frozen peas (or fresh if in season)"
    ],
    "broth": [
-    "2–3 tablespoons vegetable broth, chicken broth, or water (adjust as needed)"
+    "2-3 tablespoons vegetable broth, chicken broth, or water (adjust as needed)"
    ],
    "lemon juice": [
-    "1–2 teaspoons fresh lemon juice (brightens it up) - Shaved Fennel & Orange Salad",
+    "1-2 teaspoons fresh lemon juice (brightens it up) - Shaved Fennel & Orange Salad",
     "1 tablespoon lemon juice (or orange juice from the segments)"
    ],
    "fennel bulb": [
@@ -4984,7 +4984,7 @@
     "Toasted chopped almonds (1 tbsp per serving)"
    ],
    "sweet potatoes": [
-    "4–5 cups sliced autumn vegetables: sweet potatoes, delicata or acorn squash (½\" slices), zucchini (½\" diagonals), carrots (thin coins), onions (½\" wedges), red bell pepper strips"
+    "4-5 cups sliced autumn vegetables: sweet potatoes, delicata or acorn squash (½\" slices), zucchini (½\" diagonals), carrots (thin coins), onions (½\" wedges), red bell pepper strips"
    ],
    "tomato": [
     "1 can (15 oz) fire-roasted or stewed tomatoes"
@@ -4993,13 +4993,13 @@
     "1 can (15 oz) cannellini beans, drained and rinsed"
    ],
    "broth": [
-    "3–4 cups vegetable broth (start with 3)"
+    "3-4 cups vegetable broth (start with 3)"
    ],
    "crème fraîche": [
     "Crème fraîche, Greek yogurt, or labneh"
    ],
    "bell pepper": [
-    "Red Pepper–Almond Sauce (Romesco Base)"
+    "Red Pepper-Almond Sauce (Romesco Base)"
    ],
    "garlic": [
     "1 garlic clove, minced"
@@ -5076,7 +5076,7 @@
   },
   "the-secret-to-easy-to-peel-hard-boiled-eggs": {
    "eggs": [
-    "Eggs (7–10 days old)"
+    "Eggs (7-10 days old)"
    ]
   },
   "tuna-chickpea-salad": {
@@ -5228,7 +5228,7 @@
    ],
    "garlic": [
     "3 cloves garlic, minced",
-    "4–5 cloves garlic, finely chopped"
+    "4-5 cloves garlic, finely chopped"
    ],
    "ginger": [
     "1-inch piece fresh ginger, grated"
@@ -5252,7 +5252,7 @@
     "1 bunch broccolini, trimmed"
    ],
    "fish sauce": [
-    "1–2 tablespoons fish sauce (to taste)"
+    "1-2 tablespoons fish sauce (to taste)"
    ],
    "cilantro": [
     "Chopped cilantro"
@@ -5649,7 +5649,7 @@
     "½ cup shelled edamame, cooked"
    ],
    "cauliflower rice": [
-    "6 cups fresh cauliflower rice (about 1 medium head) — see Cook’s Note"
+    "6 cups fresh cauliflower rice (about 1 medium head), see Cook’s Note"
    ],
    "sesame seeds": [
     "2 tbsp sesame seeds, toasted"
@@ -5678,7 +5678,7 @@
     "2 poblano peppers, sliced"
    ],
    "jalapeño": [
-    "1–2 jalapeños, thinly sliced (optional)"
+    "1-2 jalapeños, thinly sliced (optional)"
    ],
    "black beans": [
     "2 (15 oz) cans black beans, drained and rinsed"
@@ -5944,7 +5944,7 @@
     "1 small onion, quartered"
    ],
    "garlic": [
-    "7–8 garlic cloves, peeled Salt to taste"
+    "7-8 garlic cloves, peeled Salt to taste"
    ]
   },
   "crispy-air-fryer-tilapia-with-brussels-sprouts": {
@@ -7312,7 +7312,7 @@
   },
   "mediterranean-baked-tilapia-with-cherry-tomatoes-and-capers": {
    "quinoa": [
-    "Hemp–Quinoa Base 2 cups cooked quinoa (about 1 cup dry)"
+    "Hemp-Quinoa Base 2 cups cooked quinoa (about 1 cup dry)"
    ],
    "hemp": [
     "8 tbsp shelled hemp seeds (2 tbsp per serving)"

@@ -1,8 +1,23 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import type { IngredientTag, GroceryItem } from "@/lib/ingredients";
+
+const CART_KEY = "chh-combo-cart";
+
+/** The grocery list only renders after the cook picks recipes, so it is never
+ *  part of the server-rendered markup and this cannot cause a hydration gap. */
+function readCart(): string[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const saved = window.localStorage.getItem(CART_KEY);
+    return saved ? (JSON.parse(saved) as string[]) : [];
+  } catch {
+    // Private browsing or blocked storage: ticking still works this session.
+    return [];
+  }
+}
 
 interface RecipeLite {
   slug: string;
@@ -27,6 +42,17 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
   const [view, setView] = useState<"full" | "byRecipe">("full");
   /** Recipe slugs the cook actually plans to make. */
   const [chosen, setChosen] = useState<string[]>([]);
+  /** Ingredients already in the cart. Kept in localStorage so a phone that
+   *  reloads mid-aisle does not lose the trip. */
+  const [inCart, setInCart] = useState<string[]>(readCart);
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem(CART_KEY, JSON.stringify(inCart));
+    } catch {
+      // Ignore: persistence is a convenience, not a requirement.
+    }
+  }, [inCart]);
 
   const matches = useMemo(
     () =>
@@ -83,6 +109,11 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
     );
   }, [planned, tags, lines]);
 
+  const gotCount = useMemo(
+    () => list.filter((i) => inCart.includes(i.name)).length,
+    [list, inCart]
+  );
+
   function add(name: string) {
     setSelected((s) => (s.includes(name) ? s : [...s, name]));
     setQuery("");
@@ -91,6 +122,7 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
   return (
     <div>
       {/* Pick ingredients */}
+      <div className="print:hidden">
       <label htmlFor="combo-search" className="text-sm font-medium">
         Add an ingredient
       </label>
@@ -119,8 +151,10 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
       )}
 
       {/* Chosen ingredients */}
+      </div>
+
       {selected.length > 0 && (
-        <div className="mt-6 rounded-2xl border border-border bg-card p-4">
+        <div className="mt-6 rounded-2xl border border-border bg-card p-4 print:hidden">
           <div className="flex flex-wrap items-center gap-2">
             {selected.map((name) => (
               <span
@@ -176,11 +210,16 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
             Tick the meals you plan to make. Your grocery list covers just
             those.
           </p>
-          <ul className="mt-4 divide-y divide-border rounded-2xl border border-border bg-card">
+          <ul className="mt-4 divide-y divide-border rounded-2xl border border-border bg-card print:border-0">
             {matches.map((r) => {
               const on = chosen.includes(r.slug);
               return (
-                <li key={r.slug} className="flex items-center gap-3 px-5 py-3">
+                <li
+                  key={r.slug}
+                  className={`flex items-center gap-3 px-5 py-3 ${
+                    on ? "" : "print:hidden"
+                  }`}
+                >
                   <input
                     type="checkbox"
                     id={`pick-${r.slug}`}
@@ -190,7 +229,7 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
                         on ? c.filter((s) => s !== r.slug) : [...c, r.slug]
                       )
                     }
-                    className="size-4 accent-primary"
+                    className="size-4 accent-primary print:hidden"
                   />
                   <label
                     htmlFor={`pick-${r.slug}`}
@@ -254,21 +293,65 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
           </div>
 
           {view === "full" ? (
-            <ul className="mt-4 divide-y divide-border rounded-2xl border border-border bg-card">
-              {list.map((item) => (
-                <li key={item.name} className="px-5 py-3">
-                  <p className="text-sm font-medium capitalize">{item.name}</p>
-                  <ul className="mt-1 space-y-0.5 text-xs text-muted-foreground">
-                    {item.needs.map((n) => (
-                      <li key={n.recipeSlug}>
-                        {n.lines.length > 0 ? n.lines.join("; ") : "as needed"}{" "}
-                        <span className="opacity-70">({n.recipeTitle})</span>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ))}
-            </ul>
+            <>
+              <div className="mt-3 flex items-center justify-between gap-3 text-sm text-muted-foreground print:hidden">
+                <span aria-live="polite">
+                  {gotCount} of {list.length} in the cart
+                </span>
+                {gotCount > 0 && (
+                  <button
+                    onClick={() => setInCart([])}
+                    className="underline underline-offset-4 hover:text-primary"
+                  >
+                    Uncheck all
+                  </button>
+                )}
+              </div>
+              <ul className="print-list mt-2 divide-y divide-border rounded-2xl border border-border bg-card">
+                {list.map((item) => {
+                  const got = inCart.includes(item.name);
+                  return (
+                    <li key={item.name} className="flex gap-3 px-5 py-3">
+                      <input
+                        type="checkbox"
+                        id={`got-${item.name}`}
+                        checked={got}
+                        onChange={() =>
+                          setInCart((c) =>
+                            got
+                              ? c.filter((n) => n !== item.name)
+                              : [...c, item.name]
+                          )
+                        }
+                        className="mt-0.5 size-4 shrink-0 accent-primary"
+                      />
+                      <div className={got ? "opacity-45" : undefined}>
+                        <label
+                          htmlFor={`got-${item.name}`}
+                          className={`cursor-pointer text-sm font-medium capitalize ${
+                            got ? "line-through" : ""
+                          }`}
+                        >
+                          {item.name}
+                        </label>
+                        <ul className="mt-1 space-y-0.5 text-xs text-muted-foreground">
+                          {item.needs.map((n) => (
+                            <li key={n.recipeSlug}>
+                              {n.lines.length > 0
+                                ? n.lines.join("; ")
+                                : "as needed"}{" "}
+                              <span className="opacity-70">
+                                ({n.recipeTitle})
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            </>
           ) : (
             <div className="mt-4 space-y-4">
               {planned.map((r) => (
