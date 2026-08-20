@@ -72,7 +72,12 @@ export const sousMessages = pgTable(
   (t) => [index("sous_messages_user_idx").on(t.userId, t.createdAt)]
 );
 
-/** Saved grocery combos from the Tier 1 combo builder. */
+/**
+ * A saved shopping trip from the Tier 1 combo builder: the ingredients that
+ * found the recipes, the meals actually chosen, and what is already in the
+ * cart. Saving all three means a list reopens exactly where it was left,
+ * including half-shopped, on any device.
+ */
 export const savedLists = pgTable(
   "saved_lists",
   {
@@ -83,7 +88,14 @@ export const savedLists = pgTable(
     name: text("name").notNull(),
     /** Canonical ingredient tags the member selected. */
     ingredients: jsonb("ingredients").$type<string[]>().notNull(),
+    /** Recipe slugs the member plans to cook. */
+    recipeSlugs: jsonb("recipe_slugs").$type<string[]>().notNull().default([]),
+    /** Ingredients already picked up, so a trip resumes mid-aisle. */
+    inCart: jsonb("in_cart").$type<string[]>().notNull().default([]),
     createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true })
       .notNull()
       .defaultNow(),
   },

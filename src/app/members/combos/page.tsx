@@ -8,6 +8,8 @@ import {
   recipeLines,
 } from "@/lib/ingredients";
 import { ComboBuilder } from "@/components/combo-builder";
+import { db, savedLists } from "@/lib/db";
+import { desc, eq } from "drizzle-orm";
 
 export const metadata: Metadata = {
   title: "Grocery Combo Builder",
@@ -21,6 +23,12 @@ export default async function CombosPage() {
   const member = await getMember();
   if (!member) redirect("/members/login");
   if (!member.tier) redirect("/membership");
+
+  const saved = await db()
+    .select()
+    .from(savedLists)
+    .where(eq(savedLists.userId, member.id))
+    .orderBy(desc(savedLists.updatedAt));
 
   const lite = recipes
     .filter((r) => (recipeTags[r.slug] ?? []).length > 0)
@@ -43,6 +51,13 @@ export default async function CombosPage() {
           tags={recipeTags}
           lines={recipeLines}
           recipes={lite}
+          saved={saved.map((l) => ({
+            id: l.id,
+            name: l.name,
+            ingredients: l.ingredients,
+            recipeSlugs: l.recipeSlugs,
+            inCart: l.inCart,
+          }))}
         />
       </div>
     </div>

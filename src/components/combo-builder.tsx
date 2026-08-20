@@ -44,6 +44,14 @@ interface RecipeLite {
   title: string;
 }
 
+export interface SavedList {
+  id: string;
+  name: string;
+  ingredients: string[];
+  recipeSlugs: string[];
+  inCart: string[];
+}
+
 interface Props {
   /** Every selectable ingredient, most-used first. */
   all: IngredientTag[];
@@ -54,9 +62,18 @@ interface Props {
   recipes: RecipeLite[];
   /** Optional preset to start from, e.g. from a free Explore combo page. */
   initial?: string[];
+  /** The member's saved trips, newest first. */
+  saved?: SavedList[];
 }
 
-export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props) {
+export function ComboBuilder({
+  all,
+  tags,
+  lines,
+  recipes,
+  initial = [],
+  saved = [],
+}: Props) {
   const restored = initial.length > 0 ? EMPTY_TRIP : readTrip();
   const [selected, setSelected] = useState<string[]>(
     initial.length > 0 ? initial : restored.selected
@@ -68,6 +85,12 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
   /** Ingredients already in the cart. Kept in localStorage so a phone that
    *  reloads mid-aisle does not lose the trip. */
   const [inCart, setInCart] = useState<string[]>(restored.inCart);
+  const [lists, setLists] = useState<SavedList[]>(saved);
+  /** The saved list currently open, so Save updates it instead of duplicating. */
+  const [openListId, setOpenListId] = useState<string | null>(null);
+  const [listName, setListName] = useState("");
+  const [saveState, setSaveState] = useState<"idle" | "saving" | "saved" | "error">("idle");
+  const [saveError, setSaveError] = useState<string | null>(null);
 
   useEffect(() => {
     try {
@@ -135,10 +158,65 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
     );
   }, [planned, tags, lines]);
 
+  const defaultName = useMemo(() => {
+    if (planned.length === 1) return planned[0].title;
+    return selected.slice(0, 3).join(", ") || "My list";
+  }, [planned, selected]);
+
   const gotCount = useMemo(
     () => list.filter((i) => inCart.includes(i.name)).length,
     [list, inCart]
   );
+
+  async function save() {
+    const name = listName.trim() || defaultName;
+    setSaveState("saving");
+    setSaveError(null);
+    try {
+      const res = await fetch("/api/lists", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          id: openListId,
+          name,
+          ingredients: selected,
+          recipeSlugs: chosen,
+          inCart,
+        }),
+      });
+      const data = (await res.json()) as { list?: SavedList; error?: string };
+      if (!res.ok || !data.list) {
+        setSaveState("error");
+        setSaveError(data.error ?? "Could not save. Please try again.");
+        return;
+      }
+      setLists((ls) => [data.list!, ...ls.filter((l) => l.id !== data.list!.id)]);
+      setOpenListId(data.list.id);
+      setListName(data.list.name);
+      setSaveState("saved");
+    } catch {
+      setSaveState("error");
+      setSaveError("Could not save. Please try again.");
+    }
+  }
+
+  function open(list: SavedList) {
+    setSelected(list.ingredients);
+    setChosen(list.recipeSlugs);
+    setInCart(list.inCart);
+    setOpenListId(list.id);
+    setListName(list.name);
+    setSaveState("idle");
+  }
+
+  async function remove(id: string) {
+    setLists((ls) => ls.filter((l) => l.id !== id));
+    if (openListId === id) {
+      setOpenListId(null);
+      setListName("");
+    }
+    await fetch(`/api/lists?id=${encodeURIComponent(id)}`, { method: "DELETE" });
+  }
 
   function add(name: string) {
     setSelected((s) => (s.includes(name) ? s : [...s, name]));
@@ -147,6 +225,40 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
 
   return (
     <div>
+      {lists.length > 0 && (
+        <section className="mb-8 rounded-2xl border border-border bg-card p-5 print:hidden">
+          <h2 className="font-heading text-lg font-semibold">My Lists</h2>
+          <ul className="mt-3 divide-y divide-border">
+            {lists.map((l) => (
+              <li key={l.id} className="flex items-center gap-3 py-2">
+                <button
+                  onClick={() => open(l)}
+                  className="flex-1 text-left text-sm hover:text-primary"
+                >
+                  <span className={l.id === openListId ? "font-semibold" : ""}>
+                    {l.name}
+                  </span>
+                  <span className="ml-2 text-xs text-muted-foreground">
+                    {l.recipeSlugs.length}{" "}
+                    {l.recipeSlugs.length === 1 ? "recipe" : "recipes"}
+                    {l.inCart.length > 0
+                      ? `, ${l.inCart.length} in the cart`
+                      : ""}
+                  </span>
+                </button>
+                <button
+                  onClick={() => remove(l.id)}
+                  aria-label={`Delete ${l.name}`}
+                  className="text-xs text-muted-foreground hover:text-destructive"
+                >
+                  Delete
+                </button>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {/* Pick ingredients */}
       <div className="print:hidden">
       <label htmlFor="combo-search" className="text-sm font-medium">
@@ -277,6 +389,59 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
               );
             })}
           </ul>
+
+          {planned.length > 0 && (
+            <div className="mt-8 rounded-2xl border border-border bg-secondary/40 p-5 print:hidden">
+              <label htmlFor="list-name" className="text-sm font-medium">
+                {openListId ? "Update this list" : "Save this list"}
+              </label>
+              <p className="mt-1 text-xs text-muted-foreground">
+                Saved lists keep your recipes and what you have already picked
+                up, so you can plan here and shop from your phone.
+              </p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                <input
+                  id="list-name"
+                  value={listName}
+                  onChange={(e) => {
+                    setListName(e.target.value);
+                    setSaveState("idle");
+                  }}
+                  placeholder={defaultName}
+                  className="min-w-0 flex-1 rounded-full border border-input bg-background px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-ring"
+                />
+                <button
+                  onClick={save}
+                  disabled={saveState === "saving"}
+                  className="rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-60"
+                >
+                  {saveState === "saving"
+                    ? "Saving..."
+                    : openListId
+                      ? "Update"
+                      : "Save"}
+                </button>
+                {openListId && (
+                  <button
+                    onClick={() => {
+                      setOpenListId(null);
+                      setListName("");
+                      setSaveState("idle");
+                    }}
+                    className="rounded-full border border-border px-5 py-2 text-sm text-muted-foreground hover:text-primary"
+                  >
+                    Save as new
+                  </button>
+                )}
+              </div>
+              {saveState === "saved" && (
+                <p className="mt-2 text-xs text-primary">Saved to My Lists.</p>
+              )}
+              {saveState === "error" && saveError && (
+                <p className="mt-2 text-xs text-destructive">{saveError}</p>
+              )}
+            </div>
+          )}
 
           {planned.length === 0 ? (
             <p className="mt-8 rounded-2xl border border-dashed border-border bg-secondary/40 px-5 py-4 text-sm text-muted-foreground">
