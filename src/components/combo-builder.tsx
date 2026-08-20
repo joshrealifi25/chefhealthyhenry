@@ -25,6 +25,8 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
   const [selected, setSelected] = useState<string[]>(initial);
   const [query, setQuery] = useState("");
   const [view, setView] = useState<"full" | "byRecipe">("full");
+  /** Recipe slugs the cook actually plans to make. */
+  const [chosen, setChosen] = useState<string[]>([]);
 
   const matches = useMemo(
     () =>
@@ -56,9 +58,16 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
       .slice(0, 8);
   }, [all, matches, query, recipes, selected, tags]);
 
+  // Narrowing the ingredients can drop a recipe out of the matches, so derive
+  // the plan from the current matches instead of letting stale slugs linger.
+  const planned = useMemo(
+    () => matches.filter((r) => chosen.includes(r.slug)),
+    [matches, chosen]
+  );
+
   const list: GroceryItem[] = useMemo(() => {
     const items = new Map<string, GroceryItem>();
-    for (const r of matches) {
+    for (const r of planned) {
       for (const name of tags[r.slug] ?? []) {
         const item = items.get(name) ?? { name, needs: [] };
         item.needs.push({
@@ -72,7 +81,7 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
     return [...items.values()].sort(
       (a, b) => b.needs.length - a.needs.length || a.name.localeCompare(b.name)
     );
-  }, [matches, tags, lines]);
+  }, [planned, tags, lines]);
 
   function add(name: string) {
     setSelected((s) => (s.includes(name) ? s : [...s, name]));
@@ -146,25 +155,71 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
       {/* Results */}
       {matches.length > 0 && (
         <div className="mt-8">
-          <h2 className="font-heading text-2xl font-semibold tracking-tight">
-            Your recipes
-          </h2>
-          <ul className="mt-3 space-y-2 text-sm">
-            {matches.map((r) => (
-              <li key={r.slug}>
-                <Link
-                  href={`/recipes/${r.slug}`}
-                  className="text-primary hover:underline"
-                >
-                  {r.title}
-                </Link>
-              </li>
-            ))}
+          <div className="flex flex-wrap items-baseline justify-between gap-3">
+            <h2 className="font-heading text-2xl font-semibold tracking-tight">
+              Which of these are you cooking?
+            </h2>
+            <button
+              onClick={() =>
+                setChosen(
+                  planned.length === matches.length
+                    ? []
+                    : matches.map((r) => r.slug)
+                )
+              }
+              className="text-sm text-muted-foreground underline underline-offset-4 hover:text-primary print:hidden"
+            >
+              {planned.length === matches.length ? "Clear all" : "Select all"}
+            </button>
+          </div>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Tick the meals you plan to make. Your grocery list covers just
+            those.
+          </p>
+          <ul className="mt-4 divide-y divide-border rounded-2xl border border-border bg-card">
+            {matches.map((r) => {
+              const on = chosen.includes(r.slug);
+              return (
+                <li key={r.slug} className="flex items-center gap-3 px-5 py-3">
+                  <input
+                    type="checkbox"
+                    id={`pick-${r.slug}`}
+                    checked={on}
+                    onChange={() =>
+                      setChosen((c) =>
+                        on ? c.filter((s) => s !== r.slug) : [...c, r.slug]
+                      )
+                    }
+                    className="size-4 accent-primary"
+                  />
+                  <label
+                    htmlFor={`pick-${r.slug}`}
+                    className="flex-1 cursor-pointer text-sm"
+                  >
+                    {r.title}
+                  </label>
+                  <Link
+                    href={`/recipes/${r.slug}`}
+                    className="text-xs text-primary hover:underline print:hidden"
+                  >
+                    View
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
 
+          {planned.length === 0 ? (
+            <p className="mt-8 rounded-2xl border border-dashed border-border bg-secondary/40 px-5 py-4 text-sm text-muted-foreground">
+              Choose at least one recipe above and your grocery list appears
+              here.
+            </p>
+          ) : (
+          <>
           <div className="mt-10 flex flex-wrap items-center justify-between gap-3">
             <h2 className="font-heading text-2xl font-semibold tracking-tight">
-              Your grocery list
+              Grocery list for {planned.length}{" "}
+              {planned.length === 1 ? "recipe" : "recipes"}
             </h2>
             <div className="flex gap-2 print:hidden">
               <button
@@ -216,7 +271,7 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
             </ul>
           ) : (
             <div className="mt-4 space-y-4">
-              {matches.map((r) => (
+              {planned.map((r) => (
                 <section
                   key={r.slug}
                   className="rounded-2xl border border-border bg-card p-5"
@@ -237,6 +292,8 @@ export function ComboBuilder({ all, tags, lines, recipes, initial = [] }: Props)
                 </section>
               ))}
             </div>
+          )}
+          </>
           )}
         </div>
       )}
