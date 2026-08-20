@@ -101,3 +101,24 @@ export const savedLists = pgTable(
   },
   (t) => [index("saved_lists_user_idx").on(t.userId)]
 );
+
+/**
+ * What members search for in the combo builder. Deliberately holds no
+ * personal data: a random per-visit session id groups terms into one visit,
+ * and nothing links a row back to a member. Henry uses this to find demand
+ * the recipe library does not cover yet.
+ */
+export const ingredientSearches = pgTable(
+  "ingredient_searches",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    /** The canonical ingredient name that was added. */
+    term: text("term").notNull(),
+    /** Random per-visit id, not a member id. */
+    sessionId: text("session_id").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => [index("ingredient_searches_term_idx").on(t.term, t.createdAt)]
+);

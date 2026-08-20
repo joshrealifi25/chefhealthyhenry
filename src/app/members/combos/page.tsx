@@ -19,7 +19,11 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-dynamic";
 
-export default async function CombosPage() {
+export default async function CombosPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ list?: string }>;
+}) {
   const member = await getMember();
   if (!member) redirect("/members/login");
   if (!member.tier) redirect("/membership");
@@ -29,6 +33,8 @@ export default async function CombosPage() {
     .from(savedLists)
     .where(eq(savedLists.userId, member.id))
     .orderBy(desc(savedLists.updatedAt));
+
+  const { list: listParam } = await searchParams;
 
   const lite = recipes
     .filter((r) => (recipeTags[r.slug] ?? []).length > 0)
@@ -58,6 +64,7 @@ export default async function CombosPage() {
             recipeSlugs: l.recipeSlugs,
             inCart: l.inCart,
           }))}
+          openListId={listParam ?? null}
         />
       </div>
     </div>

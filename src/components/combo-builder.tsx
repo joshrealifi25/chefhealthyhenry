@@ -14,6 +14,39 @@ interface Trip {
 
 const EMPTY_TRIP: Trip = { selected: [], chosen: [], inCart: [] };
 
+/** Random per-visit id so searches can be grouped into a session without
+ *  identifying anyone. Regenerated on every page load. */
+const sessionId =
+  typeof crypto !== "undefined" && "randomUUID" in crypto
+    ? crypto.randomUUID()
+    : Math.random().toString(36).slice(2);
+
+/**
+ * Records which ingredients members reach for, so Henry can see demand the
+ * recipe library does not cover yet. Fire and forget: a failure here must
+ * never interrupt someone building a list.
+ */
+function logSearch(term: string): void {
+  try {
+    const body = JSON.stringify({ term, sessionId });
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon(
+        "/api/ingredient-searches",
+        new Blob([body], { type: "application/json" })
+      );
+      return;
+    }
+    void fetch("/api/ingredient-searches", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body,
+      keepalive: true,
+    }).catch(() => {});
+  } catch {
+    // Ignore: logging is diagnostic, not part of the member's task.
+  }
+}
+
 /**
  * The whole trip is restored together: the ingredients, the meals chosen, and
  * what is already in the cart. Persisting only the ticks would leave a shopper
@@ -64,6 +97,8 @@ interface Props {
   initial?: string[];
   /** The member's saved trips, newest first. */
   saved?: SavedList[];
+  /** A saved list to open on arrival, e.g. from a dashboard link. */
+  openListId?: string | null;
 }
 
 export function ComboBuilder({
@@ -73,10 +108,20 @@ export function ComboBuilder({
   recipes,
   initial = [],
   saved = [],
+  openListId: openOnArrival = null,
 }: Props) {
-  const restored = initial.length > 0 ? EMPTY_TRIP : readTrip();
+  // A list opened by link owns the session; otherwise fall back to a preset,
+  // then to whatever trip this browser had in progress.
+  const arriving = openOnArrival
+    ? saved.find((l) => l.id === openOnArrival)
+    : undefined;
+  const restored = arriving
+    ? { selected: arriving.ingredients, chosen: arriving.recipeSlugs, inCart: arriving.inCart }
+    : initial.length > 0
+      ? EMPTY_TRIP
+      : readTrip();
   const [selected, setSelected] = useState<string[]>(
-    initial.length > 0 ? initial : restored.selected
+    initial.length > 0 && !arriving ? initial : restored.selected
   );
   const [query, setQuery] = useState("");
   const [view, setView] = useState<"full" | "byRecipe">("full");
@@ -87,8 +132,18 @@ export function ComboBuilder({
   const [inCart, setInCart] = useState<string[]>(restored.inCart);
   const [lists, setLists] = useState<SavedList[]>(saved);
   /** The saved list currently open, so Save updates it instead of duplicating. */
-  const [openListId, setOpenListId] = useState<string | null>(null);
-  const [listName, setListName] = useState("");
+  const [openListId, setOpenListId] = useState<string | null>(
+    arriving ? arriving.id : null
+  );
+  const [listName, setListName] = useState(arriving ? arriving.name : "");
+  /** True once the session has changes that are not in a saved list. */
+  const [dirty, setDirty] = useState(false);
+  /** A list waiting on the discard confirmation before it opens. */
+  const [pendingOpen, setPendingOpen] = useState<SavedList | null>(null);
+  /** A list waiting on the delete confirmation. */
+  const [pendingDelete, setPendingDelete] = useState<SavedList | null>(null);
+  /** Name of the list just saved, shown after the window clears. */
+  const [savedName, setSavedName] = useState<string | null>(null);
   const [saveState, setSaveState] = useState<"idle" | "saving" | "saved" | "error">("idle");
   const [saveError, setSaveError] = useState<string | null>(null);
 
@@ -168,7 +223,18 @@ export function ComboBuilder({
     [list, inCart]
   );
 
-  async function save() {
+  /** Empties the active window so the next list starts from scratch. */
+  function clearSession() {
+    setSelected([]);
+    setChosen([]);
+    setInCart([]);
+    setQuery("");
+    setOpenListId(null);
+    setListName("");
+    setDirty(false);
+  }
+
+  async function save({ asNew = false }: { asNew?: boolean } = {}) {
     const name = listName.trim() || defaultName;
     setSaveState("saving");
     setSaveError(null);
@@ -177,7 +243,7 @@ export function ComboBuilder({
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          id: openListId,
+          id: asNew ? null : openListId,
           name,
           ingredients: selected,
           recipeSlugs: chosen,
@@ -191,40 +257,147 @@ export function ComboBuilder({
         return;
       }
       setLists((ls) => [data.list!, ...ls.filter((l) => l.id !== data.list!.id)]);
-      setOpenListId(data.list.id);
-      setListName(data.list.name);
+      setSavedName(data.list.name);
       setSaveState("saved");
+      // The active window empties after every save, so the member always
+      // knows whether they are starting fresh or editing something.
+      clearSession();
     } catch {
       setSaveState("error");
       setSaveError("Could not save. Please try again.");
     }
   }
 
-  function open(list: SavedList) {
+  function openNow(list: SavedList) {
     setSelected(list.ingredients);
     setChosen(list.recipeSlugs);
     setInCart(list.inCart);
     setOpenListId(list.id);
     setListName(list.name);
     setSaveState("idle");
+    setSavedName(null);
+    setDirty(false);
+    setPendingOpen(null);
+  }
+
+  /** Opening a list would replace unsaved work, so ask first. */
+  function requestOpen(list: SavedList) {
+    if (dirty && selected.length > 0) setPendingOpen(list);
+    else openNow(list);
   }
 
   async function remove(id: string) {
     setLists((ls) => ls.filter((l) => l.id !== id));
-    if (openListId === id) {
-      setOpenListId(null);
-      setListName("");
-    }
+    setPendingDelete(null);
+    if (openListId === id) clearSession();
     await fetch(`/api/lists?id=${encodeURIComponent(id)}`, { method: "DELETE" });
   }
 
   function add(name: string) {
     setSelected((s) => (s.includes(name) ? s : [...s, name]));
     setQuery("");
+    setDirty(true);
+    setSaveState("idle");
+    setSavedName(null);
+    logSearch(name);
+  }
+
+  /** Enter adds what was typed. Commas add several at once. */
+  function submitQuery() {
+    const parts = query
+      .split(",")
+      .map((p) => p.trim())
+      .filter(Boolean);
+    if (parts.length === 0) return;
+    const names: string[] = [];
+    for (const part of parts) {
+      const q = part.toLowerCase();
+      const exact = all.find((i) => i.name.toLowerCase() === q);
+      // Each addition narrows the pool, so match against everything already
+      // queued as well as what is on screen.
+      const candidate =
+        exact?.name ??
+        all.find(
+          (i) =>
+            i.name.toLowerCase().includes(q) &&
+            !selected.includes(i.name) &&
+            !names.includes(i.name)
+        )?.name;
+      if (candidate && !selected.includes(candidate) && !names.includes(candidate)) {
+        names.push(candidate);
+      }
+    }
+    if (names.length === 0) return;
+    setSelected((s) => [...s, ...names.filter((n) => !s.includes(n))]);
+    setQuery("");
+    setDirty(true);
+    setSaveState("idle");
+    setSavedName(null);
+    names.forEach(logSearch);
   }
 
   return (
     <div>
+      {savedName && (
+        <p className="mb-6 rounded-2xl border border-border bg-accent/40 px-5 py-3 text-sm print:hidden">
+          Saved <strong>{savedName}</strong> to My Lists. The window below is
+          clear and ready for a new list.
+        </p>
+      )}
+
+      {pendingOpen && (
+        <div
+          role="alertdialog"
+          aria-labelledby="discard-title"
+          className="mb-6 rounded-2xl border border-border bg-secondary/60 p-5 print:hidden"
+        >
+          <p id="discard-title" className="text-sm font-medium">
+            You have an unsaved list in progress. Discard it and open
+            &ldquo;{pendingOpen.name}&rdquo;?
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <button
+              onClick={() => openNow(pendingOpen)}
+              className="rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+            >
+              Discard and open
+            </button>
+            <button
+              onClick={() => setPendingOpen(null)}
+              className="rounded-full border border-border px-5 py-2 text-sm text-muted-foreground hover:text-primary"
+            >
+              Keep what I have
+            </button>
+          </div>
+        </div>
+      )}
+
+      {pendingDelete && (
+        <div
+          role="alertdialog"
+          aria-labelledby="delete-title"
+          className="mb-6 rounded-2xl border border-border bg-secondary/60 p-5 print:hidden"
+        >
+          <p id="delete-title" className="text-sm font-medium">
+            Delete &ldquo;{pendingDelete.name}&rdquo;? This cannot be undone.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <button
+              onClick={() => remove(pendingDelete.id)}
+              className="rounded-full bg-destructive px-5 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
+            >
+              Delete
+            </button>
+            <button
+              onClick={() => setPendingDelete(null)}
+              className="rounded-full border border-border px-5 py-2 text-sm text-muted-foreground hover:text-primary"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
+
       {lists.length > 0 && (
         <section className="mb-8 rounded-2xl border border-border bg-card p-5 print:hidden">
           <h2 className="font-heading text-lg font-semibold">My Lists</h2>
@@ -232,7 +405,7 @@ export function ComboBuilder({
             {lists.map((l) => (
               <li key={l.id} className="flex items-center gap-3 py-2">
                 <button
-                  onClick={() => open(l)}
+                  onClick={() => requestOpen(l)}
                   className="flex-1 text-left text-sm hover:text-primary"
                 >
                   <span className={l.id === openListId ? "font-semibold" : ""}>
@@ -247,7 +420,14 @@ export function ComboBuilder({
                   </span>
                 </button>
                 <button
-                  onClick={() => remove(l.id)}
+                  onClick={() => requestOpen(l)}
+                  aria-label={`Edit ${l.name}`}
+                  className="text-xs text-primary hover:underline"
+                >
+                  Edit
+                </button>
+                <button
+                  onClick={() => setPendingDelete(l)}
                   aria-label={`Delete ${l.name}`}
                   className="text-xs text-muted-foreground hover:text-destructive"
                 >
@@ -268,7 +448,13 @@ export function ComboBuilder({
         id="combo-search"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        placeholder="Start typing, for example cilantro"
+        onKeyDown={(e) => {
+          if (e.key === "Enter") {
+            e.preventDefault();
+            submitQuery();
+          }
+        }}
+        placeholder="Type an ingredient and press Enter, or separate several with commas"
         autoComplete="off"
         className="mt-2 w-full rounded-full border border-input bg-background px-5 py-3 text-sm outline-none focus:ring-2 focus:ring-ring"
       />
@@ -392,8 +578,15 @@ export function ComboBuilder({
 
           {planned.length > 0 && (
             <div className="mt-8 rounded-2xl border border-border bg-secondary/40 p-5 print:hidden">
-              <label htmlFor="list-name" className="text-sm font-medium">
-                {openListId ? "Update this list" : "Save this list"}
+              {/* Two distinct flows, never blended: building something new,
+                  or editing a list opened from My Lists. */}
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                {openListId ? "Editing a saved list" : "New list"}
+              </p>
+              <label htmlFor="list-name" className="mt-1 block text-sm font-medium">
+                {openListId
+                  ? `You are editing "${listName || defaultName}"`
+                  : "Save this list"}
               </label>
               <p className="mt-1 text-xs text-muted-foreground">
                 Saved lists keep your recipes and what you have already picked
@@ -408,10 +601,11 @@ export function ComboBuilder({
                     setSaveState("idle");
                   }}
                   placeholder={defaultName}
+                  aria-label="List name"
                   className="min-w-0 flex-1 rounded-full border border-input bg-background px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-ring"
                 />
                 <button
-                  onClick={save}
+                  onClick={() => save()}
                   disabled={saveState === "saving"}
                   className="rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-60"
                 >
@@ -423,20 +617,14 @@ export function ComboBuilder({
                 </button>
                 {openListId && (
                   <button
-                    onClick={() => {
-                      setOpenListId(null);
-                      setListName("");
-                      setSaveState("idle");
-                    }}
-                    className="rounded-full border border-border px-5 py-2 text-sm text-muted-foreground hover:text-primary"
+                    onClick={() => save({ asNew: true })}
+                    disabled={saveState === "saving"}
+                    className="rounded-full border border-border px-5 py-2 text-sm text-muted-foreground hover:text-primary disabled:opacity-60"
                   >
                     Save as new
                   </button>
                 )}
               </div>
-              {saveState === "saved" && (
-                <p className="mt-2 text-xs text-primary">Saved to My Lists.</p>
-              )}
               {saveState === "error" && saveError && (
                 <p className="mt-2 text-xs text-destructive">{saveError}</p>
               )}
