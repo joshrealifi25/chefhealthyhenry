@@ -18,6 +18,15 @@ export interface IngredientTag {
 interface IngredientsFile {
   ingredients: IngredientTag[];
   recipeTags: Record<string, string[]>;
+  /** Recipe slug to canonical ingredient to the recipe's original wording. */
+  recipeLines: Record<string, Record<string, string[]>>;
+}
+
+/** One ingredient on a combined grocery list, with what each recipe needs. */
+export interface GroceryItem {
+  name: string;
+  /** One entry per recipe that calls for this ingredient. */
+  needs: { recipeSlug: string; recipeTitle: string; lines: string[] }[];
 }
 
 const file = data as unknown as IngredientsFile;
@@ -27,6 +36,10 @@ export const ingredientTags: IngredientTag[] = file.ingredients;
 
 /** Recipe slug to its canonical shopping-ingredient names. */
 export const recipeTags: Record<string, string[]> = file.recipeTags;
+
+/** Original recipe wording per canonical ingredient, for grocery lists. */
+export const recipeLines: Record<string, Record<string, string[]>> =
+  file.recipeLines ?? {};
 
 const bySlug = new Map(ingredientTags.map((i) => [i.slug, i]));
 const byName = new Map(ingredientTags.map((i) => [i.name, i]));
@@ -77,4 +90,27 @@ export function coOccurring(selected: string[]): IngredientTag[] {
     })
     .filter((t): t is IngredientTag => t !== null)
     .sort((a, b) => b.recipeCount - a.recipeCount || a.name.localeCompare(b.name));
+}
+
+/**
+ * Builds the combined shopping list for a set of recipes: one entry per
+ * ingredient, carrying what each recipe needs so a shopper can either buy the
+ * total or split one large ingredient across dishes.
+ */
+export function groceryList(picked: Recipe[]): GroceryItem[] {
+  const items = new Map<string, GroceryItem>();
+  for (const recipe of picked) {
+    for (const name of recipeTags[recipe.slug] ?? []) {
+      const item = items.get(name) ?? { name, needs: [] };
+      item.needs.push({
+        recipeSlug: recipe.slug,
+        recipeTitle: recipe.title,
+        lines: recipeLines[recipe.slug]?.[name] ?? [],
+      });
+      items.set(name, item);
+    }
+  }
+  return [...items.values()].sort(
+    (a, b) => b.needs.length - a.needs.length || a.name.localeCompare(b.name)
+  );
 }
