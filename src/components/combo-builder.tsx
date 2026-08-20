@@ -487,8 +487,10 @@ export function ComboBuilder({
             </div>
           </div>
 
-          {view === "full" ? (
-            <>
+          {/* The consolidated list is the one that prints, whichever view is
+              on screen: a by-recipe printout makes a shopper walk the store
+              once per dish. */}
+          <div className={view === "full" ? undefined : "hidden print:block"}>
               <div className="mt-3 flex items-center justify-between gap-3 text-sm text-muted-foreground print:hidden">
                 <span aria-live="polite">
                   {gotCount} of {list.length} in the cart
@@ -546,8 +548,9 @@ export function ComboBuilder({
                   );
                 })}
               </ul>
-            </>
-          ) : (
+          </div>
+
+          <div className={view === "byRecipe" ? "print:hidden" : "hidden"}>
             <div className="mt-4 space-y-4">
               {planned.map((r) => (
                 <section
@@ -570,7 +573,7 @@ export function ComboBuilder({
                 </section>
               ))}
             </div>
-          )}
+          </div>
           </>
           )}
         </div>
