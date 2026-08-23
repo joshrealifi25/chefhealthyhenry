@@ -169,7 +169,7 @@ export default async function MembersPage() {
                   {lists.map((l) => (
                     <li key={l.id}>
                       <Link
-                        href="/members/combos"
+                        href={`/members/combos?list=${l.id}`}
                         className="text-primary hover:underline"
                       >
                         {l.name}
