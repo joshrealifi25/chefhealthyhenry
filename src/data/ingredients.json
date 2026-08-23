@@ -1,5 +1,5 @@
 {
- "_comment": "Canonical shopping-ingredient tags per recipe, reviewed and corrected by Chef Henry. Staples (salt, oils, dried spices) are deliberately excluded: they match nearly every recipe and add noise to combo matching. recipeTags drives matching; recipeLines holds the original recipe wording for each tag so grocery lists can show real quantities. Regenerate from the ingredient review workbook, do not hand-edit. Em dashes from recipe wording are normalized to commas to match the house writing rules.",
+ "_comment": "Canonical shopping-ingredient tags per recipe, reviewed and corrected by Chef Henry. Staples (salt, oils, dried spices) are deliberately excluded: they match nearly every recipe and add noise to combo matching. recipeTags drives matching; recipeLines holds the original recipe wording for each tag so grocery lists can show real quantities. Regenerate from the ingredient review workbook, do not hand-edit. Em dashes from recipe wording are normalized to commas to match the house writing rules. families group ingredients a shopper buys as one item (chicken breast and chicken thighs are both chicken), so a broad search returns one result with the total across variations. Grouping is explicit, never substring matching: green onions are not onions and cayenne pepper is not a bell pepper.",
  "ingredients": [
   {
    "name": "garlic",
@@ -1800,6 +1800,284 @@
    "name": "⁄2 teaspoon vanilla extract/paste",
    "slug": "2-teaspoon-vanilla-extract-paste",
    "recipeCount": 1
+  }
+ ],
+ "families": [
+  {
+   "name": "chicken",
+   "slug": "chicken",
+   "members": [
+    "chicken",
+    "chicken breast",
+    "chicken thighs"
+   ],
+   "recipeCount": 9
+  },
+  {
+   "name": "tomatoes",
+   "slug": "tomatoes",
+   "members": [
+    "tomato",
+    "cherry tomatoes"
+   ],
+   "recipeCount": 68
+  },
+  {
+   "name": "bell peppers",
+   "slug": "bell-peppers",
+   "members": [
+    "peppers",
+    "bell pepper",
+    "red pepper"
+   ],
+   "recipeCount": 28
+  },
+  {
+   "name": "white beans",
+   "slug": "white-beans",
+   "members": [
+    "cannellini beans",
+    "navy beans",
+    "white bean"
+   ],
+   "recipeCount": 15
+  },
+  {
+   "name": "chickpeas",
+   "slug": "chickpeas",
+   "members": [
+    "chickpeas",
+    "chick peas"
+   ],
+   "recipeCount": 20
+  },
+  {
+   "name": "parmesan cheese",
+   "slug": "parmesan-cheese",
+   "members": [
+    "parmesan cheese",
+    "parmigiano-reggiano",
+    "parmesan cheese rind"
+   ],
+   "recipeCount": 22
+  },
+  {
+   "name": "feta cheese",
+   "slug": "feta-cheese",
+   "members": [
+    "feta cheese",
+    "feta"
+   ],
+   "recipeCount": 16
+  },
+  {
+   "name": "halloumi",
+   "slug": "halloumi",
+   "members": [
+    "halloumi",
+    "halloumi cheese"
+   ],
+   "recipeCount": 2
+  },
+  {
+   "name": "gruyère",
+   "slug": "gruy-re",
+   "members": [
+    "gruyere cheese",
+    "gruyère"
+   ],
+   "recipeCount": 2
+  },
+  {
+   "name": "kalamata olives",
+   "slug": "kalamata-olives",
+   "members": [
+    "kalamata olives",
+    "kalamata",
+    "kalamata olives chopped and pitted"
+   ],
+   "recipeCount": 7
+  },
+  {
+   "name": "pumpkin seeds",
+   "slug": "pumpkin-seeds",
+   "members": [
+    "pepitas",
+    "pumpkin seeds"
+   ],
+   "recipeCount": 7
+  },
+  {
+   "name": "almond milk",
+   "slug": "almond-milk",
+   "members": [
+    "almond milk",
+    "unsweetened almond milk"
+   ],
+   "recipeCount": 8
+  },
+  {
+   "name": "almond flour",
+   "slug": "almond-flour",
+   "members": [
+    "almond flour",
+    "blanched almond flour"
+   ],
+   "recipeCount": 4
+  },
+  {
+   "name": "halibut",
+   "slug": "halibut",
+   "members": [
+    "halibut",
+    "halibut fillet"
+   ],
+   "recipeCount": 4
+  },
+  {
+   "name": "cod",
+   "slug": "cod",
+   "members": [
+    "cod",
+    "cod fillets"
+   ],
+   "recipeCount": 3
+  },
+  {
+   "name": "branzino",
+   "slug": "branzino",
+   "members": [
+    "branzino",
+    "branzino fish"
+   ],
+   "recipeCount": 3
+  },
+  {
+   "name": "tuna",
+   "slug": "tuna",
+   "members": [
+    "tuna",
+    "albacore tuna"
+   ],
+   "recipeCount": 3
+  },
+  {
+   "name": "broth",
+   "slug": "broth",
+   "members": [
+    "broth",
+    "vegetable stock"
+   ],
+   "recipeCount": 8
+  },
+  {
+   "name": "brussels sprouts",
+   "slug": "brussels-sprouts",
+   "members": [
+    "brussel sprouts",
+    "brussels sprouts trimmed and"
+   ],
+   "recipeCount": 4
+  },
+  {
+   "name": "fennel",
+   "slug": "fennel",
+   "members": [
+    "fennel bulb",
+    "bulb fennel",
+    "fennel"
+   ],
+   "recipeCount": 7
+  },
+  {
+   "name": "cucumber",
+   "slug": "cucumber",
+   "members": [
+    "cucumber",
+    "persian cucumber"
+   ],
+   "recipeCount": 8
+  },
+  {
+   "name": "radishes",
+   "slug": "radishes",
+   "members": [
+    "radish",
+    "radishes"
+   ],
+   "recipeCount": 4
+  },
+  {
+   "name": "oats",
+   "slug": "oats",
+   "members": [
+    "oats",
+    "rolled oats"
+   ],
+   "recipeCount": 3
+  },
+  {
+   "name": "banana",
+   "slug": "banana",
+   "members": [
+    "banana",
+    "mashed ripe banana"
+   ],
+   "recipeCount": 2
+  },
+  {
+   "name": "protein powder",
+   "slug": "protein-powder",
+   "members": [
+    "protein powder",
+    "scoop unjury flavorless protein powder"
+   ],
+   "recipeCount": 3
+  },
+  {
+   "name": "allulose",
+   "slug": "allulose",
+   "members": [
+    "allulose",
+    "alulose"
+   ],
+   "recipeCount": 8
+  },
+  {
+   "name": "guajillo chilies",
+   "slug": "guajillo-chilies",
+   "members": [
+    "guajillo chiles",
+    "guajillo chilies"
+   ],
+   "recipeCount": 2
+  },
+  {
+   "name": "chili flakes",
+   "slug": "chili-flakes",
+   "members": [
+    "chili flakes",
+    "red chili flakes"
+   ],
+   "recipeCount": 2
+  },
+  {
+   "name": "onion",
+   "slug": "onion",
+   "members": [
+    "onion",
+    "yellow onions"
+   ],
+   "recipeCount": 46
+  },
+  {
+   "name": "mexican crema",
+   "slug": "mexican-crema",
+   "members": [
+    "mexican crema",
+    "mexican crème"
+   ],
+   "recipeCount": 3
   }
  ],
  "recipeTags": {

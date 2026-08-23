@@ -2,7 +2,11 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import type { IngredientTag, GroceryItem } from "@/lib/ingredients";
+import type {
+  IngredientTag,
+  IngredientFamily,
+  GroceryItem,
+} from "@/lib/ingredients";
 
 const TRIP_KEY = "chh-combo-trip";
 
@@ -88,6 +92,8 @@ export interface SavedList {
 interface Props {
   /** Every selectable ingredient, most-used first. */
   all: IngredientTag[];
+  /** Ingredient groups a shopper buys as one item. */
+  families?: IngredientFamily[];
   /** Recipe slug to its canonical ingredient names. */
   tags: Record<string, string[]>;
   /** Recipe slug to canonical ingredient to the recipe's own wording. */
@@ -103,6 +109,7 @@ interface Props {
 
 export function ComboBuilder({
   all,
+  families = [],
   tags,
   lines,
   recipes,
@@ -158,14 +165,21 @@ export function ComboBuilder({
     }
   }, [selected, chosen, inCart]);
 
+  /** Ingredient names a selection stands for: a family means any member. */
+  const membersOf = useMemo(() => {
+    const byName = new Map(families.map((f) => [f.name, f.members]));
+    return (label: string) => byName.get(label) ?? [label];
+  }, [families]);
+
   const matches = useMemo(
     () =>
       selected.length === 0
         ? []
-        : recipes.filter((r) =>
-            selected.every((n) => (tags[r.slug] ?? []).includes(n))
-          ),
-    [selected, recipes, tags]
+        : recipes.filter((r) => {
+            const t = tags[r.slug] ?? [];
+            return selected.every((n) => membersOf(n).some((m) => t.includes(m)));
+          }),
+    [selected, recipes, tags, membersOf]
   );
 
   // Only offer ingredients that still co-occur with everything chosen, so a
@@ -179,14 +193,53 @@ export function ComboBuilder({
         counts.set(t, (counts.get(t) ?? 0) + 1);
       }
     }
+    // Roll family members up into one entry, counting distinct recipes so a
+    // dish using two members is not counted twice.
+    const familyOfMember = new Map<string, IngredientFamily>();
+    for (const f of families) {
+      for (const m of f.members) familyOfMember.set(m, f);
+    }
+    const familyRecipes = new Map<string, Set<string>>();
+    for (const r of pool) {
+      for (const t of tags[r.slug] ?? []) {
+        const fam = familyOfMember.get(t);
+        if (!fam || selected.includes(fam.name)) continue;
+        const set = familyRecipes.get(fam.name) ?? new Set<string>();
+        set.add(r.slug);
+        familyRecipes.set(fam.name, set);
+      }
+    }
+
     const q = query.trim().toLowerCase();
-    return all
-      .filter((i) => counts.has(i.name))
-      .map((i) => ({ ...i, recipeCount: counts.get(i.name) ?? 0 }))
-      .filter((i) => (q ? i.name.toLowerCase().includes(q) : true))
+    const singles = all
+      .filter((i) => counts.has(i.name) && !familyOfMember.has(i.name))
+      .map((i) => ({
+        name: i.name,
+        slug: i.slug,
+        recipeCount: counts.get(i.name) ?? 0,
+        members: [] as string[],
+      }));
+    const grouped = families
+      .filter((f) => familyRecipes.has(f.name))
+      .map((f) => ({
+        name: f.name,
+        slug: f.slug,
+        recipeCount: familyRecipes.get(f.name)?.size ?? 0,
+        // Refinements are the narrower cuts only: a member sharing the
+        // family's name would just repeat the pill above it.
+        members: f.members.filter((m) => counts.has(m) && m !== f.name),
+      }));
+
+    return [...singles, ...grouped]
+      .filter((i) =>
+        q
+          ? i.name.toLowerCase().includes(q) ||
+            i.members.some((m) => m.toLowerCase().includes(q))
+          : true
+      )
       .sort((a, b) => b.recipeCount - a.recipeCount || a.name.localeCompare(b.name))
       .slice(0, 8);
-  }, [all, matches, query, recipes, selected, tags]);
+  }, [all, families, matches, query, recipes, selected, tags]);
 
   // Narrowing the ingredients can drop a recipe out of the matches, so derive
   // the plan from the current matches instead of letting stale slugs linger.
@@ -312,11 +365,20 @@ export function ComboBuilder({
     const names: string[] = [];
     for (const part of parts) {
       const q = part.toLowerCase();
+      // A family name wins over a single ingredient, so typing "chicken"
+      // picks up every cut rather than one of them.
+      const exactFamily = families.find((f) => f.name.toLowerCase() === q);
       const exact = all.find((i) => i.name.toLowerCase() === q);
-      // Each addition narrows the pool, so match against everything already
-      // queued as well as what is on screen.
       const candidate =
+        exactFamily?.name ??
         exact?.name ??
+        families.find(
+          (f) =>
+            (f.name.toLowerCase().includes(q) ||
+              f.members.some((m) => m.toLowerCase().includes(q))) &&
+            !selected.includes(f.name) &&
+            !names.includes(f.name)
+        )?.name ??
         all.find(
           (i) =>
             i.name.toLowerCase().includes(q) &&
@@ -462,14 +524,28 @@ export function ComboBuilder({
       {options.length > 0 && (
         <div className="mt-3 flex flex-wrap gap-2">
           {options.map((o) => (
-            <button
-              key={o.slug}
-              onClick={() => add(o.name)}
-              className="rounded-full border border-border bg-card px-4 py-1.5 text-sm transition-colors hover:border-primary/50 hover:text-primary"
-            >
-              {o.name}{" "}
-              <span className="text-muted-foreground">({o.recipeCount})</span>
-            </button>
+            <span key={o.slug} className="inline-flex flex-col gap-1">
+              <button
+                onClick={() => add(o.name)}
+                className="rounded-full border border-border bg-card px-4 py-1.5 text-sm transition-colors hover:border-primary/50 hover:text-primary"
+              >
+                {o.name}{" "}
+                <span className="text-muted-foreground">({o.recipeCount})</span>
+              </button>
+              {o.members.length > 1 && (
+                <span className="flex flex-wrap gap-1 px-1">
+                  {o.members.map((m) => (
+                    <button
+                      key={m}
+                      onClick={() => add(m)}
+                      className="text-xs text-muted-foreground underline underline-offset-2 hover:text-primary"
+                    >
+                      {m}
+                    </button>
+                  ))}
+                </span>
+              )}
+            </span>
           ))}
         </div>
       )}

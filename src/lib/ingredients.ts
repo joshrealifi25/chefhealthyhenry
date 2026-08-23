@@ -15,8 +15,22 @@ export interface IngredientTag {
   recipeCount: number;
 }
 
+/**
+ * A group of ingredients a shopper buys as one item: chicken breast and
+ * chicken thighs are both chicken. Membership is explicit, never inferred
+ * from substrings, because "green onions" is not "onion" at the store.
+ */
+export interface IngredientFamily {
+  name: string;
+  slug: string;
+  members: string[];
+  /** Distinct recipes using any member, so nothing is counted twice. */
+  recipeCount: number;
+}
+
 interface IngredientsFile {
   ingredients: IngredientTag[];
+  families: IngredientFamily[];
   recipeTags: Record<string, string[]>;
   /** Recipe slug to canonical ingredient to the recipe's original wording. */
   recipeLines: Record<string, Record<string, string[]>>;
@@ -41,8 +55,41 @@ export const recipeTags: Record<string, string[]> = file.recipeTags;
 export const recipeLines: Record<string, Record<string, string[]>> =
   file.recipeLines ?? {};
 
+export const ingredientFamilies: IngredientFamily[] = file.families ?? [];
+
 const bySlug = new Map(ingredientTags.map((i) => [i.slug, i]));
 const byName = new Map(ingredientTags.map((i) => [i.name, i]));
+const familyByName = new Map(ingredientFamilies.map((f) => [f.name, f]));
+/** Every ingredient that belongs to a family, mapped to that family. */
+const familyOfMember = new Map<string, IngredientFamily>();
+for (const f of ingredientFamilies) {
+  for (const m of f.members) familyOfMember.set(m, f);
+}
+
+/** The family a selection refers to, when it names one. */
+export function familyByLabel(label: string): IngredientFamily | undefined {
+  return familyByName.get(label);
+}
+
+/** The family an ingredient belongs to, if any. */
+export function familyOf(name: string): IngredientFamily | undefined {
+  return familyOfMember.get(name);
+}
+
+/**
+ * The ingredient names a selection stands for: every member when it names a
+ * family, otherwise just itself.
+ */
+export function membersOf(label: string): string[] {
+  return familyByName.get(label)?.members ?? [label];
+}
+
+/** True when a recipe satisfies a selection, family or single ingredient. */
+export function recipeHas(slug: string, label: string): boolean {
+  const tags = recipeTags[slug];
+  if (!tags) return false;
+  return membersOf(label).some((m) => tags.includes(m));
+}
 
 export function ingredientBySlug(slug: string): IngredientTag | undefined {
   return bySlug.get(slug);
@@ -60,10 +107,7 @@ export const selectableIngredients: IngredientTag[] = ingredientTags.filter(
 /** Recipes whose tags include every one of the given ingredient names. */
 export function recipesWithAll(names: string[]): Recipe[] {
   if (names.length === 0) return [];
-  return recipes.filter((r) => {
-    const tags = recipeTags[r.slug];
-    return Boolean(tags) && names.every((n) => tags.includes(n));
-  });
+  return recipes.filter((r) => names.every((n) => recipeHas(r.slug, n)));
 }
 
 /**

@@ -4,6 +4,7 @@ import { getMember } from "@/lib/auth";
 import { recipes } from "@/lib/recipes";
 import {
   selectableIngredients,
+  ingredientFamilies,
   recipeTags,
   recipeLines,
 } from "@/lib/ingredients";
@@ -54,6 +55,7 @@ export default async function CombosPage({
       <div className="mt-10">
         <ComboBuilder
           all={selectableIngredients}
+          families={ingredientFamilies}
           tags={recipeTags}
           lines={recipeLines}
           recipes={lite}
