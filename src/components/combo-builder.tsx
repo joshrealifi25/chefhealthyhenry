@@ -7,6 +7,7 @@ import type {
   IngredientFamily,
   GroceryItem,
 } from "@/lib/ingredients";
+import { DIETARY_TAGS } from "@/lib/recipes";
 
 const TRIP_KEY = "chh-combo-trip";
 
@@ -14,9 +15,11 @@ interface Trip {
   selected: string[];
   chosen: string[];
   inCart: string[];
+  /** Active dietary filter pills (vegan, gluten-free, etc). */
+  dietary: string[];
 }
 
-const EMPTY_TRIP: Trip = { selected: [], chosen: [], inCart: [] };
+const EMPTY_TRIP: Trip = { selected: [], chosen: [], inCart: [], dietary: [] };
 
 /** Random per-visit id so searches can be grouped into a session without
  *  identifying anyone. Regenerated on every page load. */
@@ -69,6 +72,7 @@ function readTrip(): Trip {
       selected: Array.isArray(t.selected) ? t.selected : [],
       chosen: Array.isArray(t.chosen) ? t.chosen : [],
       inCart: Array.isArray(t.inCart) ? t.inCart : [],
+      dietary: Array.isArray(t.dietary) ? t.dietary : [],
     };
   } catch {
     // Private browsing or blocked storage: the tool still works this session.
@@ -98,6 +102,10 @@ interface Props {
   tags: Record<string, string[]>;
   /** Recipe slug to canonical ingredient to the recipe's own wording. */
   lines: Record<string, Record<string, string[]>>;
+  /** Recipe slug to its dietaryTags (vegan, gluten-free, etc). Kept separate
+   * from `tags` on purpose: dietary tags are a filter, not a shopping
+   * ingredient, and must never end up as a line item on the grocery list. */
+  dietaryTags: Record<string, string[]>;
   recipes: RecipeLite[];
   /** Optional preset to start from, e.g. from a free Explore combo page. */
   initial?: string[];
@@ -112,6 +120,7 @@ export function ComboBuilder({
   families = [],
   tags,
   lines,
+  dietaryTags,
   recipes,
   initial = [],
   saved = [],
@@ -123,13 +132,23 @@ export function ComboBuilder({
     ? saved.find((l) => l.id === openOnArrival)
     : undefined;
   const restored = arriving
-    ? { selected: arriving.ingredients, chosen: arriving.recipeSlugs, inCart: arriving.inCart }
+    ? {
+        selected: arriving.ingredients,
+        chosen: arriving.recipeSlugs,
+        inCart: arriving.inCart,
+        // Saved lists don't carry dietary filters: they're a search
+        // refinement, not part of what the list actually contains.
+        dietary: [] as string[],
+      }
     : initial.length > 0
       ? EMPTY_TRIP
       : readTrip();
   const [selected, setSelected] = useState<string[]>(
     initial.length > 0 && !arriving ? initial : restored.selected
   );
+  /** Active dietary filter pills. Stacks with `selected` (ingredients) using
+   * AND logic, same as the ingredient filters stack with each other. */
+  const [dietarySelected, setDietarySelected] = useState<string[]>(restored.dietary);
   const [query, setQuery] = useState("");
   const [view, setView] = useState<"full" | "byRecipe">("full");
   /** Recipe slugs the cook actually plans to make. */
@@ -158,12 +177,12 @@ export function ComboBuilder({
     try {
       window.localStorage.setItem(
         TRIP_KEY,
-        JSON.stringify({ selected, chosen, inCart })
+        JSON.stringify({ selected, chosen, inCart, dietary: dietarySelected })
       );
     } catch {
       // Ignore: persistence is a convenience, not a requirement.
     }
-  }, [selected, chosen, inCart]);
+  }, [selected, chosen, inCart, dietarySelected]);
 
   /** Ingredient names a selection stands for: a family means any member. */
   const membersOf = useMemo(() => {
@@ -173,19 +192,35 @@ export function ComboBuilder({
 
   const matches = useMemo(
     () =>
-      selected.length === 0
+      selected.length === 0 && dietarySelected.length === 0
         ? []
         : recipes.filter((r) => {
             const t = tags[r.slug] ?? [];
-            return selected.every((n) => membersOf(n).some((m) => t.includes(m)));
+            const ingredientsMatch = selected.every((n) =>
+              membersOf(n).some((m) => t.includes(m))
+            );
+            const diet = dietaryTags[r.slug] ?? [];
+            const dietMatch = dietarySelected.every((d) => diet.includes(d));
+            return ingredientsMatch && dietMatch;
           }),
-    [selected, recipes, tags, membersOf]
+    [selected, dietarySelected, recipes, tags, dietaryTags, membersOf]
   );
+
+  // Suggestions for the dietary tags themselves: surfaced once the query
+  // matches one of the six values (e.g. "veg" -> vegetarian, vegan),
+  // excluding whichever are already active.
+  const dietaryOptions = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return [];
+    return DIETARY_TAGS.filter(
+      (t) => !dietarySelected.includes(t.value) && t.value.includes(q)
+    );
+  }, [query, dietarySelected]);
 
   // Only offer ingredients that still co-occur with everything chosen, so a
   // dead-end combination is impossible to build.
   const options = useMemo(() => {
-    const pool = selected.length === 0 ? recipes : matches;
+    const pool = selected.length === 0 && dietarySelected.length === 0 ? recipes : matches;
     const counts = new Map<string, number>();
     for (const r of pool) {
       for (const t of tags[r.slug] ?? []) {
@@ -239,7 +274,7 @@ export function ComboBuilder({
       )
       .sort((a, b) => b.recipeCount - a.recipeCount || a.name.localeCompare(b.name))
       .slice(0, 8);
-  }, [all, families, matches, query, recipes, selected, tags]);
+  }, [all, families, matches, query, recipes, selected, tags, dietarySelected]);
 
   // Narrowing the ingredients can drop a recipe out of the matches, so derive
   // the plan from the current matches instead of letting stale slugs linger.
@@ -279,6 +314,7 @@ export function ComboBuilder({
   /** Empties the active window so the next list starts from scratch. */
   function clearSession() {
     setSelected([]);
+    setDietarySelected([]);
     setChosen([]);
     setInCart([]);
     setQuery("");
@@ -323,6 +359,9 @@ export function ComboBuilder({
 
   function openNow(list: SavedList) {
     setSelected(list.ingredients);
+    // Saved lists don't carry dietary filters (see the `restored` comment
+    // above), so opening one always starts with a clean filter set.
+    setDietarySelected([]);
     setChosen(list.recipeSlugs);
     setInCart(list.inCart);
     setOpenListId(list.id);
@@ -335,7 +374,7 @@ export function ComboBuilder({
 
   /** Opening a list would replace unsaved work, so ask first. */
   function requestOpen(list: SavedList) {
-    if (dirty && selected.length > 0) setPendingOpen(list);
+    if (dirty && (selected.length > 0 || dietarySelected.length > 0)) setPendingOpen(list);
     else openNow(list);
   }
 
@@ -355,7 +394,21 @@ export function ComboBuilder({
     logSearch(name);
   }
 
-  /** Enter adds what was typed. Commas add several at once. */
+  /** Adds a dietary filter pill (e.g. "vegan"). Kept separate from add():
+   * dietary tags aren't ingredients, so they never get logged to the
+   * ingredient-demand endpoint and never touch `selected`/the grocery list. */
+  function addDietary(tag: string) {
+    setDietarySelected((s) => (s.includes(tag) ? s : [...s, tag]));
+    setQuery("");
+    setDirty(true);
+    setSaveState("idle");
+    setSavedName(null);
+  }
+
+  /** Enter adds what was typed. Commas add several at once. Each comma-
+   * separated part resolves to either a dietary tag (exact match only, so
+   * typing "veg" and pressing Enter doesn't guess between vegetarian and
+   * vegan) or an ingredient/family, same as before. */
   function submitQuery() {
     const parts = query
       .split(",")
@@ -363,8 +416,16 @@ export function ComboBuilder({
       .filter(Boolean);
     if (parts.length === 0) return;
     const names: string[] = [];
+    const dietaryNames: string[] = [];
     for (const part of parts) {
       const q = part.toLowerCase();
+      const exactDietary = DIETARY_TAGS.find((t) => t.value === q);
+      if (exactDietary) {
+        if (!dietarySelected.includes(exactDietary.value) && !dietaryNames.includes(exactDietary.value)) {
+          dietaryNames.push(exactDietary.value);
+        }
+        continue;
+      }
       // A family name wins over a single ingredient, so typing "chicken"
       // picks up every cut rather than one of them.
       const exactFamily = families.find((f) => f.name.toLowerCase() === q);
@@ -389,13 +450,18 @@ export function ComboBuilder({
         names.push(candidate);
       }
     }
-    if (names.length === 0) return;
-    setSelected((s) => [...s, ...names.filter((n) => !s.includes(n))]);
+    if (names.length === 0 && dietaryNames.length === 0) return;
+    if (names.length > 0) {
+      setSelected((s) => [...s, ...names.filter((n) => !s.includes(n))]);
+      names.forEach(logSearch);
+    }
+    if (dietaryNames.length > 0) {
+      setDietarySelected((s) => [...s, ...dietaryNames.filter((n) => !s.includes(n))]);
+    }
     setQuery("");
     setDirty(true);
     setSaveState("idle");
     setSavedName(null);
-    names.forEach(logSearch);
   }
 
   return (
@@ -550,10 +616,31 @@ export function ComboBuilder({
         </div>
       )}
 
+      {/* Dietary tag suggestions: a separate source from ingredient options
+          above, visually distinct (tinted background + "Diet" badge) so a
+          shopper can tell at a glance these filter by diet, not by what
+          goes on the grocery list. */}
+      {dietaryOptions.length > 0 && (
+        <div className="mt-3 flex flex-wrap gap-2">
+          {dietaryOptions.map((t) => (
+            <button
+              key={t.value}
+              onClick={() => addDietary(t.value)}
+              className="inline-flex items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-sm text-primary transition-colors hover:bg-primary/20"
+            >
+              <span className="rounded-full bg-primary/20 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide">
+                Diet
+              </span>
+              {t.label}
+            </button>
+          ))}
+        </div>
+      )}
+
       {/* Chosen ingredients */}
       </div>
 
-      {selected.length > 0 && (
+      {(selected.length > 0 || dietarySelected.length > 0) && (
         <div className="mt-6 rounded-2xl border border-border bg-card p-4 print:hidden">
           <div className="flex flex-wrap items-center gap-2">
             {selected.map((name) => (
@@ -571,9 +658,28 @@ export function ComboBuilder({
                 </button>
               </span>
             ))}
+            {dietarySelected.map((tag) => (
+              <span
+                key={tag}
+                className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1.5 text-sm text-primary"
+              >
+                <span className="rounded-full bg-primary/20 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide">
+                  Diet
+                </span>
+                {DIETARY_TAGS.find((t) => t.value === tag)?.label ?? tag}
+                <button
+                  onClick={() => setDietarySelected((s) => s.filter((t) => t !== tag))}
+                  aria-label={`Remove ${tag} filter`}
+                  className="text-primary/70 hover:text-primary"
+                >
+                  ✕
+                </button>
+              </span>
+            ))}
             <button
               onClick={() => {
                 setSelected([]);
+                setDietarySelected([]);
                 setChosen([]);
                 setInCart([]);
               }}
@@ -843,7 +949,7 @@ export function ComboBuilder({
         </div>
       )}
 
-      {selected.length === 0 && (
+      {selected.length === 0 && dietarySelected.length === 0 && (
         <p className="mt-8 text-sm text-muted-foreground">
           Pick two or three ingredients you already have, or want to buy once
           and use all week. Every option shown still leads to at least one

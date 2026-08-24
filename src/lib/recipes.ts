@@ -40,6 +40,24 @@ export interface Recipe {
 // was added. Reverse it so the newest recipe shows first everywhere.
 export const recipes = [...(recipesData as Recipe[])].reverse();
 
+/** The six supported dietaryTags values, with their display labels. Shared
+ * by the /recipes filter bar and the Grocery Combo Builder so both stay in
+ * sync with what tag-recipes.ts actually writes. */
+export const DIETARY_TAGS: { value: string; label: string }[] = [
+  { value: "vegetarian", label: "Vegetarian" },
+  { value: "vegan", label: "Vegan" },
+  { value: "gluten-free", label: "Gluten-Free" },
+  { value: "dairy-free", label: "Dairy-Free" },
+  { value: "high-protein", label: "High-Protein" },
+  { value: "high-fiber", label: "High-Fiber" },
+];
+
+/** Recipe slug to its dietaryTags, for components that only carry a lite
+ * recipe shape (e.g. the Combo Builder) and need to look tags up by slug. */
+export const dietaryTagsBySlug: Record<string, string[]> = Object.fromEntries(
+  recipes.map((r) => [r.slug, r.dietaryTags ?? []])
+);
+
 export const categories = [
   "All",
   ...Array.from(new Set(recipes.map((r) => r.category))).sort(),
