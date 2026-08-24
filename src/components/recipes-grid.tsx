@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Search } from "lucide-react";
 import { cn } from "@/lib/utils";
-import type { Recipe } from "@/lib/recipes";
+import { DIETARY_TAGS, type Recipe } from "@/lib/recipes";
 import { RecipeCard } from "@/components/recipe-card";
 
 export function RecipesGrid({
@@ -16,13 +16,25 @@ export function RecipesGrid({
   const [category, setCategory] = useState("All");
   const [query, setQuery] = useState("");
   const [proteinFlipOnly, setProteinFlipOnly] = useState(false);
+  /** Multiple dietary pills can be active at once; a recipe must match all
+   * of them (AND logic), same as the Grocery Combo Builder's filters. */
+  const [activeDietTags, setActiveDietTags] = useState<string[]>([]);
+
+  function toggleDietTag(tag: string) {
+    setActiveDietTags((tags) =>
+      tags.includes(tag) ? tags.filter((t) => t !== tag) : [...tags, tag]
+    );
+  }
 
   const filtered = recipes.filter((r) => {
     const matchesCategory = category === "All" || r.category === category;
     const matchesQuery =
       query === "" || r.title.toLowerCase().includes(query.toLowerCase());
     const matchesFlip = !proteinFlipOnly || r.proteinFlip;
-    return matchesCategory && matchesQuery && matchesFlip;
+    const matchesDiet = activeDietTags.every((tag) =>
+      (r.dietaryTags ?? []).includes(tag)
+    );
+    return matchesCategory && matchesQuery && matchesFlip && matchesDiet;
   });
 
   return (
@@ -56,6 +68,21 @@ export function RecipesGrid({
           >
             Protein Flip™
           </button>
+          {DIETARY_TAGS.map((t) => (
+            <button
+              key={t.value}
+              onClick={() => toggleDietTag(t.value)}
+              aria-pressed={activeDietTags.includes(t.value)}
+              className={cn(
+                "rounded-full border px-4 py-1.5 text-sm transition-colors whitespace-nowrap",
+                activeDietTags.includes(t.value)
+                  ? "border-primary bg-primary text-primary-foreground"
+                  : "border-border bg-card text-muted-foreground hover:border-primary/40"
+              )}
+            >
+              {t.label}
+            </button>
+          ))}
         </div>
         <div className="relative sm:w-64">
           <Search

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { getMember } from "@/lib/auth";
-import { recipes } from "@/lib/recipes";
+import { recipes, dietaryTagsBySlug } from "@/lib/recipes";
 import {
   selectableIngredients,
   ingredientFamilies,
@@ -58,6 +58,7 @@ export default async function CombosPage({
           families={ingredientFamilies}
           tags={recipeTags}
           lines={recipeLines}
+          dietaryTags={dietaryTagsBySlug}
           recipes={lite}
           saved={saved.map((l) => ({
             id: l.id,
