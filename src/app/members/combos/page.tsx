@@ -41,6 +41,18 @@ export default async function CombosPage({
     .filter((r) => (recipeTags[r.slug] ?? []).length > 0)
     .map((r) => ({ slug: r.slug, title: r.title }));
 
+  // The Combo Builder's search box also filters by Protein Flip™, alongside
+  // dietary tags. Merged here rather than in dietaryTagsBySlug itself, so
+  // that export stays pure dietary tags for anything else that reads it.
+  const specialTags: Record<string, string[]> = Object.fromEntries(
+    recipes.map((r) => [
+      r.slug,
+      r.proteinFlip
+        ? [...(dietaryTagsBySlug[r.slug] ?? []), "protein-flip"]
+        : (dietaryTagsBySlug[r.slug] ?? []),
+    ])
+  );
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
       <h1 className="font-heading text-4xl font-semibold tracking-tight sm:text-5xl">
@@ -58,7 +70,7 @@ export default async function CombosPage({
           families={ingredientFamilies}
           tags={recipeTags}
           lines={recipeLines}
-          dietaryTags={dietaryTagsBySlug}
+          dietaryTags={specialTags}
           recipes={lite}
           saved={saved.map((l) => ({
             id: l.id,

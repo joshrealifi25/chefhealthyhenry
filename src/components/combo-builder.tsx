@@ -9,6 +9,20 @@ import type {
 } from "@/lib/ingredients";
 import { DIETARY_TAGS } from "@/lib/recipes";
 
+/** Protein Flip™ as a search filter, alongside the six dietary tags. Kept
+ * local to the Combo Builder rather than added to the shared DIETARY_TAGS
+ * list, since /recipes already has its own dedicated Protein Flip™ toggle
+ * pill and doesn't need a second, duplicate one from that shared list. */
+const PROTEIN_FLIP_FILTER = {
+  value: "protein-flip",
+  label: "Protein Flip™",
+  badge: "Flip",
+};
+
+/** Every non-ingredient filter the search box can suggest: the six dietary
+ * tags plus Protein Flip™. */
+const SPECIAL_FILTERS = [...DIETARY_TAGS, PROTEIN_FLIP_FILTER];
+
 const TRIP_KEY = "chh-combo-trip";
 
 interface Trip {
@@ -102,9 +116,10 @@ interface Props {
   tags: Record<string, string[]>;
   /** Recipe slug to canonical ingredient to the recipe's own wording. */
   lines: Record<string, Record<string, string[]>>;
-  /** Recipe slug to its dietaryTags (vegan, gluten-free, etc). Kept separate
-   * from `tags` on purpose: dietary tags are a filter, not a shopping
-   * ingredient, and must never end up as a line item on the grocery list. */
+  /** Recipe slug to its non-ingredient filter tags: dietaryTags (vegan,
+   * gluten-free, etc) plus "protein-flip" when the recipe is Protein Flip™.
+   * Kept separate from `tags` on purpose: these are filters, not shopping
+   * ingredients, and must never end up as a line item on the grocery list. */
   dietaryTags: Record<string, string[]>;
   recipes: RecipeLite[];
   /** Optional preset to start from, e.g. from a free Explore combo page. */
@@ -206,13 +221,14 @@ export function ComboBuilder({
     [selected, dietarySelected, recipes, tags, dietaryTags, membersOf]
   );
 
-  // Suggestions for the dietary tags themselves: surfaced once the query
-  // matches one of the six values (e.g. "veg" -> vegetarian, vegan),
-  // excluding whichever are already active.
+  // Suggestions for the non-ingredient filters themselves: the six dietary
+  // tags plus Protein Flip™, surfaced once the query matches one of their
+  // values (e.g. "veg" -> vegetarian, vegan; "flip" or "protein" -> Protein
+  // Flip™), excluding whichever are already active.
   const dietaryOptions = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (!q) return [];
-    return DIETARY_TAGS.filter(
+    return SPECIAL_FILTERS.filter(
       (t) => !dietarySelected.includes(t.value) && t.value.includes(q)
     );
   }, [query, dietarySelected]);
@@ -406,9 +422,12 @@ export function ComboBuilder({
   }
 
   /** Enter adds what was typed. Commas add several at once. Each comma-
-   * separated part resolves to either a dietary tag (exact match only, so
-   * typing "veg" and pressing Enter doesn't guess between vegetarian and
-   * vegan) or an ingredient/family, same as before. */
+   * separated part resolves to either a special filter (dietary tag or
+   * Protein Flip™, exact match only, so typing "veg" and pressing Enter
+   * doesn't guess between vegetarian and vegan) or an ingredient/family,
+   * same as before. Spaces are normalized to hyphens for the exact match so
+   * typing "protein flip" or "gluten free" resolves the same as the
+   * hyphenated value. */
   function submitQuery() {
     const parts = query
       .split(",")
@@ -419,7 +438,10 @@ export function ComboBuilder({
     const dietaryNames: string[] = [];
     for (const part of parts) {
       const q = part.toLowerCase();
-      const exactDietary = DIETARY_TAGS.find((t) => t.value === q);
+      const qHyphenated = q.replace(/\s+/g, "-");
+      const exactDietary = SPECIAL_FILTERS.find(
+        (t) => t.value === q || t.value === qHyphenated
+      );
       if (exactDietary) {
         if (!dietarySelected.includes(exactDietary.value) && !dietaryNames.includes(exactDietary.value)) {
           dietaryNames.push(exactDietary.value);
@@ -616,10 +638,10 @@ export function ComboBuilder({
         </div>
       )}
 
-      {/* Dietary tag suggestions: a separate source from ingredient options
-          above, visually distinct (tinted background + "Diet" badge) so a
-          shopper can tell at a glance these filter by diet, not by what
-          goes on the grocery list. */}
+      {/* Special filter suggestions (dietary tags + Protein Flip™): a
+          separate source from ingredient options above, visually distinct
+          (tinted background + badge) so a shopper can tell at a glance
+          these filter the results, not what goes on the grocery list. */}
       {dietaryOptions.length > 0 && (
         <div className="mt-3 flex flex-wrap gap-2">
           {dietaryOptions.map((t) => (
@@ -629,7 +651,7 @@ export function ComboBuilder({
               className="inline-flex items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-sm text-primary transition-colors hover:bg-primary/20"
             >
               <span className="rounded-full bg-primary/20 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide">
-                Diet
+                {t.badge}
               </span>
               {t.label}
             </button>
@@ -658,24 +680,27 @@ export function ComboBuilder({
                 </button>
               </span>
             ))}
-            {dietarySelected.map((tag) => (
-              <span
-                key={tag}
-                className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1.5 text-sm text-primary"
-              >
-                <span className="rounded-full bg-primary/20 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide">
-                  Diet
-                </span>
-                {DIETARY_TAGS.find((t) => t.value === tag)?.label ?? tag}
-                <button
-                  onClick={() => setDietarySelected((s) => s.filter((t) => t !== tag))}
-                  aria-label={`Remove ${tag} filter`}
-                  className="text-primary/70 hover:text-primary"
+            {dietarySelected.map((tag) => {
+              const filter = SPECIAL_FILTERS.find((t) => t.value === tag);
+              return (
+                <span
+                  key={tag}
+                  className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1.5 text-sm text-primary"
                 >
-                  ✕
-                </button>
-              </span>
-            ))}
+                  <span className="rounded-full bg-primary/20 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide">
+                    {filter?.badge ?? "Filter"}
+                  </span>
+                  {filter?.label ?? tag}
+                  <button
+                    onClick={() => setDietarySelected((s) => s.filter((t) => t !== tag))}
+                    aria-label={`Remove ${tag} filter`}
+                    className="text-primary/70 hover:text-primary"
+                  >
+                    ✕
+                  </button>
+                </span>
+              );
+            })}
             <button
               onClick={() => {
                 setSelected([]);
