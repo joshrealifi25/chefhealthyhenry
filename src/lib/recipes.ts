@@ -42,14 +42,16 @@ export const recipes = [...(recipesData as Recipe[])].reverse();
 
 /** The six supported dietaryTags values, with their display labels. Shared
  * by the /recipes filter bar and the Grocery Combo Builder so both stay in
- * sync with what tag-recipes.ts actually writes. */
-export const DIETARY_TAGS: { value: string; label: string }[] = [
-  { value: "vegetarian", label: "Vegetarian" },
-  { value: "vegan", label: "Vegan" },
-  { value: "gluten-free", label: "Gluten-Free" },
-  { value: "dairy-free", label: "Dairy-Free" },
-  { value: "high-protein", label: "High-Protein" },
-  { value: "high-fiber", label: "High-Fiber" },
+ * sync with what tag-recipes.ts actually writes. `badge` is the small label
+ * the Combo Builder shows on a suggestion pill to mark it as a non-
+ * ingredient filter; the /recipes filter bar ignores it. */
+export const DIETARY_TAGS: { value: string; label: string; badge: string }[] = [
+  { value: "vegetarian", label: "Vegetarian", badge: "Diet" },
+  { value: "vegan", label: "Vegan", badge: "Diet" },
+  { value: "gluten-free", label: "Gluten-Free", badge: "Diet" },
+  { value: "dairy-free", label: "Dairy-Free", badge: "Diet" },
+  { value: "high-protein", label: "High-Protein", badge: "Diet" },
+  { value: "high-fiber", label: "High-Fiber", badge: "Diet" },
 ];
 
 /** Recipe slug to its dietaryTags, for components that only carry a lite
