@@ -1025,8 +1025,7 @@
   ],
   "dietaryTags": [
    "gluten-free",
-   "high-protein",
-   "high-fiber"
+   "high-protein"
   ]
  },
  {
@@ -1323,6 +1322,7 @@
   "seoDescription": "Soft-baked moringa cookies with a hint of matcha and almond butter, a nutrient-packed treat that still tastes like a real cookie.",
   "dietaryTags": [
    "vegetarian",
+   "dairy-free",
    "high-protein"
   ]
  },
@@ -5481,6 +5481,7 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free",
+   "dairy-free",
    "high-protein",
    "high-fiber"
   ]
@@ -11947,8 +11948,7 @@
   ],
   "dietaryTags": [
    "vegetarian",
-   "gluten-free",
-   "high-fiber"
+   "gluten-free"
   ]
  },
  {
@@ -12895,6 +12895,7 @@
   ],
   "dietaryTags": [
    "vegetarian",
+   "dairy-free",
    "high-protein",
    "high-fiber"
   ]
@@ -13879,7 +13880,8 @@
   ],
   "dietaryTags": [
    "vegetarian",
-   "gluten-free"
+   "gluten-free",
+   "dairy-free"
   ]
  },
  {
@@ -14034,6 +14036,7 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free",
+   "dairy-free",
    "high-protein",
    "high-fiber"
   ]
@@ -15296,8 +15299,7 @@
   ],
   "dietaryTags": [
    "vegetarian",
-   "high-protein",
-   "high-fiber"
+   "high-protein"
   ]
  },
  {

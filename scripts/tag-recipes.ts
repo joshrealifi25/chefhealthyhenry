@@ -4,19 +4,17 @@
  * from a keyword scan of each recipe's ingredients list.
  *
  * This is a blunt instrument: it does a substring scan over the joined,
- * lowercased ingredients array, with a couple of targeted safeguards (see
- * below). It will get some recipes wrong at the margins. Known false-positive
- * risks worth a manual spot-check after running:
- *   - "butter" matches peanut/almond/cashew butter, not just dairy butter,
- *     so a vegan recipe using a nut butter can lose its vegan/dairy-free tag.
- *   - "cream" matches "creamy" as a texture word (e.g. "creamy tahini"),
- *     which can falsely disqualify vegan/dairy-free.
- *   - "oat" matches inside "goat" (e.g. "goat cheese"), which can falsely
- *     add high-fiber.
- * "egg" is explicitly guarded against matching "eggplant" (see EGG_RE)
- * since that false positive is common and affects two tags (vegan,
- * high-protein). No other keyword gets that treatment; the above three
- * are left as-is per the literal spec and flagged here instead.
+ * lowercased ingredients array, with targeted safeguards for the keywords
+ * known to false-match on common ingredient text:
+ *   - "egg" doesn't match "eggplant" (see EGG_RE).
+ *   - "butter" doesn't match nut/seed butters (peanut, almond, cashew,
+ *     sunflower, or any "<word> seed butter") so it only catches dairy
+ *     butter (see BUTTER_RE).
+ *   - "cream" only matches as a standalone word (or inside phrases like
+ *     "cream cheese", "heavy cream"), not inside "creamy" (see CREAM_RE).
+ *   - "oat" doesn't match inside "goat", but still matches "oat", "oats",
+ *     "oatmeal", "oat flour", "oat milk", etc. (see OAT_RE).
+ * Every other keyword is a plain substring match per the literal spec.
  *
  * Run: npx tsx scripts/tag-recipes.ts
  */
@@ -38,8 +36,30 @@ interface Recipe {
 // egg yolk, egg substitute, etc., while sparing eggplant).
 const EGG_RE = /egg(?!plant)/;
 
+// "butter" as a plain substring also matches nut/seed butters, which aren't
+// dairy. Match "butter" only when it is not immediately preceded by a
+// nut/seed word (covers "butter", "unsalted butter", "cold butter", etc.,
+// while sparing peanut butter, almond butter, cashew butter, sunflower
+// butter, and "<anything> seed butter").
+const BUTTER_RE = /(?<!peanut )(?<!almond )(?<!cashew )(?<!sunflower )(?<!seed )butter/;
+
+// "cream" as a plain substring also matches "creamy". A word-boundary match
+// covers standalone "cream" plus phrases like "cream cheese", "heavy cream",
+// "sour cream", "whipped cream", "ice cream" (all have a boundary right
+// after "cream"), while excluding "creamy" (no boundary before the "y").
+const CREAM_RE = /\bcream\b/;
+
+// "oat" as a plain substring also matches inside "goat". A leading
+// word-boundary match covers "oat", "oats", "oatmeal", "oat flour",
+// "oat milk", "rolled oats", etc., while excluding "goat" (no boundary
+// between the "g" and the "o").
+const OAT_RE = /\boat/;
+
 function includesWord(haystack: string, word: string): boolean {
   if (word === "egg") return EGG_RE.test(haystack);
+  if (word === "butter") return BUTTER_RE.test(haystack);
+  if (word === "cream") return CREAM_RE.test(haystack);
+  if (word === "oat") return OAT_RE.test(haystack);
   return haystack.includes(word);
 }
 
