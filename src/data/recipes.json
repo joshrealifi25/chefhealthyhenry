@@ -87,6 +87,13 @@
   "keyIngredients": [
    "beets",
    "chickpea flour"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -147,6 +154,11 @@
    "artichokes",
    "almond flour",
    "shredded chicken"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -191,6 +203,9 @@
   "extras": [],
   "keyIngredients": [
    "cod"
+  ],
+  "dietaryTags": [
+   "dairy-free"
   ]
  },
  {
@@ -251,6 +266,11 @@
    "poblano peppers",
    "oaxaca cheese",
    "cotija cheese"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein"
   ]
  },
  {
@@ -317,6 +337,11 @@
    "queso fresco",
    "epazote",
    "chicken breast"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -373,6 +398,12 @@
    "eggplant",
    "castelvetrano olives",
    "allulose"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
   ]
  },
  {
@@ -414,7 +445,13 @@
   "extras": [],
   "keyIngredients": [],
   "seoTitle": "How to Supreme Citrus – Perfect Orange Segments Every Time",
-  "seoDescription": "A step-by-step tutorial for supreming citrus, cutting clean, membrane-free orange segments for salads, desserts, and plating like a pro."
+  "seoDescription": "A step-by-step tutorial for supreming citrus, cutting clean, membrane-free orange segments for salads, desserts, and plating like a pro.",
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ]
  },
  {
   "slug": "creamy-lentil-chicken-soup-with-parmesan-rind",
@@ -505,6 +542,11 @@
    "lentils",
    "parmesan rind",
    "chicken breast"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -577,6 +619,12 @@
    "chickpeas",
    "cannellini beans",
    "sun-dried tomatoes"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -634,6 +682,11 @@
   "keyIngredients": [
    "burrata",
    "sweet potatoes"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-fiber"
   ]
  },
  {
@@ -689,6 +742,11 @@
   "extras": [],
   "keyIngredients": [
    "chinese long beans"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
   ]
  },
  {
@@ -745,6 +803,11 @@
   "extras": [],
   "keyIngredients": [
    "chicken breast"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -823,6 +886,11 @@
   "extras": [],
   "keyIngredients": [
    "branzino"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free"
   ]
  },
  {
@@ -884,6 +952,11 @@
   "keyIngredients": [
    "quinoa",
    "chicken breast"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -949,6 +1022,10 @@
   "keyIngredients": [
    "black rice",
    "chicken thighs"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein"
   ]
  },
  {
@@ -1022,6 +1099,10 @@
   "keyIngredients": [
    "shrimp",
    "green papaya"
+  ],
+  "dietaryTags": [
+   "dairy-free",
+   "high-protein"
   ]
  },
  {
@@ -1068,6 +1149,11 @@
   "extras": [],
   "keyIngredients": [
    "shrimp"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
   ]
  },
  {
@@ -1122,6 +1208,11 @@
   "extras": [],
   "keyIngredients": [
    "chicken breast"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -1171,7 +1262,12 @@
    "just better fiber"
   ],
   "seoTitle": "Healthy Homemade Nutella Recipe (Easy Chocolate Hazelnut Spread)",
-  "seoDescription": "A healthier homemade Nutella-style chocolate hazelnut spread, rich and creamy without the processed ingredients. Ready in minutes and perfect on toast, fruit, or by the spoonful."
+  "seoDescription": "A healthier homemade Nutella-style chocolate hazelnut spread, rich and creamy without the processed ingredients. Ready in minutes and perfect on toast, fruit, or by the spoonful.",
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free"
+  ]
  },
  {
   "slug": "healthy-matcha-moringa-almond-butter-cookies",
@@ -1223,7 +1319,12 @@
    "just better fiber"
   ],
   "seoTitle": "Healthy Moringa Cookies Recipe with Matcha and Almond Butter",
-  "seoDescription": "Soft-baked moringa cookies with a hint of matcha and almond butter, a nutrient-packed treat that still tastes like a real cookie."
+  "seoDescription": "Soft-baked moringa cookies with a hint of matcha and almond butter, a nutrient-packed treat that still tastes like a real cookie.",
+  "dietaryTags": [
+   "vegetarian",
+   "dairy-free",
+   "high-protein"
+  ]
  },
  {
   "slug": "healthy-summer-plate-tofu-veggies-pesto-unjury-flavorless-protein",
@@ -1281,6 +1382,11 @@
    "tofu",
    "unjury protein powder",
    "just better fiber"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein"
   ]
  },
  {
@@ -1345,6 +1451,12 @@
   "keyIngredients": [
    "gochujang",
    "salmon"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -1407,6 +1519,14 @@
   "keyIngredients": [
    "quinoa",
    "tahini"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -1481,6 +1601,12 @@
   "keyIngredients": [
    "chickpeas",
    "sun-dried tomatoes"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -1534,6 +1660,10 @@
   "keyIngredients": [
    "matcha",
    "moringa"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free"
   ]
  },
  {
@@ -1595,6 +1725,12 @@
   "keyIngredients": [
    "lentils",
    "sun-dried tomatoes"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -1658,6 +1794,12 @@
   "keyIngredients": [
    "lamb",
    "dried apricots"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -1722,7 +1864,11 @@
    "saffron"
   ],
   "seoTitle": "Pan-Seared Halibut with Mango Salsa and Saffron Black Rice",
-  "seoDescription": "Pan-seared halibut topped with fresh mango salsa, served over saffron black rice, a vibrant, restaurant-style dinner you can make at home."
+  "seoDescription": "Pan-seared halibut topped with fresh mango salsa, served over saffron black rice, a vibrant, restaurant-style dinner you can make at home.",
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein"
+  ]
  },
  {
   "slug": "peruvian-grilled-chicken-with-green-sauce-and-air-fried-peruvian-sweet-potatoes-irloz",
@@ -1794,6 +1940,10 @@
   "keyIngredients": [
    "peruvian sweet potatoes",
    "chicken thighs"
+  ],
+  "dietaryTags": [
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -1848,7 +1998,12 @@
    "chicken thighs"
   ],
   "seoTitle": "Pollo Agrodolce Recipe – Sweet and Sour Italian Chicken",
-  "seoDescription": "A classic Italian pollo agrodolce, tender chicken in a sweet and sour sauce balancing vinegar and honey. An easy, flavor-packed dinner with restaurant-quality results."
+  "seoDescription": "A classic Italian pollo agrodolce, tender chicken in a sweet and sour sauce balancing vinegar and honey. An easy, flavor-packed dinner with restaurant-quality results.",
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
+  ]
  },
  {
   "slug": "protein-flip-blueberry-peach-quinoa-bake",
@@ -1915,6 +2070,12 @@
    "quinoa",
    "unjury protein powder",
    "just better fiber"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -2004,7 +2165,13 @@
    "unjury protein powder"
   ],
   "seoTitle": "Banana Bread Recipe – Soft-Baked, High-Protein & Nutty",
-  "seoDescription": "A soft, nutty banana bread that's naturally higher in protein and fiber. Simple ingredients, easy to make, and it actually tastes like classic banana bread, not dry or chalky."
+  "seoDescription": "A soft, nutty banana bread that's naturally higher in protein and fiber. Simple ingredients, easy to make, and it actually tastes like classic banana bread, not dry or chalky.",
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "quick-and-healthy-tuna-quinoa-bowl",
@@ -2052,6 +2219,12 @@
   "keyIngredients": [
    "canned tuna",
    "quinoa"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -2122,6 +2295,12 @@
   "keyIngredients": [
    "jicama",
    "tajin"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "dairy-free",
+   "high-fiber"
   ]
  },
  {
@@ -2191,6 +2370,11 @@
   "extras": [],
   "keyIngredients": [
    "beets"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-fiber"
   ]
  },
  {
@@ -2289,6 +2473,11 @@
   "keyIngredients": [
    "tempeh",
    "sweet potatoes"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -2352,6 +2541,11 @@
    "salmon",
    "cannellini beans",
    "shichimi togarashi"
+  ],
+  "dietaryTags": [
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -2447,7 +2641,13 @@
    "just better fiber"
   ],
   "seoTitle": "Savory Vegetable Clafoutis Recipe with French Herb Beans",
-  "seoDescription": "A savory take on the classic French clafoutis, baked with vegetables and herbed beans for a satisfying dish that works for brunch or dinner."
+  "seoDescription": "A savory take on the classic French clafoutis, baked with vegetables and herbed beans for a satisfying dish that works for brunch or dinner.",
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "seared-salmon-with-warm-tomato-white-bean-vinaigrette",
@@ -2498,6 +2698,11 @@
   "keyIngredients": [
    "salmon",
    "cannellini beans"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -2589,6 +2794,12 @@
    "scallops",
    "ot ga den hot sauce",
    "fennel"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -2676,7 +2887,12 @@
    "cottage cheese"
   ],
   "seoTitle": "Sheet Pan Fish Tacos with High-Protein Avocado Crema",
-  "seoDescription": "Sheet pan fish tacos topped with a creamy, high-protein avocado crema, a quick, hands-off dinner with big flavor and easy cleanup."
+  "seoDescription": "Sheet pan fish tacos topped with a creamy, high-protein avocado crema, a quick, hands-off dinner with big flavor and easy cleanup.",
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "smoky-autumn-vegetable-romesco-soup-the-protein-flip-way",
@@ -2784,7 +3000,12 @@
    "almonds"
   ],
   "seoTitle": "Smoky Romesco Soup Recipe – A Protein Flip™ Autumn Vegetable Soup",
-  "seoDescription": "A smoky, roasted vegetable romesco soup made the Protein Flip™ way, warming, nutrient-dense, and packed with real flavor for cooler days."
+  "seoDescription": "A smoky, roasted vegetable romesco soup made the Protein Flip™ way, warming, nutrient-dense, and packed with real flavor for cooler days.",
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein"
+  ]
  },
  {
   "slug": "spicy-chicken-french-lentil-bowl",
@@ -2851,6 +3072,12 @@
    "french lentils",
    "edamame",
    "chicken breast"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -2904,6 +3131,12 @@
   "extras": [],
   "keyIngredients": [
    "eggplant"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
   ]
  },
  {
@@ -2960,6 +3193,12 @@
   "keyIngredients": [
    "halloumi",
    "tarragon"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -2987,6 +3226,12 @@
   "extras": [],
   "keyIngredients": [
    "eggs"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
   ]
  },
  {
@@ -3053,6 +3298,11 @@
    "albacore tuna",
    "chickpeas",
    "nori"
+  ],
+  "dietaryTags": [
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -3110,6 +3360,11 @@
   "keyIngredients": [
    "lupini beans",
    "cauliflower"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-fiber"
   ]
  },
  {
@@ -3185,6 +3440,12 @@
    "chickpeas",
    "sumac",
    "albacore tuna"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -3242,6 +3503,12 @@
    "mushrooms",
    "lentils",
    "cashew butter"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -3317,6 +3584,10 @@
    "black rice",
    "tofu",
    "doubanjiang"
+  ],
+  "dietaryTags": [
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -3388,7 +3659,11 @@
   "proteinFlip": false,
   "youtubeId": null,
   "extras": [],
-  "keyIngredients": []
+  "keyIngredients": [],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free"
+  ]
  },
  {
   "slug": "air-fryer-garlic-and-herb-baby-potatoes",
@@ -3431,7 +3706,13 @@
   "proteinFlip": false,
   "youtubeId": null,
   "extras": [],
-  "keyIngredients": []
+  "keyIngredients": [],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ]
  },
  {
   "slug": "arugula-and-persimmon-salad",
@@ -3504,6 +3785,11 @@
    "persimmons",
    "halloumi",
    "beets"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-fiber"
   ]
  },
  {
@@ -3570,6 +3856,10 @@
   "keyIngredients": [
    "asparagus",
    "sorrel"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free"
   ]
  },
  {
@@ -3666,6 +3956,11 @@
   "keyIngredients": [
    "cannellini beans",
    "parmesan rind"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -3742,6 +4037,11 @@
   "extras": [],
   "keyIngredients": [
    "butternut squash"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein"
   ]
  },
  {
@@ -3802,6 +4102,11 @@
   "keyIngredients": [
    "peaches",
    "just better fiber"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein"
   ]
  },
  {
@@ -3888,7 +4193,12 @@
    "quinoa"
   ],
   "seoTitle": "Baked Halibut Recipe with Brussels Sprouts and Quinoa",
-  "seoDescription": "Oven-baked halibut served over quinoa with roasted Brussels sprouts, a light, protein-rich dinner that's easy enough for a weeknight."
+  "seoDescription": "Oven-baked halibut served over quinoa with roasted Brussels sprouts, a light, protein-rich dinner that's easy enough for a weeknight.",
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "barramundi-fish",
@@ -3973,6 +4283,11 @@
   "extras": [],
   "keyIngredients": [
    "barramundi"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -4068,6 +4383,10 @@
   "keyIngredients": [
    "sweet potatoes",
    "just better fiber"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "dairy-free"
   ]
  },
  {
@@ -4161,7 +4480,13 @@
    "black rice"
   ],
   "seoTitle": "Black Rice Sushi Rolls (Forbidden Rice) – Easy Homemade Recipe",
-  "seoDescription": "Homemade sushi rolls made with black forbidden rice for extra fiber and a nutty twist on the classic, a simple way to make real sushi at home."
+  "seoDescription": "Homemade sushi rolls made with black forbidden rice for extra fiber and a nutty twist on the classic, a simple way to make real sushi at home.",
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ]
  },
  {
   "slug": "blackened-salmon-with-caramelized-onion-and-sweet-potato-salad",
@@ -4289,7 +4614,12 @@
    "sweet potatoes"
   ],
   "seoTitle": "Blackened Salmon Recipe with Caramelized Onion and Sweet Potato Salad",
-  "seoDescription": "Perfectly blackened salmon paired with sweet caramelized onion and a hearty sweet potato salad, a bold, satisfying dinner with real depth of flavor."
+  "seoDescription": "Perfectly blackened salmon paired with sweet caramelized onion and a hearty sweet potato salad, a bold, satisfying dinner with real depth of flavor.",
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "boiled-egg-hummus-on-keto-toast",
@@ -4342,7 +4672,13 @@
    "hummus"
   ],
   "seoTitle": "Healthy Egg Salad with Hummus (No Mayo, High Protein)",
-  "seoDescription": "A lighter twist on classic egg salad, chopped eggs mixed with hummus instead of mayo, plus pickle, lemon, and fresh mint. Ready in minutes and perfect on keto toast."
+  "seoDescription": "A lighter twist on classic egg salad, chopped eggs mixed with hummus instead of mayo, plus pickle, lemon, and fresh mint. Ready in minutes and perfect on keto toast.",
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
+  ]
  },
  {
   "slug": "bok-choy-and-broccoli-with-caramelized-onion",
@@ -4426,7 +4762,13 @@
    "bok choy"
   ],
   "seoTitle": "Bok Choy and Broccoli Recipe with Caramelized Onion",
-  "seoDescription": "A simple bok choy and broccoli side dish, sautéed with sweet caramelized onion for real depth of flavor. Ready in minutes and pairs with almost anything."
+  "seoDescription": "A simple bok choy and broccoli side dish, sautéed with sweet caramelized onion for real depth of flavor. Ready in minutes and pairs with almost anything.",
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "dairy-free",
+   "high-fiber"
+  ]
  },
  {
   "slug": "bok-choy-pork-salad",
@@ -4499,6 +4841,9 @@
    "bok choy",
    "pork shoulder",
    "gochujang"
+  ],
+  "dietaryTags": [
+   "high-protein"
   ]
  },
  {
@@ -4611,7 +4956,12 @@
    "panko"
   ],
   "seoTitle": "Crispy Panko Breaded Tofu Recipe (Oven or Air Fryer)",
-  "seoDescription": "Crispy, golden panko-breaded tofu made in the oven or air fryer, no deep frying required. A satisfying, protein-forward recipe the whole family will actually want to eat."
+  "seoDescription": "Crispy, golden panko-breaded tofu made in the oven or air fryer, no deep frying required. A satisfying, protein-forward recipe the whole family will actually want to eat.",
+  "dietaryTags": [
+   "vegetarian",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "broccoli-soup-with-cactus-and-gruyere-cheese",
@@ -4671,6 +5021,12 @@
   "keyIngredients": [
    "cactus",
    "gruyere cheese"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -4737,6 +5093,10 @@
    "butternut squash",
    "escarole",
    "cannellini beans"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein"
   ]
  },
  {
@@ -4847,6 +5207,10 @@
    "cauliflower rice",
    "edamame",
    "chicken breast"
+  ],
+  "dietaryTags": [
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -4930,6 +5294,12 @@
    "poblano peppers",
    "black beans",
    "chicken breast"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -5021,6 +5391,10 @@
    "garam masala",
    "fenugreek leaves",
    "chicken thighs"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein"
   ]
  },
  {
@@ -5103,7 +5477,14 @@
    "just better fiber"
   ],
   "seoTitle": "Healthy Chickpea Chocolate Chip Cookies (Flourless, High Protein)",
-  "seoDescription": "Soft, chewy chickpea chocolate chip cookies made with almond butter and no flour, a protein- and fiber-packed treat perfect for holiday gatherings without the guilt."
+  "seoDescription": "Soft, chewy chickpea chocolate chip cookies made with almond butter and no flour, a protein- and fiber-packed treat perfect for holiday gatherings without the guilt.",
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "chili-colorado",
@@ -5216,7 +5597,11 @@
    "ground beef"
   ],
   "seoTitle": "Authentic Chili Colorado Recipe – Mexican Red Chili Beef Stew",
-  "seoDescription": "A rich, authentic chili colorado made with real dried Mexican chilies and masa harina, named for its deep red color, not the U.S. state. A hearty weekend dinner worth the extra time."
+  "seoDescription": "A rich, authentic chili colorado made with real dried Mexican chilies and masa harina, named for its deep red color, not the U.S. state. A hearty weekend dinner worth the extra time.",
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein"
+  ]
  },
  {
   "slug": "protein-flip-creamy-clam-chowder-with-zesty-lime-tofu-flatbread",
@@ -5327,7 +5712,11 @@
    "silken tofu"
   ],
   "seoTitle": "High-Protein Clam Chowder Recipe (Lighter, Healthier Version)",
-  "seoDescription": "A creamy clam chowder made lighter and higher in protein, with a zesty lime tofu flatbread on the side, real comfort food without the heaviness."
+  "seoDescription": "A creamy clam chowder made lighter and higher in protein, with a zesty lime tofu flatbread on the side, real comfort food without the heaviness.",
+  "dietaryTags": [
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "classic-salsa-verde",
@@ -5390,7 +5779,13 @@
    "tomatillos"
   ],
   "seoTitle": "Classic Salsa Verde Recipe (Easy Homemade Green Salsa)",
-  "seoDescription": "A classic tomatillo-based salsa verde, bright, tangy, and easy to make at home. A versatile green salsa for tacos, eggs, grilled meats, or chips."
+  "seoDescription": "A classic tomatillo-based salsa verde, bright, tangy, and easy to make at home. A versatile green salsa for tacos, eggs, grilled meats, or chips.",
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ]
  },
  {
   "slug": "classic-mussels-with-white-wine",
@@ -5480,6 +5875,10 @@
   "extras": [],
   "keyIngredients": [
    "mussels"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free"
   ]
  },
  {
@@ -5534,6 +5933,10 @@
   "keyIngredients": [
    "barley",
    "chicken thighs"
+  ],
+  "dietaryTags": [
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -5636,7 +6039,12 @@
    "just better fiber"
   ],
   "seoTitle": "Creme Brulee with Almond Milk – A Lighter Take on the Classic",
-  "seoDescription": "A creamy, lighter creme brulee made with almond milk, all the rich custard and crackly caramelized top of the classic, without the heaviness."
+  "seoDescription": "A creamy, lighter creme brulee made with almond milk, all the rich custard and crackly caramelized top of the classic, without the heaviness.",
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein"
+  ]
  },
  {
   "slug": "crispy-air-fry-falafel-with-fresh-herbs",
@@ -5668,6 +6076,14 @@
   "extras": [],
   "keyIngredients": [
    "dried chickpeas"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -5746,7 +6162,11 @@
    "tilapia"
   ],
   "seoTitle": "Crispy Air Fryer Tilapia Recipe with Brussels Sprouts",
-  "seoDescription": "Crispy air fryer tilapia paired with roasted Brussels sprouts, a fast, protein-packed dinner that's ready in under 30 minutes."
+  "seoDescription": "Crispy air fryer tilapia paired with roasted Brussels sprouts, a fast, protein-packed dinner that's ready in under 30 minutes.",
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free"
+  ]
  },
  {
   "slug": "crispy-black-bean-cakes-with-sun-dried-tomato-and-lime-crema",
@@ -5831,6 +6251,12 @@
   "keyIngredients": [
    "black beans",
    "sun-dried tomatoes"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -5914,6 +6340,11 @@
   "keyIngredients": [
    "pretzels",
    "chicken breast"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
   ]
  },
  {
@@ -5970,7 +6401,13 @@
    "jicama"
   ],
   "seoTitle": "Cucumber Jicama Salad Recipe with Fresh Red Onion",
-  "seoDescription": "A crisp, refreshing cucumber jicama salad with fresh red onion, a simple make-ahead side that's light, crunchy, and perfect for warm weather."
+  "seoDescription": "A crisp, refreshing cucumber jicama salad with fresh red onion, a simple make-ahead side that's light, crunchy, and perfect for warm weather.",
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ]
  },
  {
   "slug": "cucumber-salad",
@@ -6021,7 +6458,11 @@
   "proteinFlip": false,
   "youtubeId": null,
   "extras": [],
-  "keyIngredients": []
+  "keyIngredients": [],
+  "dietaryTags": [
+   "vegetarian",
+   "dairy-free"
+  ]
  },
  {
   "slug": "curried-cauliflower",
@@ -6084,6 +6525,13 @@
   "extras": [],
   "keyIngredients": [
    "cauliflower"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-fiber"
   ]
  },
  {
@@ -6142,6 +6590,14 @@
   "keyIngredients": [
    "lentils",
    "dal"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -6190,7 +6646,13 @@
    "just better fiber"
   ],
   "seoTitle": "Berry Chia Pudding with Greek Yogurt and Granola (Easy Make-Ahead Recipe)",
-  "seoDescription": "A simple berry chia pudding layered with Greek yogurt and crunchy granola, ready in minutes and perfect made ahead for busy mornings."
+  "seoDescription": "A simple berry chia pudding layered with Greek yogurt and crunchy granola, ready in minutes and perfect made ahead for busy mornings.",
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "delicious-tofu-saag-with-garam-masala-and-spinach",
@@ -6255,6 +6717,12 @@
    "tofu",
    "black rice",
    "garam masala"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -6311,6 +6779,11 @@
   "keyIngredients": [
    "tofu",
    "gochugaru"
+  ],
+  "dietaryTags": [
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -6413,6 +6886,12 @@
   "keyIngredients": [
    "asparagus",
    "nutritional yeast"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
   ]
  },
  {
@@ -6475,6 +6954,12 @@
   "keyIngredients": [
    "pork tenderloin",
    "chickpeas"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -6539,6 +7024,14 @@
   "keyIngredients": [
    "sweet potatoes",
    "black beans"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -6611,6 +7104,12 @@
   "keyIngredients": [
    "edamame",
    "salmon"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -6670,6 +7169,14 @@
    "artichokes",
    "silken tofu",
    "saffron"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -6713,7 +7220,11 @@
    "ricotta"
   ],
   "seoTitle": "Elegant Crostini Recipe with Roasted Grapes and Ricotta",
-  "seoDescription": "Crisp crostini topped with creamy ricotta and sweet roasted grapes, an elegant, effortless appetizer for entertaining."
+  "seoDescription": "Crisp crostini topped with creamy ricotta and sweet roasted grapes, an elegant, effortless appetizer for entertaining.",
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free"
+  ]
  },
  {
   "slug": "elegant-and-healthy-risotto-recipe-no-heavy-ingredients-2uhcv",
@@ -6777,6 +7288,10 @@
   "keyIngredients": [
    "arborio rice",
    "radicchio"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein"
   ]
  },
  {
@@ -6851,6 +7366,10 @@
   "keyIngredients": [
    "mahi mahi",
    "queso fresco"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-fiber"
   ]
  },
  {
@@ -6916,6 +7435,11 @@
   "keyIngredients": [
    "sourdough discard",
    "just better fiber"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -6999,7 +7523,12 @@
    "clams"
   ],
   "seoTitle": "French Bouillabaisse Recipe – Classic Mediterranean Seafood Stew",
-  "seoDescription": "A traditional French bouillabaisse recipe, a rich Mediterranean seafood stew built on saffron broth, made approachable for home cooks."
+  "seoDescription": "A traditional French bouillabaisse recipe, a rich Mediterranean seafood stew built on saffron broth, made approachable for home cooks.",
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
+  ]
  },
  {
   "slug": "fresh-pistachio-crusted-chicken-and-barley-salad",
@@ -7068,6 +7597,11 @@
    "pistachios",
    "barley",
    "chicken breast"
+  ],
+  "dietaryTags": [
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -7134,6 +7668,12 @@
   "extras": [],
   "keyIngredients": [
    "salmon"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -7200,7 +7740,12 @@
    "cannellini beans"
   ],
   "seoTitle": "Gourmet Mushroom Medley Recipe with Spinach and Bean Puree",
-  "seoDescription": "A rich, savory mushroom medley over a creamy spinach and bean puree, an elegant side dish that's simpler to make than it looks."
+  "seoDescription": "A rich, savory mushroom medley over a creamy spinach and bean puree, an elegant side dish that's simpler to make than it looks.",
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-fiber"
+  ]
  },
  {
   "slug": "grilled-salmon-with-a-jicama-salad-lime-cilantro-vinaigrette-and-white-bean-stew",
@@ -7341,6 +7886,12 @@
    "salmon",
    "jicama",
    "navy beans"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -7400,6 +7951,10 @@
   "keyIngredients": [
    "halibut",
    "black rice"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-fiber"
   ]
  },
  {
@@ -7454,6 +8009,11 @@
   "keyIngredients": [
    "halibut",
    "fresno chiles"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-fiber"
   ]
  },
  {
@@ -7520,6 +8080,13 @@
    "red lentils",
    "chickpeas",
    "harissa"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -7591,6 +8158,12 @@
    "black rice",
    "tofu",
    "daikon"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "dairy-free",
+   "high-protein"
   ]
  },
  {
@@ -7650,7 +8223,12 @@
    "just better fiber"
   ],
   "seoTitle": "Healthy Baked Peaches Recipe (Simple, Naturally Sweet)",
-  "seoDescription": "Tender baked peaches with a warm, naturally sweet finish, a simple, healthy dessert or breakfast topper that takes minutes to prep."
+  "seoDescription": "Tender baked peaches with a warm, naturally sweet finish, a simple, healthy dessert or breakfast topper that takes minutes to prep.",
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein"
+  ]
  },
  {
   "slug": "healthy-coconut-oil-granola-with-added-fiber-yogurt",
@@ -7707,6 +8285,12 @@
   "extras": [],
   "keyIngredients": [
    "just better fiber"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -7758,7 +8342,14 @@
    "chickpeas"
   ],
   "seoTitle": "Healthy French Carrot Salad with Chickpeas and Lemon-Dijon Dressing",
-  "seoDescription": "A light, refreshing French-inspired carrot salad with chickpeas, fresh herbs, and a tangy lemon-Dijon dressing that brings out the carrots' natural sweetness. A quick, colorful side ready in minutes."
+  "seoDescription": "A light, refreshing French-inspired carrot salad with chickpeas, fresh herbs, and a tangy lemon-Dijon dressing that brings out the carrots' natural sweetness. A quick, colorful side ready in minutes.",
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "healthy-mexican-rice",
@@ -7817,6 +8408,13 @@
   "extras": [],
   "keyIngredients": [
    "cauliflower rice"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-fiber"
   ]
  },
  {
@@ -7880,6 +8478,12 @@
   "extras": [],
   "keyIngredients": [
    "great northern beans"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -7957,6 +8561,10 @@
    "sweet potatoes",
    "tofu",
    "panko"
+  ],
+  "dietaryTags": [
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -8024,6 +8632,11 @@
   "extras": [],
   "keyIngredients": [
    "fish bones"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
   ]
  },
  {
@@ -8105,7 +8718,11 @@
    "chicken thighs"
   ],
   "seoTitle": "Hungarian Chicken Paprikash Recipe – A Lighter Take on the Classic",
-  "seoDescription": "A comforting Hungarian chicken paprikash made lighter without losing the rich, paprika-forward flavor of the original. Easy enough for a weeknight, satisfying enough for company."
+  "seoDescription": "A comforting Hungarian chicken paprikash made lighter without losing the rich, paprika-forward flavor of the original. Easy enough for a weeknight, satisfying enough for company.",
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein"
+  ]
  },
  {
   "slug": "hungarian-goulash",
@@ -8179,7 +8796,13 @@
    "beef"
   ],
   "seoTitle": "Healthy Hungarian Goulash Recipe – Classic Flavor, Lighter Build",
-  "seoDescription": "A hearty Hungarian goulash made with real paprika flavor and a lighter ingredient list than the traditional version, comfort food without the heaviness."
+  "seoDescription": "A hearty Hungarian goulash made with real paprika flavor and a lighter ingredient list than the traditional version, comfort food without the heaviness.",
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "classic-caprese-salad",
@@ -8217,6 +8840,10 @@
   "extras": [],
   "keyIngredients": [
    "fresh mozzarella"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free"
   ]
  },
  {
@@ -8294,7 +8921,14 @@
   "extras": [],
   "keyIngredients": [],
   "seoTitle": "Italian Shakshuka Recipe – Baked Eggs in Tomato Sauce",
-  "seoDescription": "A comforting Italian-style shakshuka, eggs baked in a rich, herby tomato sauce, perfect for a hearty breakfast, brunch, or easy dinner."
+  "seoDescription": "A comforting Italian-style shakshuka, eggs baked in a rich, herby tomato sauce, perfect for a hearty breakfast, brunch, or easy dinner.",
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "italian-soup-with-red-potato",
@@ -8381,6 +9015,11 @@
    "cannellini beans",
    "parmesan rind",
    "italian sausage"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -8431,6 +9070,10 @@
   "extras": [],
   "keyIngredients": [
    "zucchini"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free"
   ]
  },
  {
@@ -8515,6 +9158,11 @@
   "extras": [],
   "keyIngredients": [
    "lupini beans"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-fiber"
   ]
  },
  {
@@ -8565,7 +9213,15 @@
    "black beans"
   ],
   "seoTitle": "Jicama, Tomato, and Black Bean Salad with Lime-Cumin Vinaigrette",
-  "seoDescription": "A crisp, refreshing jicama, tomato, and black bean salad in a zesty lime-cumin vinaigrette, packed with fiber and plant protein. A perfect summer side for grilled fish, chicken, or tofu."
+  "seoDescription": "A crisp, refreshing jicama, tomato, and black bean salad in a zesty lime-cumin vinaigrette, packed with fiber and plant protein. A perfect summer side for grilled fish, chicken, or tofu.",
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "korean-barbecue",
@@ -8669,7 +9325,11 @@
    "korean pear"
   ],
   "seoTitle": "How to Make Korean BBQ at Home – Marinades, Sauces & Grilling Guide",
-  "seoDescription": "Everything you need for Korean BBQ at home, homemade marinades, ssamjang and sesame garlic dipping sauces, and tips for grilling any protein thin and fast. A fun, interactive dinner for two or a crowd."
+  "seoDescription": "Everything you need for Korean BBQ at home, homemade marinades, ssamjang and sesame garlic dipping sauces, and tips for grilling any protein thin and fast. A fun, interactive dinner for two or a crowd.",
+  "dietaryTags": [
+   "dairy-free",
+   "high-protein"
+  ]
  },
  {
   "slug": "lemongrass-salmon-fish-cakes",
@@ -8729,6 +9389,11 @@
    "lemongrass",
    "salmon",
    "chili jam"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
   ]
  },
  {
@@ -8811,7 +9476,15 @@
    "collard greens"
   ],
   "seoTitle": "Lentil and Collard Green Soup with Red Potatoes",
-  "seoDescription": "A hearty lentil soup with collard greens and red potatoes, packed with plant protein and fiber, a warming one-pot meal that's easy to make ahead."
+  "seoDescription": "A hearty lentil soup with collard greens and red potatoes, packed with plant protein and fiber, a warming one-pot meal that's easy to make ahead.",
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "lentil-pasta-with-tofu-and-vegetables",
@@ -8903,6 +9576,12 @@
   "keyIngredients": [
    "lentil pasta",
    "tofu"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -8991,6 +9670,14 @@
   "extras": [],
   "keyIngredients": [
    "lentils"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -9050,7 +9737,12 @@
    "wood ear mushrooms"
   ],
   "seoTitle": "Lotus Root Stir Fry with Carrots and Snow Peas",
-  "seoDescription": "A crisp, colorful lotus root stir fry with carrots and snow peas, a quick, veggie-forward side dish with satisfying crunch."
+  "seoDescription": "A crisp, colorful lotus root stir fry with carrots and snow peas, a quick, veggie-forward side dish with satisfying crunch.",
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
+  ]
  },
  {
   "slug": "lupini-bean-salad-with-asiago-cheese-pine-nuts-and-balsamic-vinaigrette",
@@ -9106,6 +9798,11 @@
   "keyIngredients": [
    "lupini beans",
    "asiago cheese"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-fiber"
   ]
  },
  {
@@ -9176,7 +9873,13 @@
    "edamame"
   ],
   "seoTitle": "High-Protein Mahi Mahi Black Rice Bowl Recipe",
-  "seoDescription": "A high-protein mahi mahi bowl built on fiber-rich black rice, a balanced, satisfying dinner that comes together in one pan."
+  "seoDescription": "A high-protein mahi mahi bowl built on fiber-rich black rice, a balanced, satisfying dinner that comes together in one pan.",
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "mediterranean-baked-tilapia-with-cherry-tomatoes-and-capers",
@@ -9252,6 +9955,11 @@
    "tilapia",
    "hemp seeds",
    "quinoa"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -9313,6 +10021,12 @@
    "branzino",
    "sumac",
    "aleppo pepper"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -9391,7 +10105,11 @@
    "cannellini beans"
   ],
   "seoTitle": "Mediterranean Cod and White Bean Stew with Toasted Pine Nuts",
-  "seoDescription": "A hearty Mediterranean cod and white bean stew finished with toasted pine nuts, a comforting, protein-rich one-pot dinner."
+  "seoDescription": "A hearty Mediterranean cod and white bean stew finished with toasted pine nuts, a comforting, protein-rich one-pot dinner.",
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free"
+  ]
  },
  {
   "slug": "mediterranean-herb-crusted-tilapia",
@@ -9470,7 +10188,12 @@
    "tilapia"
   ],
   "seoTitle": "Mediterranean Tilapia Recipe – Herb-Crusted & Easy to Make",
-  "seoDescription": "A simple, herb-crusted Mediterranean tilapia recipe that's light, flavorful, and ready in under 30 minutes. A satisfying, protein-forward weeknight dinner."
+  "seoDescription": "A simple, herb-crusted Mediterranean tilapia recipe that's light, flavorful, and ready in under 30 minutes. A satisfying, protein-forward weeknight dinner.",
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
+  ]
  },
  {
   "slug": "mediterranean-lentil-salad",
@@ -9551,6 +10274,14 @@
   "keyIngredients": [
    "lentils",
    "sun-dried tomatoes"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -9610,6 +10341,14 @@
   "keyIngredients": [
    "french lentils",
    "pattypan squash"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -9682,6 +10421,10 @@
    "shredded chicken",
    "silken tofu",
    "chickpeas"
+  ],
+  "dietaryTags": [
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -9745,6 +10488,11 @@
   "keyIngredients": [
    "salmon",
    "lentils"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -9787,6 +10535,10 @@
   "extras": [],
   "keyIngredients": [
    "sweet potatoes"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free"
   ]
  },
  {
@@ -9856,7 +10608,12 @@
   "extras": [],
   "keyIngredients": [],
   "seoTitle": "Mini Blueberry Lemon Cheesecakes Recipe (Light & Refreshing)",
-  "seoDescription": "Individual mini blueberry lemon cheesecakes with a bright, tangy filling, light enough for a make-ahead dessert that still feels special."
+  "seoDescription": "Individual mini blueberry lemon cheesecakes with a bright, tangy filling, light enough for a make-ahead dessert that still feels special.",
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein"
+  ]
  },
  {
   "slug": "miso-soup",
@@ -9911,6 +10668,13 @@
    "dashi",
    "tofu",
    "enoki mushrooms"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
   ]
  },
  {
@@ -10008,7 +10772,12 @@
    "edamame"
   ],
   "seoTitle": "Mustard Rosemary Salmon with Leeks, Fennel, and Edamame",
-  "seoDescription": "Salmon roasted with mustard and rosemary, served over tender leeks, fennel, and edamame, a flavorful, protein-forward dinner with bright herbal notes."
+  "seoDescription": "Salmon roasted with mustard and rosemary, served over tender leeks, fennel, and edamame, a flavorful, protein-forward dinner with bright herbal notes.",
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "nopal-cactus-salad",
@@ -10086,7 +10855,11 @@
    "queso fresco"
   ],
   "seoTitle": "Nopal Cactus Salad Recipe (Mexican-Style)",
-  "seoDescription": "A fresh, tangy nopal cactus salad made Mexican-style, light, crisp, and full of flavor, a simple way to try cactus for the first time."
+  "seoDescription": "A fresh, tangy nopal cactus salad made Mexican-style, light, crisp, and full of flavor, a simple way to try cactus for the first time.",
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free"
+  ]
  },
  {
   "slug": "poblano-sweet-potato-and-queso-fresco-soup",
@@ -10168,6 +10941,10 @@
    "poblano peppers",
    "sweet potatoes",
    "queso fresco"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free"
   ]
  },
  {
@@ -10307,6 +11084,9 @@
    "cod",
    "porcini mushrooms",
    "asparagus"
+  ],
+  "dietaryTags": [
+   "gluten-free"
   ]
  },
  {
@@ -10436,6 +11216,10 @@
    "tomatillos",
    "hominy",
    "mushrooms"
+  ],
+  "dietaryTags": [
+   "dairy-free",
+   "high-fiber"
   ]
  },
  {
@@ -10495,6 +11279,11 @@
   "keyIngredients": [
    "pinto beans",
    "pepitas"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -10536,6 +11325,11 @@
    "pumpkin puree",
    "cottage cheese",
    "just better fiber"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein"
   ]
  },
  {
@@ -10600,6 +11394,14 @@
    "quinoa",
    "zucchini",
    "just better fiber"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -10653,6 +11455,11 @@
    "dragon fruit",
    "persimmons",
    "just better fiber"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free"
   ]
  },
  {
@@ -10731,6 +11538,11 @@
   "extras": [],
   "keyIngredients": [
    "branzino"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
   ]
  },
  {
@@ -10817,7 +11629,15 @@
    "tahini"
   ],
   "seoTitle": "Roasted Carrots and Radishes Recipe with White Bean Sauce",
-  "seoDescription": "Sweet roasted carrots and peppery radishes served over a creamy white bean sauce, a simple, colorful side dish with real texture and flavor."
+  "seoDescription": "Sweet roasted carrots and peppery radishes served over a creamy white bean sauce, a simple, colorful side dish with real texture and flavor.",
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "roasted-cauliflower-and-crispy-harissa-chickpeas",
@@ -10879,6 +11699,11 @@
    "chickpeas",
    "harissa",
    "medjool dates"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -10955,6 +11780,10 @@
   "keyIngredients": [
    "butternut squash",
    "stilton cheese"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free"
   ]
  },
  {
@@ -11039,6 +11868,12 @@
   "extras": [],
   "keyIngredients": [
    "roasted red peppers"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
   ]
  },
  {
@@ -11110,6 +11945,10 @@
   "extras": [],
   "keyIngredients": [
    "squash blossoms"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free"
   ]
  },
  {
@@ -11197,6 +12036,11 @@
    "salmon",
    "sumac",
    "pomegranate"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
   ]
  },
  {
@@ -11310,7 +12154,13 @@
    "chestnuts"
   ],
   "seoTitle": "Roasted Vegetables with Chestnuts and Caramelized Onion",
-  "seoDescription": "A warm, seasonal roasted vegetable medley with chestnuts and sweet caramelized onion, an easy holiday-ready side dish."
+  "seoDescription": "A warm, seasonal roasted vegetable medley with chestnuts and sweet caramelized onion, an easy holiday-ready side dish.",
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ]
  },
  {
   "slug": "rolled-oat-breaded-eggplant-with-sweet-and-spicy-sauce",
@@ -11404,6 +12254,13 @@
   "keyIngredients": [
    "eggplant",
    "silken tofu"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -11465,6 +12322,12 @@
   "extras": [],
   "keyIngredients": [
    "saffron"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
   ]
  },
  {
@@ -11613,7 +12476,13 @@
    "pistachios"
   ],
   "seoTitle": "Pistachio-Crusted Salmon with Pickled Red Onion and Pomegranate",
-  "seoDescription": "Pistachio-crusted salmon seared and oven-finished, topped with pickled red onion, pomegranate, and a bright lime-cilantro vinaigrette. A colorful, protein-rich dinner that's as beautiful as it is satisfying."
+  "seoDescription": "Pistachio-crusted salmon seared and oven-finished, topped with pickled red onion, pomegranate, and a bright lime-cilantro vinaigrette. A colorful, protein-rich dinner that's as beautiful as it is satisfying.",
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "salsa-verde-molcajete",
@@ -11678,6 +12547,12 @@
   "extras": [],
   "keyIngredients": [
    "tomatillos"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
   ]
  },
  {
@@ -11763,7 +12638,11 @@
    "pancetta"
   ],
   "seoTitle": "Corn and Mushroom Sauté Recipe with Crispy Pancetta",
-  "seoDescription": "A savory corn and mushroom sauté finished with crispy pancetta, a quick, flavorful side dish that comes together in one pan."
+  "seoDescription": "A savory corn and mushroom sauté finished with crispy pancetta, a quick, flavorful side dish that comes together in one pan.",
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free"
+  ]
  },
  {
   "slug": "scallops-with-black-bean-pasta",
@@ -11851,7 +12730,11 @@
    "black bean pasta"
   ],
   "seoTitle": "Scallops with Black Bean Pasta Recipe",
-  "seoDescription": "Seared scallops served over black bean pasta, a quick, protein-rich dinner with a satisfying twist on classic pasta night."
+  "seoDescription": "Seared scallops served over black bean pasta, a quick, protein-rich dinner with a satisfying twist on classic pasta night.",
+  "dietaryTags": [
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "sea-bass-soup-with-shiitake-and-bok-choy",
@@ -11906,7 +12789,14 @@
    "bok choy"
   ],
   "seoTitle": "Sea Bass Soup Recipe with Shiitake Mushrooms and Bok Choy",
-  "seoDescription": "A light, savory sea bass soup with shiitake mushrooms and bok choy, a comforting, protein-forward bowl that comes together in one pot."
+  "seoDescription": "A light, savory sea bass soup with shiitake mushrooms and bok choy, a comforting, protein-forward bowl that comes together in one pot.",
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-fiber"
+  ]
  },
  {
   "slug": "crispy-sweet-potato-matchsticks-with-saucy-sesame-tofu",
@@ -12002,6 +12892,12 @@
   "keyIngredients": [
    "tofu",
    "sweet potatoes"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -12058,7 +12954,13 @@
   "proteinFlip": false,
   "youtubeId": null,
   "extras": [],
-  "keyIngredients": []
+  "keyIngredients": [],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
+  ]
  },
  {
   "slug": "simple-frittata",
@@ -12096,7 +12998,12 @@
   "proteinFlip": false,
   "youtubeId": null,
   "extras": [],
-  "keyIngredients": []
+  "keyIngredients": [],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein"
+  ]
  },
  {
   "slug": "simple-hummus-eo5q7",
@@ -12150,6 +13057,14 @@
   "keyIngredients": [
    "chickpeas",
    "tahini"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -12197,6 +13112,10 @@
   "keyIngredients": [
    "chestnuts",
    "just better fiber"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free"
   ]
  },
  {
@@ -12270,6 +13189,12 @@
   "keyIngredients": [
    "spaghetti squash",
    "chickpeas"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -12356,6 +13281,11 @@
    "red lentils",
    "bok choy",
    "chicken thighs"
+  ],
+  "dietaryTags": [
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -12409,6 +13339,12 @@
   "extras": [],
   "keyIngredients": [
    "chickpeas"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
   ]
  },
  {
@@ -12497,7 +13433,12 @@
    "spaghetti squash"
   ],
   "seoTitle": "Healthy Spinach Stuffed Spaghetti Squash Recipe",
-  "seoDescription": "Tender roasted spaghetti squash stuffed with a savory spinach filling, a satisfying, lower-carb dinner that's easier to make than it looks."
+  "seoDescription": "Tender roasted spaghetti squash stuffed with a savory spinach filling, a satisfying, lower-carb dinner that's easier to make than it looks.",
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "high-fiber"
+  ]
  },
  {
   "slug": "squash-blossom-tostada-with-oaxaca-cheese",
@@ -12573,6 +13514,10 @@
   "keyIngredients": [
    "squash blossoms",
    "oaxaca cheese"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free"
   ]
  },
  {
@@ -12722,6 +13667,11 @@
   "extras": [],
   "keyIngredients": [
    "turkey breast"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -12853,6 +13803,14 @@
    "cauliflower rice",
    "tofu",
    "nori"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -12919,6 +13877,11 @@
   "keyIngredients": [
    "sweet potatoes",
    "almond flour"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free"
   ]
  },
  {
@@ -12996,6 +13959,10 @@
   "extras": [],
   "keyIngredients": [
    "sweet potatoes"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "dairy-free"
   ]
  },
  {
@@ -13065,6 +14032,13 @@
    "sweet potatoes",
    "lemongrass",
    "almond butter"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -13145,6 +14119,11 @@
   "extras": [],
   "keyIngredients": [
    "swordfish"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
   ]
  },
  {
@@ -13222,6 +14201,11 @@
    "lemongrass",
    "galangal",
    "kaffir lime leaves"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein"
   ]
  },
  {
@@ -13294,7 +14278,11 @@
    "cactus"
   ],
   "seoTitle": "Tilapia Stew with Nopal Cactus Recipe",
-  "seoDescription": "A light, brothy tilapia stew with tender nopal cactus, a simple, protein-rich dish with a distinctly Mexican flavor profile."
+  "seoDescription": "A light, brothy tilapia stew with tender nopal cactus, a simple, protein-rich dish with a distinctly Mexican flavor profile.",
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free"
+  ]
  },
  {
   "slug": "tofu-with-brussel-sprouts-and-almonds",
@@ -13352,6 +14340,14 @@
   "extras": [],
   "keyIngredients": [
    "tofu"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -13424,7 +14420,11 @@
   "proteinFlip": false,
   "youtubeId": null,
   "extras": [],
-  "keyIngredients": []
+  "keyIngredients": [],
+  "dietaryTags": [
+   "vegetarian",
+   "high-protein"
+  ]
  },
  {
   "slug": "traditional-salsa-rojo-with-tomatillos-and-lime-iwzpn",
@@ -13472,6 +14472,12 @@
   "keyIngredients": [
    "tomatillos",
    "guajillo chiles"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
   ]
  },
  {
@@ -13571,7 +14577,11 @@
    "asparagus"
   ],
   "seoTitle": "Tuna Asparagus Salad Recipe – Light, Fresh, and Protein-Packed",
-  "seoDescription": "A simple tuna asparagus salad that's light, fresh, and ready in minutes, a great make-ahead lunch or easy weeknight side."
+  "seoDescription": "A simple tuna asparagus salad that's light, fresh, and ready in minutes, a great make-ahead lunch or easy weeknight side.",
+  "dietaryTags": [
+   "dairy-free",
+   "high-protein"
+  ]
  },
  {
   "slug": "vegetables-in-mint-vinaigrette",
@@ -13638,7 +14648,13 @@
   "proteinFlip": false,
   "youtubeId": null,
   "extras": [],
-  "keyIngredients": []
+  "keyIngredients": [],
+  "dietaryTags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "high-fiber"
+  ]
  },
  {
   "slug": "vegetarian-egg-bites-with-spinach-beans-and-feta-cktbg",
@@ -13696,7 +14712,12 @@
    "black beans"
   ],
   "seoTitle": "Vegetarian Egg Bites with Spinach, Beans, and Feta",
-  "seoDescription": "Protein-packed vegetarian egg bites baked with spinach, beans, and feta, an easy make-ahead breakfast you can grab and go all week."
+  "seoDescription": "Protein-packed vegetarian egg bites baked with spinach, beans, and feta, an easy make-ahead breakfast you can grab and go all week.",
+  "dietaryTags": [
+   "vegetarian",
+   "high-protein",
+   "high-fiber"
+  ]
  },
  {
   "slug": "high-protein-meatless-burger-with-black-beans-quinoa-cilantro-chimichurri",
@@ -13768,6 +14789,12 @@
    "plant-based ground meat",
    "black beans",
    "keto buns"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -13858,6 +14885,14 @@
   "keyIngredients": [
    "chickpeas",
    "sun-dried tomatoes"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -13916,6 +14951,11 @@
    "sweet potatoes",
    "black beans",
    "quinoa"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -13971,6 +15011,9 @@
   "keyIngredients": [
    "zucchini",
    "pepperoncini"
+  ],
+  "dietaryTags": [
+   "vegetarian"
   ]
  },
  {
@@ -14051,6 +15094,10 @@
   "keyIngredients": [
    "halibut",
    "zucchini"
+  ],
+  "dietaryTags": [
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -14156,6 +15203,10 @@
    "ground turkey",
    "lentils",
    "chickpeas"
+  ],
+  "dietaryTags": [
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -14245,6 +15296,10 @@
   "keyIngredients": [
    "lupini beans",
    "just better fiber"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "high-protein"
   ]
  },
  {
@@ -14353,6 +15408,11 @@
    "prosciutto",
    "roasted red peppers",
    "cherokee purple tomato"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -14464,6 +15524,11 @@
    "mexican crema",
    "cotija cheese",
    "tostadas"
+  ],
+  "dietaryTags": [
+   "gluten-free",
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -14567,6 +15632,10 @@
    "broccoli",
    "allulose",
    "pepitas"
+  ],
+  "dietaryTags": [
+   "high-protein",
+   "high-fiber"
   ]
  },
  {
@@ -14661,6 +15730,10 @@
    "allulose",
    "dark chocolate",
    "pistachios"
+  ],
+  "dietaryTags": [
+   "vegetarian",
+   "high-protein"
   ]
  }
 ]

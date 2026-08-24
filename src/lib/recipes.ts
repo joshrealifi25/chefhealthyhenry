@@ -23,6 +23,9 @@ export interface Recipe {
   extras: ExtraSection[];
   category: string;
   proteinFlip: boolean;
+  /** e.g. "vegetarian", "vegan", "gluten-free", "dairy-free", "high-protein",
+   * "high-fiber". */
+  dietaryTags?: string[];
   youtubeId: string | null;
   keyIngredients?: string[];
   /** Overrides for the <title>/meta description search engines see, when
