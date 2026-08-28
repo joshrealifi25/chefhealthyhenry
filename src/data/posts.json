@@ -3860,7 +3860,7 @@
    },
    {
     "type": "paragraph",
-    "html": "This connects to something I write about more broadly in <a href=\"/post/clean-cooking-real-shortcuts-vs-lazy\">Clean Cooking</a>: the difference between real shortcuts and lazy ones. Leaving the green sprout in garlic, skipping the stir, crowding the pan — these are lazy shortcuts. They feel like time saved. They cost you flavor. Everything in a kitchen has a purpose and timing, and garlic is one of the clearest places that shows up."
+    "html": "This connects to something I write about more broadly in <a href=\"/post/clean-cooking-real-shortcuts-vs-lazy\">Clean Cooking</a>: the difference between real shortcuts and lazy ones. Leaving the green sprout in garlic, skipping the stir, crowding the pan: these are lazy shortcuts. They feel like time saved. They cost you flavor. Everything in a kitchen has a purpose and timing, and garlic is one of the clearest places that shows up."
    },
    {
     "type": "heading",
@@ -4526,6 +4526,87 @@
    {
     "type": "paragraph",
     "html": "<a href=\"/cookbook\">Get your copy of the Protein Flip™ Cookbook.</a>"
+   }
+  ]
+ },
+ {
+  "slug": "table-talk-intro",
+  "title": "Table Talk: Food, Stories, and the Life Around the Table",
+  "category": "Table Talk",
+  "date": "August 28, 2026",
+  "hero": "/images/blog/table-talk-intro.jpg",
+  "excerpt": "That moment is what Table Talk is about.",
+  "pinned": true,
+  "blocks": [
+   {
+    "type": "paragraph",
+    "html": "There's a moment that happens before the first bite of a meal. The table is set. The food is still warm. The room smells like something familiar, or maybe something new. Conversations slow. Phones get pushed aside. For just a moment, everything feels grounded."
+   },
+   {
+    "type": "paragraph",
+    "html": "That moment is what Table Talk is about."
+   },
+   {
+    "type": "paragraph",
+    "html": "This space isn't here to tell you what to cook or how to eat. It's here to talk about <em>why food matters</em>, the ways it shows up in our lives beyond recipes and nutrition labels. The memories tied to certain dishes. The comfort of shared meals. The excitement of trying something new. The quiet fulfillment that comes from slowing down and being present at the table."
+   },
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "Why Table Talk Exists"
+   },
+   {
+    "type": "paragraph",
+    "html": "Food has always been more than fuel for me. It's connection. It's curiosity. It's culture. It's how we care for ourselves and each other."
+   },
+   {
+    "type": "paragraph",
+    "html": "Table Talk is a place to explore the human side of food:"
+   },
+   {
+    "type": "list",
+    "ordered": false,
+    "items": [
+     "The meals that bring families together",
+     "The dinners with friends that turn into long conversations",
+     "The role our senses play in how we experience food",
+     "The emotions tied to cooking, eating, and gathering",
+     "The way food can comfort us, challenge us, and sometimes surprise us"
+    ]
+   },
+   {
+    "type": "paragraph",
+    "html": "Some posts will be personal. Others will be inspired by a meal, a trip, a restaurant, or a quiet moment in the kitchen. Some will be introspective. Others, hopeful and energizing. They all come back to the same idea. Food is a shared experience, and those experiences shape us."
+   },
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "What I Hope You Take Away"
+   },
+   {
+    "type": "paragraph",
+    "html": "My hope is that you leave Table Talk feeling nourished in more than the physical sense. That you trust yourself a little more in the kitchen and at the table. That you're reminded food doesn't have to be perfect to be meaningful. That you walk away curious about flavors, conversations, and the people you share meals with, confident in creating experiences and not just dishes."
+   },
+   {
+    "type": "paragraph",
+    "html": "There's no right way to eat, cook, or gather. Only intention, curiosity, and connection."
+   },
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "Pull Up a Chair"
+   },
+   {
+    "type": "paragraph",
+    "html": "Table Talk is meant to feel like an open table, not a monologue. As you read, I hope you find pieces of your own story reflected back at you. A meal that mattered. A tradition you miss. A gathering that made you feel at home. A moment where food brought people together."
+   },
+   {
+    "type": "paragraph",
+    "html": "If something here reminds you of a meal, a moment, or a person, I'd love to hear it. There's no expectation to have the right words. Just presence. Sometimes the best conversations start that way."
+   },
+   {
+    "type": "paragraph",
+    "html": "Pull up a chair. The table's open."
    }
   ]
  }
