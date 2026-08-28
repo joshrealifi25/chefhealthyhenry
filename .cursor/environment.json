@@ -1,0 +1,17 @@
+{
+  "name": "chefhealthyhenry",
+  "install": "npm ci",
+  "terminals": [
+    {
+      "name": "dev",
+      "command": "npm run dev",
+      "description": "Next.js dev server. Lets a cloud agent open pages and attach screenshots to a pull request."
+    }
+  ],
+  "ports": [
+    {
+      "name": "web",
+      "port": 3000
+    }
+  ]
+}
