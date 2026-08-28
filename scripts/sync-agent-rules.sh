@@ -4,7 +4,7 @@
 #
 # AGENTS.md is the single source of truth. This script creates copies
 # for agents that don't read AGENTS.md natively (Cline, Continue,
-# Amazon Q, GitHub Copilot Chat).
+# Amazon Q).
 #
 # Usage:
 #   bash scripts/sync-agent-rules.sh
@@ -66,8 +66,9 @@ write_file() {
 
 echo "Syncing agent rules from AGENTS.md..."
 
-# GitHub Copilot Chat — .github/copilot-instructions.md
-write_file "$REPO_ROOT/.github/copilot-instructions.md" "$RESOLVED_CONTENT"
+# GitHub Copilot Chat is deliberately not generated. It would live in
+# .github/, which CODEOWNERS reserves for Josh, so regenerating it turns every
+# routine AGENTS.md edit into a review request. Nobody here uses Copilot.
 
 # Cline / Roo Code — .clinerules
 write_file "$REPO_ROOT/.clinerules" "$RESOLVED_CONTENT"
