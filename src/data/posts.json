@@ -3564,5 +3564,67 @@
     "html": "You are telling its story."
    }
   ]
+ },
+ {
+  "slug": "cooking-intro",
+  "title": "Cooking: Practical Recipes and Techniques for Real Life",
+  "category": "Chef's Notes",
+  "date": "August 28, 2026",
+  "hero": "/images/blog/cooking-intro.jpg",
+  "excerpt": "The Cooking blog is where we focus on the how, always with the why in mind.",
+  "pinned": true,
+  "blocks": [
+   {
+    "type": "paragraph",
+    "html": "Cooking doesn't have to be complicated to be meaningful."
+   },
+   {
+    "type": "paragraph",
+    "html": "At its best, cooking is a quiet act of care. Something you do for yourself, for the people you love, or simply because it feels good to create something from scratch. It isn't about perfection, rigid rules, or chasing trends. It's about learning how food works, how flavors come together, and how small choices in the kitchen add up to meals that feel satisfying and sustainable."
+   },
+   {
+    "type": "paragraph",
+    "html": "This space exists to help you cook with clarity, confidence, and intention."
+   },
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "What This Cooking Blog Is About"
+   },
+   {
+    "type": "paragraph",
+    "html": "The Cooking blog is where we focus on the how, always with the why in mind. You'll find recipes designed for real life, techniques that make cooking feel easier rather than intimidating, and flavor-forward meals that don't rely on excess. The goal is thoughtful balance between protein, plants, and enjoyment, built around approaches you'll actually use."
+   },
+   {
+    "type": "paragraph",
+    "html": "You won't find extreme rules here. This is about building meals that work for your body, your schedule, and your table."
+   },
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "Cooking with the Protein Flip™ Mindset"
+   },
+   {
+    "type": "paragraph",
+    "html": "Many of the recipes here are inspired by the Protein Flip™ approach: rethinking the traditional plate so protein is balanced with plants, fiber, and flavor. That doesn't mean every meal looks the same. It means portions are intentional, not restrictive. Plants play a bigger role without sacrificing satisfaction. Meals are designed to leave you feeling energized, steady, and fulfilled."
+   },
+   {
+    "type": "paragraph",
+    "html": "Cooking this way isn't about eating less. It's about eating smarter, more thoughtfully, and with more enjoyment."
+   },
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "Pull Out a Pan"
+   },
+   {
+    "type": "paragraph",
+    "html": "This blog is meant to be practical, encouraging, and flexible. If a recipe inspires you, make it yours. Swap ingredients. Adjust portions. Cook it once, then change it the next time."
+   },
+   {
+    "type": "paragraph",
+    "html": "Pull out a pan. Turn on the stove. Let's cook something good."
+   }
+  ]
  }
 ]

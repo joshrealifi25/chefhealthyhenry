@@ -16,12 +16,18 @@ export interface Post {
    * Falls back to title/excerpt when unset. */
   seoTitle?: string;
   seoDescription?: string;
+  /** Pins the post to the top of every listing it appears in (the main
+   * index and its category page), ahead of date order. For evergreen
+   * section intros, not a substitute for picking a real date. */
+  pinned?: boolean;
   blocks: PostBlock[];
 }
 
-export const posts = [...(postsData as Post[])].sort(
-  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-);
+export const posts = [...(postsData as Post[])].sort((a, b) => {
+  const pinDiff = Number(b.pinned ?? false) - Number(a.pinned ?? false);
+  if (pinDiff !== 0) return pinDiff;
+  return new Date(b.date).getTime() - new Date(a.date).getTime();
+});
 
 export function getPost(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);
