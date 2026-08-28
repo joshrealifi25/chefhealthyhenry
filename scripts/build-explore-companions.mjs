@@ -29,7 +29,9 @@ const companions = [
     blurb:
       "One drawer, many kitchens. Cumin, oregano, paprika, and chili each point somewhere specific. Here's how to start reading spices as places, not just heat or color.",
     subtitle: "Flavor isn't universal. It's cultural.",
-    hero: "/images/blog/around-the-world-in-a-spice-rack.jpg",
+    // Journal covers often bake titles into the image; omit on Explore until
+    // we have companion-specific art (see spice/garlic card crop issues).
+    hero: null,
     date: "2026-08-26",
     videoId: null,
     recipeSlugs: [],
@@ -70,7 +72,7 @@ const companions = [
     blurb:
       "Mediterranean, Mexican, and Italian oregano can share a name and still cook like three different ingredients. Know which jar you are reaching for.",
     subtitle: "Same name. Different plants. Different dishes.",
-    hero: "/images/blog/oregano-three-completely-different-flavors.jpg",
+    hero: null,
     date: "2026-08-25",
     videoId: null,
     recipeSlugs: [],
@@ -102,7 +104,7 @@ const companions = [
     blurb:
       "Cumin is structural, not decorative. Toast it, bloom it, and let it anchor stews, beans, and spice mixes without turning muddy.",
     subtitle: "Background spice? Not if you cook it well.",
-    hero: "/images/blog/cumin-the-flavor-that-grounds-a-dish.jpg",
+    hero: null,
     date: "2026-08-24",
     videoId: null,
     recipeSlugs: [],
@@ -139,7 +141,7 @@ const companions = [
     blurb:
       "Basil brings a dish to life when you protect its freshness. Heat it too hard and you lose the reason you added it.",
     subtitle: "Not a background herb. A last decision.",
-    hero: "/images/blog/basil-the-herb-that-brings-a-dish-to-life.jpg",
+    hero: null,
     date: "2026-08-23",
     videoId: null,
     recipeSlugs: [],
@@ -167,7 +169,7 @@ const companions = [
     blurb:
       "Sweet, smoked, and hot paprika can share a shelf and still send dinner three different ways. Choose the jar for the job.",
     subtitle: "Color is not the whole story.",
-    hero: "/images/blog/paprika-three-completely-different-directions.jpg",
+    hero: null,
     date: "2026-08-22",
     videoId: null,
     recipeSlugs: [],
@@ -200,7 +202,7 @@ const companions = [
     blurb:
       "Cinnamon is familiar in sweets and surprisingly useful in savory cooking. Used with restraint, it warms stews, sauces, and spice mixes without tasting like dessert.",
     subtitle: "Familiar flavor. Unexpected role.",
-    hero: "/images/blog/cinnamon-familiar-flavor-unexpected-role.jpg",
+    hero: null,
     date: "2026-08-21",
     videoId: null,
     recipeSlugs: [],
@@ -228,7 +230,7 @@ const companions = [
     blurb:
       "Fresh chilies, dried pods, and powders are related tools with different jobs. Choose for fruit, smoke, and brightness, not Scoville alone.",
     subtitle: "Same family. Completely different kitchens.",
-    hero: "/images/blog/chili-peppers-and-powders-same-ingredient-different-worlds.jpg",
+    hero: null,
     date: "2026-08-20",
     videoId: null,
     recipeSlugs: [],
@@ -256,7 +258,7 @@ const companions = [
     blurb:
       "Once you understand individual spices, the real skill is composition: how they work together to make a meal feel like somewhere.",
     subtitle: "The series was never only about jars.",
-    hero: "/images/blog/spices-bringing-it-all-together-flavor-to-feeling.jpg",
+    hero: null,
     date: "2026-08-19",
     videoId: null,
     recipeSlugs: [],
@@ -286,7 +288,7 @@ const companions = [
     blurb:
       "Garlic does not turn bitter just because it cooked. Heat, size, and timing decide whether it stays sweet or goes sharp. Here is the practical fix.",
     subtitle: "The kitchen warning is incomplete. The technique is not.",
-    hero: "/images/blog/from-bitter-to-beautiful-cooking-garlic.jpg",
+    hero: null,
     date: "2026-08-18",
     videoId: null,
     recipeSlugs: [],
@@ -319,7 +321,7 @@ const companions = [
     blurb:
       "Black garlic is aged, not roasted. It tastes sweet, savory, and unfamiliar in the best way. A short primer on why curiosity belongs in the pantry.",
     subtitle: "Not roasted garlic. Something else entirely.",
-    hero: "/images/blog/black-garlic-ingredient-discovery.jpg",
+    hero: null,
     date: "2026-08-18",
     videoId: null,
     recipeSlugs: [],
@@ -347,7 +349,7 @@ const companions = [
     blurb:
       "The sear is not just color. Maillard browning and caramelization build flavor you cannot get from seasoning alone. Give the pan a chance to work.",
     subtitle: "The most important flavor is one you build with heat.",
-    hero: "/images/blog/why-brown-tastes-better-maillard-caramelization.jpg",
+    hero: null,
     date: "2026-06-08",
     videoId: null,
     recipeSlugs: [],
@@ -380,7 +382,7 @@ const companions = [
     blurb:
       "Every kitchen needs shortcuts. The useful ones protect flavor and cleanup. The lazy ones create more work later. Learn the difference.",
     subtitle: "It is not only what you cook. It is how you work.",
-    hero: "/images/blog/clean-cooking-real-shortcuts-vs-lazy.jpg",
+    hero: null,
     date: "2026-05-11",
     videoId: null,
     recipeSlugs: [],
@@ -408,7 +410,7 @@ const companions = [
     blurb:
       "Time, skill, mess, picky eaters, and perfectionism are real barriers. None of them have to be permanent. Start with the reason that is actually yours.",
     subtitle: "Name the blocker. Then shrink the first step.",
-    hero: "/images/blog/i-dont-cook-because---lets-talk-about-the-real-reasons-and-w.jpg",
+    hero: null,
     date: "2026-04-28",
     videoId: null,
     recipeSlugs: [],
@@ -443,7 +445,7 @@ const companions = [
     blurb:
       "Confidence grows when you pay attention while you cook: smell, color, sound, and timing. Awareness is a technique, not a mood.",
     subtitle: "The dish changes when you do.",
-    hero: "/images/blog/savor-the-moment.jpg",
+    hero: null,
     date: "2026-06-10",
     videoId: null,
     recipeSlugs: [],
@@ -473,7 +475,7 @@ const companions = [
     blurb:
       "The Protein Flip™ Method rebuilds the plate around balance, flavor, and staying power, without asking you to abandon the foods that feel like home.",
     subtitle: "A chef's return to balance.",
-    hero: "/images/blog/what-is-the-protein-flip-tm-a-chefs-return-to-balance.png",
+    hero: null,
     date: "2026-05-14",
     videoId: null,
     recipeSlugs: [],
@@ -511,7 +513,7 @@ const companions = [
     blurb:
       "Satiety, flavor, and culture are not competing goals. The Protein Flip™ Method holds the science of staying full and the soul of a meal worth sitting down for.",
     subtitle: "There is science behind that feeling.",
-    hero: "/images/blog/the-science-and-the-soul-behind-the-protein-flip.jpg",
+    hero: null,
     date: "2026-05-13",
     videoId: null,
     recipeSlugs: [],
@@ -539,7 +541,7 @@ const companions = [
     blurb:
       "Comfort food is doing a job: familiarity, texture, and timing. Fight the craving and it gets louder. Rebuild the structure and the comfort can stay.",
     subtitle: "Keep the comfort. Change the structure.",
-    hero: "/images/blog/what-comfort-food-actually-is.jpg",
+    hero: null,
     date: "2026-06-26",
     videoId: null,
     recipeSlugs: [],
@@ -567,7 +569,7 @@ const companions = [
     blurb:
       "Persistent hunger on a smaller plate is often a structure problem. Protein, fiber, volume, and pacing do more than willpower.",
     subtitle: "Satiety is something you can cook for.",
-    hero: "/images/blog/how-to-stay-full-longer-on-a-diet-satiety-guide.jpg",
+    hero: null,
     date: "2026-06-16",
     videoId: null,
     recipeSlugs: [],
@@ -601,7 +603,7 @@ const companions = [
     blurb:
       "A huge plate can still leave you snacky twenty minutes later. Protein and fiber together change how a meal holds.",
     subtitle: "Appetite control starts on the plate.",
-    hero: "/images/blog/high-protein-high-fiber.png",
+    hero: null,
     date: "2026-06-02",
     videoId: null,
     recipeSlugs: [],
@@ -629,7 +631,7 @@ const companions = [
     blurb:
       "\"Control\" implies tension. Portion-smart cooking keeps the foods you love and rebuilds the proportions so the plate works with you.",
     subtitle: "Less bracing. More building.",
-    hero: "/images/blog/from-portion-control-to-portion-smart.jpg",
+    hero: null,
     date: "2026-05-06",
     videoId: null,
     recipeSlugs: [],
@@ -657,7 +659,7 @@ const companions = [
     blurb:
       "Most people do not lack effort. They lack a repeatable way to decide what dinner is. Structure removes the uncertainty.",
     subtitle: "Clarity beats grit.",
-    hero: "/images/blog/the-structure-that-sets-you-free.jpg",
+    hero: null,
     date: "2026-06-10",
     videoId: null,
     recipeSlugs: [],
@@ -685,7 +687,7 @@ const companions = [
     blurb:
       "You may not control your genetics. You can influence how you cook the foods that already feel like home. Keep the culture. Flip the structure.",
     subtitle: "Identity stays. Proportions can move.",
-    hero: "/images/blog/change-what-you-can.jpg",
+    hero: null,
     date: "2026-06-03",
     videoId: null,
     recipeSlugs: [],
@@ -713,7 +715,7 @@ const companions = [
     blurb:
       "Some days are not about the perfect plate. Growth still counts when the kitchen is quiet. Here is how to hold standards without turning them into shame.",
     subtitle: "Progress is not only what happens on the plate.",
-    hero: "/images/blog/the-personal-greater-good.jpg",
+    hero: null,
     date: "2026-07-06",
     videoId: null,
     recipeSlugs: [],
@@ -743,7 +745,7 @@ const companions = [
     blurb:
       "Comfort cooking is memory, belonging, and care on a plate. Understanding that job helps you keep the meal and improve the structure underneath it.",
     subtitle: "The personal side of comfort food.",
-    hero: "/images/blog/table-talk-on-comfort-cooking-and-why-it-still-matters.png",
+    hero: null,
     date: "2026-06-04",
     videoId: null,
     recipeSlugs: [],
@@ -771,7 +773,7 @@ const companions = [
     blurb:
       "Kids rarely learn cooking from lectures. They learn from a stool at the counter, a small job, and the feeling of being useful next to someone who cooks.",
     subtitle: "Start with a job they can finish.",
-    hero: "/images/blog/my-daughter-the-kitchen-and-the-quiet-way-kids-learn-to-cook.png",
+    hero: null,
     date: "2026-05-13",
     videoId: null,
     recipeSlugs: [],
@@ -799,7 +801,7 @@ const companions = [
     blurb:
       "A hot pan and a shared table are one of the clearest ways care shows up. Dinner does not have to be elaborate to mean something.",
     subtitle: "Smell, time, and attention on a plate.",
-    hero: "/images/blog/why-cooking-dinner-is-the-best-love-language.png",
+    hero: null,
     date: "2026-05-13",
     videoId: null,
     recipeSlugs: [],
@@ -827,7 +829,7 @@ const companions = [
     blurb:
       "Some nights the kitchen slows down enough to notice aroma, music, and pace. Presence is part of cooking well, not a luxury add-on.",
     subtitle: "Where attention turns dinner into an evening.",
-    hero: "/images/blog/the-perfect-trio-wine-jazz-cooking.jpg",
+    hero: null,
     date: "2026-05-27",
     videoId: null,
     recipeSlugs: [],
@@ -851,7 +853,7 @@ const companions = [
     blurb:
       "Motivation fades without a habitat: tools in reach, a few reliable meals, and a kitchen that does not fight you. Build the ecosystem around the fire.",
     subtitle: "The fire needs a place to live.",
-    hero: "/images/blog/the-fire-inside-ecosystem.jpg",
+    hero: null,
     date: "2026-06-17",
     videoId: null,
     recipeSlugs: [],
