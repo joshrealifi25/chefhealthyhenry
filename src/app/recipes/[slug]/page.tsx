@@ -3,7 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Clock, Users } from "lucide-react";
-import { recipes, getRecipe, relatedRecipes } from "@/lib/recipes";
+import {
+  recipes,
+  getRecipe,
+  relatedRecipes,
+  DIETARY_TAGS,
+  type Nutrition,
+} from "@/lib/recipes";
+import { NutritionPanel } from "@/components/nutrition-panel";
 import { SITE_URL } from "@/lib/site";
 import { RecipeCard } from "@/components/recipe-card";
 import { PrintButton } from "@/components/print-button";
@@ -43,17 +50,84 @@ export default async function RecipePage({
   const minutes = (t: string | null) => t?.match(/\d+/)?.[0];
   const prepMin = minutes(recipe.prepTime);
   const totalMin = minutes(recipe.totalTime);
+  // Google wants cookTime, and total is the only other time we hold, so
+  // derive it rather than leave the field out. Only when both are known and
+  // the arithmetic is sane.
+  const cookMin =
+    prepMin && totalMin && Number(totalMin) > Number(prepMin)
+      ? String(Number(totalMin) - Number(prepMin))
+      : undefined;
+
+  // Nutrition is emitted only for the values actually recorded, so a partly
+  // filled recipe still contributes what it knows without implying zeroes.
+  const n: Nutrition | undefined = recipe.nutrition;
+  const nutrition = n
+    ? {
+        "@type": "NutritionInformation",
+        ...(n.servingSize && { servingSize: n.servingSize }),
+        ...(n.calories != null && { calories: `${n.calories} calories` }),
+        ...(n.proteinGrams != null && { proteinContent: `${n.proteinGrams} g` }),
+        ...(n.fiberGrams != null && { fiberContent: `${n.fiberGrams} g` }),
+        ...(n.carbGrams != null && { carbohydrateContent: `${n.carbGrams} g` }),
+        ...(n.fatGrams != null && { fatContent: `${n.fatGrams} g` }),
+        ...(n.saturatedFatGrams != null && {
+          saturatedFatContent: `${n.saturatedFatGrams} g`,
+        }),
+        ...(n.sugarGrams != null && { sugarContent: `${n.sugarGrams} g` }),
+        ...(n.sodiumMilligrams != null && {
+          sodiumContent: `${n.sodiumMilligrams} mg`,
+        }),
+      }
+    : undefined;
+
+  // Keywords carry the terms people actually search, drawn from what the
+  // recipe already knows about itself rather than invented.
+  const keywords = [
+    ...(recipe.dietaryTags ?? []).map(
+      (t) => DIETARY_TAGS.find((d) => d.value === t)?.label.toLowerCase() ?? t
+    ),
+    ...(recipe.keyIngredients ?? []),
+    ...(recipe.proteinFlip ? ["protein flip"] : []),
+  ];
   const schema = {
     "@context": "https://schema.org",
     "@type": "Recipe",
     name: recipe.title,
     description: recipe.description || recipe.title,
     image: recipe.image ? [`${SITE_URL}${recipe.image}`] : undefined,
-    author: { "@type": "Person", name: "Chef Healthy Henry" },
+    // A named chef with a real profile is an authorship signal search
+    // engines and assistants both weigh.
+    author: {
+      "@type": "Person",
+      name: "Chef Henry Baker",
+      alternateName: "Chef Healthy Henry",
+      jobTitle: "Chef",
+      url: `${SITE_URL}/about`,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Chef Healthy Henry",
+      url: SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/images/logo.png`,
+      },
+    },
     recipeCategory: recipe.category,
+    ...(keywords.length > 0 && { keywords: keywords.join(", ") }),
+    ...(recipe.dietaryTags?.includes("vegan")
+      ? { suitableForDiet: "https://schema.org/VeganDiet" }
+      : recipe.dietaryTags?.includes("vegetarian")
+        ? { suitableForDiet: "https://schema.org/VegetarianDiet" }
+        : recipe.dietaryTags?.includes("gluten-free")
+          ? { suitableForDiet: "https://schema.org/GlutenFreeDiet" }
+          : {}),
     recipeYield: recipe.serves ? `${recipe.serves} servings` : undefined,
     prepTime: prepMin ? `PT${prepMin}M` : undefined,
+    cookTime: cookMin ? `PT${cookMin}M` : undefined,
     totalTime: totalMin ? `PT${totalMin}M` : undefined,
+    ...(recipe.datePublished && { datePublished: recipe.datePublished }),
+    ...(nutrition && { nutrition }),
     recipeIngredient: recipe.ingredients,
     recipeInstructions: recipe.directions.map((step, i) => ({
       "@type": "HowToStep",
@@ -194,6 +268,12 @@ export default async function RecipePage({
           )}
         </section>
       </div>
+
+      {recipe.nutrition && (
+        <div className="mt-10">
+          <NutritionPanel nutrition={recipe.nutrition} serves={recipe.serves} />
+        </div>
+      )}
 
       <CookbookCrossSell />
 

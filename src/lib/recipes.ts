@@ -10,6 +10,26 @@ export interface ExtraSection {
   items: string[];
 }
 
+/**
+ * Per-serving nutrition. Optional because it is filled in per recipe as
+ * verified numbers become available: an absent value is left out of the
+ * structured data rather than guessed, since search engines and readers both
+ * treat these as factual claims.
+ */
+export interface Nutrition {
+  /** Kilocalories per serving. */
+  calories?: number;
+  proteinGrams?: number;
+  fiberGrams?: number;
+  carbGrams?: number;
+  fatGrams?: number;
+  saturatedFatGrams?: number;
+  sugarGrams?: number;
+  sodiumMilligrams?: number;
+  /** Free text, e.g. "1 bowl" or "2 tostadas". */
+  servingSize?: string;
+}
+
 export interface Recipe {
   slug: string;
   title: string;
@@ -28,6 +48,11 @@ export interface Recipe {
   dietaryTags?: string[];
   youtubeId: string | null;
   keyIngredients?: string[];
+  /** Per-serving nutrition, when known. Drives the Nutrition Facts panel and
+   * the nutrition block in the recipe's structured data. */
+  nutrition?: Nutrition;
+  /** ISO date (YYYY-MM-DD) this recipe was published, when known. */
+  datePublished?: string;
   /** Overrides for the <title>/meta description search engines see, when
    * they need to differ from the on-page title/description (e.g. a CTR
    * fix). Falls back to title/description when unset. */
