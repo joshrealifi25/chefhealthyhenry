@@ -1,0 +1,22 @@
+{
+  "_comment": "Nutrition for ingredients Edamam's parser does not recognise, transcribed from the product's own Nutrition Facts panel. These are Protein Flip staples, so substituting a generic equivalent would misstate the recipe: allulose carries roughly a tenth the calories of the sugar a substitution would assume. Values are per the label's stated serving. Add a product by transcribing its panel; leave it out entirely rather than guessing, since an absent product simply blocks its recipes rather than publishing a wrong number.",
+  "products": [
+    {
+      "name": "Just Better Fiber",
+      "match": "just\\s*better",
+      "source": "Product label, Just Better Brands, non-GMO soluble corn fiber",
+      "servingGrams": 6,
+      "gramsPerUnit": { "tablespoon": 6, "teaspoon": 2, "cup": 96, "stick pack": 6 },
+      "perServing": {
+        "calories": 10,
+        "proteinGrams": 0,
+        "fiberGrams": 5,
+        "carbGrams": 6,
+        "fatGrams": 0,
+        "saturatedFatGrams": 0,
+        "sugarGrams": 0,
+        "sodiumMilligrams": 0
+      }
+    }
+  ]
+}
