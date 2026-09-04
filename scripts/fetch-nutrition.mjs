@@ -49,6 +49,19 @@ function brandedNutrition(line) {
   const product = BRANDED.find((p) => p.re.test(line));
   if (!product) return undefined;
 
+  // A recipe that states its own gram weight overrides the label's serving:
+  // Henry's scoop is not always the scoop the label was measured with.
+  const stated = line.match(/(\d+(?:\.\d+)?)\s*g(?:rams?)?\b/i);
+  if (stated) {
+    const grams = Number(stated[1]);
+    const scale = grams / product.servingGrams;
+    const out = {};
+    for (const [k, v] of Object.entries(product.perServing)) {
+      out[k] = Math.round(v * scale * 10) / 10;
+    }
+    return { product: product.name, grams, nutrients: out };
+  }
+
   const qty = amount(line);
   if (qty == null) return null;
 
@@ -115,7 +128,11 @@ function sanitise(line) {
   s = s.replace(/\s+\bor\b\s+.*$/i, "");
   // Trailing preparation notes confuse quantities more than they help.
   s = s.replace(/,\s*(?:plus more.*|divided|optional)$/i, "");
-  return s.trim() || null;
+  s = s.trim();
+  // Garnishes carry no quantity ("Lime wedges", "Fresh cilantro"). Sending
+  // them makes the parser guess, and a guess it dislikes fails the recipe.
+  if (s && !/\d|[\u00BC-\u00BE\u2150-\u215E]/.test(s)) return null;
+  return s || null;
 }
 
 /** "6 (2 tostadas per serving)" -> 6 */
@@ -150,7 +167,11 @@ async function analyse(title, ingr) {
 const recipes = JSON.parse(readFileSync("src/data/recipes.json", "utf8"));
 const limitArg = process.argv.indexOf("--limit");
 const limit = limitArg > -1 ? Number(process.argv[limitArg + 1]) : Infinity;
-const targets = recipes.slice(0, limit);
+const slugArg = process.argv.indexOf("--slugs");
+const onlySlugs = slugArg > -1 ? new Set(process.argv[slugArg + 1].split(",")) : null;
+const targets = onlySlugs
+  ? recipes.filter((r) => onlySlugs.has(r.slug))
+  : recipes.slice(0, limit);
 
 const out = [];
 for (const [i, r] of targets.entries()) {
@@ -214,7 +235,13 @@ for (const [i, r] of targets.entries()) {
         row.perServing = per;
         // Edamam's own diet/health read, useful as a cross-check on the
         // dietary tags the site already assigns.
-        row.edamamHealthLabels = (data.healthLabels ?? []).slice(0, 12);
+        // Allergen labels are only trustworthy when Edamam saw every line.
+        // A branded product is accounted for from its own label and withheld
+        // from the request, so Edamam would call this banana bread DAIRY_FREE
+        // and SOY_FREE when the protein powder is whey and soy lecithin.
+        row.edamamHealthLabels = branded.length
+          ? undefined
+          : (data.healthLabels ?? []).slice(0, 12);
         if (!n) row.warning = "servings not parsed; totals are for whole recipe";
       }
     } catch (err) {
@@ -227,6 +254,14 @@ for (const [i, r] of targets.entries()) {
 }
 
 mkdirSync("scripts/data", { recursive: true });
-writeFileSync("scripts/data/nutrition-proposals.json", JSON.stringify(out, null, 1));
+let merged = out;
+if (onlySlugs) {
+  const prev = JSON.parse(
+    readFileSync("scripts/data/nutrition-proposals.json", "utf8")
+  );
+  const bySlug = new Map(out.map((r) => [r.slug, r]));
+  merged = prev.map((r) => bySlug.get(r.slug) ?? r);
+}
+writeFileSync("scripts/data/nutrition-proposals.json", JSON.stringify(merged, null, 1));
 const ok = out.filter((r) => r.perServing).length;
 console.log(`\n${ok}/${out.length} analysed, ${out.length - ok} need attention`);
