@@ -61,3 +61,6 @@ Photos/
 # Subscriber data (PII, never commit)
 Subscriber List.csv
 *.subscribers.csv
+
+# USDA match proposals: regenerate with scripts/match-usda.mjs
+scripts/data/
