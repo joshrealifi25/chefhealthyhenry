@@ -178,7 +178,6 @@
     "blurb": "Not every shortcut costs you something. Here's how to tell which convenience products earn their place and which ones quietly flatten a dish.",
     "date": "2026-08-01",
     "hero": null,
-    "subtitle": "Placeholder lesson. Chef Henry's final text replaces this before launch.",
     "fromFreeContent": [
       {
         "label": "What Is a Protein-First Plate?",
@@ -197,17 +196,171 @@
     },
     "blocks": [
       {
-        "type": "paragraph",
-        "html": "Second placeholder lesson, used to verify multi-category tagging, the many-to-many relationship with Kitchen Guides, and the optional companion offer at the end of a lesson."
-      },
-      {
         "type": "heading",
         "level": 2,
         "text": "The application question"
       },
       {
         "type": "paragraph",
-        "html": "Which convenience products save real time without costing the dish anything a member would notice."
+        "html": "You are at the grocery store and you are looking at two options: a jar of roasted red peppers or a bag of raw red peppers. One takes thirty seconds to use. The other takes twenty minutes. Is the shortcut worth it, or are you giving something up?"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "The culinary reasoning"
+      },
+      {
+        "type": "paragraph",
+        "html": "Every convenience product trades something for something else. The question is whether what you give up matters in the dish you are making."
+      },
+      {
+        "type": "paragraph",
+        "html": "Some convenience products trade almost nothing. Canned San Marzano tomatoes are processed at peak ripeness, and the canning concentrates their flavor in ways that fresh tomatoes cannot match for a cooked sauce. Using them is not a shortcut. It is the right decision for that dish."
+      },
+      {
+        "type": "paragraph",
+        "html": "Other products trade something real. Pre-minced garlic in a jar has already started to oxidize. The allicin, which is responsible for garlic's sharp, aromatic bite, breaks down the moment the clove is cut. What you get is a muted version of what garlic is supposed to do in the dish. For a long-cooked braise where garlic is background, this may not matter. For a dish built around garlic, it does."
+      },
+      {
+        "type": "paragraph",
+        "html": "The distinction is not between fresh and processed. It is between what the product can still do and what the dish needs it to do."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What convenience products are actually selling"
+      },
+      {
+        "type": "paragraph",
+        "html": "Convenience products sell time. But they also sell consistency, shelf stability, and access to ingredients that would otherwise be unavailable or impractical."
+      },
+      {
+        "type": "paragraph",
+        "html": "A rotisserie chicken is already seasoned, already cooked, and already rested. For a weeknight tinga, a grain bowl, or a quick soup, it compresses forty minutes of active cooking into none. The trade is that you gave up control over the seasoning profile. For most home cooks, on most weeknights, that trade is worth making."
+      },
+      {
+        "type": "paragraph",
+        "html": "Canned beans have been cooked low and slow in their own liquid, which is why the liquid itself, what some cooks call aquafaba, has body and flavor. Dried beans that you cook yourself give you full control over texture and seasoning. Canned beans give you a usable product in two minutes. Which one you choose depends on how much the texture matters to the dish and how much time you have."
+      },
+      {
+        "type": "paragraph",
+        "html": "Neither answer is wrong. The wrong answer is not asking the question."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "The variables that matter"
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>What the ingredient is supposed to do.</strong> A convenience product earns its place when it can still do the job. Roasted red peppers from a jar add sweetness, body, and color to a sauce. They cannot add the caramelized, slightly charred character of a pepper you roast yourself. If that character is what the dish is asking for, the jar is the wrong choice. If the dish just needs the pepper's sweetness and body, the jar is fine."
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>Where in the cook it lands.</strong> Convenience products used early, when they will cook for a long time and absorb surrounding flavors, often perform just as well as their fresh equivalents. Products added late, when they will be tasted directly, are where the quality difference shows up most. Pre-made stock that simmers for an hour in a braise is almost undetectable. The same stock used as the base of a quick pan sauce is the whole flavor of the dish."
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>What else is in the dish.</strong> A convenience product surrounded by bold aromatics, acid, and spice has less to carry. One sitting alone in a simple preparation has everything to carry. The simpler the dish, the more the quality of each ingredient matters."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Applying it across several products"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Rotisserie chicken"
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>Worth it when:</strong> the dish has strong secondary flavors (tinga sauce, soup broth, a heavily spiced grain bowl) that will carry the seasoning and the cooking is already done."
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>Think twice when:</strong> the chicken is the centerpiece of a simple preparation where the seasoning profile and texture of the skin matter to the finished dish."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Canned whole or crushed tomatoes"
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>Worth it when:</strong> the tomatoes will cook down into a sauce. San Marzano or high-quality domestic whole tomatoes are often better than fresh for cooked applications, not just more convenient."
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>Think twice when:</strong> the tomato is eaten raw or barely cooked, where freshness, acidity, and texture are the whole point."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Store-bought stock"
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>Worth it when:</strong> the stock is one of several liquid components in a long-cooked dish. It provides the base without requiring hours of preparation."
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>Think twice when:</strong> the stock is the primary flavor of the dish, as in a French onion soup, a risotto, or a consomme. In those cases, the stock is the dish."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Pre-minced garlic"
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>Worth it when:</strong> garlic is a background flavor in a long cook, or when access to fresh garlic is genuinely limited."
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>Think twice when:</strong> garlic is a primary flavor, especially in dishes that bloom garlic in fat at the start of the cook. The difference between fresh and jarred garlic is most pronounced in that moment."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Frozen vegetables"
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>Worth it when:</strong> the vegetable will be cooked into a dish (soups, stews, stir-fries, grain bowls) and frozen at peak ripeness. Frozen peas, corn, edamame, and spinach are often nutritionally equivalent to fresh, and sometimes better than out-of-season fresh."
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>Think twice when:</strong> the vegetable needs to hold texture, be served raw, or carry the visual appeal of the dish. Frozen vegetables release water when cooked, which can make sauteed preparations wet instead of caramelized."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "The rule"
+      },
+      {
+        "type": "paragraph",
+        "html": "A convenience product earns its place when the time it saves is real and the quality it costs is undetectable in the finished dish."
+      },
+      {
+        "type": "paragraph",
+        "html": "Ask two questions before reaching for the shortcut: what is this ingredient supposed to do, and will this product still do it."
+      },
+      {
+        "type": "quote",
+        "text": "The goal is not to avoid convenience. It is to know what each convenience is actually costing you."
+      },
+      {
+        "type": "paragraph",
+        "html": "You do not have to make stock from scratch to cook a good meal. You do not have to roast your own peppers, cook dried beans from scratch every time, or avoid the rotisserie chicken when a long week calls for it."
+      },
+      {
+        "type": "paragraph",
+        "html": "A cook who opens a can of San Marzano tomatoes, blooms fresh garlic in olive oil, and finishes the sauce with good basil is cooking with intention. A cook who reaches for every convenience product without thinking is just assembling. The difference is not the ingredients. It is the awareness."
+      },
+      {
+        "type": "paragraph",
+        "html": "Convenience is a tool. What matters is knowing why you are reaching for it, what it will still do, and what it will not. Once you know that, the shortcut stops being a compromise and becomes a decision."
       }
     ]
   }
