@@ -242,7 +242,11 @@
   "hero": null,
   "date": "2026-08-26",
   "videoId": null,
-  "recipeSlugs": [],
+  "recipeSlugs": [
+   "moroccan-lamb-stew-kfetv",
+   "korean-inspired-gochujang-glazed-salmon-with-garlic-spinach",
+   "authentic-tortilla-soup-with-pasilla-chiles"
+  ],
   "productLinks": [],
   "relatedPostSlug": "around-the-world-in-a-spice-rack",
   "blocks": [
@@ -285,7 +289,11 @@
   "hero": null,
   "date": "2026-08-25",
   "videoId": null,
-  "recipeSlugs": [],
+  "recipeSlugs": [
+   "classic-salsa-verde",
+   "authentic-chiles-rellenos-g1tu9",
+   "chili-colorado"
+  ],
   "productLinks": [],
   "relatedPostSlug": "oregano-three-completely-different-flavors",
   "blocks": [
@@ -318,7 +326,11 @@
   "hero": null,
   "date": "2026-08-24",
   "videoId": null,
-  "recipeSlugs": [],
+  "recipeSlugs": [
+   "chili-colorado",
+   "moroccan-lamb-stew-kfetv",
+   "crispy-air-fry-falafel-with-fresh-herbs"
+  ],
   "productLinks": [],
   "relatedPostSlug": "cumin-the-flavor-that-grounds-a-dish",
   "blocks": [
@@ -357,7 +369,11 @@
   "hero": null,
   "date": "2026-08-23",
   "videoId": null,
-  "recipeSlugs": [],
+  "recipeSlugs": [
+   "mediterranean-sweet-potato-salad-with-basil-and-pine-nuts",
+   "caponata-sicilian-eggplant-with-bold-flavors-made-simple-oofnk",
+   "healthy-summer-plate-tofu-veggies-pesto-unjury-flavorless-protein"
+  ],
   "productLinks": [],
   "relatedPostSlug": "basil-the-herb-that-brings-a-dish-to-life",
   "blocks": [
@@ -386,7 +402,11 @@
   "hero": null,
   "date": "2026-08-22",
   "videoId": null,
-  "recipeSlugs": [],
+  "recipeSlugs": [
+   "hungarian-chicken-paprika",
+   "blackened-salmon-with-caramelized-onion-and-sweet-potato-salad",
+   "boiled-egg-hummus-on-keto-toast"
+  ],
   "productLinks": [],
   "relatedPostSlug": "paprika-three-completely-different-directions",
   "blocks": [
@@ -420,7 +440,11 @@
   "hero": null,
   "date": "2026-08-21",
   "videoId": null,
-  "recipeSlugs": [],
+  "recipeSlugs": [
+   "moroccan-lamb-stew-kfetv",
+   "harira-moroccan-lentil-and-chickpea-soup-ac4m4",
+   "sweet-potato-cinnamon-rolls-rjh1v"
+  ],
   "productLinks": [],
   "relatedPostSlug": "cinnamon-familiar-flavor-unexpected-role",
   "blocks": [
@@ -450,7 +474,11 @@
   "hero": null,
   "date": "2026-08-20",
   "videoId": null,
-  "recipeSlugs": [],
+  "recipeSlugs": [
+   "authentic-tortilla-soup-with-pasilla-chiles",
+   "chili-colorado",
+   "royal-tempeh-sweet-potato-tacos-with-chili-lime-yogurt-protein-flip-tm-weeknight-meal"
+  ],
   "productLinks": [],
   "relatedPostSlug": "chili-peppers-and-powders-same-ingredient-different-worlds",
   "blocks": [
@@ -479,7 +507,11 @@
   "hero": null,
   "date": "2026-08-19",
   "videoId": null,
-  "recipeSlugs": [],
+  "recipeSlugs": [
+   "harira-moroccan-lentil-and-chickpea-soup-ac4m4",
+   "korean-inspired-gochujang-glazed-salmon-with-garlic-spinach",
+   "chicken-tika-masala"
+  ],
   "productLinks": [],
   "relatedPostSlug": "spices-bringing-it-all-together-flavor-to-feeling",
   "blocks": [
@@ -509,7 +541,11 @@
   "hero": null,
   "date": "2026-08-18",
   "videoId": null,
-  "recipeSlugs": [],
+  "recipeSlugs": [
+   "air-fryer-garlic-and-herb-baby-potatoes",
+   "grillicious-garlic-shrimp-xprxy",
+   "healthy-20chicken-skewers-with-creamy-garlic-yogurt-sauce-easy-high-protein-dinner"
+  ],
   "productLinks": [],
   "relatedPostSlug": "from-bitter-to-beautiful-cooking-garlic",
   "blocks": [
@@ -543,7 +579,10 @@
   "hero": null,
   "date": "2026-08-18",
   "videoId": null,
-  "recipeSlugs": [],
+  "recipeSlugs": [
+   "bourbon-black-garlic-salmon-with-roasted-sweet-potato-fries-lemon-parmesan-broccoli",
+   "chicken-tinga-tostadas"
+  ],
   "productLinks": [],
   "relatedPostSlug": "black-garlic-ingredient-discovery",
   "blocks": [
@@ -572,7 +611,11 @@
   "hero": null,
   "date": "2026-06-08",
   "videoId": null,
-  "recipeSlugs": [],
+  "recipeSlugs": [
+   "chicken-fajita-bowl-quick-and-flavorful-dinner-idea",
+   "chicken-tinga-tostadas",
+   "blackened-salmon-with-caramelized-onion-and-sweet-potato-salad"
+  ],
   "productLinks": [],
   "relatedPostSlug": "why-brown-tastes-better-maillard-caramelization",
   "blocks": [
@@ -606,7 +649,11 @@
   "hero": null,
   "date": "2026-05-11",
   "videoId": null,
-  "recipeSlugs": [],
+  "recipeSlugs": [
+   "tuna-chickpea-salad",
+   "boiled-egg-hummus-on-keto-toast",
+   "simple-frittata"
+  ],
   "productLinks": [],
   "relatedPostSlug": "clean-cooking-real-shortcuts-vs-lazy",
   "blocks": [
@@ -635,8 +682,17 @@
   "hero": null,
   "date": "2026-04-28",
   "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
+  "recipeSlugs": [
+   "simple-frittata",
+   "tuna-chickpea-salad",
+   "chicken-fajita-bowl-quick-and-flavorful-dinner-idea"
+  ],
+  "productLinks": [
+   {
+    "name": "The Protein Flip™ Starter Guide",
+    "url": "https://buy.stripe.com/00w5kEfwneb1e7E0VH4Vy07"
+   }
+  ],
   "relatedPostSlug": "i-dont-cook-because---lets-talk-about-the-real-reasons-and-why-they-dont-have-to-stop-you",
   "blocks": [
    {
@@ -699,7 +755,11 @@
   "hero": null,
   "date": "2026-05-14",
   "videoId": null,
-  "recipeSlugs": [],
+  "recipeSlugs": [
+   "marry-me-chickpea-soup-with-kale",
+   "chicken-tinga-tostadas",
+   "turkey-lentil-meatball-salad-greek-yogurt"
+  ],
   "productLinks": [],
   "relatedPostSlug": "what-is-the-protein-flip-tm-a-chefs-return-to-balance",
   "blocks": [
@@ -738,8 +798,17 @@
   "hero": null,
   "date": "2026-05-13",
   "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
+  "recipeSlugs": [
+   "smoky-autumn-vegetable-romesco-soup-the-protein-flip-way",
+   "protein-flip-huevos-rancheros-with-pinto-beans-greek-yogurt-pepitas",
+   "turkey-lentil-meatball-salad-greek-yogurt"
+  ],
+  "productLinks": [
+   {
+    "name": "The Protein Flip™ Method and Cookbook, Deluxe Edition",
+    "url": "https://buy.stripe.com/aFa6oI2JB4Ar3t0dIt4Vy00"
+   }
+  ],
   "relatedPostSlug": "the-science-and-the-soul-behind-the-protein-flip",
   "blocks": [
    {
@@ -767,8 +836,17 @@
   "hero": null,
   "date": "2026-06-26",
   "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
+  "recipeSlugs": [
+   "marry-me-chickpea-soup-with-kale",
+   "italian-soup-with-red-potato",
+   "chicken-tinga-tostadas"
+  ],
+  "productLinks": [
+   {
+    "name": "The Protein Flip™ Method and Cookbook, Deluxe Edition",
+    "url": "https://buy.stripe.com/aFa6oI2JB4Ar3t0dIt4Vy00"
+   }
+  ],
   "relatedPostSlug": "what-comfort-food-actually-is",
   "blocks": [
    {
@@ -797,8 +875,17 @@
   "hero": null,
   "date": "2026-06-16",
   "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
+  "recipeSlugs": [
+   "tuna-chickpea-salad",
+   "marry-me-chickpea-soup-with-kale",
+   "turkey-lentil-meatball-salad-greek-yogurt"
+  ],
+  "productLinks": [
+   {
+    "name": "GLP-1 & Bariatric Success Guide",
+    "url": "https://buy.stripe.com/14A6oI83VaYPbZw33P4Vy02"
+   }
+  ],
   "relatedPostSlug": "how-to-stay-full-longer-on-a-diet-satiety-guide",
   "blocks": [
    {
@@ -833,8 +920,17 @@
   "hero": null,
   "date": "2026-06-02",
   "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
+  "recipeSlugs": [
+   "beet-chickpea-seed-crackers",
+   "protein-flip-blueberry-peach-quinoa-bake",
+   "tuna-chickpea-salad"
+  ],
+  "productLinks": [
+   {
+    "name": "GLP-1 & Bariatric Success Guide",
+    "url": "https://buy.stripe.com/14A6oI83VaYPbZw33P4Vy02"
+   }
+  ],
   "relatedPostSlug": "high-protein-high-fiber",
   "blocks": [
    {
@@ -862,8 +958,17 @@
   "hero": null,
   "date": "2026-05-06",
   "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
+  "recipeSlugs": [
+   "italian-soup-with-red-potato",
+   "protein-flip-huevos-rancheros-with-pinto-beans-greek-yogurt-pepitas",
+   "chicken-fajita-bowl-quick-and-flavorful-dinner-idea"
+  ],
+  "productLinks": [
+   {
+    "name": "The Protein Flip™ Starter Guide",
+    "url": "https://buy.stripe.com/00w5kEfwneb1e7E0VH4Vy07"
+   }
+  ],
   "relatedPostSlug": "from-portion-control-to-portion-smart",
   "blocks": [
    {
@@ -892,8 +997,17 @@
   "hero": null,
   "date": "2026-06-10",
   "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
+  "recipeSlugs": [
+   "chicken-fajita-bowl-quick-and-flavorful-dinner-idea",
+   "tuna-chickpea-salad",
+   "smoky-autumn-vegetable-romesco-soup-the-protein-flip-way"
+  ],
+  "productLinks": [
+   {
+    "name": "The Protein Flip™ Starter Guide",
+    "url": "https://buy.stripe.com/00w5kEfwneb1e7E0VH4Vy07"
+   }
+  ],
   "relatedPostSlug": "the-structure-that-sets-you-free",
   "blocks": [
    {
@@ -921,8 +1035,17 @@
   "hero": null,
   "date": "2026-06-03",
   "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
+  "recipeSlugs": [
+   "protein-flip-huevos-rancheros-with-pinto-beans-greek-yogurt-pepitas",
+   "italian-soup-with-red-potato",
+   "chicken-tinga-tostadas"
+  ],
+  "productLinks": [
+   {
+    "name": "The Protein Flip™ Method and Cookbook, Deluxe Edition",
+    "url": "https://buy.stripe.com/aFa6oI2JB4Ar3t0dIt4Vy00"
+   }
+  ],
   "relatedPostSlug": "change-what-you-can",
   "blocks": [
    {
@@ -980,7 +1103,11 @@
   "hero": null,
   "date": "2026-06-04",
   "videoId": null,
-  "recipeSlugs": [],
+  "recipeSlugs": [
+   "italian-soup-with-red-potato",
+   "marry-me-chickpea-soup-with-kale",
+   "smoky-autumn-vegetable-romesco-soup-the-protein-flip-way"
+  ],
   "productLinks": [],
   "relatedPostSlug": "table-talk-on-comfort-cooking-and-why-it-still-matters",
   "blocks": [
@@ -1010,7 +1137,12 @@
   "date": "2026-05-13",
   "videoId": null,
   "recipeSlugs": [],
-  "productLinks": [],
+  "productLinks": [
+   {
+    "name": "The Family Flip™",
+    "url": "https://buy.stripe.com/cNi7sM3NFeb1e7E47T4Vy05"
+   }
+  ],
   "relatedPostSlug": "my-daughter-the-kitchen-and-the-quiet-way-kids-learn-to-cook",
   "blocks": [
    {
