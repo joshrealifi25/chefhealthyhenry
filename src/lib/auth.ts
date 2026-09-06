@@ -96,6 +96,30 @@ export async function clearSession(): Promise<void> {
   store.delete(SESSION_COOKIE);
 }
 
+/** Where a member lands after signing in with no saved destination. */
+export const DEFAULT_MEMBER_LANDING = "/members";
+
+/**
+ * A post-sign-in destination is honoured only when it is a path on this site.
+ * An absolute URL, a protocol-relative "//host", or anything with whitespace
+ * or a backslash is discarded, so a doctored sign-in link cannot bounce a
+ * member onto another domain.
+ */
+export function safeNextPath(value: string | null | undefined): string | null {
+  if (typeof value !== "string") return null;
+  if (!value.startsWith("/") || value.startsWith("//")) return null;
+  if (value.length > 512 || /[\\\s]/.test(value)) return null;
+  return value;
+}
+
+/** The sign-in URL for a protected page, remembering where to return. */
+export function loginPath(next: string): string {
+  const safe = safeNextPath(next);
+  return safe
+    ? `/members/login?next=${encodeURIComponent(safe)}`
+    : "/members/login";
+}
+
 export interface Member {
   id: string;
   email: string;

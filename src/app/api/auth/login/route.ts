@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
-import { createLoginToken } from "@/lib/auth";
+import { createLoginToken, safeNextPath } from "@/lib/auth";
 
 export const runtime = "nodejs";
 
@@ -15,9 +15,11 @@ export async function POST(req: NextRequest) {
   }
 
   let email: string;
+  let next: string | null = null;
   try {
-    const body = (await req.json()) as { email?: unknown };
+    const body = (await req.json()) as { email?: unknown; next?: unknown };
     email = typeof body.email === "string" ? body.email.trim() : "";
+    next = safeNextPath(typeof body.next === "string" ? body.next : null);
   } catch {
     email = "";
   }
@@ -32,7 +34,12 @@ export async function POST(req: NextRequest) {
     process.env.VERCEL_ENV === "production"
       ? (process.env.NEXT_PUBLIC_SITE_URL ?? req.nextUrl.origin)
       : req.nextUrl.origin;
-  const url = `${baseUrl}/api/auth/callback?token=${createLoginToken(email)}`;
+  // The destination rides along so the link returns the member to the page
+  // that sent them here, not just the dashboard.
+  const nextParam = next ? `&next=${encodeURIComponent(next)}` : "";
+  const url = `${baseUrl}/api/auth/callback?token=${createLoginToken(
+    email
+  )}${nextParam}`;
 
   const resend = new Resend(resendKey);
   const { error } = await resend.emails.send({

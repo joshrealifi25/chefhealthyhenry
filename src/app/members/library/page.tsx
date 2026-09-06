@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { getMember } from "@/lib/auth";
+import { getMember, loginPath } from "@/lib/auth";
 import {
   LIBRARY_CATEGORIES,
   LATEST_SLUG,
@@ -23,11 +23,19 @@ export default async function LibraryPage({
 }: {
   searchParams: Promise<{ category?: string }>;
 }) {
+  const { category } = await searchParams;
   const member = await getMember();
-  if (!member) redirect("/members/login");
+  if (!member) {
+    redirect(
+      loginPath(
+        category
+          ? `/members/library?category=${encodeURIComponent(category)}`
+          : "/members/library"
+      )
+    );
+  }
   if (!member.tier) redirect("/membership");
 
-  const { category } = await searchParams;
   const active =
     category && categoryFromSlug(category) ? category : LATEST_SLUG;
   const items = libraryItems(active);

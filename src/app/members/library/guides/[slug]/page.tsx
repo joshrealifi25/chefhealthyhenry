@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-import { getMember } from "@/lib/auth";
+import { getMember, loginPath } from "@/lib/auth";
 import { getGuide, lessonsForGuide, GUIDES_SLUG } from "@/lib/lessons";
 import { ContentBlocks } from "@/components/content-blocks";
 import { LibraryBrowseLinks } from "@/components/library-browse-links";
@@ -26,11 +26,11 @@ export default async function GuidePage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  const { slug } = await params;
   const member = await getMember();
-  if (!member) redirect("/members/login");
+  if (!member) redirect(loginPath(`/members/library/guides/${slug}`));
   if (!member.tier) redirect("/membership");
 
-  const { slug } = await params;
   const guide = getGuide(slug);
   if (!guide) notFound();
 
