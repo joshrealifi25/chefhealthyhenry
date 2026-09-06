@@ -2,7 +2,10 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { X } from "lucide-react";
-import { NewsletterForm } from "@/components/newsletter-form";
+import {
+  NewsletterForm,
+  SUBSCRIBED_STORAGE_KEY,
+} from "@/components/newsletter-form";
 
 const STORAGE_KEY = "chh-exit-popup-shown";
 
@@ -13,10 +16,12 @@ export function ExitIntentPopup() {
   const dismiss = useCallback(() => setOpen(false), []);
 
   useEffect(() => {
-    // Desktop exit-intent only: skip touch devices, show once per visitor.
+    // Desktop exit-intent only: skip touch devices, show once per visitor, and
+    // never ask someone who already signed up somewhere else on the site.
     if (window.matchMedia("(pointer: coarse)").matches) return;
     try {
       if (localStorage.getItem(STORAGE_KEY)) return;
+      if (localStorage.getItem(SUBSCRIBED_STORAGE_KEY)) return;
     } catch {
       return;
     }

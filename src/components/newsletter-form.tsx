@@ -4,6 +4,10 @@ import { useId, useState } from "react";
 
 type Status = "idle" | "loading" | "done" | "error";
 
+// Set once someone joins the list, so the exit-intent popup can skip them on
+// later visits instead of asking for an address they already gave us.
+export const SUBSCRIBED_STORAGE_KEY = "chh-subscribed";
+
 export function NewsletterForm({ submitLabel = "Get the free guide" }: { submitLabel?: string }) {
   const [status, setStatus] = useState<Status>("idle");
   const [email, setEmail] = useState("");
@@ -30,6 +34,13 @@ export function NewsletterForm({ submitLabel = "Get the free guide" }: { submitL
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email }),
           });
+          if (res.ok) {
+            try {
+              localStorage.setItem(SUBSCRIBED_STORAGE_KEY, "1");
+            } catch {
+              /* private mode */
+            }
+          }
           setStatus(res.ok ? "done" : "error");
         } catch {
           setStatus("error");
