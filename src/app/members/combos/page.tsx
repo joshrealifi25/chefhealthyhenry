@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
-import { getMember } from "@/lib/auth";
+import { getMember, loginPath } from "@/lib/auth";
 import { recipes, dietaryTagsBySlug } from "@/lib/recipes";
 import {
   selectableIngredients,
@@ -26,7 +26,7 @@ export default async function CombosPage({
   searchParams: Promise<{ list?: string }>;
 }) {
   const member = await getMember();
-  if (!member) redirect("/members/login");
+  if (!member) redirect(loginPath("/members/combos"));
   if (!member.tier) redirect("/membership");
 
   const saved = await db()

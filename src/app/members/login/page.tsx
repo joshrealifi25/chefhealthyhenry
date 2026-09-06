@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
-import { getMember } from "@/lib/auth";
+import {
+  getMember,
+  safeNextPath,
+  DEFAULT_MEMBER_LANDING,
+} from "@/lib/auth";
 import { LoginForm } from "@/components/login-form";
 
 export const metadata: Metadata = {
@@ -14,12 +18,14 @@ export const dynamic = "force-dynamic";
 export default async function LoginPage({
   searchParams,
 }: {
-  searchParams: Promise<{ error?: string }>;
+  searchParams: Promise<{ error?: string; next?: string }>;
 }) {
-  const member = await getMember();
-  if (member) redirect("/members");
+  const { error, next } = await searchParams;
+  const destination = safeNextPath(next);
 
-  const { error } = await searchParams;
+  const member = await getMember();
+  if (member) redirect(destination ?? DEFAULT_MEMBER_LANDING);
+
 
   return (
     <div className="mx-auto max-w-md px-4 py-24 sm:px-6">
@@ -37,7 +43,7 @@ export default async function LoginPage({
         </p>
       )}
       <div className="mt-8">
-        <LoginForm />
+        <LoginForm next={destination} />
       </div>
     </div>
   );
