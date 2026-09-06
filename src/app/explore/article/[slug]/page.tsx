@@ -13,6 +13,7 @@ import {
 } from "@/lib/explore";
 import { getPost } from "@/lib/posts";
 import { ContentBlocks } from "@/components/content-blocks";
+import { NewsletterForm } from "@/components/newsletter-form";
 
 export function generateStaticParams() {
   return exploreCards.filter(hasArticle).map((c) => ({ slug: c.slug }));
@@ -156,6 +157,25 @@ export default async function ExploreArticlePage({
           Read the full {relatedPost.category} post <ArrowUpRight className="size-3.5" />
         </Link>
       )}
+
+      {/* The Member Library is built but not yet linked publicly, so this
+          collects interest rather than sending readers to checkout. */}
+      <div className="mt-12 rounded-2xl border border-border bg-accent/40 p-8">
+        <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+          Member Library
+        </p>
+        <h2 className="mt-2 font-heading text-2xl font-semibold">
+          The Member Library is coming.
+        </h2>
+        <p className="mt-2 text-muted-foreground">
+          Sign up now to get notified when it launches and to lock in early
+          bird pricing. You will also get the free Grocery Store Test right
+          away.
+        </p>
+        <div className="mt-5">
+          <NewsletterForm />
+        </div>
+      </div>
 
       {card.cta && (
         <div className="mt-12 rounded-3xl bg-primary px-8 py-12 text-center text-primary-foreground">
