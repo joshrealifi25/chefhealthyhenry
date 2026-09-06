@@ -168,9 +168,10 @@ export default async function ExploreArticlePage({
           The Member Library is coming.
         </h2>
         <p className="mt-2 text-muted-foreground">
-          Sign up now to get notified when it launches and to lock in early
-          bird pricing. You will also get the free Grocery Store Test right
-          away.
+          The first 100 people on the list get Protein Flip™ Kitchen at $10 a
+          month and Protein Flip™ Community at $25 for their first year. Sign
+          up to claim a spot. You will also get the free Grocery Store Test
+          right away.
         </p>
         <div className="mt-5">
           <NewsletterForm />
