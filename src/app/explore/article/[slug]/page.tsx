@@ -173,8 +173,8 @@ export default async function ExploreArticlePage({
           up to claim a spot. You will also get the free Grocery Store Test
           right away.
         </p>
-        <div className="mt-5">
-          <NewsletterForm />
+              <div className="mt-5">
+                <NewsletterForm submitLabel="Claim my spot" />
         </div>
       </div>
 
