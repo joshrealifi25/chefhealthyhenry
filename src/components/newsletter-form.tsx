@@ -1,12 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useState } from "react";
 
 type Status = "idle" | "loading" | "done" | "error";
 
-export function NewsletterForm() {
+export function NewsletterForm({ submitLabel = "Get the free guide" }: { submitLabel?: string }) {
   const [status, setStatus] = useState<Status>("idle");
   const [email, setEmail] = useState("");
+  // Several pages render this form alongside the one in the footer, so the
+  // field needs an id unique to each instance for the label to point at it.
+  const fieldId = useId();
 
   if (status === "done") {
     return (
@@ -34,11 +37,11 @@ export function NewsletterForm() {
       }}
     >
       <div className="flex gap-2">
-        <label htmlFor="newsletter-email" className="sr-only">
+        <label htmlFor={fieldId} className="sr-only">
           Email address
         </label>
         <input
-          id="newsletter-email"
+          id={fieldId}
           type="email"
           required
           value={email}
@@ -51,7 +54,7 @@ export function NewsletterForm() {
           disabled={status === "loading"}
           className="shrink-0 rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-60"
         >
-          {status === "loading" ? "Sending…" : "Get the free guide"}
+          {status === "loading" ? "Sending…" : submitLabel}
         </button>
       </div>
       {status === "error" && (
