@@ -50,11 +50,24 @@ export interface ExploreCard {
   blocks?: ContentBlock[];
   /** Optional closing CTA rendered at the end of the article page. */
   cta?: ExploreCta;
+  /** Pins the card to the top of /explore and its collection page, ahead of
+   * date order. For orientation cards, not a substitute for a real date. */
+  pinned?: boolean;
+  /** Lower numbers appear first among pinned cards. Unset pins sort after
+   * numbered ones, then by date. */
+  pinOrder?: number;
 }
 
-export const exploreCards = [...(exploreData as ExploreCard[])].sort(
-  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-);
+export const exploreCards = [...(exploreData as ExploreCard[])].sort((a, b) => {
+  const pinDiff = Number(b.pinned ?? false) - Number(a.pinned ?? false);
+  if (pinDiff !== 0) return pinDiff;
+  if (a.pinned && b.pinned) {
+    const orderA = a.pinOrder ?? Number.MAX_SAFE_INTEGER;
+    const orderB = b.pinOrder ?? Number.MAX_SAFE_INTEGER;
+    if (orderA !== orderB) return orderA - orderB;
+  }
+  return new Date(b.date).getTime() - new Date(a.date).getTime();
+});
 
 export function getExploreCard(slug: string): ExploreCard | undefined {
   return exploreCards.find((c) => c.slug === slug);
