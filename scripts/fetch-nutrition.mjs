@@ -103,7 +103,14 @@ function isHeader(line) {
  * Seasonings "to taste" carry no measurable quantity and contribute nothing
  * to the totals, so losing them costs nothing.
  */
-function sanitise(line) {
+/**
+ * Ingredient names the parser does not carry under the word Henry uses.
+ * Only exact, factual synonyms belong here: nopal is the edible cactus
+ * paddle his other recipes already name in full.
+ */
+const SYNONYMS = [[/\bcactus\b/i, "nopal cactus"]];
+
+function sanitise(line, aggressive = false) {
   let s = line.replace(/™|®/g, "").trim();
 
   // Some recipes carry a step in the ingredients array. A cooking verb plus
@@ -120,12 +127,19 @@ function sanitise(line) {
   // Parentheses hold notes and alternates, never the quantity that counts.
   s = s.replace(/\([^)]*\)/g, " ");
 
-  if (/to taste|^a pinch|^pinch of|as needed|for (serving|garnish)/i.test(s)) {
+  // "Yields about 3/4 cup" is a note about the recipe, not an ingredient.
+  if (/^(yields?|makes)\b/i.test(s)) return null;
+  if (/to taste|^a pinch|^pinch of|(?:as|if) needed|for (serving|garnish)/i.test(s)) {
     return null;
   }
-  // "2 tablespoons water or reserved bean liquid" -> keep the first option,
-  // which is what the recipe leads with.
-  s = s.replace(/\s+\bor\b\s+.*$/i, "");
+  for (const [re, to] of SYNONYMS) {
+    if (re.test(s) && !new RegExp(to, "i").test(s)) s = s.replace(re, to);
+  }
+  // Edamam reads "brown or green lentils" correctly on its own, and cutting
+  // at "or" leaves "1 cup brown", which it rejects. Only collapse to the
+  // first option on a retry, for lines like "water or reserved bean liquid"
+  // where the alternative is a whole phrase rather than a single adjective.
+  if (aggressive) s = s.replace(/\s+\bor\b\s+.*$/i, "");
   // Trailing preparation notes confuse quantities more than they help.
   s = s.replace(/,\s*(?:plus more.*|divided|optional)$/i, "");
   s = s.trim();
@@ -178,21 +192,53 @@ for (const [i, r] of targets.entries()) {
   // Pull out products the parser cannot read and account for them from their
   // own labels, so their recipes are not lost to a rejected request.
   const usable = r.ingredients.filter((l) => !isHeader(l));
+  /** The recipe split at its own section headers, for composite recipes. */
+  const sectionsOf = (aggressive) => {
+    const secs = [];
+    let cur = { name: null, lines: [] };
+    for (const l of r.ingredients) {
+      if (isHeader(l)) {
+        if (cur.lines.length) secs.push(cur);
+        cur = { name: l, lines: [] };
+      } else if (brandedNutrition(l) === undefined) {
+        const c = sanitise(l, aggressive);
+        if (c) cur.lines.push(c);
+      }
+    }
+    if (cur.lines.length) secs.push(cur);
+    return secs;
+  };
   const branded = [];
   let brandedUnreadable = null;
-  const forApi = [];
-  for (const line of usable) {
-    const b = brandedNutrition(line);
-    if (b === undefined) {
-      const clean = sanitise(line);
-      if (clean) forApi.push(clean);
-    } else if (b === null) {
-      brandedUnreadable = line;
-    } else {
-      branded.push(b);
+  const buildLines = (aggressive) => {
+    const forApi = [];
+    branded.length = 0;
+    brandedUnreadable = null;
+    for (const line of usable) {
+      const b = brandedNutrition(line);
+      if (b === undefined) {
+        const clean = sanitise(line, aggressive);
+        if (clean) forApi.push(clean);
+      } else if (b === null) {
+        brandedUnreadable = line;
+      } else {
+        branded.push(b);
+      }
     }
-  }
-  const ingr = forApi;
+    // Two components can each call for "1/4 teaspoon salt". Edamam rejects
+    // the repeated line, so combine them into one line of 1/2 teaspoon
+    // rather than dropping a duplicate and understating the total.
+    const counts = new Map();
+    for (const l of forApi) counts.set(l, (counts.get(l) ?? 0) + 1);
+    return [...counts].map(([line, n]) => {
+      if (n === 1) return line;
+      const qty = amount(line);
+      if (qty == null) return line;
+      const rest = line.replace(/^[\d\s./½⅓⅔¼¾⅛-]+/, "");
+      return `${Math.round(qty * n * 1000) / 1000} ${rest}`;
+    });
+  };
+  const ingr = buildLines(false);
   const n = servings(r.serves);
 
   const row = {
@@ -213,7 +259,41 @@ for (const [i, r] of targets.entries()) {
     row.error = "no parseable ingredient lines";
   } else {
     try {
-      const data = await analyse(r.title, ingr);
+      let data = await analyse(r.title, ingr);
+      if (data.lowQuality) {
+        // One retry with the blunter sanitiser, for the minority of lines
+        // whose alternative is a whole phrase the parser cannot read.
+        const retry = buildLines(true);
+        if (retry.join("|") !== ingr.join("|")) {
+          data = await analyse(r.title, retry);
+          if (!data.lowQuality) row.linesSent = retry.length;
+        }
+      }
+      if (data.lowQuality) {
+        // A recipe with components (meatballs + sauce + salad) reads as one
+        // implausible dish. Each section analyses cleanly on its own, so
+        // total them instead. Flagged for review: a section that is an
+        // either/or alternative would be double counted.
+        const secs = sectionsOf(false);
+        if (secs.length > 1) {
+          const parts = [];
+          for (const sec of secs) parts.push(await analyse(r.title, sec.lines));
+          if (!parts.some((p) => p.lowQuality)) {
+            data = {
+              calories: parts.reduce((a, p) => a + (p.calories ?? 0), 0),
+              totalNutrients: parts.reduce((acc, p) => {
+                for (const [c, v] of Object.entries(p.totalNutrients ?? {})) {
+                  acc[c] = acc[c]
+                    ? { ...acc[c], quantity: acc[c].quantity + v.quantity }
+                    : { ...v };
+                }
+                return acc;
+              }, {}),
+            };
+            row.analysedBySection = secs.map((x) => x.name ?? "(unnamed)");
+          }
+        }
+      }
       if (data.lowQuality) {
         row.error = "edamam: low_quality";
       } else {
