@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-import { getMember } from "@/lib/auth";
+import { getMember, loginPath } from "@/lib/auth";
 import {
   getLesson,
   guidesForLesson,
@@ -32,11 +32,11 @@ export default async function LessonPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  const { slug } = await params;
   const member = await getMember();
-  if (!member) redirect("/members/login");
+  if (!member) redirect(loginPath(`/members/library/lessons/${slug}`));
   if (!member.tier) redirect("/membership");
 
-  const { slug } = await params;
   const lesson = getLesson(slug);
   if (!lesson) notFound();
 

@@ -21,6 +21,11 @@ export function ExploreCard({ card }: { card: ExploreCardData }) {
   return (
     <article className="overflow-hidden rounded-2xl bg-card p-6 shadow-sm ring-1 ring-border/60 sm:p-7">
       <div className="flex flex-wrap gap-2">
+        {card.pinned && (
+          <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium uppercase tracking-wide text-primary">
+            Pinned
+          </span>
+        )}
         {card.collections.map((name) => {
           const slug = collectionSlug(name);
           return slug ? (

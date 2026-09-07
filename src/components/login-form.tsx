@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 
-export function LoginForm() {
+/** `next` is the page the member was trying to reach before signing in. */
+export function LoginForm({ next }: { next?: string | null }) {
   const [email, setEmail] = useState("");
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">(
     "idle"
@@ -15,7 +16,7 @@ export function LoginForm() {
       const res = await fetch("/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify(next ? { email, next } : { email }),
       });
       setState(res.ok ? "sent" : "error");
     } catch {

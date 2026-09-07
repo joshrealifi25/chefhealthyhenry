@@ -11,20 +11,24 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    title: "Tailored recipes",
-    text: "Custom recipe development and ingredient sourcing matched to your goals and tastes.",
+    title: "1:1 Culinary Coaching",
+    text: "Work directly with Henry on the cooking goals that matter to you. Whether you want to apply the Protein Flip™ to real meals, build confidence in the kitchen, or rethink the food you already love, the coaching is tailored around where you are and what you want to change. Three private sessions, $450.",
+    cta: { label: "Get in touch", href: "/contact" },
   },
   {
-    title: "Coaching",
-    text: "One-on-one and group coaching to build sustainable habits, plate by plate.",
+    title: "Cooking Classes",
+    text: "Online and in-person classes that build real kitchen skills. Not just recipes. The kind of understanding that lets you cook without needing one.",
+    cta: { label: "Get in touch", href: "/contact" },
   },
   {
-    title: "Cooking classes",
-    text: "Online and in-person classes that build real kitchen confidence.",
+    title: "The Cookbook",
+    text: "The Protein Flip™ Method and Cookbook, Deluxe Edition. 155 pages on the method, how it works, and how to apply it, including 30 recipes. The 220+ recipes on this site are free. The book is where the method itself lives.",
+    cta: { label: "Get the Cookbook", href: "/cookbook" },
   },
   {
-    title: "Events & workshops",
-    text: "Corporate and community culinary events that bring people together around good food.",
+    title: "Events and Workshops",
+    text: "Corporate and community culinary events that bring people together around good food. Workshops, demonstrations, and experiences built for groups.",
+    cta: { label: "Get in touch", href: "/contact" },
   },
 ];
 
@@ -41,18 +45,24 @@ export default function AboutPage() {
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
             Henry is a chef and food essayist who writes about cooking the way
-            he teaches it: honestly, generously, and with flavor first. He
-            trained as a chef in Chicago about twenty years ago. After years
-            of unsustainable weight-loss diets, he rebuilt his life in 2020
-            around strength, purposeful cooking, and habits that last, and
-            rediscovered cooking as something joyful, empowering, and even
-            healing.
+            he teaches it: with flavor first, nothing forbidden, and no
+            pretense that eating well has to feel like a sacrifice. He trained
+            as a chef in Chicago about twenty years ago, cooking seriously
+            long before he thought much about nutrition.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            Today he helps others do the same. His belief is simple: the
-            kitchen is a gathering place for confidence, creativity, and
-            health. Cooking is a tool. It&apos;s where better habits develop,
-            families connect, and people rebuild trust in themselves.
+            In 2020, after years of diets that subtracted until there was
+            nothing left to enjoy, he stopped dieting and started cooking
+            differently. He rebuilt his health around strength training,
+            purposeful cooking, and a method that added nutrition around the
+            food he loved instead of replacing it. That process became the
+            Protein Flip™.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Today he helps others do the same. His belief is that the kitchen
+            is where confidence develops, families connect, and people rebuild
+            trust in themselves. Cooking is not a chore to optimize. It is
+            one of the most practical tools a person has.
           </p>
         </div>
         <div className="relative flex aspect-square items-end justify-center overflow-hidden rounded-3xl bg-accent shadow-lg">
@@ -86,16 +96,17 @@ export default function AboutPage() {
             He lived the flip first
           </h2>
           <p className="mt-5 leading-relaxed text-muted-foreground">
-            The Protein Flip™ isn&apos;t theory. It&apos;s how Henry
-            transformed his own health. After years of diets that subtracted
-            until there was nothing left to enjoy, he flipped the plate
-            instead: protein first, flavor always, nothing forbidden. The
-            photos speak for themselves.
+            The Protein Flip™ is not theory. It is how Henry transformed his
+            own health. After years of restriction diets that eventually left
+            him heavier than when he started, he stopped looking for things to
+            remove and started asking a different question: what can I add
+            around the food I already love?
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            That experience is why every recipe on this site is built to be
-            sustainable: food you genuinely want to eat, plate after plate,
-            for years.
+            Protein first. Flavor always. Nothing forbidden. The method is
+            simple on purpose, because anything complicated eventually stops
+            working. The photos speak for themselves, and so do the years
+            since.
           </p>
         </div>
       </div>
@@ -156,6 +167,12 @@ export default function AboutPage() {
               <p className="mt-2 leading-relaxed text-muted-foreground">
                 {s.text}
               </p>
+              <Link
+                href={s.cta.href}
+                className="mt-4 inline-block rounded-full border border-border px-5 py-2 text-sm font-medium text-primary transition-colors hover:bg-secondary"
+              >
+                {s.cta.label}
+              </Link>
             </div>
           ))}
         </div>
@@ -166,8 +183,8 @@ export default function AboutPage() {
           Ready to flip your plate?
         </h2>
         <p className="mx-auto mt-3 max-w-md opacity-90">
-          Start with the cookbook, or get in touch about coaching, classes, and
-          events.
+          Start with the cookbook, explore the free recipes and guides, or get
+          in touch about coaching.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <Link
