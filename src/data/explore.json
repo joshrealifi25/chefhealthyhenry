@@ -229,7 +229,8 @@
    "text": "Inside Protein Flip™ Kitchen, we take the next step. You'll learn how to choose proteins based on the meal you're actually making, disperse protein across primary and secondary ingredients, keep favorite carbohydrates portion-smart, layer flavor, adapt familiar meals, build fast dinners without relying on a recipe, and troubleshoot plates that still aren't working.",
    "label": "See the Cookbook",
    "href": "/cookbook"
-  }
+  },
+  "pinned": true
  },
  {
   "slug": "spice-rack-as-passport",
@@ -785,7 +786,8 @@
    "text": "The Protein Flip™ Method and Cookbook, Deluxe Edition turns these ideas into meals you can cook on a weeknight, with the same balance and flavor standards Henry uses in his own kitchen.",
    "label": "See the Cookbook",
    "href": "/cookbook"
-  }
+  },
+  "pinned": true
  },
  {
   "slug": "science-and-soul-of-the-flip",
@@ -1245,6 +1247,52 @@
    {
     "type": "paragraph",
     "html": "When the ecosystem supports you, the fire has somewhere to go."
+   }
+  ]
+ },
+ {
+  "slug": "meet-chef-henry",
+  "title": "Meet Chef Healthy Henry",
+  "subtitle": "The chef behind the Protein Flip™ method.",
+  "blurb": "A Chicago-trained chef who rebuilt his own health through purposeful cooking, and now helps others do the same. Here is the story behind the method.",
+  "date": "2026-01-01",
+  "hero": null,
+  "articleHero": null,
+  "collections": [
+   "Protein Flip™ Foundations"
+  ],
+  "productLinks": [],
+  "recipeSlugs": [],
+  "relatedPostSlug": null,
+  "videoId": null,
+  "pinned": true,
+  "pinOrder": 1,
+  "cta": {
+   "heading": "Read the full story",
+   "text": "The transformation, the method, the approach. It is all on the About page.",
+   "label": "About Chef Henry",
+   "href": "/about"
+  },
+  "blocks": [
+   {
+    "type": "paragraph",
+    "html": "Henry is a chef and food essayist based in Chicago. He trained as a chef about twenty years ago, cooking seriously long before he thought much about nutrition."
+   },
+   {
+    "type": "paragraph",
+    "html": "In 2020, after years of diets that subtracted until there was nothing left to enjoy, he stopped dieting and started cooking differently. He rebuilt his health around strength training, purposeful cooking, and a method that added nutrition around the food he loved instead of replacing it. That process became the Protein Flip™."
+   },
+   {
+    "type": "quote",
+    "text": "Protein first. Flavor always. Nothing forbidden."
+   },
+   {
+    "type": "paragraph",
+    "html": "Today this site is where he shares the method, the recipes, and the reasoning behind both. The Explore section is a library of guides on ingredients, techniques, and the thinking that makes the Protein Flip™ work in a real kitchen."
+   },
+   {
+    "type": "paragraph",
+    "html": "The best place to start is the <a href=\"/explore/article/what-is-the-protein-flip\">What Is the Protein Flip™?</a> guide, or the <a href=\"/about\">About page</a> if you want the full story first."
    }
   ]
  }
