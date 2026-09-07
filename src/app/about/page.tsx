@@ -13,18 +13,22 @@ const services = [
   {
     title: "1:1 Culinary Coaching",
     text: "Work directly with Henry on the cooking goals that matter to you. Whether you want to apply the Protein Flip™ to real meals, build confidence in the kitchen, or rethink the food you already love, the coaching is tailored around where you are and what you want to change. Three private sessions, $450.",
+    cta: { label: "Get in touch", href: "/contact" },
   },
   {
     title: "Cooking Classes",
     text: "Online and in-person classes that build real kitchen skills. Not just recipes. The kind of understanding that lets you cook without needing one.",
+    cta: { label: "Get in touch", href: "/contact" },
   },
   {
     title: "The Cookbook",
     text: "The Protein Flip™ Method and Cookbook, Deluxe Edition. 155 pages on the method, how it works, and how to apply it, including 30 recipes. The 220+ recipes on this site are free. The book is where the method itself lives.",
+    cta: { label: "Get the Cookbook", href: "/cookbook" },
   },
   {
     title: "Events and Workshops",
     text: "Corporate and community culinary events that bring people together around good food. Workshops, demonstrations, and experiences built for groups.",
+    cta: { label: "Get in touch", href: "/contact" },
   },
 ];
 
@@ -163,6 +167,12 @@ export default function AboutPage() {
               <p className="mt-2 leading-relaxed text-muted-foreground">
                 {s.text}
               </p>
+              <Link
+                href={s.cta.href}
+                className="mt-4 inline-block rounded-full border border-border px-5 py-2 text-sm font-medium text-primary transition-colors hover:bg-secondary"
+              >
+                {s.cta.label}
+              </Link>
             </div>
           ))}
         </div>
