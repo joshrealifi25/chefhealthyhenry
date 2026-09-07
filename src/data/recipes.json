@@ -94,7 +94,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 235,
+   "proteinGrams": 7.8,
+   "fiberGrams": 6,
+   "carbGrams": 21.5,
+   "fatGrams": 14.1,
+   "saturatedFatGrams": 1.9,
+   "sugarGrams": 2.9,
+   "sodiumMilligrams": 158.1
+  }
  },
  {
   "slug": "air-fryer-tempura-artichokes-lemon-dill-dressing",
@@ -159,7 +169,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 529,
+   "proteinGrams": 35.8,
+   "fiberGrams": 6.2,
+   "carbGrams": 16.6,
+   "fatGrams": 36.6,
+   "saturatedFatGrams": 7.9,
+   "sugarGrams": 5.4,
+   "sodiumMilligrams": 767.7
+  }
  },
  {
   "slug": "asian-inspired-ginger-soy-cod-high-protein-delicious",
@@ -206,7 +226,17 @@
   ],
   "dietaryTags": [
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 280,
+   "proteinGrams": 43.1,
+   "fiberGrams": 0.7,
+   "carbGrams": 11.2,
+   "fatGrams": 6.2,
+   "saturatedFatGrams": 1,
+   "sugarGrams": 8.9,
+   "sodiumMilligrams": 1002.1
+  }
  },
  {
   "slug": "authentic-chiles-rellenos-g1tu9",
@@ -271,7 +301,17 @@
    "vegetarian",
    "gluten-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 1003,
+   "proteinGrams": 29.7,
+   "fiberGrams": 2.4,
+   "carbGrams": 14.7,
+   "fatGrams": 90.7,
+   "saturatedFatGrams": 20.6,
+   "sugarGrams": 5.4,
+   "sodiumMilligrams": 807.2
+  }
  },
  {
   "slug": "authentic-tortilla-soup-with-pasilla-chiles",
@@ -342,7 +382,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 584,
+   "proteinGrams": 38.9,
+   "fiberGrams": 17.7,
+   "carbGrams": 46.3,
+   "fatGrams": 33.3,
+   "saturatedFatGrams": 8.7,
+   "sugarGrams": 8.6,
+   "sodiumMilligrams": 509.7
+  }
  },
  {
   "slug": "caponata-sicilian-eggplant-with-bold-flavors-made-simple-oofnk",
@@ -404,7 +454,17 @@
    "vegan",
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 259,
+   "proteinGrams": 5.1,
+   "fiberGrams": 12.5,
+   "carbGrams": 34.2,
+   "fatGrams": 15.1,
+   "saturatedFatGrams": 2.2,
+   "sugarGrams": 18.8,
+   "sodiumMilligrams": 287.2
+  }
  },
  {
   "slug": "citrus-supreme-tutorial-perfect-orange-segments-for-salads-desserts",
@@ -451,7 +511,17 @@
    "vegan",
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 61,
+   "proteinGrams": 1.2,
+   "fiberGrams": 3.1,
+   "carbGrams": 15.5,
+   "fatGrams": 0.2,
+   "saturatedFatGrams": 0,
+   "sugarGrams": 12.2,
+   "sodiumMilligrams": 0
+  }
  },
  {
   "slug": "creamy-lentil-chicken-soup-with-parmesan-rind",
@@ -547,7 +617,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 270,
+   "proteinGrams": 33.6,
+   "fiberGrams": 4.1,
+   "carbGrams": 14.9,
+   "fatGrams": 8.2,
+   "saturatedFatGrams": 3.8,
+   "sugarGrams": 5.7,
+   "sodiumMilligrams": 740.7
+  }
  },
  {
   "slug": "easy-mediterranean-bean-bowl-with-crispy-sourdough-healthy-flavor-packed-q4h13",
@@ -625,7 +705,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 477,
+   "proteinGrams": 20.3,
+   "fiberGrams": 21,
+   "carbGrams": 67.4,
+   "fatGrams": 17.9,
+   "saturatedFatGrams": 2.4,
+   "sugarGrams": 9,
+   "sodiumMilligrams": 825.8
+  }
  },
  {
   "slug": "elegant-spring-appetizer-sweet-potato-rounds-with-burrata-sage-pesto",
@@ -687,7 +777,17 @@
    "vegetarian",
    "gluten-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 267,
+   "proteinGrams": 5.6,
+   "fiberGrams": 6.5,
+   "carbGrams": 18.8,
+   "fatGrams": 20.3,
+   "saturatedFatGrams": 4.7,
+   "sugarGrams": 4,
+   "sodiumMilligrams": 287.5
+  }
  },
  {
   "slug": "fish-and-long-bean-stir-fry",
@@ -747,7 +847,17 @@
    "gluten-free",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 372,
+   "proteinGrams": 35.9,
+   "fiberGrams": 9.8,
+   "carbGrams": 42.9,
+   "fatGrams": 6,
+   "saturatedFatGrams": 0.8,
+   "sugarGrams": 4.7,
+   "sodiumMilligrams": 145.5
+  }
  },
  {
   "slug": "grillechicken-with-creamy-avocado-yogurt-sauce-3pbw3",
@@ -808,7 +918,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 566,
+   "proteinGrams": 67.7,
+   "fiberGrams": 6.9,
+   "carbGrams": 21.5,
+   "fatGrams": 24.1,
+   "saturatedFatGrams": 4.9,
+   "sugarGrams": 7.5,
+   "sodiumMilligrams": 157.5
+  }
  },
  {
   "slug": "grilled-branzino-with-tomato-salad",
@@ -891,7 +1011,17 @@
    "vegetarian",
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 422,
+   "proteinGrams": 25.9,
+   "fiberGrams": 3,
+   "carbGrams": 13.8,
+   "fatGrams": 30.1,
+   "saturatedFatGrams": 4.5,
+   "sugarGrams": 8.7,
+   "sodiumMilligrams": 126.6
+  }
  },
  {
   "slug": "grilled-chicken-quinoa-power-salad-rf5ua",
@@ -957,7 +1087,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 580,
+   "proteinGrams": 39.5,
+   "fiberGrams": 8.9,
+   "carbGrams": 34.1,
+   "fatGrams": 33.4,
+   "saturatedFatGrams": 4.6,
+   "sugarGrams": 4.8,
+   "sodiumMilligrams": 353.9
+  }
  },
  {
   "slug": "grilled-peach-salad-with-marinated-chicken-black-rice",
@@ -1026,7 +1166,17 @@
   "dietaryTags": [
    "gluten-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 535,
+   "proteinGrams": 29.7,
+   "fiberGrams": 5.8,
+   "carbGrams": 71.8,
+   "fatGrams": 16.2,
+   "saturatedFatGrams": 4.1,
+   "sugarGrams": 43,
+   "sodiumMilligrams": 981.8
+  }
  },
  {
   "slug": "grilled-shrimp-with-green-papaya-mango-salad-rbuig",
@@ -1103,7 +1253,17 @@
   "dietaryTags": [
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 246,
+   "proteinGrams": 25.6,
+   "fiberGrams": 3.5,
+   "carbGrams": 25.2,
+   "fatGrams": 6.8,
+   "saturatedFatGrams": 1,
+   "sugarGrams": 18.4,
+   "sodiumMilligrams": 731.4
+  }
  },
  {
   "slug": "grillicious-garlic-shrimp-xprxy",
@@ -1154,7 +1314,17 @@
    "gluten-free",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 291,
+   "proteinGrams": 47.2,
+   "fiberGrams": 1.6,
+   "carbGrams": 9.9,
+   "fatGrams": 8.1,
+   "saturatedFatGrams": 1.2,
+   "sugarGrams": 1.2,
+   "sodiumMilligrams": 273.9
+  }
  },
  {
   "slug": "healthy-20chicken-skewers-with-creamy-garlic-yogurt-sauce-easy-high-protein-dinner",
@@ -1213,7 +1383,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 530,
+   "proteinGrams": 69.3,
+   "fiberGrams": 1.4,
+   "carbGrams": 7.6,
+   "fatGrams": 23.6,
+   "saturatedFatGrams": 4.7,
+   "sugarGrams": 2.1,
+   "sodiumMilligrams": 541.1
+  }
  },
  {
   "slug": "healthy-homemade-nutella-recipe",
@@ -1324,7 +1504,17 @@
    "vegetarian",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 190,
+   "proteinGrams": 5.6,
+   "fiberGrams": 3.7,
+   "carbGrams": 13.3,
+   "fatGrams": 13.9,
+   "saturatedFatGrams": 2.3,
+   "sugarGrams": 7.9,
+   "sodiumMilligrams": 88.4
+  }
  },
  {
   "slug": "healthy-summer-plate-tofu-veggies-pesto-unjury-flavorless-protein",
@@ -1387,7 +1577,17 @@
    "vegetarian",
    "gluten-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 480,
+   "proteinGrams": 30.3,
+   "fiberGrams": 7.3,
+   "carbGrams": 18,
+   "fatGrams": 35.2,
+   "saturatedFatGrams": 5.9,
+   "sugarGrams": 1.6,
+   "sodiumMilligrams": 553.1
+  }
  },
  {
   "slug": "korean-inspired-gochujang-glazed-salmon-with-garlic-spinach",
@@ -1457,7 +1657,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 363,
+   "proteinGrams": 31.8,
+   "fiberGrams": 1.1,
+   "carbGrams": 9.1,
+   "fatGrams": 21.3,
+   "saturatedFatGrams": 4.7,
+   "sugarGrams": 5.1,
+   "sodiumMilligrams": 924
+  }
  },
  {
   "slug": "lemon-herb-quinoa-with-roasted-vegetables-7f79i",
@@ -1527,7 +1737,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 246,
+   "proteinGrams": 7.6,
+   "fiberGrams": 6.5,
+   "carbGrams": 30.2,
+   "fatGrams": 12.8,
+   "saturatedFatGrams": 1.8,
+   "sugarGrams": 5.6,
+   "sodiumMilligrams": 24.2
+  }
  },
  {
   "slug": "marry-me-chickpea-soup-with-kale",
@@ -1607,7 +1827,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 310,
+   "proteinGrams": 13.6,
+   "fiberGrams": 11.9,
+   "carbGrams": 42.7,
+   "fatGrams": 11,
+   "saturatedFatGrams": 3.3,
+   "sugarGrams": 11.1,
+   "sodiumMilligrams": 469.5
+  }
  },
  {
   "slug": "matcha-moringa-pesto-mushroom-zoodles-healthy-flavorful-pasta",
@@ -1664,7 +1894,17 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 1822,
+   "proteinGrams": 60.4,
+   "fiberGrams": 13,
+   "carbGrams": 251,
+   "fatGrams": 65.4,
+   "saturatedFatGrams": 12.3,
+   "sugarGrams": 8.8,
+   "sodiumMilligrams": 297.6
+  }
  },
  {
   "slug": "mediterranean-lentil-bowl-with-zesty-sun-dried-tomato-dressing",
@@ -1731,7 +1971,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 470,
+   "proteinGrams": 20.7,
+   "fiberGrams": 14,
+   "carbGrams": 59.7,
+   "fatGrams": 18.9,
+   "saturatedFatGrams": 3.6,
+   "sugarGrams": 11.1,
+   "sodiumMilligrams": 197.5
+  }
  },
  {
   "slug": "moroccan-lamb-stew-kfetv",
@@ -1800,7 +2050,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 954,
+   "proteinGrams": 50.8,
+   "fiberGrams": 12.1,
+   "carbGrams": 45.9,
+   "fatGrams": 64,
+   "saturatedFatGrams": 24.5,
+   "sugarGrams": 17,
+   "sodiumMilligrams": 992.5
+  }
  },
  {
   "slug": "pan-seared-halibut-with-mango-salsa-saffron-black-rice-summer-on-a-plate-tlfuu",
@@ -1868,7 +2128,17 @@
   "dietaryTags": [
    "gluten-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 675,
+   "proteinGrams": 87.6,
+   "fiberGrams": 11.7,
+   "carbGrams": 60.5,
+   "fatGrams": 11,
+   "saturatedFatGrams": 3.7,
+   "sugarGrams": 25.4,
+   "sodiumMilligrams": 446.7
+  }
  },
  {
   "slug": "peruvian-grilled-chicken-with-green-sauce-and-air-fried-peruvian-sweet-potatoes-irloz",
@@ -1944,7 +2214,17 @@
   "dietaryTags": [
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 932,
+   "proteinGrams": 59.7,
+   "fiberGrams": 4.5,
+   "carbGrams": 24.5,
+   "fatGrams": 65.8,
+   "saturatedFatGrams": 16.3,
+   "sugarGrams": 7,
+   "sodiumMilligrams": 1185.8
+  }
  },
  {
   "slug": "pollo-agrodolce-sweet-sour-italian-chicken-recipe-sbfzw",
@@ -2003,7 +2283,17 @@
    "gluten-free",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 813,
+   "proteinGrams": 46,
+   "fiberGrams": 6.6,
+   "carbGrams": 41.8,
+   "fatGrams": 52.2,
+   "saturatedFatGrams": 12.1,
+   "sugarGrams": 24.7,
+   "sodiumMilligrams": 1468.4
+  }
  },
  {
   "slug": "protein-flip-blueberry-peach-quinoa-bake",
@@ -2076,7 +2366,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 251,
+   "proteinGrams": 12.2,
+   "fiberGrams": 5.2,
+   "carbGrams": 32.7,
+   "fatGrams": 10.2,
+   "saturatedFatGrams": 2.4,
+   "sugarGrams": 11.4,
+   "sodiumMilligrams": 113.5
+  }
  },
  {
   "slug": "protein-flip-tm-nutty-banana-bread-soft-baked-protein-bars",
@@ -2171,7 +2471,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 246,
+   "proteinGrams": 12.5,
+   "fiberGrams": 5.4,
+   "carbGrams": 19.3,
+   "fatGrams": 14.6,
+   "saturatedFatGrams": 3.5,
+   "sugarGrams": 11.1,
+   "sodiumMilligrams": 156.7
+  }
  },
  {
   "slug": "quick-and-healthy-tuna-quinoa-bowl",
@@ -2225,7 +2535,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 677,
+   "proteinGrams": 30.4,
+   "fiberGrams": 13.1,
+   "carbGrams": 64.9,
+   "fatGrams": 34.8,
+   "saturatedFatGrams": 4.5,
+   "sugarGrams": 1.4,
+   "sodiumMilligrams": 218.7
+  }
  },
  {
   "slug": "refreshing-jicama-citrus-salad-with-perfect-citrus-segments-summer-salad-idea",
@@ -2303,7 +2623,17 @@
    "vegan",
    "dairy-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 286,
+   "proteinGrams": 6.5,
+   "fiberGrams": 11.1,
+   "carbGrams": 29.2,
+   "fatGrams": 18.4,
+   "saturatedFatGrams": 2.4,
+   "sugarGrams": 12.1,
+   "sodiumMilligrams": 314.8
+  }
  },
  {
   "slug": "roasted-beet-carrot-salad",
@@ -2377,7 +2707,17 @@
    "vegetarian",
    "gluten-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 651,
+   "proteinGrams": 12.5,
+   "fiberGrams": 11.8,
+   "carbGrams": 44.4,
+   "fatGrams": 49.3,
+   "saturatedFatGrams": 10.2,
+   "sugarGrams": 27.1,
+   "sodiumMilligrams": 1189.2
+  }
  },
  {
   "slug": "royal-tempeh-sweet-potato-tacos-with-chili-lime-yogurt-protein-flip-tm-weeknight-meal",
@@ -2480,7 +2820,17 @@
    "vegetarian",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 457,
+   "proteinGrams": 25.7,
+   "fiberGrams": 7.2,
+   "carbGrams": 61.3,
+   "fatGrams": 17.9,
+   "saturatedFatGrams": 4.8,
+   "sugarGrams": 20.4,
+   "sodiumMilligrams": 647.7
+  }
  },
  {
   "slug": "salmon-salad-with-crispy-white-beans",
@@ -2548,7 +2898,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 718,
+   "proteinGrams": 36.6,
+   "fiberGrams": 13.1,
+   "carbGrams": 38,
+   "fatGrams": 48.3,
+   "saturatedFatGrams": 8.1,
+   "sugarGrams": 4.2,
+   "sodiumMilligrams": 931.8
+  }
  },
  {
   "slug": "savory-vegetable-clafoutis-with-french-herb-beans",
@@ -2649,7 +3009,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 373,
+   "proteinGrams": 26.2,
+   "fiberGrams": 15.8,
+   "carbGrams": 39.4,
+   "fatGrams": 14.3,
+   "saturatedFatGrams": 5.2,
+   "sugarGrams": 4.7,
+   "sodiumMilligrams": 568.5
+  }
  },
  {
   "slug": "seared-salmon-with-warm-tomato-white-bean-vinaigrette",
@@ -2705,7 +3075,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 1450,
+   "proteinGrams": 111.8,
+   "fiberGrams": 19,
+   "carbGrams": 74.8,
+   "fatGrams": 77.6,
+   "saturatedFatGrams": 18.3,
+   "sugarGrams": 7.2,
+   "sodiumMilligrams": 1595.9
+  }
  },
  {
   "slug": "seared-scallops-with-ot-ga-den-hot-sauce",
@@ -2802,7 +3182,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 450,
+   "proteinGrams": 26.3,
+   "fiberGrams": 10.1,
+   "carbGrams": 39.1,
+   "fatGrams": 22.3,
+   "saturatedFatGrams": 3.1,
+   "sugarGrams": 18.9,
+   "sodiumMilligrams": 1082.7
+  }
  },
  {
   "slug": "sheet-pan-fish-tacos-with-creamy-avocado-sauce",
@@ -2894,7 +3284,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 654,
+   "proteinGrams": 44.9,
+   "fiberGrams": 11.5,
+   "carbGrams": 39,
+   "fatGrams": 38.7,
+   "saturatedFatGrams": 6.3,
+   "sugarGrams": 4.2,
+   "sodiumMilligrams": 912.1
+  }
  },
  {
   "slug": "smoky-autumn-vegetable-romesco-soup-the-protein-flip-way",
@@ -3007,7 +3407,17 @@
    "vegetarian",
    "gluten-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 315,
+   "proteinGrams": 13.5,
+   "fiberGrams": 9.5,
+   "carbGrams": 43.7,
+   "fatGrams": 10.7,
+   "saturatedFatGrams": 1.1,
+   "sugarGrams": 7.6,
+   "sodiumMilligrams": 363.4
+  }
  },
  {
   "slug": "spicy-chicken-french-lentil-bowl",
@@ -3080,7 +3490,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 637,
+   "proteinGrams": 49.4,
+   "fiberGrams": 18.8,
+   "carbGrams": 89.6,
+   "fatGrams": 11,
+   "saturatedFatGrams": 1.7,
+   "sugarGrams": 3.7,
+   "sodiumMilligrams": 130.5
+  }
  },
  {
   "slug": "spicy-grilled-eggplant-fresh-tomatoes-easy-mediterranean",
@@ -3139,7 +3559,17 @@
    "vegan",
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 483,
+   "proteinGrams": 12.8,
+   "fiberGrams": 37.8,
+   "carbGrams": 75.7,
+   "fatGrams": 20.4,
+   "saturatedFatGrams": 2.9,
+   "sugarGrams": 45.2,
+   "sodiumMilligrams": 3066.3
+  }
  },
  {
   "slug": "strawberry-cobb-salad-with-halloumi-tarragon-dressing-mrcdr",
@@ -3201,7 +3631,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 947,
+   "proteinGrams": 20.2,
+   "fiberGrams": 16.5,
+   "carbGrams": 49.8,
+   "fatGrams": 78,
+   "saturatedFatGrams": 14.1,
+   "sugarGrams": 18.6,
+   "sodiumMilligrams": 551.9
+  }
  },
  {
   "slug": "the-secret-to-easy-to-peel-hard-boiled-eggs",
@@ -3305,7 +3745,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 409,
+   "proteinGrams": 26.5,
+   "fiberGrams": 10,
+   "carbGrams": 34.8,
+   "fatGrams": 18.8,
+   "saturatedFatGrams": 2.6,
+   "sugarGrams": 6.6,
+   "sodiumMilligrams": 873.9
+  }
  },
  {
   "slug": "tuscany-inspired-salad-with-roasted-20cauliflower-lupini-beans",
@@ -3367,7 +3817,17 @@
    "vegetarian",
    "gluten-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 582,
+   "proteinGrams": 25.2,
+   "fiberGrams": 16.8,
+   "carbGrams": 63.9,
+   "fatGrams": 28.1,
+   "saturatedFatGrams": 4.9,
+   "sugarGrams": 9.3,
+   "sodiumMilligrams": 681.5
+  }
  },
  {
   "slug": "vibrant-broccolini-salad-with-crispy-chickpeas-sumac-dressing-and-albacore-tuna-stdsh",
@@ -3448,7 +3908,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 377,
+   "proteinGrams": 19.7,
+   "fiberGrams": 16.5,
+   "carbGrams": 54.2,
+   "fatGrams": 14.3,
+   "saturatedFatGrams": 2.8,
+   "sugarGrams": 11.7,
+   "sodiumMilligrams": 408.5
+  }
  },
  {
   "slug": "warm-balsamic-mushroom-and-lentil-salad-recipe-ivzia",
@@ -3510,7 +3980,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 362,
+   "proteinGrams": 8.1,
+   "fiberGrams": 1.9,
+   "carbGrams": 14.2,
+   "fatGrams": 31.7,
+   "saturatedFatGrams": 5.5,
+   "sugarGrams": 6.1,
+   "sodiumMilligrams": 345.5
+  }
  },
  {
   "slug": "yakiniku-garlic-black-rice-bowl",
@@ -3589,7 +4069,17 @@
   "dietaryTags": [
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 1202,
+   "proteinGrams": 43.3,
+   "fiberGrams": 25.5,
+   "carbGrams": 150.1,
+   "fatGrams": 42.3,
+   "saturatedFatGrams": 9.2,
+   "sugarGrams": 22.9,
+   "sodiumMilligrams": 4441.6
+  }
  },
  {
   "slug": "air-fried-potato-chips-tpjnb",
@@ -3664,7 +4154,17 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 346,
+   "proteinGrams": 19.1,
+   "fiberGrams": 9.3,
+   "carbGrams": 45,
+   "fatGrams": 11.7,
+   "saturatedFatGrams": 6.8,
+   "sugarGrams": 1.5,
+   "sodiumMilligrams": 450.6
+  }
  },
  {
   "slug": "air-fryer-garlic-and-herb-baby-potatoes",
@@ -3713,7 +4213,17 @@
    "vegan",
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 121,
+   "proteinGrams": 2.5,
+   "fiberGrams": 2.6,
+   "carbGrams": 20.6,
+   "fatGrams": 3.5,
+   "saturatedFatGrams": 0.5,
+   "sugarGrams": 0.9,
+   "sodiumMilligrams": 7.5
+  }
  },
  {
   "slug": "arugula-and-persimmon-salad",
@@ -3791,7 +4301,17 @@
    "vegetarian",
    "gluten-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 663,
+   "proteinGrams": 5.9,
+   "fiberGrams": 10.7,
+   "carbGrams": 28,
+   "fatGrams": 62.4,
+   "saturatedFatGrams": 8,
+   "sugarGrams": 7,
+   "sodiumMilligrams": 68.2
+  }
  },
  {
   "slug": "asparagus-sorrel-bisque",
@@ -3861,7 +4381,17 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 238,
+   "proteinGrams": 8.6,
+   "fiberGrams": 7.8,
+   "carbGrams": 24.2,
+   "fatGrams": 14.4,
+   "saturatedFatGrams": 5.4,
+   "sugarGrams": 8.4,
+   "sodiumMilligrams": 108.7
+  }
  },
  {
   "slug": "authentic-ribollita-soup-recipe-classic-italian-vegetable-and-bread-soup",
@@ -3964,7 +4494,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 577,
+   "proteinGrams": 33.2,
+   "fiberGrams": 16.4,
+   "carbGrams": 94.4,
+   "fatGrams": 8.7,
+   "saturatedFatGrams": 2.3,
+   "sugarGrams": 14.2,
+   "sodiumMilligrams": 1310.5
+  }
  },
  {
   "slug": "autumn-butternut-squash-with-sage-and-apple",
@@ -4045,7 +4585,17 @@
    "vegetarian",
    "gluten-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 400,
+   "proteinGrams": 7.8,
+   "fiberGrams": 6.7,
+   "carbGrams": 39.6,
+   "fatGrams": 25.5,
+   "saturatedFatGrams": 15.7,
+   "sugarGrams": 19.3,
+   "sodiumMilligrams": 432.7
+  }
  },
  {
   "slug": "baked-peaches",
@@ -4110,7 +4660,17 @@
    "vegetarian",
    "gluten-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 158,
+   "proteinGrams": 1.3,
+   "fiberGrams": 3.5,
+   "carbGrams": 17.5,
+   "fatGrams": 11.8,
+   "saturatedFatGrams": 7.2,
+   "sugarGrams": 11,
+   "sodiumMilligrams": 1.7
+  }
  },
  {
   "slug": "baked-halibut-with-brussel-sprouts-and-quinoa",
@@ -4201,7 +4761,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 294,
+   "proteinGrams": 14.9,
+   "fiberGrams": 9.5,
+   "carbGrams": 39.1,
+   "fatGrams": 10.6,
+   "saturatedFatGrams": 4.4,
+   "sugarGrams": 7.2,
+   "sodiumMilligrams": 443.7
+  }
  },
  {
   "slug": "barramundi-fish",
@@ -4291,7 +4861,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 496,
+   "proteinGrams": 50.7,
+   "fiberGrams": 12.3,
+   "carbGrams": 33.8,
+   "fatGrams": 20.5,
+   "saturatedFatGrams": 6.2,
+   "sugarGrams": 5.1,
+   "sodiumMilligrams": 1068.7
+  }
  },
  {
   "slug": "berry-tart-with-sweet-potato-crust",
@@ -4390,7 +4970,17 @@
   "dietaryTags": [
    "vegetarian",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 271,
+   "proteinGrams": 5.7,
+   "fiberGrams": 8.5,
+   "carbGrams": 64.7,
+   "fatGrams": 1.7,
+   "saturatedFatGrams": 0,
+   "sugarGrams": 22.2,
+   "sodiumMilligrams": 199.2
+  }
  },
  {
   "slug": "black-rice-sushi-rolls",
@@ -4489,7 +5079,17 @@
    "vegan",
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 353,
+   "proteinGrams": 7.5,
+   "fiberGrams": 3.2,
+   "carbGrams": 73.8,
+   "fatGrams": 2.6,
+   "saturatedFatGrams": 0.5,
+   "sugarGrams": 1.1,
+   "sodiumMilligrams": 596.3
+  }
  },
  {
   "slug": "blackened-salmon-with-caramelized-onion-and-sweet-potato-salad",
@@ -4622,7 +5222,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 369,
+   "proteinGrams": 11.1,
+   "fiberGrams": 5.1,
+   "carbGrams": 25.6,
+   "fatGrams": 26,
+   "saturatedFatGrams": 4.8,
+   "sugarGrams": 9.6,
+   "sodiumMilligrams": 410.7
+  }
  },
  {
   "slug": "boiled-egg-hummus-on-keto-toast",
@@ -4681,7 +5291,17 @@
    "gluten-free",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 129,
+   "proteinGrams": 9.6,
+   "fiberGrams": 1.1,
+   "carbGrams": 3.1,
+   "fatGrams": 8.8,
+   "saturatedFatGrams": 2.4,
+   "sugarGrams": 0.4,
+   "sodiumMilligrams": 436
+  }
  },
  {
   "slug": "bok-choy-and-broccoli-with-caramelized-onion",
@@ -4771,7 +5391,17 @@
    "vegan",
    "dairy-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 152,
+   "proteinGrams": 5.3,
+   "fiberGrams": 4.8,
+   "carbGrams": 20.2,
+   "fatGrams": 7.4,
+   "saturatedFatGrams": 1.1,
+   "sugarGrams": 9.1,
+   "sodiumMilligrams": 915
+  }
  },
  {
   "slug": "bok-choy-pork-salad",
@@ -4847,7 +5477,17 @@
   ],
   "dietaryTags": [
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 538,
+   "proteinGrams": 29.2,
+   "fiberGrams": 8.8,
+   "carbGrams": 43.2,
+   "fatGrams": 29.9,
+   "saturatedFatGrams": 9.3,
+   "sugarGrams": 23.9,
+   "sodiumMilligrams": 969.9
+  }
  },
  {
   "slug": "breaded-tofu-with-panko-crumbs",
@@ -4965,7 +5605,17 @@
    "vegetarian",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 139,
+   "proteinGrams": 7,
+   "fiberGrams": 2,
+   "carbGrams": 16.4,
+   "fatGrams": 5.7,
+   "saturatedFatGrams": 2.2,
+   "sugarGrams": 2.9,
+   "sodiumMilligrams": 225.3
+  }
  },
  {
   "slug": "broccoli-soup-with-cactus-and-gruyere-cheese",
@@ -5033,7 +5683,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 409,
+   "proteinGrams": 24.2,
+   "fiberGrams": 12.2,
+   "carbGrams": 35.5,
+   "fatGrams": 21.1,
+   "saturatedFatGrams": 8.8,
+   "sugarGrams": 3.4,
+   "sodiumMilligrams": 844.5
+  }
  },
  {
   "slug": "butternut-squash-soup-with-beans-and-escarole",
@@ -5103,7 +5763,17 @@
   "dietaryTags": [
    "gluten-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 185,
+   "proteinGrams": 8.6,
+   "fiberGrams": 5.2,
+   "carbGrams": 27.8,
+   "fatGrams": 5.1,
+   "saturatedFatGrams": 0.9,
+   "sugarGrams": 4.9,
+   "sodiumMilligrams": 688.2
+  }
  },
  {
   "slug": "cauliflower-chicken-fried-rice-with-scrambled-egg-peas-edamame",
@@ -5217,7 +5887,17 @@
   "dietaryTags": [
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 533,
+   "proteinGrams": 38.5,
+   "fiberGrams": 8.2,
+   "carbGrams": 23.3,
+   "fatGrams": 33,
+   "saturatedFatGrams": 11.7,
+   "sugarGrams": 8.3,
+   "sodiumMilligrams": 945.3
+  }
  },
  {
   "slug": "chicken-fajita-bowl-quick-and-flavorful-dinner-idea",
@@ -5306,7 +5986,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 675,
+   "proteinGrams": 46.4,
+   "fiberGrams": 29.2,
+   "carbGrams": 79.1,
+   "fatGrams": 23.7,
+   "saturatedFatGrams": 3.7,
+   "sugarGrams": 15.6,
+   "sodiumMilligrams": 695.9
+  }
  },
  {
   "slug": "chicken-tika-masala",
@@ -5401,7 +6091,17 @@
   "dietaryTags": [
    "gluten-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 223,
+   "proteinGrams": 14.4,
+   "fiberGrams": 1.8,
+   "carbGrams": 6.1,
+   "fatGrams": 15.8,
+   "saturatedFatGrams": 4.2,
+   "sugarGrams": 2.1,
+   "sodiumMilligrams": 86
+  }
  },
  {
   "slug": "chickpea-chocolate-chip-cookies",
@@ -5490,7 +6190,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 166,
+   "proteinGrams": 4.2,
+   "fiberGrams": 2.8,
+   "carbGrams": 19.8,
+   "fatGrams": 8.5,
+   "saturatedFatGrams": 1.8,
+   "sugarGrams": 12.9,
+   "sodiumMilligrams": 115.3
+  }
  },
  {
   "slug": "chili-colorado",
@@ -5607,7 +6317,17 @@
   "dietaryTags": [
    "gluten-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 391,
+   "proteinGrams": 36.2,
+   "fiberGrams": 4.3,
+   "carbGrams": 15.3,
+   "fatGrams": 21.1,
+   "saturatedFatGrams": 7.8,
+   "sugarGrams": 3.2,
+   "sodiumMilligrams": 137.2
+  }
  },
  {
   "slug": "protein-flip-creamy-clam-chowder-with-zesty-lime-tofu-flatbread",
@@ -5722,7 +6442,17 @@
   "dietaryTags": [
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 482,
+   "proteinGrams": 46.2,
+   "fiberGrams": 5,
+   "carbGrams": 38.8,
+   "fatGrams": 15.7,
+   "saturatedFatGrams": 5,
+   "sugarGrams": 3.5,
+   "sodiumMilligrams": 766.2
+  }
  },
  {
   "slug": "classic-salsa-verde",
@@ -5791,7 +6521,17 @@
    "vegan",
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 80,
+   "proteinGrams": 3,
+   "fiberGrams": 4.7,
+   "carbGrams": 18.6,
+   "fatGrams": 1.1,
+   "saturatedFatGrams": 0.2,
+   "sugarGrams": 8.1,
+   "sodiumMilligrams": 481.3
+  }
  },
  {
   "slug": "classic-mussels-with-white-wine",
@@ -5885,7 +6625,17 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 525,
+   "proteinGrams": 25.9,
+   "fiberGrams": 6.3,
+   "carbGrams": 61.6,
+   "fatGrams": 16.4,
+   "saturatedFatGrams": 5.3,
+   "sugarGrams": 10.5,
+   "sodiumMilligrams": 960.1
+  }
  },
  {
   "slug": "cozy-chicken-and-barley-stew-lt8dx",
@@ -5943,7 +6693,17 @@
   "dietaryTags": [
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 889,
+   "proteinGrams": 47.9,
+   "fiberGrams": 7.1,
+   "carbGrams": 46.9,
+   "fatGrams": 56.5,
+   "saturatedFatGrams": 17.4,
+   "sugarGrams": 8.8,
+   "sodiumMilligrams": 856.3
+  }
  },
  {
   "slug": "creme-brulee-with-almond-milk-and-cream",
@@ -6050,7 +6810,17 @@
    "vegetarian",
    "gluten-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 273,
+   "proteinGrams": 4.2,
+   "fiberGrams": 2.9,
+   "carbGrams": 19.9,
+   "fatGrams": 25.7,
+   "saturatedFatGrams": 15.2,
+   "sugarGrams": 2.6,
+   "sodiumMilligrams": 65.4
+  }
  },
  {
   "slug": "crispy-air-fry-falafel-with-fresh-herbs",
@@ -6090,7 +6860,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 396,
+   "proteinGrams": 21.4,
+   "fiberGrams": 13.5,
+   "carbGrams": 66.5,
+   "fatGrams": 6.4,
+   "saturatedFatGrams": 0.7,
+   "sugarGrams": 11.7,
+   "sodiumMilligrams": 193.1
+  }
  },
  {
   "slug": "crispy-air-fryer-tilapia-with-brussels-sprouts",
@@ -6172,7 +6952,17 @@
   "dietaryTags": [
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 173,
+   "proteinGrams": 34.7,
+   "fiberGrams": 0.5,
+   "carbGrams": 2.1,
+   "fatGrams": 3,
+   "saturatedFatGrams": 1,
+   "sugarGrams": 0.2,
+   "sodiumMilligrams": 93.7
+  }
  },
  {
   "slug": "crispy-black-bean-cakes-with-sun-dried-tomato-and-lime-crema",
@@ -6263,7 +7053,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 407,
+   "proteinGrams": 11.6,
+   "fiberGrams": 9.7,
+   "carbGrams": 35.8,
+   "fatGrams": 26,
+   "saturatedFatGrams": 15.6,
+   "sugarGrams": 6.1,
+   "sodiumMilligrams": 530.8
+  }
  },
  {
   "slug": "crispy-pretzel-crust-lemon-herb-chicken-quick-high-protein-meal-idbug",
@@ -6351,7 +7151,17 @@
    "gluten-free",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 645,
+   "proteinGrams": 70.1,
+   "fiberGrams": 2.5,
+   "carbGrams": 47.7,
+   "fatGrams": 17.9,
+   "saturatedFatGrams": 3.4,
+   "sugarGrams": 1.7,
+   "sodiumMilligrams": 933.9
+  }
  },
  {
   "slug": "cucumber-jicama-salad-with-fresh-red-onion",
@@ -6413,7 +7223,17 @@
    "vegan",
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 107,
+   "proteinGrams": 1.9,
+   "fiberGrams": 4.1,
+   "carbGrams": 16.9,
+   "fatGrams": 3.7,
+   "saturatedFatGrams": 0.5,
+   "sugarGrams": 9.1,
+   "sodiumMilligrams": 672
+  }
  },
  {
   "slug": "cucumber-salad",
@@ -6468,7 +7288,17 @@
   "dietaryTags": [
    "vegetarian",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 80,
+   "proteinGrams": 1.9,
+   "fiberGrams": 1,
+   "carbGrams": 10,
+   "fatGrams": 4.1,
+   "saturatedFatGrams": 0.6,
+   "sugarGrams": 6.8,
+   "sodiumMilligrams": 385.4
+  }
  },
  {
   "slug": "curried-cauliflower",
@@ -6538,7 +7368,17 @@
    "gluten-free",
    "dairy-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 111,
+   "proteinGrams": 3,
+   "fiberGrams": 3.3,
+   "carbGrams": 8.9,
+   "fatGrams": 7.6,
+   "saturatedFatGrams": 0.7,
+   "sugarGrams": 3.2,
+   "sodiumMilligrams": 46.1
+  }
  },
  {
   "slug": "daal-palak-recipe",
@@ -6604,7 +7444,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 266,
+   "proteinGrams": 13.5,
+   "fiberGrams": 7.2,
+   "carbGrams": 38.4,
+   "fatGrams": 7.7,
+   "saturatedFatGrams": 1.1,
+   "sugarGrams": 4.1,
+   "sodiumMilligrams": 47.4
+  }
  },
  {
   "slug": "delicious-berry-chia-pudding-with-greek-yogurt-and-granola-tvgmk",
@@ -6658,7 +7508,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 377,
+   "proteinGrams": 14,
+   "fiberGrams": 20.5,
+   "carbGrams": 47.8,
+   "fatGrams": 16.9,
+   "saturatedFatGrams": 4.2,
+   "sugarGrams": 21.3,
+   "sodiumMilligrams": 128.7
+  }
  },
  {
   "slug": "delicious-tofu-saag-with-garam-masala-and-spinach",
@@ -6729,7 +7589,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 349,
+   "proteinGrams": 15.6,
+   "fiberGrams": 5.1,
+   "carbGrams": 48.1,
+   "fatGrams": 12,
+   "saturatedFatGrams": 2.3,
+   "sugarGrams": 3.4,
+   "sodiumMilligrams": 353.8
+  }
  },
  {
   "slug": "dubu-jorim-korean-braised-tofu-recipe-aka98",
@@ -6790,7 +7660,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 223,
+   "proteinGrams": 15.9,
+   "fiberGrams": 3.4,
+   "carbGrams": 17.4,
+   "fatGrams": 11.9,
+   "saturatedFatGrams": 1.6,
+   "sugarGrams": 11.2,
+   "sodiumMilligrams": 874.8
+  }
  },
  {
   "slug": "lemon-asparagus-pasta-bplgk",
@@ -6898,7 +7778,17 @@
    "vegan",
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 606,
+   "proteinGrams": 26.8,
+   "fiberGrams": 16.3,
+   "carbGrams": 90.9,
+   "fatGrams": 19.1,
+   "saturatedFatGrams": 2.5,
+   "sugarGrams": 8.5,
+   "sodiumMilligrams": 493.7
+  }
  },
  {
   "slug": "pork-tenderloin-with-chickpeas",
@@ -6966,7 +7856,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 572,
+   "proteinGrams": 47.2,
+   "fiberGrams": 15.5,
+   "carbGrams": 73.8,
+   "fatGrams": 10.9,
+   "saturatedFatGrams": 2.1,
+   "sugarGrams": 13.9,
+   "sodiumMilligrams": 110.5
+  }
  },
  {
   "slug": "vegetarian-chili-recipe-with-sweet-potatoes-beans",
@@ -7038,7 +7938,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 198,
+   "proteinGrams": 10.2,
+   "fiberGrams": 11.3,
+   "carbGrams": 34.5,
+   "fatGrams": 3,
+   "saturatedFatGrams": 0.5,
+   "sugarGrams": 4.7,
+   "sodiumMilligrams": 537.7
+  }
  },
  {
   "slug": "edamame-salad-withsalmon",
@@ -7116,7 +8026,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 235,
+   "proteinGrams": 12.3,
+   "fiberGrams": 6.2,
+   "carbGrams": 17.6,
+   "fatGrams": 14.3,
+   "saturatedFatGrams": 2.1,
+   "sugarGrams": 4,
+   "sodiumMilligrams": 86.9
+  }
  },
  {
   "slug": "artichokes-with-saffron-tofu-sauce-and-olive-tapenade",
@@ -7183,7 +8103,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 376,
+   "proteinGrams": 12.1,
+   "fiberGrams": 5.4,
+   "carbGrams": 14.4,
+   "fatGrams": 32.5,
+   "saturatedFatGrams": 4.8,
+   "sugarGrams": 3.5,
+   "sodiumMilligrams": 369.6
+  }
  },
  {
   "slug": "elegant-crostini-with-roasted-grapes-and-ricotta-amgwt",
@@ -7230,7 +8160,17 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 285,
+   "proteinGrams": 7.7,
+   "fiberGrams": 2.2,
+   "carbGrams": 29.7,
+   "fatGrams": 16.1,
+   "saturatedFatGrams": 4.9,
+   "sugarGrams": 8.6,
+   "sodiumMilligrams": 482
+  }
  },
  {
   "slug": "elegant-and-healthy-risotto-recipe-no-heavy-ingredients-2uhcv",
@@ -7298,7 +8238,17 @@
   "dietaryTags": [
    "gluten-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 708,
+   "proteinGrams": 17.5,
+   "fiberGrams": 4.8,
+   "carbGrams": 99.9,
+   "fatGrams": 22.5,
+   "saturatedFatGrams": 6.6,
+   "sugarGrams": 8.6,
+   "sodiumMilligrams": 579.7
+  }
  },
  {
   "slug": "fish-taco-salad-y0a4n",
@@ -7376,7 +8326,17 @@
   "dietaryTags": [
    "gluten-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 386,
+   "proteinGrams": 36.3,
+   "fiberGrams": 11,
+   "carbGrams": 35.3,
+   "fatGrams": 13.1,
+   "saturatedFatGrams": 2.4,
+   "sugarGrams": 10.9,
+   "sodiumMilligrams": 240.8
+  }
  },
  {
   "slug": "fluffy-sourdough-discard-pancakes-0tgfp",
@@ -7446,7 +8406,17 @@
    "vegetarian",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 696,
+   "proteinGrams": 39,
+   "fiberGrams": 6.1,
+   "carbGrams": 96.5,
+   "fatGrams": 16.9,
+   "saturatedFatGrams": 8.6,
+   "sugarGrams": 30.8,
+   "sodiumMilligrams": 1401
+  }
  },
  {
   "slug": "french-bouillabaisse-recipe-perfect-mediterranean-seafood-stew-syszn",
@@ -7534,7 +8504,17 @@
    "gluten-free",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 1380,
+   "proteinGrams": 113.2,
+   "fiberGrams": 10.9,
+   "carbGrams": 155.9,
+   "fatGrams": 34.6,
+   "saturatedFatGrams": 6.6,
+   "sugarGrams": 17.3,
+   "sodiumMilligrams": 3052.3
+  }
  },
  {
   "slug": "fresh-pistachio-crusted-chicken-and-barley-salad",
@@ -7608,7 +8588,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 643,
+   "proteinGrams": 45.2,
+   "fiberGrams": 13.1,
+   "carbGrams": 53,
+   "fatGrams": 29.4,
+   "saturatedFatGrams": 4.5,
+   "sugarGrams": 4.5,
+   "sodiumMilligrams": 641.3
+  }
  },
  {
   "slug": "fresh-salmon-and-avocado-salad-with-dill-dressing-healthy-and-delicious-y8z18",
@@ -7680,7 +8670,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 765,
+   "proteinGrams": 19.9,
+   "fiberGrams": 18.1,
+   "carbGrams": 33.1,
+   "fatGrams": 65.6,
+   "saturatedFatGrams": 10,
+   "sugarGrams": 8.5,
+   "sodiumMilligrams": 745.6
+  }
  },
  {
   "slug": "gourmet-mushroom-medley-with-spinach-and-bean-puree",
@@ -7751,7 +8751,17 @@
    "vegetarian",
    "gluten-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 353,
+   "proteinGrams": 12.5,
+   "fiberGrams": 7.4,
+   "carbGrams": 23.7,
+   "fatGrams": 25.2,
+   "saturatedFatGrams": 5.4,
+   "sugarGrams": 2.8,
+   "sodiumMilligrams": 503.5
+  }
  },
  {
   "slug": "grilled-salmon-with-a-jicama-salad-lime-cilantro-vinaigrette-and-white-bean-stew",
@@ -7898,7 +8908,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 702,
+   "proteinGrams": 18.9,
+   "fiberGrams": 13.6,
+   "carbGrams": 46.9,
+   "fatGrams": 51.6,
+   "saturatedFatGrams": 8.4,
+   "sugarGrams": 10.2,
+   "sodiumMilligrams": 611
+  }
  },
  {
   "slug": "halibut-piccata-with-black-rice-broccoli-pepitas",
@@ -7961,7 +8981,17 @@
   "dietaryTags": [
    "gluten-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 631,
+   "proteinGrams": 82.6,
+   "fiberGrams": 3.5,
+   "carbGrams": 8.6,
+   "fatGrams": 26.5,
+   "saturatedFatGrams": 3,
+   "sugarGrams": 1.6,
+   "sodiumMilligrams": 852.2
+  }
  },
  {
   "slug": "halibut-in-corn-husks-with-fresh-vegetable-saute",
@@ -8020,7 +9050,17 @@
    "gluten-free",
    "dairy-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 362,
+   "proteinGrams": 34.6,
+   "fiberGrams": 5.2,
+   "carbGrams": 37.3,
+   "fatGrams": 10.3,
+   "saturatedFatGrams": 1.5,
+   "sugarGrams": 8.6,
+   "sodiumMilligrams": 119.5
+  }
  },
  {
   "slug": "harira-moroccan-lentil-and-chickpea-soup-ac4m4",
@@ -8093,7 +9133,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 488,
+   "proteinGrams": 18.2,
+   "fiberGrams": 10.6,
+   "carbGrams": 80.7,
+   "fatGrams": 11.6,
+   "saturatedFatGrams": 1.6,
+   "sugarGrams": 6.9,
+   "sodiumMilligrams": 659.2
+  }
  },
  {
   "slug": "healthy-asian-salad-with-gochujang-dressing-and-black-rice",
@@ -8170,7 +9220,17 @@
    "vegan",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 341,
+   "proteinGrams": 12.9,
+   "fiberGrams": 7.4,
+   "carbGrams": 54.6,
+   "fatGrams": 9.2,
+   "saturatedFatGrams": 1.5,
+   "sugarGrams": 9.2,
+   "sodiumMilligrams": 535.3
+  }
  },
  {
   "slug": "healthy-baked-peaches-recipe",
@@ -8234,7 +9294,17 @@
    "vegetarian",
    "gluten-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 230,
+   "proteinGrams": 6.8,
+   "fiberGrams": 3.9,
+   "carbGrams": 22.1,
+   "fatGrams": 15.7,
+   "saturatedFatGrams": 9.6,
+   "sugarGrams": 15.3,
+   "sodiumMilligrams": 35.3
+  }
  },
  {
   "slug": "healthy-coconut-oil-granola-with-added-fiber-yogurt",
@@ -8297,7 +9367,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 204,
+   "proteinGrams": 5,
+   "fiberGrams": 3.7,
+   "carbGrams": 26,
+   "fatGrams": 11.8,
+   "saturatedFatGrams": 5.8,
+   "sugarGrams": 8.1,
+   "sodiumMilligrams": 45.8
+  }
  },
  {
   "slug": "healthy-french-carrot-salad-with-chickpeas",
@@ -8355,7 +9435,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 200,
+   "proteinGrams": 5.3,
+   "fiberGrams": 7,
+   "carbGrams": 27.4,
+   "fatGrams": 8.7,
+   "saturatedFatGrams": 1.1,
+   "sugarGrams": 10.8,
+   "sodiumMilligrams": 233.4
+  }
  },
  {
   "slug": "healthy-mexican-rice",
@@ -8421,7 +9511,17 @@
    "gluten-free",
    "dairy-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 154,
+   "proteinGrams": 7.2,
+   "fiberGrams": 6.4,
+   "carbGrams": 22.2,
+   "fatGrams": 5.8,
+   "saturatedFatGrams": 0.9,
+   "sugarGrams": 9,
+   "sodiumMilligrams": 318.2
+  }
  },
  {
   "slug": "vegetable-soup-with-white-beans",
@@ -8490,7 +9590,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 96,
+   "proteinGrams": 3.8,
+   "fiberGrams": 4.6,
+   "carbGrams": 17,
+   "fatGrams": 2.3,
+   "saturatedFatGrams": 0.4,
+   "sugarGrams": 4.4,
+   "sodiumMilligrams": 206.9
+  }
  },
  {
   "slug": "hearty-veggie-burger-with-sweet-potato-and-tofu",
@@ -8571,7 +9681,17 @@
   "dietaryTags": [
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 678,
+   "proteinGrams": 14.3,
+   "fiberGrams": 9.7,
+   "carbGrams": 78,
+   "fatGrams": 35.7,
+   "saturatedFatGrams": 6,
+   "sugarGrams": 8.2,
+   "sodiumMilligrams": 306.9
+  }
  },
  {
   "slug": "fish-stock-for-soups-and-stews-vmbsd",
@@ -8728,7 +9848,17 @@
   "dietaryTags": [
    "gluten-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 433,
+   "proteinGrams": 27.8,
+   "fiberGrams": 2.1,
+   "carbGrams": 13.3,
+   "fatGrams": 29.8,
+   "saturatedFatGrams": 8.4,
+   "sugarGrams": 5.3,
+   "sodiumMilligrams": 439.6
+  }
  },
  {
   "slug": "hungarian-goulash",
@@ -8808,7 +9938,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 238,
+   "proteinGrams": 22.8,
+   "fiberGrams": 4.5,
+   "carbGrams": 21.3,
+   "fatGrams": 7.9,
+   "saturatedFatGrams": 2.2,
+   "sugarGrams": 7.9,
+   "sodiumMilligrams": 278
+  }
  },
  {
   "slug": "classic-caprese-salad",
@@ -8850,7 +9990,17 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 406,
+   "proteinGrams": 26.8,
+   "fiberGrams": 3,
+   "carbGrams": 12.4,
+   "fatGrams": 28.4,
+   "saturatedFatGrams": 17.8,
+   "sugarGrams": 7.6,
+   "sodiumMilligrams": 817.5
+  }
  },
  {
   "slug": "recipes-italian-shakshuka-baked-eggs",
@@ -8934,7 +10084,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 347,
+   "proteinGrams": 21,
+   "fiberGrams": 11.6,
+   "carbGrams": 37,
+   "fatGrams": 15.2,
+   "saturatedFatGrams": 3.9,
+   "sugarGrams": 14.7,
+   "sodiumMilligrams": 1241.3
+  }
  },
  {
   "slug": "italian-soup-with-red-potato",
@@ -9026,7 +10186,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 357,
+   "proteinGrams": 18.3,
+   "fiberGrams": 15,
+   "carbGrams": 57.9,
+   "fatGrams": 7.3,
+   "saturatedFatGrams": 1.7,
+   "sugarGrams": 7.8,
+   "sodiumMilligrams": 965.8
+  }
  },
  {
   "slug": "italian-zucchini-and-tomato-casserole-with-mozzarella-and-parmesan-1l68t",
@@ -9080,7 +10250,17 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 188,
+   "proteinGrams": 9.7,
+   "fiberGrams": 1.7,
+   "carbGrams": 6.6,
+   "fatGrams": 13.9,
+   "saturatedFatGrams": 5.4,
+   "sugarGrams": 3.2,
+   "sodiumMilligrams": 243.3
+  }
  },
  {
   "slug": "italian-soup-with-lupini-beans-and-kale",
@@ -9169,7 +10349,17 @@
    "vegetarian",
    "gluten-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 502,
+   "proteinGrams": 33.4,
+   "fiberGrams": 20,
+   "carbGrams": 81.6,
+   "fatGrams": 8.8,
+   "saturatedFatGrams": 3.9,
+   "sugarGrams": 23.4,
+   "sodiumMilligrams": 426
+  }
  },
  {
   "slug": "jicama-tomato-and-black-bean-salad",
@@ -9227,7 +10417,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 249,
+   "proteinGrams": 7.9,
+   "fiberGrams": 12.7,
+   "carbGrams": 29.7,
+   "fatGrams": 11.9,
+   "saturatedFatGrams": 1.7,
+   "sugarGrams": 3.3,
+   "sodiumMilligrams": 159.2
+  }
  },
  {
   "slug": "korean-barbecue",
@@ -9400,7 +10600,17 @@
    "gluten-free",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 323,
+   "proteinGrams": 23.4,
+   "fiberGrams": 0.3,
+   "carbGrams": 6.7,
+   "fatGrams": 22,
+   "saturatedFatGrams": 4.4,
+   "sugarGrams": 3.3,
+   "sodiumMilligrams": 72.3
+  }
  },
  {
   "slug": "lentil-soup-with-collards-greens-with-red-potatoes",
@@ -9490,7 +10700,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 347,
+   "proteinGrams": 15.5,
+   "fiberGrams": 9.9,
+   "carbGrams": 56.8,
+   "fatGrams": 7.9,
+   "saturatedFatGrams": 1.1,
+   "sugarGrams": 5.6,
+   "sodiumMilligrams": 106.8
+  }
  },
  {
   "slug": "lentil-pasta-with-tofu-and-vegetables",
@@ -9588,7 +10808,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 309,
+   "proteinGrams": 21.2,
+   "fiberGrams": 6.4,
+   "carbGrams": 29.8,
+   "fatGrams": 14.7,
+   "saturatedFatGrams": 2.1,
+   "sugarGrams": 13.6,
+   "sodiumMilligrams": 1784.2
+  }
  },
  {
   "slug": "lentil-spinach-stew-with-lemon",
@@ -9684,7 +10914,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 135,
+   "proteinGrams": 1.8,
+   "fiberGrams": 2.7,
+   "carbGrams": 10.3,
+   "fatGrams": 10.7,
+   "saturatedFatGrams": 1.5,
+   "sugarGrams": 3.3,
+   "sodiumMilligrams": 387.7
+  }
  },
  {
   "slug": "lotus-root-stir-fry-with-carrots-and-snow-peas",
@@ -9748,7 +10988,17 @@
    "gluten-free",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 188,
+   "proteinGrams": 5.1,
+   "fiberGrams": 6.4,
+   "carbGrams": 26.8,
+   "fatGrams": 7.7,
+   "saturatedFatGrams": 0.7,
+   "sugarGrams": 3.8,
+   "sodiumMilligrams": 446.5
+  }
  },
  {
   "slug": "lupini-bean-salad-with-asiago-cheese-pine-nuts-and-balsamic-vinaigrette",
@@ -9809,7 +11059,17 @@
    "vegetarian",
    "gluten-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 1003,
+   "proteinGrams": 42,
+   "fiberGrams": 25.5,
+   "carbGrams": 100.6,
+   "fatGrams": 52.2,
+   "saturatedFatGrams": 5.7,
+   "sugarGrams": 7.5,
+   "sodiumMilligrams": 58.4
+  }
  },
  {
   "slug": "mahi-mahi-black-rice-bowl-a-protein-flip-classic",
@@ -9885,7 +11145,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 495,
+   "proteinGrams": 51.8,
+   "fiberGrams": 7,
+   "carbGrams": 33.2,
+   "fatGrams": 17.5,
+   "saturatedFatGrams": 2.6,
+   "sugarGrams": 2.3,
+   "sodiumMilligrams": 209.7
+  }
  },
  {
   "slug": "mediterranean-baked-tilapia-with-cherry-tomatoes-and-capers",
@@ -9966,7 +11236,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 935,
+   "proteinGrams": 57.4,
+   "fiberGrams": 19,
+   "carbGrams": 84.5,
+   "fatGrams": 41.7,
+   "saturatedFatGrams": 8.6,
+   "sugarGrams": 9.4,
+   "sodiumMilligrams": 1248.4
+  }
  },
  {
   "slug": "mediterranean-branzino-with-zucchini-and-tomatoes",
@@ -10033,7 +11313,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 313,
+   "proteinGrams": 35.4,
+   "fiberGrams": 6,
+   "carbGrams": 21.1,
+   "fatGrams": 11.7,
+   "saturatedFatGrams": 2.1,
+   "sugarGrams": 11.3,
+   "sodiumMilligrams": 544.2
+  }
  },
  {
   "slug": "mediterranean-cod-white-bean-stew-with-toasted-pine-nuts",
@@ -10115,7 +11405,17 @@
   "dietaryTags": [
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 644,
+   "proteinGrams": 56.7,
+   "fiberGrams": 15.5,
+   "carbGrams": 52.4,
+   "fatGrams": 21.7,
+   "saturatedFatGrams": 3.1,
+   "sugarGrams": 16.2,
+   "sodiumMilligrams": 406.1
+  }
  },
  {
   "slug": "mediterranean-herb-crusted-tilapia",
@@ -10199,7 +11499,17 @@
    "gluten-free",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 397,
+   "proteinGrams": 21.8,
+   "fiberGrams": 1.2,
+   "carbGrams": 16.9,
+   "fatGrams": 26.8,
+   "saturatedFatGrams": 7.3,
+   "sugarGrams": 1.5,
+   "sodiumMilligrams": 518.4
+  }
  },
  {
   "slug": "mediterranean-lentil-salad",
@@ -10289,7 +11599,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 450,
+   "proteinGrams": 13.7,
+   "fiberGrams": 7.3,
+   "carbGrams": 39.3,
+   "fatGrams": 28,
+   "saturatedFatGrams": 3.9,
+   "sugarGrams": 4.6,
+   "sodiumMilligrams": 53.3
+  }
  },
  {
   "slug": "mediterranean-lentil-stuffed-summer-squash-bowls",
@@ -10356,7 +11676,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 130,
+   "proteinGrams": 8.5,
+   "fiberGrams": 5.1,
+   "carbGrams": 22.8,
+   "fatGrams": 1.8,
+   "saturatedFatGrams": 0.3,
+   "sugarGrams": 5.1,
+   "sodiumMilligrams": 11.2
+  }
  },
  {
   "slug": "mediterranean-salad-with-shredded-chicken-and-homemade-vinaigrette-ys2i6",
@@ -10432,7 +11762,17 @@
   "dietaryTags": [
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 606,
+   "proteinGrams": 38.9,
+   "fiberGrams": 10.9,
+   "carbGrams": 44,
+   "fatGrams": 32.4,
+   "saturatedFatGrams": 6.8,
+   "sugarGrams": 4.1,
+   "sodiumMilligrams": 859.2
+  }
  },
  {
   "slug": "mediterranean-salmon-and-lentil-salad",
@@ -10500,7 +11840,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 635,
+   "proteinGrams": 39.1,
+   "fiberGrams": 7,
+   "carbGrams": 38.4,
+   "fatGrams": 37,
+   "saturatedFatGrams": 8.4,
+   "sugarGrams": 4.5,
+   "sodiumMilligrams": 437.3
+  }
  },
  {
   "slug": "mediterranean-sweet-potato-salad-with-basil-and-pine-nuts",
@@ -10546,7 +11896,17 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 309,
+   "proteinGrams": 10.3,
+   "fiberGrams": 4.8,
+   "carbGrams": 29.6,
+   "fatGrams": 17.3,
+   "saturatedFatGrams": 4.1,
+   "sugarGrams": 6.4,
+   "sodiumMilligrams": 293.1
+  }
  },
  {
   "slug": "mini-blueberry-lemon-cheesecakes-light-and-refreshing-dessert-mggko",
@@ -10620,7 +11980,17 @@
    "vegetarian",
    "gluten-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 294,
+   "proteinGrams": 7.4,
+   "fiberGrams": 0.8,
+   "carbGrams": 26.5,
+   "fatGrams": 18.3,
+   "saturatedFatGrams": 10.4,
+   "sugarGrams": 21.5,
+   "sodiumMilligrams": 278.9
+  }
  },
  {
   "slug": "miso-soup",
@@ -10682,7 +12052,17 @@
    "gluten-free",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 227,
+   "proteinGrams": 21.7,
+   "fiberGrams": 3.8,
+   "carbGrams": 12.5,
+   "fatGrams": 9.3,
+   "saturatedFatGrams": 1.7,
+   "sugarGrams": 2.4,
+   "sodiumMilligrams": 1420.9
+  }
  },
  {
   "slug": "protein-flip-mustard-rosemary-salmon-with-leeks-fennel-edamame",
@@ -10784,7 +12164,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 408,
+   "proteinGrams": 30.6,
+   "fiberGrams": 6.2,
+   "carbGrams": 18.9,
+   "fatGrams": 23.9,
+   "saturatedFatGrams": 5.8,
+   "sugarGrams": 8.9,
+   "sodiumMilligrams": 135.4
+  }
  },
  {
   "slug": "nopal-cactus-salad",
@@ -10866,7 +12256,17 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 124,
+   "proteinGrams": 4.6,
+   "fiberGrams": 0.9,
+   "carbGrams": 3.1,
+   "fatGrams": 10.6,
+   "saturatedFatGrams": 3.7,
+   "sugarGrams": 2.1,
+   "sodiumMilligrams": 184.6
+  }
  },
  {
   "slug": "poblano-sweet-potato-and-queso-fresco-soup",
@@ -10952,7 +12352,17 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 366,
+   "proteinGrams": 12.6,
+   "fiberGrams": 6.5,
+   "carbGrams": 38.5,
+   "fatGrams": 19.1,
+   "saturatedFatGrams": 6.7,
+   "sugarGrams": 11.8,
+   "sodiumMilligrams": 504.5
+  }
  },
  {
   "slug": "porcini-dusted-cod-w-asparagus-puree",
@@ -11094,7 +12504,17 @@
   ],
   "dietaryTags": [
    "gluten-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 500,
+   "proteinGrams": 34.4,
+   "fiberGrams": 2.6,
+   "carbGrams": 10.2,
+   "fatGrams": 36,
+   "saturatedFatGrams": 14.5,
+   "sugarGrams": 3.9,
+   "sodiumMilligrams": 185.5
+  }
  },
  {
   "slug": "pozole-verde-with-mushrooms",
@@ -11227,7 +12647,17 @@
   "dietaryTags": [
    "dairy-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 303,
+   "proteinGrams": 11.1,
+   "fiberGrams": 9.3,
+   "carbGrams": 38,
+   "fatGrams": 13.8,
+   "saturatedFatGrams": 1.9,
+   "sugarGrams": 7.7,
+   "sodiumMilligrams": 853.7
+  }
  },
  {
   "slug": "protein-flip-huevos-rancheros-with-pinto-beans-greek-yogurt-pepitas",
@@ -11291,7 +12721,17 @@
    "vegetarian",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 717,
+   "proteinGrams": 42.3,
+   "fiberGrams": 21.4,
+   "carbGrams": 80.4,
+   "fatGrams": 26.4,
+   "saturatedFatGrams": 5.8,
+   "sugarGrams": 5.6,
+   "sodiumMilligrams": 332.7
+  }
  },
  {
   "slug": "pumpkin-mousse-high-protein-fiber-low-sugar-fall-dessert-recipe-sc3r2",
@@ -11337,7 +12777,17 @@
    "vegetarian",
    "gluten-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 123,
+   "proteinGrams": 13.2,
+   "fiberGrams": 3.4,
+   "carbGrams": 12.4,
+   "fatGrams": 3.3,
+   "saturatedFatGrams": 1.2,
+   "sugarGrams": 6.1,
+   "sodiumMilligrams": 263
+  }
  },
  {
   "slug": "chefhealthyhenry-com-recipes-quinoa-zucchini-salad-the-perfect-protein-flip-tm-side",
@@ -11409,7 +12859,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 315,
+   "proteinGrams": 9.9,
+   "fiberGrams": 9.5,
+   "carbGrams": 41.8,
+   "fatGrams": 14.5,
+   "saturatedFatGrams": 2,
+   "sugarGrams": 4.4,
+   "sodiumMilligrams": 20.1
+  }
  },
  {
   "slug": "dragon-fruit-salad",
@@ -11467,7 +12927,17 @@
    "vegetarian",
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 1015,
+   "proteinGrams": 7.3,
+   "fiberGrams": 20.3,
+   "carbGrams": 115.2,
+   "fatGrams": 63.9,
+   "saturatedFatGrams": 11.5,
+   "sugarGrams": 70.5,
+   "sodiumMilligrams": 11.6
+  }
  },
  {
   "slug": "roasted-branzino-with-greek-ladolemono",
@@ -11550,7 +13020,17 @@
    "gluten-free",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 773,
+   "proteinGrams": 32.3,
+   "fiberGrams": 3,
+   "carbGrams": 12.7,
+   "fatGrams": 68.4,
+   "saturatedFatGrams": 10.2,
+   "sugarGrams": 3.7,
+   "sodiumMilligrams": 870.6
+  }
  },
  {
   "slug": "roasted-carrots-with-radishes-and-white-beans-sauce",
@@ -11644,7 +13124,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 397,
+   "proteinGrams": 14.2,
+   "fiberGrams": 12.5,
+   "carbGrams": 42.2,
+   "fatGrams": 21.1,
+   "saturatedFatGrams": 2.9,
+   "sugarGrams": 8.6,
+   "sodiumMilligrams": 780.1
+  }
  },
  {
   "slug": "roasted-cauliflower-and-crispy-harissa-chickpeas",
@@ -11711,7 +13201,17 @@
    "vegetarian",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 543,
+   "proteinGrams": 17.6,
+   "fiberGrams": 10.4,
+   "carbGrams": 47.9,
+   "fatGrams": 34.9,
+   "saturatedFatGrams": 8.7,
+   "sugarGrams": 24.5,
+   "sodiumMilligrams": 578.7
+  }
  },
  {
   "slug": "roasted-pear-butternut-squash-soup-with-crumbled-stilton",
@@ -11791,7 +13291,17 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 327,
+   "proteinGrams": 8.6,
+   "fiberGrams": 8.8,
+   "carbGrams": 48.4,
+   "fatGrams": 13.9,
+   "saturatedFatGrams": 5.3,
+   "sugarGrams": 17,
+   "sodiumMilligrams": 895.7
+  }
  },
  {
   "slug": "roasted-red-pepper-salad-with-homemade-balsamic-vinaigrette-xfolb",
@@ -11881,7 +13391,17 @@
    "vegan",
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 896,
+   "proteinGrams": 3.8,
+   "fiberGrams": 4.6,
+   "carbGrams": 37.4,
+   "fatGrams": 83.4,
+   "saturatedFatGrams": 12.4,
+   "sugarGrams": 27.6,
+   "sodiumMilligrams": 1092.8
+  }
  },
  {
   "slug": "roasted-stuffed-squash-blossoms",
@@ -11956,7 +13476,17 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 114,
+   "proteinGrams": 4.1,
+   "fiberGrams": 1.3,
+   "carbGrams": 3.5,
+   "fatGrams": 9.9,
+   "saturatedFatGrams": 3,
+   "sugarGrams": 0.8,
+   "sodiumMilligrams": 226.5
+  }
  },
  {
   "slug": "roasted-sumac-salmon-with-brussel-sprouts-and-pomegranate",
@@ -12048,7 +13578,17 @@
    "gluten-free",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 349,
+   "proteinGrams": 25.3,
+   "fiberGrams": 2.7,
+   "carbGrams": 8.5,
+   "fatGrams": 24,
+   "saturatedFatGrams": 4.7,
+   "sugarGrams": 3.6,
+   "sodiumMilligrams": 373.8
+  }
  },
  {
   "slug": "roasted-vegetable-with-chestnuts-and-caramelized-onion",
@@ -12167,7 +13707,17 @@
    "vegan",
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 329,
+   "proteinGrams": 8.4,
+   "fiberGrams": 9.8,
+   "carbGrams": 59.2,
+   "fatGrams": 8.6,
+   "saturatedFatGrams": 1.3,
+   "sugarGrams": 13.1,
+   "sodiumMilligrams": 32
+  }
  },
  {
   "slug": "rolled-oat-breaded-eggplant-with-sweet-and-spicy-sauce",
@@ -12268,7 +13818,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 439,
+   "proteinGrams": 13.6,
+   "fiberGrams": 10.1,
+   "carbGrams": 60.2,
+   "fatGrams": 19.2,
+   "saturatedFatGrams": 2.9,
+   "sugarGrams": 25.2,
+   "sodiumMilligrams": 334.5
+  }
  },
  {
   "slug": "mediterranean-sauce-with-red-peppers-saffron",
@@ -12489,7 +14049,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 563,
+   "proteinGrams": 17.5,
+   "fiberGrams": 3.8,
+   "carbGrams": 37.3,
+   "fatGrams": 36.9,
+   "saturatedFatGrams": 5.9,
+   "sugarGrams": 25.7,
+   "sodiumMilligrams": 1207.9
+  }
  },
  {
   "slug": "salsa-verde-molcajete",
@@ -12560,7 +14130,17 @@
    "vegan",
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 78,
+   "proteinGrams": 2.9,
+   "fiberGrams": 4.5,
+   "carbGrams": 18.3,
+   "fatGrams": 1.1,
+   "saturatedFatGrams": 0.2,
+   "sugarGrams": 8.1,
+   "sodiumMilligrams": 480.2
+  }
  },
  {
   "slug": "savory-corn-and-mushroom-saute-with-pancetta",
@@ -12649,7 +14229,17 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 288,
+   "proteinGrams": 6,
+   "fiberGrams": 3.2,
+   "carbGrams": 25.7,
+   "fatGrams": 20.4,
+   "saturatedFatGrams": 7.7,
+   "sugarGrams": 4.8,
+   "sodiumMilligrams": 445.4
+  }
  },
  {
   "slug": "scallops-with-black-bean-pasta",
@@ -12741,7 +14331,17 @@
   "dietaryTags": [
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 365,
+   "proteinGrams": 14.1,
+   "fiberGrams": 4.3,
+   "carbGrams": 51,
+   "fatGrams": 11.8,
+   "saturatedFatGrams": 1.5,
+   "sugarGrams": 5.1,
+   "sodiumMilligrams": 204.7
+  }
  },
  {
   "slug": "sea-bass-soup-with-shiitake-and-bok-choy",
@@ -12803,7 +14403,17 @@
    "gluten-free",
    "dairy-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 260,
+   "proteinGrams": 33.2,
+   "fiberGrams": 2.5,
+   "carbGrams": 6.9,
+   "fatGrams": 10.8,
+   "saturatedFatGrams": 1.7,
+   "sugarGrams": 3,
+   "sodiumMilligrams": 146.3
+  }
  },
  {
   "slug": "crispy-sweet-potato-matchsticks-with-saucy-sesame-tofu",
@@ -12905,7 +14515,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 241,
+   "proteinGrams": 10.6,
+   "fiberGrams": 3.6,
+   "carbGrams": 17.8,
+   "fatGrams": 17.2,
+   "saturatedFatGrams": 2.1,
+   "sugarGrams": 2.7,
+   "sodiumMilligrams": 351.4
+  }
  },
  {
   "slug": "fresh-potato-salad-zc9oo",
@@ -12967,7 +14587,17 @@
    "gluten-free",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 215,
+   "proteinGrams": 6.8,
+   "fiberGrams": 3.9,
+   "carbGrams": 17.5,
+   "fatGrams": 13.7,
+   "saturatedFatGrams": 2.4,
+   "sugarGrams": 4,
+   "sodiumMilligrams": 219.9
+  }
  },
  {
   "slug": "simple-frittata",
@@ -13010,7 +14640,17 @@
    "vegetarian",
    "gluten-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 158,
+   "proteinGrams": 10.3,
+   "fiberGrams": 0.9,
+   "carbGrams": 3.8,
+   "fatGrams": 11.3,
+   "saturatedFatGrams": 4.2,
+   "sugarGrams": 1.3,
+   "sodiumMilligrams": 399.7
+  }
  },
  {
   "slug": "simple-hummus-eo5q7",
@@ -13072,7 +14712,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 219,
+   "proteinGrams": 9.7,
+   "fiberGrams": 7.9,
+   "carbGrams": 26.8,
+   "fatGrams": 9.3,
+   "saturatedFatGrams": 1.2,
+   "sugarGrams": 4.4,
+   "sodiumMilligrams": 258.6
+  }
  },
  {
   "slug": "roasted-chestnut-and-arugula-salad",
@@ -13123,7 +14773,17 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 270,
+   "proteinGrams": 5.2,
+   "fiberGrams": 3.9,
+   "carbGrams": 25.7,
+   "fatGrams": 16.9,
+   "saturatedFatGrams": 3.4,
+   "sugarGrams": 7.8,
+   "sodiumMilligrams": 131.1
+  }
  },
  {
   "slug": "spaghetti-squash-with-garbanzo-beans-and-feta",
@@ -13202,7 +14862,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 368,
+   "proteinGrams": 12.5,
+   "fiberGrams": 12.8,
+   "carbGrams": 52.1,
+   "fatGrams": 14.9,
+   "saturatedFatGrams": 3.5,
+   "sugarGrams": 14.9,
+   "sodiumMilligrams": 490.6
+  }
  },
  {
   "slug": "spicy-ginger-garlic-chicken-red-lentil-soup-with-bok-choy",
@@ -13293,7 +14963,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 860,
+   "proteinGrams": 83.7,
+   "fiberGrams": 6.6,
+   "carbGrams": 33.2,
+   "fatGrams": 42.8,
+   "saturatedFatGrams": 11.5,
+   "sugarGrams": 4.5,
+   "sodiumMilligrams": 641.6
+  }
  },
  {
   "slug": "spicy-garbanzo-beans",
@@ -13352,7 +15032,17 @@
    "vegan",
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 309,
+   "proteinGrams": 15.6,
+   "fiberGrams": 14.6,
+   "carbGrams": 52.2,
+   "fatGrams": 5.6,
+   "saturatedFatGrams": 0.5,
+   "sugarGrams": 9,
+   "sodiumMilligrams": 463.1
+  }
  },
  {
   "slug": "spinach-stuffed-spaghetti-squash",
@@ -13445,7 +15135,17 @@
    "vegetarian",
    "gluten-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 350,
+   "proteinGrams": 13.6,
+   "fiberGrams": 4.4,
+   "carbGrams": 15.6,
+   "fatGrams": 27.9,
+   "saturatedFatGrams": 8.1,
+   "sugarGrams": 5.2,
+   "sodiumMilligrams": 663.4
+  }
  },
  {
   "slug": "squash-blossom-tostada-with-oaxaca-cheese",
@@ -13525,7 +15225,17 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 175,
+   "proteinGrams": 5.1,
+   "fiberGrams": 6.4,
+   "carbGrams": 30.2,
+   "fatGrams": 5.2,
+   "saturatedFatGrams": 0.8,
+   "sugarGrams": 7.2,
+   "sodiumMilligrams": 331.3
+  }
  },
  {
   "slug": "stuffed-turkey-breast",
@@ -13679,7 +15389,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 209,
+   "proteinGrams": 4.9,
+   "fiberGrams": 4.1,
+   "carbGrams": 13.2,
+   "fatGrams": 11.7,
+   "saturatedFatGrams": 3.2,
+   "sugarGrams": 3.3,
+   "sodiumMilligrams": 387.2
+  }
  },
  {
   "slug": "sushi-tacos",
@@ -13818,7 +15538,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 164,
+   "proteinGrams": 7.2,
+   "fiberGrams": 3.4,
+   "carbGrams": 17,
+   "fatGrams": 7.3,
+   "saturatedFatGrams": 0.9,
+   "sugarGrams": 10.3,
+   "sodiumMilligrams": 676.4
+  }
  },
  {
   "slug": "sweet-potato-brownies-vc5r1",
@@ -13889,7 +15619,17 @@
    "vegetarian",
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 177,
+   "proteinGrams": 3.7,
+   "fiberGrams": 3,
+   "carbGrams": 22.4,
+   "fatGrams": 9.5,
+   "saturatedFatGrams": 1,
+   "sugarGrams": 14.6,
+   "sodiumMilligrams": 46.7
+  }
  },
  {
   "slug": "sweet-potato-cinnamon-rolls-rjh1v",
@@ -13970,7 +15710,17 @@
   "dietaryTags": [
    "vegetarian",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 285,
+   "proteinGrams": 5.1,
+   "fiberGrams": 3.1,
+   "carbGrams": 55.6,
+   "fatGrams": 4.9,
+   "saturatedFatGrams": 0.7,
+   "sugarGrams": 15.5,
+   "sodiumMilligrams": 200.9
+  }
  },
  {
   "slug": "sweet-potato-and-lemongrass-almond-butter-curry",
@@ -14046,7 +15796,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 465,
+   "proteinGrams": 14.7,
+   "fiberGrams": 13.8,
+   "carbGrams": 46.2,
+   "fatGrams": 28.5,
+   "saturatedFatGrams": 20.7,
+   "sugarGrams": 12.9,
+   "sodiumMilligrams": 875.1
+  }
  },
  {
   "slug": "swordfish-with-an-olive-tapenade",
@@ -14131,7 +15891,17 @@
    "gluten-free",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 374,
+   "proteinGrams": 19.4,
+   "fiberGrams": 4.4,
+   "carbGrams": 17,
+   "fatGrams": 21.9,
+   "saturatedFatGrams": 3.6,
+   "sugarGrams": 7.5,
+   "sodiumMilligrams": 520.2
+  }
  },
  {
   "slug": "thai-tom-yum-soup-w0m0f",
@@ -14213,7 +15983,17 @@
    "gluten-free",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 149,
+   "proteinGrams": 18.7,
+   "fiberGrams": 4.9,
+   "carbGrams": 22.8,
+   "fatGrams": 1,
+   "saturatedFatGrams": 0.2,
+   "sugarGrams": 6.1,
+   "sodiumMilligrams": 1319
+  }
  },
  {
   "slug": "tilapia-stew-with-nopal-cactus",
@@ -14289,7 +16069,17 @@
   "dietaryTags": [
    "gluten-free",
    "dairy-free"
-  ]
+  ],
+  "nutrition": {
+   "calories": 267,
+   "proteinGrams": 31.9,
+   "fiberGrams": 4.3,
+   "carbGrams": 10.1,
+   "fatGrams": 12.2,
+   "saturatedFatGrams": 2.2,
+   "sugarGrams": 3.8,
+   "sodiumMilligrams": 1249.9
+  }
  },
  {
   "slug": "tofu-with-brussel-sprouts-and-almonds",
@@ -14355,7 +16145,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 269,
+   "proteinGrams": 15.8,
+   "fiberGrams": 8.4,
+   "carbGrams": 25.2,
+   "fatGrams": 14.6,
+   "saturatedFatGrams": 1.9,
+   "sugarGrams": 8.6,
+   "sodiumMilligrams": 642.7
+  }
  },
  {
   "slug": "traditional-crepes",
@@ -14431,7 +16231,17 @@
   "dietaryTags": [
    "vegetarian",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 219,
+   "proteinGrams": 7.4,
+   "fiberGrams": 0.8,
+   "carbGrams": 25.5,
+   "fatGrams": 9.4,
+   "saturatedFatGrams": 5,
+   "sugarGrams": 1.7,
+   "sodiumMilligrams": 196.7
+  }
  },
  {
   "slug": "traditional-salsa-rojo-with-tomatillos-and-lime-iwzpn",
@@ -14588,7 +16398,17 @@
   "dietaryTags": [
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 514,
+   "proteinGrams": 48,
+   "fiberGrams": 5.7,
+   "carbGrams": 17.9,
+   "fatGrams": 28.5,
+   "saturatedFatGrams": 4.2,
+   "sugarGrams": 6.2,
+   "sodiumMilligrams": 968
+  }
  },
  {
   "slug": "vegetables-in-mint-vinaigrette",
@@ -14661,7 +16481,17 @@
    "gluten-free",
    "dairy-free",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 143,
+   "proteinGrams": 2.3,
+   "fiberGrams": 2.9,
+   "carbGrams": 10.5,
+   "fatGrams": 11,
+   "saturatedFatGrams": 1.3,
+   "sugarGrams": 5.9,
+   "sodiumMilligrams": 15
+  }
  },
  {
   "slug": "vegetarian-egg-bites-with-spinach-beans-and-feta-cktbg",
@@ -14724,7 +16554,17 @@
    "vegetarian",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 297,
+   "proteinGrams": 14.3,
+   "fiberGrams": 3.8,
+   "carbGrams": 18.1,
+   "fatGrams": 19,
+   "saturatedFatGrams": 5.1,
+   "sugarGrams": 1,
+   "sodiumMilligrams": 537.8
+  }
  },
  {
   "slug": "high-protein-meatless-burger-with-black-beans-quinoa-cilantro-chimichurri",
@@ -14802,7 +16642,17 @@
    "dairy-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 636,
+   "proteinGrams": 22,
+   "fiberGrams": 15.7,
+   "carbGrams": 60.3,
+   "fatGrams": 35.5,
+   "saturatedFatGrams": 6.8,
+   "sugarGrams": 5.7,
+   "sodiumMilligrams": 824.5
+  }
  },
  {
   "slug": "vibrant-mediterranean-salad-with-chickpeas-4hcgc",
@@ -14953,7 +16803,17 @@
    "vegetarian",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 591,
+   "proteinGrams": 22.6,
+   "fiberGrams": 18.9,
+   "carbGrams": 60.5,
+   "fatGrams": 32,
+   "saturatedFatGrams": 6.7,
+   "sugarGrams": 11.2,
+   "sodiumMilligrams": 788.7
+  }
  },
  {
   "slug": "zucchini-orzo-salad-with-pepperoncini-hmpfk",
@@ -15010,7 +16870,17 @@
   ],
   "dietaryTags": [
    "vegetarian"
-  ]
+  ],
+  "nutrition": {
+   "calories": 400,
+   "proteinGrams": 7.3,
+   "fiberGrams": 3.3,
+   "carbGrams": 26.6,
+   "fatGrams": 30.9,
+   "saturatedFatGrams": 3.9,
+   "sugarGrams": 3.9,
+   "sodiumMilligrams": 430.7
+  }
  },
  {
   "slug": "warm-zucchini-feta-salad-lemon-caper-halibut",
@@ -15094,7 +16964,17 @@
   "dietaryTags": [
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 654,
+   "proteinGrams": 39.4,
+   "fiberGrams": 12,
+   "carbGrams": 58.5,
+   "fatGrams": 31,
+   "saturatedFatGrams": 6.2,
+   "sugarGrams": 10.9,
+   "sodiumMilligrams": 1100.5
+  }
  },
  {
   "slug": "turkey-lentil-meatball-salad-greek-yogurt",
@@ -15203,7 +17083,17 @@
   "dietaryTags": [
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 594,
+   "proteinGrams": 47.7,
+   "fiberGrams": 8.9,
+   "carbGrams": 44.1,
+   "fatGrams": 27.1,
+   "saturatedFatGrams": 7.3,
+   "sugarGrams": 10.8,
+   "sodiumMilligrams": 836.5
+  }
  },
  {
   "slug": "savory-dutch-baby-arugula-lupini-bean-salad",
@@ -15296,7 +17186,17 @@
   "dietaryTags": [
    "vegetarian",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 759,
+   "proteinGrams": 30.7,
+   "fiberGrams": 12.6,
+   "carbGrams": 54.9,
+   "fatGrams": 48.1,
+   "saturatedFatGrams": 13.5,
+   "sugarGrams": 7,
+   "sodiumMilligrams": 712.9
+  }
  },
  {
   "slug": "herbed-flatbreads-roasted-red-pepper-feta-prosciutto-cherokee-tomato",
@@ -15409,7 +17309,17 @@
    "vegetarian",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 664,
+   "proteinGrams": 38,
+   "fiberGrams": 12.8,
+   "carbGrams": 81.7,
+   "fatGrams": 22,
+   "saturatedFatGrams": 8.8,
+   "sugarGrams": 8.4,
+   "sodiumMilligrams": 1180.9
+  }
  },
  {
   "slug": "chicken-tinga-tostadas",
@@ -15525,7 +17435,17 @@
    "gluten-free",
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 973,
+   "proteinGrams": 52.2,
+   "fiberGrams": 13.6,
+   "carbGrams": 91.6,
+   "fatGrams": 48.3,
+   "saturatedFatGrams": 19.6,
+   "sugarGrams": 9.7,
+   "sodiumMilligrams": 1916.1
+  }
  },
  {
   "slug": "bourbon-black-garlic-salmon-with-roasted-sweet-potato-fries-lemon-parmesan-broccoli",
@@ -15632,7 +17552,17 @@
   "dietaryTags": [
    "high-protein",
    "high-fiber"
-  ]
+  ],
+  "nutrition": {
+   "calories": 682,
+   "proteinGrams": 41.2,
+   "fiberGrams": 9.8,
+   "carbGrams": 40.5,
+   "fatGrams": 38.7,
+   "saturatedFatGrams": 10.1,
+   "sugarGrams": 8.8,
+   "sodiumMilligrams": 842.8
+  }
  },
  {
   "slug": "chocolate-sweet-potato-protein-donuts-with-whipped-chocolate-topping",
@@ -15730,6 +17660,16 @@
   "dietaryTags": [
    "vegetarian",
    "high-protein"
-  ]
+  ],
+  "nutrition": {
+   "calories": 208,
+   "proteinGrams": 11.4,
+   "fiberGrams": 3.2,
+   "carbGrams": 29.2,
+   "fatGrams": 9.9,
+   "saturatedFatGrams": 5.4,
+   "sugarGrams": 5.9,
+   "sodiumMilligrams": 257.8
+  }
  }
 ]

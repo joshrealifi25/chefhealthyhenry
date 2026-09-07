@@ -1,0 +1,71 @@
+{
+  "_comment": "Nutrition for ingredients Edamam's parser does not recognise, transcribed from the product's own Nutrition Facts panel. These are Protein Flip staples, so substituting a generic equivalent would misstate the recipe: allulose carries roughly a tenth the calories of the sugar a substitution would assume. Values are per the label's stated serving. Add a product by transcribing its panel; leave it out entirely rather than guessing, since an absent product simply blocks its recipes rather than publishing a wrong number.",
+  "products": [
+    {
+      "name": "Just Better Fiber",
+      "match": "just\\s*better",
+      "source": "Product label, Just Better Brands, non-GMO soluble corn fiber",
+      "servingGrams": 6,
+      "gramsPerUnit": {
+        "tablespoon": 6,
+        "teaspoon": 2,
+        "cup": 96,
+        "stick pack": 6
+      },
+      "perServing": {
+        "calories": 10,
+        "proteinGrams": 0,
+        "fiberGrams": 5,
+        "carbGrams": 6,
+        "fatGrams": 0,
+        "saturatedFatGrams": 0,
+        "sugarGrams": 0,
+        "sodiumMilligrams": 0
+      }
+    },
+    {
+      "name": "Allulose",
+      "match": "al+ulose",
+      "source": "Product label, just better. allulose, single ingredient allulose",
+      "servingGrams": 5.7,
+      "gramsPerUnitNote": "The label states weight per stick pack only. Spoon and cup weights use the standard density for granulated allulose. Calories, protein, fat, fiber and sodium are all zero on the label, so the assumption can only affect the carbohydrate figure, which the label itself nets out to zero.",
+      "gramsPerUnit": {
+        "tablespoon": 12,
+        "teaspoon": 4,
+        "cup": 192,
+        "stick pack": 5.7
+      },
+      "perServing": {
+        "calories": 0,
+        "proteinGrams": 0,
+        "fiberGrams": 0,
+        "carbGrams": 5.7,
+        "fatGrams": 0,
+        "saturatedFatGrams": 0,
+        "sugarGrams": 0,
+        "sodiumMilligrams": 0
+      },
+      "matchNote": "Recipes spell it both allulose and alulose."
+    },
+    {
+      "name": "Unjury Unflavored Protein Powder",
+      "match": "unjury",
+      "source": "Product label, Unjury, whey protein isolate and soy lecithin",
+      "servingGrams": 24,
+      "gramsPerUnitNote": "The label's scoop is 24g, but two recipes state their own gram weights (60g for 2 scoops, 27 to 30g for 1). Where a recipe states grams, those are used instead of the label scoop.",
+      "gramsPerUnit": {
+        "scoop": 24
+      },
+      "perServing": {
+        "calories": 90,
+        "proteinGrams": 21,
+        "fiberGrams": 0,
+        "carbGrams": 0,
+        "fatGrams": 0,
+        "saturatedFatGrams": 0,
+        "sugarGrams": 0,
+        "sodiumMilligrams": 35
+      }
+    }
+  ]
+}
