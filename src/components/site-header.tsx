@@ -55,6 +55,18 @@ export function SiteHeader() {
             </Link>
           ))}
           <Link
+            href="/members/login"
+            aria-current={pathname === "/members/login" ? "page" : undefined}
+            className={cn(
+              "text-sm transition-colors hover:text-primary",
+              pathname === "/members/login" || pathname.startsWith("/members")
+                ? "font-medium text-primary"
+                : "text-muted-foreground"
+            )}
+          >
+            Members sign in
+          </Link>
+          <Link
             href="/cookbook"
             className="rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
@@ -89,6 +101,13 @@ export function SiteHeader() {
               {link.label}
             </Link>
           ))}
+          <Link
+            href="/members/login"
+            onClick={() => setOpen(false)}
+            className="block py-3 text-sm font-medium"
+          >
+            Members sign in
+          </Link>
         </nav>
       )}
     </header>
