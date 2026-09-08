@@ -124,30 +124,58 @@ export default async function MembersPage() {
                   Recipe Makeovers, seasonal features, and a private community
                   cooking alongside you. Included with Community membership.
                 </p>
+                <Link
+                  href="/members/makeover"
+                  className="mt-4 inline-block text-sm font-medium text-primary hover:underline"
+                >
+                  See how recipe makeovers work
+                </Link>
               </section>
             )}
 
             {(tier === "community" || tier === "chefs_table") && (
-              <section className="rounded-2xl border border-border bg-card p-6">
-                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                  Protein Flip™ Community
-                </p>
-                <h2 className="mt-1 font-heading text-xl font-semibold">
-                  Your community
-                </h2>
-                <p className="mt-2 text-sm text-muted-foreground">
-                  The private Protein Flip™ group is where members share meals,
-                  swaps, and questions.
-                </p>
-                <a
-                  href="https://www.facebook.com/groups/proteinflipcommunity"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-4 inline-block rounded-full border border-border px-5 py-2 text-sm font-medium text-primary transition-colors hover:bg-secondary"
-                >
-                  Open the community
-                </a>
-              </section>
+              <>
+                <section className="rounded-2xl border border-border bg-card p-6">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                    Protein Flip™ Makeover
+                  </p>
+                  <h2 className="mt-1 font-heading text-xl font-semibold">
+                    Submit a recipe you love
+                  </h2>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Send Chef Henry a family recipe, a weeknight favorite, or a
+                    dish you keep coming back to. He periodically chooses
+                    submissions and shows how the Protein Flip™ keeps what
+                    makes the meal worth cooking.
+                  </p>
+                  <Link
+                    href="/members/makeover"
+                    className="mt-4 inline-block rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+                  >
+                    Submit a recipe
+                  </Link>
+                </section>
+                <section className="rounded-2xl border border-border bg-card p-6">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                    Protein Flip™ Community
+                  </p>
+                  <h2 className="mt-1 font-heading text-xl font-semibold">
+                    Your community
+                  </h2>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    The private Protein Flip™ group is where members share meals,
+                    swaps, and questions.
+                  </p>
+                  <a
+                    href="https://www.facebook.com/groups/proteinflipcommunity"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-4 inline-block rounded-full border border-border px-5 py-2 text-sm font-medium text-primary transition-colors hover:bg-secondary"
+                  >
+                    Open the community
+                  </a>
+                </section>
+              </>
             )}
           </div>
 
