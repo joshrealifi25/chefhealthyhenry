@@ -68,6 +68,7 @@ const TIERS: TierDef[] = [
       "Submit your questions before each session",
       "Session replays and Watch Chef Henry demonstrations",
       "Limited 30-minute Strategy Calls",
+      "Submit a recipe for a possible Protein Flip™ makeover",
     ],
     cta: { label: "Join the waitlist", href: "#join" },
     comingSoon: true,
@@ -94,6 +95,10 @@ const FAQS: { q: string; a: string }[] = [
   {
     q: "Is this medical or nutrition advice?",
     a: "No. The membership is culinary education. For medical or nutrition guidance, talk with your healthcare provider.",
+  },
+  {
+    q: "What is the Recipe Makeover feature?",
+    a: "Chef's Table members can submit one of their own recipes for a possible Protein Flip™ makeover. Chef Henry selects examples periodically to show how the method applies to real home cooking. Submission is not a guarantee of a personal review, but every makeover he shares starts with an actual member recipe.",
   },
 ];
 
@@ -184,6 +189,25 @@ export default function MembershipPage() {
         Founding members who join in launch week lock in the annual price for
         life. Cancel anytime; access runs through the period you paid for.
       </p>
+
+      <div className="mx-auto mt-16 max-w-2xl rounded-2xl border border-border bg-card p-8">
+        <h2 className="font-heading text-2xl font-semibold">
+          Submit a Recipe for a Makeover
+        </h2>
+        <p className="mt-4 leading-relaxed text-muted-foreground">
+          Chef&apos;s Table members can periodically submit one of their own
+          recipes for a possible Protein Flip™ makeover. Chef Henry selects
+          examples to show how the method applies to real home cooking: how to
+          add protein, build nutrition around what is already there, and
+          preserve what makes the dish worth making in the first place.
+        </p>
+        <p className="mt-4 leading-relaxed text-muted-foreground">
+          Not every submitted recipe gets selected, but every makeover Chef
+          Henry shares comes from a real member recipe. The goal is to show
+          that the Protein Flip™ works on the food you actually cook, not just
+          the food on a recipe site.
+        </p>
+      </div>
 
       <div className="mx-auto mt-20 max-w-2xl">
         <h2 className="font-heading text-2xl font-semibold">
