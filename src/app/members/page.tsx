@@ -12,6 +12,7 @@ import {
 import { db, savedLists } from "@/lib/db";
 import { desc, eq } from "drizzle-orm";
 import { SousChat } from "@/components/sous-chat";
+import { isAdminEmail } from "@/lib/admin";
 
 export const metadata: Metadata = {
   title: "My Kitchen",
@@ -309,6 +310,25 @@ export default async function MembersPage() {
             See membership options
           </Link>
         </div>
+      )}
+
+      {isAdminEmail(member.email) && (
+        <section className="mt-12 rounded-2xl border border-border bg-card p-6">
+          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+            Admin
+          </p>
+          <h2 className="mt-1 font-heading text-xl font-semibold">Accounts</h2>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Everyone with an account, who is on which membership, and the
+            controls to comp or remove one.
+          </p>
+          <Link
+            href="/members/admin"
+            className="mt-4 inline-block rounded-full border border-border px-5 py-2 text-sm font-medium text-primary transition-colors hover:bg-secondary"
+          >
+            Manage accounts
+          </Link>
+        </section>
       )}
 
       <form action="/api/auth/logout" method="post" className="mt-12">
