@@ -9,6 +9,10 @@ import {
   categoryFromSlug,
 } from "@/lib/lessons";
 import { LibraryCard } from "@/components/library-card";
+import {
+  canSeeFeatured,
+  featuredIngredients,
+} from "@/lib/featured-ingredients";
 
 export const metadata: Metadata = {
   title: "Member Library",
@@ -91,6 +95,47 @@ export default async function LibraryPage({
           </Link>
           .
         </p>
+      )}
+
+      {canSeeFeatured(member.tier) && featuredIngredients.length > 0 && (
+        <section className="mt-16">
+          <h2 className="font-heading text-2xl font-semibold tracking-tight">
+            Featured Ingredients
+          </h2>
+          <p className="mt-2 max-w-2xl text-muted-foreground">
+            Every other month, a seasonal ingredient with exclusive notes on
+            how it fits the Protein Flip™ method.
+          </p>
+          <div className="mt-8 grid gap-6 lg:grid-cols-2">
+            {featuredIngredients.map((feature) => (
+              <article
+                key={feature.slug}
+                className="flex flex-col rounded-2xl border border-border bg-card p-6"
+              >
+                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                  Featured Ingredient
+                </p>
+                <h3 className="mt-3 font-heading text-xl font-semibold tracking-tight">
+                  <Link
+                    href={`/members/featured/${feature.slug}`}
+                    className="hover:text-primary"
+                  >
+                    {feature.ingredient}
+                  </Link>
+                </h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  {feature.blurb}
+                </p>
+                <Link
+                  href={`/members/featured/${feature.slug}`}
+                  className="mt-4 text-sm font-medium text-primary hover:underline"
+                >
+                  Read the feature
+                </Link>
+              </article>
+            ))}
+          </div>
+        </section>
       )}
     </div>
   );

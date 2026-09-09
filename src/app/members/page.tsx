@@ -5,6 +5,10 @@ import { getMember } from "@/lib/auth";
 import { TIER_NAMES } from "@/lib/membership";
 import { SOUS_DAILY_CAP } from "@/lib/sous";
 import { currentLesson } from "@/lib/lessons";
+import {
+  canSeeFeatured,
+  currentFeaturedIngredient,
+} from "@/lib/featured-ingredients";
 import { db, savedLists } from "@/lib/db";
 import { desc, eq } from "drizzle-orm";
 import { SousChat } from "@/components/sous-chat";
@@ -27,6 +31,7 @@ export default async function MembersPage() {
     ? `Up to ${cap} questions a day with your membership.`
     : "Unlimited questions with your membership.";
   const lesson = currentLesson();
+  const featuredIngredient = currentFeaturedIngredient();
   const lists = tier
     ? await db()
         .select({ id: savedLists.id, name: savedLists.name })
@@ -111,6 +116,31 @@ export default async function MembersPage() {
                 </>
               )}
             </section>
+
+            {canSeeFeatured(tier) && featuredIngredient && (
+              <section className="rounded-2xl border border-border bg-card p-6">
+                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                  This season&apos;s featured ingredient
+                </p>
+                <h2 className="mt-1 font-heading text-xl font-semibold">
+                  <Link
+                    href={`/members/featured/${featuredIngredient.slug}`}
+                    className="hover:text-primary"
+                  >
+                    {featuredIngredient.ingredient}
+                  </Link>
+                </h2>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {featuredIngredient.blurb}
+                </p>
+                <Link
+                  href={`/members/featured/${featuredIngredient.slug}`}
+                  className="mt-4 inline-block rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+                >
+                  See this month&apos;s feature
+                </Link>
+              </section>
+            )}
 
             {tier === "kitchen" && (
               <section className="rounded-2xl border border-dashed border-border bg-secondary/50 p-6">
@@ -218,13 +248,27 @@ export default async function MembersPage() {
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
                 Member library
               </p>
-              <h2 className="mt-1 font-heading text-xl font-semibold">
-                Lessons and Kitchen Guides
-              </h2>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Every Application Lesson and one-page Kitchen Guide, browsable
-                by category.
-              </p>
+              {canSeeFeatured(tier) ? (
+                <>
+                  <h2 className="mt-1 font-heading text-xl font-semibold">
+                    Member Library
+                  </h2>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Application Lessons, Kitchen Guides, and Featured Ingredient
+                    archives, browsable by category.
+                  </p>
+                </>
+              ) : (
+                <>
+                  <h2 className="mt-1 font-heading text-xl font-semibold">
+                    Lessons and Kitchen Guides
+                  </h2>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Every Application Lesson and one-page Kitchen Guide,
+                    browsable by category.
+                  </p>
+                </>
+              )}
               <Link
                 href="/members/library"
                 className="mt-4 inline-block rounded-full border border-border px-5 py-2 text-sm font-medium text-primary transition-colors hover:bg-secondary"
