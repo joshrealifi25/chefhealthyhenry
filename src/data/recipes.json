@@ -118,7 +118,7 @@
    "Cooking spray",
    "1 cup almond flour",
    "1 tablespoon cornstarch",
-   "12 teaspoon salt",
+   "1/2 teaspoon salt",
    "1  can quartered artichoke hearts",
    "2 large egg",
    "1/2 cup cold water",
@@ -130,7 +130,7 @@
    "1 tablespoon lemon juice",
    "1 tablespoon chopped fresh dill",
    "1 teaspoon honey",
-   "⅞ teaspoon salt",
+   "1/2 teaspoon salt",
    "1 tablespoon sliced almonds, toasted",
    "Shaved parmesan cheese"
   ],
@@ -145,7 +145,7 @@
    },
    {
     "title": null,
-    "text": "Air fry for 10–12 minutes, shaking halfway through, until golden and crispy."
+    "text": "Air fry for 10 to 12 minutes, shaking halfway through, until golden and crispy."
    },
    {
     "title": null,
@@ -468,44 +468,60 @@
  },
  {
   "slug": "citrus-supreme-tutorial-perfect-orange-segments-for-salads-desserts",
-  "title": "Citrus Supreme Tutorial",
+  "title": "How to Supreme an Orange",
   "image": "/images/recipes/citrus-supreme-tutorial-perfect-orange-segments-for-salads-d.jpg",
-  "description": "",
-  "serves": "1",
+  "description": "Supreming is a simple citrus technique that removes the peel, bitter white pith, and membranes, leaving behind clean, juicy segments. It is an easy way to give salads, desserts, and other dishes a more polished presentation.",
+  "serves": "1 orange",
   "prepTime": "5 min",
+  "cookTime": "0 min",
   "totalTime": "5 min",
   "ingredients": [
-   "1 orange Equipment Sharp paring knife or small chef’s knife Cutting board Bowl (to catch juice)"
+   "1 orange"
   ],
   "directions": [
    {
-    "title": null,
-    "text": "Cut off the ends: Place the orange on its side. Using a sharp knife, slice about ½ inch off the top and bottom to expose the flesh. This gives the fruit a flat base."
+    "title": "Trim the orange",
+    "text": "Place the orange on its side and slice off the top and bottom, just enough to expose the flesh. Stand the orange upright on one of the flat ends."
    },
    {
-    "title": null,
-    "text": "Remove peel and pith: Stand the orange upright on the cutting board. Starting from the top, slice downward along the curve of the fruit, removing the peel and all the white pith. Rotate the orange and continue until the entire fruit is exposed."
+    "title": "Remove the peel and pith",
+    "text": "Using a sharp paring knife, slice downward following the natural curve of the orange. Remove the peel and white pith while trying to leave as much fruit intact as possible. Rotate the orange and continue until completely peeled."
    },
    {
-    "title": null,
-    "text": "Segment the orange: Hold the peeled orange over a bowl to catch juice. Working between the thin membranes, carefully slide the knife along one side of a segment toward the center of the orange. Then cut along the other side of the segment to release it. Lift the segment out gently. Repeat until all segments are removed."
+    "title": "Clean up any remaining pith",
+    "text": "Look over the orange and carefully trim away any patches of white pith that remain. You should now be able to clearly see the membranes separating each segment."
    },
    {
-    "title": null,
-    "text": "Collect the juice: Squeeze the remaining orange core over the bowl to extract any juice. Reserve juice for dressings, cocktails, or drinking! Yield Citrus supremes from 1 orange"
+    "title": "Cut the supremes",
+    "text": "Hold the orange over a bowl to catch the juice. Carefully slide your knife alongside one membrane toward the center of the orange, then cut along the membrane on the opposite side of the segment. The clean orange segment should release easily. Continue around the orange."
    },
    {
-    "title": null,
-    "text": "Notes: Use a sharp knife for clean cuts and minimal juice loss. Orange supremes are perfect for salads, desserts, fruit platters, or cocktails."
+    "title": "Do not waste the juice",
+    "text": "Once all the supremes have been removed, squeeze the remaining membrane and core over the bowl. Save that fresh juice. It is perfect for vinaigrettes, sauces, cocktails, or anywhere you want a little fresh citrus flavor."
    }
   ],
   "category": "Kitchen Skills",
   "proteinFlip": false,
-  "youtubeId": null,
-  "extras": [],
-  "keyIngredients": [],
-  "seoTitle": "How to Supreme Citrus – Perfect Orange Segments Every Time",
-  "seoDescription": "A step-by-step tutorial for supreming citrus, cutting clean, membrane-free orange segments for salads, desserts, and plating like a pro.",
+  "youtubeId": "Xjxd3Lc6Sh4",
+  "extras": [
+   {
+    "title": "Chef's Tip",
+    "items": [
+     "Use a small, very sharp knife and let the shape of the orange guide your cuts. You do not need to rush. The goal is to remove the membrane while keeping those beautiful segments intact."
+    ]
+   },
+   {
+    "title": "Try It Here",
+    "items": [
+     "Orange supremes are especially beautiful in a fresh salad. I use both the segments and the reserved juice in my [Jicama Citrus Salad](/recipes/refreshing-jicama-citrus-salad-with-perfect-citrus-segments-summer-salad-idea), where the juice becomes part of the citrus-Tajín vinaigrette."
+    ]
+   }
+  ],
+  "keyIngredients": [
+   "orange"
+  ],
+  "seoTitle": "How to Supreme an Orange",
+  "seoDescription": "A simple citrus technique that removes peel, pith, and membranes, leaving clean orange segments for salads, desserts, and more.",
   "dietaryTags": [
    "vegetarian",
    "vegan",
@@ -1518,7 +1534,7 @@
  },
  {
   "slug": "healthy-summer-plate-tofu-veggies-pesto-unjury-flavorless-protein",
-  "title": "Air-Fried Tofu, Grilled Veggies & Pesto with 20g of Unjury Flavorless Protein",
+  "title": "Air-Fried Tofu & Pesto with 20g of Unjury Flavorless Protein",
   "image": "/images/recipes/healthy-summer-plate-tofu-veggies-pesto-unjury-flavorless-pr.jpg",
   "description": "",
   "serves": "2",
@@ -1542,18 +1558,18 @@
    "1/4 tsp kosher salt",
    "1/4 tsp black pepper",
    "1 scoop Unjury Flavorless Protein Powder",
-   "2 tbsp Just Better",
-   "Fiber Optional:",
-   "1–2 tsp cold water or olive oil to adjust consistency"
+   "2 tbsp Just Better Fiber",
+   "Optional:",
+   "1 to 2 tsp cold water or olive oil to adjust consistency"
   ],
   "directions": [
    {
     "title": null,
-    "text": "Preheat oven or air fryer to 400°F (or 390°F air fryer). Toss tofu cubes with olive oil, cornstarch, garlic powder, salt, and pepper. Bake or air-fry for 18–20 minutes, shaking halfway, until crispy and golden. Garnish with seeds, fresh herbs, or lemon zest."
+    "text": "Preheat oven or air fryer to 400°F (or 390°F air fryer). Toss tofu cubes with olive oil, cornstarch, garlic powder, salt, and pepper. Bake or air-fry for 18 to 20 minutes, shaking halfway, until crispy and golden. Garnish with seeds, fresh herbs, or lemon zest."
    },
    {
     "title": null,
-    "text": "Pulse dry In a food processor or blender, pulse together: Basil Parmesan Pine nuts Garlic → Pulse just until broken down — don’t over-blend yet. Add liquids: Add lemon juice and olive oil. Pulse again until the mixture begins to emulsify and form a rough paste."
+    "text": "Pulse dry In a food processor or blender, pulse together: Basil Parmesan Pine nuts Garlic. Pulse just until broken down. Do not over-blend yet. Add liquids: Add lemon juice and olive oil. Pulse again until the mixture begins to emulsify and form a rough paste."
    },
    {
     "title": null,
@@ -3645,27 +3661,76 @@
  },
  {
   "slug": "the-secret-to-easy-to-peel-hard-boiled-eggs",
-  "title": "The Secret to Easy-to-Peel Hard-Boiled Eggs (Two Methods)",
+  "title": "Easy-to-Peel Hard-Boiled Eggs: Two Ways",
   "image": "/images/recipes/the-secret-to-easy-to-peel-hard-boiled-eggs-vs1fq.jpg",
-  "description": "",
-  "serves": "6-12 eggs",
+  "description": "Perfect hard-boiled eggs should not leave half the egg stuck to the shell. Whether you boil or steam them, a few simple techniques make all the difference.",
+  "serves": "6 eggs",
   "prepTime": "5 min",
-  "totalTime": "20 min",
+  "cookTime": "9-15 min",
+  "totalTime": "30 min",
   "ingredients": [
-   "Eggs (7–10 days old)",
-   "Water Baking Soda or Vinegar (optional)",
-   "Ice Water Steamer Basket (for steaming method)"
+   "6 large eggs, preferably 7 to 10 days old",
+   "Water, enough to cover the eggs or sit below a steamer basket",
+   "Ice, enough for a cold water bath",
+   "For the boiling method only",
+   "1/2 teaspoon baking soda or a splash of vinegar, optional"
   ],
   "directions": [
    {
-    "title": null,
-    "text": "https://www.youtube.com/watch?v=uHXpoDFG7jA"
+    "title": "Boiling: Bring the Water to a Boil",
+    "text": "Fill a saucepan with enough water to cover the eggs by about 1 inch. Bring the water to a full boil."
+   },
+   {
+    "title": "Boiling: Add the Eggs",
+    "text": "Using a slotted spoon, gently lower the cold eggs into the boiling water. If using baking soda, add 1/2 teaspoon to the water. You can alternatively add a splash of vinegar."
+   },
+   {
+    "title": "Boiling: Cook",
+    "text": "Maintain a gentle boil and cook depending on how you like your yolks: 9 minutes for a slightly softer center, 10 to 11 minutes for firm but creamy, or 12 minutes for fully hard-boiled."
+   },
+   {
+    "title": "Boiling: Shock in Ice Water",
+    "text": "Immediately transfer the eggs to a bowl filled with ice and cold water. Let them sit for at least 10 minutes."
+   },
+   {
+    "title": "Boiling: Crack, Roll, and Peel",
+    "text": "Tap the egg gently against the counter, then roll it under your palm to create cracks all around the shell. Start peeling from the wider end, where there is usually an air pocket. For stubborn shells, peel under cool running water to help separate the shell and membrane from the egg."
+   },
+   {
+    "title": "Steaming: Prepare the Steamer",
+    "text": "Add about 1 inch of water to a pot fitted with a steamer basket. The water should sit below the basket. Bring the water to a boil."
+   },
+   {
+    "title": "Steaming: Add the Eggs",
+    "text": "Place the eggs in the steamer basket, cover the pot, and begin timing once the eggs are over the steaming water. No baking soda or vinegar is needed for this method."
+   },
+   {
+    "title": "Steaming: Steam",
+    "text": "Steam according to your preferred yolk: 10 to 11 minutes for a slightly softer center, 12 to 13 minutes for a firm, creamy yolk, or 14 to 15 minutes for fully hard-boiled. Exact timing can vary slightly depending on egg size, starting temperature, and your steamer setup."
+   },
+   {
+    "title": "Steaming: Shock in Ice Water",
+    "text": "Immediately transfer the steamed eggs to an ice bath and leave them for at least 10 minutes."
+   },
+   {
+    "title": "Steaming: Crack, Roll, and Peel",
+    "text": "Gently crack and roll each egg, then peel from the wider end. Use cool running water if needed."
    }
   ],
   "category": "Kitchen Skills",
   "proteinFlip": false,
-  "youtubeId": null,
-  "extras": [],
+  "youtubeId": "uHXpoDFG7jA",
+  "extras": [
+   {
+    "title": "The Secrets to Eggs That Peel Easily",
+    "items": [
+     "Use eggs that are not super fresh. Eggs that have been in the refrigerator for about a week generally peel more easily than very fresh eggs.",
+     "Start hot. Whether you lower the eggs into boiling water or expose them immediately to steam, starting with high heat tends to produce eggs that peel more cleanly than a traditional cold-water start.",
+     "Do not skip the ice bath. It stops the cooking quickly and helps with clean peeling.",
+     "Baking soda is an optional trick for the boiled eggs only. For steamed eggs, you simply need water, steam, and that ice bath."
+    ]
+   }
+  ],
   "keyIngredients": [
    "eggs"
   ],
@@ -3674,7 +3739,9 @@
    "gluten-free",
    "dairy-free",
    "high-protein"
-  ]
+  ],
+  "seoTitle": "Easy-to-Peel Hard-Boiled Eggs",
+  "seoDescription": "Two ways to make hard-boiled eggs that peel cleanly: boil or steam, then finish in an ice bath."
  },
  {
   "slug": "tuna-chickpea-salad",
@@ -5415,7 +5482,7 @@
    "4-5 small Bok Choy sliced into strips (green parts and about half of the white.",
    "2-3 Sweet peppers sliced",
    "6 Green onion preferably the bigger Mexican onions",
-   "1 pc Cherry tomatoes halved",
+   "1 cup cherry tomatoes, halved",
    "1/4c Walnuts",
    "1/4c Feta",
    "1lb Pork shoulder thinly sliced (It’s easier to get a good thin slice if the meat has been in the refrigerator for 10 minutes.",
@@ -6115,7 +6182,8 @@
    "1-15 oz can of chickpeas rinsed and drained",
    "1/2 cup creamy almond butter",
    "1/4 cup rolled oats",
-   "1/4 cup allulose sugar or your preferred substitute 1 tbls Just better fiber website: https://getjustbetter.com",
+   "1/4 cup allulose, or your preferred substitute",
+   "1 tablespoon Just Better Fiber",
    "1/4 cup natural honey",
    "1/4 cup water",
    "1/2 cup chocolate chips",
@@ -6177,7 +6245,14 @@
   "category": "Sweets & Snacks",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": [],
+  "extras": [
+   {
+    "title": "Just Better Fiber",
+    "items": [
+     "This recipe uses [Just Better Fiber](https://getjustbetter.com)."
+    ]
+   }
+  ],
   "keyIngredients": [
    "chickpeas",
    "just better fiber"
@@ -6331,114 +6406,87 @@
  },
  {
   "slug": "protein-flip-creamy-clam-chowder-with-zesty-lime-tofu-flatbread",
-  "title": "Clam chowder",
+  "title": "Protein Flip™ Creamy Clam Chowder with Zesty Lime & Tofu Flatbread",
   "image": "/images/recipes/protein-flip-creamy-clam-chowder-with-zesty-lime-tofu-flatbr.jpeg",
-  "description": "This clam chowder is has less fat and calories. I use almond milk instead of heavy cream. I still get the nice richness in the flavor and texture just remember to stir frequently especially after adding the potatoes. You can omit the bacon if you want to go vegetarian. You can use canned clams or if",
-  "serves": "4–5",
-  "prepTime": "15 min",
-  "totalTime": "40 min",
+  "description": "A lighter, protein-balanced twist on classic clam chowder, with tender clams, potatoes, crisp bacon, and aromatic vegetables in a creamy almond milk base. Fresh lime adds a bright finish, while a simple tofu flatbread brings another source of protein and helps disperse nutrition across the meal.",
+  "serves": "4",
+  "prepTime": "20 min",
+  "cookTime": "30 min",
+  "totalTime": "50 min",
   "ingredients": [
-   "Chowder 2 slices thick-cut bacon, chopped",
-   "1 tbsp olive oil",
-   "1 tbsp unsalted butter",
+   "For the clam chowder",
+   "2 slices thick-cut bacon, chopped",
+   "1 tablespoon olive oil",
+   "1 tablespoon unsalted butter",
    "1 yellow onion, chopped",
    "1 carrot, diced",
    "1 celery stalk, diced",
    "2 garlic cloves, minced",
-   "1 tsp fresh thyme",
-   "Salt and pepper, to taste",
-   "2 tbsp gluten-free flour or cassava flour",
+   "1 teaspoon fresh thyme",
+   "Salt and freshly ground black pepper, to taste",
+   "2 tablespoons gluten-free flour or cassava flour",
    "2 medium potatoes, peeled and diced",
    "1 cup clam juice",
    "2 cups unsweetened almond milk",
-   "2 (6.5 oz) cans chopped clams, with juice reserved",
+   "2 (6.5-ounce) cans chopped clams, clams and liquid separated",
    "Juice of 1 lime",
-   "Optional garnish: oyster crackers, fresh herbs, lime zest Tofu Flatbread 1/2 block silken tofu 1/4 cup oat flour or almond flour 1/2 tsp garlic powder Pinch of salt Water as needed to make a thick batter"
+   "Fresh herbs or lime zest, for garnish, optional",
+   "Oyster crackers, for serving, optional",
+   "Tofu Flatbread",
+   "1/2 block silken tofu",
+   "1/4 cup oat flour or almond flour",
+   "1/2 teaspoon garlic powder",
+   "Pinch of salt",
+   "Water, as needed",
+   "Oil or cooking spray, for the skillet"
   ],
   "directions": [
    {
-    "title": null,
-    "text": "Cook the Bacon In a large soup pot or Dutch oven, cook bacon over medium heat until crisp, about 5–6 minutes."
+    "title": "Cook the bacon",
+    "text": "Heat a large soup pot or Dutch oven over medium heat. Add the chopped bacon and cook until crisp, about 5 to 6 minutes. Transfer the bacon to a paper towel-lined plate and set aside."
    },
    {
-    "title": null,
-    "text": "Transfer to a paper towel-lined plate and set aside."
+    "title": "Sauté the vegetables",
+    "text": "Add the olive oil and butter to the bacon drippings. Add the onion, carrot, celery, garlic, thyme, and a pinch each of salt and pepper. Cook for 5 to 7 minutes, stirring occasionally, until the vegetables begin to soften."
    },
    {
-    "title": null,
-    "text": "Sauté the Vegetables Add olive oil and butter to the rendered bacon fat in the pot."
+    "title": "Thicken the base",
+    "text": "Sprinkle the flour over the vegetables and stir well. Cook for about 1 minute to remove the raw flour taste."
    },
    {
-    "title": null,
-    "text": "Stir in onion, carrot, celery, garlic, thyme, salt, and pepper."
+    "title": "Cook the potatoes",
+    "text": "Add the potatoes, clam juice, almond milk, and reserved liquid from the canned clams. Stir to combine and bring to a gentle simmer. Reduce the heat and cook for 15 to 20 minutes, or until the potatoes are fork-tender. Avoid a hard boil so the almond milk remains smooth."
    },
    {
-    "title": null,
-    "text": "Cook, stirring occasionally, until vegetables soften, about 5–7 minutes."
+    "title": "Finish the chowder",
+    "text": "Stir in the chopped clams and cook for 2 to 3 minutes, just until heated through. Remove from the heat and stir in the fresh lime juice. Taste and adjust with additional salt, pepper, or lime as needed."
    },
    {
-    "title": null,
-    "text": "Build the Base Sprinkle in flour and stir for 1 minute."
+    "title": "Make the tofu flatbread",
+    "text": "Blend the silken tofu, flour, garlic powder, and salt until smooth. If necessary, add water 1 tablespoon at a time to create a thick, spoonable batter. Heat a lightly greased nonstick skillet over medium heat. Spoon the batter into small rounds and gently spread. Cook for 2 to 3 minutes per side, or until set and lightly golden."
    },
    {
-    "title": null,
-    "text": "Add potatoes, clam juice, almond milk, and the reserved clam liquid (keep the clams aside for now)."
-   },
-   {
-    "title": null,
-    "text": "Bring to a gentle boil, then reduce heat and simmer until potatoes are tender, about 15–20 minutes."
-   },
-   {
-    "title": null,
-    "text": "Finish the Chowder Stir in chopped clams and lime juice."
-   },
-   {
-    "title": null,
-    "text": "Simmer for 2–3 minutes more, just until clams are heated through."
-   },
-   {
-    "title": null,
-    "text": "Adjust seasoning with salt, pepper, or extra lime juice as desired."
-   },
-   {
-    "title": null,
-    "text": "Make the Tofu Flatbread (Optional) In a blender or food processor, combine tofu, flour, garlic powder, and salt."
-   },
-   {
-    "title": null,
-    "text": "Blend until smooth, adding water 1 tablespoon at a time until a thick batter forms."
-   },
-   {
-    "title": null,
-    "text": "Heat a lightly greased nonstick skillet over medium heat."
-   },
-   {
-    "title": null,
-    "text": "Pour in batter to form small flatbreads (like pancakes) and cook 2–3 minutes per side, until golden and set."
-   },
-   {
-    "title": null,
-    "text": "Serve Ladle chowder into bowls, top with crispy bacon, and garnish with fresh herbs or lime zest."
-   },
-   {
-    "title": null,
-    "text": "Serve with tofu flatbread or oyster crackers on the side."
-   },
-   {
-    "title": null,
-    "text": "Protein Flip™ Note A comforting soup with reduced fat and dairy, paired with a plant-based, high-protein flatbread to balance animal and plant proteins."
+    "title": "Serve",
+    "text": "Ladle the chowder into bowls and top with the crispy bacon. Finish with fresh herbs or lime zest, if desired. Serve the warm tofu flatbread alongside."
    }
   ],
   "category": "Soups & Stews",
-  "proteinFlip": false,
+  "proteinFlip": true,
   "youtubeId": null,
-  "extras": [],
+  "extras": [
+   {
+    "title": "Protein Flip™ Note",
+    "items": [
+     "The clams provide a portion-smart primary protein without dominating the bowl, while tofu, vegetables, and potatoes distribute additional nutrition throughout the meal. The flatbread adds a secondary plant protein, making the meal more nutritionally dispersed rather than relying on one large protein centerpiece."
+    ]
+   }
+  ],
   "keyIngredients": [
    "clams",
    "silken tofu"
   ],
-  "seoTitle": "High-Protein Clam Chowder Recipe (Lighter, Healthier Version)",
-  "seoDescription": "A creamy clam chowder made lighter and higher in protein, with a zesty lime tofu flatbread on the side, real comfort food without the heaviness.",
+  "seoTitle": "Protein Flip™ Creamy Clam Chowder",
+  "seoDescription": "A lighter clam chowder in an almond milk base, finished with lime and served with a simple tofu flatbread.",
   "dietaryTags": [
    "high-protein",
    "high-fiber"
@@ -6874,70 +6922,54 @@
  },
  {
   "slug": "crispy-air-fryer-tilapia-with-brussels-sprouts",
-  "title": "Crispy Air Fryer Tilapia with Brussels Sprouts",
+  "title": "Crispy Air Fryer Tilapia with Balsamic Brussels Sprouts",
   "image": "/images/recipes/crispy-air-fryer-tilapia-with-brussels-sprouts-n6tk6.jpeg",
-  "description": "Make a quick and healthy meal with this Air Fryer Tilapia with Brussels Sprouts! Seasoned with garlic, lemon, and fresh parsley, the tilapia pairs perfectly with balsamic Brussels sprouts for a balanced, delicious dinner. Follow Chef Healthy Henry for this easy, nutritious recipe that‚‘s ideal for w",
+  "description": "Seasoned air fryer tilapia with crispy balsamic Brussels sprouts. A weeknight plate that comes together in one basket, with lemon, parsley, and a little crunch on the side.",
   "serves": "2",
   "prepTime": "10 min",
-  "totalTime": "30 min",
+  "cookTime": "25 min",
+  "totalTime": "35 min",
   "ingredients": [
-   "12 ounces tilapia filets",
-   "1/2 tsp garlic powder",
-   "1/2 tsp lemon pepper seasoning",
-   "1/2 tsp onion powder",
-   "kosher salt or sea salt",
-   "fresh black pepper",
-   "1/4c fresh parsley chopped",
-   "lemon wedges"
+   "Air Fryer Tilapia",
+   "12 ounces tilapia fillets",
+   "1/2 teaspoon garlic powder",
+   "1/2 teaspoon lemon pepper seasoning",
+   "1/2 teaspoon onion powder",
+   "Kosher salt or sea salt, to taste",
+   "Freshly ground black pepper, to taste",
+   "1/4 cup fresh parsley, chopped",
+   "Lemon wedges, for serving",
+   "Oil spray, as needed",
+   "For the Brussels sprouts",
+   "12 ounces Brussels sprouts, trimmed and halved",
+   "2 tablespoons olive oil",
+   "1/4 cup balsamic vinegar",
+   "1 teaspoon salt"
   ],
   "directions": [
    {
-    "title": null,
-    "text": "Pre-heat Air Fryer to 360°F for 5 minutes."
+    "title": "Prepare the Brussels sprouts",
+    "text": "Place the halved Brussels sprouts in a microwave-safe bowl and cover with water. Microwave for 4 minutes to partially cook them. Drain, rinse, and dry thoroughly."
    },
    {
-    "title": null,
-    "text": "Rinse and pat dry fish."
+    "title": "Season the Brussels sprouts",
+    "text": "Return the Brussels sprouts to a dry bowl. Add the olive oil, balsamic vinegar, and salt, then toss until evenly coated."
    },
    {
-    "title": null,
-    "text": "In a medium open rimmed bowl combine the spices then add and coat the fish."
+    "title": "Air fry the Brussels sprouts",
+    "text": "Preheat the air fryer to 400°F. Add the Brussels sprouts to the air fryer basket in an even layer. Air fry for 15 to 18 minutes, tossing halfway through, until browned and crisp around the edges. Cooking time will vary depending on your preferred level of crispness. Remove and keep warm while you prepare the tilapia."
    },
    {
-    "title": null,
-    "text": "Lay an air fryer silicone liner or perforated parchment paper inside base of air fryer."
+    "title": "Prepare the tilapia",
+    "text": "Preheat or reduce the air fryer temperature to 360°F. Rinse the tilapia and pat completely dry with paper towels. In a medium, shallow bowl, combine the garlic powder, lemon pepper seasoning, onion powder, salt, and black pepper. Add the tilapia and gently coat both sides with the seasoning mixture."
    },
    {
-    "title": null,
-    "text": "Lightly spray the liner. (if not using a liner, spray enough oil spray at the base of the air fryer basket to make sure fish does not stick). Lay the fish on top of the liner."
+    "title": "Air fry the tilapia",
+    "text": "Place a silicone air fryer liner or perforated parchment liner in the air fryer basket and lightly spray with oil. If you are not using a liner, lightly spray the basket to help prevent sticking. Place the tilapia on the liner and add a few lemon wedges alongside the fish. Air fry at 360°F for 10 to 12 minutes, or until the fish is opaque and flakes easily with a fork. Cooking time will depend on the thickness of the fillets."
    },
    {
-    "title": null,
-    "text": "Add a few lemon wedges next to fish. Air Fry at 360°F for about 10-12 minutes, or until fish can be flaked with a fork."
-   },
-   {
-    "title": null,
-    "text": "Timing will depend on how thickness of the filets and individual preference."
-   },
-   {
-    "title": null,
-    "text": "Sprinkle with chopped parsley and serve warm with the lemon wedges."
-   },
-   {
-    "title": null,
-    "text": "Add additional seasonings or salt and pepper, if needed."
-   },
-   {
-    "title": null,
-    "text": "Air-fry Brussel Sprouts 12oz brussel sprouts halved 2 tbls Olive oil 1/4c balsamic vinegar 1 tsp salt Place the brussel sprouts in a bowl and cover with water. Microwave for 4 minutes."
-   },
-   {
-    "title": null,
-    "text": "Rinse and dry them. Toss with the oil, balsamic vinegar, and salt."
-   },
-   {
-    "title": null,
-    "text": "Air fryer at 400 for approx 15-18mins depending on preference."
+    "title": "Finish and serve",
+    "text": "Sprinkle the tilapia with chopped fresh parsley and additional black pepper, if desired. Serve immediately with the crispy balsamic Brussels sprouts and fresh lemon wedges."
    }
   ],
   "category": "Seafood",
@@ -6945,10 +6977,11 @@
   "youtubeId": null,
   "extras": [],
   "keyIngredients": [
-   "tilapia"
+   "tilapia",
+   "brussels sprouts"
   ],
-  "seoTitle": "Crispy Air Fryer Tilapia Recipe with Brussels Sprouts",
-  "seoDescription": "Crispy air fryer tilapia paired with roasted Brussels sprouts, a fast, protein-packed dinner that's ready in under 30 minutes.",
+  "seoTitle": "Crispy Air Fryer Tilapia with Balsamic Brussels Sprouts",
+  "seoDescription": "Air fryer tilapia with balsamic Brussels sprouts. A weeknight dinner for two, ready in about 35 minutes.",
   "dietaryTags": [
    "gluten-free",
    "dairy-free"
@@ -7165,59 +7198,75 @@
  },
  {
   "slug": "cucumber-jicama-salad-with-fresh-red-onion",
-  "title": "Cucumber Jicama salad with pickled onion",
+  "title": "Cherry Tomato, Cucumber & Jicama Salad with Quick-Pickled Red Onions",
   "image": "/images/recipes/cucumber-jicama-salad-with-fresh-red-onion.jpeg",
-  "description": "This is a super easy summer side salad that looks as good as it tastes especially when you can get the fresh vegetables. This recipe can be made with or without jicama but it does add a lot to the dish. The pickled onion can be used in many different ways (so make enough to store in the refrigerator",
-  "serves": "4",
+  "description": "Fresh, colorful, and packed with crunch, this simple summer salad combines juicy cherry tomatoes, cool cucumber, and crisp jicama with fresh lemon and olive oil. Quick-pickled red onions bring just enough tang to make every bite pop.",
+  "serves": "4 to 6",
   "prepTime": "15 min",
-  "totalTime": "30 min",
+  "cookTime": "5 min",
+  "totalTime": "1 hr 20 min",
   "ingredients": [
-   "2 cups cherry tomatoes halved (love the multi tomatoes here)",
-   "1 teaspoon salt",
-   "1 large or 2 small cucumbers",
-   "1 cup diced jicama juice or 1 lemon",
-   "1 tablespoon olive oil",
-   "salt and ground black pepper to taste",
-   "1/4c thinly sliced red onion",
-   "Garnish:",
-   "with parsley In a serving bowl, combine the tomatoes, cucumber, and jicama",
-   "Add salt Add the lemon and olive oil",
-   "Add the red onion Sprinkle with pepper.",
-   "Quick-Pickled Onions :",
+   "For the salad",
+   "2 cups cherry tomatoes, halved, preferably a colorful mix",
+   "1 large cucumber or 2 small cucumbers, diced",
+   "1 cup jicama, peeled and diced",
+   "Juice of 1 lemon",
+   "1 tablespoon extra-virgin olive oil",
+   "1/4 cup Quick-Pickled Red Onions, recipe below",
+   "Salt, to taste",
+   "Freshly ground black pepper, to taste",
+   "Quick-Pickled Red Onions",
+   "1 red onion, thinly sliced",
    "1 cup water",
    "1/2 cup apple cider vinegar",
-   "1 Tbsp. sugar",
-   "1 1/2 tsp. kosher salt",
-   "5 peppercorns",
-   "1 red onion, thinly sliced"
+   "1 tablespoon sugar",
+   "1 1/2 teaspoons kosher salt",
+   "5 whole black peppercorns"
   ],
   "directions": [
    {
-    "title": null,
-    "text": "Whisk first 5 ingredients in a small sauce pan stir until sugar and salt dissolve simmer for 3-4 minutes."
+    "title": "Make the pickling liquid",
+    "text": "In a small saucepan, combine the water, apple cider vinegar, sugar, kosher salt, and peppercorns. Bring to a gentle simmer and cook for 3 to 4 minutes, stirring until the sugar and salt have completely dissolved. Remove from the heat and let the pickling liquid cool slightly."
    },
    {
-    "title": null,
-    "text": "Let cool."
+    "title": "Pickle the onions",
+    "text": "Place the sliced red onion in a jar or heat-safe container. Pour the pickling liquid over the onions, making sure they are submerged. Refrigerate for at least 1 hour before using."
    },
    {
-    "title": null,
-    "text": "Place onion in a jar and pour vinegar mixture over."
+    "title": "Prep the vegetables",
+    "text": "Halve the cherry tomatoes. Peel the jicama, then dice the jicama and cucumber into similarly sized, bite-size pieces. Keeping them relatively small gives you a little of everything in each bite."
    },
    {
-    "title": null,
-    "text": "Refrigerate for 1 hour."
+    "title": "Build the salad",
+    "text": "Add the cherry tomatoes, cucumber, and jicama to a large serving bowl. Season lightly with salt."
+   },
+   {
+    "title": "Dress the salad",
+    "text": "Add the fresh lemon juice and olive oil. Gently toss until everything is evenly coated."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Add 1/4 cup of drained quick-pickled red onions and freshly ground black pepper. Toss gently, taste, and adjust the salt, lemon juice, or pepper as needed. Serve immediately for the best crunch, or refrigerate briefly before serving."
    }
   ],
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": [],
-  "keyIngredients": [
-   "jicama"
+  "extras": [
+   {
+    "title": "Chef Healthy Henry Tip",
+    "items": [
+     "When choosing jicama, look for one that feels firm and heavy for its size. Once peeled and cut, the flesh should be creamy white, juicy, and crisp. Avoid jicama that looks dry, brown, or woody inside."
+    ]
+   }
   ],
-  "seoTitle": "Cucumber Jicama Salad Recipe with Fresh Red Onion",
-  "seoDescription": "A crisp, refreshing cucumber jicama salad with fresh red onion, a simple make-ahead side that's light, crunchy, and perfect for warm weather.",
+  "keyIngredients": [
+   "jicama",
+   "cherry tomatoes",
+   "cucumber"
+  ],
+  "seoTitle": "Cherry Tomato, Cucumber and Jicama Salad",
+  "seoDescription": "A crunchy summer salad of cherry tomatoes, cucumber, and jicama with lemon, olive oil, and quick-pickled red onions.",
   "dietaryTags": [
    "vegetarian",
    "vegan",
@@ -9546,7 +9595,8 @@
    "1/4 teaspoon freshly ground black pepper more to taste",
    "1 lemon juiced",
    "3 cups kale or spinach roughly chopped",
-   "Optional: 3 cups shredded rotisserie chicken Parsley for garnish"
+   "Optional: 3 cups shredded rotisserie chicken",
+   "Parsley, for garnish"
   ],
   "directions": [
    {
@@ -11002,59 +11052,69 @@
  },
  {
   "slug": "lupini-bean-salad-with-asiago-cheese-pine-nuts-and-balsamic-vinaigrette",
-  "title": "Lupini bean salad with asiago cheese, pine nuts, and balsamic vinaigrette",
+  "title": "Lupini Bean Salad with Asiago, Pine Nuts & Balsamic Vinaigrette",
   "image": "/images/recipes/lupini-bean-salad-with-asiago-cheese-pine-nuts-and-balsamic-.jpeg",
-  "description": "Discover this delicious Lupini Bean Salad with Asiago Cheese, roasted pine nuts, and a tangy balsamic vinaigrette! Perfect for a fresh, Mediterranean-inspired meal, this salad by Chef Healthy Henry is packed with protein, flavor, and vibrant ingredients. A great choice for a light lunch or as a beau",
-  "serves": "4–6",
+  "description": "A fresh Italian-style salad with peppery arugula, protein-rich lupini beans, sweet tomatoes, toasted pine nuts, and shaved Asiago. The balsamic-lemon vinaigrette keeps everything bright and fresh.",
+  "serves": "4 to 6",
   "prepTime": "15 min",
+  "cookTime": "5 min",
   "totalTime": "20 min",
   "ingredients": [
-   "3 cups beans",
+   "For the salad",
+   "3 cups lupini beans",
    "6 cups fresh arugula",
-   "1 cup cherry tomatoes halved",
-   "1/4 cup olive oil",
-   "1 cup pine nuts (roasted)",
-   "2 tbls balsamic vinegar",
-   "2 tbls lemons",
+   "1 cup cherry tomatoes, halved",
+   "1 cup pine nuts, toasted",
+   "1/4 cup Asiago cheese, shaved with a vegetable peeler, plus more for garnish",
+   "Chopped fresh parsley, optional",
+   "Red pepper flakes, optional",
+   "Salt, to taste",
+   "Freshly ground black pepper, for serving",
+   "Balsamic Vinaigrette",
+   "2 tablespoons balsamic vinegar",
+   "2 tablespoons fresh lemon juice",
    "1/4 cup avocado oil",
-   "Pinch of salt chopped parsley (optional)",
-   "red pepper flakes (optional)",
-   "1/4 asiago cheese grated with a potato peeler + garnish per serving"
+   "Pinch of salt"
   ],
   "directions": [
    {
-    "title": null,
-    "text": "In a small hot pan roast the pine nuts for 30-45 seconds stirring constantly."
+    "title": "Toast the pine nuts",
+    "text": "Add the pine nuts to a dry skillet over medium heat. Toast for about 30 to 45 seconds, stirring constantly, until fragrant and lightly golden. Remove from the heat."
    },
    {
-    "title": null,
-    "text": "In a medium bowl add the balsamic vinegar, lemon juice, and salt."
+    "title": "Make the balsamic vinaigrette",
+    "text": "Whisk together the balsamic vinegar, lemon juice, and a pinch of salt. Slowly drizzle in the avocado oil while whisking until emulsified."
    },
    {
-    "title": null,
-    "text": "Whisk as you slowly drizzle the avocado oil into the bowl."
+    "title": "Dress the arugula",
+    "text": "Place the arugula in a large salad bowl. Add about half of the vinaigrette and toss gently to lightly coat and soften the greens."
    },
    {
-    "title": null,
-    "text": "In a large bowl add the arugula then pour 1/2 of the vinaigrette and toss well the vinaigrette will start to wilt the arugula which is what you want."
+    "title": "Build the salad",
+    "text": "Add the lupini beans, cherry tomatoes, toasted pine nuts, parsley if using, and shaved Asiago. Season lightly with salt and toss gently to combine. Add additional vinaigrette as desired."
    },
    {
-    "title": null,
-    "text": "Add the Lupini beans, cherry tomatoes, pine nuts, parsley, salt, and asiago cheese. Toss again."
-   },
-   {
-    "title": null,
-    "text": "Serve in individual bowls, garnish with pepper and asiago cheese."
+    "title": "Serve",
+    "text": "Divide among individual bowls. Finish each serving with freshly ground black pepper, additional shaved Asiago, and red pepper flakes if desired."
    }
   ],
   "category": "Salads",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": [],
+  "extras": [
+   {
+    "title": "Chef Healthy Henry Tip",
+    "items": [
+     "This one is especially good chilled, which makes it a great summer salad for entertaining or prepping ahead."
+    ]
+   }
+  ],
   "keyIngredients": [
    "lupini beans",
    "asiago cheese"
   ],
+  "seoTitle": "Lupini Bean Salad with Asiago and Pine Nuts",
+  "seoDescription": "An Italian-style salad of lupini beans, arugula, cherry tomatoes, toasted pine nuts, and shaved Asiago with a balsamic-lemon vinaigrette.",
   "dietaryTags": [
    "vegetarian",
    "gluten-free",
@@ -11329,79 +11389,76 @@
   "slug": "mediterranean-cod-white-bean-stew-with-toasted-pine-nuts",
   "title": "Mediterranean Cod & White Bean Stew with Toasted Pine Nuts",
   "image": "/images/recipes/mediterranean-cod-white-bean-stew-with-toasted-pine-nuts.jpeg",
-  "description": "Enjoy a taste of the Mediterranean with this delicious Cod, Zucchini, and Fennel recipe! Packed with fresh flavors like tomatoes, olives, and basil, this healthy seafood dish by Chef Healthy Henry is light, satisfying, and perfect for a weeknight dinner. As we get towards fall here is a nice recipe ",
+  "description": "This Mediterranean-inspired cod and white bean stew is light, hearty, and packed with flavor. Tender cod simmers gently with cannellini beans, fennel, zucchini, tomatoes, Kalamata olives, and white wine, then gets finished with fresh basil, lemon, and toasted pine nuts for a little crunch.",
   "serves": "4",
-  "prepTime": "20 min",
-  "totalTime": "35 min",
+  "prepTime": "15 min",
+  "cookTime": "25 min",
+  "totalTime": "40 min",
   "ingredients": [
-   "4 co 4 cod fillets (4 oz each)",
-   "1 tbsp olive oil",
+   "4 cod fillets, about 4 ounces each",
+   "1 tablespoon olive oil",
    "1/2 yellow onion, thinly sliced",
    "1 fennel bulb, thinly sliced",
    "2 garlic cloves, minced",
    "1 zucchini, halved lengthwise and sliced into half-moons",
    "1 cup cherry tomatoes, halved",
-   "1 (14.5 oz) can diced tomatoes with juice",
+   "1 (14.5-ounce) can diced tomatoes with juice",
    "1/2 cup dry white wine",
-   "2 cups cooked cannellini beans (about 2 [15 oz] cans, drained and rinsed)",
+   "2 cups cooked cannellini beans, about 2 (15-ounce) cans, drained and rinsed",
    "1/4 cup pine nuts",
    "1/4 cup pitted Kalamata olives",
-   "Salt and pepper, to taste",
-   "2 tbsp chopped fresh basil",
-   "Lemon wedges, for garnish",
-   "For Fillets 2 tbls olive oil",
-   "1 onion, finely chopped",
-   "1 bulb fennel, thinly sliced",
-   "3 cloves garlic, chopped",
-   "1 medium zucchini, sliced into half-moons",
-   "2c cherry tomatoes, halved",
-   "1-14.5 oz can diced tomatoes with juice",
-   "1/2c fresh basil leaves, chopped",
-   "1/4c dry white wine",
-   "1/2c Kalamata olives, pitted and halved S",
-   "alt and pepper to taste",
-   "Lemon wedges"
+   "Salt and freshly ground black pepper, to taste",
+   "2 tablespoons chopped fresh basil",
+   "Lemon wedges, for serving"
   ],
   "directions": [
    {
-    "title": null,
-    "text": "Toast the pine nuts – Place pine nuts in a dry skillet over medium heat. Stir frequently until golden and fragrant, 3–4 minutes. Transfer to a plate to cool. Sauté the aromatics – Heat olive oil in a wide, deep skillet or Dutch oven over medium heat. Add onion and fennel; cook, stirring occasionally, until softened, about 5 minutes."
+    "title": "Toast the pine nuts",
+    "text": "Place the pine nuts in a dry skillet over medium heat. Cook for 3 to 4 minutes, stirring frequently, until lightly golden and fragrant. Transfer the pine nuts to a plate and set aside."
    },
    {
-    "title": null,
-    "text": "Build the vegetable base – Stir in garlic, zucchini, and cherry tomatoes. Cook for 3 minutes until tomatoes begin to release their juices. Create the broth – Add diced tomatoes with juice, white wine, and cannellini beans. Stir to combine, bring to a gentle simmer, and cook uncovered for 5 minutes to meld flavors."
+    "title": "Sauté the onion and fennel",
+    "text": "Heat the olive oil in a wide, deep skillet or Dutch oven over medium heat. Add the sliced onion and fennel. Cook for about 5 minutes, stirring occasionally, until softened."
    },
    {
-    "title": null,
-    "text": "Cook the fish – Nestle the cod fillets into the vegetables, spooning some broth over the top. Cover and simmer gently for 8–10 minutes, or until cod is opaque and flakes easily with a fork. Finish the dish – Stir in Kalamata olives, taste, and season with salt and pepper. - Rinse and dry the cod. Season with salt and pepper."
+    "title": "Add the vegetables",
+    "text": "Stir in the garlic, zucchini, and cherry tomatoes. Cook for about 3 minutes, stirring occasionally, until the zucchini begins to soften and the tomatoes start releasing their juices."
    },
    {
-    "title": null,
-    "text": "In a large skillet, heat the olive oil over medium heat. Add the cod fillets and cook for 3-4 minutes on each side, until golden brown. Remove from the skillet, set aside."
+    "title": "Build the stew",
+    "text": "Add the diced tomatoes with their juice, white wine, and cannellini beans. Stir to combine and bring the mixture to a gentle simmer. Cook uncovered for about 5 minutes to allow the flavors to come together."
    },
    {
-    "title": null,
-    "text": "To the same pan, add onion and fennel. Sauté until the onion is softened and the fennel begins to caramelize, about 5-7 minutes. Add garlic and zucchini, cook for another 3-4 minutes until zucchini begins to soften. Stir in cherry tomatoes and diced tomatoes. Cook for 5 minutes until tomatoes begin to break down."
+    "title": "Cook the cod",
+    "text": "Season the cod lightly with salt and pepper. Nestle the cod fillets into the vegetable and bean mixture. Spoon a little of the broth over the top of each fillet. Cover and simmer gently for 8 to 10 minutes, or until the cod is opaque and flakes easily with a fork. Avoid boiling the stew once the fish has been added, as a gentle simmer will help keep the cod tender."
    },
    {
-    "title": null,
-    "text": "Add wine and simmer for a couple of minutes. Add olives and basil, stir to combine. Season with salt and pepper. Gently add the cod back to the pan spooning the sauce over the top of the fillets. Cover the pan and Simmer for another 2-3 minutes to heat the fish through."
+    "title": "Finish the stew",
+    "text": "Add the Kalamata olives to the skillet. Taste the broth and adjust with additional salt and pepper as needed."
    },
    {
-    "title": null,
-    "text": "Serve: In a wide rimmed bowl add the vegetables, top the cod, and finish with basil and lemon for garnish."
+    "title": "Serve",
+    "text": "Divide the vegetables, beans, and broth among four wide bowls. Top each serving with a cod fillet, then sprinkle with toasted pine nuts and fresh basil. Serve with lemon wedges for squeezing over the top."
    }
   ],
   "category": "Soups & Stews",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": [],
+  "extras": [
+   {
+    "title": "Chef's Tip",
+    "items": [
+     "Toast the pine nuts just until golden and fragrant. They can go from perfectly toasted to burned very quickly, so keep them moving in the pan.",
+     "For the best texture, add the cod only after the stew base has developed its flavor. This allows the fish to cook gently without becoming dry or breaking apart."
+    ]
+   }
+  ],
   "keyIngredients": [
    "cod",
    "cannellini beans"
   ],
-  "seoTitle": "Mediterranean Cod and White Bean Stew with Toasted Pine Nuts",
-  "seoDescription": "A hearty Mediterranean cod and white bean stew finished with toasted pine nuts, a comforting, protein-rich one-pot dinner.",
+  "seoTitle": "Mediterranean Cod and White Bean Stew",
+  "seoDescription": "Cod simmered with cannellini beans, fennel, zucchini, tomatoes, and white wine, finished with basil, lemon, and toasted pine nuts.",
   "dietaryTags": [
    "gluten-free",
    "dairy-free"
@@ -12178,81 +12235,66 @@
  },
  {
   "slug": "nopal-cactus-salad",
-  "title": "Nopal (cactus) salad",
+  "title": "Nopal (Cactus) Salad with Queso Fresco",
   "image": "/images/recipes/nopal-cactus-salad.jpeg",
-  "description": "One of my favorite ingredients to work with is Nopal or cactus. It's a great source for protein, high in fiber, and antioxidants. It helps with blood sugar levels, digestion, and your immune system. The recipe on how to cook the cactus is also below. You can find nopal at your local Mexican super ma",
+  "description": "A fresh Mexican salad of cooked nopales, Roma tomatoes, white onion, jalapeño, cilantro, and crumbled queso fresco, dressed with lime, olive oil, and Mexican oregano.",
   "serves": "4",
-  "prepTime": "10 min",
-  "totalTime": "40 min",
+  "prepTime": "15 min",
+  "cookTime": "10 min",
+  "totalTime": "25 min",
   "ingredients": [
-   "2 pounds cooked cactus from recipe below",
-   "I cup chopped Roma tomatoes",
-   "1/2 cup chopped white onion I large jalapeño, seeds and veins removed,",
-   "chopped 1/2 teaspoon dried oregano (preferably Mexican oregano)",
-   "1 1/2 tablespoons extra-virgin olive oil",
-   "3/4 cup crumbled queso fresco",
-   "1/2 teaspoon salt Combine all ingredients and refrigerate"
+   "2 cups fresh nopales (cactus paddles), cleaned and diced",
+   "2 Roma tomatoes, diced",
+   "1/2 small white onion, thinly sliced or finely diced",
+   "1 small jalapeño or serrano pepper, finely chopped",
+   "1/4 cup fresh cilantro, chopped",
+   "1/3 cup queso fresco, crumbled",
+   "2 tablespoons fresh lime juice",
+   "1 tablespoon extra-virgin olive oil",
+   "1/2 teaspoon kosher salt, plus more for cooking the nopales",
+   "1/4 teaspoon freshly ground black pepper",
+   "1/2 teaspoon dried Mexican oregano",
+   "1 small avocado, diced, optional"
   ],
   "directions": [
    {
-    "title": null,
-    "text": "******Cooking Nopal******"
+    "title": "Cook the nopales",
+    "text": "Bring a medium pot of salted water to a boil. Add the diced nopales and cook for 8 to 10 minutes, until tender and their color changes from bright green to olive green. Drain the nopales in a colander and rinse well under cool running water to remove any remaining mucilage. Allow them to drain thoroughly and cool."
    },
    {
-    "title": null,
-    "text": "2 pounds cactus, thorns removed,"
+    "title": "Prepare the vegetables",
+    "text": "In a large bowl, combine the cooled nopales, tomatoes, white onion, jalapeño or serrano, and cilantro."
    },
    {
-    "title": null,
-    "text": "chopped I cup fresh cilantro sprigs"
+    "title": "Dress the salad",
+    "text": "Add the lime juice, olive oil, salt, black pepper, and Mexican oregano. Toss gently until everything is evenly coated."
    },
    {
-    "title": null,
-    "text": "2 garlic cloves"
+    "title": "Add the queso fresco",
+    "text": "Fold in about half of the queso fresco, then scatter the remaining cheese over the top. If using avocado, gently fold it in just before serving."
    },
    {
-    "title": null,
-    "text": "1/4 white onion"
-   },
-   {
-    "title": null,
-    "text": "I teaspoon salt"
-   },
-   {
-    "title": null,
-    "text": "Place all ingredients in a large pot with lid."
-   },
-   {
-    "title": null,
-    "text": "Heat covered over medium-low heat for 30 minutes, stirring a few times to combine all ingredients."
-   },
-   {
-    "title": null,
-    "text": "Remove lid and cook 10 more minutes."
-   },
-   {
-    "title": null,
-    "text": "Cactus will release liquid and boil rapidly."
-   },
-   {
-    "title": null,
-    "text": "Remove and discard cilantro, garlic, and onion. Drain, rinse, and let cactus cool completely before storing in a glass container with lid."
-   },
-   {
-    "title": null,
-    "text": "Cooked cactus will keep approximately 1 week."
+    "title": "Serve",
+    "text": "Serve immediately, or refrigerate for 20 to 30 minutes to allow the flavors to come together. Taste and add another squeeze of lime or pinch of salt before serving."
    }
   ],
   "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
-  "extras": [],
+  "extras": [
+   {
+    "title": "Serving Suggestions",
+    "items": [
+     "Serve the salad on its own as a fresh Mexican appetizer, alongside warm corn tortillas, or spoon it onto crisp tostadas. It would also be great served beside a mushroom and poblano appetizer, giving you two very different preparations of nopales on the same Mexican-inspired spread."
+    ]
+   }
+  ],
   "keyIngredients": [
    "cactus",
    "queso fresco"
   ],
-  "seoTitle": "Nopal Cactus Salad Recipe (Mexican-Style)",
-  "seoDescription": "A fresh, tangy nopal cactus salad made Mexican-style, light, crisp, and full of flavor, a simple way to try cactus for the first time.",
+  "seoTitle": "Nopal (Cactus) Salad with Queso Fresco",
+  "seoDescription": "A fresh Mexican nopal salad with tomatoes, cilantro, lime, and crumbled queso fresco. Cook the cactus, dress it, and serve in 25 minutes.",
   "dietaryTags": [
    "vegetarian",
    "gluten-free"
@@ -12735,39 +12777,60 @@
  },
  {
   "slug": "pumpkin-mousse-high-protein-fiber-low-sugar-fall-dessert-recipe-sc3r2",
-  "title": "Pumpkin Mousse High-Protein, Fiber Low-Sugar Fall Dessert Recipe",
+  "title": "Pumpkin Mousse",
   "image": "/images/recipes/pumpkin-mousse-high-protein-fiber-low-sugar-fall-dessert-rec.jpeg",
-  "description": "Looking for a delicious and healthy fall dessert? Try this Pumpkin Mousse! Packed with protein, fiber and low in sugar, this mousse is the perfect treat for pumpkin spice season. With fat-free cottage cheese, protein powder, and the warm flavors of pumpkin pie spice and cinnamon, this recipe is not ",
+  "description": "Creamy, lightly sweet, and full of warm pumpkin spice flavor, this Pumpkin Mousse is an easy fall dessert that brings more nutrition to the table without losing the indulgence. Cottage cheese and Unjury protein powder provide the protein, while pumpkin and Just Better Fiber add fiber and body. A little whipped cream makes it feel like dessert.",
   "serves": "4",
   "prepTime": "10 min",
-  "totalTime": "10 min",
+  "cookTime": "0 min",
+  "totalTime": "1 hr 10 min",
   "ingredients": [
    "1 cup fat-free cottage cheese",
-   "1 scoop of vanilla protein powder, or unflavored protein powder",
-   "1 cup pumpkin puree",
-   "1 tsp pumpkin pie spice",
-   "1 tsp cinnamon",
-   "1 tsp allulose",
-   "1 tsp Just Better Fiber Light whipped cream or dairy-free coconut whipped cream"
+   "1 cup pumpkin puree, not pumpkin pie filling",
+   "1 scoop unflavored Unjury protein powder",
+   "1 teaspoon pumpkin pie spice",
+   "1 teaspoon ground cinnamon",
+   "1 teaspoon allulose, or more to taste",
+   "1 teaspoon Just Better Fiber",
+   "Light whipped cream or dairy-free coconut whipped cream, for serving",
+   "Ground cinnamon, for garnish"
   ],
   "directions": [
    {
-    "title": null,
-    "text": "Add everything to a blender, or small food processor and blend until smooth."
+    "title": "Blend the mousse",
+    "text": "Add the cottage cheese, pumpkin puree, Unjury protein powder, pumpkin pie spice, cinnamon, allulose, and Just Better Fiber to a blender or small food processor. Blend until completely smooth and creamy, scraping down the sides as needed."
    },
    {
-    "title": null,
-    "text": "Place in refrigerator until chilled. it gets thicker in the refrigerator. When ready to serve… In a small cup or bowl add 2 tbls of mousse, a quick spray of whipped cream, another 1 tbls of mousse, a dollop of whipped cream and a sprinkle of fresh cinnamon over the top. 1 cup fat-free cottage cheese 1 scoop of vanilla protein powder, or unflavored protein powder 1 cup pumpkin puree 1 tsp pumpkin pie spice 1 tsp cinnamon 1 tsp allulose 1 tsp Just Better Fiber Light whipped cream or dairy-free coconut whipped cream Add everything to a blender, or small food processor and blend until smooth."
+    "title": "Chill",
+    "text": "Transfer the mousse to a covered container and refrigerate for at least 1 hour. The mousse will thicken as it chills."
    },
    {
-    "title": null,
-    "text": "Place in refrigerator until chilled. it gets thicker in the refrigerator. When ready to serve… In a small cup or bowl add 2 tbls of mousse, a quick spray of whipped cream, another 1 tbls of mousse, a dollop of whipped cream and a sprinkle of fresh cinnamon over the top."
+    "title": "Layer and serve",
+    "text": "Spoon about 2 tablespoons of pumpkin mousse into a small dessert cup or bowl. Add a light layer of whipped cream, followed by another 1 tablespoon of mousse."
+   },
+   {
+    "title": "Finish",
+    "text": "Top with a small dollop of whipped cream and a sprinkle of freshly ground cinnamon. Serve chilled."
    }
   ],
-  "category": "Plant-Forward",
-  "proteinFlip": false,
+  "category": "Sweets & Snacks",
+  "proteinFlip": true,
   "youtubeId": null,
-  "extras": [],
+  "extras": [
+   {
+    "title": "Protein Flip™ Note",
+    "items": [
+     "This dessert disperses nutrition across several ingredients rather than relying on a single source. Cottage cheese and Unjury protein powder provide dairy-based protein, while pumpkin and added fiber contribute plant-based nutrition and fiber. The result is a portion-smart dessert that is high in protein and fiber while keeping added sugar low."
+    ]
+   },
+   {
+    "title": "Chef's Tips",
+    "items": [
+     "For the smoothest texture, let the blender or food processor run long enough to completely break down the cottage cheese curds. If you prefer a sweeter mousse, taste after blending and add a little more allulose before chilling.",
+     "Storage: Keep covered in the refrigerator for up to 3 days. For the best presentation, add the whipped cream just before serving."
+    ]
+   }
+  ],
   "keyIngredients": [
    "pumpkin puree",
    "cottage cheese",
@@ -12776,8 +12839,11 @@
   "dietaryTags": [
    "vegetarian",
    "gluten-free",
-   "high-protein"
+   "high-protein",
+   "high-fiber"
   ],
+  "seoTitle": "Pumpkin Mousse",
+  "seoDescription": "A high-protein, high-fiber, low-sugar fall dessert made with cottage cheese, pumpkin, Unjury protein powder, and Just Better Fiber.",
   "nutrition": {
    "calories": 123,
    "proteinGrams": 13.2,

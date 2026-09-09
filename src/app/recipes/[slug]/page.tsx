@@ -258,7 +258,7 @@ export default async function RecipePage({
                     {extra.items.map((item, i) => (
                       <li key={i} className="flex gap-2.5">
                         <span className="mt-2 size-1.5 shrink-0 rounded-full bg-primary/50" />
-                        {item}
+                        <ExtraItemText text={item} />
                       </li>
                     ))}
                   </ul>
@@ -304,5 +304,23 @@ export default async function RecipePage({
         </section>
       )}
     </article>
+  );
+}
+
+/** Renders extras copy and turns [label](/path) into a site link. */
+function ExtraItemText({ text }: { text: string }) {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  return (
+    <span>
+      {parts.map((part, i) => {
+        const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+        if (!match) return <span key={i}>{part}</span>;
+        return (
+          <Link key={i} href={match[2]} className="text-primary hover:underline">
+            {match[1]}
+          </Link>
+        );
+      })}
+    </span>
   );
 }
