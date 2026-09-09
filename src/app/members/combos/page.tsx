@@ -11,6 +11,8 @@ import {
 import { ComboBuilder } from "@/components/combo-builder";
 import { db, savedLists } from "@/lib/db";
 import { desc, eq } from "drizzle-orm";
+import { getComboCredits } from "@/lib/combo-limits";
+import { comboPresets } from "@/lib/combo-presets";
 
 export const metadata: Metadata = {
   title: "Grocery Combo Builder",
@@ -29,11 +31,14 @@ export default async function CombosPage({
   if (!member) redirect(loginPath("/members/combos"));
   if (!member.tier) redirect("/membership");
 
-  const saved = await db()
-    .select()
-    .from(savedLists)
-    .where(eq(savedLists.userId, member.id))
-    .orderBy(desc(savedLists.updatedAt));
+  const [saved, credits] = await Promise.all([
+    db()
+      .select()
+      .from(savedLists)
+      .where(eq(savedLists.userId, member.id))
+      .orderBy(desc(savedLists.updatedAt)),
+    getComboCredits(member.id, member.tier),
+  ]);
 
   const { list: listParam } = await searchParams;
 
@@ -80,6 +85,8 @@ export default async function CombosPage({
             inCart: l.inCart,
           }))}
           openListId={listParam ?? null}
+          presets={comboPresets}
+          credits={credits}
         />
       </div>
     </div>

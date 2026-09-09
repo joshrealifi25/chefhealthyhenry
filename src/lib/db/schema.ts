@@ -108,6 +108,27 @@ export const savedLists = pgTable(
  * and nothing links a row back to a member. Henry uses this to find demand
  * the recipe library does not cover yet.
  */
+/**
+ * One row per custom grocery-list build (new save, or an update that
+ * changes ingredients or recipes). Counted against the member's current
+ * Stripe billing period via periodEnd, so the counter resets at renewal
+ * rather than on the first of the calendar month.
+ */
+export const comboBuilds = pgTable(
+  "combo_builds",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    periodEnd: timestamp("period_end", { withTimezone: true }).notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => [index("combo_builds_user_period_idx").on(t.userId, t.periodEnd)]
+);
+
 export const ingredientSearches = pgTable(
   "ingredient_searches",
   {

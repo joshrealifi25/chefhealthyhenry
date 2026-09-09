@@ -2,6 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 import { and, desc, eq } from "drizzle-orm";
 import { db, savedLists } from "@/lib/db";
 import { getMember } from "@/lib/auth";
+import {
+  getComboCredits,
+  periodEndDate,
+  recordCustomBuild,
+} from "@/lib/combo-limits";
+import { consumesCustomBuild } from "@/lib/combo-build";
+import { matchingPreset } from "@/lib/combo-presets";
 
 export const runtime = "nodejs";
 
@@ -56,6 +63,43 @@ export async function POST(req: NextRequest) {
   }
 
   const id = typeof body.id === "string" ? body.id : null;
+  let previous: { ingredients: string[]; recipeSlugs: string[] } | null = null;
+  if (id) {
+    const [existingList] = await db()
+      .select({
+        ingredients: savedLists.ingredients,
+        recipeSlugs: savedLists.recipeSlugs,
+      })
+      .from(savedLists)
+      .where(and(eq(savedLists.id, id), eq(savedLists.userId, member.id)));
+    if (!existingList) {
+      return NextResponse.json({ error: "List not found" }, { status: 404 });
+    }
+    previous = existingList;
+  }
+
+  const fromPreset = matchingPreset(ingredients, recipeSlugs) != null;
+  const spendCredit = consumesCustomBuild({
+    isNew: !id,
+    fromPreset,
+    previous,
+    next: { ingredients, recipeSlugs },
+  });
+
+  const credits = await getComboCredits(member.id, member.tier);
+  if (spendCredit && !credits.unlimited && credits.remaining <= 0) {
+    return NextResponse.json(
+      {
+        error: credits.periodEndLabel
+          ? `You have used your ${credits.limit} custom builds for this month. Your saved lists are still available. New credits arrive on ${credits.periodEndLabel}.`
+          : `You have used your ${credits.limit} custom builds for this month. Your saved lists are still available.`,
+        code: "combo_limit",
+        credits,
+      },
+      { status: 429 }
+    );
+  }
+
   if (id) {
     // Scope the update to the owner so an id from elsewhere cannot touch it.
     const [row] = await db()
@@ -66,7 +110,20 @@ export async function POST(req: NextRequest) {
     if (!row) {
       return NextResponse.json({ error: "List not found" }, { status: 404 });
     }
-    return NextResponse.json({ list: row });
+    if (spendCredit && !credits.unlimited) {
+      await recordCustomBuild(member.id, periodEndDate(credits));
+    }
+    return NextResponse.json({
+      list: row,
+      credits:
+        spendCredit && !credits.unlimited
+          ? {
+              ...credits,
+              used: credits.used + 1,
+              remaining: Math.max(0, credits.remaining - 1),
+            }
+          : credits,
+    });
   }
 
   const existing = await db()
@@ -84,7 +141,20 @@ export async function POST(req: NextRequest) {
     .insert(savedLists)
     .values({ userId: member.id, name, ingredients, recipeSlugs, inCart })
     .returning();
-  return NextResponse.json({ list: row });
+  if (spendCredit && !credits.unlimited) {
+    await recordCustomBuild(member.id, periodEndDate(credits));
+  }
+  return NextResponse.json({
+    list: row,
+    credits:
+      spendCredit && !credits.unlimited
+        ? {
+            ...credits,
+            used: credits.used + 1,
+            remaining: Math.max(0, credits.remaining - 1),
+          }
+        : credits,
+  });
 }
 
 export async function DELETE(req: NextRequest) {
