@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "kabocha-squash",
+    "ingredient": "Kabocha Squash",
+    "date": "2026-09-01",
+    "blurb": "A dense, sweet winter squash that can carry protein, fiber, and flavor across the plate.",
+    "videoId": null,
+    "blocks": [
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "How it fits the Protein Flip™"
+      },
+      {
+        "type": "paragraph",
+        "html": "This is placeholder copy for the first Featured Ingredient page. Replace it with Henry's technique notes, flavor combinations, health context, and how kabocha squash works in a Protein Flip™ plate."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Technique"
+      },
+      {
+        "type": "paragraph",
+        "html": "Roast or steam until the flesh is tender and the edges take on a little color. The sweetness concentrates as it cooks, so you need less added sugar or glaze."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Flavor combinations"
+      },
+      {
+        "type": "paragraph",
+        "html": "Sage, apple, miso, lime, and toasted seeds all sit well next to kabocha. Pair it with beans, lentils, or a modest piece of fish so the squash is doing more than sitting on the side of the plate."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Health context"
+      },
+      {
+        "type": "paragraph",
+        "html": "Kabocha is fiber-dense and naturally sweet, so it can take up more of the plate without leaning on refined starch. This is placeholder copy. Replace it with Henry's notes."
+      }
+    ]
+  }
+]
