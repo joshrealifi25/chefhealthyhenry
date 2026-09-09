@@ -31,7 +31,8 @@ const TIERS: TierDef[] = [
       "Sous, your Protein Flip™ cooking assistant, up to 20 questions a day",
       "One Member Application Lesson every month",
       "The growing lesson library and Kitchen Guides",
-      "Grocery combo builder with saved lists (coming soon)",
+      "Chef Henry curated grocery combinations (unlimited)",
+      "2 custom grocery-list builds per month",
     ],
     cta: {
       label: "Join Protein Flip™ Kitchen",
@@ -69,6 +70,7 @@ const TIERS: TierDef[] = [
       "Session replays and Watch Chef Henry demonstrations",
       "Limited 30-minute Strategy Calls",
       "Submit a recipe for a possible Protein Flip™ makeover",
+      "Unlimited custom grocery-list builds",
     ],
     cta: { label: "Join the waitlist", href: "#join" },
     comingSoon: true,

@@ -8,6 +8,11 @@ import type {
   GroceryItem,
 } from "@/lib/ingredients";
 import { DIETARY_TAGS } from "@/lib/recipes";
+import { consumesCustomBuild, type ComboCredits } from "@/lib/combo-build";
+import {
+  matchingPreset,
+  type ComboPreset,
+} from "@/lib/combo-presets";
 
 /** Protein Flip™ as a search filter, alongside the six dietary tags. Kept
  * local to the Combo Builder rather than added to the shared DIETARY_TAGS
@@ -128,6 +133,10 @@ interface Props {
   saved?: SavedList[];
   /** A saved list to open on arrival, e.g. from a dashboard link. */
   openListId?: string | null;
+  /** Chef Henry curated combinations. Opening one does not use a credit. */
+  presets?: ComboPreset[];
+  /** Monthly custom-build credits for this member's tier. */
+  credits?: ComboCredits;
 }
 
 export function ComboBuilder({
@@ -140,6 +149,8 @@ export function ComboBuilder({
   initial = [],
   saved = [],
   openListId: openOnArrival = null,
+  presets = [],
+  credits: initialCredits,
 }: Props) {
   // A list opened by link owns the session; otherwise fall back to a preset,
   // then to whatever trip this browser had in progress.
@@ -187,6 +198,8 @@ export function ComboBuilder({
   const [savedName, setSavedName] = useState<string | null>(null);
   const [saveState, setSaveState] = useState<"idle" | "saving" | "saved" | "error">("idle");
   const [saveError, setSaveError] = useState<string | null>(null);
+  const [credits, setCredits] = useState<ComboCredits | undefined>(initialCredits);
+  const [showCreditWall, setShowCreditWall] = useState(false);
 
   useEffect(() => {
     try {
@@ -327,6 +340,33 @@ export function ComboBuilder({
     [list, inCart]
   );
 
+  function wouldSpendCredit(asNew = false): boolean {
+    const fromPreset = matchingPreset(selected, chosen) != null;
+    const previous =
+      !asNew && openListId
+        ? (lists.find((l) => l.id === openListId) ?? null)
+        : null;
+    return consumesCustomBuild({
+      isNew: asNew || !openListId,
+      fromPreset,
+      previous,
+      next: { ingredients: selected, recipeSlugs: chosen },
+    });
+  }
+
+  function applyPreset(preset: ComboPreset) {
+    setSelected(preset.ingredients);
+    setDietarySelected([]);
+    setChosen(preset.recipeSlugs);
+    setInCart([]);
+    setOpenListId(null);
+    setListName(preset.name);
+    setDirty(false);
+    setSaveState("idle");
+    setSavedName(null);
+    setShowCreditWall(false);
+  }
+
   /** Empties the active window so the next list starts from scratch. */
   function clearSession() {
     setSelected([]);
@@ -337,12 +377,23 @@ export function ComboBuilder({
     setOpenListId(null);
     setListName("");
     setDirty(false);
+    setShowCreditWall(false);
   }
 
   async function save({ asNew = false }: { asNew?: boolean } = {}) {
+    if (
+      wouldSpendCredit(asNew) &&
+      credits &&
+      !credits.unlimited &&
+      credits.remaining <= 0
+    ) {
+      setShowCreditWall(true);
+      return;
+    }
     const name = listName.trim() || defaultName;
     setSaveState("saving");
     setSaveError(null);
+    setShowCreditWall(false);
     try {
       const res = await fetch("/api/lists", {
         method: "POST",
@@ -355,7 +406,18 @@ export function ComboBuilder({
           inCart,
         }),
       });
-      const data = (await res.json()) as { list?: SavedList; error?: string };
+      const data = (await res.json()) as {
+        list?: SavedList;
+        error?: string;
+        code?: string;
+        credits?: ComboCredits;
+      };
+      if (data.credits) setCredits(data.credits);
+      if (res.status === 429 && data.code === "combo_limit") {
+        setSaveState("idle");
+        setShowCreditWall(true);
+        return;
+      }
       if (!res.ok || !data.list) {
         setSaveState("error");
         setSaveError(data.error ?? "Could not save. Please try again.");
@@ -546,6 +608,56 @@ export function ComboBuilder({
             </button>
           </div>
         </div>
+      )}
+
+      {showCreditWall && credits && (
+        <div
+          role="status"
+          className="mb-6 rounded-2xl border border-border bg-secondary/60 p-5 print:hidden"
+        >
+          <p className="text-sm font-medium">
+            You have used your {credits.limit} custom builds for this month.
+          </p>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Your saved lists are still available.
+            {credits.periodEndLabel
+              ? ` New credits arrive on ${credits.periodEndLabel}.`
+              : ""}
+          </p>
+          <Link
+            href="/membership"
+            className="mt-3 inline-block text-sm font-medium text-primary hover:underline"
+          >
+            Upgrade to Chef&apos;s Table
+          </Link>
+          <p className="mt-2 text-xs text-muted-foreground">
+            Chef Henry combinations stay unlimited.
+          </p>
+        </div>
+      )}
+
+      {presets.length > 0 && (
+        <section className="mb-8 rounded-2xl border border-border bg-card p-5 print:hidden">
+          <h2 className="font-heading text-lg font-semibold">
+            Chef Henry combinations
+          </h2>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Curated lists you can open any time. They do not use a custom
+            build.
+          </p>
+          <ul className="mt-3 flex flex-wrap gap-2">
+            {presets.map((preset) => (
+              <li key={preset.id}>
+                <button
+                  onClick={() => applyPreset(preset)}
+                  className="rounded-full border border-border bg-card px-4 py-1.5 text-sm transition-colors hover:border-primary/50 hover:text-primary"
+                >
+                  {preset.name}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
 
       {lists.length > 0 && (
@@ -759,11 +871,13 @@ export function ComboBuilder({
                     type="checkbox"
                     id={`pick-${r.slug}`}
                     checked={on}
-                    onChange={() =>
+                    onChange={() => {
                       setChosen((c) =>
                         on ? c.filter((s) => s !== r.slug) : [...c, r.slug]
-                      )
-                    }
+                      );
+                      setDirty(true);
+                      setSaveState("idle");
+                    }}
                     className="size-4 accent-primary print:hidden"
                   />
                   <label
@@ -832,6 +946,13 @@ export function ComboBuilder({
                   </button>
                 )}
               </div>
+              {credits && !credits.unlimited && (
+                <p className="mt-2 text-xs text-muted-foreground">
+                  {openListId && wouldSpendCredit()
+                    ? `Updating this list after changing ingredients will use 1 of your ${credits.limit} custom builds this month.`
+                    : `${credits.remaining} of ${credits.limit} custom builds remaining this month.`}
+                </p>
+              )}
               {saveState === "error" && saveError && (
                 <p className="mt-2 text-xs text-destructive">{saveError}</p>
               )}
