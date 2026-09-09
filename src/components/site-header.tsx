@@ -12,6 +12,7 @@ const links = [
   { href: "/recipes", label: "Recipes" },
   { href: "/explore", label: "Explore" },
   { href: "/cookbook", label: "Cookbook" },
+  { href: "/membership", label: "Membership" },
   { href: "/blog", label: "Journal" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
