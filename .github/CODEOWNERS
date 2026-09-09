@@ -1,9 +1,15 @@
 # Code ownership for chefhealthyhenry.com
 #
-# Files listed here require @joshrealifi25's review before merging.
-# Everything NOT listed (recipes, blog posts, components, pages, styles,
-# images) can be changed and self-merged by any collaborator (Henry) with
-# no review, so day-to-day content stays friction-free.
+# Review here is ADVISORY, not required. Nothing in this file blocks a merge.
+# Listing a path auto-requests @joshrealifi25's review so he sees the change,
+# and any collaborator can still merge without waiting for it.
+#
+# What DOES block a merge is CI: the "Lint, types, content, build" check must
+# pass. Run `npm run check` before pushing and it will pass.
+#
+# These are the files where a mistake breaks checkout, loses sales, or takes
+# the site down, rather than just looking wrong. Worth a second pair of eyes
+# even though nothing forces it.
 
 # Commerce + automated PDF delivery (a mistake here = broken checkout / lost sales)
 /src/app/api/            @joshrealifi25

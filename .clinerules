@@ -130,17 +130,36 @@ by code but absent from `.env.example`.
 
 Never push directly to `main`. `main` is the live site.
 
-## Files that need Josh's review
+## Files worth a second pair of eyes
 
-Listed in `.github/CODEOWNERS`. A mistake in these breaks checkout or takes
-the site down rather than just looking wrong:
+Listed in `.github/CODEOWNERS`. Review is advisory: listing a path
+auto-requests Josh's review so he sees the change, but nothing blocks the
+merge and there is no need to wait for him.
 
 - `src/app/api/` and `src/lib/fulfillment.ts`: payments and PDF delivery
 - `src/data/cookbooks.ts`: what is for sale and at what price
 - `next.config.ts`, `src/lib/site.ts`, `package.json`, `.github/`
 
-Adding recipes, posts, lessons, guides, and images touches none of these. If
-a merge is blocked on one, stop and tag Josh. Do not work around it.
+A mistake in these breaks checkout or takes the site down rather than just
+looking wrong, so read twice before changing one. Adding recipes, posts,
+lessons, guides, and images touches none of them.
+
+## What does block a merge
+
+The `Lint, types, content, build` check on `main`. `npm run check` runs the
+same thing locally, so a green run there means a green run in CI. A red
+build cannot reach production.
+
+Two things CI cannot check, which are on you:
+
+- **Database migrations do not run on deploy.** Shipping code that expects a
+  new table or column means running the migration in `drizzle/` against Neon
+  first, or the live site errors for real members. This has already happened
+  once, with `0004_combo_builds`.
+- **Environment variables are per-environment and, for Preview, per-branch.**
+  Adding one to `.env.example` does not set it anywhere. Set it in the Vercel
+  dashboard for Production and for the Preview branch, before merging, since
+  a variable only reaches deployments created after it exists.
 
 ## Strategy documents
 
