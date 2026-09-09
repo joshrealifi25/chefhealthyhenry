@@ -304,7 +304,7 @@ export default async function MembersPage() {
             yet. Head to the membership page to join.
           </p>
           <Link
-            href="/"
+            href="/membership"
             className="mt-6 inline-block rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
             See membership options

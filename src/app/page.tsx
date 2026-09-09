@@ -198,6 +198,61 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Membership */}
+      <section className="border-t border-border bg-secondary/50 py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-sm font-medium uppercase tracking-widest text-primary">
+              Membership
+            </p>
+            <h2 className="mt-3 font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+              Cook with Chef Henry every month
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+              The recipes are free and always will be. Membership is for the
+              part a recipe cannot teach: the decisions behind it, so you can
+              cook well without one.
+            </p>
+          </div>
+          <div className="mx-auto mt-12 grid max-w-4xl gap-6 md:grid-cols-2">
+            <div className="rounded-2xl border border-border bg-card p-6">
+              <h3 className="font-heading text-xl font-semibold">
+                Protein Flip&trade; Kitchen
+              </h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                $12 a month, or $10 a month paid yearly
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                <li>A new application lesson every month</li>
+                <li>The grocery combo builder, one list from many recipes</li>
+                <li>Sous, your Protein Flip&trade; cooking assistant</li>
+              </ul>
+            </div>
+            <div className="rounded-2xl border border-border bg-card p-6">
+              <h3 className="font-heading text-xl font-semibold">
+                Protein Flip&trade; Community
+              </h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                $29 a month
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                <li>Everything in Kitchen, with unlimited Sous</li>
+                <li>Recipe Makeovers: send a recipe, get it flipped</li>
+                <li>The private Protein Flip&trade; community</li>
+              </ul>
+            </div>
+          </div>
+          <div className="mt-10 text-center">
+            <Link
+              href="/membership"
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3 font-medium text-primary-foreground transition-opacity hover:opacity-90"
+            >
+              Compare memberships <ArrowRight className="size-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Newsletter / free guide */}
       <section
         id="free-guide"
