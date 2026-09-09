@@ -2201,9 +2201,16 @@
   "barramundi-fish": [
    "barramundi fillets",
    "basil",
+   "cherry tomatoes",
+   "dijon mustard",
    "garlic",
    "lemon juice",
-   "lemon zest"
+   "lemon zest",
+   "rosemary",
+   "shallots",
+   "spinach",
+   "thyme",
+   "white beans"
   ],
   "beet-chickpea-seed-crackers": [
    "beets",
@@ -2697,7 +2704,9 @@
   ],
   "fresh-salmon-and-avocado-salad-with-dill-dressing-healthy-and-delicious-y8z18": [
    "avocado",
+   "cannellini beans",
    "carrots",
+   "dijon mustard",
    "dill",
    "garlic",
    "lemon",
@@ -2803,10 +2812,13 @@
   ],
   "halibut-piccata-with-black-rice-broccoli-pepitas": [
    "almond flour",
+   "black rice",
+   "broccoli",
    "capers",
    "garlic",
    "halibut",
    "lemon",
+   "pepitas",
    "white wine"
   ],
   "harira-moroccan-lentil-and-chickpea-soup-ac4m4": [
@@ -3989,14 +4001,16 @@
    "spinach"
   ],
   "vibrant-broccolini-salad-with-crispy-chickpeas-sumac-dressing-and-albacore-tuna-stdsh": [
+   "albacore tuna",
    "aleppo pepper",
-   "allulose",
    "broccolini",
    "chickpeas",
+   "dijon mustard",
    "garlic",
    "greek yogurt",
-   "lemon zest",
+   "lemon",
    "mint",
+   "parsley",
    "red onion",
    "sumac"
   ],
@@ -5437,31 +5451,31 @@
   },
   "vibrant-broccolini-salad-with-crispy-chickpeas-sumac-dressing-and-albacore-tuna-stdsh": {
    "chickpeas": [
-    "1 (15 oz) can chickpeas, drained, rinsed, and patted dry"
+    "1 (15 oz) can chickpeas, drained and rinsed"
    ],
    "aleppo pepper": [
-    "1/2 tsp Aleppo pepper or red pepper flakes"
+    "1/2 teaspoon Aleppo pepper"
    ],
    "red onion": [
     "1/2 small red onion, thinly sliced"
    ],
    "sumac": [
-    "1/2 tsp sumac",
-    "1 tsp sumac Salt and pepper to taste"
+    "1/2 teaspoon sumac",
+    "1 teaspoon sumac"
    ],
-   "lemon zest": [
-    "Juice and zest of 1 lemon"
-   ],
-   "allulose": [
-    "1 tsp allulose or honey",
-    "2 tsp allulose"
+   "lemon": [
+    "Zest of 1 lemon",
+    "Juice of 1/2 lemon"
    ],
    "garlic": [
-    "5 cloves garlic, thinly sliced",
-    "1 clove garlic, finely grated"
+    "5 garlic cloves, thinly sliced",
+    "1 garlic clove, finely grated"
    ],
    "broccolini": [
-    "2 bunches broccolini, ends trimmed, stems thinly sliced, tops halved"
+    "2 bunches broccolini"
+   ],
+   "parsley": [
+    "1/2 cup fresh parsley or cilantro leaves, roughly chopped"
    ],
    "mint": [
     "Small handful fresh mint leaves, torn"
@@ -5470,7 +5484,10 @@
     "1/2 cup plain Greek yogurt"
    ],
    "dijon mustard": [
-    "1 tsp Dijon mustard"
+    "1 teaspoon Dijon mustard"
+   ],
+   "albacore tuna": [
+    "1 (5 oz) can albacore tuna, drained and kept in large chunks"
    ]
   },
   "warm-balsamic-mushroom-and-lentil-salad-recipe-ivzia": {
@@ -5719,22 +5736,41 @@
   },
   "barramundi-fish": {
    "garlic": [
-    "2 TB garlic minced"
+    "2 tbsp minced garlic",
+    "1 garlic clove, minced"
    ],
    "basil": [
-    "1 TB basil chopped"
+    "1 1/2 tbsp chopped fresh basil"
    ],
    "lemon juice": [
-    "1 TB lemon juice"
+    "1 1/2 tbsp fresh lemon juice"
    ],
    "lemon zest": [
-    "1 TB lemon zest"
+    "1 tbsp lemon zest"
    ],
    "barramundi fillets": [
-    "4 barramundi fillets"
+    "4 barramundi fillets, 3 oz each (tilapia may be substituted)"
    ],
-   "vanilla": [
-    "Garnishes 4 cups Spinach Freshly chopped basil Lemon slices Cherry tomato sliced"
+   "white beans": [
+    "2 cups cooked cannellini beans"
+   ],
+   "shallots": [
+    "1 small shallot, finely diced"
+   ],
+   "thyme": [
+    "1 tsp chopped fresh thyme"
+   ],
+   "rosemary": [
+    "1 tsp chopped fresh rosemary"
+   ],
+   "dijon mustard": [
+    "1 tsp Dijon mustard, optional"
+   ],
+   "spinach": [
+    "4 cups fresh baby spinach"
+   ],
+   "cherry tomatoes": [
+    "Cherry tomatoes, sliced on the bias"
    ]
   },
   "berry-tart-with-sweet-potato-crust": {
@@ -6779,29 +6815,32 @@
    "dill": [
     "1/2 cup loosely packed fresh dill"
    ],
-   "lemon juice": [
-    "2 tbls lemon juice"
+   "lemon": [
+    "2 tbsp lemon juice"
    ],
    "white wine vinegar": [
-    "2 tbls white wine vinegar"
+    "2 tbsp white wine vinegar"
    ],
    "dijon mustard": [
     "1 tsp Dijon mustard"
    ],
+   "cannellini beans": [
+    "2 cups cooked cannellini beans (1/2 cup per serving. See note)"
+   ],
    "red cabbage": [
-    "2 cups thinly sliced red cabbage"
+    "2 cups red cabbage, thinly sliced (about 1/2 cup per serving)"
    ],
    "carrots": [
-    "1 cup carrots julienne"
+    "1 cup carrots, julienned (about 1/4 cup per serving)"
    ],
    "avocado": [
-    "2 avocados, sliced, divided"
+    "2 avocados, sliced (1/2 avocado per serving)"
    ],
    "garlic": [
     "1 small clove garlic"
    ],
    "salmon": [
-    "4-5 oz skinless salmon fillets"
+    "4 skinless salmon fillets (3 to 4 oz each)"
    ]
   },
   "gourmet-mushroom-medley-with-spinach-and-bean-puree": {
@@ -6881,22 +6920,31 @@
   },
   "halibut-piccata-with-black-rice-broccoli-pepitas": {
    "halibut": [
-    "4 [6-ounce] halibut filets, skin removed and pat dry"
+    "4 halibut fillets, 4 oz each"
    ],
    "almond flour": [
-    "1c almond flour"
+    "1/4 cup almond flour"
    ],
    "white wine": [
-    "1/2 cup white wine"
+    "1/2 cup dry white wine or low-sodium broth"
    ],
    "garlic": [
-    "4-5 cloves garlic, chopped"
+    "2 garlic cloves, minced"
    ],
    "capers": [
-    "2 tbsp capers, drained"
+    "2 tablespoons capers, drained"
    ],
    "lemon": [
-    "Juice of 1/2 lemon"
+    "Juice of 1 lemon, about 2 to 3 tablespoons"
+   ],
+   "black rice": [
+    "2/3 cup dry black rice, about 2 cups cooked"
+   ],
+   "broccoli": [
+    "2 cups broccoli florets"
+   ],
+   "pepitas": [
+    "1/4 cup toasted pepitas"
    ]
   },
   "halibut-in-corn-husks-with-fresh-vegetable-saute": {
