@@ -9,6 +9,10 @@ export interface ComboCredits {
   periodEndLabel: string | null;
 }
 
+export function customBuildsRemainingNote(credits: ComboCredits): string {
+  return `${credits.remaining} of ${credits.limit} custom builds remaining this month.`;
+}
+
 function sameSelection(a: string[], b: string[]): boolean {
   if (a.length !== b.length) return false;
   const left = [...a].map((v) => v.toLowerCase()).sort();

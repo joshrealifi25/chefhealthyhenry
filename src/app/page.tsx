@@ -236,7 +236,7 @@ export default function HomePage() {
                 $29 a month
               </p>
               <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                <li>Everything in Kitchen, with unlimited Sous</li>
+                <li>Everything in Kitchen</li>
                 <li>Recipe Makeovers: send a recipe, get it flipped</li>
                 <li>The private Protein Flip&trade; community</li>
               </ul>

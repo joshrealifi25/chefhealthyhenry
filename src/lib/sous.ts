@@ -2,7 +2,7 @@ import { recipes } from "@/lib/recipes";
 
 /** Daily question caps by tier. Infinity = unlimited. */
 export const SOUS_DAILY_CAP: Record<string, number> = {
-  kitchen: 20,
+  kitchen: Infinity,
   community: Infinity,
   chefs_table: Infinity,
 };
