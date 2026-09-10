@@ -4,10 +4,21 @@ import { redirect } from "next/navigation";
 import { getMember } from "@/lib/auth";
 import { TIER_NAMES } from "@/lib/membership";
 import { SOUS_DAILY_CAP } from "@/lib/sous";
+import { getComboCredits } from "@/lib/combo-limits";
+import {
+  customBuildsRemainingNote,
+  customBuildsUsedUpNote,
+  isAtCustomBuildLimit,
+} from "@/lib/combo-build";
 import { currentLesson } from "@/lib/lessons";
+import {
+  canSeeFeatured,
+  currentFeaturedIngredient,
+} from "@/lib/featured-ingredients";
 import { db, memberships, savedLists, users } from "@/lib/db";
 import { desc, eq } from "drizzle-orm";
 import { SousChat } from "@/components/sous-chat";
+import { isAdminEmail } from "@/lib/admin";
 import { ManageBillingCard } from "@/components/manage-billing-card";
 
 export const metadata: Metadata = {
@@ -33,25 +44,28 @@ export default async function MembersPage({
     ? `Up to ${cap} questions a day with your membership.`
     : "Unlimited questions with your membership.";
   const lesson = currentLesson();
-  const lists = tier
-    ? await db()
-        .select({ id: savedLists.id, name: savedLists.name })
-        .from(savedLists)
-        .where(eq(savedLists.userId, member.id))
-        .orderBy(desc(savedLists.updatedAt))
-        .limit(3)
-    : [];
-  const [billingRow] = tier
-    ? await db()
-        .select({
-          stripeCustomerId: users.stripeCustomerId,
-          status: memberships.status,
-          currentPeriodEnd: memberships.currentPeriodEnd,
-        })
-        .from(users)
-        .leftJoin(memberships, eq(memberships.userId, users.id))
-        .where(eq(users.id, member.id))
-    : [];
+  const featuredIngredient = currentFeaturedIngredient();
+  const [lists, comboCredits, billingRows] = tier
+    ? await Promise.all([
+        db()
+          .select({ id: savedLists.id, name: savedLists.name })
+          .from(savedLists)
+          .where(eq(savedLists.userId, member.id))
+          .orderBy(desc(savedLists.updatedAt))
+          .limit(3),
+        getComboCredits(member.id, tier),
+        db()
+          .select({
+            stripeCustomerId: users.stripeCustomerId,
+            status: memberships.status,
+            currentPeriodEnd: memberships.currentPeriodEnd,
+          })
+          .from(users)
+          .leftJoin(memberships, eq(memberships.userId, users.id))
+          .where(eq(users.id, member.id)),
+      ])
+    : [[], null, []];
+  const billingRow = billingRows[0];
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
@@ -64,15 +78,37 @@ export default async function MembersPage({
             Here&apos;s what&apos;s new in your kitchen this month.
           </p>
         </div>
-        {tier ? (
-          <span className="rounded-full bg-accent px-4 py-2 text-sm font-medium">
-            {TIER_NAMES[tier]} member
-          </span>
-        ) : (
-          <span className="rounded-full bg-secondary px-4 py-2 text-sm font-medium">
-            No active membership
-          </span>
-        )}
+        <div className="flex flex-col items-start gap-3 sm:items-end">
+          {tier ? (
+            <span className="rounded-full bg-accent px-4 py-2 text-sm font-medium">
+              {TIER_NAMES[tier]} member
+            </span>
+          ) : (
+            <span className="rounded-full bg-secondary px-4 py-2 text-sm font-medium">
+              No active membership
+            </span>
+          )}
+          {(tier === "community" || tier === "chefs_table") && (
+            <div className="flex flex-col items-start gap-1 text-sm sm:items-end">
+              <a
+                href="https://www.facebook.com/Chefhealthyhenry"
+                target="_blank"
+                rel="noreferrer"
+                className="text-muted-foreground hover:text-primary"
+              >
+                Facebook
+              </a>
+              <a
+                href="https://www.facebook.com/groups/proteinflipcommunity"
+                target="_blank"
+                rel="noreferrer"
+                className="text-muted-foreground hover:text-primary"
+              >
+                Protein Flip™ Community
+              </a>
+            </div>
+          )}
+        </div>
       </div>
 
       {tier ? (
@@ -128,6 +164,31 @@ export default async function MembersPage({
                 </>
               )}
             </section>
+
+            {canSeeFeatured(tier) && featuredIngredient && (
+              <section className="rounded-2xl border border-border bg-card p-6">
+                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                  This season&apos;s featured ingredient
+                </p>
+                <h2 className="mt-1 font-heading text-xl font-semibold">
+                  <Link
+                    href={`/members/featured/${featuredIngredient.slug}`}
+                    className="hover:text-primary"
+                  >
+                    {featuredIngredient.ingredient}
+                  </Link>
+                </h2>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {featuredIngredient.blurb}
+                </p>
+                <Link
+                  href={`/members/featured/${featuredIngredient.slug}`}
+                  className="mt-4 inline-block rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+                >
+                  See this month&apos;s feature
+                </Link>
+              </section>
+            )}
 
             {tier === "kitchen" && (
               <section className="rounded-2xl border border-dashed border-border bg-secondary/50 p-6">
@@ -209,6 +270,11 @@ export default async function MembersPage({
                 Pick your ingredients, get every recipe that shares them, plus
                 one combined grocery list.
               </p>
+              {comboCredits && !comboCredits.unlimited && (
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {customBuildsRemainingNote(comboCredits)}
+                </p>
+              )}
               {lists.length > 0 && (
                 <ul className="mt-4 space-y-1.5 text-sm">
                   {lists.map((l) => (
@@ -223,25 +289,53 @@ export default async function MembersPage({
                   ))}
                 </ul>
               )}
-              <Link
-                href="/members/combos"
-                className="mt-4 inline-block rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
-              >
-                {lists.length > 0 ? "Build a new list" : "Build your first list"}
-              </Link>
+              {isAtCustomBuildLimit(comboCredits ?? undefined) && comboCredits ? (
+                <div className="mt-4">
+                  <p className="text-sm text-muted-foreground">
+                    {customBuildsUsedUpNote(comboCredits)}
+                  </p>
+                  <Link
+                    href="/membership"
+                    className="mt-3 inline-block rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+                  >
+                    Upgrade
+                  </Link>
+                </div>
+              ) : (
+                <Link
+                  href="/members/combos"
+                  className="mt-4 inline-block rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+                >
+                  {lists.length > 0 ? "Build a new list" : "Build your first list"}
+                </Link>
+              )}
             </section>
 
             <section className="rounded-2xl border border-border bg-card p-6">
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
                 Member library
               </p>
-              <h2 className="mt-1 font-heading text-xl font-semibold">
-                Lessons and Kitchen Guides
-              </h2>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Every Application Lesson and one-page Kitchen Guide, browsable
-                by category.
-              </p>
+              {canSeeFeatured(tier) ? (
+                <>
+                  <h2 className="mt-1 font-heading text-xl font-semibold">
+                    Member Library
+                  </h2>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Application Lessons, Kitchen Guides, and Featured Ingredient
+                    archives, browsable by category.
+                  </p>
+                </>
+              ) : (
+                <>
+                  <h2 className="mt-1 font-heading text-xl font-semibold">
+                    Lessons and Kitchen Guides
+                  </h2>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Every Application Lesson and one-page Kitchen Guide,
+                    browsable by category.
+                  </p>
+                </>
+              )}
               <Link
                 href="/members/library"
                 className="mt-4 inline-block rounded-full border border-border px-5 py-2 text-sm font-medium text-primary transition-colors hover:bg-secondary"
@@ -269,7 +363,7 @@ export default async function MembersPage({
             yet. Head to the membership page to join.
           </p>
           <Link
-            href="/"
+            href="/membership"
             className="mt-6 inline-block rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
             See membership options
@@ -277,14 +371,43 @@ export default async function MembersPage({
         </div>
       )}
 
-      <form action="/api/auth/logout" method="post" className="mt-12">
-        <button
-          type="submit"
-          className="text-sm text-muted-foreground underline underline-offset-4 hover:text-primary"
-        >
-          Sign out ({member.email})
-        </button>
-      </form>
+      {isAdminEmail(member.email) && (
+        <section className="mt-12 rounded-2xl border border-border bg-card p-6">
+          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+            Admin
+          </p>
+          <h2 className="mt-1 font-heading text-xl font-semibold">Accounts</h2>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Everyone with an account, who is on which membership, and the
+            controls to comp or remove one.
+          </p>
+          <Link
+            href="/members/admin"
+            className="mt-4 inline-block rounded-full border border-border px-5 py-2 text-sm font-medium text-primary transition-colors hover:bg-secondary"
+          >
+            Manage accounts
+          </Link>
+        </section>
+      )}
+
+      <div className="mt-12 space-y-3">
+        <form action="/api/auth/logout" method="post">
+          <button
+            type="submit"
+            className="text-sm text-muted-foreground underline underline-offset-4 hover:text-primary"
+          >
+            Sign out ({member.email})
+          </button>
+        </form>
+        <p>
+          <a
+            href="mailto:henry@ChefHealthyHenry.com?subject=Chef%20Healthy%20Henry%3A%20Site%20Feedback"
+            className="text-xs text-muted-foreground hover:text-primary"
+          >
+            Report an issue
+          </a>
+        </p>
+      </div>
     </div>
   );
 }

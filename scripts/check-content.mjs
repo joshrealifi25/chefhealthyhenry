@@ -40,6 +40,7 @@ const COLLECTIONS = [
   { file: "src/data/explore.json", label: "explore article", urlPrefix: "/explore/article" },
   { file: "src/data/lessons.json", label: "lesson", urlPrefix: "/members/library/lessons" },
   { file: "src/data/guides.json", label: "guide", urlPrefix: "/members/library/guides" },
+  { file: "src/data/featured-ingredients.json", label: "featured ingredient", urlPrefix: "/members/featured" },
 ];
 
 const loaded = COLLECTIONS.map((c) => ({ ...c, entries: loadJson(c.file) })).filter(
@@ -121,6 +122,18 @@ for (const { file, entries } of loaded) {
 // 4. Recipes meet the quality bar from CLAUDE.md: ingredients, directions, image.
 // ---------------------------------------------------------------------------
 const recipes = loaded.find((c) => c.file === "src/data/recipes.json");
+const featured = loaded.find((c) => c.file === "src/data/featured-ingredients.json");
+if (featured && recipes) {
+  const recipeSlugs = new Set(recipes.entries.map((r) => r.slug));
+  for (const entry of featured.entries) {
+    if (entry.recipeSlug && !recipeSlugs.has(entry.recipeSlug)) {
+      fail(
+        "link",
+        `${featured.file}: "${entry.slug}" points recipeSlug at ${entry.recipeSlug}, which is not a recipe.`,
+      );
+    }
+  }
+}
 if (recipes) {
   for (const r of recipes.entries) {
     const missing = [];

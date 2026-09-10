@@ -9,6 +9,18 @@ export interface ComboCredits {
   periodEndLabel: string | null;
 }
 
+export function customBuildsRemainingNote(credits: ComboCredits): string {
+  return `${credits.remaining} of ${credits.limit} custom builds remaining this month. Upgrade for unlimited builds and edits.`;
+}
+
+export function customBuildsUsedUpNote(credits: ComboCredits): string {
+  return `You have used your ${credits.limit} custom builds for this month. Upgrade to Community for unlimited builds and edits.`;
+}
+
+export function isAtCustomBuildLimit(credits?: ComboCredits): boolean {
+  return Boolean(credits && !credits.unlimited && credits.remaining <= 0);
+}
+
 function sameSelection(a: string[], b: string[]): boolean {
   if (a.length !== b.length) return false;
   const left = [...a].map((v) => v.toLowerCase()).sort();

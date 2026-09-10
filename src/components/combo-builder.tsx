@@ -8,7 +8,13 @@ import type {
   GroceryItem,
 } from "@/lib/ingredients";
 import { DIETARY_TAGS } from "@/lib/recipes";
-import { consumesCustomBuild, type ComboCredits } from "@/lib/combo-build";
+import {
+  consumesCustomBuild,
+  customBuildsRemainingNote,
+  customBuildsUsedUpNote,
+  isAtCustomBuildLimit,
+  type ComboCredits,
+} from "@/lib/combo-build";
 import {
   matchingPreset,
   type ComboPreset,
@@ -157,6 +163,7 @@ export function ComboBuilder({
   const arriving = openOnArrival
     ? saved.find((l) => l.id === openOnArrival)
     : undefined;
+  const blockedOnArrival = isAtCustomBuildLimit(initialCredits);
   const restored = arriving
     ? {
         selected: arriving.ingredients,
@@ -166,11 +173,13 @@ export function ComboBuilder({
         // refinement, not part of what the list actually contains.
         dietary: [] as string[],
       }
-    : initial.length > 0
+    : blockedOnArrival || initial.length > 0
       ? EMPTY_TRIP
       : readTrip();
   const [selected, setSelected] = useState<string[]>(
-    initial.length > 0 && !arriving ? initial : restored.selected
+    initial.length > 0 && !arriving && !blockedOnArrival
+      ? initial
+      : restored.selected
   );
   /** Active dietary filter pills. Stacks with `selected` (ingredients) using
    * AND logic, same as the ingredient filters stack with each other. */
@@ -199,7 +208,8 @@ export function ComboBuilder({
   const [saveState, setSaveState] = useState<"idle" | "saving" | "saved" | "error">("idle");
   const [saveError, setSaveError] = useState<string | null>(null);
   const [credits, setCredits] = useState<ComboCredits | undefined>(initialCredits);
-  const [showCreditWall, setShowCreditWall] = useState(false);
+  const [showCreditWall, setShowCreditWall] = useState(blockedOnArrival);
+  const atBuildLimit = isAtCustomBuildLimit(credits);
 
   useEffect(() => {
     try {
@@ -364,7 +374,7 @@ export function ComboBuilder({
     setDirty(false);
     setSaveState("idle");
     setSavedName(null);
-    setShowCreditWall(false);
+    setShowCreditWall(atBuildLimit);
   }
 
   /** Empties the active window so the next list starts from scratch. */
@@ -377,7 +387,7 @@ export function ComboBuilder({
     setOpenListId(null);
     setListName("");
     setDirty(false);
-    setShowCreditWall(false);
+    setShowCreditWall(atBuildLimit);
   }
 
   async function save({ asNew = false }: { asNew?: boolean } = {}) {
@@ -610,29 +620,26 @@ export function ComboBuilder({
         </div>
       )}
 
+      {credits && !credits.unlimited && (
+        <p className="mb-6 text-sm text-muted-foreground print:hidden">
+          {customBuildsRemainingNote(credits)}
+        </p>
+      )}
+
       {showCreditWall && credits && (
         <div
           role="status"
           className="mb-6 rounded-2xl border border-border bg-secondary/60 p-5 print:hidden"
         >
           <p className="text-sm font-medium">
-            You have used your {credits.limit} custom builds for this month.
-          </p>
-          <p className="mt-2 text-sm text-muted-foreground">
-            Your saved lists are still available.
-            {credits.periodEndLabel
-              ? ` New credits arrive on ${credits.periodEndLabel}.`
-              : ""}
+            {customBuildsUsedUpNote(credits)}
           </p>
           <Link
             href="/membership"
-            className="mt-3 inline-block text-sm font-medium text-primary hover:underline"
+            className="mt-4 inline-block rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
-            Upgrade to Chef&apos;s Table
+            Upgrade
           </Link>
-          <p className="mt-2 text-xs text-muted-foreground">
-            Chef Henry combinations stay unlimited.
-          </p>
         </div>
       )}
 
@@ -663,6 +670,11 @@ export function ComboBuilder({
       {lists.length > 0 && (
         <section className="mb-8 rounded-2xl border border-border bg-card p-5 print:hidden">
           <h2 className="font-heading text-lg font-semibold">My Lists</h2>
+          {atBuildLimit && (
+            <p className="mt-1 text-xs text-muted-foreground">
+              Build limit reached. Upgrade to edit.
+            </p>
+          )}
           <ul className="mt-3 divide-y divide-border">
             {lists.map((l) => (
               <li key={l.id} className="flex items-center gap-3 py-2">
@@ -683,8 +695,22 @@ export function ComboBuilder({
                 </button>
                 <button
                   onClick={() => requestOpen(l)}
-                  aria-label={`Edit ${l.name}`}
-                  className="text-xs text-primary hover:underline"
+                  disabled={atBuildLimit}
+                  title={
+                    atBuildLimit
+                      ? "Build limit reached. Upgrade to edit."
+                      : undefined
+                  }
+                  aria-label={
+                    atBuildLimit
+                      ? `Edit ${l.name} unavailable. Build limit reached. Upgrade to edit.`
+                      : `Edit ${l.name}`
+                  }
+                  className={
+                    atBuildLimit
+                      ? "cursor-not-allowed text-xs text-muted-foreground"
+                      : "text-xs text-primary hover:underline"
+                  }
                 >
                   Edit
                 </button>
@@ -701,7 +727,10 @@ export function ComboBuilder({
         </section>
       )}
 
-      {/* Pick ingredients */}
+      {/* Pick ingredients. Hidden at the build limit so a new custom list
+          cannot be started from search. Saved lists and presets still show
+          below for shopping. */}
+      {!atBuildLimit && (
       <div className="print:hidden">
       <label htmlFor="combo-search" className="text-sm font-medium">
         Add an ingredient
@@ -773,6 +802,7 @@ export function ComboBuilder({
 
       {/* Chosen ingredients */}
       </div>
+      )}
 
       {(selected.length > 0 || dietarySelected.length > 0) && (
         <div className="mt-6 rounded-2xl border border-border bg-card p-4 print:hidden">
@@ -783,6 +813,7 @@ export function ComboBuilder({
                 className="inline-flex items-center gap-2 rounded-full bg-accent px-3 py-1.5 text-sm"
               >
                 {name}
+                {!atBuildLimit && (
                 <button
                   onClick={() => setSelected((s) => s.filter((n) => n !== name))}
                   aria-label={`Remove ${name}`}
@@ -790,6 +821,7 @@ export function ComboBuilder({
                 >
                   ✕
                 </button>
+                )}
               </span>
             ))}
             {dietarySelected.map((tag) => {
@@ -803,6 +835,7 @@ export function ComboBuilder({
                     {filter?.badge ?? "Filter"}
                   </span>
                   {filter?.label ?? tag}
+                  {!atBuildLimit && (
                   <button
                     onClick={() => setDietarySelected((s) => s.filter((t) => t !== tag))}
                     aria-label={`Remove ${tag} filter`}
@@ -810,9 +843,11 @@ export function ComboBuilder({
                   >
                     ✕
                   </button>
+                  )}
                 </span>
               );
             })}
+            {!atBuildLimit && (
             <button
               onClick={() => {
                 setSelected([]);
@@ -824,6 +859,7 @@ export function ComboBuilder({
             >
               Start over
             </button>
+            )}
           </div>
           <p className="mt-3 text-sm text-muted-foreground" aria-live="polite">
             {matches.length === 1
@@ -840,6 +876,7 @@ export function ComboBuilder({
             <h2 className="font-heading text-2xl font-semibold tracking-tight">
               Which of these are you cooking?
             </h2>
+            {!atBuildLimit && (
             <button
               onClick={() =>
                 setChosen(
@@ -852,6 +889,7 @@ export function ComboBuilder({
             >
               {planned.length === matches.length ? "Clear all" : "Select all"}
             </button>
+            )}
           </div>
           <p className="mt-1 text-sm text-muted-foreground">
             Tick the meals you plan to make. Your grocery list covers just
@@ -871,6 +909,7 @@ export function ComboBuilder({
                     type="checkbox"
                     id={`pick-${r.slug}`}
                     checked={on}
+                    disabled={atBuildLimit}
                     onChange={() => {
                       setChosen((c) =>
                         on ? c.filter((s) => s !== r.slug) : [...c, r.slug]
@@ -878,7 +917,7 @@ export function ComboBuilder({
                       setDirty(true);
                       setSaveState("idle");
                     }}
-                    className="size-4 accent-primary print:hidden"
+                    className="size-4 accent-primary print:hidden disabled:cursor-not-allowed"
                   />
                   <label
                     htmlFor={`pick-${r.slug}`}
@@ -927,7 +966,10 @@ export function ComboBuilder({
                 />
                 <button
                   onClick={() => save()}
-                  disabled={saveState === "saving"}
+                  disabled={
+                    saveState === "saving" ||
+                    (atBuildLimit && wouldSpendCredit())
+                  }
                   className="rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-60"
                 >
                   {saveState === "saving"
@@ -936,7 +978,7 @@ export function ComboBuilder({
                       ? "Update"
                       : "Save"}
                 </button>
-                {openListId && (
+                {openListId && !atBuildLimit && (
                   <button
                     onClick={() => save({ asNew: true })}
                     disabled={saveState === "saving"}
@@ -950,7 +992,7 @@ export function ComboBuilder({
                 <p className="mt-2 text-xs text-muted-foreground">
                   {openListId && wouldSpendCredit()
                     ? `Updating this list after changing ingredients will use 1 of your ${credits.limit} custom builds this month.`
-                    : `${credits.remaining} of ${credits.limit} custom builds remaining this month.`}
+                    : customBuildsRemainingNote(credits)}
                 </p>
               )}
               {saveState === "error" && saveError && (

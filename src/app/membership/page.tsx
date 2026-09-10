@@ -28,7 +28,7 @@ const TIERS: TierDef[] = [
     annual: "or $120/year ($10 a month)",
     tagline: "Help me make better cooking decisions.",
     features: [
-      "Sous, your Protein Flip™ cooking assistant, up to 20 questions a day",
+      "Sous, your Protein Flip™ cooking assistant, unlimited questions",
       "One Member Application Lesson every month",
       "The growing lesson library and Kitchen Guides",
       "Chef Henry curated grocery combinations (unlimited)",
@@ -47,7 +47,7 @@ const TIERS: TierDef[] = [
     tagline: "Help me practice, participate, and learn with others.",
     features: [
       "Everything in Protein Flip™ Kitchen",
-      "Unlimited questions with Sous",
+      "Unlimited custom grocery-list builds",
       "The private Protein Flip™ community",
       "Monthly Recipe Makeover: submit a dish you love, watch Chef Henry rethink it",
       "This Season's Featured Ingredient, every other month",
