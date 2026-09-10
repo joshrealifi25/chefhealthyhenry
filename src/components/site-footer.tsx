@@ -30,7 +30,36 @@ export function SiteFooter() {
           <div>
             <p className="mb-3 font-medium">Follow</p>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="https://chefhealthyhenry.com" target="_blank" rel="noreferrer" className="hover:text-primary">chefhealthyhenry.com</a></li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@chefhealthyhenry"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary"
+                >
+                  YouTube
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/chefhealthyhenry.eatswell/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@chefhealthyhenry"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary"
+                >
+                  TikTok
+                </a>
+              </li>
             </ul>
           </div>
         </div>
