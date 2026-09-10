@@ -62,15 +62,37 @@ export default async function MembersPage() {
             Here&apos;s what&apos;s new in your kitchen this month.
           </p>
         </div>
-        {tier ? (
-          <span className="rounded-full bg-accent px-4 py-2 text-sm font-medium">
-            {TIER_NAMES[tier]} member
-          </span>
-        ) : (
-          <span className="rounded-full bg-secondary px-4 py-2 text-sm font-medium">
-            No active membership
-          </span>
-        )}
+        <div className="flex flex-col items-start gap-3 sm:items-end">
+          {tier ? (
+            <span className="rounded-full bg-accent px-4 py-2 text-sm font-medium">
+              {TIER_NAMES[tier]} member
+            </span>
+          ) : (
+            <span className="rounded-full bg-secondary px-4 py-2 text-sm font-medium">
+              No active membership
+            </span>
+          )}
+          {(tier === "community" || tier === "chefs_table") && (
+            <div className="flex flex-col items-start gap-1 text-sm sm:items-end">
+              <a
+                href="https://www.facebook.com/Chefhealthyhenry"
+                target="_blank"
+                rel="noreferrer"
+                className="text-muted-foreground hover:text-primary"
+              >
+                Facebook
+              </a>
+              <a
+                href="https://www.facebook.com/groups/proteinflipcommunity"
+                target="_blank"
+                rel="noreferrer"
+                className="text-muted-foreground hover:text-primary"
+              >
+                Protein Flip™ Community
+              </a>
+            </div>
+          )}
+        </div>
       </div>
 
       {tier ? (
@@ -359,14 +381,24 @@ export default async function MembersPage() {
         </section>
       )}
 
-      <form action="/api/auth/logout" method="post" className="mt-12">
-        <button
-          type="submit"
-          className="text-sm text-muted-foreground underline underline-offset-4 hover:text-primary"
-        >
-          Sign out ({member.email})
-        </button>
-      </form>
+      <div className="mt-12 space-y-3">
+        <form action="/api/auth/logout" method="post">
+          <button
+            type="submit"
+            className="text-sm text-muted-foreground underline underline-offset-4 hover:text-primary"
+          >
+            Sign out ({member.email})
+          </button>
+        </form>
+        <p>
+          <a
+            href="mailto:hbaker1118@gmail.com?subject=Chef%20Healthy%20Henry%3A%20Site%20Feedback"
+            className="text-xs text-muted-foreground hover:text-primary"
+          >
+            Report an issue
+          </a>
+        </p>
+      </div>
     </div>
   );
 }

@@ -30,8 +30,6 @@ export function SiteFooter() {
           <div>
             <p className="mb-3 font-medium">Follow</p>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="https://www.facebook.com/Chefhealthyhenry" target="_blank" rel="noreferrer" className="hover:text-primary">Facebook</a></li>
-              <li><a href="https://www.facebook.com/groups/proteinflipcommunity" target="_blank" rel="noreferrer" className="hover:text-primary">Protein Flip™ Community</a></li>
               <li><a href="https://chefhealthyhenry.com" target="_blank" rel="noreferrer" className="hover:text-primary">chefhealthyhenry.com</a></li>
             </ul>
           </div>
