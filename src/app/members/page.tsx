@@ -4,6 +4,8 @@ import { redirect } from "next/navigation";
 import { getMember } from "@/lib/auth";
 import { TIER_NAMES } from "@/lib/membership";
 import { SOUS_DAILY_CAP } from "@/lib/sous";
+import { getComboCredits } from "@/lib/combo-limits";
+import { customBuildsRemainingNote } from "@/lib/combo-build";
 import { currentLesson } from "@/lib/lessons";
 import {
   canSeeFeatured,
@@ -33,14 +35,17 @@ export default async function MembersPage() {
     : "Unlimited questions with your membership.";
   const lesson = currentLesson();
   const featuredIngredient = currentFeaturedIngredient();
-  const lists = tier
-    ? await db()
-        .select({ id: savedLists.id, name: savedLists.name })
-        .from(savedLists)
-        .where(eq(savedLists.userId, member.id))
-        .orderBy(desc(savedLists.updatedAt))
-        .limit(3)
-    : [];
+  const [lists, comboCredits] = tier
+    ? await Promise.all([
+        db()
+          .select({ id: savedLists.id, name: savedLists.name })
+          .from(savedLists)
+          .where(eq(savedLists.userId, member.id))
+          .orderBy(desc(savedLists.updatedAt))
+          .limit(3),
+        getComboCredits(member.id, tier),
+      ])
+    : [[], null];
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
@@ -223,6 +228,12 @@ export default async function MembersPage() {
                 Pick your ingredients, get every recipe that shares them, plus
                 one combined grocery list.
               </p>
+              {comboCredits && !comboCredits.unlimited && (
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {customBuildsRemainingNote(comboCredits)} Chef Henry
+                  combinations stay unlimited.
+                </p>
+              )}
               {lists.length > 0 && (
                 <ul className="mt-4 space-y-1.5 text-sm">
                   {lists.map((l) => (

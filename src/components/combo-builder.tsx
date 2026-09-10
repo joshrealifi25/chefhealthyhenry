@@ -8,7 +8,11 @@ import type {
   GroceryItem,
 } from "@/lib/ingredients";
 import { DIETARY_TAGS } from "@/lib/recipes";
-import { consumesCustomBuild, type ComboCredits } from "@/lib/combo-build";
+import {
+  consumesCustomBuild,
+  customBuildsRemainingNote,
+  type ComboCredits,
+} from "@/lib/combo-build";
 import {
   matchingPreset,
   type ComboPreset,
@@ -610,6 +614,13 @@ export function ComboBuilder({
         </div>
       )}
 
+      {credits && !credits.unlimited && !showCreditWall && (
+        <p className="mb-6 text-sm text-muted-foreground print:hidden">
+          {customBuildsRemainingNote(credits)} Chef Henry combinations stay
+          unlimited.
+        </p>
+      )}
+
       {showCreditWall && credits && (
         <div
           role="status"
@@ -950,7 +961,7 @@ export function ComboBuilder({
                 <p className="mt-2 text-xs text-muted-foreground">
                   {openListId && wouldSpendCredit()
                     ? `Updating this list after changing ingredients will use 1 of your ${credits.limit} custom builds this month.`
-                    : `${credits.remaining} of ${credits.limit} custom builds remaining this month.`}
+                    : customBuildsRemainingNote(credits)}
                 </p>
               )}
               {saveState === "error" && saveError && (
