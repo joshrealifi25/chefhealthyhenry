@@ -392,7 +392,7 @@ export default async function MembersPage() {
         </form>
         <p>
           <a
-            href="mailto:hbaker1118@gmail.com?subject=Chef%20Healthy%20Henry%3A%20Site%20Feedback"
+            href="mailto:henry@ChefHealthyHenry.com?subject=Chef%20Healthy%20Henry%3A%20Site%20Feedback"
             className="text-xs text-muted-foreground hover:text-primary"
           >
             Report an issue
