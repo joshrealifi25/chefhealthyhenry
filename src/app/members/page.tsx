@@ -15,10 +15,11 @@ import {
   canSeeFeatured,
   currentFeaturedIngredient,
 } from "@/lib/featured-ingredients";
-import { db, savedLists } from "@/lib/db";
+import { db, memberships, savedLists, users } from "@/lib/db";
 import { desc, eq } from "drizzle-orm";
 import { SousChat } from "@/components/sous-chat";
 import { isAdminEmail } from "@/lib/admin";
+import { ManageBillingCard } from "@/components/manage-billing-card";
 
 export const metadata: Metadata = {
   title: "My Kitchen",
@@ -27,9 +28,14 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-dynamic";
 
-export default async function MembersPage() {
+export default async function MembersPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ billing?: string }>;
+}) {
   const member = await getMember();
   if (!member) redirect("/members/login");
+  const { billing } = await searchParams;
 
   const firstName = member.name?.split(" ")[0];
   const tier = member.tier;
@@ -39,7 +45,7 @@ export default async function MembersPage() {
     : "Unlimited questions with your membership.";
   const lesson = currentLesson();
   const featuredIngredient = currentFeaturedIngredient();
-  const [lists, comboCredits] = tier
+  const [lists, comboCredits, billingRows] = tier
     ? await Promise.all([
         db()
           .select({ id: savedLists.id, name: savedLists.name })
@@ -48,8 +54,18 @@ export default async function MembersPage() {
           .orderBy(desc(savedLists.updatedAt))
           .limit(3),
         getComboCredits(member.id, tier),
+        db()
+          .select({
+            stripeCustomerId: users.stripeCustomerId,
+            status: memberships.status,
+            currentPeriodEnd: memberships.currentPeriodEnd,
+          })
+          .from(users)
+          .leftJoin(memberships, eq(memberships.userId, users.id))
+          .where(eq(users.id, member.id)),
       ])
-    : [[], null];
+    : [[], null, []];
+  const billingRow = billingRows[0];
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
@@ -328,20 +344,13 @@ export default async function MembersPage() {
               </Link>
             </section>
 
-            <section className="rounded-2xl border border-border bg-card p-6">
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                Your membership
-              </p>
-              <div className="mt-3 space-y-2 text-sm">
-                <p>{tier ? TIER_NAMES[tier] : ""}</p>
-                <a
-                  href="/api/billing"
-                  className="inline-block text-muted-foreground underline underline-offset-4 hover:text-primary"
-                >
-                  Manage billing, upgrade, or cancel
-                </a>
-              </div>
-            </section>
+            <ManageBillingCard
+              tier={tier}
+              status={billingRow?.status ?? null}
+              currentPeriodEnd={billingRow?.currentPeriodEnd ?? null}
+              canOpenPortal={Boolean(billingRow?.stripeCustomerId)}
+              unavailable={billing === "unavailable"}
+            />
           </div>
         </div>
       ) : (
