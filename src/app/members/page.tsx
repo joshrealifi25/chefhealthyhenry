@@ -5,7 +5,11 @@ import { getMember } from "@/lib/auth";
 import { TIER_NAMES } from "@/lib/membership";
 import { SOUS_DAILY_CAP } from "@/lib/sous";
 import { getComboCredits } from "@/lib/combo-limits";
-import { customBuildsRemainingNote } from "@/lib/combo-build";
+import {
+  customBuildsRemainingNote,
+  customBuildsUsedUpNote,
+  isAtCustomBuildLimit,
+} from "@/lib/combo-build";
 import { currentLesson } from "@/lib/lessons";
 import {
   canSeeFeatured,
@@ -230,8 +234,7 @@ export default async function MembersPage() {
               </p>
               {comboCredits && !comboCredits.unlimited && (
                 <p className="mt-2 text-sm text-muted-foreground">
-                  {customBuildsRemainingNote(comboCredits)} Chef Henry
-                  combinations stay unlimited.
+                  {customBuildsRemainingNote(comboCredits)}
                 </p>
               )}
               {lists.length > 0 && (
@@ -248,12 +251,26 @@ export default async function MembersPage() {
                   ))}
                 </ul>
               )}
-              <Link
-                href="/members/combos"
-                className="mt-4 inline-block rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
-              >
-                {lists.length > 0 ? "Build a new list" : "Build your first list"}
-              </Link>
+              {isAtCustomBuildLimit(comboCredits ?? undefined) && comboCredits ? (
+                <div className="mt-4">
+                  <p className="text-sm text-muted-foreground">
+                    {customBuildsUsedUpNote(comboCredits)}
+                  </p>
+                  <Link
+                    href="/membership"
+                    className="mt-3 inline-block rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+                  >
+                    Upgrade
+                  </Link>
+                </div>
+              ) : (
+                <Link
+                  href="/members/combos"
+                  className="mt-4 inline-block rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+                >
+                  {lists.length > 0 ? "Build a new list" : "Build your first list"}
+                </Link>
+              )}
             </section>
 
             <section className="rounded-2xl border border-border bg-card p-6">

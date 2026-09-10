@@ -10,7 +10,15 @@ export interface ComboCredits {
 }
 
 export function customBuildsRemainingNote(credits: ComboCredits): string {
-  return `${credits.remaining} of ${credits.limit} custom builds remaining this month.`;
+  return `${credits.remaining} of ${credits.limit} custom builds remaining this month. Upgrade for unlimited builds and edits.`;
+}
+
+export function customBuildsUsedUpNote(credits: ComboCredits): string {
+  return `You have used your ${credits.limit} custom builds for this month. Upgrade to Community for unlimited builds and edits.`;
+}
+
+export function isAtCustomBuildLimit(credits?: ComboCredits): boolean {
+  return Boolean(credits && !credits.unlimited && credits.remaining <= 0);
 }
 
 function sameSelection(a: string[], b: string[]): boolean {
