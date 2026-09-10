@@ -7,7 +7,7 @@ export type { ComboCredits } from "@/lib/combo-build";
 /** Custom grocery-list builds per billing period. Infinity = unlimited. */
 export const CUSTOM_BUILD_LIMIT: Record<Tier, number> = {
   kitchen: 2,
-  community: 2,
+  community: Infinity,
   chefs_table: Infinity,
 };
 

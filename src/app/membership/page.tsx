@@ -47,6 +47,7 @@ const TIERS: TierDef[] = [
     tagline: "Help me practice, participate, and learn with others.",
     features: [
       "Everything in Protein Flip™ Kitchen",
+      "Unlimited custom grocery-list builds",
       "The private Protein Flip™ community",
       "Monthly Recipe Makeover: submit a dish you love, watch Chef Henry rethink it",
       "This Season's Featured Ingredient, every other month",
