@@ -17,6 +17,7 @@ import { PrintButton } from "@/components/print-button";
 import { IngredientsList } from "@/components/ingredients-list";
 import { CookbookCrossSell } from "@/components/cookbook-cross-sell";
 import { YouTubeEmbed } from "@/components/youtube-embed";
+import { cn } from "@/lib/utils";
 
 export function generateStaticParams() {
   return recipes.map((r) => ({ slug: r.slug }));
@@ -202,7 +203,11 @@ export default async function RecipePage({
             fill
             priority
             sizes="(max-width: 896px) 100vw, 896px"
-            className="object-cover"
+            className={cn(
+              "object-cover",
+              recipe.slug === "kabocha-white-bean-farro-crispy-chicken" &&
+                "object-[center_60%]",
+            )}
           />
         </div>
       )}
