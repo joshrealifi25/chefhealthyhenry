@@ -45,7 +45,7 @@ export async function POST(req: NextRequest) {
   const { error } = await resend.emails.send({
     from: process.env.EMAIL_FROM ?? "Chef Healthy Henry <onboarding@resend.dev>",
     to: email,
-    subject: "Your sign-in link",
+    subject: "Here's your link to Chef Healthy Henry",
     html: `
       <div style="font-family:Georgia,serif;max-width:480px;margin:0 auto;padding:24px;">
         <h2 style="font-weight:600;">Sign in to Chef Healthy Henry</h2>
