@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Clock } from "lucide-react";
 import type { Recipe } from "@/lib/recipes";
+import { cn } from "@/lib/utils";
 
 export function RecipeCard({ recipe }: { recipe: Recipe }) {
   return (
@@ -16,7 +17,11 @@ export function RecipeCard({ recipe }: { recipe: Recipe }) {
             alt={recipe.title}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            className={cn(
+              "object-cover transition-transform duration-500 group-hover:scale-105",
+              recipe.slug === "kabocha-white-bean-farro-crispy-chicken" &&
+                "object-[center_60%]",
+            )}
           />
         )}
         {recipe.proteinFlip && (
