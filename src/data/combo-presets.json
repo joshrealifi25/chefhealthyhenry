@@ -1,4 +1,135 @@
 {
- "_comment": "Chef Henry curated grocery combinations. Every member can open these without using a custom-build credit. Add objects to presets to publish a new combination. No code change is required.",
- "presets": []
+  "_comment": "Chef Henry curated grocery combinations. Every member can open these without using a custom-build credit. Add objects to presets to publish a new combination. No code change is required.",
+  "presets": [
+    {
+      "id": "the-protein-flip",
+      "name": "The Protein Flip\u2122",
+      "ingredients": [
+        "garlic",
+        "white beans",
+        "tomatoes"
+      ],
+      "recipeSlugs": [
+        "butternut-squash-soup-with-beans-and-escarole",
+        "grilled-salmon-with-a-jicama-salad-lime-cilantro-vinaigrette-and-white-bean-stew",
+        "herbed-flatbreads-roasted-red-pepper-feta-prosciutto-cherokee-tomato",
+        "italian-soup-with-red-potato",
+        "lemon-asparagus-pasta-bplgk",
+        "mediterranean-cod-white-bean-stew-with-toasted-pine-nuts",
+        "savory-vegetable-clafoutis-with-french-herb-beans",
+        "seared-salmon-with-warm-tomato-white-bean-vinaigrette",
+        "smoky-autumn-vegetable-romesco-soup-the-protein-flip-way"
+      ]
+    },
+    {
+      "id": "mediterranean-table",
+      "name": "Mediterranean Table",
+      "ingredients": [
+        "tomatoes",
+        "feta cheese",
+        "lemon"
+      ],
+      "recipeSlugs": [
+        "bok-choy-pork-salad",
+        "herbed-flatbreads-roasted-red-pepper-feta-prosciutto-cherokee-tomato",
+        "mediterranean-baked-tilapia-with-cherry-tomatoes-and-capers",
+        "mediterranean-lentil-bowl-with-zesty-sun-dried-tomato-dressing",
+        "seared-salmon-with-warm-tomato-white-bean-vinaigrette",
+        "turkey-lentil-meatball-salad-greek-yogurt"
+      ]
+    },
+    {
+      "id": "cozy-night-in",
+      "name": "Cozy Night In",
+      "ingredients": [
+        "garlic",
+        "carrots",
+        "celery"
+      ],
+      "recipeSlugs": [
+        "authentic-ribollita-soup-recipe-classic-italian-vegetable-and-bread-soup",
+        "cozy-chicken-and-barley-stew-lt8dx",
+        "elegant-and-healthy-risotto-recipe-no-heavy-ingredients-2uhcv",
+        "italian-soup-with-red-potato",
+        "lentil-soup-with-collards-greens-with-red-potatoes",
+        "protein-flip-creamy-clam-chowder-with-zesty-lime-tofu-flatbread",
+        "spicy-ginger-garlic-chicken-red-lentil-soup-with-bok-choy",
+        "vegetable-soup-with-white-beans"
+      ]
+    },
+    {
+      "id": "weeknight-chicken",
+      "name": "Weeknight Chicken",
+      "ingredients": [
+        "chicken",
+        "tomatoes",
+        "garlic"
+      ],
+      "recipeSlugs": [
+        "authentic-tortilla-soup-with-pasilla-chiles",
+        "chicken-tika-masala",
+        "creamy-lentil-chicken-soup-with-parmesan-rind",
+        "pollo-agrodolce-sweet-sour-italian-chicken-recipe-sbfzw"
+      ]
+    },
+    {
+      "id": "plant-forward",
+      "name": "Plant-Forward",
+      "ingredients": [
+        "chickpeas",
+        "garlic",
+        "lemon"
+      ],
+      "recipeSlugs": [
+        "harira-moroccan-lentil-and-chickpea-soup-ac4m4",
+        "simple-hummus-eo5q7",
+        "spaghetti-squash-with-garbanzo-beans-and-feta",
+        "turkey-lentil-meatball-salad-greek-yogurt",
+        "vibrant-broccolini-salad-with-crispy-chickpeas-sumac-dressing-and-albacore-tuna-stdsh",
+        "vibrant-mediterranean-salad-with-chickpeas-4hcgc",
+        "warm-zucchini-feta-salad-lemon-caper-halibut"
+      ]
+    },
+    {
+      "id": "latin-kitchen",
+      "name": "Latin Kitchen",
+      "ingredients": [
+        "cilantro",
+        "lime",
+        "tomatoes"
+      ],
+      "recipeSlugs": [
+        "authentic-tortilla-soup-with-pasilla-chiles",
+        "chicken-fajita-bowl-quick-and-flavorful-dinner-idea",
+        "chicken-tinga-tostadas",
+        "fish-taco-salad-y0a4n",
+        "healthy-mexican-rice",
+        "jicama-tomato-and-black-bean-salad",
+        "nopal-cactus-salad",
+        "thai-tom-yum-soup-w0m0f",
+        "vegetarian-chili-recipe-with-sweet-potatoes-beans"
+      ]
+    },
+    {
+      "id": "seafood-and-herbs",
+      "name": "Seafood and Herbs",
+      "ingredients": [
+        "garlic",
+        "lemon",
+        "shallots"
+      ],
+      "recipeSlugs": [
+        "classic-mussels-with-white-wine",
+        "italian-soup-with-lupini-beans-and-kale",
+        "mediterranean-baked-tilapia-with-cherry-tomatoes-and-capers",
+        "porcini-dusted-cod-w-asparagus-puree",
+        "seared-salmon-with-warm-tomato-white-bean-vinaigrette",
+        "swordfish-with-an-olive-tapenade",
+        "tofu-with-brussel-sprouts-and-almonds",
+        "vibrant-sweet-potato-kale-salad-with-black-beans-ltlry",
+        "warm-balsamic-mushroom-and-lentil-salad-recipe-ivzia",
+        "warm-zucchini-feta-salad-lemon-caper-halibut"
+      ]
+    }
+  ]
 }
