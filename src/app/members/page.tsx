@@ -5,11 +5,6 @@ import { getMember } from "@/lib/auth";
 import { TIER_NAMES } from "@/lib/membership";
 import { SOUS_DAILY_CAP } from "@/lib/sous";
 import { getComboCredits } from "@/lib/combo-limits";
-import {
-  customBuildsRemainingNote,
-  customBuildsUsedUpNote,
-  isAtCustomBuildLimit,
-} from "@/lib/combo-build";
 import { currentLesson } from "@/lib/lessons";
 import {
   canSeeFeatured,
@@ -20,6 +15,7 @@ import { desc, eq } from "drizzle-orm";
 import { SousChat } from "@/components/sous-chat";
 import { isAdminEmail } from "@/lib/admin";
 import { ManageBillingCard } from "@/components/manage-billing-card";
+import { GroceryComboCard } from "@/components/grocery-combo-card";
 import { comboPresets } from "@/lib/combo-presets";
 
 export const metadata: Metadata = {
@@ -49,11 +45,14 @@ export default async function MembersPage({
   const [lists, comboCredits, billingRows] = tier
     ? await Promise.all([
         db()
-          .select({ id: savedLists.id, name: savedLists.name })
+          .select({
+            id: savedLists.id,
+            name: savedLists.name,
+            ingredients: savedLists.ingredients,
+          })
           .from(savedLists)
           .where(eq(savedLists.userId, member.id))
-          .orderBy(desc(savedLists.updatedAt))
-          .limit(3),
+          .orderBy(desc(savedLists.updatedAt)),
         getComboCredits(member.id, tier),
         db()
           .select({
@@ -260,80 +259,15 @@ export default async function MembersPage({
 
           {/* Sidebar */}
           <div className="flex min-w-0 flex-col gap-6">
-            <section className="rounded-2xl border border-border bg-card p-6">
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                Grocery combo builder
-              </p>
-              <h2 className="mt-1 font-heading text-xl font-semibold">
-                My Lists
-              </h2>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Pick your ingredients, get every recipe that shares them, plus
-                one combined grocery list.
-              </p>
-              {comboCredits && !comboCredits.unlimited && (
-                <p className="mt-2 text-sm text-muted-foreground">
-                  {customBuildsRemainingNote(comboCredits)}
-                </p>
-              )}
-              {tier === "kitchen" && comboPresets.length > 0 && (
-                <div className="mt-4">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                    Chef Henry combinations
-                  </p>
-                  <p className="mt-1 text-sm text-muted-foreground">
-                    Curated lists you can open any time. They do not use a
-                    custom build.
-                  </p>
-                  <ul className="mt-2 space-y-1.5 text-sm">
-                    {comboPresets.map((preset) => (
-                      <li key={preset.id}>
-                        <Link
-                          href={`/members/combos?preset=${preset.id}`}
-                          className="text-primary hover:underline"
-                        >
-                          {preset.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-              {lists.length > 0 && (
-                <ul className="mt-4 space-y-1.5 text-sm">
-                  {lists.map((l) => (
-                    <li key={l.id}>
-                      <Link
-                        href={`/members/combos?list=${l.id}`}
-                        className="text-primary hover:underline"
-                      >
-                        {l.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
-              {isAtCustomBuildLimit(comboCredits ?? undefined) && comboCredits ? (
-                <div className="mt-4">
-                  <p className="text-sm text-muted-foreground">
-                    {customBuildsUsedUpNote(comboCredits)}
-                  </p>
-                  <Link
-                    href="/membership"
-                    className="mt-3 inline-block rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
-                  >
-                    Upgrade
-                  </Link>
-                </div>
-              ) : (
-                <Link
-                  href="/members/combos"
-                  className="mt-4 inline-block rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
-                >
-                  {lists.length > 0 ? "Build a new list" : "Build your first list"}
-                </Link>
-              )}
-            </section>
+            <GroceryComboCard
+              showPresets={tier === "kitchen"}
+              presets={comboPresets.map((preset) => ({
+                id: preset.id,
+                name: preset.name,
+              }))}
+              lists={lists}
+              credits={comboCredits}
+            />
 
             <section className="rounded-2xl border border-border bg-card p-6">
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
