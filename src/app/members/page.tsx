@@ -20,6 +20,7 @@ import { desc, eq } from "drizzle-orm";
 import { SousChat } from "@/components/sous-chat";
 import { isAdminEmail } from "@/lib/admin";
 import { ManageBillingCard } from "@/components/manage-billing-card";
+import { comboPresets } from "@/lib/combo-presets";
 
 export const metadata: Metadata = {
   title: "My Kitchen",
@@ -274,6 +275,29 @@ export default async function MembersPage({
                 <p className="mt-2 text-sm text-muted-foreground">
                   {customBuildsRemainingNote(comboCredits)}
                 </p>
+              )}
+              {tier === "kitchen" && comboPresets.length > 0 && (
+                <div className="mt-4">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                    Chef Henry combinations
+                  </p>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    Curated lists you can open any time. They do not use a
+                    custom build.
+                  </p>
+                  <ul className="mt-2 space-y-1.5 text-sm">
+                    {comboPresets.map((preset) => (
+                      <li key={preset.id}>
+                        <Link
+                          href={`/members/combos?preset=${preset.id}`}
+                          className="text-primary hover:underline"
+                        >
+                          {preset.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               )}
               {lists.length > 0 && (
                 <ul className="mt-4 space-y-1.5 text-sm">
