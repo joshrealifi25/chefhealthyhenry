@@ -14,6 +14,7 @@ import { NutritionPanel } from "@/components/nutrition-panel";
 import { SITE_URL } from "@/lib/site";
 import { RecipeCard } from "@/components/recipe-card";
 import { PrintButton } from "@/components/print-button";
+import { CookModeButton } from "@/components/cook-mode-button";
 import { IngredientsList } from "@/components/ingredients-list";
 import { CookbookCrossSell } from "@/components/cookbook-cross-sell";
 import { YouTubeEmbed } from "@/components/youtube-embed";
@@ -193,6 +194,7 @@ export default async function RecipePage({
             </span>
           )}
         </div>
+        <CookModeButton />
       </header>
 
       {recipe.image && (
