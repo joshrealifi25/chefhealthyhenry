@@ -139,6 +139,8 @@ interface Props {
   saved?: SavedList[];
   /** A saved list to open on arrival, e.g. from a dashboard link. */
   openListId?: string | null;
+  /** A Chef Henry combination to open on arrival, e.g. from the Kitchen dashboard. */
+  openPresetId?: string | null;
   /** Chef Henry curated combinations. Opening one does not use a credit. */
   presets?: ComboPreset[];
   /** Monthly custom-build credits for this member's tier. */
@@ -155,6 +157,7 @@ export function ComboBuilder({
   initial = [],
   saved = [],
   openListId: openOnArrival = null,
+  openPresetId = null,
   presets = [],
   credits: initialCredits,
 }: Props) {
@@ -163,6 +166,10 @@ export function ComboBuilder({
   const arriving = openOnArrival
     ? saved.find((l) => l.id === openOnArrival)
     : undefined;
+  const arrivingPreset =
+    !arriving && openPresetId
+      ? presets.find((p) => p.id === openPresetId)
+      : undefined;
   const blockedOnArrival = isAtCustomBuildLimit(initialCredits);
   const restored = arriving
     ? {
@@ -173,11 +180,18 @@ export function ComboBuilder({
         // refinement, not part of what the list actually contains.
         dietary: [] as string[],
       }
-    : blockedOnArrival || initial.length > 0
-      ? EMPTY_TRIP
-      : readTrip();
+    : arrivingPreset
+      ? {
+          selected: arrivingPreset.ingredients,
+          chosen: arrivingPreset.recipeSlugs,
+          inCart: [] as string[],
+          dietary: [] as string[],
+        }
+      : blockedOnArrival || initial.length > 0
+        ? EMPTY_TRIP
+        : readTrip();
   const [selected, setSelected] = useState<string[]>(
-    initial.length > 0 && !arriving && !blockedOnArrival
+    initial.length > 0 && !arriving && !arrivingPreset && !blockedOnArrival
       ? initial
       : restored.selected
   );
@@ -196,7 +210,9 @@ export function ComboBuilder({
   const [openListId, setOpenListId] = useState<string | null>(
     arriving ? arriving.id : null
   );
-  const [listName, setListName] = useState(arriving ? arriving.name : "");
+  const [listName, setListName] = useState(
+    arriving ? arriving.name : arrivingPreset ? arrivingPreset.name : ""
+  );
   /** True once the session has changes that are not in a saved list. */
   const [dirty, setDirty] = useState(false);
   /** A list waiting on the discard confirmation before it opens. */

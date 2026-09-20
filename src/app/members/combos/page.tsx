@@ -25,7 +25,7 @@ export const dynamic = "force-dynamic";
 export default async function CombosPage({
   searchParams,
 }: {
-  searchParams: Promise<{ list?: string }>;
+  searchParams: Promise<{ list?: string; preset?: string }>;
 }) {
   const member = await getMember();
   if (!member) redirect(loginPath("/members/combos"));
@@ -40,7 +40,7 @@ export default async function CombosPage({
     getComboCredits(member.id, member.tier),
   ]);
 
-  const { list: listParam } = await searchParams;
+  const { list: listParam, preset: presetParam } = await searchParams;
 
   const lite = recipes
     .filter((r) => (recipeTags[r.slug] ?? []).length > 0)
@@ -85,7 +85,8 @@ export default async function CombosPage({
             inCart: l.inCart,
           }))}
           openListId={listParam ?? null}
-          presets={comboPresets}
+          openPresetId={member.tier === "kitchen" ? (presetParam ?? null) : null}
+          presets={member.tier === "kitchen" ? comboPresets : []}
           credits={credits}
         />
       </div>
