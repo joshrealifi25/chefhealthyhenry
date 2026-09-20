@@ -1,6 +1,10 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import {
+  readSousConversation,
+  writeSousConversation,
+} from "@/lib/sous-conversation";
 
 interface Msg {
   role: "user" | "assistant";
@@ -46,7 +50,18 @@ export function SousChat({ capNote }: { capNote: string }) {
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [restored, setRestored] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const saved = readSousConversation();
+    if (!saved) return;
+    setMessages([
+      { role: "user", content: saved.question },
+      { role: "assistant", content: saved.answer },
+    ]);
+    setRestored(true);
+  }, []);
 
   async function send(text: string) {
     const question = text.trim();
@@ -54,6 +69,7 @@ export function SousChat({ capNote }: { capNote: string }) {
     setError(null);
     setBusy(true);
     setInput("");
+    setRestored(false);
     const history = [...messages, { role: "user" as const, content: question }];
     setMessages([...history, { role: "assistant", content: "" }]);
 
@@ -79,7 +95,23 @@ export function SousChat({ capNote }: { capNote: string }) {
         if (done) break;
         reply += decoder.decode(value, { stream: true });
         setMessages([...history, { role: "assistant", content: reply }]);
+        if (reply.trim()) {
+          writeSousConversation({
+            question,
+            answer: reply,
+            timestamp: Date.now(),
+          });
+        }
         scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight });
+      }
+      reply += decoder.decode();
+      if (reply.trim()) {
+        setMessages([...history, { role: "assistant", content: reply }]);
+        writeSousConversation({
+          question,
+          answer: reply,
+          timestamp: Date.now(),
+        });
       }
     } catch {
       setMessages(history);
@@ -102,6 +134,9 @@ export function SousChat({ capNote }: { capNote: string }) {
             Henry&apos;s recipes, or tell me what&apos;s in your fridge and
             we&apos;ll figure out dinner.
           </p>
+        )}
+        {restored && messages.length > 0 && (
+          <p className="text-xs text-muted-foreground">Last conversation</p>
         )}
         {messages.map((m, i) =>
           m.role === "user" ? (
