@@ -8825,143 +8825,95 @@
  },
  {
   "slug": "grilled-salmon-with-a-jicama-salad-lime-cilantro-vinaigrette-and-white-bean-stew",
-  "title": "Grilled salmon with a jicama salad (lime cilantro vinaigrette) and white bean stew",
+  "title": "Grilled Salmon with a Jicama Salad (Lime Cilantro Vinaigrette) and White Bean Stew",
   "image": "/images/recipes/grilled-salmon-with-a-jicama-salad-lime-cilantro-vinaigrette.jpeg",
-  "description": "Salmon is a great source of protein and omega-3. This recipe is filled with protein, fiber, and complex carbs. It has a lot of flavor and is a beautiful dish that can be served to guests.",
+  "description": "Fresh, vibrant, and full of balance. This dish pairs smoky grilled salmon with a crisp jicama salad and a hearty white bean stew for a colorful, nourishing plate. The salmon is marinated in herbs and lime for brightness, while the jicama and haricots verts bring crunch, lightly dressed in a tangy cilantro-lime vinaigrette. The white bean stew adds comforting depth and plant-based protein, making the dish both satisfying and nutrient-rich.",
   "serves": "4 to 6",
   "prepTime": "25 min",
+  "cookTime": "35 min",
   "totalTime": "60 min",
   "ingredients": [
-   "Salmon marinated:",
-   "4-8oz salmon fillets",
-   "2 Tbls lime juice",
-   "2 Tbls olive oil",
-   "2 Tbl chopped parsley",
-   "2 Tbl Chopped chives",
-   "2 tbl chopped thyme",
-   "2 tbl black pepper Cilantro lime vinaigrette",
-   "8 oz vegetable stock",
-   "1.5 tsp arrowroot",
-   "4 oz lime",
-   "2 oz sesame oil",
-   "2 oz peanut oil",
-   ".5 tsp salt",
-   "1 tsp cilantro White Bean Stew",
-   "2-15oz can navy beans, drained",
-   "2 tsp avocado oil",
-   "4 oz red onion diced",
-   "4-5 garlic chopped",
-   "4 ozbell peppers, assorted colors diced",
-   "2 oz jalapeño diced",
+   "For the Salmon",
+   "4 salmon fillets, 4 to 8 ounces each",
+   "2 tablespoons lime juice",
+   "2 tablespoons olive oil",
+   "2 tablespoons chopped parsley",
+   "2 tablespoons chopped chives",
+   "2 tablespoons chopped thyme",
+   "2 tablespoons black pepper",
+   "For the Cilantro Lime Vinaigrette",
+   "8 ounces vegetable stock",
+   "1 1/2 teaspoons arrowroot",
+   "4 ounces lime juice",
+   "2 ounces sesame oil",
+   "2 ounces peanut oil",
+   "1/2 teaspoon salt",
+   "1 teaspoon chopped cilantro",
+   "For the White Bean Stew",
+   "2 (15-ounce) cans navy beans, drained",
+   "2 teaspoons avocado oil",
+   "4 ounces red onion, diced",
+   "4 to 5 garlic cloves, chopped",
+   "4 ounces assorted bell peppers, diced",
+   "2 ounces jalapeño, diced",
    "1/4 cup sherry vinegar",
-   "1-15oz can quality tomatoes",
-   "2 tbsp chopped cilantro Jicama salad",
-   "1 tbls Olive oil",
-   "2c jicama cut into match sticks",
-   "2c haricot vert (or thin green beans if you can’t find the haricot vert) sliced lengthwise."
+   "1 (15-ounce) can quality tomatoes",
+   "2 tablespoons chopped cilantro",
+   "For the Jicama Salad",
+   "1 tablespoon olive oil",
+   "2 cups jicama, cut into matchsticks",
+   "2 cups haricot vert, sliced lengthwise"
   ],
   "directions": [
    {
-    "title": null,
-    "text": "For marinading the fish:"
+    "title": "Marinate the Salmon",
+    "text": "In a bowl, combine the lime juice, olive oil, parsley, chives, thyme, and black pepper. Spread half of the marinade in a casserole dish, add the salmon, then cover with the remaining marinade. Refrigerate for 30 minutes. While the fish marinates, make the vinaigrette."
    },
    {
-    "title": null,
-    "text": "In a bowl combine the marinade ingredients. In a casserole dish spread half the marinade then add the salmon then top with the second half of marinade."
+    "title": "Make the Cilantro Lime Vinaigrette",
+    "text": "Reserve 2 tablespoons of the vegetable stock in a small bowl for the arrowroot. Add the remaining stock to a medium saucepan and bring to a boil. Stir the reserved stock into the arrowroot to form a paste. Once the stock boils, stir in the arrowroot mixture. Return to a boil, stirring constantly, until the stock thickens, about 2 minutes. Remove from the heat, stir in the lime juice, and let cool. Gradually whisk in the sesame oil and peanut oil, then add the salt and cilantro."
    },
    {
-    "title": null,
-    "text": "Refrigerate for 30 minutes."
+    "title": "Make the White Bean Stew",
+    "text": "Purée 2 cups of the drained navy beans, then combine with the remaining whole beans. Heat the avocado oil in a stockpot. Add the red onion, bell peppers, jalapeño, and garlic, and cook until the onion is translucent. Add the bean mixture, sherry vinegar, tomatoes, and cilantro, and cook for another 4 to 5 minutes."
    },
    {
-    "title": null,
-    "text": "While the fish marinates make the vinaigrette."
+    "title": "Sauté the Jicama Salad",
+    "text": "Add the olive oil to a nonstick sauté pan, then add the jicama and haricot vert. Cook until slightly softened but still crisp. Keep warm."
    },
    {
-    "title": null,
-    "text": "For the Cilantro lime vinaigrette:"
+    "title": "Grill the Salmon",
+    "text": "Remove the fish from the marinade and shake off any excess liquid. On a stovetop grill, outdoor grill, or large sauté pan, cook the salmon for about 3 to 4 minutes, then turn and cook for an additional 3 minutes, depending on doneness and thickness."
    },
    {
-    "title": null,
-    "text": "In a small bowl reserve 2 tbls of the stock to use with the arrowroot."
-   },
-   {
-    "title": null,
-    "text": "In a medium sauce pan add the remaining stock and bring to a boil."
-   },
-   {
-    "title": null,
-    "text": "Combined the reserved 2 tbls of the stock with the arrowroot to form a paste."
-   },
-   {
-    "title": null,
-    "text": "Once the stock comes to a boil stir in the arrowroot mixture."
-   },
-   {
-    "title": null,
-    "text": "Bring it to a boil stirring consistently until the stock thickens maybe two minutes."
-   },
-   {
-    "title": null,
-    "text": "Remove from heat and stir in the lime juice then cool."
-   },
-   {
-    "title": null,
-    "text": "Gradually whisk in the oils then add the salt and cilantro."
-   },
-   {
-    "title": null,
-    "text": "For the white bean stew:"
-   },
-   {
-    "title": null,
-    "text": "Purée 2 cups of the cooked beans then combine with the remaining whole beans."
-   },
-   {
-    "title": null,
-    "text": "Heat the oil in a stockpot. Sauté the onion, peppers, jalapeño, and garlic sauté until onions are translucent."
-   },
-   {
-    "title": null,
-    "text": "Add the bean mixture, vinegar, tomatoes and cilantro and sauté for another 4-5 minutes"
-   },
-   {
-    "title": null,
-    "text": "For the jicama salad:"
-   },
-   {
-    "title": null,
-    "text": "To a non-stick sauté pan, add the olive oil then add the jicama and haricot vert."
-   },
-   {
-    "title": null,
-    "text": "Sauté until slightly softened but still crisp."
-   },
-   {
-    "title": null,
-    "text": "Keep warm Grill the fish: Remove the fish from the marinade and shake off any excess liquid."
-   },
-   {
-    "title": null,
-    "text": "On a stove top grill, an outside grill, or a large sauté pan add the fish and grill for about 3-4 minutes then turn over and cook for an additional 3 minutes (depending on doneness and thickness of the fish)."
-   },
-   {
-    "title": null,
-    "text": "To serve: On a plate add a scoop of the white bean stew then the fish add the jicama salad on top of the fish then sprinkle the vinaigrette on top of both the jicama salad and fish."
-   },
-   {
-    "title": null,
-    "text": "Nutritional data: Total Calories: Around 435 calories per serving. Total Protein: Approximately 28 grams per serving. Total Fat: Roughly 18 grams per serving. Total Carbohydrates: About 35 grams per serving. Total Fiber: Around 12 grams per serving. Nutritional disclaimer: Nutritional information is provided as a reference using AI and an online calculator. We recommend verifying the information independently. It could vary based on cooking methods, amounts, and ingredients used."
+    "title": "Assemble",
+    "text": "Spoon a scoop of white bean stew onto each plate, then add the salmon. Top the fish with the jicama salad, then spoon the vinaigrette over the salad and the fish."
    }
   ],
-  "category": "Soups & Stews",
-  "proteinFlip": false,
+  "category": "Seafood",
+  "proteinFlip": true,
   "youtubeId": null,
-  "extras": [],
+  "extras": [
+   {
+    "title": "Chef's Notes",
+    "items": [
+     "If you cannot find haricot vert, thin green beans sliced lengthwise work in the jicama salad."
+    ]
+   },
+   {
+    "title": "Protein Flip™ Note",
+    "items": [
+     "The beans provide a strong plant-protein base, allowing the salmon to shine as the accent protein for a lighter, more sustainable balance."
+    ]
+   }
+  ],
   "keyIngredients": [
    "salmon",
    "jicama",
-   "navy beans"
+   "navy beans",
+   "cilantro",
+   "lime",
+   "green beans"
   ],
   "dietaryTags": [
    "gluten-free",
