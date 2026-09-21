@@ -532,6 +532,221 @@
   ]
  },
  {
+  "slug": "cooking-with-all-your-senses",
+  "title": "Cooking with All Your Senses",
+  "collections": [
+   "Flavor Builders",
+   "Kitchen Skills"
+  ],
+  "blurb": "A meal isn't just something you eat. It's something you experience. Smell, sound, sight, touch, and taste are how you cook, not just how you enjoy the plate.",
+  "subtitle": "Cooking is not just about what ends up on the plate.",
+  "hero": null,
+  "date": "2026-08-17",
+  "videoId": null,
+  "recipeSlugs": [],
+  "productLinks": [],
+  "relatedPostSlug": "cooking-with-all-your-senses",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "html": "Most people treat healthy eating as a list of ingredients and numbers. The shift happens when you start noticing the food while it cooks."
+   },
+   {
+    "type": "paragraph",
+    "html": "Your nose tells you the garlic is ready. Your ears tell you whether the pan is hot enough. Your eyes catch browning. Your hands feel texture. Taste is the last confirmation, not the first signal."
+   },
+   {
+    "type": "paragraph",
+    "html": "The Senses Series walks through smell, sound, sight, touch, and taste the way they actually show up in a kitchen, then brings them back together as a way of cooking with attention."
+   }
+  ]
+ },
+ {
+  "slug": "smell-first-signal",
+  "title": "Smell: The First Signal",
+  "collections": [
+   "Flavor Builders",
+   "Kitchen Skills"
+  ],
+  "blurb": "Your nose knows before you do. Garlic, spices, and onions each have a smell for ready, and another for gone too far.",
+  "subtitle": "Aroma is already cooking the meal.",
+  "hero": null,
+  "date": "2026-08-16",
+  "videoId": null,
+  "recipeSlugs": [],
+  "productLinks": [],
+  "relatedPostSlug": "smell-the-first-signal",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "html": "Smell is the first real signal in the kitchen. It draws people in before they see the plate, and it tells the cook what is happening in the pan."
+   },
+   {
+    "type": "paragraph",
+    "html": "Raw garlic, fragrant garlic, and garlic that is about to burn do not smell the same. Neither do dusty spices and spices that have bloomed in warm oil."
+   },
+   {
+    "type": "list",
+    "ordered": false,
+    "items": [
+     "Smell ingredients before they hit the heat, then again as they cook.",
+     "If the dish smells heavy, lift it with herbs or citrus.",
+     "If you barely smell the spices you added, they may never have had time to bloom."
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "sound-kitchen-speaking-back",
+  "title": "Sound: The Kitchen Speaking Back",
+  "collections": [
+   "Flavor Builders",
+   "Kitchen Skills"
+  ],
+  "blurb": "The kitchen is never silent. The sizzle tells you whether the pan is ready, and when to leave the food alone.",
+  "subtitle": "If you are paying attention, the pan is guiding you.",
+  "hero": null,
+  "date": "2026-08-15",
+  "videoId": null,
+  "recipeSlugs": [],
+  "productLinks": [],
+  "relatedPostSlug": "sound-the-kitchen-speaking-back",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "html": "Sound is immediate feedback. A confident sizzle means moisture is meeting heat. Almost no sound means the pan is not ready. A wild crackle and smoking oil is a different message."
+   },
+   {
+    "type": "paragraph",
+    "html": "The useful part is how the sound changes. Vegetables quiet as their moisture cooks off. A gentle simmer does not sound like a hard boil."
+   },
+   {
+    "type": "paragraph",
+    "html": "Stop moving for a few seconds the next time you cook. Listen, then connect what you hear to what you see in the pan."
+   }
+  ]
+ },
+ {
+  "slug": "sight-the-first-taste",
+  "title": "Sight: The First Taste",
+  "collections": [
+   "Flavor Builders",
+   "Kitchen Skills"
+  ],
+  "blurb": "Before a bite is taken, a decision is already made. Color, contrast, and browning are cooking cues, not just plating.",
+  "subtitle": "Your eyes are checking your work.",
+  "hero": null,
+  "date": "2026-08-14",
+  "videoId": null,
+  "recipeSlugs": [],
+  "productLinks": [],
+  "relatedPostSlug": "sight-the-first-taste",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "html": "Recipes already speak in pictures. Cook until translucent. Roast until golden. Reduce until thickened. Those are instructions to look."
+   },
+   {
+    "type": "paragraph",
+    "html": "Then the plate arrives, and sight becomes expectation. A beige plate can taste wonderful and still feel unfinished next to one with greens, roasted browns, and something bright."
+   },
+   {
+    "type": "paragraph",
+    "html": "Protein Flip™ Verified starts here. You can often see whether a plate feels complete without counting a thing."
+   }
+  ]
+ },
+ {
+  "slug": "touch-texture-of-satisfaction",
+  "title": "Touch: The Texture of Satisfaction",
+  "collections": [
+   "Flavor Builders",
+   "Kitchen Skills"
+  ],
+  "blurb": "Satisfaction isn't just flavor. It's contrast. Crisp against creamy is how a plate holds attention.",
+  "subtitle": "Texture is doing more work than most people notice.",
+  "hero": null,
+  "date": "2026-08-13",
+  "videoId": null,
+  "recipeSlugs": [],
+  "productLinks": [],
+  "relatedPostSlug": "touch-the-texture-of-satisfaction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "html": "Touch starts with your hands. A tomato, an avocado, dough, fish, meat. Each one changes as it cooks, and that change is information."
+   },
+   {
+    "type": "paragraph",
+    "html": "In the mouth it becomes texture. Soft protein, soft vegetables, soft grain, and soft sauce can taste fine and still feel like one note."
+   },
+   {
+    "type": "paragraph",
+    "html": "Add one contrast: toasted seeds, crisp edges, a creamy sauce against something fresh. The plate starts to move."
+   }
+  ]
+ },
+ {
+  "slug": "taste-the-final-connection",
+  "title": "Taste: The Final Connection",
+  "collections": [
+   "Flavor Builders",
+   "Kitchen Skills"
+  ],
+  "blurb": "Taste isn't the starting point. It's the result. Balance is what smell, sound, sight, and touch have been building toward.",
+  "subtitle": "Flavor is built in layers.",
+  "hero": null,
+  "date": "2026-08-12",
+  "videoId": null,
+  "recipeSlugs": [],
+  "productLinks": [],
+  "relatedPostSlug": "taste-the-final-connection",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "html": "By the first bite, the other senses have already done most of the work. Taste completes it."
+   },
+   {
+    "type": "paragraph",
+    "html": "When something is off, salt is not always the answer. A heavy sauce may need acid. A thin soup may need savory depth. Sometimes the dish needs more time, not another ingredient."
+   },
+   {
+    "type": "paragraph",
+    "html": "Taste as you go when it is safe to do so. The comparison, before and after one change, is how flavor memory gets built."
+   }
+  ]
+ },
+ {
+  "slug": "senses-bringing-it-all-together",
+  "title": "Bringing It All Together",
+  "collections": [
+   "Flavor Builders",
+   "Kitchen Skills"
+  ],
+  "blurb": "The most important lessons I learned weren't written down. They were felt. A return to the grandmother's kitchen, and why the method earned a book.",
+  "subtitle": "Pay attention. That is the whole method.",
+  "hero": null,
+  "date": "2026-08-11",
+  "videoId": null,
+  "recipeSlugs": [],
+  "productLinks": [],
+  "relatedPostSlug": "bringing-it-all-together",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "html": "The series started in a grandmother's kitchen, with a smell that filled the house before anyone sat down."
+   },
+   {
+    "type": "paragraph",
+    "html": "Recipes and measurements matter. What turns them into instinct is connecting those instructions to what you smell, hear, see, feel, and taste while you cook."
+   },
+   {
+    "type": "paragraph",
+    "html": "That way of paying attention is part of what became The Protein Flip™ Method and Cookbook, Deluxe Edition. The tools were already there. Your senses."
+   }
+  ]
+ },
+ {
   "slug": "cook-garlic-without-bitterness",
   "title": "How to Cook Garlic Without Bitterness",
   "collections": [
@@ -1338,6 +1553,7 @@
     "ordered": false,
     "items": [
      "<a href=\"/explore/article/spice-rack-as-passport\">Your Spice Rack Is a Passport</a>",
+     "<a href=\"/explore/article/cooking-with-all-your-senses\">Cooking with All Your Senses</a>",
      "<a href=\"/explore/article/why-brown-tastes-better\">Why Brown Tastes Better</a>",
      "<a href=\"/explore/article/clean-cooking-shortcuts\">Clean Cooking: Shortcuts That Still Work</a>",
      "<a href=\"/explore/article/cook-garlic-without-bitterness\">How to Cook Garlic Without Bitterness</a>"
