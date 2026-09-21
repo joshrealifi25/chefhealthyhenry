@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import {
+  clearSousConversation,
   readSousConversation,
   writeSousConversation,
 } from "@/lib/sous-conversation";
@@ -206,7 +208,33 @@ export function SousChat({ capNote }: { capNote: string }) {
           Ask
         </button>
       </form>
-      <p className="mt-2 text-xs text-muted-foreground">{capNote}</p>
+      <div className="mt-2 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+        <p className="text-xs text-muted-foreground">
+          {capNote} Sous is for cooking, not medical advice. See the{" "}
+          <Link
+            href="/disclaimer"
+            className="underline underline-offset-4 hover:text-primary"
+          >
+            Health Disclaimer
+          </Link>
+          .
+        </p>
+        {messages.length > 0 && (
+          <button
+            type="button"
+            disabled={busy}
+            onClick={() => {
+              clearSousConversation();
+              setMessages([]);
+              setRestored(false);
+              setError(null);
+            }}
+            className="text-xs text-muted-foreground underline underline-offset-4 hover:text-primary disabled:opacity-60"
+          >
+            Clear last reply
+          </button>
+        )}
+      </div>
     </div>
   );
 }

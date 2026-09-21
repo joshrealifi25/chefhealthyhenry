@@ -93,10 +93,10 @@ export function ManageBillingCard({
         <p className="mt-4 text-sm text-muted-foreground">
           Email{" "}
           <a
-            href="mailto:hello@chefhealthyhenry.com"
+            href="mailto:henry@chefhealthyhenry.com"
             className="underline underline-offset-4 hover:text-primary"
           >
-            hello@chefhealthyhenry.com
+            henry@chefhealthyhenry.com
           </a>{" "}
           to update payment details or cancel.
         </p>

@@ -141,6 +141,24 @@ export function MakeoverForm() {
           JPEG, PNG, or WebP, up to 3 MB.
         </p>
       </div>
+      <label
+        htmlFor="license"
+        className="flex items-start gap-3 text-sm leading-relaxed"
+      >
+        <input
+          id="license"
+          type="checkbox"
+          name="license"
+          value="yes"
+          required
+          className="mt-1 size-4 shrink-0 rounded border-input"
+        />
+        <span>
+          I have the right to submit this recipe. If it is selected, Chef
+          Healthy Henry LLC may share the makeover, the recipe as submitted,
+          and any photo on the membership site and in the private community.
+        </span>
+      </label>
       <button
         type="submit"
         disabled={status === "loading"}

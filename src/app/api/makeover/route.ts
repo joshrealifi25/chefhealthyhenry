@@ -43,7 +43,8 @@ export async function POST(req: NextRequest) {
   const love = field(form, "love", 4000);
   const help = field(form, "help", 4000);
 
-  if (!recipeName || !source || !recipe || !love || !help) {
+  const license = field(form, "license", 8);
+  if (!recipeName || !source || !recipe || !love || !help || license !== "yes") {
     return NextResponse.json({ error: "Missing fields" }, { status: 400 });
   }
 

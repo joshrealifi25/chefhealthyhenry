@@ -47,3 +47,12 @@ export function writeSousConversation(
     // Private browsing or blocked storage: the chat still works this session.
   }
 }
+
+export function clearSousConversation(): void {
+  if (typeof window === "undefined") return;
+  try {
+    window.localStorage.removeItem(SOUS_CONVERSATION_KEY);
+  } catch {
+    // Private browsing or blocked storage: nothing to clear.
+  }
+}

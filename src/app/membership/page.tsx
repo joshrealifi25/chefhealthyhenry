@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { LegalConsent } from "@/components/legal-consent";
 
 export const metadata: Metadata = {
   title: "Membership",
@@ -100,7 +101,7 @@ const FAQS: { q: string; a: string }[] = [
   },
   {
     q: "What is the Recipe Makeover feature?",
-    a: "Chef's Table members can submit one of their own recipes for a possible Protein Flip™ makeover. Chef Henry selects examples periodically to show how the method applies to real home cooking. Submission is not a guarantee of a personal review, but every makeover he shares starts with an actual member recipe.",
+    a: "Protein Flip™ Community members can submit a recipe they love for a possible Protein Flip™ makeover. Chef Henry selects examples periodically to show how the method applies to real home cooking. Submission is not a guarantee of a personal review, but every makeover he shares starts with an actual member recipe.",
   },
 ];
 
@@ -187,18 +188,21 @@ export default function MembershipPage() {
         ))}
       </div>
 
-      <p className="mt-6 text-center text-sm text-muted-foreground">
-        Founding members who join in launch week lock in the annual price for
-        life. Cancel anytime; access runs through the period you paid for.
-      </p>
+      <div className="mx-auto mt-6 max-w-xl space-y-3 text-center">
+        <p className="text-sm text-muted-foreground">
+          Founding members who join in launch week lock in the annual price for
+          life. Cancel anytime. Access runs through the period you paid for.
+        </p>
+        <LegalConsent preface="By joining, you agree to our" />
+      </div>
 
       <div className="mx-auto mt-16 max-w-2xl rounded-2xl border border-border bg-card p-8">
         <h2 className="font-heading text-2xl font-semibold">
           Submit a Recipe for a Makeover
         </h2>
         <p className="mt-4 leading-relaxed text-muted-foreground">
-          Chef&apos;s Table members can periodically submit one of their own
-          recipes for a possible Protein Flip™ makeover. Chef Henry selects
+          Protein Flip™ Community members can periodically submit a recipe
+          they love for a possible Protein Flip™ makeover. Chef Henry selects
           examples to show how the method applies to real home cooking: how to
           add protein, build nutrition around what is already there, and
           preserve what makes the dish worth making in the first place.
