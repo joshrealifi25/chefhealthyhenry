@@ -3,6 +3,7 @@ import { Resend } from "resend";
 import { createDownloadToken } from "@/lib/fulfillment";
 import { deliveryEmailHtml } from "@/lib/delivery-email";
 import { notifyHenry, escapeHtml } from "@/lib/notify";
+import { sendMetaConversionEvent } from "@/lib/ad-tracking";
 
 export const runtime = "nodejs";
 
@@ -71,6 +72,12 @@ export async function POST(req: NextRequest) {
      <p style="color:#8a938b;font-size:13px;">Full list in Resend under
      Audiences.</p>`
   );
+
+  await sendMetaConversionEvent({
+    eventName: "Lead",
+    email,
+    eventSourceUrl: baseUrl,
+  });
 
   return NextResponse.json({ ok: true });
 }

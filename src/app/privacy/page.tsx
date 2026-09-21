@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "How Chef Healthy Henry collects, uses, and protects your information: purchases, email signup, contact messages, and analytics.",
 };
 
-const LAST_UPDATED = "July 1, 2026";
+const LAST_UPDATED = "September 21, 2026";
 
 export default function PrivacyPage() {
   return (
@@ -69,6 +69,52 @@ export default function PrivacyPage() {
           collect aggregate, anonymized data. They do not track you across
           other websites.
         </li>
+        <li>
+          <strong className="text-foreground">Advertising.</strong> If we are
+          running a paid ad campaign, we may use Meta (Facebook/Instagram)
+          and Google advertising tools to measure how well those ads work and
+          to show ads to people likely to be interested in Chef Healthy
+          Henry. This can include a cryptographically hashed (not plain-text)
+          version of your email address, shared with Meta and Google so a
+          purchase or signup you made can be matched to the ad that led to
+          it. See{" "}
+          <a
+            href="https://www.facebook.com/privacy/policy/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary underline underline-offset-2"
+          >
+            Meta&apos;s privacy policy
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary underline underline-offset-2"
+          >
+            Google&apos;s privacy policy
+          </a>
+          . You can opt out of interest-based Meta ads through your{" "}
+          <a
+            href="https://www.facebook.com/adpreferences/ad_settings"
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary underline underline-offset-2"
+          >
+            Meta ad settings
+          </a>{" "}
+          and of Google ad personalization through{" "}
+          <a
+            href="https://adssettings.google.com"
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary underline underline-offset-2"
+          >
+            Google ad settings
+          </a>
+          .
+        </li>
       </ul>
 
       <h2 className="mt-12 font-heading text-2xl font-semibold">
@@ -81,12 +127,15 @@ export default function PrivacyPage() {
         </li>
         <li className="flex gap-2.5">
           <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rounded-full bg-primary/50" />
-          We do not use advertising trackers or cross-site cookies.
+          We do not share plain-text personal information with advertising
+          platforms, only a hashed email address, and only as described
+          above.
         </li>
         <li className="flex gap-2.5">
           <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rounded-full bg-primary/50" />
           We do not share your information except with the service providers
-          named above (Stripe, Resend, Vercel), who process it on our behalf.
+          named above (Stripe, Resend, Vercel, and, when we are running ads,
+          Meta and Google), who process it on our behalf.
         </li>
       </ul>
 
