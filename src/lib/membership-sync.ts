@@ -2,6 +2,7 @@ import Stripe from "stripe";
 import { eq } from "drizzle-orm";
 import { db, users, memberships } from "@/lib/db";
 import { tierForPrice } from "@/lib/membership";
+import { sendMetaConversionEvent } from "@/lib/ad-tracking";
 
 /**
  * Keeps the memberships table in sync with Stripe subscription events.
@@ -10,7 +11,8 @@ import { tierForPrice } from "@/lib/membership";
  */
 export async function syncSubscription(
   stripe: Stripe,
-  subscription: Stripe.Subscription
+  subscription: Stripe.Subscription,
+  options?: { isNew?: boolean }
 ): Promise<void> {
   try {
     const priceId = subscription.items.data[0]?.price?.id ?? "";
@@ -79,6 +81,16 @@ export async function syncSubscription(
           updatedAt: new Date(),
         },
       });
+
+    if (options?.isNew) {
+      const price = subscription.items.data[0]?.price;
+      await sendMetaConversionEvent({
+        eventName: "Subscribe",
+        email,
+        value: price?.unit_amount ? price.unit_amount / 100 : undefined,
+        currency: price?.currency?.toUpperCase(),
+      });
+    }
   } catch (err) {
     console.error("Membership sync failed:", err);
   }

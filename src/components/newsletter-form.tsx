@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
+import { trackLead } from "@/lib/track-events";
 
 type Status = "idle" | "loading" | "done" | "error";
 
@@ -35,6 +36,7 @@ export function NewsletterForm({ submitLabel = "Get the free guide" }: { submitL
             body: JSON.stringify({ email }),
           });
           if (res.ok) {
+            trackLead();
             try {
               localStorage.setItem(SUBSCRIBED_STORAGE_KEY, "1");
             } catch {

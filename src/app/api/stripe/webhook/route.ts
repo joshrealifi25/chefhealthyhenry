@@ -9,6 +9,7 @@ import {
 import { deliveryEmailHtml } from "@/lib/delivery-email";
 import { notifyHenry, escapeHtml } from "@/lib/notify";
 import { syncSubscription } from "@/lib/membership-sync";
+import { sendMetaConversionEvent } from "@/lib/ad-tracking";
 
 export const runtime = "nodejs";
 
@@ -51,6 +52,13 @@ export async function POST(req: NextRequest) {
       // customer delivery.
       await sendOrderNotification(session, lineItems.data, products.length);
 
+      await sendMetaConversionEvent({
+        eventName: "Purchase",
+        email,
+        value: (session.amount_total ?? 0) / 100,
+        currency: session.currency?.toUpperCase(),
+      });
+
       if (products.length > 0) {
         const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? req.nextUrl.origin;
         const links = products.map((p) => ({
@@ -88,7 +96,9 @@ export async function POST(req: NextRequest) {
     event.type === "customer.subscription.updated" ||
     event.type === "customer.subscription.deleted"
   ) {
-    await syncSubscription(stripe, event.data.object as Stripe.Subscription);
+    await syncSubscription(stripe, event.data.object as Stripe.Subscription, {
+      isNew: event.type === "customer.subscription.created",
+    });
   }
 
   return NextResponse.json({ received: true });
