@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Recipes & Cooking Tips Blog",
   description:
     "Cooking tips, nutrition guides, and behind-the-scenes stories from Chef Healthy Henry, practical, protein-forward advice for real home cooks.",
+  alternates: { canonical: "/blog" },
 };
 
 export default function BlogPage() {
