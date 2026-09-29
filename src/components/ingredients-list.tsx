@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { shopUrlForLine } from "@/lib/shop";
+import { AffiliateNote, ShopLink } from "@/components/shop-link";
 
 const UNICODE_FRACTIONS: Record<string, number> = {
   "½": 0.5, "⅓": 1 / 3, "⅔": 2 / 3, "¼": 0.25, "¾": 0.75,
@@ -54,6 +56,9 @@ const isHeading = (ing: string) => ing.length < 25 && !/\d/.test(ing);
 
 export function IngredientsList({ ingredients }: { ingredients: string[] }) {
   const [factor, setFactor] = useState(1);
+  const hasShop = ingredients.some(
+    (ing) => !isHeading(ing) && shopUrlForLine(ing)
+  );
 
   return (
     <div>
@@ -75,19 +80,32 @@ export function IngredientsList({ ingredients }: { ingredients: string[] }) {
         ))}
       </div>
       <ul className="mt-5 space-y-2.5 text-[15px] leading-relaxed">
-        {ingredients.map((ing, i) =>
-          isHeading(ing) ? (
-            <li key={i} className="pt-2 font-medium text-primary">
-              {ing}
-            </li>
-          ) : (
+        {ingredients.map((ing, i) => {
+          if (isHeading(ing)) {
+            return (
+              <li key={i} className="pt-2 font-medium text-primary">
+                {ing}
+              </li>
+            );
+          }
+          const shopHref = shopUrlForLine(ing);
+          return (
             <li key={i} className="flex gap-2.5">
               <span className="mt-2 size-1.5 shrink-0 rounded-full bg-primary/50" />
-              {scaleIngredient(ing, factor)}
+              <span>
+                {scaleIngredient(ing, factor)}
+                {shopHref && (
+                  <>
+                    {" "}
+                    <ShopLink href={shopHref} />
+                  </>
+                )}
+              </span>
             </li>
-          )
-        )}
+          );
+        })}
       </ul>
+      {hasShop && <AffiliateNote />}
     </div>
   );
 }

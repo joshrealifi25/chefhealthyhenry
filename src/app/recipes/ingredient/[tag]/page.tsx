@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ingredientTags, ingredientFromSlug, recipesByIngredient } from "@/lib/recipes";
 import { RecipeCard } from "@/components/recipe-card";
+import { shopUrlForIngredient, shopUrlForLine } from "@/lib/shop";
+import { AffiliateNote, ShopLink } from "@/components/shop-link";
 
 export function generateStaticParams() {
   return ingredientTags.map((t) => ({ tag: t.slug }));
@@ -32,6 +34,7 @@ export default async function IngredientPage({
   if (!name) notFound();
 
   const ingredientRecipes = recipesByIngredient(name);
+  const shopHref = shopUrlForIngredient(name) ?? shopUrlForLine(name);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
@@ -49,6 +52,14 @@ export default async function IngredientPage({
           {ingredientRecipes.length} recipe
           {ingredientRecipes.length === 1 ? "" : "s"} built around {name}.
         </p>
+        {shopHref && (
+          <>
+            <p className="mt-4">
+              <ShopLink href={shopHref} />
+            </p>
+            <AffiliateNote />
+          </>
+        )}
       </div>
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

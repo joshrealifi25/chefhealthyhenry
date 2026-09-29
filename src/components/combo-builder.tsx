@@ -8,6 +8,8 @@ import type {
   GroceryItem,
 } from "@/lib/ingredients";
 import { DIETARY_TAGS } from "@/lib/recipes";
+import { shopUrlForIngredient } from "@/lib/shop";
+import { AffiliateNote, ShopLink } from "@/components/shop-link";
 import {
   consumesCustomBuild,
   customBuildsRemainingNote,
@@ -1081,6 +1083,7 @@ export function ComboBuilder({
               <ul className="print-list mt-2 divide-y divide-border rounded-2xl border border-border bg-card">
                 {list.map((item) => {
                   const got = inCart.includes(item.name);
+                  const shopHref = shopUrlForIngredient(item.name);
                   return (
                     <li key={item.name} className="flex gap-3 px-5 py-3">
                       <input
@@ -1097,14 +1100,17 @@ export function ComboBuilder({
                         className="mt-0.5 size-4 shrink-0 accent-primary"
                       />
                       <div className={got ? "opacity-45" : undefined}>
-                        <label
-                          htmlFor={`got-${item.name}`}
-                          className={`cursor-pointer text-sm font-medium capitalize ${
-                            got ? "line-through" : ""
-                          }`}
-                        >
-                          {item.name}
-                        </label>
+                        <div className="flex flex-wrap items-baseline gap-x-2">
+                          <label
+                            htmlFor={`got-${item.name}`}
+                            className={`cursor-pointer text-sm font-medium capitalize ${
+                              got ? "line-through" : ""
+                            }`}
+                          >
+                            {item.name}
+                          </label>
+                          {shopHref && <ShopLink href={shopHref} />}
+                        </div>
                         <ul className="mt-1 space-y-0.5 text-xs text-muted-foreground">
                           {item.needs.map((n) => (
                             <li key={n.recipeSlug}>
@@ -1122,6 +1128,9 @@ export function ComboBuilder({
                   );
                 })}
               </ul>
+              {list.some((item) => shopUrlForIngredient(item.name)) && (
+                <AffiliateNote />
+              )}
           </div>
 
           <div className={view === "byRecipe" ? "print:hidden" : "hidden"}>

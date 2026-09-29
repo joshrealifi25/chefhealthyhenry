@@ -77,6 +77,10 @@ export function SiteFooter() {
           © {new Date().getFullYear()} Chef Healthy Henry LLC. All rights
           reserved.
         </p>
+        <p className="mt-2">
+          As an Amazon Associate, Chef Healthy Henry earns from qualifying
+          purchases.
+        </p>
         <p className="mt-2 space-x-3">
           <Link href="/privacy" className="hover:text-primary">Privacy Policy</Link>
           <span aria-hidden="true">·</span>
