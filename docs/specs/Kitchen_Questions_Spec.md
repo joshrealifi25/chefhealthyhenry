@@ -72,7 +72,7 @@ Fix any errors before opening a PR. The most common issue will be an internal li
 
 ## Branch name
 
-`feature/kitchen-questions-batch-2`
+`fix/kitchen-questions-membership-link`
 
 ## Notes
 
@@ -80,5 +80,6 @@ Fix any errors before opening a PR. The most common issue will be an internal li
 - No exclamation points.
 - Sous is never called "AI" — it is described as a personal kitchen resource.
 - All internal links use relative paths (`/recipes/slug`, `/post/slug`).
+- Membership CTAs must link to `/membership` (the public sign-up page). Never use `/members`. That route is the logged-in dashboard and sends visitors to login.
 - The category name in the JSON must match exactly: `Kitchen Questions` (with a capital K and Q, space between words).
 - Posts are ordered by date. Use dates in the September 2026 or October 2026 range.
