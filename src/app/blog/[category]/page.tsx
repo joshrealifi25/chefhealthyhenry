@@ -22,6 +22,12 @@ const CATEGORY_COPY: Record<string, { description: string; meta: string }> = {
     meta:
       "Table Talk with Chef Healthy Henry: stories about food, family, and the moments that happen around a shared meal.",
   },
+  "Kitchen Questions": {
+    description:
+      "Short answers to specific cooking questions, then the recipes and membership that help you use them.",
+    meta:
+      "Kitchen Questions from Chef Healthy Henry: short answers to specific cooking questions, with recipes you can cook tonight.",
+  },
 };
 
 export function generateStaticParams() {
