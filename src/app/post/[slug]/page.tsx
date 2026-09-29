@@ -9,10 +9,65 @@ import {
   relatedPosts,
   isoDate,
   categorySlug,
+  type Post,
 } from "@/lib/posts";
 import { PostCard } from "@/components/post-card";
 import { ContentBlocks } from "@/components/content-blocks";
 import { SITE_URL } from "@/lib/site";
+
+function stripHtml(html: string): string {
+  return html.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+}
+
+function buildFaqSchema(post: Post) {
+  const pairs: { question: string; answer: string }[] = [];
+
+  const firstParagraph = post.blocks.find((b) => b.type === "paragraph");
+  if (firstParagraph?.html) {
+    pairs.push({
+      question: post.title,
+      answer: stripHtml(firstParagraph.html),
+    });
+  }
+
+  let currentHeading: string | null = null;
+  let currentAnswerParts: string[] = [];
+
+  for (const block of post.blocks) {
+    if (block.type === "heading" && block.level === 2) {
+      if (currentHeading && currentAnswerParts.length > 0) {
+        pairs.push({
+          question: currentHeading,
+          answer: currentAnswerParts.join(" "),
+        });
+      }
+      currentHeading = block.text ?? null;
+      currentAnswerParts = [];
+    } else if (block.type === "paragraph" && currentHeading && block.html) {
+      currentAnswerParts.push(stripHtml(block.html));
+    }
+  }
+
+  if (currentHeading && currentAnswerParts.length > 0) {
+    pairs.push({
+      question: currentHeading,
+      answer: currentAnswerParts.join(" "),
+    });
+  }
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: pairs.map((p) => ({
+      "@type": "Question",
+      name: p.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: p.answer,
+      },
+    })),
+  };
+}
 
 export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
@@ -62,6 +117,8 @@ export default async function PostPage({
     publisher: { "@type": "Person", name: "Chef Healthy Henry" },
     mainEntityOfPage: `${SITE_URL}/post/${post.slug}`,
   };
+  const faqSchema =
+    post.category === "Kitchen Questions" ? buildFaqSchema(post) : null;
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
@@ -69,6 +126,12 @@ export default async function PostPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <Link
         href="/blog"
         className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary"
