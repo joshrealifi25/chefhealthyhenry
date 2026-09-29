@@ -47,6 +47,7 @@ export async function generateMetadata({
     description:
       CATEGORY_COPY[name]?.meta ??
       `${name} essays from Chef Healthy Henry on cooking and the Protein Flip™ method.`,
+    alternates: { canonical: `/blog/${category}` },
   };
 }
 

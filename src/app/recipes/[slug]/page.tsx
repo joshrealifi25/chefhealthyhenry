@@ -11,6 +11,7 @@ import {
   type Nutrition,
 } from "@/lib/recipes";
 import { NutritionPanel } from "@/components/nutrition-panel";
+import { kitchenQuestionsForRecipe } from "@/lib/posts";
 import { SITE_URL } from "@/lib/site";
 import { RecipeCard } from "@/components/recipe-card";
 import { PrintButton } from "@/components/print-button";
@@ -35,6 +36,7 @@ export async function generateMetadata({
   return {
     title: recipe.seoTitle || recipe.title,
     description: recipe.seoDescription || recipe.description || recipe.title,
+    alternates: { canonical: `/recipes/${recipe.slug}` },
   };
 }
 
@@ -48,6 +50,7 @@ export default async function RecipePage({
   if (!recipe) notFound();
 
   const related = relatedRecipes(recipe);
+  const relatedQuestions = kitchenQuestionsForRecipe(recipe.slug);
 
   const minutes = (t: string | null) => t?.match(/\d+/)?.[0];
   const prepMin = minutes(recipe.prepTime);
@@ -280,6 +283,29 @@ export default async function RecipePage({
         <div className="mt-10">
           <NutritionPanel nutrition={recipe.nutrition} serves={recipe.serves} />
         </div>
+      )}
+
+      {relatedQuestions.length > 0 && (
+        <section className="mt-10 print:hidden">
+          <h2 className="font-heading text-2xl font-semibold">
+            Kitchen Questions
+          </h2>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Short answers that use this recipe.
+          </p>
+          <ul className="mt-4 space-y-2">
+            {relatedQuestions.map((post) => (
+              <li key={post.slug}>
+                <Link
+                  href={`/post/${post.slug}`}
+                  className="text-primary underline underline-offset-2 hover:opacity-80"
+                >
+                  {post.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
 
       <CookbookCrossSell />

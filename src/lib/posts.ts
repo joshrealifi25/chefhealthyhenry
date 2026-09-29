@@ -80,3 +80,18 @@ export function isoDate(date: string): string {
   const d = new Date(date);
   return isNaN(d.getTime()) ? "" : d.toISOString().slice(0, 10);
 }
+
+/** Kitchen Questions posts that link to a given recipe, for recipe-page backlinks. */
+export function kitchenQuestionsForRecipe(recipeSlug: string): Post[] {
+  const needle = `/recipes/${recipeSlug}`;
+  return posts.filter(
+    (post) =>
+      post.category === "Kitchen Questions" &&
+      post.blocks.some(
+        (block) =>
+          (typeof block.html === "string" && block.html.includes(needle)) ||
+          (Array.isArray(block.items) &&
+            block.items.some((item) => item.includes(needle))),
+      ),
+  );
+}

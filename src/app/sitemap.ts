@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { recipes } from "@/lib/recipes";
-import { posts, postCategories } from "@/lib/posts";
+import { posts, postCategories, isoDate } from "@/lib/posts";
 import { exploreCards, hasArticle, EXPLORE_COLLECTIONS } from "@/lib/explore";
 import { SITE_URL } from "@/lib/site";
 
@@ -25,9 +25,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const postPages = posts.map((p) => ({
     url: `${SITE_URL}/post/${p.slug}`,
-    lastModified: new Date(),
+    lastModified: isoDate(p.date) || new Date(),
     changeFrequency: "monthly" as const,
-    priority: 0.6,
+    priority: p.category === "Kitchen Questions" ? 0.7 : 0.6,
   }));
 
   const explorePages = exploreCards.filter(hasArticle).map((c) => ({

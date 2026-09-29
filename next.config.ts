@@ -8,6 +8,12 @@ const nextConfig: NextConfig = {
   // redirect. Order matters: specific rules precede catch-alls.
   async redirects() {
     return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.chefhealthyhenry.com" }],
+        destination: "https://chefhealthyhenry.com/:path*",
+        permanent: true,
+      },
       // Recipes whose Webflow slugs carried a random import suffix
       // (e.g. -ef6c3) that was cleaned up in the new site. Google still has
       // the old suffixed URLs indexed with real search traffic, so these
