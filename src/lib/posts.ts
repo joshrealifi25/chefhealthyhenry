@@ -41,6 +41,7 @@ export function postsByCategory(category: string): Post[] {
 const CATEGORY_SLUGS: Record<string, string> = {
   "Chef's Notes": "notes",
   "Table Talk": "table-talk",
+  "Kitchen Questions": "kitchen-questions",
   "Fast Food": "fast-food",
 };
 

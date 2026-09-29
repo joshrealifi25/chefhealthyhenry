@@ -89,7 +89,7 @@ typed objects and only three types are in use: `paragraph`, `heading`, and
 
 - Required: `slug`, `title`, `category`, `date`, `hero`, `excerpt`, `blocks`,
   `seoTitle`, `seoDescription`
-- `category` is exactly `Chef's Notes` or `Table Talk`
+- `category` is exactly `Chef's Notes`, `Table Talk`, or `Kitchen Questions`
 - `date` is a human string, for example `May 6, 2026`
 - `hero` is `/images/blog/<slug>.jpg`, and the file goes in
   `public/images/blog/`

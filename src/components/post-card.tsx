@@ -5,6 +5,7 @@ import type { Post } from "@/lib/posts";
 const CATEGORY_HREFS: Record<string, string> = {
   "Table Talk": "/blog/table-talk",
   "Chef's Notes": "/blog/notes",
+  "Kitchen Questions": "/blog/kitchen-questions",
 };
 
 export function PostCard({ post }: { post: Post }) {
