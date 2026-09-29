@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "How Chef Healthy Henry collects, uses, and protects your information: purchases, email signup, contact messages, and analytics.",
 };
 
-const LAST_UPDATED = "September 21, 2026";
+const LAST_UPDATED = "September 29, 2026";
 
 export default function PrivacyPage() {
   return (
@@ -116,6 +116,26 @@ export default function PrivacyPage() {
           .
         </li>
       </ul>
+
+      <h2 className="mt-12 font-heading text-2xl font-semibold">
+        Affiliate links
+      </h2>
+      <p className="mt-4 leading-relaxed text-muted-foreground">
+        Some recipe and grocery-list items include a Shop link to Just Better
+        or Amazon. If you buy through one of those links, Chef Healthy Henry
+        LLC may earn a commission. Just Better links open getjustbetter.com.
+        Amazon links take you to Amazon, and{" "}
+        <a
+          href="https://www.amazon.com/gp/help/customer/display.html?nodeId=468496"
+          target="_blank"
+          rel="noreferrer"
+          className="text-primary underline underline-offset-2"
+        >
+          Amazon&apos;s privacy policy
+        </a>{" "}
+        applies to what you do there. As an Amazon Associate, Chef Healthy
+        Henry earns from qualifying purchases.
+      </p>
 
       <h2 className="mt-12 font-heading text-2xl font-semibold">
         What we do not do
