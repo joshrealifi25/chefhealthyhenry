@@ -32,9 +32,35 @@ That is all the code change needed. The blog index and category pages are alread
 
 ### 2. Add posts to src/data/posts.json
 
-The file `docs/kitchen-questions-posts.json` now contains all 25 Kitchen Questions posts. 16 of them are already in `src/data/posts.json` (the September 28 batch). Append only the 9 new posts dated September 15, 2026 — slugs: what-is-the-mediterranean-diet, how-long-to-boil-eggs, vegan-protein-sources, vegetarian-protein-sources, what-does-season-to-taste-mean, how-to-meal-prep-proteins, white-rice-vs-brown-rice, healthiest-cooking-oils, how-to-make-healthy-food-taste-good. Do not duplicate the 16 already live.
+The file `docs/kitchen-questions-posts.json` now contains **48 Kitchen Questions posts** total.
 
-Hero images are set to `null` for now. Images will be added in a follow-up pass once photography is ready. The content check accepts `null` for hero.
+25 of them are already live in `src/data/posts.json` (the original batch). Append only the 23 new posts — all dated October 1, 2026. Their slugs are:
+
+- what-can-i-use-instead-of-heavy-cream
+- can-i-use-dried-herbs-instead-of-fresh
+- can-i-substitute-canned-beans-for-dried-beans
+- can-i-use-frozen-vegetables-instead-of-fresh
+- do-i-need-to-press-tofu-before-cooking
+- do-i-need-to-salt-eggplant-before-cooking
+- do-i-need-to-rinse-rice-before-cooking
+- should-i-peel-squash-before-roasting
+- how-do-i-get-tofu-crispy
+- how-do-i-cook-fish-without-drying-it-out
+- how-do-i-keep-garlic-from-burning
+- how-do-i-cook-dried-beans
+- how-do-i-fix-food-that-is-too-spicy
+- how-do-i-thicken-soup-without-cream
+- why-is-my-meat-tough-after-cooking-for-hours
+- what-can-i-make-with-ingredients-i-have
+- which-meals-freeze-and-reheat-well
+- how-do-i-reheat-chicken-without-drying-it-out
+- how-to-meal-prep-without-eating-the-same-thing
+- how-to-make-a-salad-filling-enough-for-dinner
+- how-to-turn-soup-into-a-complete-meal
+- how-to-add-more-protein-without-more-meat
+- how-to-add-more-fiber-to-everyday-meals
+
+Do not duplicate any post already in `src/data/posts.json`. Check slugs before appending.
 
 ### 3. Run the check
 
@@ -46,7 +72,7 @@ Fix any errors before opening a PR. The most common issue will be an internal li
 
 ## Branch name
 
-`feature/kitchen-questions-category`
+`feature/kitchen-questions-batch-2`
 
 ## Notes
 
