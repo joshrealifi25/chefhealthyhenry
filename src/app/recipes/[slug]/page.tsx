@@ -137,6 +137,7 @@ export default async function RecipePage({
     recipeInstructions: recipe.directions.map((step, i) => ({
       "@type": "HowToStep",
       position: i + 1,
+      url: `${SITE_URL}/recipes/${recipe.slug}#step-${i + 1}`,
       ...(step.title && { name: step.title }),
       text: step.text,
     })),
@@ -238,7 +239,7 @@ export default async function RecipePage({
           <h2 className="font-heading text-2xl font-semibold">Directions</h2>
           <ol className="mt-5 space-y-6">
             {recipe.directions.map((step, i) => (
-              <li key={i} className="flex gap-4">
+              <li id={`step-${i + 1}`} key={i} className="flex gap-4">
                 <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-medium text-primary-foreground">
                   {i + 1}
                 </span>
