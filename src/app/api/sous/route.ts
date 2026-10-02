@@ -1,5 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
-import Anthropic from "@anthropic-ai/sdk";
+import Anthropic, {
+  APIConnectionError,
+  APIConnectionTimeoutError,
+  APIError,
+  AuthenticationError,
+  BadRequestError,
+  PermissionDeniedError,
+  RateLimitError,
+} from "@anthropic-ai/sdk";
 import { and, count, eq, gte } from "drizzle-orm";
 import { db, sousMessages } from "@/lib/db";
 import { getMember } from "@/lib/auth";
@@ -15,6 +23,37 @@ interface ChatMessage {
 
 const MAX_TURNS = 20;
 const MAX_MESSAGE_CHARS = 2000;
+
+function sousErrorMessage(err: unknown): string {
+  if (err instanceof RateLimitError) {
+    return "Sous is busy. Please try again in a moment.";
+  }
+  if (
+    err instanceof APIConnectionTimeoutError ||
+    err instanceof APIConnectionError
+  ) {
+    return "Sous took too long. Please try again.";
+  }
+  if (err instanceof AuthenticationError || err instanceof PermissionDeniedError) {
+    return "Sous is not available right now.";
+  }
+  if (err instanceof BadRequestError) {
+    return "Sous could not answer that. Please try again.";
+  }
+  return "Something went wrong. Please try again.";
+}
+
+function sousErrorStatus(err: unknown): number {
+  if (err instanceof RateLimitError) return 429;
+  if (
+    err instanceof APIConnectionTimeoutError ||
+    err instanceof APIConnectionError
+  ) {
+    return 504;
+  }
+  if (err instanceof BadRequestError) return 400;
+  return 502;
+}
 
 /** Streams a Sous reply. Members only; Kitchen tier has a daily cap. */
 export async function POST(req: NextRequest) {
@@ -58,33 +97,43 @@ export async function POST(req: NextRequest) {
   // Daily cap (per calendar day, UTC) for tiers with a limit.
   const cap = SOUS_DAILY_CAP[member.tier] ?? 0;
   if (Number.isFinite(cap)) {
-    const dayStart = new Date();
-    dayStart.setUTCHours(0, 0, 0, 0);
-    const [{ used }] = await db()
-      .select({ used: count() })
-      .from(sousMessages)
-      .where(
-        and(
-          eq(sousMessages.userId, member.id),
-          gte(sousMessages.createdAt, dayStart)
-        )
-      );
-    if (used >= cap) {
+    try {
+      const dayStart = new Date();
+      dayStart.setUTCHours(0, 0, 0, 0);
+      const [{ used }] = await db()
+        .select({ used: count() })
+        .from(sousMessages)
+        .where(
+          and(
+            eq(sousMessages.userId, member.id),
+            gte(sousMessages.createdAt, dayStart)
+          )
+        );
+      if (used >= cap) {
+        return NextResponse.json(
+          {
+            error:
+              "You've reached today's question limit. Your questions reset tomorrow, or upgrade for unlimited access.",
+          },
+          { status: 429 }
+        );
+      }
+    } catch (err) {
+      console.error("Sous cap query failed:", err);
       return NextResponse.json(
-        {
-          error:
-            "You've reached today's question limit. Your questions reset tomorrow, or upgrade for unlimited access.",
-        },
-        { status: 429 }
+        { error: "Something went wrong. Please try again." },
+        { status: 500 }
       );
     }
   }
-  await db().insert(sousMessages).values({ userId: member.id });
 
   const anthropic = new Anthropic();
   const stream = anthropic.messages.stream({
     model: "claude-opus-5",
-    max_tokens: 1024,
+    max_tokens: 4096,
+    // Cooking Q&A should answer, not spend the token budget on thinking.
+    thinking: { type: "disabled" },
+    output_config: { effort: "low" },
     system: [
       {
         type: "text",
@@ -109,6 +158,26 @@ export async function POST(req: NextRequest) {
       stream.abort();
     },
   });
+
+  try {
+    await stream.withResponse();
+  } catch (err) {
+    console.error("Sous anthropic error:", err);
+    if (err instanceof APIError) {
+      console.error("Sous anthropic status:", err.status, err.type, err.error);
+    }
+    stream.abort();
+    return NextResponse.json(
+      { error: sousErrorMessage(err) },
+      { status: sousErrorStatus(err) }
+    );
+  }
+
+  try {
+    await db().insert(sousMessages).values({ userId: member.id });
+  } catch (err) {
+    console.error("Sous db insert failed:", err);
+  }
 
   return new Response(readable, {
     headers: {
