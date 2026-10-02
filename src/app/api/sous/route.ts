@@ -24,6 +24,24 @@ interface ChatMessage {
 const MAX_TURNS = 20;
 const MAX_MESSAGE_CHARS = 2000;
 
+function anthropicDetail(err: unknown): string | null {
+  if (!(err instanceof APIError)) return null;
+  const body = err.error;
+  if (body && typeof body === "object") {
+    const record = body as Record<string, unknown>;
+    const nested = record.error;
+    if (nested && typeof nested === "object") {
+      const message = (nested as { message?: unknown }).message;
+      if (typeof message === "string" && message.trim()) return message.trim();
+    }
+    if (typeof record.message === "string" && record.message.trim()) {
+      return record.message.trim();
+    }
+  }
+  const fallback = err.message.replace(/^\d{3}\s+/, "").trim();
+  return fallback || null;
+}
+
 function sousErrorMessage(err: unknown): string {
   if (err instanceof RateLimitError) {
     return "Sous is busy. Please try again in a moment.";
@@ -38,7 +56,10 @@ function sousErrorMessage(err: unknown): string {
     return "Sous is not available right now.";
   }
   if (err instanceof BadRequestError) {
-    return "Sous could not answer that. Please try again.";
+    const detail = anthropicDetail(err);
+    return detail
+      ? `Sous could not answer that: ${detail}`
+      : "Sous could not answer that. Please try again.";
   }
   return "Something went wrong. Please try again.";
 }
@@ -131,9 +152,6 @@ export async function POST(req: NextRequest) {
   const stream = anthropic.messages.stream({
     model: "claude-opus-5",
     max_tokens: 8192,
-    // Opus 5 thinks by default. Disabled thinking returns 400 on current
-    // models. Low effort keeps a pantry question from burning the budget.
-    output_config: { effort: "low" },
     system: [
       {
         type: "text",
