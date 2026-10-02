@@ -130,9 +130,9 @@ export async function POST(req: NextRequest) {
   const anthropic = new Anthropic();
   const stream = anthropic.messages.stream({
     model: "claude-opus-5",
-    max_tokens: 4096,
-    // Cooking Q&A should answer, not spend the token budget on thinking.
-    thinking: { type: "disabled" },
+    max_tokens: 8192,
+    // Opus 5 thinks by default. Disabled thinking returns 400 on current
+    // models. Low effort keeps a pantry question from burning the budget.
     output_config: { effort: "low" },
     system: [
       {
