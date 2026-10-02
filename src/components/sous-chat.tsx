@@ -112,6 +112,9 @@ export function SousChat({ capNote }: { capNote: string }) {
           answer: reply,
           timestamp: Date.now(),
         });
+      } else {
+        setMessages(history);
+        setError("Sous did not return an answer. Please try again.");
       }
     } catch {
       setMessages(history);
