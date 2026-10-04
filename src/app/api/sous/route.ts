@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import Anthropic, {
+import {
   APIConnectionError,
   APIConnectionTimeoutError,
   APIError,
@@ -12,6 +12,7 @@ import { and, count, eq, gte } from "drizzle-orm";
 import { db, sousMessages } from "@/lib/db";
 import { getMember } from "@/lib/auth";
 import { SOUS_SYSTEM_PROMPT, SOUS_DAILY_CAP } from "@/lib/sous";
+import { sousAnthropic } from "@/lib/sous-client";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -78,8 +79,13 @@ function sousErrorStatus(err: unknown): number {
 
 /** Streams a Sous reply. Members only; Kitchen tier has a daily cap. */
 export async function POST(req: NextRequest) {
-  if (!process.env.ANTHROPIC_API_KEY) {
-    console.error("Sous: ANTHROPIC_API_KEY not set");
+  const identityToken =
+    req.headers.get("x-vercel-oidc-token") ??
+    process.env.VERCEL_OIDC_TOKEN ??
+    null;
+  const anthropic = sousAnthropic(identityToken);
+  if (!anthropic) {
+    console.error("Sous: no Anthropic credentials");
     return NextResponse.json({ error: "Not configured" }, { status: 500 });
   }
 
@@ -148,7 +154,6 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  const anthropic = new Anthropic();
   const stream = anthropic.messages.stream({
     model: "claude-opus-5",
     max_tokens: 8192,
