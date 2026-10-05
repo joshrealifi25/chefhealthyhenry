@@ -51,7 +51,7 @@ const EMPTY: Draft = {
   isAffiliate: false,
   note: "",
   whyILikeIt: "",
-  label: "recommends",
+  label: "pick",
   featured: false,
   active: true,
   sortOrder: "0",
@@ -70,7 +70,7 @@ function toDraft(row: FavoriteRow): Draft {
     whyILikeIt: row.whyILikeIt ?? "",
     label: (FAVORITE_LABELS.some((l) => l.value === row.label)
       ? row.label
-      : "recommends") as FavoriteLabel,
+      : "pick") as FavoriteLabel,
     featured: row.featured,
     active: row.active,
     sortOrder: String(row.sortOrder),

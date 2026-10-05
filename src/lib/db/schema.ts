@@ -160,7 +160,7 @@ export const favoriteThings = pgTable("favorite_things", {
   isAffiliate: boolean("is_affiliate").notNull().default(false),
   note: text("note").notNull(),
   whyILikeIt: text("why_i_like_it"),
-  label: text("label").notNull().default("recommends"),
+  label: text("label").notNull().default("pick"),
   featured: boolean("featured").notNull().default(false),
   active: boolean("active").notNull().default(true),
   sortOrder: integer("sort_order").notNull().default(0),

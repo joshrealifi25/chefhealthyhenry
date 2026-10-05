@@ -19,8 +19,7 @@ export const FAVORITE_CATEGORIES = [
 export type FavoriteCategory = (typeof FAVORITE_CATEGORIES)[number]["value"];
 
 export const FAVORITE_LABELS = [
-  { value: "uses", label: "Chef Henry Uses This" },
-  { value: "recommends", label: "Chef Henry Recommends" },
+  { value: "pick", label: "Chef Henry's Pick" },
   { value: "worth-considering", label: "Worth Considering" },
 ] as const;
 
@@ -117,7 +116,7 @@ export function parseFavoriteThingInput(
     return { ok: false, error: "Keep Why I Like It under 2000 characters." };
   }
 
-  const label = b.label ?? "recommends";
+  const label = b.label ?? "pick";
   if (!isFavoriteLabel(label)) {
     return { ok: false, error: "Choose one of the listed recommendation labels." };
   }

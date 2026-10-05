@@ -7,7 +7,7 @@ CREATE TABLE "favorite_things" (
 	"is_affiliate" boolean DEFAULT false NOT NULL,
 	"note" text NOT NULL,
 	"why_i_like_it" text,
-	"label" text DEFAULT 'recommends' NOT NULL,
+	"label" text DEFAULT 'pick' NOT NULL,
 	"featured" boolean DEFAULT false NOT NULL,
 	"active" boolean DEFAULT true NOT NULL,
 	"sort_order" integer DEFAULT 0 NOT NULL,
