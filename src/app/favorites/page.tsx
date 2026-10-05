@@ -41,11 +41,9 @@ async function loadActiveItems(): Promise<FavoriteThing[]> {
 
 function LabelBadge({ label }: { label: string }) {
   const tone =
-    label === "uses"
+    label === "pick"
       ? "bg-primary text-primary-foreground"
-      : label === "recommends"
-        ? "bg-accent text-accent-foreground"
-        : "bg-secondary text-secondary-foreground";
+      : "bg-secondary text-secondary-foreground";
   return (
     <span
       className={`inline-block rounded-full px-3 py-1 text-xs font-medium ${tone}`}
