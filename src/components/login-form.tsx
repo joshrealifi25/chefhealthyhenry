@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { LegalConsent } from "@/components/legal-consent";
 
 /** `next` is the page the member was trying to reach before signing in. */
 export function LoginForm({ next }: { next?: string | null }) {
@@ -59,6 +60,7 @@ export function LoginForm({ next }: { next?: string | null }) {
           Something went wrong sending the link. Please try again.
         </p>
       )}
+      <LegalConsent preface="By asking for a sign-in link, you agree to our" />
     </form>
   );
 }

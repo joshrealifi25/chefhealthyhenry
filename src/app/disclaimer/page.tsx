@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Chef Healthy Henry's content is for informational purposes only and is not medical advice. Read this before making changes to your diet, especially on GLP-1 medications or after bariatric surgery.",
 };
 
-const LAST_UPDATED = "July 1, 2026";
+const LAST_UPDATED = "September 21, 2026";
 
 export default function DisclaimerPage() {
   return (
@@ -23,13 +23,14 @@ export default function DisclaimerPage() {
         We are cooks, not your doctors
       </h2>
       <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-        Everything on this site and in our books and guides, including
-        recipes, the Protein Flip™ method, and discussions of protein,
-        satiety, and blood sugar, is shared for general informational and
-        educational purposes only. It reflects Henry&apos;s experience as a
-        chef and his own health journey. It is not medical advice, nutrition
-        therapy, or a substitute for care from a physician, registered
-        dietitian, or other qualified health professional.
+        Everything on this site and in our books, guides, and membership,
+        including recipes, member lessons, Sous, the Protein Flip™ method,
+        and discussions of protein, satiety, and blood sugar, is shared for
+        general informational and educational purposes only. It reflects
+        Henry&apos;s experience as a chef and his own health journey. It is
+        not medical advice, nutrition therapy, or a substitute for care from
+        a physician, registered dietitian, or other qualified health
+        professional.
       </p>
 
       <h2 className="mt-12 font-heading text-2xl font-semibold">
@@ -44,6 +45,18 @@ export default function DisclaimerPage() {
         instructions about protein targets, portion sizes, food progression,
         and supplements, and talk to them before making changes to how you
         eat.
+      </p>
+
+      <h2 className="mt-12 font-heading text-2xl font-semibold">
+        Sous and membership lessons
+      </h2>
+      <p className="mt-4 leading-relaxed text-muted-foreground">
+        Sous, the in-membership cooking assistant, answers questions about
+        cooking, swaps, and Chef Henry&apos;s recipes. Member lessons and
+        guides teach kitchen decisions. None of that is a diagnosis, a meal
+        plan, or advice about medication or dosing. If you are on a GLP-1
+        medication or a medical eating plan, follow your care team, not
+        Sous.
       </p>
 
       <h2 className="mt-12 font-heading text-2xl font-semibold">

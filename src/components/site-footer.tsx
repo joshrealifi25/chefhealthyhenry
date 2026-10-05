@@ -84,7 +84,7 @@ export function SiteFooter() {
         <p className="mt-2 space-x-3">
           <Link href="/privacy" className="hover:text-primary">Privacy Policy</Link>
           <span aria-hidden="true">·</span>
-          <Link href="/terms" className="hover:text-primary">Terms &amp; Purchases</Link>
+          <Link href="/terms" className="hover:text-primary">Terms</Link>
           <span aria-hidden="true">·</span>
           <Link href="/disclaimer" className="hover:text-primary">Health Disclaimer</Link>
           <span aria-hidden="true">·</span>

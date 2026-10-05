@@ -184,7 +184,9 @@ export default async function MakeoverPage() {
           <p>
             If your recipe is selected, the finished makeover will be added to
             the membership website and may also be shared in the private member
-            community for discussion.
+            community for discussion. By submitting, you confirm you have the
+            right to send the recipe and grant Chef Healthy Henry LLC
+            permission to use it for that teaching purpose.
           </p>
         </div>
       </section>
@@ -202,12 +204,12 @@ export default async function MakeoverPage() {
                 Recipe submissions are part of Protein Flip™ Community. Upgrade
                 and you can send Chef Henry a dish you actually cook.
               </p>
-              <a
-                href="/api/billing"
+              <Link
+                href="/membership"
                 className="mt-5 inline-block rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
               >
                 Upgrade to Community
-              </a>
+              </Link>
             </div>
           )}
         </div>
