@@ -65,7 +65,7 @@ export interface Recipe {
 // was added. Reverse it so the newest recipe shows first everywhere.
 export const recipes = [...(recipesData as Recipe[])].reverse();
 
-/** The six supported dietaryTags values, with their display labels. Shared
+/** The seven supported dietaryTags values, with their display labels. Shared
  * by the /recipes filter bar and the Grocery Combo Builder so both stay in
  * sync with what tag-recipes.ts actually writes. `badge` is the small label
  * the Combo Builder shows on a suggestion pill to mark it as a non-
@@ -77,6 +77,7 @@ export const DIETARY_TAGS: { value: string; label: string; badge: string }[] = [
   { value: "dairy-free", label: "Dairy-Free", badge: "Diet" },
   { value: "high-protein", label: "High-Protein", badge: "Diet" },
   { value: "high-fiber", label: "High-Fiber", badge: "Diet" },
+  { value: "low-sodium", label: "Low-Sodium", badge: "Diet" },
 ];
 
 /** Recipe slug to its dietaryTags, for components that only carry a lite
