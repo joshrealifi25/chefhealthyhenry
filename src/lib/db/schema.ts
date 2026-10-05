@@ -5,6 +5,8 @@ import {
   uuid,
   jsonb,
   index,
+  boolean,
+  integer,
 } from "drizzle-orm/pg-core";
 
 /**
@@ -143,3 +145,26 @@ export const ingredientSearches = pgTable(
   },
   (t) => [index("ingredient_searches_term_idx").on(t.term, t.createdAt)]
 );
+
+/**
+ * Chef Henry's Favorite Things: the products, tools, and books on the public
+ * /favorites page. Lives in the database rather than a JSON file so Henry can
+ * add and edit items from the admin area without a code change.
+ */
+export const favoriteThings = pgTable("favorite_things", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  name: text("name").notNull(),
+  category: text("category").notNull(),
+  imageUrl: text("image_url"),
+  linkUrl: text("link_url").notNull(),
+  isAffiliate: boolean("is_affiliate").notNull().default(false),
+  note: text("note").notNull(),
+  whyILikeIt: text("why_i_like_it"),
+  label: text("label").notNull().default("recommends"),
+  featured: boolean("featured").notNull().default(false),
+  active: boolean("active").notNull().default(true),
+  sortOrder: integer("sort_order").notNull().default(0),
+  createdAt: timestamp("created_at", { withTimezone: true })
+    .notNull()
+    .defaultNow(),
+});
