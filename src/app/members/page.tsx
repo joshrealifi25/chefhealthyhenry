@@ -343,12 +343,20 @@ export default async function MembersPage({
             Everyone with an account, who is on which membership, and the
             controls to comp or remove one.
           </p>
-          <Link
-            href="/members/admin"
-            className="mt-4 inline-block rounded-full border border-border px-5 py-2 text-sm font-medium text-primary transition-colors hover:bg-secondary"
-          >
-            Manage accounts
-          </Link>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link
+              href="/members/admin"
+              className="inline-block rounded-full border border-border px-5 py-2 text-sm font-medium text-primary transition-colors hover:bg-secondary"
+            >
+              Manage accounts
+            </Link>
+            <Link
+              href="/members/admin/favorites"
+              className="inline-block rounded-full border border-border px-5 py-2 text-sm font-medium text-primary transition-colors hover:bg-secondary"
+            >
+              Favorite Things
+            </Link>
+          </div>
         </section>
       )}
 
