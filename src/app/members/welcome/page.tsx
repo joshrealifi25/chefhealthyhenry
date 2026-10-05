@@ -14,6 +14,26 @@ export default async function WelcomePage() {
   const member = await getMember();
   if (member?.tier) redirect("/members");
 
+  if (member) {
+    return (
+      <div className="mx-auto max-w-xl px-4 py-24 text-center sm:px-6">
+        <h1 className="font-heading text-4xl font-semibold tracking-tight">
+          Your kitchen is opening
+        </h1>
+        <p className="mt-4 text-lg text-muted-foreground">
+          Payment went through. Your membership can take a minute to appear.
+          Refresh in a moment, or open your kitchen to see if it is ready.
+        </p>
+        <Link
+          href="/members"
+          className="mt-8 inline-block rounded-full bg-primary px-8 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+        >
+          Open my kitchen
+        </Link>
+      </div>
+    );
+  }
+
   return (
     <div className="mx-auto max-w-xl px-4 py-24 text-center sm:px-6">
       <h1 className="font-heading text-4xl font-semibold tracking-tight">

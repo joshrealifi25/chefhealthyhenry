@@ -16,6 +16,7 @@ import { SousChat } from "@/components/sous-chat";
 import { isAdminEmail } from "@/lib/admin";
 import { ManageBillingCard } from "@/components/manage-billing-card";
 import { GroceryComboCard } from "@/components/grocery-combo-card";
+import { OpensInNewWindow } from "@/components/opens-in-new-window";
 import { comboPresets } from "@/lib/combo-presets";
 
 export const metadata: Metadata = {
@@ -93,18 +94,20 @@ export default async function MembersPage({
               <a
                 href="https://www.facebook.com/Chefhealthyhenry"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary"
               >
                 Facebook
+                <OpensInNewWindow />
               </a>
               <a
                 href="https://www.facebook.com/groups/proteinflipcommunity"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary"
               >
                 Protein Flip™ Community
+                <OpensInNewWindow />
               </a>
             </div>
           )}
@@ -203,10 +206,10 @@ export default async function MembersPage({
                   cooking alongside you. Included with Community membership.
                 </p>
                 <Link
-                  href="/members/makeover"
+                  href="/membership"
                   className="mt-4 inline-block text-sm font-medium text-primary hover:underline"
                 >
-                  See how recipe makeovers work
+                  See Community membership
                 </Link>
               </section>
             )}
@@ -247,10 +250,11 @@ export default async function MembersPage({
                   <a
                     href="https://www.facebook.com/groups/proteinflipcommunity"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="mt-4 inline-block rounded-full border border-border px-5 py-2 text-sm font-medium text-primary transition-colors hover:bg-secondary"
                   >
                     Open the community
+                    <OpensInNewWindow />
                   </a>
                 </section>
               </>
@@ -357,10 +361,22 @@ export default async function MembersPage({
             Sign out ({member.email})
           </button>
         </form>
-        <p>
+        <p className="flex flex-wrap gap-x-3 gap-y-1 text-xs text-muted-foreground">
           <a
-            href="mailto:henry@ChefHealthyHenry.com?subject=Chef%20Healthy%20Henry%3A%20Site%20Feedback"
-            className="text-xs text-muted-foreground hover:text-primary"
+            href="mailto:henry@chefhealthyhenry.com?subject=Chef%20Healthy%20Henry%3A%20Request%20my%20data&body=Please%20send%20a%20copy%20of%20the%20personal%20information%20you%20hold%20for%20this%20account."
+            className="hover:text-primary"
+          >
+            Request my data
+          </a>
+          <a
+            href="mailto:henry@chefhealthyhenry.com?subject=Chef%20Healthy%20Henry%3A%20Delete%20my%20account&body=Please%20delete%20the%20membership%20account%20for%20this%20email."
+            className="hover:text-primary"
+          >
+            Delete my account
+          </a>
+          <a
+            href="mailto:henry@chefhealthyhenry.com?subject=Chef%20Healthy%20Henry%3A%20Site%20Feedback"
+            className="hover:text-primary"
           >
             Report an issue
           </a>
