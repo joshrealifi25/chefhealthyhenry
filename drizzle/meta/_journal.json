@@ -43,6 +43,13 @@
       "when": 1791239558057,
       "tag": "0005_favorite_things",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1791490708938,
+      "tag": "0006_saved_recipes",
+      "breakpoints": true
     }
   ]
 }

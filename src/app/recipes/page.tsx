@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { recipes, categories } from "@/lib/recipes";
 import { RecipesGrid } from "@/components/recipes-grid";
 
@@ -18,6 +19,11 @@ export default function RecipesPage() {
         <p className="mt-4 text-lg text-muted-foreground">
           Many of these recipes follow the Protein Flip™ method: protein leads,
           flavor stays, and you leave the table full and satisfied.
+        </p>
+        <p className="mt-3 text-sm">
+          <Link href="/saved" className="text-primary hover:underline">
+            Saved recipes
+          </Link>
         </p>
       </div>
       <div className="mt-12">
