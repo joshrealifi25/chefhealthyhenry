@@ -5,6 +5,7 @@ import {
   uuid,
   jsonb,
   index,
+  uniqueIndex,
   boolean,
   integer,
 } from "drizzle-orm/pg-core";
@@ -168,3 +169,23 @@ export const favoriteThings = pgTable("favorite_things", {
     .notNull()
     .defaultNow(),
 });
+
+/**
+ * Recipes a signed-in person saved from a recipe page. The recipe itself
+ * stays in the repo; this row is only the slug, so a removed recipe simply
+ * stops appearing in their list.
+ */
+export const savedRecipes = pgTable(
+  "saved_recipes",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    recipeSlug: text("recipe_slug").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => [uniqueIndex("saved_recipes_user_slug_idx").on(t.userId, t.recipeSlug)]
+);

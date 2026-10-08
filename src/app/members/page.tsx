@@ -306,6 +306,24 @@ export default async function MembersPage({
               </Link>
             </section>
 
+            <section className="rounded-2xl border border-border bg-card p-6">
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                Your recipes
+              </p>
+              <h2 className="mt-1 font-heading text-xl font-semibold">
+                Saved recipes
+              </h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Meals you saved from the recipe pages, ready to cook again.
+              </p>
+              <Link
+                href="/saved"
+                className="mt-4 inline-block rounded-full border border-border px-5 py-2 text-sm font-medium text-primary transition-colors hover:bg-secondary"
+              >
+                Open saved recipes
+              </Link>
+            </section>
+
             <ManageBillingCard
               tier={tier}
               status={billingRow?.status ?? null}
@@ -324,12 +342,20 @@ export default async function MembersPage({
             You&apos;re signed in, but you don&apos;t have an active membership
             yet. Head to the membership page to join.
           </p>
-          <Link
-            href="/membership"
-            className="mt-6 inline-block rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
-          >
-            See membership options
-          </Link>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link
+              href="/membership"
+              className="inline-block rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+            >
+              See membership options
+            </Link>
+            <Link
+              href="/saved"
+              className="inline-block rounded-full border border-border px-6 py-3 text-sm font-medium text-primary transition-colors hover:bg-secondary"
+            >
+              Saved recipes
+            </Link>
+          </div>
         </div>
       )}
 

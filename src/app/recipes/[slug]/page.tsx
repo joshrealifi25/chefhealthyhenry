@@ -15,6 +15,7 @@ import { kitchenQuestionsForRecipe } from "@/lib/posts";
 import { SITE_URL } from "@/lib/site";
 import { RecipeCard } from "@/components/recipe-card";
 import { PrintButton } from "@/components/print-button";
+import { SaveRecipeButton } from "@/components/save-recipe-button";
 import { CookModeButton } from "@/components/cook-mode-button";
 import { IngredientsList } from "@/components/ingredients-list";
 import { CookbookCrossSell } from "@/components/cookbook-cross-sell";
@@ -166,7 +167,10 @@ export default async function RecipePage({
         >
           <ArrowLeft className="size-4" /> All recipes
         </Link>
-        <PrintButton />
+        <div className="flex flex-wrap items-center justify-end gap-3">
+          <SaveRecipeButton slug={recipe.slug} />
+          <PrintButton />
+        </div>
       </div>
 
       <header className="mt-6">

@@ -76,6 +76,11 @@ export default function PrivacyPage() {
           it. You can clear that last reply from the dashboard.
         </li>
         <li>
+          <strong className="text-foreground">Saved recipes.</strong> When
+          you save a recipe, we store that recipe with your account so you can
+          open it again on any device. Signing out does not delete the list.
+        </li>
+        <li>
           <strong className="text-foreground">Grocery lists.</strong> Custom
           lists you save (ingredients, chosen recipes, and what is already in
           the cart) are stored with your account so you can reopen them on
