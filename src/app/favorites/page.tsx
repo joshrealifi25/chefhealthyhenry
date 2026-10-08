@@ -57,24 +57,6 @@ function ItemCard({ item }: { item: FavoriteThing }) {
   const rel = item.isAffiliate ? "nofollow noopener noreferrer" : "noopener noreferrer";
   return (
     <article className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card">
-      {item.imageUrl ? (
-        // Images are admin-entered external URLs, so next/image cannot
-        // whitelist their hosts ahead of time.
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={item.imageUrl}
-          alt={item.name}
-          loading="lazy"
-          className="aspect-[4/3] w-full object-cover"
-        />
-      ) : (
-        <div
-          aria-hidden="true"
-          className="flex aspect-[4/3] w-full items-center justify-center bg-secondary/60 font-heading text-4xl text-muted-foreground/60"
-        >
-          {item.name.charAt(0).toUpperCase()}
-        </div>
-      )}
       <div className="flex flex-1 flex-col p-6">
         <LabelBadge label={item.label} />
         <h3 className="mt-3 font-heading text-xl font-semibold">{item.name}</h3>

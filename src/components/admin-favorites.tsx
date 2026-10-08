@@ -32,7 +32,6 @@ export interface FavoriteRow {
 interface Draft {
   name: string;
   category: FavoriteCategory;
-  imageUrl: string;
   linkUrl: string;
   isAffiliate: boolean;
   note: string;
@@ -46,7 +45,6 @@ interface Draft {
 const EMPTY: Draft = {
   name: "",
   category: "pantry-staples",
-  imageUrl: "",
   linkUrl: "",
   isAffiliate: false,
   note: "",
@@ -63,7 +61,6 @@ function toDraft(row: FavoriteRow): Draft {
     category: (FAVORITE_CATEGORIES.some((c) => c.value === row.category)
       ? row.category
       : "pantry-staples") as FavoriteCategory,
-    imageUrl: row.imageUrl ?? "",
     linkUrl: row.linkUrl,
     isAffiliate: row.isAffiliate,
     note: row.note,
@@ -81,7 +78,7 @@ function toBody(draft: Draft): Record<string, unknown> {
   return {
     name: draft.name,
     category: draft.category,
-    imageUrl: draft.imageUrl || null,
+    imageUrl: null,
     linkUrl: draft.linkUrl,
     isAffiliate: draft.isAffiliate,
     note: draft.note,
@@ -183,20 +180,6 @@ function Fields({
           placeholder="https://"
           value={draft.linkUrl}
           onChange={(e) => set("linkUrl", e.target.value)}
-          className={`mt-1 ${inputClass}`}
-        />
-      </div>
-
-      <div className="sm:col-span-2">
-        <label htmlFor={`${idPrefix}-image`} className={labelClass}>
-          Image URL (optional)
-        </label>
-        <input
-          id={`${idPrefix}-image`}
-          type="text"
-          placeholder="https:// or /images/..."
-          value={draft.imageUrl}
-          onChange={(e) => set("imageUrl", e.target.value)}
           className={`mt-1 ${inputClass}`}
         />
       </div>
@@ -429,24 +412,7 @@ export function AdminFavorites({ items }: { items: FavoriteRow[] }) {
                   </div>
                 </form>
               ) : (
-                <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
-                  {row.imageUrl ? (
-                    // Admin-entered external image hosts cannot be allowlisted for next/image.
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={row.imageUrl}
-                      alt=""
-                      className="size-20 shrink-0 rounded-xl object-cover"
-                    />
-                  ) : (
-                    <div
-                      aria-hidden="true"
-                      className="flex size-20 shrink-0 items-center justify-center rounded-xl bg-secondary/60 font-heading text-2xl text-muted-foreground/60"
-                    >
-                      {row.name.charAt(0).toUpperCase()}
-                    </div>
-                  )}
-                  <div className="min-w-0 flex-1">
+                <div className="min-w-0">
                     <div className="flex flex-wrap items-center gap-2">
                       <h3 className="font-heading text-lg font-semibold">
                         {row.name}
@@ -481,8 +447,7 @@ export function AdminFavorites({ items }: { items: FavoriteRow[] }) {
                     >
                       {row.linkUrl}
                     </a>
-                  </div>
-                  <div className="flex shrink-0 flex-wrap items-center gap-3 text-sm">
+                  <div className="mt-4 flex flex-wrap items-center gap-3 text-sm">
                     <button
                       type="button"
                       onClick={() => {
