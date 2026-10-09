@@ -29,8 +29,8 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/90 backdrop-blur-md print:hidden">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-2.5">
+      <div className="relative mx-auto flex h-16 max-w-6xl items-center justify-center gap-10 px-4 sm:px-6">
+        <Link href="/" className="absolute left-4 flex items-center gap-2.5 sm:left-6 lg:static">
           <Image
             src="/images/logo.png"
             alt="Healthy Henry logo"
@@ -153,7 +153,7 @@ export function SiteHeader() {
         </nav>
 
         <button
-          className="lg:hidden"
+          className="absolute right-4 sm:right-6 lg:hidden"
           onClick={() => setOpen(!open)}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
