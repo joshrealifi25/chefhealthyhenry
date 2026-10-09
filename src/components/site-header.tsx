@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 const exploreLinks = [
   { href: "/explore", label: "Explore" },
   { href: "/blog", label: "Journal" },
-  { href: "/favorites", label: "Favorites" },
+  { href: "/favorites", label: "Chef Henry's Favorite Things" },
 ];
 
 const membershipLinks = [
