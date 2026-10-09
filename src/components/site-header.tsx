@@ -13,6 +13,11 @@ const exploreLinks = [
   { href: "/favorites", label: "Favorites" },
 ];
 
+const membershipLinks = [
+  { href: "/membership", label: "Join" },
+  { href: "/members/login", label: "Sign In" },
+];
+
 const aboutLinks = [
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
@@ -22,9 +27,11 @@ export function SiteHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [exploreOpen, setExploreOpen] = useState(false);
+  const [membershipOpen, setMembershipOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
 
   const isExploreActive = exploreLinks.some((l) => pathname === l.href);
+  const isMembershipActive = membershipLinks.some((l) => pathname === l.href) || pathname.startsWith("/members");
   const isAboutActive = aboutLinks.some((l) => pathname === l.href);
 
   return (
@@ -93,19 +100,41 @@ export function SiteHeader() {
             )}
           </div>
 
-          {/* Membership */}
-          <Link
-            href="/membership"
-            aria-current={pathname === "/membership" ? "page" : undefined}
-            className={cn(
-              "text-sm transition-colors hover:text-primary",
-              pathname === "/membership" || pathname.startsWith("/members")
-                ? "font-medium text-primary"
-                : "text-muted-foreground"
-            )}
+          {/* Membership dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={() => setMembershipOpen(true)}
+            onMouseLeave={() => setMembershipOpen(false)}
           >
-            Membership
-          </Link>
+            <button
+              className={cn(
+                "flex items-center gap-1 text-sm transition-colors hover:text-primary",
+                isMembershipActive ? "font-medium text-primary" : "text-muted-foreground"
+              )}
+              aria-expanded={membershipOpen}
+            >
+              Membership
+              <ChevronDown className={cn("size-3.5 transition-transform", membershipOpen && "rotate-180")} />
+            </button>
+            {membershipOpen && (
+              <div className="absolute left-0 top-full pt-2">
+                <div className="min-w-[140px] rounded-xl border border-border bg-background shadow-md">
+                  {membershipLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className={cn(
+                        "block px-4 py-2.5 text-sm transition-colors hover:bg-secondary first:rounded-t-xl last:rounded-b-xl",
+                        pathname === link.href ? "font-medium text-primary" : "text-muted-foreground"
+                      )}
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
 
           {/* About dropdown */}
           <div
@@ -178,9 +207,12 @@ export function SiteHeader() {
               {link.label}
             </Link>
           ))}
-          <Link href="/membership" onClick={() => setOpen(false)} className="block py-3 text-sm font-medium">
-            Membership
-          </Link>
+          <p className="pb-1 pt-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Membership</p>
+          {membershipLinks.map((link) => (
+            <Link key={link.href} href={link.href} onClick={() => setOpen(false)} className="block py-2 pl-3 text-sm">
+              {link.label}
+            </Link>
+          ))}
           <p className="pb-1 pt-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">About</p>
           {aboutLinks.map((link) => (
             <Link key={link.href} href={link.href} onClick={() => setOpen(false)} className="block py-2 pl-3 text-sm">
