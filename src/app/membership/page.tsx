@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 interface TierDef {
   name: string;
   price: string;
+  foundingPrice?: string;
+  foundingCode?: string;
   cadence: string;
   annual?: string;
   annualHref?: string;
@@ -25,6 +27,8 @@ const TIERS: TierDef[] = [
   {
     name: "Protein Flip™ Kitchen",
     price: "$12",
+    foundingPrice: "$10",
+    foundingCode: "FOUNDING100K",
     cadence: "per month",
     annual: "or $120/year ($10 a month)",
     tagline: "Help me make better cooking decisions.",
@@ -44,6 +48,8 @@ const TIERS: TierDef[] = [
   {
     name: "Protein Flip™ Community",
     price: "$29",
+    foundingPrice: "$25",
+    foundingCode: "FOUNDING100C",
     cadence: "per month",
     tagline: "Help me practice, participate, and learn with others.",
     features: [
@@ -119,7 +125,16 @@ export default function MembershipPage() {
         </p>
       </div>
 
-      <div className="mt-14 grid gap-6 lg:grid-cols-3" id="join">
+      <div className="mx-auto mt-10 max-w-2xl rounded-xl border border-primary/30 bg-primary/5 px-6 py-4 text-center">
+        <p className="text-sm font-medium text-primary">
+          Founding member offer: first 100 members lock in a reduced rate for life.
+        </p>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Use the code on your tier at checkout. Once 100 members join, the rate returns to full price.
+        </p>
+      </div>
+
+      <div className="mt-8 grid gap-6 lg:grid-cols-3" id="join">
         {TIERS.map((tier) => (
           <section
             key={tier.name}
@@ -142,13 +157,38 @@ export default function MembershipPage() {
               &ldquo;{tier.tagline}&rdquo;
             </p>
             <p className="mt-5">
-              <span className="font-heading text-4xl font-semibold">
-                {tier.price}
-              </span>
-              <span className="ml-1 text-sm text-muted-foreground">
-                {tier.cadence}
-              </span>
+              {tier.foundingPrice ? (
+                <span className="flex items-baseline gap-2">
+                  <span className="font-heading text-4xl font-semibold">
+                    {tier.foundingPrice}
+                  </span>
+                  <span className="text-sm text-muted-foreground line-through">
+                    {tier.price}
+                  </span>
+                  <span className="text-sm text-muted-foreground">
+                    {tier.cadence}
+                  </span>
+                </span>
+              ) : (
+                <span className="flex items-baseline gap-2">
+                  <span className="font-heading text-4xl font-semibold">
+                    {tier.price}
+                  </span>
+                  <span className="ml-1 text-sm text-muted-foreground">
+                    {tier.cadence}
+                  </span>
+                </span>
+              )}
             </p>
+            {tier.foundingCode && (
+              <p className="mt-2 text-xs text-muted-foreground">
+                Use code{" "}
+                <span className="font-mono font-semibold tracking-wide text-primary">
+                  {tier.foundingCode}
+                </span>{" "}
+                at checkout
+              </p>
+            )}
             {tier.annual &&
               (tier.annualHref ? (
                 <p className="mt-1 text-sm text-muted-foreground">
@@ -190,8 +230,8 @@ export default function MembershipPage() {
 
       <div className="mx-auto mt-6 max-w-xl space-y-3 text-center">
         <p className="text-sm text-muted-foreground">
-          Founding members who join in launch week lock in the annual price for
-          life. Cancel anytime. Access runs through the period you paid for.
+          Founding member rates are locked in for life as long as your membership stays active.
+          Cancel anytime. Access runs through the period you paid for.
         </p>
         <LegalConsent preface="By joining, you agree to our" />
       </div>
