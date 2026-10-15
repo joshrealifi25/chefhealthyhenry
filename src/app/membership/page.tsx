@@ -125,6 +125,51 @@ export default function MembershipPage() {
         </p>
       </div>
 
+      <div className="mx-auto mt-10 max-w-2xl text-center">
+        <p className="text-base leading-relaxed text-muted-foreground">
+          Every month you get a new lesson, a growing library of kitchen guides, and
+          access to Sous, a cooking assistant built entirely around the Protein
+          Flip™ Method. Ask it anything. Build your grocery list around the recipes
+          you want to cook. Show up in the kitchen with more confidence every week.
+        </p>
+      </div>
+
+      <div className="mx-auto mt-12 max-w-3xl">
+        <div className="grid gap-8 text-center sm:grid-cols-3">
+          <div className="flex flex-col items-center gap-3">
+            <span className="text-3xl">🔪</span>
+            <h3 className="font-heading font-semibold">Learn</h3>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              A new lesson every month plus a growing library of kitchen guides built
+              around the Protein Flip™ Method.
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-3">
+            <span className="text-3xl">💬</span>
+            <h3 className="font-heading font-semibold">Ask</h3>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              Sous answers your cooking questions: how to shop smarter, build a
+              plate, and cook with what you have, grounded in this kitchen.
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-3">
+            <span className="text-3xl">🛒</span>
+            <h3 className="font-heading font-semibold">Plan</h3>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              Build a grocery list around the recipes you want to cook. See which
+              ingredients overlap so you buy less and waste less.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto mt-10 max-w-xl text-center">
+        <p className="text-sm text-muted-foreground">
+          Cancel anytime. No contracts. Your recipes stay free regardless of whether
+          you join.
+        </p>
+      </div>
+
       <div className="mx-auto mt-10 max-w-2xl rounded-xl border border-primary/30 bg-primary/5 px-6 py-4 text-center">
         <p className="text-sm font-medium text-primary">
           Founding member offer: first 100 members lock in a reduced rate for life.
