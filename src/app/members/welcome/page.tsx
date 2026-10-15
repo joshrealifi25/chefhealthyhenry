@@ -3,6 +3,10 @@ import Link from "next/link";
 import { getMember } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import { MembershipSignupConversion } from "@/components/membership-signup-conversion";
+import {
+  isCheckoutSessionId,
+  membershipSignupPurchase,
+} from "@/lib/membership-conversion";
 
 export const metadata: Metadata = {
   title: "Welcome",
@@ -16,15 +20,21 @@ export default async function WelcomePage({
 }: {
   searchParams: Promise<{ session_id?: string }>;
 }) {
-  const { session_id: sessionId } = await searchParams;
+  const { session_id: rawSessionId } = await searchParams;
+  const sessionId = isCheckoutSessionId(rawSessionId) ? rawSessionId : undefined;
   const member = await getMember();
+  const purchase = sessionId ? await membershipSignupPurchase(sessionId) : null;
   // A return visit with no checkout session is not a new signup. A paid
   // checkout always arrives with session_id, and the conversion has to
   // render here before we send an already-active member onward.
   if (member?.tier && !sessionId) redirect("/members");
 
-  const conversion = sessionId ? (
-    <MembershipSignupConversion transactionId={sessionId} />
+  const conversion = purchase ? (
+    <MembershipSignupConversion
+      transactionId={purchase.transactionId}
+      value={purchase.value}
+      currency={purchase.currency}
+    />
   ) : null;
 
   if (member) {
