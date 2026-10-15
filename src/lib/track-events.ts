@@ -25,12 +25,19 @@ export function trackLead(): void {
 export const MEMBERSHIP_SIGNUP_SEND_TO =
   "AW-18475081271/jRWxCJu4pJ4dELe8zelE";
 
-export function trackMembershipSignup(transactionId: string): boolean {
+export function trackMembershipSignup(
+  transactionId: string,
+  value: number,
+  currency: string,
+): boolean {
   if (typeof window === "undefined" || !window.gtag || !transactionId) return false;
+  if (!Number.isFinite(value) || value < 0 || !currency) return false;
   try {
     window.gtag("event", "conversion", {
       send_to: MEMBERSHIP_SIGNUP_SEND_TO,
       transaction_id: transactionId,
+      value,
+      currency,
     });
     return true;
   } catch {

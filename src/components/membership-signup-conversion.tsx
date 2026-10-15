@@ -9,8 +9,12 @@ import { trackMembershipSignup } from "@/lib/track-events";
  */
 export function MembershipSignupConversion({
   transactionId,
+  value,
+  currency,
 }: {
   transactionId: string;
+  value: number;
+  currency: string;
 }) {
   const fired = useRef(false);
 
@@ -21,7 +25,7 @@ export function MembershipSignupConversion({
 
     const send = () => {
       if (fired.current) return;
-      if (trackMembershipSignup(transactionId)) {
+      if (trackMembershipSignup(transactionId, value, currency)) {
         fired.current = true;
         return;
       }
@@ -31,7 +35,7 @@ export function MembershipSignupConversion({
 
     send();
     return () => window.clearTimeout(timer);
-  }, [transactionId]);
+  }, [transactionId, value, currency]);
 
   return null;
 }
