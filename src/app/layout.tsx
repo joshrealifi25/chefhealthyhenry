@@ -38,11 +38,11 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  // Both ad tags are off until their env vars are set (see .env.example),
-  // so this ships inert: no pixel, no third-party script, until a real
-  // Meta Pixel ID or Google Ads conversion ID is added in Vercel.
+  // The Meta pixel stays off until NEXT_PUBLIC_META_PIXEL_ID is set.
+  // The Google Ads tag uses the account ID below unless Vercel overrides it.
   const metaPixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID;
-  const googleAdsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
+  const googleAdsId =
+    process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "AW-18475081271";
 
   return (
     <html lang="en" className={`${display.variable} ${body.variable} h-full antialiased`}>
