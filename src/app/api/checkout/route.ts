@@ -48,7 +48,7 @@ export async function GET(req: NextRequest) {
     mode: "subscription",
     line_items: [{ price: priceId, quantity: 1 }],
     allow_promotion_codes: true,
-    success_url: `${baseUrl}/members/welcome`,
+    success_url: `${baseUrl}/members/welcome?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${baseUrl}/membership`,
     ...(customerId
       ? { customer: customerId }

@@ -21,6 +21,24 @@ export function trackLead(): void {
   }
 }
 
+/** Google Ads "Membership Signup" conversion. */
+export const MEMBERSHIP_SIGNUP_SEND_TO =
+  "AW-18475081271/jRWxCJu4pJ4dELe8zelE";
+
+export function trackMembershipSignup(transactionId: string): boolean {
+  if (typeof window === "undefined" || !window.gtag || !transactionId) return false;
+  try {
+    window.gtag("event", "conversion", {
+      send_to: MEMBERSHIP_SIGNUP_SEND_TO,
+      transaction_id: transactionId,
+    });
+    return true;
+  } catch {
+    /* ad blockers routinely throw here; never break the page for it */
+    return false;
+  }
+}
+
 export function trackPurchase(value?: number, currency = "USD"): void {
   if (typeof window === "undefined") return;
   try {
