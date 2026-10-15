@@ -127,7 +127,7 @@ export default function MembershipPage() {
 
       <div className="mx-auto mt-10 max-w-2xl rounded-xl border border-primary/30 bg-primary/5 px-6 py-4 text-center">
         <p className="text-sm font-medium text-primary">
-          Founding member offer — first 100 members lock in a reduced rate for life.
+          Founding member offer: first 100 members lock in a reduced rate for life.
         </p>
         <p className="mt-1 text-sm text-muted-foreground">
           Use the code on your tier at checkout. Once 100 members join, the rate returns to full price.
