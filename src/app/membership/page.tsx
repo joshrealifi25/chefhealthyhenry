@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { LegalConsent } from "@/components/legal-consent";
 
@@ -12,7 +13,6 @@ interface TierDef {
   name: string;
   price: string;
   foundingPrice?: string;
-  foundingCode?: string;
   cadence: string;
   annual?: string;
   annualHref?: string;
@@ -28,16 +28,14 @@ const TIERS: TierDef[] = [
     name: "Protein Flip™ Kitchen",
     price: "$12",
     foundingPrice: "$10",
-    foundingCode: "FOUNDING100K",
     cadence: "per month",
     annual: "or $120/year ($10 a month)",
     tagline: "Help me make better cooking decisions.",
     features: [
       "Sous, your Protein Flip™ cooking assistant, unlimited questions",
-      "One Member Application Lesson every month",
-      "The growing lesson library and Kitchen Guides",
-      "Chef Henry curated grocery combinations (unlimited)",
-      "2 custom grocery-list builds per month",
+      "A new cooking lesson every month, added to a library you keep access to",
+      "Browse Chef Henry's ingredient pairings anytime to build better plates",
+      "Build 2 shopping lists a month around the recipes you want to cook",
     ],
     cta: {
       label: "Join Protein Flip™ Kitchen",
@@ -49,15 +47,14 @@ const TIERS: TierDef[] = [
     name: "Protein Flip™ Community",
     price: "$29",
     foundingPrice: "$25",
-    foundingCode: "FOUNDING100C",
     cadence: "per month",
     tagline: "Help me practice, participate, and learn with others.",
     features: [
       "Everything in Protein Flip™ Kitchen",
-      "Unlimited custom grocery-list builds",
+      "Build as many shopping lists as you need, any time",
       "The private Protein Flip™ community",
       "Monthly Recipe Makeover: submit a dish you love, watch Chef Henry rethink it",
-      "This Season's Featured Ingredient, every other month",
+      "Every other month, a deep dive into one ingredient: how to buy it, cook it, and flip it",
     ],
     cta: {
       label: "Join Protein Flip™ Community",
@@ -123,6 +120,42 @@ export default function MembershipPage() {
           judgment behind them: how to adapt, substitute, and build satisfying
           meals with the Protein Flip™ Method.
         </p>
+        <div className="mt-8 flex justify-center">
+          <a
+            href="#join"
+            className="rounded-full bg-primary px-8 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+          >
+            Become a Founding Member
+          </a>
+        </div>
+      </div>
+
+      <div className="mx-auto mt-14 max-w-2xl">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-8">
+          <Image
+            src="/images/henry-portrait.png"
+            alt="Chef Henry Baker"
+            width={192}
+            height={192}
+            className="h-24 w-24 shrink-0 rounded-full object-cover object-top"
+          />
+          <div>
+            <h2 className="font-heading text-xl font-semibold">Henry Baker</h2>
+            <p className="mt-3 leading-relaxed text-muted-foreground">
+              I am Henry Baker, a chef and the creator of the Protein Flip™ Method.
+              I built this platform because I kept seeing the same problem: people
+              who wanted to eat better but felt like doing that meant giving up the
+              food they actually love.
+            </p>
+            <p className="mt-3 leading-relaxed text-muted-foreground">
+              The Protein Flip™ is not a diet. It is a way of thinking about a plate
+              where meat, vegetables, beans, grains, and other ingredients each pull
+              their weight in protein, fiber, flavor, and texture. You end up with
+              meals that are more satisfying, more nutritious, and still worth
+              sitting down for.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="mx-auto mt-10 max-w-2xl text-center">
@@ -148,7 +181,7 @@ export default function MembershipPage() {
             <span className="text-3xl">💬</span>
             <h3 className="font-heading font-semibold">Ask</h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Sous answers your cooking questions: how to shop smarter, build a
+              Sous answers your cooking questions, how to shop smarter, build a
               plate, and cook with what you have, grounded in this kitchen.
             </p>
           </div>
@@ -163,10 +196,23 @@ export default function MembershipPage() {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 max-w-xl text-center">
+      <div className="mx-auto mt-10 max-w-xl space-y-2 text-center">
         <p className="text-sm text-muted-foreground">
           Cancel anytime. No contracts. Your recipes stay free regardless of whether
           you join.
+        </p>
+        <p className="text-sm text-muted-foreground">
+          7-day refund guarantee.
+        </p>
+      </div>
+
+      <div className="mx-auto mt-8 max-w-xl text-center">
+        <p className="text-sm text-muted-foreground">
+          New to the Protein Flip™ Method?{" "}
+          <Link href="/cookbook" className="underline underline-offset-4 hover:text-primary">
+            It starts with the cookbook.
+          </Link>{" "}
+          Membership is where you put it to work every week.
         </p>
       </div>
 
@@ -175,7 +221,7 @@ export default function MembershipPage() {
           Founding member offer: first 100 members lock in a reduced rate for life.
         </p>
         <p className="mt-1 text-sm text-muted-foreground">
-          Use the code on your tier at checkout. Once 100 members join, the rate returns to full price.
+          The founding price is applied automatically at checkout. Once 100 members join, the rate returns to full price.
         </p>
       </div>
 
@@ -225,13 +271,9 @@ export default function MembershipPage() {
                 </span>
               )}
             </p>
-            {tier.foundingCode && (
+            {tier.foundingPrice && (
               <p className="mt-2 text-xs text-muted-foreground">
-                Use code{" "}
-                <span className="font-mono font-semibold tracking-wide text-primary">
-                  {tier.foundingCode}
-                </span>{" "}
-                at checkout
+                Founding price applied automatically at checkout
               </p>
             )}
             {tier.annual &&
@@ -258,6 +300,14 @@ export default function MembershipPage() {
                   {f}
                 </li>
               ))}
+              {tier.foundingPrice && (
+                <li className="flex gap-2.5">
+                  <span aria-hidden="true" className="mt-0.5 text-primary">
+                    +
+                  </span>
+                  Add the digital cookbook for $20 (regularly $27.99)
+                </li>
+              )}
             </ul>
             <Link
               href={tier.cta.href}

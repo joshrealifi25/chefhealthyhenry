@@ -19,6 +19,12 @@ export const PRICE_TO_PRODUCT: Record<string, DigitalProduct> = {
     name: "The Protein Flip™ Method and Cookbook, Deluxe Edition",
     fileName: "The Protein Flip Method and Cookbook - Deluxe Edition.pdf",
   },
+  // $20 membership-checkout add-on. Same deluxe PDF as the $27.99 price.
+  price_1URK37LtGtU7n5docwMPGVpx: {
+    pathname: "cookbooks/protein-flip-deluxe.pdf",
+    name: "The Protein Flip™ Method and Cookbook, Deluxe Edition",
+    fileName: "The Protein Flip Method and Cookbook - Deluxe Edition.pdf",
+  },
   price_1TkWXkLtGtU7n5do1gqGwzvb: {
     pathname: "cookbooks/glp-1-bariatric-success-guide.pdf",
     name: "GLP-1 & Bariatric Success Guide",
