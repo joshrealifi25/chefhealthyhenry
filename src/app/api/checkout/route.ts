@@ -17,7 +17,6 @@ const PLAN_TO_PRICE_ENV: Record<string, string | undefined> = {
 // the discount from applying to customers who have any prior Stripe history.
 const FOUNDING_COUPON: Record<string, string> = {
   kitchen_monthly: "GHa8ZBqH",
-  kitchen_annual: "GHa8ZBqH",
   community_monthly: "Elcp83dU",
 };
 
