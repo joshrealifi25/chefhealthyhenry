@@ -12,37 +12,17 @@ const PLAN_TO_PRICE_ENV: Record<string, string | undefined> = {
   community_monthly: process.env.STRIPE_PRICE_COMMUNITY_MONTHLY,
 };
 
-const FOUNDING_CODE: Record<string, string> = {
-  kitchen_monthly: "FOUNDING100K",
-  kitchen_annual: "FOUNDING100K",
-  community_monthly: "FOUNDING100C",
+// Use the coupon IDs directly (not promotion code IDs) to avoid the
+// first_time_transaction restriction on the promo codes, which blocks
+// the discount from applying to customers who have any prior Stripe history.
+const FOUNDING_COUPON: Record<string, string> = {
+  kitchen_monthly: "GHa8ZBqH",
+  kitchen_annual: "GHa8ZBqH",
+  community_monthly: "Elcp83dU",
 };
 
 /** $20 digital deluxe cookbook, offered as an optional item at membership checkout. */
 const DIGITAL_COOKBOOK_PRICE = "price_1URK37LtGtU7n5docwMPGVpx";
-
-async function foundingDiscount(
-  stripe: Stripe,
-  code: string,
-): Promise<Stripe.Checkout.SessionCreateParams.Discount | undefined> {
-  try {
-    const promos = await stripe.promotionCodes.list({
-      code,
-      active: true,
-      limit: 1,
-    });
-    const promoId = promos.data[0]?.id;
-    if (promoId) return { promotion_code: promoId };
-
-    const coupon = await stripe.coupons.retrieve(code);
-    if (!coupon.valid) return undefined;
-    return { coupon: coupon.id };
-  } catch (err) {
-    console.error(`Checkout: founding code ${code} could not be applied`);
-    console.error(err instanceof Error ? err.message : err);
-    return undefined;
-  }
-}
 
 async function digitalCookbookAddon(
   stripe: Stripe,
@@ -90,11 +70,12 @@ export async function GET(req: NextRequest) {
   }
 
   const stripe = new Stripe(apiKey);
-  const foundingCode = FOUNDING_CODE[plan];
-  const [discount, cookbookAddon] = await Promise.all([
-    foundingCode ? foundingDiscount(stripe, foundingCode) : Promise.resolve(undefined),
-    digitalCookbookAddon(stripe),
-  ]);
+  const couponId = FOUNDING_COUPON[plan];
+  const cookbookAddon = await digitalCookbookAddon(stripe);
+
+  const discount: Stripe.Checkout.SessionCreateParams.Discount | undefined = couponId
+    ? { coupon: couponId }
+    : undefined;
 
   const params: Stripe.Checkout.SessionCreateParams = {
     mode: "subscription",
