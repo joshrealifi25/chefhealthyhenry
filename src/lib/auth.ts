@@ -56,13 +56,16 @@ export function verifyLoginToken(token: string): string | null {
   }
 }
 
-/** Creates (or finds) the user for an email and opens a session for them. */
-export async function createSession(email: string): Promise<string> {
+/** Creates (or finds) the user for an email and opens a session for them.
+ *  Returns the session ID and whether this is a brand-new account. */
+export async function createSession(email: string): Promise<{ sessionId: string; isNew: boolean }> {
   const normalized = email.toLowerCase();
   const [existing] = await db()
     .select()
     .from(users)
     .where(eq(users.email, normalized));
+
+  const isNew = !existing;
   const user =
     existing ??
     (await db().insert(users).values({ email: normalized }).returning())[0];
@@ -73,7 +76,7 @@ export async function createSession(email: string): Promise<string> {
     userId: user.id,
     expiresAt: new Date(Date.now() + SESSION_TTL_MS),
   });
-  return sessionId;
+  return { sessionId, isNew };
 }
 
 export async function setSessionCookie(sessionId: string): Promise<void> {
