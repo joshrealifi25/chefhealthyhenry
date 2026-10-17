@@ -18,8 +18,6 @@ export async function GET(req: NextRequest) {
       ? (process.env.NEXT_PUBLIC_SITE_URL ?? req.nextUrl.origin)
       : req.nextUrl.origin;
 
-  // Only a path on this site is accepted, so the link cannot be doctored to
-  // redirect a member somewhere else.
   const next = safeNextPath(req.nextUrl.searchParams.get("next"));
 
   if (!email) {
@@ -29,7 +27,11 @@ export async function GET(req: NextRequest) {
     );
   }
 
-  const sessionId = await createSession(email);
+  const { sessionId, isNew } = await createSession(email);
   await setSessionCookie(sessionId);
-  return NextResponse.redirect(`${baseUrl}${next ?? DEFAULT_MEMBER_LANDING}`);
+
+  // New users go to onboarding to enter their name.
+  // Returning users go to their intended destination or the dashboard.
+  const destination = next ?? (isNew ? "/members/onboarding" : DEFAULT_MEMBER_LANDING);
+  return NextResponse.redirect(`${baseUrl}${destination}`);
 }
