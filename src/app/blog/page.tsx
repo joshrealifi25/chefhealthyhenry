@@ -11,6 +11,9 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
+  const essays = posts.filter((post) => post.category !== "Kitchen Questions");
+  const questions = posts.filter((post) => post.category === "Kitchen Questions");
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
       <div className="max-w-2xl">
@@ -34,7 +37,7 @@ export default function BlogPage() {
         </div>
       </div>
       <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {posts.map((post) => (
+        {[...essays, ...questions].map((post) => (
           <PostCard key={post.slug} post={post} />
         ))}
       </div>
