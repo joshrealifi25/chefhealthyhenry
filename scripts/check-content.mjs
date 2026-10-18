@@ -40,6 +40,7 @@ const COLLECTIONS = [
   { file: "src/data/explore.json", label: "explore article", urlPrefix: "/explore/article" },
   { file: "src/data/lessons.json", label: "lesson", urlPrefix: "/members/library/lessons" },
   { file: "src/data/guides.json", label: "guide", urlPrefix: "/members/library/guides" },
+  { file: "src/data/kitchen-guides.json", label: "kitchen guide", urlPrefix: "/kitchen" },
   { file: "src/data/featured-ingredients.json", label: "featured ingredient", urlPrefix: "/members/featured" },
 ];
 
