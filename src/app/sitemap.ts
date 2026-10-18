@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { recipes } from "@/lib/recipes";
 import { posts, postCategories, isoDate } from "@/lib/posts";
 import { exploreCards, hasArticle, EXPLORE_COLLECTIONS } from "@/lib/explore";
+import { kitchenGuides } from "@/lib/kitchen-guides";
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -37,5 +38,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...recipePages, ...postPages, ...explorePages];
+  const kitchenPages = [
+    {
+      url: `${SITE_URL}/kitchen`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/kitchen/kitchen-questions`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    },
+    ...kitchenGuides.map((g) => ({
+      url: `${SITE_URL}/kitchen/${g.slug}`,
+      lastModified: new Date(g.date),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+  ];
+
+  return [...staticPages, ...recipePages, ...postPages, ...explorePages, ...kitchenPages];
 }

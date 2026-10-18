@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 const exploreLinks = [
   { href: "/explore", label: "Explore" },
   { href: "/blog", label: "Journal" },
+  { href: "/kitchen", label: "In the Kitchen" },
   { href: "/favorites", label: "Chef Henry's Favorite Things" },
 ];
 
@@ -30,7 +31,8 @@ export function SiteHeader() {
   const [membershipOpen, setMembershipOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
 
-  const isExploreActive = exploreLinks.some((l) => pathname === l.href);
+  const isExploreActive =
+    exploreLinks.some((l) => pathname === l.href) || pathname.startsWith("/kitchen");
   const isMembershipActive = membershipLinks.some((l) => pathname === l.href) || pathname.startsWith("/members");
   const isAboutActive = aboutLinks.some((l) => pathname === l.href);
 
