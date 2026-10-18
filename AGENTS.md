@@ -162,6 +162,9 @@ Two things CI cannot check, which are on you:
 
 - `docs/marketing-plan.md`: funnel, priorities, email rules. Read it before
   any marketing, copy, or growth work.
+- `docs/growth-plan.md`: paid ads, podcasts, creator buys, and the launch
+  sequence. Read it before any paid acquisition work. Nothing in it has been
+  run yet, so its costs are estimates to test, not forecasts.
 - `docs/for-henry.md`: the plain-English guide to shipping a change.
 - `docs/emails/`: the welcome sequence, sent via Resend Broadcasts.
 
