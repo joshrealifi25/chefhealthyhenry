@@ -1,10 +1,56 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Search } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { DIETARY_TAGS, type Recipe } from "@/lib/recipes";
 import { RecipeCard } from "@/components/recipe-card";
+
+const FILTERS_KEY = "chh-recipe-filters";
+
+type RecipeFilters = {
+  category: string;
+  query: string;
+  proteinFlipOnly: boolean;
+  /** Multiple dietary pills can be active at once; a recipe must match all
+   * of them (AND logic), same as the Grocery Combo Builder's filters. */
+  activeDietTags: string[];
+};
+
+const EMPTY_FILTERS: RecipeFilters = {
+  category: "All",
+  query: "",
+  proteinFlipOnly: false,
+  activeDietTags: [],
+};
+
+function readFilters(categories: string[]): RecipeFilters {
+  try {
+    const raw = sessionStorage.getItem(FILTERS_KEY);
+    if (!raw) return EMPTY_FILTERS;
+    const parsed = JSON.parse(raw) as Partial<RecipeFilters>;
+    const allowed = new Set(DIETARY_TAGS.map((tag) => tag.value));
+    return {
+      category:
+        typeof parsed.category === "string" && categories.includes(parsed.category)
+          ? parsed.category
+          : "All",
+      query: typeof parsed.query === "string" ? parsed.query : "",
+      proteinFlipOnly: parsed.proteinFlipOnly === true,
+      activeDietTags: Array.isArray(parsed.activeDietTags)
+        ? parsed.activeDietTags.filter(
+            (tag): tag is string => typeof tag === "string" && allowed.has(tag)
+          )
+        : [],
+    };
+  } catch {
+    return EMPTY_FILTERS;
+  }
+}
+
+function writeFilters(filters: RecipeFilters) {
+  sessionStorage.setItem(FILTERS_KEY, JSON.stringify(filters));
+}
 
 export function RecipesGrid({
   recipes,
@@ -13,17 +59,29 @@ export function RecipesGrid({
   recipes: Recipe[];
   categories: string[];
 }) {
-  const [category, setCategory] = useState("All");
-  const [query, setQuery] = useState("");
-  const [proteinFlipOnly, setProteinFlipOnly] = useState(false);
-  /** Multiple dietary pills can be active at once; a recipe must match all
-   * of them (AND logic), same as the Grocery Combo Builder's filters. */
-  const [activeDietTags, setActiveDietTags] = useState<string[]>([]);
+  const [filters, setFilters] = useState<RecipeFilters>(EMPTY_FILTERS);
+
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => {
+      setFilters(readFilters(categories));
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [categories]);
+
+  function update(next: RecipeFilters) {
+    setFilters(next);
+    writeFilters(next);
+  }
+
+  const { category, query, proteinFlipOnly, activeDietTags } = filters;
 
   function toggleDietTag(tag: string) {
-    setActiveDietTags((tags) =>
-      tags.includes(tag) ? tags.filter((t) => t !== tag) : [...tags, tag]
-    );
+    update({
+      ...filters,
+      activeDietTags: activeDietTags.includes(tag)
+        ? activeDietTags.filter((current) => current !== tag)
+        : [...activeDietTags, tag],
+    });
   }
 
   const filtered = recipes.filter((r) => {
@@ -44,7 +102,7 @@ export function RecipesGrid({
           {categories.map((c) => (
             <button
               key={c}
-              onClick={() => setCategory(c)}
+              onClick={() => update({ ...filters, category: c })}
               aria-pressed={category === c}
               className={cn(
                 "rounded-full border px-4 py-1.5 text-sm transition-colors",
@@ -57,7 +115,7 @@ export function RecipesGrid({
             </button>
           ))}
           <button
-            onClick={() => setProteinFlipOnly((v) => !v)}
+            onClick={() => update({ ...filters, proteinFlipOnly: !proteinFlipOnly })}
             aria-pressed={proteinFlipOnly}
             className={cn(
               "rounded-full border px-4 py-1.5 text-sm transition-colors whitespace-nowrap",
@@ -96,7 +154,7 @@ export function RecipesGrid({
             id="recipe-search"
             type="search"
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => update({ ...filters, query: e.target.value })}
             placeholder="Search recipes…"
             className="w-full rounded-full border border-input bg-card py-2 pl-9 pr-4 text-sm outline-none focus:ring-2 focus:ring-ring/40"
           />
