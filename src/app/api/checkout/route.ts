@@ -12,14 +12,6 @@ const PLAN_TO_PRICE_ENV: Record<string, string | undefined> = {
   community_monthly: process.env.STRIPE_PRICE_COMMUNITY_MONTHLY,
 };
 
-// Use the coupon IDs directly (not promotion code IDs) to avoid the
-// first_time_transaction restriction on the promo codes, which blocks
-// the discount from applying to customers who have any prior Stripe history.
-const FOUNDING_COUPON: Record<string, string> = {
-  kitchen_monthly: "GHa8ZBqH",
-  community_monthly: "Elcp83dU",
-};
-
 /** $20 digital deluxe cookbook, offered as an optional item at membership checkout. */
 const DIGITAL_COOKBOOK_PRICE = "price_1URK37LtGtU7n5docwMPGVpx";
 
@@ -69,12 +61,7 @@ export async function GET(req: NextRequest) {
   }
 
   const stripe = new Stripe(apiKey);
-  const couponId = FOUNDING_COUPON[plan];
   const cookbookAddon = await digitalCookbookAddon(stripe);
-
-  const discount: Stripe.Checkout.SessionCreateParams.Discount | undefined = couponId
-    ? { coupon: couponId }
-    : undefined;
 
   const params: Stripe.Checkout.SessionCreateParams = {
     mode: "subscription",
@@ -89,21 +76,10 @@ export async function GET(req: NextRequest) {
         : {}),
   };
 
-  let session: Stripe.Checkout.Session;
-  try {
-    session = await stripe.checkout.sessions.create({
-      ...params,
-      ...(discount ? { discounts: [discount] } : { allow_promotion_codes: true }),
-    });
-  } catch (err) {
-    if (!discount) throw err;
-    console.error("Checkout: founding discount rejected, opening checkout without it");
-    console.error(err instanceof Error ? err.message : err);
-    session = await stripe.checkout.sessions.create({
-      ...params,
-      allow_promotion_codes: true,
-    });
-  }
+  const session = await stripe.checkout.sessions.create({
+    ...params,
+    allow_promotion_codes: true,
+  });
 
   if (!session.url) {
     console.error("Checkout: session has no URL");
