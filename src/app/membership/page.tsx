@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { LegalConsent } from "@/components/legal-consent";
@@ -12,7 +13,6 @@ export const metadata: Metadata = {
 interface TierDef {
   name: string;
   price: string;
-  foundingPrice?: string;
   cadence: string;
   annual?: string;
   annualHref?: string;
@@ -27,7 +27,6 @@ const TIERS: TierDef[] = [
   {
     name: "Protein Flip™ Kitchen",
     price: "$12",
-    foundingPrice: "$10",
     cadence: "per month",
     annual: "or $120/year ($10 a month)",
     tagline: "Help me make better cooking decisions.",
@@ -46,7 +45,6 @@ const TIERS: TierDef[] = [
   {
     name: "Protein Flip™ Community",
     price: "$29",
-    foundingPrice: "$25",
     cadence: "per month",
     tagline: "Help me practice, participate, and learn with others.",
     features: [
@@ -81,7 +79,7 @@ const TIERS: TierDef[] = [
   },
 ];
 
-const FAQS: { q: string; a: string }[] = [
+const FAQS: { q: string; a: ReactNode }[] = [
   {
     q: "Aren't the recipes free?",
     a: "Yes, and they stay free. The membership is not a recipe paywall. It teaches you what to do with recipes: how to adapt them, substitute with confidence, and make better decisions in your own kitchen.",
@@ -95,8 +93,16 @@ const FAQS: { q: string; a: string }[] = [
     a: "Yes. Membership renews monthly until you cancel, and you keep access through the end of the period you paid for. No cancellation fees, no hoops.",
   },
   {
-    q: "Can I upgrade or downgrade?",
-    a: "Yes, anytime. Changes take effect right away and billing adjusts automatically.",
+    q: "Can I change my plan?",
+    a: (
+      <>
+        Yes, anytime. Changes take effect right away and billing adjusts automatically. Founding members: to upgrade your plan, contact us at{" "}
+        <a href="mailto:henry@ChefHealthyHenry.com" className="underline underline-offset-4 hover:text-primary">
+          henry@ChefHealthyHenry.com
+        </a>{" "}
+        and we&apos;ll apply your founding rate to your new tier.
+      </>
+    ),
   },
   {
     q: "Is this medical or nutrition advice?",
@@ -221,7 +227,9 @@ export default function MembershipPage() {
           Founding member offer: first 100 members lock in a reduced rate for life.
         </p>
         <p className="mt-1 text-sm text-muted-foreground">
-          The founding price is applied automatically at checkout. Once 100 members join, the rate returns to full price.
+          Kitchen members: use code <strong>FOUNDING100K</strong> at checkout for $10/month for life.
+          Community members: use code <strong>FOUNDING100C</strong> at checkout for $25/month for life.
+          Once 100 members join, the codes expire.
         </p>
       </div>
 
@@ -248,34 +256,15 @@ export default function MembershipPage() {
               &ldquo;{tier.tagline}&rdquo;
             </p>
             <p className="mt-5">
-              {tier.foundingPrice ? (
-                <span className="flex items-baseline gap-2">
-                  <span className="font-heading text-4xl font-semibold">
-                    {tier.foundingPrice}
-                  </span>
-                  <span className="text-sm text-muted-foreground line-through">
-                    {tier.price}
-                  </span>
-                  <span className="text-sm text-muted-foreground">
-                    {tier.cadence}
-                  </span>
+              <span className="flex items-baseline gap-2">
+                <span className="font-heading text-4xl font-semibold">
+                  {tier.price}
                 </span>
-              ) : (
-                <span className="flex items-baseline gap-2">
-                  <span className="font-heading text-4xl font-semibold">
-                    {tier.price}
-                  </span>
-                  <span className="ml-1 text-sm text-muted-foreground">
-                    {tier.cadence}
-                  </span>
+                <span className="ml-1 text-sm text-muted-foreground">
+                  {tier.cadence}
                 </span>
-              )}
+              </span>
             </p>
-            {tier.foundingPrice && (
-              <p className="mt-2 text-xs text-muted-foreground">
-                Founding price applied automatically at checkout
-              </p>
-            )}
             {tier.annual &&
               (tier.annualHref ? (
                 <p className="mt-1 text-sm text-muted-foreground">
@@ -300,14 +289,7 @@ export default function MembershipPage() {
                   {f}
                 </li>
               ))}
-              {tier.foundingPrice && (
-                <li className="flex gap-2.5">
-                  <span aria-hidden="true" className="mt-0.5 text-primary">
-                    +
-                  </span>
-                  Add the digital cookbook for $20 (regularly $27.99)
-                </li>
-              )}
+
             </ul>
             <Link
               href={tier.cta.href}
