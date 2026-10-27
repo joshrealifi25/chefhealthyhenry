@@ -183,6 +183,11 @@ export default async function PostPage({
         Balanced Protein. Better Living. Healthier Planet.
       </p>
 
+      <CommentSection
+        postSlug={post.slug}
+        defaultName={member?.name ?? ""}
+        defaultEmail={member?.email ?? ""}
+      />
       {related.length > 0 && (
         <section className="mt-16 border-t border-border pt-12">
           <h2 className="font-heading text-2xl font-semibold">Keep reading</h2>
@@ -193,11 +198,6 @@ export default async function PostPage({
           </div>
         </section>
       )}
-      <CommentSection
-        postSlug={post.slug}
-        defaultName={member?.name ?? ""}
-        defaultEmail={member?.email ?? ""}
-      />
     </article>
   );
 }
