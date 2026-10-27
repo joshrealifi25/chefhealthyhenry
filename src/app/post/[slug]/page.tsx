@@ -13,7 +13,9 @@ import {
 } from "@/lib/posts";
 import { PostCard } from "@/components/post-card";
 import { ContentBlocks } from "@/components/content-blocks";
+import { CommentSection } from "@/components/comment-section";
 import { SITE_URL } from "@/lib/site";
+import { getMember } from "@/lib/auth";
 
 function stripHtml(html: string): string {
   return html.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
@@ -106,6 +108,7 @@ export default async function PostPage({
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) notFound();
+  const member = await getMember();
 
   const related = relatedPosts(post);
   const schema = {
@@ -190,6 +193,11 @@ export default async function PostPage({
           </div>
         </section>
       )}
+      <CommentSection
+        postSlug={post.slug}
+        defaultName={member?.name ?? ""}
+        defaultEmail={member?.email ?? ""}
+      />
     </article>
   );
 }

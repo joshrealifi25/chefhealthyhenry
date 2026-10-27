@@ -3,6 +3,7 @@ import { Fraunces, Inter } from "next/font/google";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { SITE_URL } from "@/lib/site";
+import { getMember } from "@/lib/auth";
 import { ExitIntentPopup } from "@/components/exit-intent-popup";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -35,9 +36,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const member = await getMember();
   // The Meta pixel stays off until NEXT_PUBLIC_META_PIXEL_ID is set.
   // The Google Ads tag uses the account ID below unless Vercel overrides it.
   const metaPixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID;
@@ -50,7 +52,7 @@ export default function RootLayout({
         <a href="#main-content" className="skip-link">
           Skip to content
         </a>
-        <SiteHeader />
+        <SiteHeader isSignedIn={!!member} />
         <main id="main-content" className="flex-1">
           {children}
         </main>

@@ -14,22 +14,29 @@ const exploreLinks = [
   { href: "/favorites", label: "Chef Henry's Favorite Things" },
 ];
 
-const membershipLinks = [
-  { href: "/membership", label: "Join" },
-  { href: "/members/login", label: "Sign In" },
-];
+
 
 const aboutLinks = [
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
 
-export function SiteHeader() {
+export function SiteHeader({ isSignedIn = false }: { isSignedIn?: boolean }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [exploreOpen, setExploreOpen] = useState(false);
   const [membershipOpen, setMembershipOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
+
+  const membershipLinks = isSignedIn
+    ? [
+        { href: "/membership", label: "Join" },
+        { href: "/members", label: "Members Area" },
+      ]
+    : [
+        { href: "/membership", label: "Join" },
+        { href: "/members/login", label: "Sign In" },
+      ];
 
   const isExploreActive =
     exploreLinks.some((l) => pathname === l.href) || pathname.startsWith("/kitchen");
