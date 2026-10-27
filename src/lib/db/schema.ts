@@ -189,3 +189,26 @@ export const savedRecipes = pgTable(
   },
   (t) => [uniqueIndex("saved_recipes_user_slug_idx").on(t.userId, t.recipeSlug)]
 );
+
+/**
+ * Public comments on blog posts. Submitted by anyone; approved by Henry
+ * before they appear on the page. Signed-in members link via userId.
+ */
+export const postComments = pgTable(
+  "post_comments",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    postSlug: text("post_slug").notNull(),
+    userId: uuid("user_id").references(() => users.id, { onDelete: "set null" }),
+    name: text("name").notNull(),
+    email: text("email").notNull(),
+    body: text("body").notNull(),
+    approved: boolean("approved").notNull().default(false),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => [
+    index("post_comments_slug_idx").on(t.postSlug, t.approved, t.createdAt),
+  ]
+);
