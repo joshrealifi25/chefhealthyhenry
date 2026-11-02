@@ -1560,5 +1560,41 @@
     ]
    }
   ]
+ },
+ {
+  "slug": "what-is-radicchio",
+  "title": "What Is Radicchio?",
+  "collections": [
+   "Ingredient Adventures"
+  ],
+  "blurb": "Most people know radicchio as that bitter purple leaf hiding in their salad. But the problem is rarely the ingredient. It is the preparation.",
+  "subtitle": "It is not the ingredient that is the problem. It is the preparation.",
+  "hero": null,
+  "date": "2026-11-01",
+  "videoId": null,
+  "recipeSlugs": [
+   "roasted-radicchio-carrots-herbed-lentils"
+  ],
+  "productLinks": [],
+  "relatedPostSlug": "why-does-radicchio-taste-bitter",
+  "relatedFeaturedIngredientSlug": "radicchio",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "html": "Most people know radicchio as that bitter purple leaf hiding in their salad. But what if the problem is not the radicchio? What if it is how we are preparing it?"
+   },
+   {
+    "type": "paragraph",
+    "html": "Raw radicchio is crisp, sharp, and sometimes intensely bitter. Roast it, and the experience changes. The leaves become tender, the edges develop savory browned flavors, and the bitterness begins to work with the dish rather than overpower it."
+   },
+   {
+    "type": "paragraph",
+    "html": "But here is where it gets interesting. You do not have to cook radicchio to make it enjoyable. Sometimes it is a matter of how you cut it, how much you use, and what you serve with it. A thin ribbon can bring welcome contrast to a rich dish. A whole leaf can become a beautiful edible vessel. And roasted wedges can become a striking centerpiece on a winter platter. Same ingredient. Completely different culinary experiences."
+   },
+   {
+    "type": "paragraph",
+    "html": "That is what makes cooking adventurous. We do not always need a new ingredient. Sometimes we just need to reconsider one we thought we already understood."
+   }
+  ]
  }
 ]
