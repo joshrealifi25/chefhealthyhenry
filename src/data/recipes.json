@@ -1296,7 +1296,7 @@
   "description": "",
   "serves": "2 to 3",
   "prepTime": "5 min",
-  "totalTime": "10-Aug min",
+  "totalTime": "8-10 min",
   "ingredients": [
    "1 lb large raw shrimp, peeled and deveined",
    "1 tablespoon olive oil",
@@ -3462,8 +3462,8 @@
   "image": "/images/recipes/spicy-chicken-french-lentil-bowl.jpg",
   "description": "",
   "serves": "2",
-  "prepTime": "10 Minutes min",
-  "totalTime": "30 Minutes min",
+  "prepTime": "10 min",
+  "totalTime": "30 min",
   "ingredients": [
    "Lentils",
    "1/2 cup dried French (Puy) lentils",
@@ -5523,7 +5523,7 @@
   "description": "I‚‘m always looking to have more adventurous salad base ideas so using bok choy here is a fun and creative way to do that. In general, bok choy is a great addition to a healthy diet, It is rich in vitamins and minerals and a good fiber source. This recipe is high in protein and fiber while having a ",
   "serves": "4",
   "prepTime": "10 min",
-  "totalTime": "1 min",
+  "totalTime": "1 hr 20 min",
   "ingredients": [
    "4-5 small Bok Choy sliced into strips (green parts and about half of the white.",
    "2-3 Sweet peppers sliced",
@@ -6806,12 +6806,12 @@
  },
  {
   "slug": "creme-brulee-with-almond-milk-and-cream",
-  "title": "Creame Brule with Almond Milk and Cream",
+  "title": "Crème brûlée",
   "image": "/images/recipes/creme-brulee-with-almond-milk-and-cream.jpeg",
   "description": "I was asked to make a healthier version of a creme brûlée so of course I had to get creative for this one. This recipe also is a smaller portion so you can indulge and be satisfied. This half-and-half version should provide a good compromise between richness and texture but at the same time reducing",
   "serves": "2",
   "prepTime": "15 min",
-  "totalTime": "1 min",
+  "totalTime": "2 hr 55 min",
   "ingredients": [
    "1/2 cup heavy cream",
    "1/2 cup unsweetened almond milk",
@@ -6896,14 +6896,14 @@
     "text": "Per Serving (Assuming 2 Servings): Calories: Approximately 194 calories per serving Protein: Approximately 7.625 g per serving Carbohydrates: Approximately 12.g per serving Dietary Fiber: Approximately 5.5 g Sugars: Approximately 7.25 g Fat: Approximately 19.g per serving Nutritional disclaimer Nutritional information is provided as a reference using AI and an online calculator. We recommend verifying the information independently. It could vary based on cooking methods, amounts, and ingredients used."
    }
   ],
-  "category": "Plant-Forward",
+  "category": "Sweets & Snacks",
   "proteinFlip": false,
   "youtubeId": null,
   "extras": [],
   "keyIngredients": [
    "just better fiber"
   ],
-  "seoTitle": "Creme Brulee with Almond Milk: A Lighter Take on the Classic",
+  "seoTitle": "Crème brûlée",
   "seoDescription": "A creamy, lighter creme brulee made with almond milk, all the rich custard and crackly caramelized top of the classic, without the heaviness.",
   "dietaryTags": [
    "vegetarian",
@@ -6929,7 +6929,7 @@
   "description": "Try this delicious Air Fry Falafel recipe‚Äîa healthier, crispy take on the classic Middle Eastern dish! Made with fresh herbs, spices, and air-fried to perfection, these falafels by Chef Healthy Henry are full of flavor and perfect for any meal or snack. This recipe is healthy and nutritious while ",
   "serves": "4",
   "prepTime": "15 min",
-  "totalTime": "1 min",
+  "totalTime": "1 hr 35 min",
   "ingredients": [
    "2 cups dried chickpeas",
    "1/2 teaspoon baking soda",
@@ -10113,7 +10113,7 @@
    "1 tablespoon olive oil",
    "1 cup onion chopped",
    "2 large carrots chopped",
-   "5-6 garlic chopped",
+   "5-6 garlic cloves, chopped",
    "1 tablespoon Italian seasoning",
    "10 oz fresh kale chopped",
    "1/2 teaspoon salt, divided",
@@ -10170,7 +10170,7 @@
     "text": "Garnish with parsley."
    }
   ],
-  "category": "Sweets & Snacks",
+  "category": "Breakfast",
   "proteinFlip": false,
   "youtubeId": null,
   "extras": [],
@@ -14292,7 +14292,7 @@
   "slug": "savory-corn-and-mushroom-saute-with-pancetta",
   "title": "Savory Corn & Mushroom Saute with Pancetta",
   "image": "/images/recipes/savory-corn-and-mushroom-saute-with-pancetta-zc2pw.jpeg",
-  "description": "I had some mushrooms and corn left over from a previous recipe so this was a nice opportunity to get some leeks and pancetta and throw this easy recipe together. Discover this delicious Corn and Mushroom Sauté with Pancetta‚Äîa savory side dish bursting with flavor! Featuring tender cremini mushroom",
+  "description": "I had some mushrooms and corn left over from a previous recipe so this was a nice opportunity to get some leeks and pancetta and throw this easy recipe together. Discover this delicious Corn and Mushroom Sauté with Pancetta, a savory side dish with plenty of flavor. Featuring tender cremini mushroom",
   "serves": "4",
   "prepTime": "10 min",
   "totalTime": "30 min",
@@ -14361,7 +14361,7 @@
     "text": "Stir in the heavy cream scraping up the brown bits from the bottom of the pan Season to taste with more salt, pepper, and lemon."
    }
   ],
-  "category": "Plant-Forward",
+  "category": "Sides & Appetizers",
   "proteinFlip": false,
   "youtubeId": null,
   "extras": [],
