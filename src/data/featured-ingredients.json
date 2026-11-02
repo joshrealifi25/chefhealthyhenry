@@ -93,5 +93,42 @@
         "html": "The result is a meal where nutrition is dispersed across the plate rather than asking one oversized protein to do all the work."
       }
     ]
+  },
+  {
+    "slug": "radicchio",
+    "ingredient": "Radicchio",
+    "date": "2026-11-01",
+    "blurb": "Radicchio is one of the most underused ingredients in the American kitchen. Bitter when raw, it transforms with heat into something tender, savory, and worth building a whole dish around.",
+    "recipeSlug": "roasted-radicchio-carrots-herbed-lentils",
+    "videoId": null,
+    "blocks": [
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "How it fits the Protein Flip™"
+      },
+      {
+        "type": "paragraph",
+        "html": "Radicchio is not a protein source, but it earns its place on a Protein Flip™ plate by contributing fiber, bitter contrast, and visual depth. Paired with lentils, goat cheese, and walnuts, it becomes part of a dish where every ingredient has a reason to be there."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "How to use it"
+      },
+      {
+        "type": "paragraph",
+        "html": "Cut into wedges and roasted at 375°F, radicchio softens from the inside out while the outer leaves pick up light caramelization. Balsamic vinegar and a little olive oil before roasting help balance its natural bitterness. Serve it over warm lentils or alongside anything rich enough to welcome some contrast."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What to look for"
+      },
+      {
+        "type": "paragraph",
+        "html": "Chioggia radicchio, the round variety with burgundy leaves and white ribs, is the most common and holds together well during roasting. Look for firm, compact heads with no wilting or browning at the cut end. It is at its best from October through February."
+      }
+    ]
   }
 ]
