@@ -34,7 +34,24 @@ export const flagship: Cookbook = {
   ],
 };
 
+/**
+ * Instant PDF. buyUrl is a site path that opens Stripe Checkout.
+ * The $19 price id and the private PDF path live in env, not here.
+ */
+export const whenNothingSoundsGood: Cookbook = {
+  slug: "when-nothing-sounds-good",
+  title: "When Nothing Sounds Good: Protein Flip™ meals for a small appetite",
+  tagline: "Meals for a small appetite",
+  description:
+    "A chef's plan for days when a full plate feels like too much: choose what would feel easy to eat, build a three-part small plate, and cook one dinner that works for two appetites.",
+  price: "$19",
+  image: "/images/books/when-nothing-sounds-good.png",
+  buyUrl: "/api/checkout/when-nothing-sounds-good",
+  badge: "Instant PDF",
+};
+
 export const cookbooks: Cookbook[] = [
+  whenNothingSoundsGood,
   {
     slug: "glp-1-bariatric-success-guide",
     title: "GLP-1 & Bariatric Success Guide",

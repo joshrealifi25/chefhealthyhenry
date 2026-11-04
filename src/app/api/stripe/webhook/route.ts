@@ -1,15 +1,22 @@
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import { Resend } from "resend";
+import { whenNothingSoundsGood } from "@/data/cookbooks";
 import {
-  PRICE_TO_PRODUCT,
   createDownloadToken,
+  productForPrice,
+  sessionExpectsWnsgGuide,
+  wnsgGuideProduct,
   type DigitalProduct,
 } from "@/lib/fulfillment";
 import { deliveryEmailHtml } from "@/lib/delivery-email";
 import { notifyHenry, escapeHtml } from "@/lib/notify";
 import { syncSubscription } from "@/lib/membership-sync";
 import { sendMetaConversionEvent } from "@/lib/ad-tracking";
+import {
+  startBuyerSequence,
+  startCheckoutRecovery,
+} from "@/lib/email-sequences";
 
 export const runtime = "nodejs";
 
@@ -44,8 +51,9 @@ export async function POST(req: NextRequest) {
       const lineItems = await stripe.checkout.sessions.listLineItems(session.id, {
         limit: 20,
       });
-      const products = lineItems.data
-        .map((li) => (li.price?.id ? PRICE_TO_PRODUCT[li.price.id] : undefined))
+      const priceIds = lineItems.data.map((li) => li.price?.id);
+      const products = priceIds
+        .map((priceId) => productForPrice(priceId))
         .filter((p): p is DigitalProduct => Boolean(p));
 
       // Owner notification: every order, digital or physical. Never blocks
@@ -85,6 +93,61 @@ export async function POST(req: NextRequest) {
           console.error("Resend delivery email failed:", error);
           // Surface a 500 so Stripe retries the webhook rather than dropping the order.
           return NextResponse.json({ error: "Email failed" }, { status: 500 });
+        }
+
+        const guide = wnsgGuideProduct();
+        const guideLink =
+          guide && products.some((product) => product.pathname === guide.pathname)
+            ? links.find((link) => link.name === guide.name)
+            : undefined;
+        if (guideLink) {
+          // The file email is already sent. A thrown sequence must not
+          // make Stripe retry, or the buyer would get a second copy.
+          try {
+            await startBuyerSequence({
+              email,
+              name: session.customer_details?.name ?? null,
+              sessionId: session.id,
+              downloadUrl: guideLink.url,
+            });
+          } catch (err) {
+            console.error(
+              "Buyer sequence failed after the download email was sent"
+            );
+            console.error(err instanceof Error ? err.message : err);
+          }
+        }
+      } else if (sessionExpectsWnsgGuide(session.metadata?.product, priceIds)) {
+        console.error(
+          "Paid guide checkout completed, but no PDF was mapped. Check STRIPE_PRICE_WNSG_GUIDE and WNSG_GUIDE_BLOB_PATHNAME."
+        );
+        return NextResponse.json({ error: "Guide file is not configured" }, { status: 500 });
+      }
+    }
+  }
+
+  // Unpaid guide checkout. Stripe expires the session after 24 hours,
+  // and that is when startCheckoutRecovery runs. The sequences module
+  // decides which reminders go out from that moment.
+  if (event.type === "checkout.session.expired") {
+    const session = event.data.object as Stripe.Checkout.Session;
+    if (session.metadata?.product === whenNothingSoundsGood.slug) {
+      const email = session.customer_details?.email ?? session.customer_email;
+      if (!email) {
+        console.error("Guide checkout expired with no email; recovery skipped");
+      } else {
+        const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? req.nextUrl.origin;
+        try {
+          await startCheckoutRecovery({
+            email,
+            name: session.customer_details?.name ?? null,
+            sessionId: session.id,
+            checkoutUrl: `${baseUrl}${whenNothingSoundsGood.buyUrl}`,
+          });
+        } catch (err) {
+          console.error("Guide checkout recovery failed");
+          console.error(err instanceof Error ? err.message : err);
+          return NextResponse.json({ error: "Recovery failed" }, { status: 500 });
         }
       }
     }
