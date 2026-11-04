@@ -1,4 +1,5 @@
 import crypto from "crypto";
+import { whenNothingSoundsGood } from "@/data/cookbooks";
 
 export interface DigitalProduct {
   /** Pathname of the PDF inside the private Vercel Blob store. */
@@ -66,7 +67,61 @@ const PATHNAME_TO_FILENAME: Record<string, string> = Object.fromEntries(
   Object.values(PRICE_TO_PRODUCT).map((p) => [p.pathname, p.fileName])
 );
 
+/** Private Blob path used when WNSG_GUIDE_BLOB_PATHNAME is unset. */
+const WNSG_BLOB_DEFAULT = "cookbooks/when-nothing-sounds-good.pdf";
+const WNSG_FILE_NAME = "When Nothing Sounds Good.pdf";
+const WNSG_BLOB_PATH = /^cookbooks\/[a-z0-9._-]+\.pdf$/;
+
+/**
+ * Where the paid guide PDF lives in the private Blob store.
+ * Henry sets WNSG_GUIDE_BLOB_PATHNAME after uploading the final file.
+ * Null when the value is unsafe or already used by another book.
+ */
+function guidePathname(): string | null {
+  const configured = process.env.WNSG_GUIDE_BLOB_PATHNAME?.trim();
+  const pathname = configured ? configured : WNSG_BLOB_DEFAULT;
+  if (!WNSG_BLOB_PATH.test(pathname)) return null;
+  const taken = new Set(Object.values(PRICE_TO_PRODUCT).map((product) => product.pathname));
+  if (taken.has(pathname)) return null;
+  return pathname;
+}
+
+export function wnsgGuideProduct(): DigitalProduct | null {
+  const pathname = guidePathname();
+  if (!pathname) return null;
+  return {
+    pathname,
+    name: whenNothingSoundsGood.title,
+    fileName: WNSG_FILE_NAME,
+  };
+}
+
+/** True when this Stripe price is the $19 guide and not one of the books above. */
+export function isWnsgPrice(priceId: string | undefined): boolean {
+  const configured = process.env.STRIPE_PRICE_WNSG_GUIDE;
+  if (!configured || !priceId || priceId !== configured) return false;
+  return !PRICE_TO_PRODUCT[priceId];
+}
+
+export function sessionExpectsWnsgGuide(
+  metadataProduct: string | null | undefined,
+  priceIds: readonly (string | undefined)[],
+): boolean {
+  if (metadataProduct === whenNothingSoundsGood.slug) return true;
+  return priceIds.some((priceId) => isWnsgPrice(priceId));
+}
+
+/** Static book map first, then the env-configured guide price. */
+export function productForPrice(priceId: string | undefined): DigitalProduct | undefined {
+  if (!priceId) return undefined;
+  const known = PRICE_TO_PRODUCT[priceId];
+  if (known) return known;
+  if (!isWnsgPrice(priceId)) return undefined;
+  return wnsgGuideProduct() ?? undefined;
+}
+
 export function fileNameFor(pathname: string): string {
+  if (pathname === guidePathname()) return WNSG_FILE_NAME;
   return PATHNAME_TO_FILENAME[pathname] ?? "cookbook.pdf";
 }
 
