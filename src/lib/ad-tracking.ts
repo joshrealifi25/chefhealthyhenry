@@ -8,10 +8,27 @@ interface MetaConversionEvent {
   value?: number;
   currency?: string;
   eventSourceUrl?: string;
+  /** Traffic source from the link. Sent as content_category. */
+  source?: string;
+  /** Offer name. Sent as content_name so a sampler lead is distinct. */
+  contentName?: string;
 }
 
 function hashEmail(email: string): string {
   return createHash("sha256").update(email.trim().toLowerCase()).digest("hex");
+}
+
+function metaCustomData(
+  event: MetaConversionEvent
+): Record<string, string | number> | undefined {
+  const data: Record<string, string | number> = {};
+  if (event.value !== undefined) {
+    data.value = event.value;
+    data.currency = event.currency ?? "USD";
+  }
+  if (event.contentName) data.content_name = event.contentName;
+  if (event.source) data.content_category = event.source;
+  return Object.keys(data).length > 0 ? data : undefined;
 }
 
 /**
@@ -41,10 +58,7 @@ export async function sendMetaConversionEvent(
               action_source: "website",
               event_source_url: event.eventSourceUrl,
               user_data: { em: [hashEmail(event.email)] },
-              custom_data:
-                event.value !== undefined
-                  ? { value: event.value, currency: event.currency ?? "USD" }
-                  : undefined,
+              custom_data: metaCustomData(event),
             },
           ],
         }),

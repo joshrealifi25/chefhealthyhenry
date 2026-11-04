@@ -1,10 +1,23 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { NewsletterForm } from "@/components/newsletter-form";
+import { SAMPLER_PATH } from "@/lib/lead-source";
+import { cn } from "@/lib/utils";
 
 export function SiteFooter() {
+  const pathname = usePathname();
+  const showGroceryOffer = pathname !== SAMPLER_PATH;
+
   return (
     <footer className="border-t border-border bg-secondary/50 print:hidden">
-      <div className="mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-3">
+      <div
+        className={cn(
+          "mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6",
+          showGroceryOffer ? "md:grid-cols-3" : "md:grid-cols-2"
+        )}
+      >
         <div>
           <p className="font-heading text-lg font-semibold">Chef Healthy Henry</p>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
@@ -65,12 +78,14 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div>
-          <p className="mb-3 text-sm font-medium">
-            Free Grocery Store Test ($8.99 value) + a new recipe every week
-          </p>
-          <NewsletterForm />
-        </div>
+        {showGroceryOffer && (
+          <div>
+            <p className="mb-3 text-sm font-medium">
+              Free Grocery Store Test ($8.99 value) + a new recipe every week
+            </p>
+            <NewsletterForm />
+          </div>
+        )}
       </div>
       <div className="border-t border-border py-6 text-center text-xs text-muted-foreground">
         <p>

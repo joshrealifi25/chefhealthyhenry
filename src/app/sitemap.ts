@@ -4,11 +4,12 @@ import { posts, postCategories, isoDate } from "@/lib/posts";
 import { exploreCards, hasArticle, EXPLORE_COLLECTIONS } from "@/lib/explore";
 import { kitchenGuides } from "@/lib/kitchen-guides";
 import { SITE_URL } from "@/lib/site";
+import { SAMPLER_PATH } from "@/lib/lead-source";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const categoryPaths = postCategories.map((c) => `/blog/${c.slug}`);
   const collectionPaths = EXPLORE_COLLECTIONS.map((c) => `/explore/${c.slug}`);
-  const staticPages = ["", "/recipes", "/cookbook", "/blog", ...categoryPaths, "/explore", ...collectionPaths, "/favorites", "/about", "/contact", "/accessibility", "/privacy", "/terms", "/disclaimer"].map(
+  const staticPages = ["", "/recipes", "/cookbook", "/blog", ...categoryPaths, "/explore", ...collectionPaths, "/favorites", "/about", "/contact", "/accessibility", "/privacy", "/terms", "/disclaimer", SAMPLER_PATH].map(
     (path) => ({
       url: `${SITE_URL}${path}`,
       lastModified: new Date(),

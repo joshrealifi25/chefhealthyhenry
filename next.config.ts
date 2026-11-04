@@ -3,6 +3,15 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "standalone",
 
+  // The sampler PDF is read at runtime by /api/sampler. Standalone file
+  // tracing does not follow that path.join, so include the file here. It
+  // stays out of public/ and is not a direct URL.
+  outputFileTracingIncludes: {
+    "/api/sampler": [
+      "./private/sampler/3-meals-for-when-nothing-sounds-good.pdf",
+    ],
+  },
+
   // 301 redirects from the old Webflow URL structure to the new site.
   // /about, /contact, and /post/[slug] keep identical paths and need no
   // redirect. Order matters: specific rules precede catch-alls.
