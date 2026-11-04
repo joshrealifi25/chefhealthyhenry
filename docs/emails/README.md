@@ -1,3 +1,12 @@
+# Email sequences
+
+The welcome sequence below is sent by hand as Resend Broadcasts.
+
+The When Nothing Sounds Good sequences are sent by code. Read
+`docs/emails/when-nothing-sounds-good/README.md` and
+`src/lib/email-sequences.ts`. The HTML files in that folder are reading
+copies. The module is what actually sends.
+
 # Welcome sequence: how to send
 
 These four emails go out via **Resend Broadcasts** (resend.com → Broadcasts
