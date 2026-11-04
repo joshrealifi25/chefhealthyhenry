@@ -1,21 +1,26 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import { X } from "lucide-react";
 import {
   NewsletterForm,
   SUBSCRIBED_STORAGE_KEY,
 } from "@/components/newsletter-form";
+import { SAMPLER_PATH } from "@/lib/lead-source";
 
 const STORAGE_KEY = "chh-exit-popup-shown";
 
 export function ExitIntentPopup() {
   const [open, setOpen] = useState(false);
   const dialogRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
 
   const dismiss = useCallback(() => setOpen(false), []);
 
   useEffect(() => {
+    // The sampler page has one offer. The grocery-test popup would be a second.
+    if (pathname === SAMPLER_PATH) return;
     // Desktop exit-intent only: skip touch devices, show once per visitor, and
     // never ask someone who already signed up somewhere else on the site.
     if (window.matchMedia("(pointer: coarse)").matches) return;
@@ -45,7 +50,7 @@ export function ExitIntentPopup() {
       clearTimeout(timer);
       document.removeEventListener("mouseout", onMouseOut);
     };
-  }, []);
+  }, [pathname]);
 
   useEffect(() => {
     if (!open) return;

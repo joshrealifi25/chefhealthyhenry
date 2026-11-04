@@ -4,6 +4,14 @@ import { createDownloadToken } from "@/lib/fulfillment";
 import { deliveryEmailHtml } from "@/lib/delivery-email";
 import { notifyHenry, escapeHtml } from "@/lib/notify";
 import { sendMetaConversionEvent } from "@/lib/ad-tracking";
+import { startSampleSequence } from "@/lib/email-sequences";
+import {
+  cleanLeadSource,
+  GUIDE_CHECKOUT_PATH,
+  SAMPLER_LEAD_NAME,
+  SAMPLER_PATH,
+} from "@/lib/lead-source";
+import { createSamplerDownloadToken } from "@/lib/sampler-link";
 
 export const runtime = "nodejs";
 
@@ -11,17 +19,18 @@ const FREE_GUIDE_PATHNAME = "cookbooks/grocery-store-test.pdf";
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function POST(req: NextRequest) {
-  const resendKey = process.env.RESEND_API_KEY;
-  const signingSecret = process.env.DOWNLOAD_SIGNING_SECRET;
-  if (!resendKey || !signingSecret) {
-    console.error("Subscribe: missing environment variables");
-    return NextResponse.json({ error: "Not configured" }, { status: 500 });
-  }
-
-  let email: string;
+  let email = "";
+  let offer = "";
+  let source = "direct";
   try {
-    const body = (await req.json()) as { email?: unknown };
+    const body = (await req.json()) as {
+      email?: unknown;
+      offer?: unknown;
+      source?: unknown;
+    };
     email = typeof body.email === "string" ? body.email.trim() : "";
+    offer = body.offer === "sampler" ? "sampler" : "grocery";
+    source = cleanLeadSource(body.source);
   } catch {
     email = "";
   }
@@ -29,11 +38,58 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid email" }, { status: 400 });
   }
 
+  const resendKey = process.env.RESEND_API_KEY;
+  const signingSecret = process.env.DOWNLOAD_SIGNING_SECRET;
+  if (!resendKey || !signingSecret) {
+    console.error("Subscribe: missing environment variables");
+    return NextResponse.json({ error: "Not configured" }, { status: 500 });
+  }
+
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? req.nextUrl.origin;
+
+  if (offer === "sampler") {
+    const signupId = email.toLowerCase();
+    const samplerUrl = `${baseUrl}/api/sampler?token=${createSamplerDownloadToken(signingSecret)}&source=${encodeURIComponent(source)}`;
+    // Buy route from the guide checkout pull request. Keep the lead source
+    // on the link for the weekly report.
+    const guideUrl = `${baseUrl}${GUIDE_CHECKOUT_PATH}?source=${encodeURIComponent(source)}`;
+    try {
+      await startSampleSequence({
+        email,
+        signupId,
+        samplerUrl,
+        guideUrl,
+      });
+    } catch (err) {
+      console.error(
+        "Subscribe: sampler sequence failed:",
+        err instanceof Error ? err.message : "unknown error"
+      );
+      return NextResponse.json({ error: "Email failed" }, { status: 500 });
+    }
+
+    await notifyHenry(
+      `New sampler signup (${source}): ${email}`,
+      `<p><strong>${escapeHtml(email)}</strong> requested the free 3-meal sampler.</p>
+       <p>Source: ${escapeHtml(source)}</p>`
+    );
+
+    await sendMetaConversionEvent({
+      eventName: "Lead",
+      email,
+      eventSourceUrl: `${baseUrl}${SAMPLER_PATH}?source=${encodeURIComponent(source)}`,
+      source,
+      contentName: SAMPLER_LEAD_NAME,
+    });
+
+    return NextResponse.json({ ok: true });
+  }
+
   const resend = new Resend(resendKey);
 
   // Add to the newsletter audience. Best effort: if the audience is not
   // configured yet (or the key lacks audience access), still deliver the
-  // guide so the visitor gets what they were promised.
+  // file so the visitor gets what they were promised.
   const audienceId = process.env.RESEND_AUDIENCE_ID;
   if (audienceId) {
     const { error } = await resend.contacts.create({
@@ -46,7 +102,6 @@ export async function POST(req: NextRequest) {
     console.error("Subscribe: RESEND_AUDIENCE_ID not set; skipping list add");
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? req.nextUrl.origin;
   const downloadUrl = `${baseUrl}/api/download?token=${createDownloadToken(
     FREE_GUIDE_PATHNAME,
     signingSecret

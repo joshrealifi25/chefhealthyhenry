@@ -11,11 +11,29 @@ declare global {
  * / NEXT_PUBLIC_GOOGLE_ADS_ID in layout.tsx), and ad blockers routinely make
  * window.fbq/gtag throw, so every call is wrapped rather than trusted.
  */
-export function trackLead(): void {
+export function trackLead(detail?: {
+  source?: string;
+  contentName?: string;
+}): void {
   if (typeof window === "undefined") return;
   try {
-    window.fbq?.("track", "Lead");
-    window.gtag?.("event", "generate_lead");
+    if (detail?.source || detail?.contentName) {
+      const fb: Record<string, string> = {};
+      const google: Record<string, string> = {};
+      if (detail.contentName) {
+        fb.content_name = detail.contentName;
+        google.content_name = detail.contentName;
+      }
+      if (detail.source) {
+        fb.content_category = detail.source;
+        google.source = detail.source;
+      }
+      window.fbq?.("track", "Lead", fb);
+      window.gtag?.("event", "generate_lead", google);
+    } else {
+      window.fbq?.("track", "Lead");
+      window.gtag?.("event", "generate_lead");
+    }
   } catch {
     /* ad blockers routinely throw here; never break the page for it */
   }
