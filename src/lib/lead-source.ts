@@ -9,6 +9,9 @@
  */
 export const SAMPLER_PATH = "/when-nothing-sounds-good";
 
+/** $19 guide checkout. Owned by the guide checkout pull request. */
+export const GUIDE_CHECKOUT_PATH = "/api/checkout/when-nothing-sounds-good";
+
 /** Meta content_name / Google content_name for a sampler lead. */
 export const SAMPLER_LEAD_NAME = "3-meals-sampler";
 

@@ -7,6 +7,7 @@ import { sendMetaConversionEvent } from "@/lib/ad-tracking";
 import { startSampleSequence } from "@/lib/email-sequences";
 import {
   cleanLeadSource,
+  GUIDE_CHECKOUT_PATH,
   SAMPLER_LEAD_NAME,
   SAMPLER_PATH,
 } from "@/lib/lead-source";
@@ -49,9 +50,9 @@ export async function POST(req: NextRequest) {
   if (offer === "sampler") {
     const signupId = email.toLowerCase();
     const samplerUrl = `${baseUrl}/api/sampler?token=${createSamplerDownloadToken(signingSecret)}&source=${encodeURIComponent(source)}`;
-    // The $19 guide page is not on this branch. Later sequence buttons use
-    // the sampler landing until that page exists, so they do not 404.
-    const guideUrl = `${baseUrl}${SAMPLER_PATH}?source=${encodeURIComponent(source)}`;
+    // Buy route from the guide checkout pull request. Keep the lead source
+    // on the link for the weekly report.
+    const guideUrl = `${baseUrl}${GUIDE_CHECKOUT_PATH}?source=${encodeURIComponent(source)}`;
     try {
       await startSampleSequence({
         email,
