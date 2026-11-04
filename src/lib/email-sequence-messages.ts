@@ -223,7 +223,7 @@ export function renderSampleSequence(input: SampleInput): SequenceMessage[] {
   const day11 = [
     "People ask me what to cook when nothing sounds good. I do not start by cutting foods out.",
     "I start with flavor. Nothing is forbidden. Nutrition gets added around food that is worth eating. A few bites of something you can imagine eating will beat a perfect plate you cannot face.",
-    "That is the idea inside When Nothing Sounds Good: Protein Flip™ meals for a small appetite. Real food, small plates, and no calorie math.",
+    "That is the idea inside When Nothing Sounds Good. Real food, small plates, and no calorie math.",
   ];
   if (readerNote) day11.push(readerNote);
 
@@ -442,7 +442,7 @@ export function renderRecoveryMessage(
       heading: "Your checkout is still open.",
       paragraphs: [
         "You started When Nothing Sounds Good and did not finish.",
-        "The guide is about 40 pages: a way to choose food by texture and effort, the small-plate formula, twenty meal ideas, one dinner plated two ways, the low-hunger grocery map, and what to do when hunger returns.",
+        "The guide is 17 pages: a way to choose food by texture and effort, the small-plate formula, twenty meal ideas, one dinner plated two ways, the low-hunger grocery map, and what to do when hunger returns.",
         "It is $19. This is cooking help, not medical advice.",
       ],
       buttonLabel: "Return to checkout",
