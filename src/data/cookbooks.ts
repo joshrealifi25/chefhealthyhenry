@@ -45,7 +45,7 @@ export const whenNothingSoundsGood: Cookbook = {
   description:
     "A chef's plan for days when a full plate feels like too much: choose what would feel easy to eat, build a three-part small plate, and cook one dinner that works for two appetites.",
   price: "$19",
-  image: "/images/books/when-nothing-sounds-good.png",
+  image: "/images/books/when-nothing-sounds-good.jpg",
   buyUrl: "/api/checkout/when-nothing-sounds-good",
   badge: "Instant PDF",
 };
