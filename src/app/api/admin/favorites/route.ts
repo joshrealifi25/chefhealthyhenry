@@ -1,8 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-import { asc, eq } from "drizzle-orm";
+import { asc, eq, ne } from "drizzle-orm";
 import { getAdmin } from "@/lib/admin";
 import { db, favoriteThings } from "@/lib/db";
-import { parseFavoriteThingInput } from "@/lib/favorite-things";
+import {
+  parseFavoriteThingInput,
+  type FavoriteThing,
+  type FavoriteThingInput,
+} from "@/lib/favorite-things";
 
 export const runtime = "nodejs";
 
@@ -28,6 +32,41 @@ export async function GET() {
   return NextResponse.json({ items });
 }
 
+/**
+ * Saves the one Product of the Month.
+ *
+ * neon-http rejects an interactive transaction callback. batch() is the
+ * transaction that driver does support: both statements go out in one Neon
+ * HTTP transaction and commit or roll back together. There is no unique
+ * constraint. This route is what keeps a single featured row.
+ */
+async function saveAsOnlyFeatured(
+  value: FavoriteThingInput,
+  id: string | null
+): Promise<FavoriteThing | undefined> {
+  const database = db();
+  if (id) {
+    const [, updated] = await database.batch([
+      database
+        .update(favoriteThings)
+        .set({ isFeatured: false })
+        .where(ne(favoriteThings.id, id)),
+      database
+        .update(favoriteThings)
+        .set(value)
+        .where(eq(favoriteThings.id, id))
+        .returning(),
+    ]);
+    return updated[0];
+  }
+
+  const [, inserted] = await database.batch([
+    database.update(favoriteThings).set({ isFeatured: false }),
+    database.insert(favoriteThings).values(value).returning(),
+  ]);
+  return inserted[0];
+}
+
 /** Creates an item. */
 export async function POST(req: NextRequest) {
   const admin = await getAdmin();
@@ -39,7 +78,9 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: parsed.error }, { status: 400 });
   }
 
-  const [item] = await db().insert(favoriteThings).values(parsed.value).returning();
+  const item = parsed.value.isFeatured
+    ? await saveAsOnlyFeatured(parsed.value, null)
+    : (await db().insert(favoriteThings).values(parsed.value).returning())[0];
   return NextResponse.json({ ok: true, item });
 }
 
@@ -58,11 +99,26 @@ export async function PUT(req: NextRequest) {
     return NextResponse.json({ error: parsed.error }, { status: 400 });
   }
 
-  const [item] = await db()
-    .update(favoriteThings)
-    .set(parsed.value)
-    .where(eq(favoriteThings.id, id))
-    .returning();
+  if (parsed.value.isFeatured) {
+    const [existing] = await db()
+      .select({ id: favoriteThings.id })
+      .from(favoriteThings)
+      .where(eq(favoriteThings.id, id))
+      .limit(1);
+    if (!existing) {
+      return NextResponse.json({ error: "That item no longer exists." }, { status: 404 });
+    }
+  }
+
+  const item = parsed.value.isFeatured
+    ? await saveAsOnlyFeatured(parsed.value, id)
+    : (
+        await db()
+          .update(favoriteThings)
+          .set(parsed.value)
+          .where(eq(favoriteThings.id, id))
+          .returning()
+      )[0];
   if (!item) {
     return NextResponse.json({ error: "That item no longer exists." }, { status: 404 });
   }
