@@ -1,1600 +1,1712 @@
 [
- {
-  "slug": "what-is-a-protein-first-plate",
-  "title": "What Is a Protein-First Plate?",
-  "collections": [
-   "Protein Flip™ Foundations",
-   "Grocery Intelligence"
-  ],
-  "blurb": "One question changes how the whole plate gets built: what's the protein in this meal? Here's what a protein-first plate actually means, and why it isn't the same thing as low-carb.",
-  "subtitle": "One question changes how the whole plate gets built.",
-  "hero": "/images/explore/what-is-a-protein-first-plate.png",
-  "articleHero": "/images/explore/what-is-a-protein-first-plate-article.png",
-  "date": "2026-08-15",
-  "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
-  "relatedPostSlug": "what-is-the-protein-flip-tm-a-chefs-return-to-balance",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "A bowl of cereal might be fast, but an hour or two later you may already be looking for something else to eat. A giant salad can look like the healthy choice, yet still leave you wondering why lunch didn't really feel like lunch."
-   },
-   {
-    "type": "paragraph",
-    "html": "Sometimes the problem isn't the food itself. It's the way the meal was built."
-   },
-   {
-    "type": "paragraph",
-    "html": "A protein-first plate simply changes which decision you make first."
-   },
-   {
-    "type": "paragraph",
-    "html": "Instead of starting with pasta, rice, bread, or whatever happens to fill most of the plate and then adding a little protein on the side, start by asking:"
-   },
-   {
-    "type": "quote",
-    "text": "What's the protein in this meal?"
-   },
-   {
-    "type": "paragraph",
-    "html": "That doesn't mean protein needs to dominate the plate. It means you account for it before everything else."
-   },
-   {
-    "type": "paragraph",
-    "html": "Once that's established, you can build the rest of the meal around it with produce, carbohydrates, flavor, texture, and other ingredients that contribute nutrition of their own."
-   },
-   {
-    "type": "paragraph",
-    "html": "That's where protein-first connects to the larger Protein Flip™ Method. The goal isn't a plate built around one enormous piece of protein. It's a meal where nutrition is dispersed across the ingredients instead of asking one food to do all the work."
-   },
-   {
-    "type": "heading",
-    "level": 2,
-    "text": "Protein First Doesn't Mean Protein Only"
-   },
-   {
-    "type": "paragraph",
-    "html": "Your protein might be salmon, chicken, eggs, Greek yogurt, tofu, shrimp, cottage cheese, lentils, beans, or something else entirely."
-   },
-   {
-    "type": "paragraph",
-    "html": "Then comes everything that makes it a meal."
-   },
-   {
-    "type": "paragraph",
-    "html": "Fresh or cooked produce can bring fiber, color, texture, and volume. Rice, potatoes, pasta, tortillas, bread, oats, or other carbohydrates can provide energy, comfort, and satisfaction. Herbs, sauces, spices, citrus, cheese, avocado, nuts, and other flavor builders make the meal something you actually want to eat."
-   },
-   {
-    "type": "paragraph",
-    "html": "Protein is simply the first decision."
-   },
-   {
-    "type": "paragraph",
-    "html": "A useful way to picture it is:"
-   },
-   {
-    "type": "quote",
-    "text": "Protein + Produce + Carbohydrate + Flavor"
-   },
-   {
-    "type": "paragraph",
-    "html": "The proportions can change depending on the dish, your appetite, and what you enjoy eating."
-   },
-   {
-    "type": "heading",
-    "level": 2,
-    "text": "Think Portion-Smart, Not Oversized"
-   },
-   {
-    "type": "paragraph",
-    "html": "Protein-first isn't an excuse to turn every meal into a giant chicken breast surrounded by vegetables."
-   },
-   {
-    "type": "paragraph",
-    "html": "The idea is portion-smart."
-   },
-   {
-    "type": "paragraph",
-    "html": "Give the protein enough presence to contribute meaningfully to the meal, but let the other ingredients do their jobs too."
-   },
-   {
-    "type": "paragraph",
-    "html": "The same applies to carbohydrates."
-   },
-   {
-    "type": "paragraph",
-    "html": "Rice isn't the problem. Pasta isn't the problem. Potatoes, tortillas, bread, and pizza aren't the problem either."
-   },
-   {
-    "type": "paragraph",
-    "html": "Rather than removing them, think about the role they're playing in the meal."
-   },
-   {
-    "type": "paragraph",
-    "html": "A big bowl of pasta with a small amount of sauce may taste great but leave very little room for anything else. A portion-smart amount of pasta combined with chicken or white beans, spinach, roasted tomatoes, Parmesan, and chile flakes becomes a very different meal without taking the pasta away."
-   },
-   {
-    "type": "paragraph",
-    "html": "That's an important part of the Protein Flip™ philosophy:"
-   },
-   {
-    "type": "quote",
-    "text": "Don't automatically subtract the food you love. Add nutrition around it and rethink the proportions."
-   },
-   {
-    "type": "heading",
-    "level": 2,
-    "text": "A Protein-First Plate Can Look Like Almost Anything"
-   },
-   {
-    "type": "paragraph",
-    "html": "This isn't a plate diagram you have to recreate every night."
-   },
-   {
-    "type": "paragraph",
-    "html": "It could be:"
-   },
-   {
-    "type": "list",
-    "ordered": false,
-    "items": [
-     "Scrambled eggs with black beans, salsa, avocado, and a warm tortilla.",
-     "Salmon with rice, cucumber, edamame, and a sesame-chile sauce.",
-     "Chicken sausage with white beans, kale, and a portion-smart amount of pasta in a garlicky tomato sauce.",
-     "Greek yogurt with berries, peanut butter, and the crunchy cereal you actually enjoy."
-    ]
-   },
-   {
-    "type": "paragraph",
-    "html": "The ingredients change. The thinking stays the same."
-   },
-   {
-    "type": "paragraph",
-    "html": "Start by identifying the protein, then let the rest of the meal work with it."
-   },
-   {
-    "type": "heading",
-    "level": 2,
-    "text": "Carbs Get to Stay"
-   },
-   {
-    "type": "paragraph",
-    "html": "One of the things I want people to understand about protein-first cooking is that it isn't another way of saying low-carb."
-   },
-   {
-    "type": "paragraph",
-    "html": "Carbohydrates bring energy, comfort, tradition, texture, and a lot of culinary joy."
-   },
-   {
-    "type": "paragraph",
-    "html": "You don't need to replace pasta with vegetable noodles just because you're trying to build a more nutritious meal. You don't need to remove the tortilla from a taco or skip the bread on a sandwich."
-   },
-   {
-    "type": "paragraph",
-    "html": "Instead, ask whether the proportions of the meal allow the other ingredients to contribute too."
-   },
-   {
-    "type": "paragraph",
-    "html": "That's the Flip."
-   },
-   {
-    "type": "paragraph",
-    "html": "Not removing the food that makes the dish worth eating."
-   },
-   {
-    "type": "paragraph",
-    "html": "Changing the balance around it."
-   },
-   {
-    "type": "heading",
-    "level": 2,
-    "text": "Where the Protein Flip™ Comes In"
-   },
-   {
-    "type": "paragraph",
-    "html": "Protein-first is one useful entry point into the Protein Flip™ Method, but it isn't the whole Method."
-   },
-   {
-    "type": "paragraph",
-    "html": "Protein Flip™ is about building nutritionally dispersed meals."
-   },
-   {
-    "type": "paragraph",
-    "html": "Protein may come from more than one ingredient. Fiber may come from produce, beans, grains, seeds, or several of them at once. Flavor can come from herbs, spices, aromatics, sauces, acidity, browning, and texture."
-   },
-   {
-    "type": "paragraph",
-    "html": "Instead of searching for one perfect \"healthy\" ingredient, you build a meal where several ingredients contribute."
-   },
-   {
-    "type": "paragraph",
-    "html": "Protein-first just gives you a good place to begin."
-   },
-   {
-    "type": "paragraph",
-    "html": "Tonight, look at one meal you already enjoy and ask one question before you start cooking:"
-   },
-   {
-    "type": "quote",
-    "text": "What's the protein here?"
-   },
-   {
-    "type": "paragraph",
-    "html": "Then keep building."
-   }
-  ],
-  "cta": {
-   "heading": "Ready to Put It Into Practice?",
-   "text": "Inside Protein Flip™ Kitchen, we take the next step. You'll learn how to choose proteins based on the meal you're actually making, disperse protein across primary and secondary ingredients, keep favorite carbohydrates portion-smart, layer flavor, adapt familiar meals, build fast dinners without relying on a recipe, and troubleshoot plates that still aren't working.",
-   "label": "See the Cookbook",
-   "href": "/cookbook"
+  {
+    "slug": "the-umami-pantry",
+    "title": "The Umami Pantry",
+    "collections": [
+      "Flavor Building",
+      "Grocery Intelligence"
+    ],
+    "blurb": "A dish can be seasoned correctly and still taste flat. Here is every reliable umami source, what it does, and when to reach for it.",
+    "subtitle": "Every reliable umami source, what it does, and when to reach for it.",
+    "hero": null,
+    "articleHero": null,
+    "date": "November 5, 2026",
+    "videoId": null,
+    "recipeSlugs": [
+      "healthy-mexican-rice"
+    ],
+    "productLinks": [],
+    "relatedPostSlug": "when-a-dish-goes-quiet-on-you",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Umami is the fifth taste. It is not a flavor the way lemon is a flavor. It is a signal. It tells your nervous system that food is real, that something has depth, that a dish is finished rather than just seasoned. When it is missing, a dish can be technically correct and still feel flat. When it is present, everything else in the dish comes into focus."
+      },
+      {
+        "type": "paragraph",
+        "html": "The sources below are organized by category. Within each category, they are listed in order of how often they are useful across different kinds of cooking. Keep the first three or four of each category in your pantry and you will have what you need for almost any dish."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Aged and fermented"
+      },
+      {
+        "type": "paragraph",
+        "html": "These are the most concentrated umami sources. A small amount changes what a dish can do. In most cases you will not taste the ingredient itself. You will taste what it does to everything around it."
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>White miso.</strong> The mildest and most versatile fermented paste. Works in dressings, marinades, sauces, and roasted vegetable preparations. Adds depth without changing the direction of the dish. Start with half a teaspoon and adjust from there.",
+          "<strong>Soy sauce or tamari.</strong> Use tamari if you need it gluten-free. A small amount added late in a non-Asian dish adds depth without making the dish taste Asian. This is a technique, not a flavor decision.",
+          "<strong>Fish sauce.</strong> Same logic as soy. Use less than you think you need. Add it early so it cooks in. It will not taste like fish in the finished dish. Especially effective in braises, tomato sauces, and anything with ground meat.",
+          "<strong>Anchovies or anchovy paste.</strong> Melt them into olive oil at the start of a braise, sauce, or saut\u00e9. They dissolve completely. What stays behind is depth. Keep a tube of paste in the refrigerator for easy use.",
+          "<strong>Worcestershire sauce.</strong> A blend of several fermented ingredients. Useful in sauces, marinades, and anywhere you want something that reads as savory without pointing to a single source.",
+          "<strong>Red or dark miso.</strong> More concentrated and saltier than white miso. Good in heartier preparations: winter braises, root vegetable dishes, umami-heavy sauces. Use in smaller amounts than white miso.",
+          "<strong>Black garlic.</strong> Regular garlic that has been slowly caramelized over weeks. The cloves turn dark and jammy, the sharpness disappears, and what is left is concentrated umami with a sweet, almost balsamic quality. Mash a clove into a sauce, dressing, or marinade. It adds depth that miso and soy cannot replicate."
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Cooked and concentrated"
+      },
+      {
+        "type": "paragraph",
+        "html": "Cooking concentrates glutamates. These ingredients work because heat and time have already done part of the work. The key with most of them is not to rush that process when you add them to a dish."
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Tomato paste.</strong> Cook it in oil over medium heat until it darkens and sticks slightly to the pan before adding any liquid. This is not optional. That step concentrates the glutamates and changes what it can do. Tomato paste added directly to liquid is weaker by comparison.",
+          "<strong>Dried mushrooms.</strong> Rehydrate in warm water for thirty minutes. Use both the mushrooms and the soaking liquid, strained. The liquid is one of the most concentrated umami sources you can make at home. Add it to soups, braises, and grain-cooking liquid.",
+          "<strong>Parmesan rind.</strong> Drop it into soups, braises, and the water you use to cook grains. Remove before serving. It costs nothing if you are already buying parmesan, and it changes the whole pot. Keep rinds in the freezer between uses.",
+          "<strong>Caramelized onions.</strong> Low heat, long time, no shortcuts. The sugars break down and the glutamates concentrate. What you end up with is a paste that works as an umami base in almost any savory preparation.",
+          "<strong>Roasted garlic.</strong> Roasting mellows the sharp bite and concentrates depth. Squeeze the cloves out and mash into sauces, dressings, or spreads. It layers well with other umami sources."
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Proteins and fermented dairy"
+      },
+      {
+        "type": "paragraph",
+        "html": "Proteins are naturally rich in glutamates, and cooking concentrates them further. The fermented dairy sources below are worth noting specifically because they are foundational to the Protein Flip\u2122 method and often underused as umami contributors."
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Parmesan and aged hard cheeses.</strong> The longer the age, the higher the glutamate concentration. Parmesan is one of the most umami-dense ingredients available. Grate it over finished dishes, stir it into sauces, or use the rind in liquid.",
+          "<strong>Greek yogurt.</strong> The fermentation process produces mild glutamates. When used as a base in dressings or sauces, it adds a background savory depth beyond its acidity. Season it with intention and it becomes a full umami platform.",
+          "<strong>Cottage cheese.</strong> Similar to Greek yogurt. Often overlooked as a savory ingredient, but its fermented base gives it more depth than fresh dairy. Build on it with herbs, acid, and a small amount of one of the fermented sources above.",
+          "<strong>Cooked animal proteins.</strong> Browning produces new glutamates through the Maillard reaction. A properly seared piece of chicken or fish has more umami than one that has been poached or steamed. This is one reason a good sear matters beyond texture."
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "How to use this list"
+      },
+      {
+        "type": "paragraph",
+        "html": "You do not need every ingredient here. You need a few that you reach for reliably. For most cooks, that means: white miso, parmesan rind, tomato paste, and either soy sauce or fish sauce. Those four cover a wide range of preparations and they stack well together."
+      },
+      {
+        "type": "paragraph",
+        "html": "Umami compounds amplify each other. A dish built on two or three of these sources will taste more finished than one built on the same amount of a single source. The goal is not to taste any of them. The goal is depth."
+      },
+      {
+        "type": "quote",
+        "text": "Salt tells you the dish is there. Acid tells you the dish is alive. Umami tells you the dish is real."
+      }
+    ],
+    "cta": {
+      "heading": "Go deeper in this month's lesson.",
+      "text": "The member lesson on umami covers the culinary reasoning, the variables that change how much you need and when to add it, and how to apply it across different preparations. It is the framework behind this pantry guide.",
+      "label": "Read the Lesson",
+      "href": "/members/library/lessons/what-umami-actually-does"
+    },
+    "pinned": false,
+    "pinOrder": null
   },
-  "pinned": true,
-  "pinOrder": 3
- },
- {
-  "slug": "spice-rack-as-passport",
-  "title": "Your Spice Rack Is a Passport",
-  "collections": [
-   "Flavor Builders"
-  ],
-  "blurb": "One drawer, many kitchens. Cumin, oregano, paprika, and chili each point somewhere specific. Here's how to start reading spices as places, not just heat or color.",
-  "subtitle": "Flavor isn't universal. It's cultural.",
-  "hero": null,
-  "date": "2026-08-26",
-  "videoId": null,
-  "recipeSlugs": [
-   "moroccan-lamb-stew-kfetv",
-   "korean-inspired-gochujang-glazed-salmon-with-garlic-spinach",
-   "authentic-tortilla-soup-with-pasilla-chiles"
-  ],
-  "productLinks": [],
-  "relatedPostSlug": "around-the-world-in-a-spice-rack",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "When you open a spice drawer, you are holding more than seasoning. You are holding a map of how people cook."
-   },
-   {
-    "type": "paragraph",
-    "html": "Cumin can lean Moroccan or Mexican depending on what sits next to it. Oregano is not one plant with one flavor. Paprika can be sweet, smoked, or hot, and each choice steers the dish. Chili is heat, but it is also fruit, smoke, and brightness."
-   },
-   {
-    "type": "paragraph",
-    "html": "A useful starting question is not \"what spice should I add?\" It is \"where does this dish want to go?\" Once you know the direction, the jar becomes a decision instead of a guess."
-   },
-   {
-    "type": "list",
-    "ordered": false,
-    "items": [
-     "Smell before you shake. If it smells flat, it will cook flat.",
-     "Toast whole spices when you want deeper aroma.",
-     "Add dried spices early enough to bloom in fat or liquid; finish with fresh herbs when brightness matters."
-    ]
-   },
-   {
-    "type": "paragraph",
-    "html": "The Spice Series walks through oregano, cumin, basil, paprika, cinnamon, and chili one by one, then brings them back together as a way of cooking with intention."
-   }
-  ]
- },
- {
-  "slug": "oregano-three-flavors",
-  "title": "Oregano Is Not One Flavor",
-  "collections": [
-   "Flavor Builders",
-   "Ingredient Adventures"
-  ],
-  "blurb": "Mediterranean, Mexican, and Italian oregano can share a name and still cook like three different ingredients. Know which jar you are reaching for.",
-  "subtitle": "Same name. Different plants. Different dishes.",
-  "hero": null,
-  "date": "2026-08-25",
-  "videoId": null,
-  "recipeSlugs": [
-   "classic-salsa-verde",
-   "authentic-chiles-rellenos-g1tu9",
-   "chili-colorado"
-  ],
-  "productLinks": [],
-  "relatedPostSlug": "oregano-three-completely-different-flavors",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Oregano gets treated like a single pantry staple. In practice, it behaves like a family of flavors."
-   },
-   {
-    "type": "paragraph",
-    "html": "Mediterranean oregano tends to be piney and herbal. Mexican oregano leans citrusy and more assertive. What many people call Italian oregano sits somewhere in that Mediterranean family, but the jar still matters more than the label on the recipe."
-   },
-   {
-    "type": "paragraph",
-    "html": "If a tomato sauce tastes vaguely wrong, or a taco filling feels off even though the spice list looks right, the oregano variety is often the quiet culprit."
-   },
-   {
-    "type": "quote",
-    "text": "Match the oregano to the kitchen you are cooking in, not just the word on the page."
-   }
-  ]
- },
- {
-  "slug": "cumin-grounds-a-dish",
-  "title": "Cumin: The Flavor That Grounds a Dish",
-  "collections": [
-   "Flavor Builders"
-  ],
-  "blurb": "Cumin is structural, not decorative. Toast it, bloom it, and let it anchor stews, beans, and spice mixes without turning muddy.",
-  "subtitle": "Background spice? Not if you cook it well.",
-  "hero": null,
-  "date": "2026-08-24",
-  "videoId": null,
-  "recipeSlugs": [
-   "chili-colorado",
-   "moroccan-lamb-stew-kfetv",
-   "crispy-air-fry-falafel-with-fresh-herbs"
-  ],
-  "productLinks": [],
-  "relatedPostSlug": "cumin-the-flavor-that-grounds-a-dish",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Cumin does not just add flavor. It gives a dish a floor to stand on."
-   },
-   {
-    "type": "paragraph",
-    "html": "Raw and dusty, it can taste dull. Toasted or bloomed in oil, it turns warm, nutty, and specific. That is why it shows up in chili, taco seasoning, curry bases, and bean pots: it holds the other spices together."
-   },
-   {
-    "type": "list",
-    "ordered": false,
-    "items": [
-     "Prefer whole seeds when you can toast them yourself.",
-     "Bloom ground cumin briefly in fat before liquid goes in.",
-     "Pair it with acid or fresh herbs so the dish does not read heavy."
-    ]
-   },
-   {
-    "type": "paragraph",
-    "html": "Once you treat cumin as structure, you stop sprinkling it as an afterthought and start building with it."
-   }
-  ]
- },
- {
-  "slug": "basil-finishing-move",
-  "title": "Basil Is a Finishing Move",
-  "collections": [
-   "Flavor Builders",
-   "Ingredient Adventures"
-  ],
-  "blurb": "Basil brings a dish to life when you protect its freshness. Heat it too hard and you lose the reason you added it.",
-  "subtitle": "Not a background herb. A last decision.",
-  "hero": null,
-  "date": "2026-08-23",
-  "videoId": null,
-  "recipeSlugs": [
-   "mediterranean-sweet-potato-salad-with-basil-and-pine-nuts",
-   "caponata-sicilian-eggplant-with-bold-flavors-made-simple-oofnk",
-   "healthy-summer-plate-tofu-veggies-pesto-unjury-flavorless-protein"
-  ],
-  "productLinks": [],
-  "relatedPostSlug": "basil-the-herb-that-brings-a-dish-to-life",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Basil is at its best when it still tastes like itself: bright, sweet, and a little peppery."
-   },
-   {
-    "type": "paragraph",
-    "html": "Long cooking flattens that. That is why so many good tomato dishes get basil at the end, torn by hand, stirred in off heat, or scattered over the plate. You are not hiding basil inside the sauce. You are letting people taste it."
-   },
-   {
-    "type": "paragraph",
-    "html": "If the recipe calls for dried basil, use a light hand and give it time in the liquid. Fresh basil and dried basil are related ideas, not interchangeable ones."
-   }
-  ]
- },
- {
-  "slug": "paprika-three-directions",
-  "title": "Paprika: One Spice, Three Directions",
-  "collections": [
-   "Flavor Builders"
-  ],
-  "blurb": "Sweet, smoked, and hot paprika can share a shelf and still send dinner three different ways. Choose the jar for the job.",
-  "subtitle": "Color is not the whole story.",
-  "hero": null,
-  "date": "2026-08-22",
-  "videoId": null,
-  "recipeSlugs": [
-   "hungarian-chicken-paprika",
-   "blackened-salmon-with-caramelized-onion-and-sweet-potato-salad",
-   "boiled-egg-hummus-on-keto-toast"
-  ],
-  "productLinks": [],
-  "relatedPostSlug": "paprika-three-completely-different-directions",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Paprika is often treated as a single red powder. It is closer to a category."
-   },
-   {
-    "type": "list",
-    "ordered": false,
-    "items": [
-     "Sweet paprika brings color and gentle pepper flavor.",
-     "Smoked paprika adds campfire depth that can dominate if you overdo it.",
-     "Hot paprika brings heat with paprika's fruitiness, not chili-powder sharpness alone."
-    ]
-   },
-   {
-    "type": "paragraph",
-    "html": "Bloom paprika gently in fat. High heat can turn it bitter fast. Once you know which direction you want, the rest of the seasoning gets easier."
-   }
-  ]
- },
- {
-  "slug": "cinnamon-beyond-sweet",
-  "title": "Cinnamon Beyond Dessert",
-  "collections": [
-   "Flavor Builders"
-  ],
-  "blurb": "Cinnamon is familiar in sweets and surprisingly useful in savory cooking. Used with restraint, it warms stews, sauces, and spice mixes without tasting like dessert.",
-  "subtitle": "Familiar flavor. Unexpected role.",
-  "hero": null,
-  "date": "2026-08-21",
-  "videoId": null,
-  "recipeSlugs": [
-   "moroccan-lamb-stew-kfetv",
-   "harira-moroccan-lentil-and-chickpea-soup-ac4m4",
-   "sweet-potato-cinnamon-rolls-rjh1v"
-  ],
-  "productLinks": [],
-  "relatedPostSlug": "cinnamon-familiar-flavor-unexpected-role",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Most home cooks meet cinnamon in oatmeal, baking, or coffee. Many cuisines use it as a savory warm note instead."
-   },
-   {
-    "type": "paragraph",
-    "html": "A stick in a braise, a pinch in tomato sauce, or a quiet role in chili and tagine mixes can make a dish taste rounded without announcing itself as sweet. The line between warmth and dessert is dose and company."
-   },
-   {
-    "type": "quote",
-    "text": "If you can taste cinnamon first, you probably used too much for a savory plate."
-   }
-  ]
- },
- {
-  "slug": "chili-flavor-not-just-heat",
-  "title": "Chili Is Flavor, Not Just Heat",
-  "collections": [
-   "Flavor Builders",
-   "Ingredient Adventures"
-  ],
-  "blurb": "Fresh chilies, dried pods, and powders are related tools with different jobs. Choose for fruit, smoke, and brightness, not Scoville alone.",
-  "subtitle": "Same family. Completely different kitchens.",
-  "hero": null,
-  "date": "2026-08-20",
-  "videoId": null,
-  "recipeSlugs": [
-   "authentic-tortilla-soup-with-pasilla-chiles",
-   "chili-colorado",
-   "royal-tempeh-sweet-potato-tacos-with-chili-lime-yogurt-protein-flip-tm-weeknight-meal"
-  ],
-  "productLinks": [],
-  "relatedPostSlug": "chili-peppers-and-powders-same-ingredient-different-worlds",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "If chili only means \"make it spicy,\" you miss most of what chili can do."
-   },
-   {
-    "type": "paragraph",
-    "html": "Fresh chilies bring snap and vegetal brightness. Dried chilies bring depth, fruit, and sometimes smoke. Powders and flakes are convenient, but they are already a processed version of a specific chili, not a universal heat button."
-   },
-   {
-    "type": "paragraph",
-    "html": "Start by asking what kind of heat the dish wants: sharp and fresh, slow and toasted, or warm and rounded. Then pick the form that matches."
-   }
-  ]
- },
- {
-  "slug": "spices-from-flavor-to-feeling",
-  "title": "Spices: From Flavor to Feeling",
-  "collections": [
-   "Flavor Builders"
-  ],
-  "blurb": "Once you understand individual spices, the real skill is composition: how they work together to make a meal feel like somewhere.",
-  "subtitle": "The series was never only about jars.",
-  "hero": null,
-  "date": "2026-08-19",
-  "videoId": null,
-  "recipeSlugs": [
-   "harira-moroccan-lentil-and-chickpea-soup-ac4m4",
-   "korean-inspired-gochujang-glazed-salmon-with-garlic-spinach",
-   "chicken-tika-masala"
-  ],
-  "productLinks": [],
-  "relatedPostSlug": "spices-bringing-it-all-together-flavor-to-feeling",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Learning spices one by one is useful. Cooking with them means deciding how they relate."
-   },
-   {
-    "type": "paragraph",
-    "html": "A grounding spice, a bright herb, a touch of heat, and something warm can turn a simple protein-and-vegetable plate into a meal with a point of view. That is the difference between seasoning and building flavor."
-   },
-   {
-    "type": "paragraph",
-    "html": "If a dish tastes busy, simplify. If it tastes flat, ask what is missing: depth, brightness, heat, or aroma. Spices answer those questions when you use them with intention."
-   }
-  ]
- },
- {
-  "slug": "cooking-with-all-your-senses",
-  "title": "Cooking with All Your Senses",
-  "collections": [
-   "Flavor Builders",
-   "Kitchen Skills"
-  ],
-  "blurb": "A meal isn't just something you eat. It's something you experience. Smell, sound, sight, touch, and taste are how you cook, not just how you enjoy the plate.",
-  "subtitle": "Cooking is not just about what ends up on the plate.",
-  "hero": null,
-  "date": "2026-08-17",
-  "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
-  "relatedPostSlug": "cooking-with-all-your-senses",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Most people treat healthy eating as a list of ingredients and numbers. The shift happens when you start noticing the food while it cooks."
-   },
-   {
-    "type": "paragraph",
-    "html": "Your nose tells you the garlic is ready. Your ears tell you whether the pan is hot enough. Your eyes catch browning. Your hands feel texture. Taste is the last confirmation, not the first signal."
-   },
-   {
-    "type": "paragraph",
-    "html": "The Senses Series walks through smell, sound, sight, touch, and taste the way they actually show up in a kitchen, then brings them back together as a way of cooking with attention."
-   }
-  ]
- },
- {
-  "slug": "smell-first-signal",
-  "title": "Smell: The First Signal",
-  "collections": [
-   "Flavor Builders",
-   "Kitchen Skills"
-  ],
-  "blurb": "Your nose knows before you do. Garlic, spices, and onions each have a smell for ready, and another for gone too far.",
-  "subtitle": "Aroma is already cooking the meal.",
-  "hero": null,
-  "date": "2026-08-16",
-  "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
-  "relatedPostSlug": "smell-the-first-signal",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Smell is the first real signal in the kitchen. It draws people in before they see the plate, and it tells the cook what is happening in the pan."
-   },
-   {
-    "type": "paragraph",
-    "html": "Raw garlic, fragrant garlic, and garlic that is about to burn do not smell the same. Neither do dusty spices and spices that have bloomed in warm oil."
-   },
-   {
-    "type": "list",
-    "ordered": false,
-    "items": [
-     "Smell ingredients before they hit the heat, then again as they cook.",
-     "If the dish smells heavy, lift it with herbs or citrus.",
-     "If you barely smell the spices you added, they may never have had time to bloom."
-    ]
-   }
-  ]
- },
- {
-  "slug": "sound-kitchen-speaking-back",
-  "title": "Sound: The Kitchen Speaking Back",
-  "collections": [
-   "Flavor Builders",
-   "Kitchen Skills"
-  ],
-  "blurb": "The kitchen is never silent. The sizzle tells you whether the pan is ready, and when to leave the food alone.",
-  "subtitle": "If you are paying attention, the pan is guiding you.",
-  "hero": null,
-  "date": "2026-08-15",
-  "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
-  "relatedPostSlug": "sound-the-kitchen-speaking-back",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Sound is immediate feedback. A confident sizzle means moisture is meeting heat. Almost no sound means the pan is not ready. A wild crackle and smoking oil is a different message."
-   },
-   {
-    "type": "paragraph",
-    "html": "The useful part is how the sound changes. Vegetables quiet as their moisture cooks off. A gentle simmer does not sound like a hard boil."
-   },
-   {
-    "type": "paragraph",
-    "html": "Stop moving for a few seconds the next time you cook. Listen, then connect what you hear to what you see in the pan."
-   }
-  ]
- },
- {
-  "slug": "sight-the-first-taste",
-  "title": "Sight: The First Taste",
-  "collections": [
-   "Flavor Builders",
-   "Kitchen Skills"
-  ],
-  "blurb": "Before a bite is taken, a decision is already made. Color, contrast, and browning are cooking cues, not just plating.",
-  "subtitle": "Your eyes are checking your work.",
-  "hero": null,
-  "date": "2026-08-14",
-  "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
-  "relatedPostSlug": "sight-the-first-taste",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Recipes already speak in pictures. Cook until translucent. Roast until golden. Reduce until thickened. Those are instructions to look."
-   },
-   {
-    "type": "paragraph",
-    "html": "Then the plate arrives, and sight becomes expectation. A beige plate can taste wonderful and still feel unfinished next to one with greens, roasted browns, and something bright."
-   },
-   {
-    "type": "paragraph",
-    "html": "Protein Flip™ Verified starts here. You can often see whether a plate feels complete without counting a thing."
-   }
-  ]
- },
- {
-  "slug": "touch-texture-of-satisfaction",
-  "title": "Touch: The Texture of Satisfaction",
-  "collections": [
-   "Flavor Builders",
-   "Kitchen Skills"
-  ],
-  "blurb": "Satisfaction isn't just flavor. It's contrast. Crisp against creamy is how a plate holds attention.",
-  "subtitle": "Texture is doing more work than most people notice.",
-  "hero": null,
-  "date": "2026-08-13",
-  "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
-  "relatedPostSlug": "touch-the-texture-of-satisfaction",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Touch starts with your hands. A tomato, an avocado, dough, fish, meat. Each one changes as it cooks, and that change is information."
-   },
-   {
-    "type": "paragraph",
-    "html": "In the mouth it becomes texture. Soft protein, soft vegetables, soft grain, and soft sauce can taste fine and still feel like one note."
-   },
-   {
-    "type": "paragraph",
-    "html": "Add one contrast: toasted seeds, crisp edges, a creamy sauce against something fresh. The plate starts to move."
-   }
-  ]
- },
- {
-  "slug": "taste-the-final-connection",
-  "title": "Taste: The Final Connection",
-  "collections": [
-   "Flavor Builders",
-   "Kitchen Skills"
-  ],
-  "blurb": "Taste isn't the starting point. It's the result. Balance is what smell, sound, sight, and touch have been building toward.",
-  "subtitle": "Flavor is built in layers.",
-  "hero": null,
-  "date": "2026-08-12",
-  "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
-  "relatedPostSlug": "taste-the-final-connection",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "By the first bite, the other senses have already done most of the work. Taste completes it."
-   },
-   {
-    "type": "paragraph",
-    "html": "When something is off, salt is not always the answer. A heavy sauce may need acid. A thin soup may need savory depth. Sometimes the dish needs more time, not another ingredient."
-   },
-   {
-    "type": "paragraph",
-    "html": "Taste as you go when it is safe to do so. The comparison, before and after one change, is how flavor memory gets built."
-   }
-  ]
- },
- {
-  "slug": "senses-bringing-it-all-together",
-  "title": "Bringing It All Together",
-  "collections": [
-   "Flavor Builders",
-   "Kitchen Skills"
-  ],
-  "blurb": "The most important lessons I learned weren't written down. They were felt. A return to the grandmother's kitchen, and why the method earned a book.",
-  "subtitle": "Pay attention. That is the whole method.",
-  "hero": null,
-  "date": "2026-08-11",
-  "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
-  "relatedPostSlug": "bringing-it-all-together",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "The series started in a grandmother's kitchen, with a smell that filled the house before anyone sat down."
-   },
-   {
-    "type": "paragraph",
-    "html": "Recipes and measurements matter. What turns them into instinct is connecting those instructions to what you smell, hear, see, feel, and taste while you cook."
-   },
-   {
-    "type": "paragraph",
-    "html": "That way of paying attention is part of what became The Protein Flip™ Method and Cookbook, Deluxe Edition. The tools were already there. Your senses."
-   }
-  ]
- },
- {
-  "slug": "cook-garlic-without-bitterness",
-  "title": "How to Cook Garlic Without Bitterness",
-  "collections": [
-   "Kitchen Skills",
-   "Ingredient Adventures"
-  ],
-  "blurb": "Garlic does not turn bitter just because it cooked. Heat, size, and timing decide whether it stays sweet or goes sharp. Here is the practical fix.",
-  "subtitle": "The kitchen warning is incomplete. The technique is not.",
-  "hero": null,
-  "date": "2026-08-18",
-  "videoId": null,
-  "recipeSlugs": [
-   "air-fryer-garlic-and-herb-baby-potatoes",
-   "grillicious-garlic-shrimp-xprxy",
-   "healthy-20chicken-skewers-with-creamy-garlic-yogurt-sauce-easy-high-protein-dinner"
-  ],
-  "productLinks": [],
-  "relatedPostSlug": "from-bitter-to-beautiful-cooking-garlic",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "\"Don't burn the garlic\" is useful advice, but it skips the real mechanics. Bitterness shows up when garlic's edges get ahead of the rest of the pan."
-   },
-   {
-    "type": "list",
-    "ordered": false,
-    "items": [
-     "Minced garlic cooks faster than sliced or smashed cloves.",
-     "Hot empty oil can scorch garlic before anything else hits the pan.",
-     "Lower heat, more fat, or adding garlic later all buy you control."
-    ]
-   },
-   {
-    "type": "paragraph",
-    "html": "When garlic turns golden and fragrant, you are in the window. When it smells sharp and looks dark at the edges, you have crossed it. Pull the pan or add liquid before that happens."
-   }
-  ]
- },
- {
-  "slug": "what-is-black-garlic",
-  "title": "What Is Black Garlic?",
-  "collections": [
-   "Ingredient Adventures"
-  ],
-  "blurb": "Black garlic is aged, not roasted. It tastes sweet, savory, and unfamiliar in the best way. A short primer on why curiosity belongs in the pantry.",
-  "subtitle": "Not roasted garlic. Something else entirely.",
-  "hero": null,
-  "date": "2026-08-18",
-  "videoId": null,
-  "recipeSlugs": [
-   "bourbon-black-garlic-salmon-with-roasted-sweet-potato-fries-lemon-parmesan-broccoli",
-   "chicken-tinga-tostadas"
-  ],
-  "productLinks": [],
-  "relatedPostSlug": "black-garlic-ingredient-discovery",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Black garlic looks dramatic, but the idea is simple: ordinary garlic aged under controlled heat and humidity until the cloves turn soft, dark, and candy-savory."
-   },
-   {
-    "type": "paragraph",
-    "html": "It does not taste like roasted garlic. It leans toward molasses, balsamic, and umami. That makes it useful anywhere you want depth without more salt or more heat: sauces, dressings, compound butters, even a quiet finish on protein."
-   },
-   {
-    "type": "paragraph",
-    "html": "Start small. One clove can change a vinaigrette. Two can deepen a glaze. The point is not novelty for its own sake. It is remembering that the next ingredient can teach you a new move."
-   }
-  ]
- },
- {
-  "slug": "why-brown-tastes-better",
-  "title": "Why Brown Tastes Better",
-  "collections": [
-   "Kitchen Skills"
-  ],
-  "blurb": "The sear is not just color. Maillard browning and caramelization build flavor you cannot get from seasoning alone. Give the pan a chance to work.",
-  "subtitle": "The most important flavor is one you build with heat.",
-  "hero": null,
-  "date": "2026-06-08",
-  "videoId": null,
-  "recipeSlugs": [
-   "chicken-fajita-bowl-quick-and-flavorful-dinner-idea",
-   "chicken-tinga-tostadas",
-   "blackened-salmon-with-caramelized-onion-and-sweet-potato-salad"
-  ],
-  "productLinks": [],
-  "relatedPostSlug": "why-brown-tastes-better-maillard-caramelization",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "When food hits a hot pan and the sound changes, browning has started. That is where a lot of savory depth comes from."
-   },
-   {
-    "type": "paragraph",
-    "html": "Crowding the pan steams food instead of searing it. Wet surfaces delay browning. Medium-high heat, enough space, and a little patience usually beat another shake of seasoning."
-   },
-   {
-    "type": "list",
-    "ordered": false,
-    "items": [
-     "Pat protein dry before it hits the pan.",
-     "Leave it alone long enough to color.",
-     "Use the browned bits in the pan as the start of a sauce."
-    ]
-   }
-  ]
- },
- {
-  "slug": "clean-cooking-shortcuts",
-  "title": "Clean Cooking: Shortcuts That Still Work",
-  "collections": [
-   "Kitchen Skills"
-  ],
-  "blurb": "Every kitchen needs shortcuts. The useful ones protect flavor and cleanup. The lazy ones create more work later. Learn the difference.",
-  "subtitle": "It is not only what you cook. It is how you work.",
-  "hero": null,
-  "date": "2026-05-11",
-  "videoId": null,
-  "recipeSlugs": [
-   "tuna-chickpea-salad",
-   "boiled-egg-hummus-on-keto-toast",
-   "simple-frittata"
-  ],
-  "productLinks": [],
-  "relatedPostSlug": "clean-cooking-real-shortcuts-vs-lazy",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Clean cooking is less about perfect ingredients and more about a kitchen that stays usable while you cook."
-   },
-   {
-    "type": "paragraph",
-    "html": "Good shortcuts look like mise en place that matches the recipe, a trash bowl within reach, wiping the board between tasks, and choosing the pan that fits the job. Bad shortcuts look like skipping browning, overcrowding, or leaving a sticky mess that makes the next step harder."
-   },
-   {
-    "type": "quote",
-    "text": "If a shortcut creates cleanup, confusion, or flat flavor, it was not a shortcut."
-   }
-  ]
- },
- {
-  "slug": "reasons-you-dont-cook",
-  "title": "\"I Don't Cook Because…\"",
-  "collections": [
-   "Kitchen Skills"
-  ],
-  "blurb": "Time, skill, mess, picky eaters, and perfectionism are real barriers. None of them have to be permanent. Start with the reason that is actually yours.",
-  "subtitle": "Name the blocker. Then shrink the first step.",
-  "hero": null,
-  "date": "2026-04-28",
-  "videoId": null,
-  "recipeSlugs": [
-   "simple-frittata",
-   "tuna-chickpea-salad",
-   "chicken-fajita-bowl-quick-and-flavorful-dinner-idea"
-  ],
-  "productLinks": [
-   {
-    "name": "The Protein Flip™ Starter Guide",
-    "url": "https://buy.stripe.com/00w5kEfwneb1e7E0VH4Vy07"
-   }
-  ],
-  "relatedPostSlug": "i-dont-cook-because---lets-talk-about-the-real-reasons-and-why-they-dont-have-to-stop-you",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "People rarely stop cooking because they dislike food. They stop because something about the process feels heavier than the result."
-   },
-   {
-    "type": "list",
-    "ordered": false,
-    "items": [
-     "If time is the issue, cook one reliable 20-minute meal on repeat before expanding.",
-     "If skill is the issue, master browning, seasoning, and one sauce, not twenty recipes.",
-     "If mess is the issue, simplify the pan count and clean as you go.",
-     "If people at the table are picky, build a base everyone accepts and let toppings carry variety."
-    ]
-   },
-   {
-    "type": "paragraph",
-    "html": "The goal is not to become a different person overnight. It is to remove the one friction point that keeps dinner from happening."
-   }
-  ]
- },
- {
-  "slug": "savor-the-moment-in-the-kitchen",
-  "title": "Savor the Moment in the Kitchen",
-  "collections": [
-   "Kitchen Skills"
-  ],
-  "blurb": "Confidence grows when you pay attention while you cook: smell, color, sound, and timing. Awareness is a technique, not a mood.",
-  "subtitle": "The dish changes when you do.",
-  "hero": null,
-  "date": "2026-06-10",
-  "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
-  "relatedPostSlug": "savor-the-moment",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Recipes tell you what to do. Awareness tells you when it is working."
-   },
-   {
-    "type": "paragraph",
-    "html": "Listen for the sear. Watch for garlic's color. Taste before you add more salt. Those small checks are how home cooks stop depending on the next instruction and start trusting the pan."
-   },
-   {
-    "type": "paragraph",
-    "html": "You do not need a quiet kitchen or a special night. You need one meal where you stay present long enough to notice what the food is doing."
-   }
-  ]
- },
- {
-  "slug": "what-is-the-protein-flip",
-  "title": "What Is the Protein Flip™?",
-  "collections": [
-   "Protein Flip™ Foundations"
-  ],
-  "blurb": "The Protein Flip™ Method rebuilds the plate around balance, flavor, and staying power, without asking you to abandon the foods that feel like home.",
-  "subtitle": "A chef's return to balance.",
-  "hero": null,
-  "date": "2026-05-14",
-  "videoId": null,
-  "recipeSlugs": [
-   "marry-me-chickpea-soup-with-kale",
-   "chicken-tinga-tostadas",
-   "turkey-lentil-meatball-salad-greek-yogurt"
-  ],
-  "productLinks": [],
-  "relatedPostSlug": "what-is-the-protein-flip-tm-a-chefs-return-to-balance",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "The Protein Flip™ Method started as a personal reset in the kitchen: same love of cooking, better structure underneath the plate."
-   },
-   {
-    "type": "paragraph",
-    "html": "Instead of treating \"healthy\" as subtraction, the Flip asks what the meal needs first, protein with real presence, plants and fiber that do work, carbohydrates kept portion-smart, and flavor that makes the plate worth repeating."
-   },
-   {
-    "type": "quote",
-    "text": "Don't automatically subtract the food you love. Rebuild the proportions around it."
-   },
-   {
-    "type": "paragraph",
-    "html": "If you want the fuller story of how the method took shape, the Journal essay is the place to start. For the plate-building shorthand, see <a href=\"/explore/article/what-is-a-protein-first-plate\">What Is a Protein-First Plate?</a>"
-   }
-  ],
-  "cta": {
-   "heading": "Ready to Put It Into Practice?",
-   "text": "The Protein Flip™ Method and Cookbook, Deluxe Edition turns these ideas into meals you can cook on a weeknight, with the same balance and flavor standards Henry uses in his own kitchen.",
-   "label": "See the Cookbook",
-   "href": "/cookbook"
+  {
+    "slug": "what-is-a-protein-first-plate",
+    "title": "What Is a Protein-First Plate?",
+    "collections": [
+      "Protein Flip\u2122 Foundations",
+      "Grocery Intelligence"
+    ],
+    "blurb": "One question changes how the whole plate gets built: what's the protein in this meal? Here's what a protein-first plate actually means, and why it isn't the same thing as low-carb.",
+    "subtitle": "One question changes how the whole plate gets built.",
+    "hero": "/images/explore/what-is-a-protein-first-plate.png",
+    "articleHero": "/images/explore/what-is-a-protein-first-plate-article.png",
+    "date": "2026-08-15",
+    "videoId": null,
+    "recipeSlugs": [],
+    "productLinks": [],
+    "relatedPostSlug": "what-is-the-protein-flip-tm-a-chefs-return-to-balance",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "A bowl of cereal might be fast, but an hour or two later you may already be looking for something else to eat. A giant salad can look like the healthy choice, yet still leave you wondering why lunch didn't really feel like lunch."
+      },
+      {
+        "type": "paragraph",
+        "html": "Sometimes the problem isn't the food itself. It's the way the meal was built."
+      },
+      {
+        "type": "paragraph",
+        "html": "A protein-first plate simply changes which decision you make first."
+      },
+      {
+        "type": "paragraph",
+        "html": "Instead of starting with pasta, rice, bread, or whatever happens to fill most of the plate and then adding a little protein on the side, start by asking:"
+      },
+      {
+        "type": "quote",
+        "text": "What's the protein in this meal?"
+      },
+      {
+        "type": "paragraph",
+        "html": "That doesn't mean protein needs to dominate the plate. It means you account for it before everything else."
+      },
+      {
+        "type": "paragraph",
+        "html": "Once that's established, you can build the rest of the meal around it with produce, carbohydrates, flavor, texture, and other ingredients that contribute nutrition of their own."
+      },
+      {
+        "type": "paragraph",
+        "html": "That's where protein-first connects to the larger Protein Flip\u2122 Method. The goal isn't a plate built around one enormous piece of protein. It's a meal where nutrition is dispersed across the ingredients instead of asking one food to do all the work."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Protein First Doesn't Mean Protein Only"
+      },
+      {
+        "type": "paragraph",
+        "html": "Your protein might be salmon, chicken, eggs, Greek yogurt, tofu, shrimp, cottage cheese, lentils, beans, or something else entirely."
+      },
+      {
+        "type": "paragraph",
+        "html": "Then comes everything that makes it a meal."
+      },
+      {
+        "type": "paragraph",
+        "html": "Fresh or cooked produce can bring fiber, color, texture, and volume. Rice, potatoes, pasta, tortillas, bread, oats, or other carbohydrates can provide energy, comfort, and satisfaction. Herbs, sauces, spices, citrus, cheese, avocado, nuts, and other flavor builders make the meal something you actually want to eat."
+      },
+      {
+        "type": "paragraph",
+        "html": "Protein is simply the first decision."
+      },
+      {
+        "type": "paragraph",
+        "html": "A useful way to picture it is:"
+      },
+      {
+        "type": "quote",
+        "text": "Protein + Produce + Carbohydrate + Flavor"
+      },
+      {
+        "type": "paragraph",
+        "html": "The proportions can change depending on the dish, your appetite, and what you enjoy eating."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Think Portion-Smart, Not Oversized"
+      },
+      {
+        "type": "paragraph",
+        "html": "Protein-first isn't an excuse to turn every meal into a giant chicken breast surrounded by vegetables."
+      },
+      {
+        "type": "paragraph",
+        "html": "The idea is portion-smart."
+      },
+      {
+        "type": "paragraph",
+        "html": "Give the protein enough presence to contribute meaningfully to the meal, but let the other ingredients do their jobs too."
+      },
+      {
+        "type": "paragraph",
+        "html": "The same applies to carbohydrates."
+      },
+      {
+        "type": "paragraph",
+        "html": "Rice isn't the problem. Pasta isn't the problem. Potatoes, tortillas, bread, and pizza aren't the problem either."
+      },
+      {
+        "type": "paragraph",
+        "html": "Rather than removing them, think about the role they're playing in the meal."
+      },
+      {
+        "type": "paragraph",
+        "html": "A big bowl of pasta with a small amount of sauce may taste great but leave very little room for anything else. A portion-smart amount of pasta combined with chicken or white beans, spinach, roasted tomatoes, Parmesan, and chile flakes becomes a very different meal without taking the pasta away."
+      },
+      {
+        "type": "paragraph",
+        "html": "That's an important part of the Protein Flip\u2122 philosophy:"
+      },
+      {
+        "type": "quote",
+        "text": "Don't automatically subtract the food you love. Add nutrition around it and rethink the proportions."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "A Protein-First Plate Can Look Like Almost Anything"
+      },
+      {
+        "type": "paragraph",
+        "html": "This isn't a plate diagram you have to recreate every night."
+      },
+      {
+        "type": "paragraph",
+        "html": "It could be:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Scrambled eggs with black beans, salsa, avocado, and a warm tortilla.",
+          "Salmon with rice, cucumber, edamame, and a sesame-chile sauce.",
+          "Chicken sausage with white beans, kale, and a portion-smart amount of pasta in a garlicky tomato sauce.",
+          "Greek yogurt with berries, peanut butter, and the crunchy cereal you actually enjoy."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "html": "The ingredients change. The thinking stays the same."
+      },
+      {
+        "type": "paragraph",
+        "html": "Start by identifying the protein, then let the rest of the meal work with it."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Carbs Get to Stay"
+      },
+      {
+        "type": "paragraph",
+        "html": "One of the things I want people to understand about protein-first cooking is that it isn't another way of saying low-carb."
+      },
+      {
+        "type": "paragraph",
+        "html": "Carbohydrates bring energy, comfort, tradition, texture, and a lot of culinary joy."
+      },
+      {
+        "type": "paragraph",
+        "html": "You don't need to replace pasta with vegetable noodles just because you're trying to build a more nutritious meal. You don't need to remove the tortilla from a taco or skip the bread on a sandwich."
+      },
+      {
+        "type": "paragraph",
+        "html": "Instead, ask whether the proportions of the meal allow the other ingredients to contribute too."
+      },
+      {
+        "type": "paragraph",
+        "html": "That's the Flip."
+      },
+      {
+        "type": "paragraph",
+        "html": "Not removing the food that makes the dish worth eating."
+      },
+      {
+        "type": "paragraph",
+        "html": "Changing the balance around it."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Where the Protein Flip\u2122 Comes In"
+      },
+      {
+        "type": "paragraph",
+        "html": "Protein-first is one useful entry point into the Protein Flip\u2122 Method, but it isn't the whole Method."
+      },
+      {
+        "type": "paragraph",
+        "html": "Protein Flip\u2122 is about building nutritionally dispersed meals."
+      },
+      {
+        "type": "paragraph",
+        "html": "Protein may come from more than one ingredient. Fiber may come from produce, beans, grains, seeds, or several of them at once. Flavor can come from herbs, spices, aromatics, sauces, acidity, browning, and texture."
+      },
+      {
+        "type": "paragraph",
+        "html": "Instead of searching for one perfect \"healthy\" ingredient, you build a meal where several ingredients contribute."
+      },
+      {
+        "type": "paragraph",
+        "html": "Protein-first just gives you a good place to begin."
+      },
+      {
+        "type": "paragraph",
+        "html": "Tonight, look at one meal you already enjoy and ask one question before you start cooking:"
+      },
+      {
+        "type": "quote",
+        "text": "What's the protein here?"
+      },
+      {
+        "type": "paragraph",
+        "html": "Then keep building."
+      }
+    ],
+    "cta": {
+      "heading": "Ready to Put It Into Practice?",
+      "text": "Inside Protein Flip\u2122 Kitchen, we take the next step. You'll learn how to choose proteins based on the meal you're actually making, disperse protein across primary and secondary ingredients, keep favorite carbohydrates portion-smart, layer flavor, adapt familiar meals, build fast dinners without relying on a recipe, and troubleshoot plates that still aren't working.",
+      "label": "See the Cookbook",
+      "href": "/cookbook"
+    },
+    "pinned": true,
+    "pinOrder": 3
   },
-  "pinned": true,
-  "pinOrder": 2
- },
- {
-  "slug": "science-and-soul-of-the-flip",
-  "title": "The Science and the Soul of the Flip",
-  "collections": [
-   "Protein Flip™ Foundations"
-  ],
-  "blurb": "Satiety, flavor, and culture are not competing goals. The Protein Flip™ Method holds the science of staying full and the soul of a meal worth sitting down for.",
-  "subtitle": "There is science behind that feeling.",
-  "hero": null,
-  "date": "2026-05-13",
-  "videoId": null,
-  "recipeSlugs": [
-   "smoky-autumn-vegetable-romesco-soup-the-protein-flip-way",
-   "protein-flip-huevos-rancheros-with-pinto-beans-greek-yogurt-pepitas",
-   "turkey-lentil-meatball-salad-greek-yogurt"
-  ],
-  "productLinks": [
-   {
-    "name": "The Protein Flip™ Method and Cookbook, Deluxe Edition",
-    "url": "https://buy.stripe.com/aFa6oI2JB4Ar3t0dIt4Vy00"
-   }
-  ],
-  "relatedPostSlug": "the-science-and-the-soul-behind-the-protein-flip",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "A method only works if people will keep cooking it. That means the plate has to satisfy physically and feel like real food culturally."
-   },
-   {
-    "type": "paragraph",
-    "html": "Protein and fiber help meals hold. Herbs, browning, acid, and texture make them memorable. The Flip treats both as non-negotiable. One without the other becomes either a diet plate or a delicious meal that does not carry you."
-   },
-   {
-    "type": "paragraph",
-    "html": "When a dinner leaves you full and glad you cooked, that is not an accident. It is structure working under flavor."
-   }
-  ]
- },
- {
-  "slug": "what-comfort-food-actually-is",
-  "title": "What Comfort Food Actually Is",
-  "collections": [
-   "Protein Flip™ Foundations"
-  ],
-  "blurb": "Comfort food is doing a job: familiarity, texture, and timing. Fight the craving and it gets louder. Rebuild the structure and the comfort can stay.",
-  "subtitle": "Keep the comfort. Change the structure.",
-  "hero": null,
-  "date": "2026-06-26",
-  "videoId": null,
-  "recipeSlugs": [
-   "marry-me-chickpea-soup-with-kale",
-   "italian-soup-with-red-potato",
-   "chicken-tinga-tostadas"
-  ],
-  "productLinks": [
-   {
-    "name": "The Protein Flip™ Method and Cookbook, Deluxe Edition",
-    "url": "https://buy.stripe.com/aFa6oI2JB4Ar3t0dIt4Vy00"
-   }
-  ],
-  "relatedPostSlug": "what-comfort-food-actually-is",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Comfort food is not a confession. It is usually a meal tied to memory, soft textures, and a moment when you needed steadiness."
-   },
-   {
-    "type": "paragraph",
-    "html": "Diet advice that bans comfort foods rarely removes the want. It delays it. The Flip approach keeps the dish on the table and changes what supports it: enough protein, plants that add fiber and volume, and flavor that still feels like the original."
-   },
-   {
-    "type": "quote",
-    "text": "A diet asks you to give up what works emotionally. A method asks what is underneath it."
-   }
-  ]
- },
- {
-  "slug": "stay-full-longer",
-  "title": "How to Stay Full Longer",
-  "collections": [
-   "Protein Flip™ Foundations",
-   "Grocery Intelligence"
-  ],
-  "blurb": "Persistent hunger on a smaller plate is often a structure problem. Protein, fiber, volume, and pacing do more than willpower.",
-  "subtitle": "Satiety is something you can cook for.",
-  "hero": null,
-  "date": "2026-06-16",
-  "videoId": null,
-  "recipeSlugs": [
-   "tuna-chickpea-salad",
-   "marry-me-chickpea-soup-with-kale",
-   "turkey-lentil-meatball-salad-greek-yogurt"
-  ],
-  "productLinks": [
-   {
-    "name": "GLP-1 & Bariatric Success Guide",
-    "url": "https://buy.stripe.com/14A6oI83VaYPbZw33P4Vy02"
-   }
-  ],
-  "relatedPostSlug": "how-to-stay-full-longer-on-a-diet-satiety-guide",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Cutting calories without rebuilding the plate often leaves people hunting the pantry an hour later. The meal was smaller. It was not more satisfying."
-   },
-   {
-    "type": "list",
-    "ordered": false,
-    "items": [
-     "Lead with protein that actually shows up on the plate.",
-     "Add fiber from plants, beans, or whole grains so the meal has staying power.",
-     "Keep carbohydrates portion-smart instead of banishing them.",
-     "Use sauces, herbs, and browning so the meal still feels complete."
+  {
+    "slug": "spice-rack-as-passport",
+    "title": "Your Spice Rack Is a Passport",
+    "collections": [
+      "Flavor Builders"
+    ],
+    "blurb": "One drawer, many kitchens. Cumin, oregano, paprika, and chili each point somewhere specific. Here's how to start reading spices as places, not just heat or color.",
+    "subtitle": "Flavor isn't universal. It's cultural.",
+    "hero": null,
+    "date": "2026-08-26",
+    "videoId": null,
+    "recipeSlugs": [
+      "moroccan-lamb-stew-kfetv",
+      "korean-inspired-gochujang-glazed-salmon-with-garlic-spinach",
+      "authentic-tortilla-soup-with-pasilla-chiles"
+    ],
+    "productLinks": [],
+    "relatedPostSlug": "around-the-world-in-a-spice-rack",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "When you open a spice drawer, you are holding more than seasoning. You are holding a map of how people cook."
+      },
+      {
+        "type": "paragraph",
+        "html": "Cumin can lean Moroccan or Mexican depending on what sits next to it. Oregano is not one plant with one flavor. Paprika can be sweet, smoked, or hot, and each choice steers the dish. Chili is heat, but it is also fruit, smoke, and brightness."
+      },
+      {
+        "type": "paragraph",
+        "html": "A useful starting question is not \"what spice should I add?\" It is \"where does this dish want to go?\" Once you know the direction, the jar becomes a decision instead of a guess."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Smell before you shake. If it smells flat, it will cook flat.",
+          "Toast whole spices when you want deeper aroma.",
+          "Add dried spices early enough to bloom in fat or liquid; finish with fresh herbs when brightness matters."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "html": "The Spice Series walks through oregano, cumin, basil, paprika, cinnamon, and chili one by one, then brings them back together as a way of cooking with intention."
+      }
     ]
-   },
-   {
-    "type": "paragraph",
-    "html": "Satiety is not a personality trait. It is a cooking outcome you can design for."
-   }
-  ]
- },
- {
-  "slug": "protein-and-fiber-together",
-  "title": "Why Protein and Fiber Belong Together",
-  "collections": [
-   "Protein Flip™ Foundations",
-   "Grocery Intelligence"
-  ],
-  "blurb": "A huge plate can still leave you snacky twenty minutes later. Protein and fiber together change how a meal holds.",
-  "subtitle": "Appetite control starts on the plate.",
-  "hero": null,
-  "date": "2026-06-02",
-  "videoId": null,
-  "recipeSlugs": [
-   "beet-chickpea-seed-crackers",
-   "protein-flip-blueberry-peach-quinoa-bake",
-   "tuna-chickpea-salad"
-  ],
-  "productLinks": [
-   {
-    "name": "GLP-1 & Bariatric Success Guide",
-    "url": "https://buy.stripe.com/14A6oI83VaYPbZw33P4Vy02"
-   }
-  ],
-  "relatedPostSlug": "high-protein-high-fiber",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Protein helps a meal register as substantial. Fiber slows the experience down and adds volume without asking one food to do everything."
-   },
-   {
-    "type": "paragraph",
-    "html": "That is why a protein-heavy plate with almost no plants, or a giant salad with almost no protein, can both fail. You need both jobs covered."
-   },
-   {
-    "type": "paragraph",
-    "html": "At the store, that might look like eggs plus beans, yogurt plus berries, chicken plus a big cooked vegetable, or lentils tucked into a pasta dish you already love."
-   }
-  ]
- },
- {
-  "slug": "portion-smart-not-portion-control",
-  "title": "Portion Smart, Not Portion Control",
-  "collections": [
-   "Protein Flip™ Foundations"
-  ],
-  "blurb": "\"Control\" implies tension. Portion-smart cooking keeps the foods you love and rebuilds the proportions so the plate works with you.",
-  "subtitle": "Less bracing. More building.",
-  "hero": null,
-  "date": "2026-05-06",
-  "videoId": null,
-  "recipeSlugs": [
-   "italian-soup-with-red-potato",
-   "protein-flip-huevos-rancheros-with-pinto-beans-greek-yogurt-pepitas",
-   "chicken-fajita-bowl-quick-and-flavorful-dinner-idea"
-  ],
-  "productLinks": [
-   {
-    "name": "The Protein Flip™ Starter Guide",
-    "url": "https://buy.stripe.com/00w5kEfwneb1e7E0VH4Vy07"
-   }
-  ],
-  "relatedPostSlug": "from-portion-control-to-portion-smart",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Portion control sounds like a fight with dinner. Portion-smart cooking sounds like a decision about what each part of the plate is for."
-   },
-   {
-    "type": "paragraph",
-    "html": "Pasta can stay. Rice can stay. The question is whether protein and plants have room to contribute, and whether the carbohydrate portion is doing its job without crowding everything else out."
-   },
-   {
-    "type": "quote",
-    "text": "Control braces against food. Structure makes room for it."
-   }
-  ]
- },
- {
-  "slug": "structure-that-sets-you-free",
-  "title": "The Structure That Sets You Free",
-  "collections": [
-   "Protein Flip™ Foundations",
-   "Kitchen Skills"
-  ],
-  "blurb": "Most people do not lack effort. They lack a repeatable way to decide what dinner is. Structure removes the uncertainty.",
-  "subtitle": "Clarity beats grit.",
-  "hero": null,
-  "date": "2026-06-10",
-  "videoId": null,
-  "recipeSlugs": [
-   "chicken-fajita-bowl-quick-and-flavorful-dinner-idea",
-   "tuna-chickpea-salad",
-   "smoky-autumn-vegetable-romesco-soup-the-protein-flip-way"
-  ],
-  "productLinks": [
-   {
-    "name": "The Protein Flip™ Starter Guide",
-    "url": "https://buy.stripe.com/00w5kEfwneb1e7E0VH4Vy07"
-   }
-  ],
-  "relatedPostSlug": "the-structure-that-sets-you-free",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Uncertainty is exhausting. If every dinner starts from zero, even a well-stocked kitchen feels hard."
-   },
-   {
-    "type": "paragraph",
-    "html": "A simple structure, protein first, then plants, then a portion-smart carbohydrate, then flavor, turns shopping and cooking into pattern recognition. You are not inventing a new personality. You are giving yourself a default."
-   },
-   {
-    "type": "paragraph",
-    "html": "Once the default exists, creativity has somewhere to land."
-   }
-  ]
- },
- {
-  "slug": "change-what-you-can-on-the-plate",
-  "title": "Change What You Can on the Plate",
-  "collections": [
-   "Protein Flip™ Foundations"
-  ],
-  "blurb": "You may not control your genetics. You can influence how you cook the foods that already feel like home. Keep the culture. Flip the structure.",
-  "subtitle": "Identity stays. Proportions can move.",
-  "hero": null,
-  "date": "2026-06-03",
-  "videoId": null,
-  "recipeSlugs": [
-   "protein-flip-huevos-rancheros-with-pinto-beans-greek-yogurt-pepitas",
-   "italian-soup-with-red-potato",
-   "chicken-tinga-tostadas"
-  ],
-  "productLinks": [
-   {
-    "name": "The Protein Flip™ Method and Cookbook, Deluxe Edition",
-    "url": "https://buy.stripe.com/aFa6oI2JB4Ar3t0dIt4Vy00"
-   }
-  ],
-  "relatedPostSlug": "change-what-you-can",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Healthy eating advice that erases culture does not last. People go back to the food that tastes like belonging."
-   },
-   {
-    "type": "paragraph",
-    "html": "The Flip approach starts there. Keep the dish, the holiday, the grandmother's sauce. Then look at protein presence, plant volume, and portion-smart carbohydrates inside that same meal."
-   },
-   {
-    "type": "paragraph",
-    "html": "Change what you can reach tonight. Leave the rest alone."
-   }
-  ]
- },
- {
-  "slug": "personal-greater-good",
-  "title": "The Personal Greater Good",
-  "collections": [
-   "Protein Flip™ Foundations"
-  ],
-  "blurb": "Some days are not about the perfect plate. Growth still counts when the kitchen is quiet. Here is how to hold standards without turning them into shame.",
-  "subtitle": "Progress is not only what happens on the plate.",
-  "hero": null,
-  "date": "2026-07-06",
-  "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
-  "relatedPostSlug": "the-personal-greater-good",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "A method that only works on ideal days is not a method. Life includes quieter kitchens, harder weeks, and plates that are simply good enough."
-   },
-   {
-    "type": "paragraph",
-    "html": "The personal greater good is choosing the next useful action without rewriting your identity around one meal. Cook when you can. Simplify when you need to. Return to structure without drama."
-   },
-   {
-    "type": "paragraph",
-    "html": "That steadiness is part of the Flip too."
-   }
-  ]
- },
- {
-  "slug": "comfort-cooking-still-matters",
-  "title": "Why Comfort Cooking Still Matters",
-  "collections": [
-   "Protein Flip™ Foundations",
-   "Kitchen Skills"
-  ],
-  "blurb": "Comfort cooking is memory, belonging, and care on a plate. Understanding that job helps you keep the meal and improve the structure underneath it.",
-  "subtitle": "The personal side of comfort food.",
-  "hero": null,
-  "date": "2026-06-04",
-  "videoId": null,
-  "recipeSlugs": [
-   "italian-soup-with-red-potato",
-   "marry-me-chickpea-soup-with-kale",
-   "smoky-autumn-vegetable-romesco-soup-the-protein-flip-way"
-  ],
-  "productLinks": [],
-  "relatedPostSlug": "table-talk-on-comfort-cooking-and-why-it-still-matters",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "There is a practical essay on what comfort food does mechanically, and there is the lived version: kitchens where care showed up as something simmering."
-   },
-   {
-    "type": "paragraph",
-    "html": "Both matter. If you only treat comfort food as a nutrition problem, you miss why people protect it. If you only treat it as nostalgia, you miss the chance to rebuild it so it still loves you back tomorrow."
-   },
-   {
-    "type": "paragraph",
-    "html": "For the mechanics, read <a href=\"/explore/article/what-comfort-food-actually-is\">What Comfort Food Actually Is</a>. For the story side, the linked Table Talk essay goes deeper."
-   }
-  ]
- },
- {
-  "slug": "kids-learn-in-the-kitchen",
-  "title": "How Kids Quietly Learn to Cook",
-  "collections": [
-   "Kitchen Skills"
-  ],
-  "blurb": "Kids rarely learn cooking from lectures. They learn from a stool at the counter, a small job, and the feeling of being useful next to someone who cooks.",
-  "subtitle": "Start with a job they can finish.",
-  "hero": null,
-  "date": "2026-05-13",
-  "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [
-   {
-    "name": "The Family Flip™",
-    "url": "https://buy.stripe.com/cNi7sM3NFeb1e7E47T4Vy05"
-   }
-  ],
-  "relatedPostSlug": "my-daughter-the-kitchen-and-the-quiet-way-kids-learn-to-cook",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Washing lettuce, stirring a pot, setting the table: small jobs teach belonging before they teach technique."
-   },
-   {
-    "type": "paragraph",
-    "html": "If you want kids more comfortable in the kitchen, give them work that is real and finishable. Confidence comes from contribution, not from a perfect result."
-   },
-   {
-    "type": "paragraph",
-    "html": "The longer essay follows that idea through family cooking and why the quiet lessons stick."
-   }
-  ]
- },
- {
-  "slug": "cooking-dinner-as-care",
-  "title": "Cooking Dinner as a Love Language",
-  "collections": [
-   "Kitchen Skills"
-  ],
-  "blurb": "A hot pan and a shared table are one of the clearest ways care shows up. Dinner does not have to be elaborate to mean something.",
-  "subtitle": "Smell, time, and attention on a plate.",
-  "hero": null,
-  "date": "2026-05-13",
-  "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
-  "relatedPostSlug": "why-cooking-dinner-is-the-best-love-language",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Cooking for someone is attention made edible. You chose the meal, spent the time, and put it on the table while it was still hot."
-   },
-   {
-    "type": "paragraph",
-    "html": "That does not require a restaurant project. A simple dinner with garlic hitting oil, a vegetable that got some color, and a protein that was seasoned on purpose already says plenty."
-   },
-   {
-    "type": "paragraph",
-    "html": "The Journal essay sits with the memory and the meaning. This card is the reminder: care can be weeknight-sized."
-   }
-  ]
- },
- {
-  "slug": "wine-jazz-and-cooking",
-  "title": "Wine, Jazz, and Cooking",
-  "collections": [
-   "Kitchen Skills"
-  ],
-  "blurb": "Some nights the kitchen slows down enough to notice aroma, music, and pace. Presence is part of cooking well, not a luxury add-on.",
-  "subtitle": "Where attention turns dinner into an evening.",
-  "hero": null,
-  "date": "2026-05-27",
-  "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
-  "relatedPostSlug": "the-perfect-trio-wine-jazz-cooking",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Good cooking is sensory work. Music, a glass, and an unhurried pace are not decoration. They change how carefully you taste and how patiently you wait for browning."
-   },
-   {
-    "type": "paragraph",
-    "html": "You do not need a perfect setup. You need one night where dinner is allowed to be an evening, not only a task."
-   }
-  ]
- },
- {
-  "slug": "kitchen-as-ecosystem",
-  "title": "Your Kitchen Is an Ecosystem",
-  "collections": [
-   "Kitchen Skills",
-   "Protein Flip™ Foundations"
-  ],
-  "blurb": "Motivation fades without a habitat: tools in reach, a few reliable meals, and a kitchen that does not fight you. Build the ecosystem around the fire.",
-  "subtitle": "The fire needs a place to live.",
-  "hero": null,
-  "date": "2026-06-17",
-  "videoId": null,
-  "recipeSlugs": [],
-  "productLinks": [],
-  "relatedPostSlug": "the-fire-inside-ecosystem",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "People talk about motivation as if it were a personality trait. In the kitchen, it is often an environment problem."
-   },
-   {
-    "type": "list",
-    "ordered": false,
-    "items": [
-     "Keep the knives, pans, and cutting board where cooking actually starts.",
-     "Stock a short list of default dinners you can cook half-asleep.",
-     "Leave the counter clear enough that starting does not feel like a project."
-    ]
-   },
-   {
-    "type": "paragraph",
-    "html": "When the ecosystem supports you, the fire has somewhere to go."
-   }
-  ]
- },
- {
-  "slug": "meet-chef-henry",
-  "title": "Meet Chef Healthy Henry",
-  "subtitle": "The chef behind the Protein Flip™ method.",
-  "blurb": "A Chicago-trained chef who rebuilt his own health through purposeful cooking, and now helps others do the same. Here is the story behind the method.",
-  "date": "2026-01-01",
-  "hero": null,
-  "articleHero": null,
-  "collections": [
-   "Protein Flip™ Foundations"
-  ],
-  "productLinks": [],
-  "recipeSlugs": [],
-  "relatedPostSlug": null,
-  "videoId": null,
-  "pinned": true,
-  "pinOrder": 1,
-  "cta": {
-   "heading": "Read the full story",
-   "text": "The transformation, the method, the approach. It is all on the About page.",
-   "label": "About Chef Henry",
-   "href": "/about"
   },
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Henry is a chef and food essayist based in Chicago. He trained as a chef about twenty years ago, cooking seriously long before he thought much about nutrition."
-   },
-   {
-    "type": "paragraph",
-    "html": "In 2020, after years of diets that subtracted until there was nothing left to enjoy, he stopped dieting and started cooking differently. He rebuilt his health around strength training, purposeful cooking, and a method that added nutrition around the food he loved instead of replacing it. That process became the Protein Flip™."
-   },
-   {
-    "type": "quote",
-    "text": "Protein first. Flavor always. Nothing forbidden."
-   },
-   {
-    "type": "paragraph",
-    "html": "Today this site is where he shares the method, the recipes, and the reasoning behind both. The Explore section is a library of guides on ingredients, techniques, and the thinking that makes the Protein Flip™ work in a real kitchen."
-   },
-   {
-    "type": "paragraph",
-    "html": "The best place to start is the <a href=\"/explore/article/what-is-the-protein-flip\">What Is the Protein Flip™?</a> guide, or the <a href=\"/about\">About page</a> if you want the full story first."
-   }
-  ]
- },
- {
-  "slug": "become-a-better-more-confident-cook",
-  "title": "Become a Better, More Confident Cook",
-  "subtitle": "This site is not just about what you eat. It is about how you cook.",
-  "blurb": "The Protein Flip™ changes what goes on the plate. These guides build the understanding that lets you cook without needing a recipe to tell you what to do.",
-  "date": "2026-01-02",
-  "hero": null,
-  "articleHero": null,
-  "collections": [
-   "Kitchen Skills",
-   "Flavor Builders"
-  ],
-  "productLinks": [],
-  "recipeSlugs": [],
-  "relatedPostSlug": null,
-  "videoId": null,
-  "pinned": true,
-  "pinOrder": 4,
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "The Protein Flip™ method changes what goes on the plate. But building a real cooking life requires something else: the kind of understanding that lets you look at a recipe as a starting point, not a set of instructions you have to follow exactly."
-   },
-   {
-    "type": "paragraph",
-    "html": "That is what the cooking guides on this site are for."
-   },
-   {
-    "type": "paragraph",
-    "html": "The Spice Series walks through how cumin, oregano, paprika, basil, cinnamon, and chili each behave, where they come from, and what makes them different from each other. The Senses Series is about learning to taste, smell, hear, and feel what is happening in the pan, so you are not relying on a timer to tell you when something is done. The technique and ingredient guides cover the decisions every cook makes: why browning matters, when a shortcut costs you something and when it does not, how to substitute without breaking a dish, and how garlic goes from sharp to sweet depending on how you cook it."
-   },
-   {
-    "type": "paragraph",
-    "html": "Confidence in the kitchen is not a personality trait. It is the result of understanding a few things well enough to trust your own judgment. These guides are where that starts."
-   },
-   {
-    "type": "list",
-    "ordered": false,
-    "items": [
-     "<a href=\"/explore/article/spice-rack-as-passport\">Your Spice Rack Is a Passport</a>",
-     "<a href=\"/explore/article/cooking-with-all-your-senses\">Cooking with All Your Senses</a>",
-     "<a href=\"/explore/article/why-brown-tastes-better\">Why Brown Tastes Better</a>",
-     "<a href=\"/explore/article/clean-cooking-shortcuts\">Clean Cooking: Shortcuts That Still Work</a>",
-     "<a href=\"/explore/article/cook-garlic-without-bitterness\">How to Cook Garlic Without Bitterness</a>"
+  {
+    "slug": "oregano-three-flavors",
+    "title": "Oregano Is Not One Flavor",
+    "collections": [
+      "Flavor Builders",
+      "Ingredient Adventures"
+    ],
+    "blurb": "Mediterranean, Mexican, and Italian oregano can share a name and still cook like three different ingredients. Know which jar you are reaching for.",
+    "subtitle": "Same name. Different plants. Different dishes.",
+    "hero": null,
+    "date": "2026-08-25",
+    "videoId": null,
+    "recipeSlugs": [
+      "classic-salsa-verde",
+      "authentic-chiles-rellenos-g1tu9",
+      "chili-colorado"
+    ],
+    "productLinks": [],
+    "relatedPostSlug": "oregano-three-completely-different-flavors",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Oregano gets treated like a single pantry staple. In practice, it behaves like a family of flavors."
+      },
+      {
+        "type": "paragraph",
+        "html": "Mediterranean oregano tends to be piney and herbal. Mexican oregano leans citrusy and more assertive. What many people call Italian oregano sits somewhere in that Mediterranean family, but the jar still matters more than the label on the recipe."
+      },
+      {
+        "type": "paragraph",
+        "html": "If a tomato sauce tastes vaguely wrong, or a taco filling feels off even though the spice list looks right, the oregano variety is often the quiet culprit."
+      },
+      {
+        "type": "quote",
+        "text": "Match the oregano to the kitchen you are cooking in, not just the word on the page."
+      }
     ]
-   }
-  ]
- },
- {
-  "slug": "what-is-radicchio",
-  "title": "What Is Radicchio?",
-  "collections": [
-   "Ingredient Adventures"
-  ],
-  "blurb": "Most people know radicchio as that bitter purple leaf hiding in their salad. But the problem is rarely the ingredient. It is the preparation.",
-  "subtitle": "It is not the ingredient that is the problem. It is the preparation.",
-  "hero": null,
-  "date": "2026-11-01",
-  "videoId": null,
-  "recipeSlugs": [
-   "roasted-radicchio-carrots-herbed-lentils"
-  ],
-  "productLinks": [],
-  "relatedPostSlug": "why-does-radicchio-taste-bitter",
-  "relatedFeaturedIngredientSlug": "radicchio",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "html": "Most people know radicchio as that bitter purple leaf hiding in their salad. But what if the problem is not the radicchio? What if it is how we are preparing it?"
-   },
-   {
-    "type": "paragraph",
-    "html": "Raw radicchio is crisp, sharp, and sometimes intensely bitter. Roast it, and the experience changes. The leaves become tender, the edges develop savory browned flavors, and the bitterness begins to work with the dish rather than overpower it."
-   },
-   {
-    "type": "paragraph",
-    "html": "But here is where it gets interesting. You do not have to cook radicchio to make it enjoyable. Sometimes it is a matter of how you cut it, how much you use, and what you serve with it. A thin ribbon can bring welcome contrast to a rich dish. A whole leaf can become a beautiful edible vessel. And roasted wedges can become a striking centerpiece on a winter platter. Same ingredient. Completely different culinary experiences."
-   },
-   {
-    "type": "paragraph",
-    "html": "That is what makes cooking adventurous. We do not always need a new ingredient. Sometimes we just need to reconsider one we thought we already understood."
-   }
-  ]
- }
+  },
+  {
+    "slug": "cumin-grounds-a-dish",
+    "title": "Cumin: The Flavor That Grounds a Dish",
+    "collections": [
+      "Flavor Builders"
+    ],
+    "blurb": "Cumin is structural, not decorative. Toast it, bloom it, and let it anchor stews, beans, and spice mixes without turning muddy.",
+    "subtitle": "Background spice? Not if you cook it well.",
+    "hero": null,
+    "date": "2026-08-24",
+    "videoId": null,
+    "recipeSlugs": [
+      "chili-colorado",
+      "moroccan-lamb-stew-kfetv",
+      "crispy-air-fry-falafel-with-fresh-herbs"
+    ],
+    "productLinks": [],
+    "relatedPostSlug": "cumin-the-flavor-that-grounds-a-dish",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Cumin does not just add flavor. It gives a dish a floor to stand on."
+      },
+      {
+        "type": "paragraph",
+        "html": "Raw and dusty, it can taste dull. Toasted or bloomed in oil, it turns warm, nutty, and specific. That is why it shows up in chili, taco seasoning, curry bases, and bean pots: it holds the other spices together."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Prefer whole seeds when you can toast them yourself.",
+          "Bloom ground cumin briefly in fat before liquid goes in.",
+          "Pair it with acid or fresh herbs so the dish does not read heavy."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "html": "Once you treat cumin as structure, you stop sprinkling it as an afterthought and start building with it."
+      }
+    ]
+  },
+  {
+    "slug": "basil-finishing-move",
+    "title": "Basil Is a Finishing Move",
+    "collections": [
+      "Flavor Builders",
+      "Ingredient Adventures"
+    ],
+    "blurb": "Basil brings a dish to life when you protect its freshness. Heat it too hard and you lose the reason you added it.",
+    "subtitle": "Not a background herb. A last decision.",
+    "hero": null,
+    "date": "2026-08-23",
+    "videoId": null,
+    "recipeSlugs": [
+      "mediterranean-sweet-potato-salad-with-basil-and-pine-nuts",
+      "caponata-sicilian-eggplant-with-bold-flavors-made-simple-oofnk",
+      "healthy-summer-plate-tofu-veggies-pesto-unjury-flavorless-protein"
+    ],
+    "productLinks": [],
+    "relatedPostSlug": "basil-the-herb-that-brings-a-dish-to-life",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Basil is at its best when it still tastes like itself: bright, sweet, and a little peppery."
+      },
+      {
+        "type": "paragraph",
+        "html": "Long cooking flattens that. That is why so many good tomato dishes get basil at the end, torn by hand, stirred in off heat, or scattered over the plate. You are not hiding basil inside the sauce. You are letting people taste it."
+      },
+      {
+        "type": "paragraph",
+        "html": "If the recipe calls for dried basil, use a light hand and give it time in the liquid. Fresh basil and dried basil are related ideas, not interchangeable ones."
+      }
+    ]
+  },
+  {
+    "slug": "paprika-three-directions",
+    "title": "Paprika: One Spice, Three Directions",
+    "collections": [
+      "Flavor Builders"
+    ],
+    "blurb": "Sweet, smoked, and hot paprika can share a shelf and still send dinner three different ways. Choose the jar for the job.",
+    "subtitle": "Color is not the whole story.",
+    "hero": null,
+    "date": "2026-08-22",
+    "videoId": null,
+    "recipeSlugs": [
+      "hungarian-chicken-paprika",
+      "blackened-salmon-with-caramelized-onion-and-sweet-potato-salad",
+      "boiled-egg-hummus-on-keto-toast"
+    ],
+    "productLinks": [],
+    "relatedPostSlug": "paprika-three-completely-different-directions",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Paprika is often treated as a single red powder. It is closer to a category."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Sweet paprika brings color and gentle pepper flavor.",
+          "Smoked paprika adds campfire depth that can dominate if you overdo it.",
+          "Hot paprika brings heat with paprika's fruitiness, not chili-powder sharpness alone."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "html": "Bloom paprika gently in fat. High heat can turn it bitter fast. Once you know which direction you want, the rest of the seasoning gets easier."
+      }
+    ]
+  },
+  {
+    "slug": "cinnamon-beyond-sweet",
+    "title": "Cinnamon Beyond Dessert",
+    "collections": [
+      "Flavor Builders"
+    ],
+    "blurb": "Cinnamon is familiar in sweets and surprisingly useful in savory cooking. Used with restraint, it warms stews, sauces, and spice mixes without tasting like dessert.",
+    "subtitle": "Familiar flavor. Unexpected role.",
+    "hero": null,
+    "date": "2026-08-21",
+    "videoId": null,
+    "recipeSlugs": [
+      "moroccan-lamb-stew-kfetv",
+      "harira-moroccan-lentil-and-chickpea-soup-ac4m4",
+      "sweet-potato-cinnamon-rolls-rjh1v"
+    ],
+    "productLinks": [],
+    "relatedPostSlug": "cinnamon-familiar-flavor-unexpected-role",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Most home cooks meet cinnamon in oatmeal, baking, or coffee. Many cuisines use it as a savory warm note instead."
+      },
+      {
+        "type": "paragraph",
+        "html": "A stick in a braise, a pinch in tomato sauce, or a quiet role in chili and tagine mixes can make a dish taste rounded without announcing itself as sweet. The line between warmth and dessert is dose and company."
+      },
+      {
+        "type": "quote",
+        "text": "If you can taste cinnamon first, you probably used too much for a savory plate."
+      }
+    ]
+  },
+  {
+    "slug": "chili-flavor-not-just-heat",
+    "title": "Chili Is Flavor, Not Just Heat",
+    "collections": [
+      "Flavor Builders",
+      "Ingredient Adventures"
+    ],
+    "blurb": "Fresh chilies, dried pods, and powders are related tools with different jobs. Choose for fruit, smoke, and brightness, not Scoville alone.",
+    "subtitle": "Same family. Completely different kitchens.",
+    "hero": null,
+    "date": "2026-08-20",
+    "videoId": null,
+    "recipeSlugs": [
+      "authentic-tortilla-soup-with-pasilla-chiles",
+      "chili-colorado",
+      "royal-tempeh-sweet-potato-tacos-with-chili-lime-yogurt-protein-flip-tm-weeknight-meal"
+    ],
+    "productLinks": [],
+    "relatedPostSlug": "chili-peppers-and-powders-same-ingredient-different-worlds",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "If chili only means \"make it spicy,\" you miss most of what chili can do."
+      },
+      {
+        "type": "paragraph",
+        "html": "Fresh chilies bring snap and vegetal brightness. Dried chilies bring depth, fruit, and sometimes smoke. Powders and flakes are convenient, but they are already a processed version of a specific chili, not a universal heat button."
+      },
+      {
+        "type": "paragraph",
+        "html": "Start by asking what kind of heat the dish wants: sharp and fresh, slow and toasted, or warm and rounded. Then pick the form that matches."
+      }
+    ]
+  },
+  {
+    "slug": "spices-from-flavor-to-feeling",
+    "title": "Spices: From Flavor to Feeling",
+    "collections": [
+      "Flavor Builders"
+    ],
+    "blurb": "Once you understand individual spices, the real skill is composition: how they work together to make a meal feel like somewhere.",
+    "subtitle": "The series was never only about jars.",
+    "hero": null,
+    "date": "2026-08-19",
+    "videoId": null,
+    "recipeSlugs": [
+      "harira-moroccan-lentil-and-chickpea-soup-ac4m4",
+      "korean-inspired-gochujang-glazed-salmon-with-garlic-spinach",
+      "chicken-tika-masala"
+    ],
+    "productLinks": [],
+    "relatedPostSlug": "spices-bringing-it-all-together-flavor-to-feeling",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Learning spices one by one is useful. Cooking with them means deciding how they relate."
+      },
+      {
+        "type": "paragraph",
+        "html": "A grounding spice, a bright herb, a touch of heat, and something warm can turn a simple protein-and-vegetable plate into a meal with a point of view. That is the difference between seasoning and building flavor."
+      },
+      {
+        "type": "paragraph",
+        "html": "If a dish tastes busy, simplify. If it tastes flat, ask what is missing: depth, brightness, heat, or aroma. Spices answer those questions when you use them with intention."
+      }
+    ]
+  },
+  {
+    "slug": "cooking-with-all-your-senses",
+    "title": "Cooking with All Your Senses",
+    "collections": [
+      "Flavor Builders",
+      "Kitchen Skills"
+    ],
+    "blurb": "A meal isn't just something you eat. It's something you experience. Smell, sound, sight, touch, and taste are how you cook, not just how you enjoy the plate.",
+    "subtitle": "Cooking is not just about what ends up on the plate.",
+    "hero": null,
+    "date": "2026-08-17",
+    "videoId": null,
+    "recipeSlugs": [],
+    "productLinks": [],
+    "relatedPostSlug": "cooking-with-all-your-senses",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Most people treat healthy eating as a list of ingredients and numbers. The shift happens when you start noticing the food while it cooks."
+      },
+      {
+        "type": "paragraph",
+        "html": "Your nose tells you the garlic is ready. Your ears tell you whether the pan is hot enough. Your eyes catch browning. Your hands feel texture. Taste is the last confirmation, not the first signal."
+      },
+      {
+        "type": "paragraph",
+        "html": "The Senses Series walks through smell, sound, sight, touch, and taste the way they actually show up in a kitchen, then brings them back together as a way of cooking with attention."
+      }
+    ]
+  },
+  {
+    "slug": "smell-first-signal",
+    "title": "Smell: The First Signal",
+    "collections": [
+      "Flavor Builders",
+      "Kitchen Skills"
+    ],
+    "blurb": "Your nose knows before you do. Garlic, spices, and onions each have a smell for ready, and another for gone too far.",
+    "subtitle": "Aroma is already cooking the meal.",
+    "hero": null,
+    "date": "2026-08-16",
+    "videoId": null,
+    "recipeSlugs": [],
+    "productLinks": [],
+    "relatedPostSlug": "smell-the-first-signal",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Smell is the first real signal in the kitchen. It draws people in before they see the plate, and it tells the cook what is happening in the pan."
+      },
+      {
+        "type": "paragraph",
+        "html": "Raw garlic, fragrant garlic, and garlic that is about to burn do not smell the same. Neither do dusty spices and spices that have bloomed in warm oil."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Smell ingredients before they hit the heat, then again as they cook.",
+          "If the dish smells heavy, lift it with herbs or citrus.",
+          "If you barely smell the spices you added, they may never have had time to bloom."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sound-kitchen-speaking-back",
+    "title": "Sound: The Kitchen Speaking Back",
+    "collections": [
+      "Flavor Builders",
+      "Kitchen Skills"
+    ],
+    "blurb": "The kitchen is never silent. The sizzle tells you whether the pan is ready, and when to leave the food alone.",
+    "subtitle": "If you are paying attention, the pan is guiding you.",
+    "hero": null,
+    "date": "2026-08-15",
+    "videoId": null,
+    "recipeSlugs": [],
+    "productLinks": [],
+    "relatedPostSlug": "sound-the-kitchen-speaking-back",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Sound is immediate feedback. A confident sizzle means moisture is meeting heat. Almost no sound means the pan is not ready. A wild crackle and smoking oil is a different message."
+      },
+      {
+        "type": "paragraph",
+        "html": "The useful part is how the sound changes. Vegetables quiet as their moisture cooks off. A gentle simmer does not sound like a hard boil."
+      },
+      {
+        "type": "paragraph",
+        "html": "Stop moving for a few seconds the next time you cook. Listen, then connect what you hear to what you see in the pan."
+      }
+    ]
+  },
+  {
+    "slug": "sight-the-first-taste",
+    "title": "Sight: The First Taste",
+    "collections": [
+      "Flavor Builders",
+      "Kitchen Skills"
+    ],
+    "blurb": "Before a bite is taken, a decision is already made. Color, contrast, and browning are cooking cues, not just plating.",
+    "subtitle": "Your eyes are checking your work.",
+    "hero": null,
+    "date": "2026-08-14",
+    "videoId": null,
+    "recipeSlugs": [],
+    "productLinks": [],
+    "relatedPostSlug": "sight-the-first-taste",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Recipes already speak in pictures. Cook until translucent. Roast until golden. Reduce until thickened. Those are instructions to look."
+      },
+      {
+        "type": "paragraph",
+        "html": "Then the plate arrives, and sight becomes expectation. A beige plate can taste wonderful and still feel unfinished next to one with greens, roasted browns, and something bright."
+      },
+      {
+        "type": "paragraph",
+        "html": "Protein Flip\u2122 Verified starts here. You can often see whether a plate feels complete without counting a thing."
+      }
+    ]
+  },
+  {
+    "slug": "touch-texture-of-satisfaction",
+    "title": "Touch: The Texture of Satisfaction",
+    "collections": [
+      "Flavor Builders",
+      "Kitchen Skills"
+    ],
+    "blurb": "Satisfaction isn't just flavor. It's contrast. Crisp against creamy is how a plate holds attention.",
+    "subtitle": "Texture is doing more work than most people notice.",
+    "hero": null,
+    "date": "2026-08-13",
+    "videoId": null,
+    "recipeSlugs": [],
+    "productLinks": [],
+    "relatedPostSlug": "touch-the-texture-of-satisfaction",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Touch starts with your hands. A tomato, an avocado, dough, fish, meat. Each one changes as it cooks, and that change is information."
+      },
+      {
+        "type": "paragraph",
+        "html": "In the mouth it becomes texture. Soft protein, soft vegetables, soft grain, and soft sauce can taste fine and still feel like one note."
+      },
+      {
+        "type": "paragraph",
+        "html": "Add one contrast: toasted seeds, crisp edges, a creamy sauce against something fresh. The plate starts to move."
+      }
+    ]
+  },
+  {
+    "slug": "taste-the-final-connection",
+    "title": "Taste: The Final Connection",
+    "collections": [
+      "Flavor Builders",
+      "Kitchen Skills"
+    ],
+    "blurb": "Taste isn't the starting point. It's the result. Balance is what smell, sound, sight, and touch have been building toward.",
+    "subtitle": "Flavor is built in layers.",
+    "hero": null,
+    "date": "2026-08-12",
+    "videoId": null,
+    "recipeSlugs": [],
+    "productLinks": [],
+    "relatedPostSlug": "taste-the-final-connection",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "By the first bite, the other senses have already done most of the work. Taste completes it."
+      },
+      {
+        "type": "paragraph",
+        "html": "When something is off, salt is not always the answer. A heavy sauce may need acid. A thin soup may need savory depth. Sometimes the dish needs more time, not another ingredient."
+      },
+      {
+        "type": "paragraph",
+        "html": "Taste as you go when it is safe to do so. The comparison, before and after one change, is how flavor memory gets built."
+      }
+    ]
+  },
+  {
+    "slug": "senses-bringing-it-all-together",
+    "title": "Bringing It All Together",
+    "collections": [
+      "Flavor Builders",
+      "Kitchen Skills"
+    ],
+    "blurb": "The most important lessons I learned weren't written down. They were felt. A return to the grandmother's kitchen, and why the method earned a book.",
+    "subtitle": "Pay attention. That is the whole method.",
+    "hero": null,
+    "date": "2026-08-11",
+    "videoId": null,
+    "recipeSlugs": [],
+    "productLinks": [],
+    "relatedPostSlug": "bringing-it-all-together",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "The series started in a grandmother's kitchen, with a smell that filled the house before anyone sat down."
+      },
+      {
+        "type": "paragraph",
+        "html": "Recipes and measurements matter. What turns them into instinct is connecting those instructions to what you smell, hear, see, feel, and taste while you cook."
+      },
+      {
+        "type": "paragraph",
+        "html": "That way of paying attention is part of what became The Protein Flip\u2122 Method and Cookbook, Deluxe Edition. The tools were already there. Your senses."
+      }
+    ]
+  },
+  {
+    "slug": "cook-garlic-without-bitterness",
+    "title": "How to Cook Garlic Without Bitterness",
+    "collections": [
+      "Kitchen Skills",
+      "Ingredient Adventures"
+    ],
+    "blurb": "Garlic does not turn bitter just because it cooked. Heat, size, and timing decide whether it stays sweet or goes sharp. Here is the practical fix.",
+    "subtitle": "The kitchen warning is incomplete. The technique is not.",
+    "hero": null,
+    "date": "2026-08-18",
+    "videoId": null,
+    "recipeSlugs": [
+      "air-fryer-garlic-and-herb-baby-potatoes",
+      "grillicious-garlic-shrimp-xprxy",
+      "healthy-20chicken-skewers-with-creamy-garlic-yogurt-sauce-easy-high-protein-dinner"
+    ],
+    "productLinks": [],
+    "relatedPostSlug": "from-bitter-to-beautiful-cooking-garlic",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "\"Don't burn the garlic\" is useful advice, but it skips the real mechanics. Bitterness shows up when garlic's edges get ahead of the rest of the pan."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Minced garlic cooks faster than sliced or smashed cloves.",
+          "Hot empty oil can scorch garlic before anything else hits the pan.",
+          "Lower heat, more fat, or adding garlic later all buy you control."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "html": "When garlic turns golden and fragrant, you are in the window. When it smells sharp and looks dark at the edges, you have crossed it. Pull the pan or add liquid before that happens."
+      }
+    ]
+  },
+  {
+    "slug": "what-is-black-garlic",
+    "title": "What Is Black Garlic?",
+    "collections": [
+      "Ingredient Adventures"
+    ],
+    "blurb": "Black garlic is aged, not roasted. It tastes sweet, savory, and unfamiliar in the best way. A short primer on why curiosity belongs in the pantry.",
+    "subtitle": "Not roasted garlic. Something else entirely.",
+    "hero": null,
+    "date": "2026-08-18",
+    "videoId": null,
+    "recipeSlugs": [
+      "bourbon-black-garlic-salmon-with-roasted-sweet-potato-fries-lemon-parmesan-broccoli",
+      "chicken-tinga-tostadas"
+    ],
+    "productLinks": [],
+    "relatedPostSlug": "black-garlic-ingredient-discovery",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Black garlic looks dramatic, but the idea is simple: ordinary garlic aged under controlled heat and humidity until the cloves turn soft, dark, and candy-savory."
+      },
+      {
+        "type": "paragraph",
+        "html": "It does not taste like roasted garlic. It leans toward molasses, balsamic, and umami. That makes it useful anywhere you want depth without more salt or more heat: sauces, dressings, compound butters, even a quiet finish on protein."
+      },
+      {
+        "type": "paragraph",
+        "html": "Start small. One clove can change a vinaigrette. Two can deepen a glaze. The point is not novelty for its own sake. It is remembering that the next ingredient can teach you a new move."
+      }
+    ]
+  },
+  {
+    "slug": "why-brown-tastes-better",
+    "title": "Why Brown Tastes Better",
+    "collections": [
+      "Kitchen Skills"
+    ],
+    "blurb": "The sear is not just color. Maillard browning and caramelization build flavor you cannot get from seasoning alone. Give the pan a chance to work.",
+    "subtitle": "The most important flavor is one you build with heat.",
+    "hero": null,
+    "date": "2026-06-08",
+    "videoId": null,
+    "recipeSlugs": [
+      "chicken-fajita-bowl-quick-and-flavorful-dinner-idea",
+      "chicken-tinga-tostadas",
+      "blackened-salmon-with-caramelized-onion-and-sweet-potato-salad"
+    ],
+    "productLinks": [],
+    "relatedPostSlug": "why-brown-tastes-better-maillard-caramelization",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "When food hits a hot pan and the sound changes, browning has started. That is where a lot of savory depth comes from."
+      },
+      {
+        "type": "paragraph",
+        "html": "Crowding the pan steams food instead of searing it. Wet surfaces delay browning. Medium-high heat, enough space, and a little patience usually beat another shake of seasoning."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Pat protein dry before it hits the pan.",
+          "Leave it alone long enough to color.",
+          "Use the browned bits in the pan as the start of a sauce."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "clean-cooking-shortcuts",
+    "title": "Clean Cooking: Shortcuts That Still Work",
+    "collections": [
+      "Kitchen Skills"
+    ],
+    "blurb": "Every kitchen needs shortcuts. The useful ones protect flavor and cleanup. The lazy ones create more work later. Learn the difference.",
+    "subtitle": "It is not only what you cook. It is how you work.",
+    "hero": null,
+    "date": "2026-05-11",
+    "videoId": null,
+    "recipeSlugs": [
+      "tuna-chickpea-salad",
+      "boiled-egg-hummus-on-keto-toast",
+      "simple-frittata"
+    ],
+    "productLinks": [],
+    "relatedPostSlug": "clean-cooking-real-shortcuts-vs-lazy",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Clean cooking is less about perfect ingredients and more about a kitchen that stays usable while you cook."
+      },
+      {
+        "type": "paragraph",
+        "html": "Good shortcuts look like mise en place that matches the recipe, a trash bowl within reach, wiping the board between tasks, and choosing the pan that fits the job. Bad shortcuts look like skipping browning, overcrowding, or leaving a sticky mess that makes the next step harder."
+      },
+      {
+        "type": "quote",
+        "text": "If a shortcut creates cleanup, confusion, or flat flavor, it was not a shortcut."
+      }
+    ]
+  },
+  {
+    "slug": "reasons-you-dont-cook",
+    "title": "\"I Don't Cook Because\u2026\"",
+    "collections": [
+      "Kitchen Skills"
+    ],
+    "blurb": "Time, skill, mess, picky eaters, and perfectionism are real barriers. None of them have to be permanent. Start with the reason that is actually yours.",
+    "subtitle": "Name the blocker. Then shrink the first step.",
+    "hero": null,
+    "date": "2026-04-28",
+    "videoId": null,
+    "recipeSlugs": [
+      "simple-frittata",
+      "tuna-chickpea-salad",
+      "chicken-fajita-bowl-quick-and-flavorful-dinner-idea"
+    ],
+    "productLinks": [
+      {
+        "name": "The Protein Flip\u2122 Starter Guide",
+        "url": "https://buy.stripe.com/00w5kEfwneb1e7E0VH4Vy07"
+      }
+    ],
+    "relatedPostSlug": "i-dont-cook-because---lets-talk-about-the-real-reasons-and-why-they-dont-have-to-stop-you",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "People rarely stop cooking because they dislike food. They stop because something about the process feels heavier than the result."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "If time is the issue, cook one reliable 20-minute meal on repeat before expanding.",
+          "If skill is the issue, master browning, seasoning, and one sauce, not twenty recipes.",
+          "If mess is the issue, simplify the pan count and clean as you go.",
+          "If people at the table are picky, build a base everyone accepts and let toppings carry variety."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "html": "The goal is not to become a different person overnight. It is to remove the one friction point that keeps dinner from happening."
+      }
+    ]
+  },
+  {
+    "slug": "savor-the-moment-in-the-kitchen",
+    "title": "Savor the Moment in the Kitchen",
+    "collections": [
+      "Kitchen Skills"
+    ],
+    "blurb": "Confidence grows when you pay attention while you cook: smell, color, sound, and timing. Awareness is a technique, not a mood.",
+    "subtitle": "The dish changes when you do.",
+    "hero": null,
+    "date": "2026-06-10",
+    "videoId": null,
+    "recipeSlugs": [],
+    "productLinks": [],
+    "relatedPostSlug": "savor-the-moment",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Recipes tell you what to do. Awareness tells you when it is working."
+      },
+      {
+        "type": "paragraph",
+        "html": "Listen for the sear. Watch for garlic's color. Taste before you add more salt. Those small checks are how home cooks stop depending on the next instruction and start trusting the pan."
+      },
+      {
+        "type": "paragraph",
+        "html": "You do not need a quiet kitchen or a special night. You need one meal where you stay present long enough to notice what the food is doing."
+      }
+    ]
+  },
+  {
+    "slug": "what-is-the-protein-flip",
+    "title": "What Is the Protein Flip\u2122?",
+    "collections": [
+      "Protein Flip\u2122 Foundations"
+    ],
+    "blurb": "The Protein Flip\u2122 Method rebuilds the plate around balance, flavor, and staying power, without asking you to abandon the foods that feel like home.",
+    "subtitle": "A chef's return to balance.",
+    "hero": null,
+    "date": "2026-05-14",
+    "videoId": null,
+    "recipeSlugs": [
+      "marry-me-chickpea-soup-with-kale",
+      "chicken-tinga-tostadas",
+      "turkey-lentil-meatball-salad-greek-yogurt"
+    ],
+    "productLinks": [],
+    "relatedPostSlug": "what-is-the-protein-flip-tm-a-chefs-return-to-balance",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "The Protein Flip\u2122 Method started as a personal reset in the kitchen: same love of cooking, better structure underneath the plate."
+      },
+      {
+        "type": "paragraph",
+        "html": "Instead of treating \"healthy\" as subtraction, the Flip asks what the meal needs first, protein with real presence, plants and fiber that do work, carbohydrates kept portion-smart, and flavor that makes the plate worth repeating."
+      },
+      {
+        "type": "quote",
+        "text": "Don't automatically subtract the food you love. Rebuild the proportions around it."
+      },
+      {
+        "type": "paragraph",
+        "html": "If you want the fuller story of how the method took shape, the Journal essay is the place to start. For the plate-building shorthand, see <a href=\"/explore/article/what-is-a-protein-first-plate\">What Is a Protein-First Plate?</a>"
+      }
+    ],
+    "cta": {
+      "heading": "Ready to Put It Into Practice?",
+      "text": "The Protein Flip\u2122 Method and Cookbook, Deluxe Edition turns these ideas into meals you can cook on a weeknight, with the same balance and flavor standards Henry uses in his own kitchen.",
+      "label": "See the Cookbook",
+      "href": "/cookbook"
+    },
+    "pinned": true,
+    "pinOrder": 2
+  },
+  {
+    "slug": "science-and-soul-of-the-flip",
+    "title": "The Science and the Soul of the Flip",
+    "collections": [
+      "Protein Flip\u2122 Foundations"
+    ],
+    "blurb": "Satiety, flavor, and culture are not competing goals. The Protein Flip\u2122 Method holds the science of staying full and the soul of a meal worth sitting down for.",
+    "subtitle": "There is science behind that feeling.",
+    "hero": null,
+    "date": "2026-05-13",
+    "videoId": null,
+    "recipeSlugs": [
+      "smoky-autumn-vegetable-romesco-soup-the-protein-flip-way",
+      "protein-flip-huevos-rancheros-with-pinto-beans-greek-yogurt-pepitas",
+      "turkey-lentil-meatball-salad-greek-yogurt"
+    ],
+    "productLinks": [
+      {
+        "name": "The Protein Flip\u2122 Method and Cookbook, Deluxe Edition",
+        "url": "https://buy.stripe.com/aFa6oI2JB4Ar3t0dIt4Vy00"
+      }
+    ],
+    "relatedPostSlug": "the-science-and-the-soul-behind-the-protein-flip",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "A method only works if people will keep cooking it. That means the plate has to satisfy physically and feel like real food culturally."
+      },
+      {
+        "type": "paragraph",
+        "html": "Protein and fiber help meals hold. Herbs, browning, acid, and texture make them memorable. The Flip treats both as non-negotiable. One without the other becomes either a diet plate or a delicious meal that does not carry you."
+      },
+      {
+        "type": "paragraph",
+        "html": "When a dinner leaves you full and glad you cooked, that is not an accident. It is structure working under flavor."
+      }
+    ]
+  },
+  {
+    "slug": "what-comfort-food-actually-is",
+    "title": "What Comfort Food Actually Is",
+    "collections": [
+      "Protein Flip\u2122 Foundations"
+    ],
+    "blurb": "Comfort food is doing a job: familiarity, texture, and timing. Fight the craving and it gets louder. Rebuild the structure and the comfort can stay.",
+    "subtitle": "Keep the comfort. Change the structure.",
+    "hero": null,
+    "date": "2026-06-26",
+    "videoId": null,
+    "recipeSlugs": [
+      "marry-me-chickpea-soup-with-kale",
+      "italian-soup-with-red-potato",
+      "chicken-tinga-tostadas"
+    ],
+    "productLinks": [
+      {
+        "name": "The Protein Flip\u2122 Method and Cookbook, Deluxe Edition",
+        "url": "https://buy.stripe.com/aFa6oI2JB4Ar3t0dIt4Vy00"
+      }
+    ],
+    "relatedPostSlug": "what-comfort-food-actually-is",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Comfort food is not a confession. It is usually a meal tied to memory, soft textures, and a moment when you needed steadiness."
+      },
+      {
+        "type": "paragraph",
+        "html": "Diet advice that bans comfort foods rarely removes the want. It delays it. The Flip approach keeps the dish on the table and changes what supports it: enough protein, plants that add fiber and volume, and flavor that still feels like the original."
+      },
+      {
+        "type": "quote",
+        "text": "A diet asks you to give up what works emotionally. A method asks what is underneath it."
+      }
+    ]
+  },
+  {
+    "slug": "stay-full-longer",
+    "title": "How to Stay Full Longer",
+    "collections": [
+      "Protein Flip\u2122 Foundations",
+      "Grocery Intelligence"
+    ],
+    "blurb": "Persistent hunger on a smaller plate is often a structure problem. Protein, fiber, volume, and pacing do more than willpower.",
+    "subtitle": "Satiety is something you can cook for.",
+    "hero": null,
+    "date": "2026-06-16",
+    "videoId": null,
+    "recipeSlugs": [
+      "tuna-chickpea-salad",
+      "marry-me-chickpea-soup-with-kale",
+      "turkey-lentil-meatball-salad-greek-yogurt"
+    ],
+    "productLinks": [
+      {
+        "name": "GLP-1 & Bariatric Success Guide",
+        "url": "https://buy.stripe.com/14A6oI83VaYPbZw33P4Vy02"
+      }
+    ],
+    "relatedPostSlug": "how-to-stay-full-longer-on-a-diet-satiety-guide",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Cutting calories without rebuilding the plate often leaves people hunting the pantry an hour later. The meal was smaller. It was not more satisfying."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Lead with protein that actually shows up on the plate.",
+          "Add fiber from plants, beans, or whole grains so the meal has staying power.",
+          "Keep carbohydrates portion-smart instead of banishing them.",
+          "Use sauces, herbs, and browning so the meal still feels complete."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "html": "Satiety is not a personality trait. It is a cooking outcome you can design for."
+      }
+    ]
+  },
+  {
+    "slug": "protein-and-fiber-together",
+    "title": "Why Protein and Fiber Belong Together",
+    "collections": [
+      "Protein Flip\u2122 Foundations",
+      "Grocery Intelligence"
+    ],
+    "blurb": "A huge plate can still leave you snacky twenty minutes later. Protein and fiber together change how a meal holds.",
+    "subtitle": "Appetite control starts on the plate.",
+    "hero": null,
+    "date": "2026-06-02",
+    "videoId": null,
+    "recipeSlugs": [
+      "beet-chickpea-seed-crackers",
+      "protein-flip-blueberry-peach-quinoa-bake",
+      "tuna-chickpea-salad"
+    ],
+    "productLinks": [
+      {
+        "name": "GLP-1 & Bariatric Success Guide",
+        "url": "https://buy.stripe.com/14A6oI83VaYPbZw33P4Vy02"
+      }
+    ],
+    "relatedPostSlug": "high-protein-high-fiber",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Protein helps a meal register as substantial. Fiber slows the experience down and adds volume without asking one food to do everything."
+      },
+      {
+        "type": "paragraph",
+        "html": "That is why a protein-heavy plate with almost no plants, or a giant salad with almost no protein, can both fail. You need both jobs covered."
+      },
+      {
+        "type": "paragraph",
+        "html": "At the store, that might look like eggs plus beans, yogurt plus berries, chicken plus a big cooked vegetable, or lentils tucked into a pasta dish you already love."
+      }
+    ]
+  },
+  {
+    "slug": "portion-smart-not-portion-control",
+    "title": "Portion Smart, Not Portion Control",
+    "collections": [
+      "Protein Flip\u2122 Foundations"
+    ],
+    "blurb": "\"Control\" implies tension. Portion-smart cooking keeps the foods you love and rebuilds the proportions so the plate works with you.",
+    "subtitle": "Less bracing. More building.",
+    "hero": null,
+    "date": "2026-05-06",
+    "videoId": null,
+    "recipeSlugs": [
+      "italian-soup-with-red-potato",
+      "protein-flip-huevos-rancheros-with-pinto-beans-greek-yogurt-pepitas",
+      "chicken-fajita-bowl-quick-and-flavorful-dinner-idea"
+    ],
+    "productLinks": [
+      {
+        "name": "The Protein Flip\u2122 Starter Guide",
+        "url": "https://buy.stripe.com/00w5kEfwneb1e7E0VH4Vy07"
+      }
+    ],
+    "relatedPostSlug": "from-portion-control-to-portion-smart",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Portion control sounds like a fight with dinner. Portion-smart cooking sounds like a decision about what each part of the plate is for."
+      },
+      {
+        "type": "paragraph",
+        "html": "Pasta can stay. Rice can stay. The question is whether protein and plants have room to contribute, and whether the carbohydrate portion is doing its job without crowding everything else out."
+      },
+      {
+        "type": "quote",
+        "text": "Control braces against food. Structure makes room for it."
+      }
+    ]
+  },
+  {
+    "slug": "structure-that-sets-you-free",
+    "title": "The Structure That Sets You Free",
+    "collections": [
+      "Protein Flip\u2122 Foundations",
+      "Kitchen Skills"
+    ],
+    "blurb": "Most people do not lack effort. They lack a repeatable way to decide what dinner is. Structure removes the uncertainty.",
+    "subtitle": "Clarity beats grit.",
+    "hero": null,
+    "date": "2026-06-10",
+    "videoId": null,
+    "recipeSlugs": [
+      "chicken-fajita-bowl-quick-and-flavorful-dinner-idea",
+      "tuna-chickpea-salad",
+      "smoky-autumn-vegetable-romesco-soup-the-protein-flip-way"
+    ],
+    "productLinks": [
+      {
+        "name": "The Protein Flip\u2122 Starter Guide",
+        "url": "https://buy.stripe.com/00w5kEfwneb1e7E0VH4Vy07"
+      }
+    ],
+    "relatedPostSlug": "the-structure-that-sets-you-free",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Uncertainty is exhausting. If every dinner starts from zero, even a well-stocked kitchen feels hard."
+      },
+      {
+        "type": "paragraph",
+        "html": "A simple structure, protein first, then plants, then a portion-smart carbohydrate, then flavor, turns shopping and cooking into pattern recognition. You are not inventing a new personality. You are giving yourself a default."
+      },
+      {
+        "type": "paragraph",
+        "html": "Once the default exists, creativity has somewhere to land."
+      }
+    ]
+  },
+  {
+    "slug": "change-what-you-can-on-the-plate",
+    "title": "Change What You Can on the Plate",
+    "collections": [
+      "Protein Flip\u2122 Foundations"
+    ],
+    "blurb": "You may not control your genetics. You can influence how you cook the foods that already feel like home. Keep the culture. Flip the structure.",
+    "subtitle": "Identity stays. Proportions can move.",
+    "hero": null,
+    "date": "2026-06-03",
+    "videoId": null,
+    "recipeSlugs": [
+      "protein-flip-huevos-rancheros-with-pinto-beans-greek-yogurt-pepitas",
+      "italian-soup-with-red-potato",
+      "chicken-tinga-tostadas"
+    ],
+    "productLinks": [
+      {
+        "name": "The Protein Flip\u2122 Method and Cookbook, Deluxe Edition",
+        "url": "https://buy.stripe.com/aFa6oI2JB4Ar3t0dIt4Vy00"
+      }
+    ],
+    "relatedPostSlug": "change-what-you-can",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Healthy eating advice that erases culture does not last. People go back to the food that tastes like belonging."
+      },
+      {
+        "type": "paragraph",
+        "html": "The Flip approach starts there. Keep the dish, the holiday, the grandmother's sauce. Then look at protein presence, plant volume, and portion-smart carbohydrates inside that same meal."
+      },
+      {
+        "type": "paragraph",
+        "html": "Change what you can reach tonight. Leave the rest alone."
+      }
+    ]
+  },
+  {
+    "slug": "personal-greater-good",
+    "title": "The Personal Greater Good",
+    "collections": [
+      "Protein Flip\u2122 Foundations"
+    ],
+    "blurb": "Some days are not about the perfect plate. Growth still counts when the kitchen is quiet. Here is how to hold standards without turning them into shame.",
+    "subtitle": "Progress is not only what happens on the plate.",
+    "hero": null,
+    "date": "2026-07-06",
+    "videoId": null,
+    "recipeSlugs": [],
+    "productLinks": [],
+    "relatedPostSlug": "the-personal-greater-good",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "A method that only works on ideal days is not a method. Life includes quieter kitchens, harder weeks, and plates that are simply good enough."
+      },
+      {
+        "type": "paragraph",
+        "html": "The personal greater good is choosing the next useful action without rewriting your identity around one meal. Cook when you can. Simplify when you need to. Return to structure without drama."
+      },
+      {
+        "type": "paragraph",
+        "html": "That steadiness is part of the Flip too."
+      }
+    ]
+  },
+  {
+    "slug": "comfort-cooking-still-matters",
+    "title": "Why Comfort Cooking Still Matters",
+    "collections": [
+      "Protein Flip\u2122 Foundations",
+      "Kitchen Skills"
+    ],
+    "blurb": "Comfort cooking is memory, belonging, and care on a plate. Understanding that job helps you keep the meal and improve the structure underneath it.",
+    "subtitle": "The personal side of comfort food.",
+    "hero": null,
+    "date": "2026-06-04",
+    "videoId": null,
+    "recipeSlugs": [
+      "italian-soup-with-red-potato",
+      "marry-me-chickpea-soup-with-kale",
+      "smoky-autumn-vegetable-romesco-soup-the-protein-flip-way"
+    ],
+    "productLinks": [],
+    "relatedPostSlug": "table-talk-on-comfort-cooking-and-why-it-still-matters",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "There is a practical essay on what comfort food does mechanically, and there is the lived version: kitchens where care showed up as something simmering."
+      },
+      {
+        "type": "paragraph",
+        "html": "Both matter. If you only treat comfort food as a nutrition problem, you miss why people protect it. If you only treat it as nostalgia, you miss the chance to rebuild it so it still loves you back tomorrow."
+      },
+      {
+        "type": "paragraph",
+        "html": "For the mechanics, read <a href=\"/explore/article/what-comfort-food-actually-is\">What Comfort Food Actually Is</a>. For the story side, the linked Table Talk essay goes deeper."
+      }
+    ]
+  },
+  {
+    "slug": "kids-learn-in-the-kitchen",
+    "title": "How Kids Quietly Learn to Cook",
+    "collections": [
+      "Kitchen Skills"
+    ],
+    "blurb": "Kids rarely learn cooking from lectures. They learn from a stool at the counter, a small job, and the feeling of being useful next to someone who cooks.",
+    "subtitle": "Start with a job they can finish.",
+    "hero": null,
+    "date": "2026-05-13",
+    "videoId": null,
+    "recipeSlugs": [],
+    "productLinks": [
+      {
+        "name": "The Family Flip\u2122",
+        "url": "https://buy.stripe.com/cNi7sM3NFeb1e7E47T4Vy05"
+      }
+    ],
+    "relatedPostSlug": "my-daughter-the-kitchen-and-the-quiet-way-kids-learn-to-cook",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Washing lettuce, stirring a pot, setting the table: small jobs teach belonging before they teach technique."
+      },
+      {
+        "type": "paragraph",
+        "html": "If you want kids more comfortable in the kitchen, give them work that is real and finishable. Confidence comes from contribution, not from a perfect result."
+      },
+      {
+        "type": "paragraph",
+        "html": "The longer essay follows that idea through family cooking and why the quiet lessons stick."
+      }
+    ]
+  },
+  {
+    "slug": "cooking-dinner-as-care",
+    "title": "Cooking Dinner as a Love Language",
+    "collections": [
+      "Kitchen Skills"
+    ],
+    "blurb": "A hot pan and a shared table are one of the clearest ways care shows up. Dinner does not have to be elaborate to mean something.",
+    "subtitle": "Smell, time, and attention on a plate.",
+    "hero": null,
+    "date": "2026-05-13",
+    "videoId": null,
+    "recipeSlugs": [],
+    "productLinks": [],
+    "relatedPostSlug": "why-cooking-dinner-is-the-best-love-language",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Cooking for someone is attention made edible. You chose the meal, spent the time, and put it on the table while it was still hot."
+      },
+      {
+        "type": "paragraph",
+        "html": "That does not require a restaurant project. A simple dinner with garlic hitting oil, a vegetable that got some color, and a protein that was seasoned on purpose already says plenty."
+      },
+      {
+        "type": "paragraph",
+        "html": "The Journal essay sits with the memory and the meaning. This card is the reminder: care can be weeknight-sized."
+      }
+    ]
+  },
+  {
+    "slug": "wine-jazz-and-cooking",
+    "title": "Wine, Jazz, and Cooking",
+    "collections": [
+      "Kitchen Skills"
+    ],
+    "blurb": "Some nights the kitchen slows down enough to notice aroma, music, and pace. Presence is part of cooking well, not a luxury add-on.",
+    "subtitle": "Where attention turns dinner into an evening.",
+    "hero": null,
+    "date": "2026-05-27",
+    "videoId": null,
+    "recipeSlugs": [],
+    "productLinks": [],
+    "relatedPostSlug": "the-perfect-trio-wine-jazz-cooking",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Good cooking is sensory work. Music, a glass, and an unhurried pace are not decoration. They change how carefully you taste and how patiently you wait for browning."
+      },
+      {
+        "type": "paragraph",
+        "html": "You do not need a perfect setup. You need one night where dinner is allowed to be an evening, not only a task."
+      }
+    ]
+  },
+  {
+    "slug": "kitchen-as-ecosystem",
+    "title": "Your Kitchen Is an Ecosystem",
+    "collections": [
+      "Kitchen Skills",
+      "Protein Flip\u2122 Foundations"
+    ],
+    "blurb": "Motivation fades without a habitat: tools in reach, a few reliable meals, and a kitchen that does not fight you. Build the ecosystem around the fire.",
+    "subtitle": "The fire needs a place to live.",
+    "hero": null,
+    "date": "2026-06-17",
+    "videoId": null,
+    "recipeSlugs": [],
+    "productLinks": [],
+    "relatedPostSlug": "the-fire-inside-ecosystem",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "People talk about motivation as if it were a personality trait. In the kitchen, it is often an environment problem."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Keep the knives, pans, and cutting board where cooking actually starts.",
+          "Stock a short list of default dinners you can cook half-asleep.",
+          "Leave the counter clear enough that starting does not feel like a project."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "html": "When the ecosystem supports you, the fire has somewhere to go."
+      }
+    ]
+  },
+  {
+    "slug": "meet-chef-henry",
+    "title": "Meet Chef Healthy Henry",
+    "subtitle": "The chef behind the Protein Flip\u2122 method.",
+    "blurb": "A Chicago-trained chef who rebuilt his own health through purposeful cooking, and now helps others do the same. Here is the story behind the method.",
+    "date": "2026-01-01",
+    "hero": null,
+    "articleHero": null,
+    "collections": [
+      "Protein Flip\u2122 Foundations"
+    ],
+    "productLinks": [],
+    "recipeSlugs": [],
+    "relatedPostSlug": null,
+    "videoId": null,
+    "pinned": true,
+    "pinOrder": 1,
+    "cta": {
+      "heading": "Read the full story",
+      "text": "The transformation, the method, the approach. It is all on the About page.",
+      "label": "About Chef Henry",
+      "href": "/about"
+    },
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Henry is a chef and food essayist based in Chicago. He trained as a chef about twenty years ago, cooking seriously long before he thought much about nutrition."
+      },
+      {
+        "type": "paragraph",
+        "html": "In 2020, after years of diets that subtracted until there was nothing left to enjoy, he stopped dieting and started cooking differently. He rebuilt his health around strength training, purposeful cooking, and a method that added nutrition around the food he loved instead of replacing it. That process became the Protein Flip\u2122."
+      },
+      {
+        "type": "quote",
+        "text": "Protein first. Flavor always. Nothing forbidden."
+      },
+      {
+        "type": "paragraph",
+        "html": "Today this site is where he shares the method, the recipes, and the reasoning behind both. The Explore section is a library of guides on ingredients, techniques, and the thinking that makes the Protein Flip\u2122 work in a real kitchen."
+      },
+      {
+        "type": "paragraph",
+        "html": "The best place to start is the <a href=\"/explore/article/what-is-the-protein-flip\">What Is the Protein Flip\u2122?</a> guide, or the <a href=\"/about\">About page</a> if you want the full story first."
+      }
+    ]
+  },
+  {
+    "slug": "become-a-better-more-confident-cook",
+    "title": "Become a Better, More Confident Cook",
+    "subtitle": "This site is not just about what you eat. It is about how you cook.",
+    "blurb": "The Protein Flip\u2122 changes what goes on the plate. These guides build the understanding that lets you cook without needing a recipe to tell you what to do.",
+    "date": "2026-01-02",
+    "hero": null,
+    "articleHero": null,
+    "collections": [
+      "Kitchen Skills",
+      "Flavor Builders"
+    ],
+    "productLinks": [],
+    "recipeSlugs": [],
+    "relatedPostSlug": null,
+    "videoId": null,
+    "pinned": true,
+    "pinOrder": 4,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "The Protein Flip\u2122 method changes what goes on the plate. But building a real cooking life requires something else: the kind of understanding that lets you look at a recipe as a starting point, not a set of instructions you have to follow exactly."
+      },
+      {
+        "type": "paragraph",
+        "html": "That is what the cooking guides on this site are for."
+      },
+      {
+        "type": "paragraph",
+        "html": "The Spice Series walks through how cumin, oregano, paprika, basil, cinnamon, and chili each behave, where they come from, and what makes them different from each other. The Senses Series is about learning to taste, smell, hear, and feel what is happening in the pan, so you are not relying on a timer to tell you when something is done. The technique and ingredient guides cover the decisions every cook makes: why browning matters, when a shortcut costs you something and when it does not, how to substitute without breaking a dish, and how garlic goes from sharp to sweet depending on how you cook it."
+      },
+      {
+        "type": "paragraph",
+        "html": "Confidence in the kitchen is not a personality trait. It is the result of understanding a few things well enough to trust your own judgment. These guides are where that starts."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "<a href=\"/explore/article/spice-rack-as-passport\">Your Spice Rack Is a Passport</a>",
+          "<a href=\"/explore/article/cooking-with-all-your-senses\">Cooking with All Your Senses</a>",
+          "<a href=\"/explore/article/why-brown-tastes-better\">Why Brown Tastes Better</a>",
+          "<a href=\"/explore/article/clean-cooking-shortcuts\">Clean Cooking: Shortcuts That Still Work</a>",
+          "<a href=\"/explore/article/cook-garlic-without-bitterness\">How to Cook Garlic Without Bitterness</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "what-is-radicchio",
+    "title": "What Is Radicchio?",
+    "collections": [
+      "Ingredient Adventures"
+    ],
+    "blurb": "Most people know radicchio as that bitter purple leaf hiding in their salad. But the problem is rarely the ingredient. It is the preparation.",
+    "subtitle": "It is not the ingredient that is the problem. It is the preparation.",
+    "hero": null,
+    "date": "2026-11-01",
+    "videoId": null,
+    "recipeSlugs": [
+      "roasted-radicchio-carrots-herbed-lentils"
+    ],
+    "productLinks": [],
+    "relatedPostSlug": "why-does-radicchio-taste-bitter",
+    "relatedFeaturedIngredientSlug": "radicchio",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "Most people know radicchio as that bitter purple leaf hiding in their salad. But what if the problem is not the radicchio? What if it is how we are preparing it?"
+      },
+      {
+        "type": "paragraph",
+        "html": "Raw radicchio is crisp, sharp, and sometimes intensely bitter. Roast it, and the experience changes. The leaves become tender, the edges develop savory browned flavors, and the bitterness begins to work with the dish rather than overpower it."
+      },
+      {
+        "type": "paragraph",
+        "html": "But here is where it gets interesting. You do not have to cook radicchio to make it enjoyable. Sometimes it is a matter of how you cut it, how much you use, and what you serve with it. A thin ribbon can bring welcome contrast to a rich dish. A whole leaf can become a beautiful edible vessel. And roasted wedges can become a striking centerpiece on a winter platter. Same ingredient. Completely different culinary experiences."
+      },
+      {
+        "type": "paragraph",
+        "html": "That is what makes cooking adventurous. We do not always need a new ingredient. Sometimes we just need to reconsider one we thought we already understood."
+      }
+    ]
+  }
 ]

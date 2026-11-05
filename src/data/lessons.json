@@ -1,10 +1,176 @@
 [
   {
+    "slug": "what-umami-actually-does",
+    "title": "What Umami Actually Does",
+    "categories": [
+      "Flavor Building",
+      "Protein Flip\u2122 Foundation Applications"
+    ],
+    "blurb": "A dish can be seasoned correctly and still feel like it's missing something. That something is usually depth, not flavor. Here's what umami is, where it comes from, and how to use it on purpose.",
+    "date": "2026-11-01",
+    "hero": null,
+    "fromFreeContent": [
+      {
+        "label": "What Is a Protein-First Plate?",
+        "href": "/explore/article/what-is-a-protein-first-plate"
+      }
+    ],
+    "videoId": null,
+    "relatedLessonSlugs": [
+      "whats-flexible-and-whats-protected"
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "The application question"
+      },
+      {
+        "type": "paragraph",
+        "html": "You make a dish that is seasoned correctly. The salt is right. The acid is there. But something is still missing. The food tastes fine, but you keep eating and you are not landing anywhere. The dish is not satisfying in the way it should be. What is it missing?"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "The culinary reasoning"
+      },
+      {
+        "type": "paragraph",
+        "html": "What it is probably missing is depth. And depth, in most savory cooking, comes from umami."
+      },
+      {
+        "type": "paragraph",
+        "html": "Umami is the fifth taste. It is not a flavor the way lemon is a flavor. It is a sensation: a fullness at the back of the mouth, a quality that makes a dish feel complete, a roundness that makes you want another bite before you've finished the one you're on. It is the difference between a bowl of pasta that tastes like pasta and a bowl of pasta that tastes like a meal."
+      },
+      {
+        "type": "paragraph",
+        "html": "It comes from glutamates, compounds found naturally in a specific set of ingredients. When those ingredients are present, especially when they are cooked in a way that concentrates them, they interact with salt and acid and amplify everything around them. The dish does not taste like any one of those ingredients. It tastes like itself, but more."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Where umami comes from"
+      },
+      {
+        "type": "paragraph",
+        "html": "Every reliable source of umami falls into one of two categories: ingredients that are rich in glutamates on their own, and ingredients that have been aged, fermented, or reduced in a way that concentrates those glutamates."
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>Aged and fermented.</strong> Parmesan and aged hard cheeses. Miso, in all its forms. Soy sauce and tamari. Fish sauce. Worcestershire. Anchovies. Black garlic: regular garlic that has been slowly caramelized over weeks, which concentrates its glutamates and turns the sharp bite into something sweet, deep, and almost balsamic. These are the most concentrated sources. A small amount goes a long way, and in most dishes you will not taste the ingredient itself \u2014 you will taste what it does."
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>Cooked and concentrated.</strong> Tomato paste cooked down in fat until it darkens and sticks to the pan. Mushrooms, especially dried and rehydrated shiitake. Caramelized onions. Roasted garlic. These build umami through the cooking process. The longer and hotter they cook, within reason, the more depth they produce."
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>Proteins, especially cooked proteins.</strong> Meat, fish, and poultry all contain glutamates that are released during cooking. This is part of why a well-seared piece of chicken or a properly browned piece of beef tastes like more than the sum of its parts. The sear is not just texture. It is depth."
+      },
+      {
+        "type": "paragraph",
+        "html": "Greek yogurt and cottage cheese, both anchors in the Protein Flip\u2122 method, are mild umami contributors. The lactic acid fermentation that makes them what they are also develops a small amount of savory depth. This is part of why they work so well as bases and binders in savory preparations \u2014 they do not just add protein. They add a quiet complexity that holds a dish together."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "The variables that matter"
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>How much you need.</strong> Umami compounds amplify each other. A dish with one source is different from a dish with two or three. A grain bowl with roasted mushrooms, a spoonful of miso in the dressing, and a sprinkle of parmesan tastes significantly more complete than the same bowl with just one of those. You are not stacking flavors. You are stacking depth."
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>When you add it.</strong> Umami sources added early and cooked in become the backbone of a dish. Tomato paste bloomed in olive oil before the liquid goes in builds the foundation of a sauce. Miso whisked into a dressing at the end adds a different kind of depth \u2014 quieter, more immediate, with its own distinct character. Neither is wrong. The timing changes what the umami does."
+      },
+      {
+        "type": "paragraph",
+        "html": "<strong>What else is in the dish.</strong> Umami needs salt and acid to show up clearly. Without salt, it reads as flatness. Without acid, it can tip a dish toward heaviness. The three work together. When a dish is tasting close but still not landing, check all three before you decide what to add more of."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Applying it across several preparations"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "A simple pasta or grain bowl"
+      },
+      {
+        "type": "paragraph",
+        "html": "Add a parmesan rind to the cooking liquid and remove it before serving. Add a small spoonful of white miso to the sauce or dressing. Finish with actual grated parmesan rather than the pre-ground version, which has lost most of its glutamates. Any one of these changes the depth of the bowl."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "A vegetable-forward dish"
+      },
+      {
+        "type": "paragraph",
+        "html": "This is where the gap shows up most often. A vegetable dish without umami can taste virtuous and flat at the same time. Add mushrooms, especially dried and rehydrated shiitake or porcini, and use their soaking liquid in the cook. Use miso in the dressing. Add a small spoonful of white miso to roasted vegetables before they go in the oven. Add nutritional yeast to grain bowls. These additions do not make the dish taste less like vegetables. They make it taste like a full meal."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "A quick sauce or dressing"
+      },
+      {
+        "type": "paragraph",
+        "html": "Half a teaspoon of white miso in a lemon vinaigrette, a few drops of fish sauce in a stir-fry sauce, a teaspoon of Worcestershire in a pan sauce \u2014 these are the smallest additions with the clearest results. You will not taste them as individual ingredients. You will taste a dressing that keeps working, a sauce that holds through the whole dish instead of fading by the second bite."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "A cottage cheese or Greek yogurt base"
+      },
+      {
+        "type": "paragraph",
+        "html": "Both ingredients have mild savory depth from fermentation. Lean into it. Season them with miso, with a small amount of soy sauce or tamari, with roasted garlic, with nutritional yeast. The result is a base that reads as savory and complete, not just tangy or neutral. This is the Protein Flip\u2122 at work: the high-protein anchor becomes the most flavorful part of the plate."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What to reach for first"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>White miso.</strong> The mildest and most versatile. Works in dressings, sauces, marinades, and roasted vegetable preparations. Adds depth without changing the direction of the dish.",
+          "<strong>Parmesan rind.</strong> Drop it into soups, braises, and grain-cooking liquid. Remove before serving. Costs nothing if you are already buying parmesan, and changes the whole pot.",
+          "<strong>Tomato paste.</strong> Cook it in oil over medium heat until it darkens and sticks to the pan before adding any liquid. This concentrates the glutamates and changes what it can do.",
+          "<strong>Soy sauce or tamari.</strong> A small amount added late in a non-Asian dish adds depth without making the dish taste Asian. This is a technique, not a flavor decision.",
+          "<strong>Fish sauce.</strong> Same logic as soy. Use less than you think you need. Add it early so it cooks in. It will not taste like fish in the finished dish.",
+          "<strong>Dried mushrooms.</strong> Rehydrate in warm water for thirty minutes. Use both the mushrooms and the soaking liquid, strained. The liquid is the most concentrated umami source in the pot.",
+          "<strong>Black garlic.</strong> Fermented low and slow until the cloves turn dark and jammy. Mash a clove into a sauce, dressing, or marinade. It adds concentrated umami with a sweetness that miso and soy don't have. Good in grain bowls, roasted vegetable dishes, and anywhere you want depth without sharpness."
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "The rule"
+      },
+      {
+        "type": "paragraph",
+        "html": "If a dish is seasoned correctly but still feels like it's missing something, it is probably missing depth. Depth comes from umami. Umami comes from a specific set of ingredients, and a small amount of any of them, added at the right moment, is usually enough to close the gap."
+      },
+      {
+        "type": "paragraph",
+        "html": "Salt tells you the dish is there. Acid tells you the dish is alive. Umami tells you the dish is finished."
+      },
+      {
+        "type": "quote",
+        "text": "You are not chasing a flavor. You are chasing the feeling that a dish is complete."
+      }
+    ]
+  },
+  {
     "slug": "whats-flexible-and-whats-protected",
     "title": "What's Flexible and What's Protected",
     "categories": [
       "Recipe Applications",
-      "Protein Flip™ Foundation Applications"
+      "Protein Flip\u2122 Foundation Applications"
     ],
     "blurb": "Every recipe has parts you can move and parts that hold the dish together. Learning to tell them apart is the difference between adapting a recipe and breaking it.",
     "date": "2026-09-01",
@@ -48,11 +214,11 @@
       },
       {
         "type": "paragraph",
-        "html": "The ones that fill a role are flexible. They're doing a job: adding protein, building volume, providing heat, finishing the plate. Other ingredients within the same tradition can do that job. In this recipe, the habanero can flex within the chile family. A serrano or a jalapeño will shift the heat level and change the flavor slightly, but the dish stays true to what it is. The rotisserie chicken is flexible in terms of preparation. You can braise bone-in thighs instead and shred them. The result is the same, just a different path to get there."
+        "html": "The ones that fill a role are flexible. They're doing a job: adding protein, building volume, providing heat, finishing the plate. Other ingredients within the same tradition can do that job. In this recipe, the habanero can flex within the chile family. A serrano or a jalape\u00f1o will shift the heat level and change the flavor slightly, but the dish stays true to what it is. The rotisserie chicken is flexible in terms of preparation. You can braise bone-in thighs instead and shred them. The result is the same, just a different path to get there."
       },
       {
         "type": "paragraph",
-        "html": "One thing worth noting: the Protein Flip™ already made two intentional additions in this recipe. The lentils join the chicken in the filling, boosting fiber without changing the character of the tinga. The avocado crema uses equal parts Mexican crema and Greek yogurt. The crema stays because it belongs in this dish. The Greek yogurt joins it, adding protein without removing what made the crema worth using in the first place. Both decisions follow the same rule: add better things around what you love. Do not subtract the foods that define the dish."
+        "html": "One thing worth noting: the Protein Flip\u2122 already made two intentional additions in this recipe. The lentils join the chicken in the filling, boosting fiber without changing the character of the tinga. The avocado crema uses equal parts Mexican crema and Greek yogurt. The crema stays because it belongs in this dish. The Greek yogurt joins it, adding protein without removing what made the crema worth using in the first place. Both decisions follow the same rule: add better things around what you love. Do not subtract the foods that define the dish."
       },
       {
         "type": "paragraph",
@@ -69,7 +235,7 @@
       },
       {
         "type": "paragraph",
-        "html": "Cotija is a Mexican aged cheese. If you cannot find it, the right move is Queso Fresco (milder, slightly creamier, still crumbly) or Queso Añejo (drier, saltier, closer to cotija's profile). Both are traditional. Both respect what the dish is asking for. Reaching for a European cheese changes the flavor register of the whole plate, and it signals to the dish that you're not really cooking it anymore."
+        "html": "Cotija is a Mexican aged cheese. If you cannot find it, the right move is Queso Fresco (milder, slightly creamier, still crumbly) or Queso A\u00f1ejo (drier, saltier, closer to cotija's profile). Both are traditional. Both respect what the dish is asking for. Reaching for a European cheese changes the flavor register of the whole plate, and it signals to the dish that you're not really cooking it anymore."
       },
       {
         "type": "paragraph",
@@ -108,7 +274,7 @@
       },
       {
         "type": "paragraph",
-        "html": "<strong>Flexible:</strong> the chile for heat (habanero, serrano, or jalapeño all stay within tradition), the chicken preparation (rotisserie, braised thighs, poached breast), the amount of lentils (increase or decrease without changing the dish's identity)."
+        "html": "<strong>Flexible:</strong> the chile for heat (habanero, serrano, or jalape\u00f1o all stay within tradition), the chicken preparation (rotisserie, braised thighs, poached breast), the amount of lentils (increase or decrease without changing the dish's identity)."
       },
       {
         "type": "heading",
@@ -144,12 +310,12 @@
       {
         "type": "list",
         "items": [
-          "<strong>Serrano or jalapeño for habanero.</strong> Lowers the heat, shifts the flavor slightly. The dish stays true to its tradition.",
+          "<strong>Serrano or jalape\u00f1o for habanero.</strong> Lowers the heat, shifts the flavor slightly. The dish stays true to its tradition.",
           "<strong>Queso Fresco for Cotija.</strong> Milder, slightly creamier, less salty. Works well. Stays within the Mexican cheese tradition.",
-          "<strong>Queso Añejo for Cotija.</strong> Drier, saltier, closer profile to Cotija. The stronger substitute when you want to stay close.",
+          "<strong>Queso A\u00f1ejo for Cotija.</strong> Drier, saltier, closer profile to Cotija. The stronger substitute when you want to stay close.",
           "<strong>Braised chicken thighs for rotisserie chicken.</strong> Same result, more cook time. Thighs stay moist through the sauce.",
           "<strong>Chicken breast for rotisserie chicken.</strong> Works, but dries out faster. Cook lower and watch it more closely.",
-          "<strong>More lentils, less chicken.</strong> Increases fiber and plant protein. The dish stays recognizable. This is the Protein Flip™ at work.",
+          "<strong>More lentils, less chicken.</strong> Increases fiber and plant protein. The dish stays recognizable. This is the Protein Flip\u2122 at work.",
           "<strong>Flour tostadas for corn tostadas.</strong> Changes the dish. Corn is traditional and structural to what tinga tostadas are."
         ]
       },
@@ -190,8 +356,8 @@
     ],
     "cta": {
       "heading": "Want the full grocery system?",
-      "text": "This lesson stands on its own. When you want the seasonal version, with a featured ingredient every other month and the community working through it alongside you, Protein Flip™ Community adds it.",
-      "label": "See Protein Flip™ Community",
+      "text": "This lesson stands on its own. When you want the seasonal version, with a featured ingredient every other month and the community working through it alongside you, Protein Flip\u2122 Community adds it.",
+      "label": "See Protein Flip\u2122 Community",
       "href": "/membership"
     },
     "blocks": [

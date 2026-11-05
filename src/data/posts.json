@@ -1,5 +1,73 @@
 [
   {
+    "slug": "when-a-dish-goes-quiet-on-you",
+    "title": "When a Dish Goes Quiet on You",
+    "category": "Table Talk",
+    "date": "November 5, 2026",
+    "hero": "/images/blog/when-a-dish-goes-quiet-on-you.jpg",
+    "excerpt": "Some dishes don't just taste good. They reach you somewhere words can't quite get to. Here is what that feeling is, where it comes from, and why it is the thing Chef Henry is actually cooking toward.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "html": "There's a moment some dishes produce that's hard to describe without sounding dramatic. You take a bite and you stop talking. Not because it's polite, and not because you're thinking about it. Because something in your body just settles."
+      },
+      {
+        "type": "paragraph",
+        "html": "It's not excitement. Excitement is loud. This is the opposite. It's the feeling of a room you've been in before, the smell of something you can't quite name, a tension you forgot you were carrying releasing all at once. Some people call it comfort food and leave it there, but that's not specific enough. Comfort food is a category. This is a moment."
+      },
+      {
+        "type": "paragraph",
+        "html": "I've watched people eat dishes and have that moment and not know what to do with it. They look slightly confused. Sometimes they laugh a little. Sometimes they go quiet for two or three bites and then come back to the conversation and don't bring it up. But it happened. The food got somewhere."
+      },
+      {
+        "type": "paragraph",
+        "html": "For me, that moment happens most reliably with my <a href=\"/recipes/healthy-mexican-rice\">Mexican rice</a>."
+      },
+      {
+        "type": "paragraph",
+        "html": "I make a cleaner version than what I grew up eating. Less oil, better ingredients, same intention. But when I stand at the stove and toast the dry rice until it goes amber and starts to smell like something, the whole kitchen shifts. That smell is the same smell. The color is the same color. And when the cumin goes in, Mexican cumin, not the kind that's just there for seasoning but the kind that settles into the fat and blooms, something happens in the dish that isn't about technique. It's about recognition."
+      },
+      {
+        "type": "paragraph",
+        "html": "Cumin does something in that pan that you can't get from salt alone. It adds a low, earthy depth that balances the brightness of the tomato, makes the whole thing feel finished and round. It's one of the reasons the rice lands the way it does. Not because it makes it spicy, but because it makes it real."
+      },
+      {
+        "type": "paragraph",
+        "html": "Then the lime at the end. A squeeze over the top before you serve it. It doesn't make the rice taste like lime. It makes the rice taste more like itself. That's what a good acid finish does. It wakes everything up and pulls it into focus, and when it hits a dish that's already built on that umami depth, the whole thing clicks."
+      },
+      {
+        "type": "paragraph",
+        "html": "I always smile when I make this. Not a performance smile. The kind that happens before you've decided to smile. Because I'm back in my grandmother's kitchen. The kind where you could hear the radio through the wall and the tile was cool underfoot and nobody was thinking about macros. The food just tasted like home."
+      },
+      {
+        "type": "paragraph",
+        "html": "As a cook, that's what I'm actually trying to do. Not impress. Not execute technique. Get a dish to that place where it reaches someone."
+      },
+      {
+        "type": "paragraph",
+        "html": "The interesting thing is that the dishes that do it most reliably aren't the complicated ones. They're the ones that are, somehow, complete. Every component is saying the same thing. Nothing is working against anything else. There's a depth that makes the whole thing feel finished in a way you can't fake with salt alone."
+      },
+      {
+        "type": "paragraph",
+        "html": "Umami is part of what creates that completeness. Not because it's a magic ingredient but because it's the layer that tells your nervous system: this is real food. The same glutamates that make a long-simmered broth feel different from hot water, that make aged cheese taste like it took time, that make toasted cumin do more than seasoning can. Your body recognizes them before your brain has had a chance to analyze anything."
+      },
+      {
+        "type": "paragraph",
+        "html": "This is why a dish can be technically correct and still feel like it's missing something. Seasoned right, proportioned right, fresh ingredients. And yet. It doesn't settle. It doesn't go anywhere. It just tastes like food."
+      },
+      {
+        "type": "paragraph",
+        "html": "The dishes that reach people have something underneath. Something that tells you, without words, that someone thought about this. That care happened."
+      },
+      {
+        "type": "paragraph",
+        "html": "That's what you're building toward when you cook. Not a perfect dish. A dish that, for a moment, puts someone somewhere else. Quiet. Full. Home."
+      }
+    ],
+    "seoTitle": "When a Dish Goes Quiet on You",
+    "seoDescription": "Some dishes don't just taste good. They settle you. Chef Henry on umami, Mexican rice, and what it means for food to actually reach someone."
+  },
+  {
     "slug": "how-to-eat-after-stopping-glp1-medications",
     "title": "How to Eat After Stopping GLP-1 Medications",
     "category": "Kitchen Questions",
@@ -34,7 +102,7 @@
       },
       {
         "type": "paragraph",
-        "html": "This is the foundation of the Protein Flip™ Method: a protein and fiber-forward approach to building everyday meals. Instead of treating protein as a topping or a supplement, it gets built into the structure of the dish, alongside high-fiber ingredients like legumes, whole grains, and dense vegetables."
+        "html": "This is the foundation of the Protein Flip\u2122 Method: a protein and fiber-forward approach to building everyday meals. Instead of treating protein as a topping or a supplement, it gets built into the structure of the dish, alongside high-fiber ingredients like legumes, whole grains, and dense vegetables."
       },
       {
         "type": "heading",
@@ -305,7 +373,7 @@
       },
       {
         "type": "paragraph",
-        "html": "It is also a good example of the <a href=\"/explore/article/science-and-soul-of-the-flip\">Protein Flip™ Method</a>, where protein and fiber come from several complementary ingredients across the plate. The lentils provide the foundation, with additional contributions from goat cheese, walnuts, and vegetables. The result is a colorful, substantial vegetarian dish with approximately 20 g protein and 10 to 11 g fiber per serving."
+        "html": "It is also a good example of the <a href=\"/explore/article/science-and-soul-of-the-flip\">Protein Flip\u2122 Method</a>, where protein and fiber come from several complementary ingredients across the plate. The lentils provide the foundation, with additional contributions from goat cheese, walnuts, and vegetables. The result is a colorful, substantial vegetarian dish with approximately 20 g protein and 10 to 11 g fiber per serving."
       },
       {
         "type": "heading",
@@ -328,7 +396,7 @@
     "seoTitle": "Why Does Radicchio Taste Bitter?",
     "seoDescription": "Radicchio's bitterness is not a flaw. It is a feature. Once you understand how to work with it, radicchio becomes one of the most versatile ingredients in a fall and winter kitchen."
   },
-{
+  {
     "slug": "what-comfort-food-actually-is",
     "title": "What Comfort Food Actually Is",
     "category": "Chef's Notes",
@@ -385,7 +453,7 @@
       },
       {
         "type": "paragraph",
-        "html": "The Protein Flip™ method takes the opposite position: comfort food stays on the table, the structure underneath it is what changes."
+        "html": "The Protein Flip\u2122 method takes the opposite position: comfort food stays on the table, the structure underneath it is what changes."
       },
       {
         "type": "paragraph",
@@ -401,7 +469,7 @@
       },
       {
         "type": "paragraph",
-        "html": "More of this thinking, recipe by recipe, lives in <a href=\"/cookbook\">The Protein Flip™ Method and Cookbook, Deluxe Edition</a>, available now on Amazon and through the website."
+        "html": "More of this thinking, recipe by recipe, lives in <a href=\"/cookbook\">The Protein Flip\u2122 Method and Cookbook, Deluxe Edition</a>, available now on Amazon and through the website."
       }
     ],
     "seoTitle": "What Is Comfort Food, Really? A Chef's Perspective",
@@ -409,7 +477,7 @@
   },
   {
     "slug": "what-is-the-protein-flip-tm-a-chefs-return-to-balance",
-    "title": "What Is the Protein Flip™? A Chef's Return to Balance",
+    "title": "What Is the Protein Flip\u2122? A Chef's Return to Balance",
     "category": "Chef's Notes",
     "date": "May 14, 2026",
     "hero": "/images/blog/what-is-the-protein-flip-tm-a-chefs-return-to-balance.jpg",
@@ -541,7 +609,7 @@
       },
       {
         "type": "paragraph",
-        "html": "I shifted the proportions on my plate. A little less animal protein. A little more French green lentils simmered with garlic and thyme. A half cup of nutty black rice. A tumble of sautéed greens finished with lemon zest and olive oil. Roasted carrots caramelized at the edges. Crispy chickpeas dusted with smoked paprika. Toasted pistachios for texture."
+        "html": "I shifted the proportions on my plate. A little less animal protein. A little more French green lentils simmered with garlic and thyme. A half cup of nutty black rice. A tumble of saut\u00e9ed greens finished with lemon zest and olive oil. Roasted carrots caramelized at the edges. Crispy chickpeas dusted with smoked paprika. Toasted pistachios for texture."
       },
       {
         "type": "paragraph",
@@ -581,11 +649,11 @@
       },
       {
         "type": "paragraph",
-        "html": "What began as a quiet shift eventually evolved into what I would later call the <strong>Protein Flip™ Method</strong>. Not a trend. Not a diet. A philosophy rooted in proportion and presence."
+        "html": "What began as a quiet shift eventually evolved into what I would later call the <strong>Protein Flip\u2122 Method</strong>. Not a trend. Not a diet. A philosophy rooted in proportion and presence."
       },
       {
         "type": "paragraph",
-        "html": "The <em>Protein Flip™ Deluxe Edition Cookbook</em> is the fullest expression of that journey."
+        "html": "The <em>Protein Flip\u2122 Deluxe Edition Cookbook</em> is the fullest expression of that journey."
       },
       {
         "type": "paragraph",
@@ -625,7 +693,7 @@
       },
       {
         "type": "paragraph",
-        "html": "The real power of Protein Flip™ isn't that it tells you what to eat. It invites you to build a plate that aligns with how you want to feel."
+        "html": "The real power of Protein Flip\u2122 isn't that it tells you what to eat. It invites you to build a plate that aligns with how you want to feel."
       },
       {
         "type": "paragraph",
@@ -879,7 +947,7 @@
         "html": "Meal frequency is entirely a matter of personal preference, as total daily caloric balance ultimately dictates weight changes. However, if you struggle with psychological hunger, consuming fewer, larger meals often allows you to create high-volume plates that trigger deep physiological satiety, whereas frequent small snacks may leave you feeling chronically unsatisfied."
       }
     ],
-    "seoTitle": "How to Stay Full Longer on a Diet – A Satiety Guide",
+    "seoTitle": "How to Stay Full Longer on a Diet \u2013 A Satiety Guide",
     "seoDescription": "Practical, food-first strategies to stay fuller longer while dieting, protein timing, fiber, and meal structure that actually curbs cravings."
   },
   {
@@ -1015,7 +1083,7 @@
       },
       {
         "type": "paragraph",
-        "html": "[Consume Viscous Fiber] ➔ [Water Absorption in Stomach] ➔ [Physical Stretch Receptor Activation] ➔ [Vagus Nerve Fullness Signal]"
+        "html": "[Consume Viscous Fiber] \u2794 [Water Absorption in Stomach] \u2794 [Physical Stretch Receptor Activation] \u2794 [Vagus Nerve Fullness Signal]"
       },
       {
         "type": "paragraph",
@@ -1052,7 +1120,7 @@
       },
       {
         "type": "paragraph",
-        "html": "This combination represents the exact structural logic behind the innovative Protein Flip™ methodology. Instead of forcing yourself into a state of miserable restriction or counting every single calorie, you simply change the proportion and purpose of the ingredients on your plate. You elevate plants and lean proteins to the starring roles, creating an environment where smaller portions leave you feeling profoundly satisfied."
+        "html": "This combination represents the exact structural logic behind the innovative Protein Flip\u2122 methodology. Instead of forcing yourself into a state of miserable restriction or counting every single calorie, you simply change the proportion and purpose of the ingredients on your plate. You elevate plants and lean proteins to the starring roles, creating an environment where smaller portions leave you feeling profoundly satisfied."
       },
       {
         "type": "heading",
@@ -1091,7 +1159,7 @@
       },
       {
         "type": "paragraph",
-        "html": "<strong>Ready to transform your plate today?</strong> Head over to<a href=\"https://chefhealthyhenry.com/\"> <strong>chefhealthyhenry.com</strong></a> right now to explore our premium collections. Secure your copy of the <strong>GLP-1 & Bariatric Success Guide: Protein Flip™ Edition</strong>, or order a signed physical copy of our latest seasonal cookbook. Let us help you unlock the true power of flavor-first, nutrient-dense cooking and reclaim complete control over your appetite for good!"
+        "html": "<strong>Ready to transform your plate today?</strong> Head over to<a href=\"https://chefhealthyhenry.com/\"> <strong>chefhealthyhenry.com</strong></a> right now to explore our premium collections. Secure your copy of the <strong>GLP-1 & Bariatric Success Guide: Protein Flip\u2122 Edition</strong>, or order a signed physical copy of our latest seasonal cookbook. Let us help you unlock the true power of flavor-first, nutrient-dense cooking and reclaim complete control over your appetite for good!"
       }
     ]
   },
@@ -1236,11 +1304,11 @@
       },
       {
         "type": "paragraph",
-        "html": "<strong>The Family Flip™</strong>"
+        "html": "<strong>The Family Flip\u2122</strong>"
       },
       {
         "type": "paragraph",
-        "html": "I wrote a short companion guide called The Family Flip™. It's the method, written out, for parents who want to do what I did with my daughter but want a little more structure and fewer false starts."
+        "html": "I wrote a short companion guide called The Family Flip\u2122. It's the method, written out, for parents who want to do what I did with my daughter but want a little more structure and fewer false starts."
       },
       {
         "type": "paragraph",
@@ -1287,7 +1355,7 @@
       },
       {
         "type": "paragraph",
-        "html": "The Family Flip™ is a short, paid digital download. It's written to be read in one sitting and used for months."
+        "html": "The Family Flip\u2122 is a short, paid digital download. It's written to be read in one sitting and used for months."
       },
       {
         "type": "paragraph",
@@ -1299,7 +1367,7 @@
       },
       {
         "type": "paragraph",
-        "html": "And if you want the plate philosophy alongside the kitchen pattern, the <strong><em>Protein Flip™ Method and Cookbook</em></strong> is the companion piece. Same approach, applied to your own meals. Templates, recipes, and the full method in one place."
+        "html": "And if you want the plate philosophy alongside the kitchen pattern, the <strong><em>Protein Flip\u2122 Method and Cookbook</em></strong> is the companion piece. Same approach, applied to your own meals. Templates, recipes, and the full method in one place."
       },
       {
         "type": "paragraph",
@@ -1307,7 +1375,7 @@
       },
       {
         "type": "paragraph",
-        "html": "<a href=\"https://Protein Flip™ Method and Cookbook\"><strong>Protein Flip™ Method and Cookbook</strong></a>"
+        "html": "<a href=\"https://Protein Flip\u2122 Method and Cookbook\"><strong>Protein Flip\u2122 Method and Cookbook</strong></a>"
       },
       {
         "type": "paragraph",
@@ -1341,7 +1409,7 @@
       },
       {
         "type": "paragraph",
-        "html": "Years later, I found myself standing in my own kitchen, showing my daughter the exact same dish. I heard myself say the same things my grandmother once said to me. \"Let the rice toast a little more.\" \"Listen to it, spread it around and feel it.” \"You'll know when it's ready.\" My daughter leaned in, curious and careful, the same way I once had."
+        "html": "Years later, I found myself standing in my own kitchen, showing my daughter the exact same dish. I heard myself say the same things my grandmother once said to me. \"Let the rice toast a little more.\" \"Listen to it, spread it around and feel it.\u201d \"You'll know when it's ready.\" My daughter leaned in, curious and careful, the same way I once had."
       },
       {
         "type": "paragraph",
@@ -1397,7 +1465,7 @@
       },
       {
         "type": "paragraph",
-        "html": "The more I've reflected on my own journey in the kitchen, the more I've realized that the <a href=\"https://chefhealthyhenry.com/post/what-is-the-protein-flip-tm-a-chefs-return-to-balance\">Protein Flip™ Method</a> isn't just about structure or proportion. At its core, it's about intention. When we flip the plate, when we build meals thoughtfully instead of automatically, we're choosing to nourish with awareness. We're choosing balance over excess, care over convenience."
+        "html": "The more I've reflected on my own journey in the kitchen, the more I've realized that the <a href=\"https://chefhealthyhenry.com/post/what-is-the-protein-flip-tm-a-chefs-return-to-balance\">Protein Flip\u2122 Method</a> isn't just about structure or proportion. At its core, it's about intention. When we flip the plate, when we build meals thoughtfully instead of automatically, we're choosing to nourish with awareness. We're choosing balance over excess, care over convenience."
       },
       {
         "type": "paragraph",
@@ -1606,15 +1674,15 @@
   },
   {
     "slug": "i-dont-cook-because---lets-talk-about-the-real-reasons-and-why-they-dont-have-to-stop-you",
-    "title": "“I Don’t Cook Because…” – Let’s Talk About the Real Reasons (and Why They Don’t Have to Stop You)",
+    "title": "\u201cI Don\u2019t Cook Because\u2026\u201d \u2013 Let\u2019s Talk About the Real Reasons (and Why They Don\u2019t Have to Stop You)",
     "category": "Chef's Notes",
     "date": "April 28, 2026",
     "hero": "/images/blog/i-dont-cook-because---lets-talk-about-the-real-reasons-and-w.jpg",
-    "excerpt": "\"I Don't Cook Because…\" Five Real Reasons, and Why None of Them Have to Stop You",
+    "excerpt": "\"I Don't Cook Because\u2026\" Five Real Reasons, and Why None of Them Have to Stop You",
     "blocks": [
       {
         "type": "paragraph",
-        "html": "<strong>\"I Don't Cook Because…\" Five Real Reasons, and Why None of Them Have to Stop You</strong>"
+        "html": "<strong>\"I Don't Cook Because\u2026\" Five Real Reasons, and Why None of Them Have to Stop You</strong>"
       },
       {
         "type": "paragraph",
@@ -1654,7 +1722,7 @@
       },
       {
         "type": "paragraph",
-        "html": "I write about that whole pattern in my Table Talk piece, <em>My daughter, the kitchen, and the quiet way kids learn to cook</em>, and in <em>The Family Flip™</em>, the companion guide for parents who want to do the same."
+        "html": "I write about that whole pattern in my Table Talk piece, <em>My daughter, the kitchen, and the quiet way kids learn to cook</em>, and in <em>The Family Flip\u2122</em>, the companion guide for parents who want to do the same."
       },
       {
         "type": "paragraph",
@@ -1722,7 +1790,7 @@
       },
       {
         "type": "paragraph",
-        "html": "If you want the method written out, <em>The Family Flip™</em> is built for exactly this."
+        "html": "If you want the method written out, <em>The Family Flip\u2122</em> is built for exactly this."
       },
       {
         "type": "paragraph",
@@ -2259,7 +2327,7 @@
       },
       {
         "type": "paragraph",
-        "html": "The Hungarian paprika that gives depth to a goulash is not the same as the smoked pimentón that anchors a Spanish preparation. The oregano in a Greek salad brings a completely different profile than what you would expect in an Italian marinara."
+        "html": "The Hungarian paprika that gives depth to a goulash is not the same as the smoked piment\u00f3n that anchors a Spanish preparation. The oregano in a Greek salad brings a completely different profile than what you would expect in an Italian marinara."
       },
       {
         "type": "paragraph",
@@ -2342,7 +2410,7 @@
       },
       {
         "type": "paragraph",
-        "html": "The kind that lets you look at a recipe calling for oregano and ask, which oregano? The kind that lets you see “chili powder” and understand that Kashmiri chile, Mexican ancho, Korean gochugaru, and Thai bird's eye are not simply different levels of heat. They bring different flavors, aromas, textures, colors, and cultural identities to the food."
+        "html": "The kind that lets you look at a recipe calling for oregano and ask, which oregano? The kind that lets you see \u201cchili powder\u201d and understand that Kashmiri chile, Mexican ancho, Korean gochugaru, and Thai bird's eye are not simply different levels of heat. They bring different flavors, aromas, textures, colors, and cultural identities to the food."
       },
       {
         "type": "paragraph",
@@ -2719,7 +2787,7 @@
       },
       {
         "type": "paragraph",
-        "html": "That is why saying “this dish has cumin” does not tell you nearly enough. How it is used matters just as much as the spice itself."
+        "html": "That is why saying \u201cthis dish has cumin\u201d does not tell you nearly enough. How it is used matters just as much as the spice itself."
       },
       {
         "type": "heading",
@@ -2885,7 +2953,7 @@
       },
       {
         "type": "paragraph",
-        "html": "This is an important reminder that “basil” on an ingredient list does not always tell the whole story."
+        "html": "This is an important reminder that \u201cbasil\u201d on an ingredient list does not always tell the whole story."
       },
       {
         "type": "heading",
@@ -3013,7 +3081,7 @@
     "date": "August 22, 2026",
     "hero": "/images/blog/paprika-three-completely-different-directions.jpg",
     "excerpt": "Paprika is not a single flavor. It's a category.",
-    "seoDescription": "Hungarian, Spanish (pimentón), and standard paprika are not the same spice in different jars. A chef on regional varieties, sweet vs smoked vs hot labels, and why heat handling matters more than most people realize. Spice Series, post 5 of 8.",
+    "seoDescription": "Hungarian, Spanish (piment\u00f3n), and standard paprika are not the same spice in different jars. A chef on regional varieties, sweet vs smoked vs hot labels, and why heat handling matters more than most people realize. Spice Series, post 5 of 8.",
     "blocks": [
       {
         "type": "paragraph",
@@ -3060,15 +3128,15 @@
       {
         "type": "heading",
         "level": 2,
-        "text": "Spanish Paprika: Pimentón"
+        "text": "Spanish Paprika: Piment\u00f3n"
       },
       {
         "type": "paragraph",
-        "html": "Spanish pimentón takes paprika in a very different direction."
+        "html": "Spanish piment\u00f3n takes paprika in a very different direction."
       },
       {
         "type": "paragraph",
-        "html": "Many varieties are smoke-dried over wood, giving the finished spice a pronounced smoky aroma and flavor that has nothing to do with heat or chiles. Sweet, bittersweet, and hot versions each have their own character, but what defines pimentón across all of them is that smoke. It can immediately suggest fire and roasting in a way that changes the feel of an entire dish."
+        "html": "Many varieties are smoke-dried over wood, giving the finished spice a pronounced smoky aroma and flavor that has nothing to do with heat or chiles. Sweet, bittersweet, and hot versions each have their own character, but what defines piment\u00f3n across all of them is that smoke. It can immediately suggest fire and roasting in a way that changes the feel of an entire dish."
       },
       {
         "type": "paragraph",
@@ -3102,7 +3170,7 @@
       },
       {
         "type": "paragraph",
-        "html": "That distinction matters more than most people realize. Replacing sweet Hungarian paprika with smoked Spanish pimentón does not simply make a recipe “a little smokier.” It can change the cultural identity and the overall experience of the dish. They are different tools even if the jar looks similar."
+        "html": "That distinction matters more than most people realize. Replacing sweet Hungarian paprika with smoked Spanish piment\u00f3n does not simply make a recipe \u201ca little smokier.\u201d It can change the cultural identity and the overall experience of the dish. They are different tools even if the jar looks similar."
       },
       {
         "type": "heading",
@@ -3123,7 +3191,7 @@
       },
       {
         "type": "paragraph",
-        "html": "Add Spanish smoked pimentón and the first thing you may notice is the aroma before the spoon even reaches your mouth. Suddenly those same white beans suggest smoke, char, and something cooked over fire."
+        "html": "Add Spanish smoked piment\u00f3n and the first thing you may notice is the aroma before the spoon even reaches your mouth. Suddenly those same white beans suggest smoke, char, and something cooked over fire."
       },
       {
         "type": "paragraph",
@@ -3157,7 +3225,7 @@
       },
       {
         "type": "paragraph",
-        "html": "Use Spanish pimentón when smoke is meant to be part of the flavor identity. A small amount goes a long way. It works especially well with beans, roasted vegetables, and meats where the smoky depth can develop over time."
+        "html": "Use Spanish piment\u00f3n when smoke is meant to be part of the flavor identity. A small amount goes a long way. It works especially well with beans, roasted vegetables, and meats where the smoky depth can develop over time."
       },
       {
         "type": "paragraph",
@@ -3231,7 +3299,7 @@
       },
       {
         "type": "paragraph",
-        "html": "Often called “true cinnamon,” Ceylon cinnamon is lighter and more delicate than cassia."
+        "html": "Often called \u201ctrue cinnamon,\u201d Ceylon cinnamon is lighter and more delicate than cassia."
       },
       {
         "type": "paragraph",
@@ -3291,7 +3359,7 @@
       },
       {
         "type": "paragraph",
-        "html": "In Mexican hot chocolate, café de olla, and slow-cooked savory sauces, its fragrance is as important as its taste. It is rarely the flavor you are supposed to identify. It is the warmth underneath everything else."
+        "html": "In Mexican hot chocolate, caf\u00e9 de olla, and slow-cooked savory sauces, its fragrance is as important as its taste. It is rarely the flavor you are supposed to identify. It is the warmth underneath everything else."
       },
       {
         "type": "heading",
@@ -3304,7 +3372,7 @@
       },
       {
         "type": "paragraph",
-        "html": "Combined with cumin, coriander, and other spices in dishes like Moroccan tagine or Lebanese rice with meat, it contributes aromatic warmth that rounds the other flavors without sweetening them. The goal is not for you to say “I taste cinnamon.” The cinnamon is doing its work in the background, contributing to the overall aromatic character of the dish."
+        "html": "Combined with cumin, coriander, and other spices in dishes like Moroccan tagine or Lebanese rice with meat, it contributes aromatic warmth that rounds the other flavors without sweetening them. The goal is not for you to say \u201cI taste cinnamon.\u201d The cinnamon is doing its work in the background, contributing to the overall aromatic character of the dish."
       },
       {
         "type": "heading",
@@ -3492,7 +3560,7 @@
       },
       {
         "type": "paragraph",
-        "html": "Mexican cooking gives us a perfect example of why “chili powder” does not begin to describe what a chile can do."
+        "html": "Mexican cooking gives us a perfect example of why \u201cchili powder\u201d does not begin to describe what a chile can do."
       },
       {
         "type": "paragraph",
@@ -3546,7 +3614,7 @@
       },
       {
         "type": "paragraph",
-        "html": "Calling it “red pepper flakes” misses almost everything interesting about it."
+        "html": "Calling it \u201cred pepper flakes\u201d misses almost everything interesting about it."
       },
       {
         "type": "heading",
@@ -3716,7 +3784,7 @@
     "date": "August 19, 2026",
     "hero": "/images/blog/spices-bringing-it-all-together-flavor-to-feeling.jpg",
     "excerpt": "This series was never just about spices. It was about understanding.",
-    "seoDescription": "The Spice Series closes with a return to my grandmother's kitchen, a reflection on why authenticity starts with the right ingredients, and an invitation into the Protein Flip™ Cookbook. Spice Series, post 8 of 8.",
+    "seoDescription": "The Spice Series closes with a return to my grandmother's kitchen, a reflection on why authenticity starts with the right ingredients, and an invitation into the Protein Flip\u2122 Cookbook. Spice Series, post 8 of 8.",
     "blocks": [
       {
         "type": "paragraph",
@@ -3841,11 +3909,11 @@
       {
         "type": "heading",
         "level": 2,
-        "text": "What This Looks Like in The Protein Flip™ Cookbook"
+        "text": "What This Looks Like in The Protein Flip\u2122 Cookbook"
       },
       {
         "type": "paragraph",
-        "html": "That same way of thinking runs through the Protein Flip™ Cookbook."
+        "html": "That same way of thinking runs through the Protein Flip\u2122 Cookbook."
       },
       {
         "type": "paragraph",
@@ -3861,7 +3929,7 @@
       },
       {
         "type": "paragraph",
-        "html": "Get your copy of the <a href=\"/cookbook\">Protein Flip™ Cookbook</a>."
+        "html": "Get your copy of the <a href=\"/cookbook\">Protein Flip\u2122 Cookbook</a>."
       },
       {
         "type": "heading",
@@ -3931,11 +3999,11 @@
       {
         "type": "heading",
         "level": 2,
-        "text": "Cooking with the Protein Flip™ Mindset"
+        "text": "Cooking with the Protein Flip\u2122 Mindset"
       },
       {
         "type": "paragraph",
-        "html": "Many of the recipes here are inspired by the Protein Flip™ approach: rethinking the traditional plate so protein is balanced with plants, fiber, and flavor. That doesn't mean every meal looks the same. It means portions are intentional, not restrictive. Plants play a bigger role without sacrificing satisfaction. Meals are designed to leave you feeling energized, steady, and fulfilled."
+        "html": "Many of the recipes here are inspired by the Protein Flip\u2122 approach: rethinking the traditional plate so protein is balanced with plants, fiber, and flavor. That doesn't mean every meal looks the same. It means portions are intentional, not restrictive. Plants play a bigger role without sacrificing satisfaction. Meals are designed to leave you feeling energized, steady, and fulfilled."
       },
       {
         "type": "paragraph",
@@ -4117,11 +4185,11 @@
       {
         "type": "heading",
         "level": 2,
-        "text": "Where This Connects to the Protein Flip™"
+        "text": "Where This Connects to the Protein Flip\u2122"
       },
       {
         "type": "paragraph",
-        "html": "The Protein Flip™ approach is built on the idea that you can build a satisfying, complete meal with less animal protein and more plants: legumes, grains, and vegetables doing more of the work on the plate."
+        "html": "The Protein Flip\u2122 approach is built on the idea that you can build a satisfying, complete meal with less animal protein and more plants: legumes, grains, and vegetables doing more of the work on the plate."
       },
       {
         "type": "paragraph",
@@ -4133,7 +4201,7 @@
       },
       {
         "type": "paragraph",
-        "html": "Clean cooking is not a separate thing from the Protein Flip™. It is how the Protein Flip™ actually works on the stove."
+        "html": "Clean cooking is not a separate thing from the Protein Flip\u2122. It is how the Protein Flip\u2122 actually works on the stove."
       },
       {
         "type": "heading",
@@ -4312,11 +4380,11 @@
       {
         "type": "heading",
         "level": 2,
-        "text": "Where This Connects to the Protein Flip™"
+        "text": "Where This Connects to the Protein Flip\u2122"
       },
       {
         "type": "paragraph",
-        "html": "Garlic is foundational to the Protein Flip™ approach."
+        "html": "Garlic is foundational to the Protein Flip\u2122 approach."
       },
       {
         "type": "paragraph",
@@ -4337,7 +4405,7 @@
       },
       {
         "type": "paragraph",
-        "html": "Sweet sauté. Slice four cloves thin and cook them gently in olive oil over low heat for 10 to 15 minutes. Do not rush it. Watch the color move from white to pale gold to golden. Taste one at the end. Use them and the oil on pasta, bread, or grilled vegetables."
+        "html": "Sweet saut\u00e9. Slice four cloves thin and cook them gently in olive oil over low heat for 10 to 15 minutes. Do not rush it. Watch the color move from white to pale gold to golden. Taste one at the end. Use them and the oil on pasta, bread, or grilled vegetables."
       },
       {
         "type": "paragraph",
@@ -4499,7 +4567,7 @@
       {
         "type": "heading",
         "level": 2,
-        "text": "Where This Connects to the Protein Flip™"
+        "text": "Where This Connects to the Protein Flip\u2122"
       },
       {
         "type": "paragraph",
@@ -4551,7 +4619,7 @@
     "date": "August 18, 2026",
     "hero": "/images/blog/black-garlic-ingredient-discovery.jpg",
     "excerpt": "I expected it to taste like roasted garlic. It didn't. It tasted like something I had never had before.",
-    "seoDescription": "Black garlic is ordinary garlic, slowly aged until something completely different emerges. A chef on what it tastes like, how to use it, and why it belongs in a Protein Flip™ kitchen.",
+    "seoDescription": "Black garlic is ordinary garlic, slowly aged until something completely different emerges. A chef on what it tastes like, how to use it, and why it belongs in a Protein Flip\u2122 kitchen.",
     "blocks": [
       {
         "type": "paragraph",
@@ -4685,11 +4753,11 @@
       {
         "type": "heading",
         "level": 2,
-        "text": "Where This Connects to the Protein Flip™"
+        "text": "Where This Connects to the Protein Flip\u2122"
       },
       {
         "type": "paragraph",
-        "html": "The Protein Flip™ approach is about building satisfying meals with plants doing more of the work. Legumes, grains, and vegetables carrying flavor and substance without relying on large portions of animal protein."
+        "html": "The Protein Flip\u2122 approach is about building satisfying meals with plants doing more of the work. Legumes, grains, and vegetables carrying flavor and substance without relying on large portions of animal protein."
       },
       {
         "type": "paragraph",
@@ -4697,7 +4765,7 @@
       },
       {
         "type": "paragraph",
-        "html": "It is not a shortcut. It is a tool. And it is one that earns its place in a Protein Flip™ kitchen."
+        "html": "It is not a shortcut. It is a tool. And it is one that earns its place in a Protein Flip\u2122 kitchen."
       },
       {
         "type": "heading",
@@ -4733,12 +4801,12 @@
   },
   {
     "slug": "the-science-and-the-soul-behind-the-protein-flip",
-    "title": "The Science (and the Soul) Behind the Protein Flip™ Method",
+    "title": "The Science (and the Soul) Behind the Protein Flip\u2122 Method",
     "category": "Chef's Notes",
     "date": "May 13, 2026",
     "hero": "/images/blog/the-science-and-the-soul-behind-the-protein-flip.jpg",
     "excerpt": "There is science behind that feeling. And there is soul within that science.",
-    "seoDescription": "Fiber slows digestion. Protein supports the body. But the deeper reason a balanced plate leaves you clear instead of clouded? A chef on the science, and the soul, behind the Protein Flip™ Method.",
+    "seoDescription": "Fiber slows digestion. Protein supports the body. But the deeper reason a balanced plate leaves you clear instead of clouded? A chef on the science, and the soul, behind the Protein Flip\u2122 Method.",
     "blocks": [
       {
         "type": "paragraph",
@@ -4801,7 +4869,7 @@
       },
       {
         "type": "paragraph",
-        "html": "The Protein Flip™ Method is built on proportion, yes, but it is equally built on presence."
+        "html": "The Protein Flip\u2122 Method is built on proportion, yes, but it is equally built on presence."
       },
       {
         "type": "paragraph",
@@ -4834,7 +4902,7 @@
       },
       {
         "type": "paragraph",
-        "html": "The Protein Flip™ Method does not reject nutrition research. It honors it. But it refuses to reduce nourishment to numbers alone. We are not spreadsheets. We are living systems with senses, emotions, and histories connected to food."
+        "html": "The Protein Flip\u2122 Method does not reject nutrition research. It honors it. But it refuses to reduce nourishment to numbers alone. We are not spreadsheets. We are living systems with senses, emotions, and histories connected to food."
       },
       {
         "type": "paragraph",
@@ -4850,11 +4918,11 @@
       },
       {
         "type": "paragraph",
-        "html": "The <em>Protein Flip™ Deluxe Edition Cookbook</em> is the method made practical. Every plate built on the science you just read. Every recipe written so the soul comes through."
+        "html": "The <em>Protein Flip\u2122 Deluxe Edition Cookbook</em> is the method made practical. Every plate built on the science you just read. Every recipe written so the soul comes through."
       },
       {
         "type": "paragraph",
-        "html": "<a href=\"/cookbook\">Get your copy of the Protein Flip™ Cookbook.</a>"
+        "html": "<a href=\"/cookbook\">Get your copy of the Protein Flip\u2122 Cookbook.</a>"
       }
     ]
   },
@@ -5029,7 +5097,7 @@
       },
       {
         "type": "paragraph",
-        "html": "This is actually at the heart of what I think about when I write about the Protein Flip™. Building a plate isn't just about macros and fiber ratios. It's about the full experience of eating well, feeling good, and being present enough to enjoy it. Jazz and wine are part of that presence. They're not extras. They're the environment that makes the food mean more."
+        "html": "This is actually at the heart of what I think about when I write about the Protein Flip\u2122. Building a plate isn't just about macros and fiber ratios. It's about the full experience of eating well, feeling good, and being present enough to enjoy it. Jazz and wine are part of that presence. They're not extras. They're the environment that makes the food mean more."
       },
       {
         "type": "paragraph",
@@ -5089,7 +5157,7 @@
       },
       {
         "type": "paragraph",
-        "html": "At first glance, a recipe looks like a set of instructions. Cut this. Sauté that. Mix, season, plate. Step by step, it can feel like there's only one way through. But if you've spent any real time in the kitchen, you start to realize something deeper."
+        "html": "At first glance, a recipe looks like a set of instructions. Cut this. Saut\u00e9 that. Mix, season, plate. Step by step, it can feel like there's only one way through. But if you've spent any real time in the kitchen, you start to realize something deeper."
       },
       {
         "type": "paragraph",
@@ -5114,7 +5182,7 @@
       },
       {
         "type": "paragraph",
-        "html": "A recipe might tell you to dice an onion, add garlic, and sauté in olive oil. A template teaches you that aromatics build the foundation, that heat controls flavor development, and that timing changes everything."
+        "html": "A recipe might tell you to dice an onion, add garlic, and saut\u00e9 in olive oil. A template teaches you that aromatics build the foundation, that heat controls flavor development, and that timing changes everything."
       },
       {
         "type": "paragraph",
@@ -5126,7 +5194,7 @@
       },
       {
         "type": "paragraph",
-        "html": "Every dish still follows a rhythm. Cutting, sautéing, mixing, plating. But within those steps, there's room to respond to what's in front of you."
+        "html": "Every dish still follows a rhythm. Cutting, saut\u00e9ing, mixing, plating. But within those steps, there's room to respond to what's in front of you."
       },
       {
         "type": "paragraph",
@@ -5143,11 +5211,11 @@
       {
         "type": "heading",
         "level": 2,
-        "text": "This Sits at the Core of the Protein Flip™"
+        "text": "This Sits at the Core of the Protein Flip\u2122"
       },
       {
         "type": "paragraph",
-        "html": "This idea sits at the core of the Protein Flip™ Method. It's not a set of strict rules. It's a template. A way to build a plate that works every time."
+        "html": "This idea sits at the core of the Protein Flip\u2122 Method. It's not a set of strict rules. It's a template. A way to build a plate that works every time."
       },
       {
         "type": "paragraph",
@@ -5176,11 +5244,11 @@
       },
       {
         "type": "paragraph",
-        "html": "<a href=\"/cookbook\">Get your copy of the Protein Flip™ Cookbook.</a>"
+        "html": "<a href=\"/cookbook\">Get your copy of the Protein Flip\u2122 Cookbook.</a>"
       },
       {
         "type": "paragraph",
-        "html": "Cooking becomes something else entirely. It's no longer about following instructions. It's about expression, rhythm, and being present in the process. You're still cutting, sautéing, mixing, and plating, but now you're doing it with intention. With awareness. With a sense that what you're making is truly yours."
+        "html": "Cooking becomes something else entirely. It's no longer about following instructions. It's about expression, rhythm, and being present in the process. You're still cutting, saut\u00e9ing, mixing, and plating, but now you're doing it with intention. With awareness. With a sense that what you're making is truly yours."
       },
       {
         "type": "paragraph",
@@ -5467,7 +5535,7 @@
       },
       {
         "type": "paragraph",
-        "html": "That's the foundation underneath the Protein Flip™ method. The method didn't come from a lab. It came from a chef trying to keep his abuela's table on his plate while actually listening to what his body was telling him."
+        "html": "That's the foundation underneath the Protein Flip\u2122 method. The method didn't come from a lab. It came from a chef trying to keep his abuela's table on his plate while actually listening to what his body was telling him."
       },
       {
         "type": "heading",
@@ -5619,7 +5687,7 @@
     "date": "May 6, 2026",
     "hero": "/images/blog/from-portion-control-to-portion-smart.jpg",
     "excerpt": "Control implies tension. It suggests that food is something to manage, to restrict, to brace against. The shift didn't happen in a research paper. It happened in my kitchen, while plating dinner.",
-    "seoDescription": "Why I stopped saying 'portion control' and started building plates around intention instead of restriction. The mindset shift behind the Protein Flip™.",
+    "seoDescription": "Why I stopped saying 'portion control' and started building plates around intention instead of restriction. The mindset shift behind the Protein Flip\u2122.",
     "blocks": [
       {
         "type": "paragraph",
@@ -5737,11 +5805,11 @@
       {
         "type": "heading",
         "level": 2,
-        "text": "How This Shaped the Protein Flip™"
+        "text": "How This Shaped the Protein Flip\u2122"
       },
       {
         "type": "paragraph",
-        "html": "This idea of being portion smart became foundational in how I approach cooking and, ultimately, how the Protein Flip™ took shape."
+        "html": "This idea of being portion smart became foundational in how I approach cooking and, ultimately, how the Protein Flip\u2122 took shape."
       },
       {
         "type": "paragraph",
@@ -5774,7 +5842,7 @@
       },
       {
         "type": "paragraph",
-        "html": "<a href=\"/cookbook\">Get your copy of the Protein Flip™ Cookbook.</a>"
+        "html": "<a href=\"/cookbook\">Get your copy of the Protein Flip\u2122 Cookbook.</a>"
       }
     ]
   },
@@ -5921,11 +5989,11 @@
       {
         "type": "heading",
         "level": 2,
-        "text": "Where This Connects to the Protein Flip™"
+        "text": "Where This Connects to the Protein Flip\u2122"
       },
       {
         "type": "paragraph",
-        "html": "The Protein Flip™ Method is built around building plates that are balanced, satisfying, and complete. Protein leads. Flavor stays. You leave the table full."
+        "html": "The Protein Flip\u2122 Method is built around building plates that are balanced, satisfying, and complete. Protein leads. Flavor stays. You leave the table full."
       },
       {
         "type": "paragraph",
@@ -5937,7 +6005,7 @@
       },
       {
         "type": "paragraph",
-        "html": "The Protein Flip™ approach gives you the structure. Your senses give you the feedback. Together, they replace the need to measure and calculate with something more useful: the ability to recognize a complete plate when you see, smell, and taste one."
+        "html": "The Protein Flip\u2122 approach gives you the structure. Your senses give you the feedback. Together, they replace the need to measure and calculate with something more useful: the ability to recognize a complete plate when you see, smell, and taste one."
       },
       {
         "type": "paragraph",
@@ -5954,7 +6022,7 @@
       },
       {
         "type": "paragraph",
-        "html": "It is about creating a different relationship with food. One that feels more natural, more grounded, and more enjoyable. It is also part of the quiet foundation underneath the Protein Flip™ Method. When your senses are engaged, balance stops being only a calculation and starts becoming something you can recognize and feel."
+        "html": "It is about creating a different relationship with food. One that feels more natural, more grounded, and more enjoyable. It is also part of the quiet foundation underneath the Protein Flip\u2122 Method. When your senses are engaged, balance stops being only a calculation and starts becoming something you can recognize and feel."
       },
       {
         "type": "paragraph",
@@ -6101,11 +6169,11 @@
       {
         "type": "heading",
         "level": 2,
-        "text": "Where This Connects to the Protein Flip™"
+        "text": "Where This Connects to the Protein Flip\u2122"
       },
       {
         "type": "paragraph",
-        "html": "In the Protein Flip™ approach, we focus on building meals that feel complete without relying on excess."
+        "html": "In the Protein Flip\u2122 approach, we focus on building meals that feel complete without relying on excess."
       },
       {
         "type": "paragraph",
@@ -6258,7 +6326,7 @@
       {
         "type": "heading",
         "level": 2,
-        "text": "Where This Connects to the Protein Flip™"
+        "text": "Where This Connects to the Protein Flip\u2122"
       },
       {
         "type": "paragraph",
@@ -6331,7 +6399,7 @@
     "date": "August 14, 2026",
     "hero": "/images/blog/sight-the-first-taste.jpg",
     "excerpt": "Before a bite is taken, a decision is already made.",
-    "seoDescription": "A chef on color, contrast, and composition, why your eye decides before your mouth does, and the visual mark of a Protein Flip™ Verified plate. Senses Series, post 4 of 7.",
+    "seoDescription": "A chef on color, contrast, and composition, why your eye decides before your mouth does, and the visual mark of a Protein Flip\u2122 Verified plate. Senses Series, post 4 of 7.",
     "blocks": [
       {
         "type": "paragraph",
@@ -6448,11 +6516,11 @@
       {
         "type": "heading",
         "level": 2,
-        "text": "Where Protein Flip™ Becomes Visible"
+        "text": "Where Protein Flip\u2122 Becomes Visible"
       },
       {
         "type": "paragraph",
-        "html": "This is one place where the Protein Flip™ approach becomes especially easy to recognize."
+        "html": "This is one place where the Protein Flip\u2122 approach becomes especially easy to recognize."
       },
       {
         "type": "paragraph",
@@ -6464,7 +6532,7 @@
       },
       {
         "type": "paragraph",
-        "html": "That is the idea behind Protein Flip™ Verified. You can look at a plate and know. No measuring. No calculating. Just a glance."
+        "html": "That is the idea behind Protein Flip\u2122 Verified. You can look at a plate and know. No measuring. No calculating. Just a glance."
       },
       {
         "type": "heading",
@@ -6609,11 +6677,11 @@
       {
         "type": "heading",
         "level": 2,
-        "text": "Where This Connects to the Protein Flip™"
+        "text": "Where This Connects to the Protein Flip\u2122"
       },
       {
         "type": "paragraph",
-        "html": "Texture is one of the easiest ways to bring the Protein Flip™ approach to life."
+        "html": "Texture is one of the easiest ways to bring the Protein Flip\u2122 approach to life."
       },
       {
         "type": "paragraph",
@@ -6787,11 +6855,11 @@
       {
         "type": "heading",
         "level": 2,
-        "text": "Where This Connects to the Protein Flip™"
+        "text": "Where This Connects to the Protein Flip\u2122"
       },
       {
         "type": "paragraph",
-        "html": "The Protein Flip™ approach is not about taking everything away. It is about building meals that feel complete."
+        "html": "The Protein Flip\u2122 approach is not about taking everything away. It is about building meals that feel complete."
       },
       {
         "type": "paragraph",
@@ -6984,7 +7052,7 @@
       },
       {
         "type": "paragraph",
-        "html": "That same idea is part of what led me to create The Protein Flip™ Method and Cookbook, Deluxe Edition."
+        "html": "That same idea is part of what led me to create The Protein Flip\u2122 Method and Cookbook, Deluxe Edition."
       },
       {
         "type": "paragraph",
@@ -7066,11 +7134,11 @@
       },
       {
         "type": "paragraph",
-        "html": "The Protein Flip™ Method and Cookbook, Deluxe Edition is one place I have put that way of cooking into practice, with recipes and plates designed to help you build meals that feel balanced, intentional, and complete."
+        "html": "The Protein Flip\u2122 Method and Cookbook, Deluxe Edition is one place I have put that way of cooking into practice, with recipes and plates designed to help you build meals that feel balanced, intentional, and complete."
       },
       {
         "type": "paragraph",
-        "html": "<a href=\"/cookbook\">Get your copy of the Protein Flip™ Cookbook.</a>"
+        "html": "<a href=\"/cookbook\">Get your copy of the Protein Flip\u2122 Cookbook.</a>"
       },
       {
         "type": "paragraph",
