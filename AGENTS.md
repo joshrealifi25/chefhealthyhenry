@@ -23,6 +23,36 @@ and its own house rules, and those rules are below.
 - Lucide React icons
 - Neon Postgres via Drizzle, Stripe, Resend, Vercel Blob
 
+## Vercel Blob store
+
+The site uses one private Blob store named **cookbook-pdfs** for all
+downloadable files and product images. The env var `BLOB_READ_WRITE_TOKEN`
+gives read/write access; it is set in Vercel and in `.env.example` as a
+placeholder.
+
+**Folder layout inside the store:**
+
+| Folder | Contents |
+| --- | --- |
+| `cookbooks/` | Purchasable PDF files, one per product slug, e.g. `cookbooks/protein-flip-deluxe.pdf` |
+| `thumbnails/` | Product card images, e.g. `thumbnails/when-nothing-sounds-good.jpg` |
+
+All blobs are **private**. Customers never get a direct blob URL. PDF delivery
+goes through `src/lib/fulfillment.ts`, which issues a signed, expiring token
+after Stripe confirms payment. Do not change a blob's access level to public.
+
+**Adding a new product PDF:**
+1. Upload the file to the `cookbooks/` folder in the Vercel dashboard (or via
+   the Vercel CLI: `vercel blob put cookbooks/<slug>.pdf <local-path> --access private`).
+2. Add the pathname to the `PRODUCTS` map in `src/lib/fulfillment.ts`.
+3. Add the product entry to `src/data/cookbooks.ts` with the matching Stripe
+   `buyUrl`.
+
+**Adding or replacing a product thumbnail:**
+Upload to `thumbnails/<slug>.jpg` (800×600 px, 4:3 ratio, JPEG). Then update
+the `image` field in `src/data/cookbooks.ts` to point to the blob URL, or
+keep it as a local `/images/` path if the image is checked into the repo.
+
 ## Design
 
 Deliciously Ella-inspired: clean white and cream, Fraunces serif headings,
@@ -96,7 +126,9 @@ patterns. Watch for Excel artifacts: serving ranges turn into dates, so
 
 ## Writing style (locked rules)
 
-- NO em dashes anywhere in site copy. Use a period, a comma, or a colon.
+- NO em dashes anywhere in any copy, including emails, guides, and marketing. Use a period, a comma, or a colon.
+- The Protein Flip™ Method is always described as protein and fiber-forward. Never protein-forward alone. Fiber is always part of the description.
+- All sign-offs in emails and copy are "Chef Henry". Never "Henry" alone.
 - No exclamation points. No buzzwords.
 - Benefit-led and specific. One primary call to action per page.
 - The flagship book is "The Protein Flip™ Method and Cookbook, Deluxe
