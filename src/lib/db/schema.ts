@@ -163,6 +163,10 @@ export const favoriteThings = pgTable("favorite_things", {
   whyILikeIt: text("why_i_like_it"),
   label: text("label").notNull().default("pick"),
   featured: boolean("featured").notNull().default(false),
+  /** Product of the Month. Only one row is true. The admin route enforces that. */
+  isFeatured: boolean("is_featured").notNull().default(false),
+  featuredMonth: text("featured_month"),
+  featuredNote: text("featured_note"),
   active: boolean("active").notNull().default(true),
   sortOrder: integer("sort_order").notNull().default(0),
   createdAt: timestamp("created_at", { withTimezone: true })

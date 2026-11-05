@@ -7,6 +7,7 @@ import {
   type FavoriteThing,
 } from "@/lib/favorite-things";
 import { FavoritesList } from "@/components/favorites-list";
+import { OpensInNewWindow } from "@/components/opens-in-new-window";
 
 export const metadata: Metadata = {
   title: "Favorite Things",
@@ -38,8 +39,50 @@ async function loadActiveItems(): Promise<FavoriteThing[]> {
   }
 }
 
+function ProductOfTheMonth({ item }: { item: FavoriteThing }) {
+  const rel = item.isAffiliate
+    ? "nofollow noopener noreferrer"
+    : "noopener noreferrer";
+  const label = item.featuredMonth
+    ? `Chef Henry's Pick This Month · ${item.featuredMonth}`
+    : "Chef Henry's Pick This Month";
+
+  return (
+    <article className="mt-10 rounded-2xl border border-border bg-card p-8 shadow-sm sm:p-10">
+      <p className="text-sm font-medium uppercase tracking-widest text-primary">
+        {label}
+      </p>
+      <h2 className="mt-3 font-heading text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
+        {item.name}
+      </h2>
+      {item.featuredNote && (
+        <p className="mt-4 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+          {item.featuredNote}
+        </p>
+      )}
+      {item.isAffiliate && (
+        <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+          {DISCLOSURE}
+        </p>
+      )}
+      <div className="mt-6">
+        <a
+          href={item.linkUrl}
+          target="_blank"
+          rel={rel}
+          className="inline-block rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+        >
+          See it →
+          <OpensInNewWindow />
+        </a>
+      </div>
+    </article>
+  );
+}
+
 export default async function FavoritesPage() {
   const items = await loadActiveItems();
+  const featured = items.find((item) => item.isFeatured) ?? null;
   const groups = groupByCategory(items);
 
   return (
@@ -53,6 +96,8 @@ export default async function FavoritesPage() {
           and cooking setup.
         </p>
       </div>
+
+      {featured && <ProductOfTheMonth item={featured} />}
 
       <p
         role="note"

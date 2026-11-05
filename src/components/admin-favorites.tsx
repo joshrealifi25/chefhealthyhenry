@@ -23,6 +23,9 @@ export interface FavoriteRow {
   whyILikeIt: string | null;
   label: string;
   featured: boolean;
+  isFeatured: boolean;
+  featuredMonth: string | null;
+  featuredNote: string | null;
   active: boolean;
   sortOrder: number;
   createdAt: string;
@@ -38,6 +41,9 @@ interface Draft {
   whyILikeIt: string;
   label: FavoriteLabel;
   featured: boolean;
+  isFeatured: boolean;
+  featuredMonth: string;
+  featuredNote: string;
   active: boolean;
   sortOrder: string;
 }
@@ -51,6 +57,9 @@ const EMPTY: Draft = {
   whyILikeIt: "",
   label: "pick",
   featured: false,
+  isFeatured: false,
+  featuredMonth: "",
+  featuredNote: "",
   active: true,
   sortOrder: "0",
 };
@@ -69,6 +78,9 @@ function toDraft(row: FavoriteRow): Draft {
       ? row.label
       : "pick") as FavoriteLabel,
     featured: row.featured,
+    isFeatured: row.isFeatured,
+    featuredMonth: row.featuredMonth ?? "",
+    featuredNote: row.featuredNote ?? "",
     active: row.active,
     sortOrder: String(row.sortOrder),
   };
@@ -85,6 +97,9 @@ function toBody(draft: Draft): Record<string, unknown> {
     whyILikeIt: draft.whyILikeIt || null,
     label: draft.label,
     featured: draft.featured,
+    isFeatured: draft.isFeatured,
+    featuredMonth: draft.featuredMonth,
+    featuredNote: draft.featuredNote,
     active: draft.active,
     sortOrder: Number(draft.sortOrder || 0),
   };
@@ -107,10 +122,13 @@ function Fields({
   draft,
   onChange,
   idPrefix,
+  productOfTheMonth = false,
 }: {
   draft: Draft;
   onChange: (next: Draft) => void;
   idPrefix: string;
+  /** Edit form only. The create form does not set the monthly spotlight. */
+  productOfTheMonth?: boolean;
 }) {
   const set = <K extends keyof Draft>(key: K, value: Draft[K]) =>
     onChange({ ...draft, [key]: value });
@@ -256,6 +274,46 @@ function Fields({
           Active (visible on the public page)
         </label>
       </div>
+
+      {productOfTheMonth && (
+        <div className="sm:col-span-2 space-y-4 rounded-xl border border-border bg-background p-4">
+          <label className="flex items-center gap-2 text-sm">
+            <input
+              type="checkbox"
+              checked={draft.isFeatured}
+              onChange={(e) => set("isFeatured", e.target.checked)}
+            />
+            Product of the Month
+          </label>
+          <div>
+            <label htmlFor={`${idPrefix}-featured-month`} className={labelClass}>
+              Month
+            </label>
+            <input
+              id={`${idPrefix}-featured-month`}
+              type="text"
+              placeholder="November 2026"
+              maxLength={40}
+              value={draft.featuredMonth}
+              onChange={(e) => set("featuredMonth", e.target.value)}
+              className={`mt-1 ${inputClass}`}
+            />
+          </div>
+          <div>
+            <label htmlFor={`${idPrefix}-featured-note`} className={labelClass}>
+              Spotlight note
+            </label>
+            <textarea
+              id={`${idPrefix}-featured-note`}
+              rows={3}
+              maxLength={600}
+              value={draft.featuredNote}
+              onChange={(e) => set("featuredNote", e.target.value)}
+              className={`mt-1 ${inputClass}`}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -393,6 +451,7 @@ export function AdminFavorites({ items }: { items: FavoriteRow[] }) {
                     draft={editDraft}
                     onChange={setEditDraft}
                     idPrefix={`edit-${row.id}`}
+                    productOfTheMonth
                   />
                   <div className="flex flex-wrap items-center justify-end gap-3">
                     <button
@@ -427,6 +486,11 @@ export function AdminFavorites({ items }: { items: FavoriteRow[] }) {
                           Featured
                         </span>
                       )}
+                      {row.isFeatured && (
+                        <span className="rounded-full bg-primary px-2 py-0.5 text-xs text-primary-foreground">
+                          Product of the Month
+                        </span>
+                      )}
                       {row.isAffiliate && (
                         <span className="rounded-full border border-border px-2 py-0.5 text-xs text-muted-foreground">
                           Affiliate
@@ -434,9 +498,12 @@ export function AdminFavorites({ items }: { items: FavoriteRow[] }) {
                       )}
                     </div>
                     <p className="mt-1 text-xs text-muted-foreground">
-                      {categoryLabel(row.category)} ·{" "}
-                      {recommendationLabel(row.label)} · sort {row.sortOrder} ·
-                      added {formatDate(row.createdAt)}
+                      {categoryLabel(row.category)} · {recommendationLabel(row.label)} ·
+                      sort {row.sortOrder}
+                      {row.isFeatured && row.featuredMonth
+                        ? ` · ${row.featuredMonth}`
+                        : ""}{" "}
+                      · added {formatDate(row.createdAt)}
                     </p>
                     <p className="mt-2 text-sm text-muted-foreground">{row.note}</p>
                     <a

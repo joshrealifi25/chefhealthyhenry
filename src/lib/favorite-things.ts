@@ -64,6 +64,9 @@ export interface FavoriteThingInput {
   whyILikeIt: string | null;
   label: FavoriteLabel;
   featured: boolean;
+  isFeatured: boolean;
+  featuredMonth: string | null;
+  featuredNote: string | null;
   active: boolean;
   sortOrder: number;
 }
@@ -116,6 +119,16 @@ export function parseFavoriteThingInput(
     return { ok: false, error: "Keep Why I Like It under 2000 characters." };
   }
 
+  const featuredMonth = optionalText(b.featuredMonth);
+  if (featuredMonth && featuredMonth.length > 40) {
+    return { ok: false, error: "Keep the month under 40 characters." };
+  }
+
+  const featuredNote = optionalText(b.featuredNote);
+  if (featuredNote && featuredNote.length > 600) {
+    return { ok: false, error: "Keep the spotlight note under 600 characters." };
+  }
+
   const label = b.label ?? "pick";
   if (!isFavoriteLabel(label)) {
     return { ok: false, error: "Choose one of the listed recommendation labels." };
@@ -144,6 +157,9 @@ export function parseFavoriteThingInput(
       whyILikeIt,
       label,
       featured: b.featured === true,
+      isFeatured: b.isFeatured === true,
+      featuredMonth,
+      featuredNote,
       active: b.active !== false,
       sortOrder,
     },
