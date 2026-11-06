@@ -26,8 +26,12 @@ export default async function GuideThankYouPage({
 
   return (
     <div className="mx-auto max-w-xl px-4 py-16 sm:px-6 sm:py-24">
-      {purchase ? (
-        <TrackGuidePurchase value={purchase.value} currency={purchase.currency} />
+      {purchase && sessionId ? (
+        <TrackGuidePurchase
+          transactionId={sessionId}
+          value={purchase.value}
+          currency={purchase.currency}
+        />
       ) : null}
       <h1 className="font-heading text-4xl font-semibold tracking-tight">
         Your guide is ready
