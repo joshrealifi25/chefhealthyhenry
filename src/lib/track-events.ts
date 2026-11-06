@@ -64,6 +64,42 @@ export function trackMembershipSignup(
   }
 }
 
+/** Google Ads "Sampler Lead" conversion. */
+export const SAMPLER_LEAD_SEND_TO = "AW-18475081271/6m3oCP2gwrMdELe8zelE";
+
+/** Google Ads "Guide Purchase" conversion for When Nothing Sounds Good. */
+export const GUIDE_PURCHASE_SEND_TO = "AW-18475081271/V5EECIChwrMdELe8zelE";
+
+export function trackSamplerLead(): void {
+  if (typeof window === "undefined") return;
+  try {
+    window.gtag?.("event", "conversion", { send_to: SAMPLER_LEAD_SEND_TO });
+  } catch {
+    /* ad blockers routinely throw here; never break the page for it */
+  }
+}
+
+export function trackGuidePurchase(
+  transactionId: string,
+  value: number,
+  currency: string,
+): boolean {
+  if (typeof window === "undefined" || !window.gtag || !transactionId) return false;
+  if (!Number.isFinite(value) || value < 0 || !currency) return false;
+  try {
+    window.gtag("event", "conversion", {
+      send_to: GUIDE_PURCHASE_SEND_TO,
+      transaction_id: transactionId,
+      value,
+      currency,
+    });
+    return true;
+  } catch {
+    /* ad blockers routinely throw here; never break the page for it */
+    return false;
+  }
+}
+
 export function trackPurchase(value?: number, currency = "USD"): void {
   if (typeof window === "undefined") return;
   try {

@@ -2,7 +2,7 @@
 
 import { useId, useState } from "react";
 import Link from "next/link";
-import { trackLead } from "@/lib/track-events";
+import { trackLead, trackSamplerLead } from "@/lib/track-events";
 import { hrefWithSource, SAMPLER_LEAD_NAME } from "@/lib/lead-source";
 import { SUBSCRIBED_STORAGE_KEY } from "@/components/newsletter-form";
 
@@ -34,6 +34,7 @@ export function SamplerForm({ source }: { source: string }) {
           });
           if (res.ok) {
             trackLead({ source, contentName: SAMPLER_LEAD_NAME });
+            trackSamplerLead();
             try {
               localStorage.setItem(SUBSCRIBED_STORAGE_KEY, "1");
             } catch {
