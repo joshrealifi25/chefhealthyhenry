@@ -1,20 +1,23 @@
 # Chef Healthy Henry: Marketing Plan
 
-Last updated: July 2026. Owner: Josh (growth/tech) + Henry (content/voice).
+Last updated: October 2026. Owner: Josh (growth/tech) + Henry (content/voice).
 This document is read by Claude sessions for context. Keep it current when
 strategy changes.
+
+Paid acquisition, podcasts, and creator buys moved into their own document:
+`docs/growth-plan.md`. Read that one for ads.
 
 ## The one-line strategy
 
 Recipes earn the traffic, the free Grocery Store Test earns the email, and
-the email list sells the cookbooks. Everything we build should strengthen
-one of those three links.
+the email list sells the cookbooks and the membership. Everything we build
+should strengthen one of those three links.
 
 ## Business model
 
 | Asset | Role |
 |---|---|
-| 196+ recipe pages | SEO traffic engine, top of funnel |
+| 201 recipe pages | SEO traffic engine, top of funnel |
 | Blog essays (/post) | Authority + GLP-1/satiety search terms |
 | Free Grocery Store Test ($8.99 value) | Lead magnet, email capture |
 | Email list (Resend "General" audience) | The owned channel, sells everything |
@@ -54,10 +57,18 @@ transformation, 1.3M monthly reach.
 
 ## Explicitly not doing yet
 
-- Paid ads (wait until email conversion is proven; ads into a leaky funnel
-  burn money)
 - Ad networks/interstitials (kills the clean brand that differentiates us)
-- Memberships/subscriptions (revisit when the list is in the thousands)
+- Google Ads (recipe SEO already covers search intent for free)
+
+Two items moved off this list since July:
+
+- **Memberships shipped.** Three tiers are live and selling at `/membership`.
+  Kitchen at $12/mo or $120/yr, Community at $29/mo, and Chef's Table at
+  $69/mo on a waitlist until roughly six months after launch.
+- **Paid ads are now in scope**, planned in `docs/growth-plan.md`. The
+  original caution still stands and is the first rule of that plan: do not
+  scale spend until the path from landing page to email to membership
+  converts.
 
 ## Email rules
 
