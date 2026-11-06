@@ -12,6 +12,7 @@ import {
 import { deliveryEmailHtml } from "@/lib/delivery-email";
 import { notifyHenry, escapeHtml } from "@/lib/notify";
 import { syncSubscription } from "@/lib/membership-sync";
+import { setResendMember, syncResendMembership } from "@/lib/resend-member";
 import { sendMetaConversionEvent } from "@/lib/ad-tracking";
 import {
   startBuyerSequence,
@@ -48,6 +49,12 @@ export async function POST(req: NextRequest) {
     const email = session.customer_details?.email;
 
     if (email) {
+      // Subscription checkout means a membership just activated. One-time
+      // cookbook orders stay off the member attribute.
+      if (session.mode === "subscription") {
+        await setResendMember(email, true);
+      }
+
       const lineItems = await stripe.checkout.sessions.listLineItems(session.id, {
         limit: 20,
       });
@@ -154,14 +161,17 @@ export async function POST(req: NextRequest) {
   }
 
   // Membership subscriptions: keep tier access in sync with Stripe.
+  // Resend runs after that sync and cannot fail this webhook.
   if (
     event.type === "customer.subscription.created" ||
     event.type === "customer.subscription.updated" ||
     event.type === "customer.subscription.deleted"
   ) {
-    await syncSubscription(stripe, event.data.object as Stripe.Subscription, {
+    const subscription = event.data.object as Stripe.Subscription;
+    await syncSubscription(stripe, subscription, {
       isNew: event.type === "customer.subscription.created",
     });
+    await syncResendMembership(stripe, subscription, event.type);
   }
 
   return NextResponse.json({ received: true });
