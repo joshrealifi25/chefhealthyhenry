@@ -120,7 +120,7 @@ def draw_cover(c, doc):
     c.drawCentredString(W/2, photo_y - G - 180, 'by Chef Healthy Henry')
     c.setFont('DJS', 8); c.setFillColor(MUTED_COL)
     c.drawCentredString(W/2, photo_y - G - 195,
-        'Classically trained chef.  Former bariatric patient.  Creator of the Protein Flip™ method.')
+        'Classically trained chef.  Former bariatric patient.  Creator of the Protein Flip™ Method.')
     c.setFillColor(DK_GREEN)
     c.rect(0, 0, W, 65, fill=1, stroke=0)
 
@@ -1020,7 +1020,7 @@ def build():
     story.append(PageBreak())
     chapter_start(story, 'WHEN HUNGER RETURNS', 'Keep the balance. Let the plate grow.', s)
     story.append(Paragraph(
-        'As hunger changes, the Protein Flip™ method stays the same. '
+        'As hunger changes, the Protein Flip™ Method stays the same. '
         'You are not moving from a "special" plate back to an ordinary one. '
         'You are using the same connected structure and adjusting how much of each '
         'meaningful ingredient belongs on the plate.',
@@ -1126,7 +1126,7 @@ def build():
     story.append(Paragraph('What this guide is.', s['h2']))
     story.append(Paragraph(
         'This is a culinary guide built by a classically trained chef and former bariatric '
-        'patient. Every meal follows the Protein Flip™ method: dispersed protein, meaningful '
+        'patient. Every meal follows the Protein Flip™ Method: dispersed protein, meaningful '
         'fiber, and a finish that makes the ingredients taste connected. The goal is food '
         'that is nourishing, real, and worth eating.',
         s['body']))
