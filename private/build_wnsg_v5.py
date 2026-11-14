@@ -120,7 +120,7 @@ def draw_cover(c, doc):
     c.drawCentredString(W/2, photo_y - G - 180, 'by Chef Healthy Henry')
     c.setFont('DJS', 8); c.setFillColor(MUTED_COL)
     c.drawCentredString(W/2, photo_y - G - 195,
-        'Classically trained chef.  Former bariatric patient.  Creator of the Protein Flip™ Method.')
+        '20+ years in cooking, catering, and culinary education.  Creator of the Protein Flip™ Method.')
     c.setFillColor(DK_GREEN)
     c.rect(0, 0, W, 65, fill=1, stroke=0)
 
@@ -268,19 +268,19 @@ def meal_card(number, title, recipe, pf_note, chef_tip, s):
 def meal_card_two_ways(s):
     """Recipe 3: two flavor variations on one card, same cream card as meal_card."""
     title = '3 | Almond Cream Smoothie Bowl: Two Ways'
-    left_label = 'PEACH, TOFU &amp; CARDAMOM'
+    left_label = 'PEACH, TOFU AND CARDAMOM'
     left_text = (
         'Blend 1/2 cup silken tofu, 1/4 cup plain Greek yogurt, 1 tbsp almond butter, '
         '1/2 ripe peach, and a pinch of cardamom until smooth. Chill before serving; '
         'top with peach slices and chopped almonds.'
     )
-    right_label = 'MIXED BERRY &amp; VANILLA'
+    right_label = 'MIXED BERRY AND VANILLA'
     right_text = (
         'Use 1/2 cup mixed berries and a drop of vanilla extract in place of the peach '
         'and cardamom. Top with fresh berries.'
     )
     pf_note = (
-        'Protein Flip™: Primary: tofu. Supporting: yogurt and almond butter. Fiber: fruit.'
+        'Protein Flip™: Primary: tofu. Secondary: yogurt and almond butter. Fiber: fruit.'
     )
     chef_tip = (
         'Chill the blend for at least 10 minutes; the cardamom version develops more depth as it rests.'
@@ -477,7 +477,7 @@ def build():
         'Fresh and savory  •  assemble only',
         'Try 8 Mediterranean Lentils, 9 Tuna White Bean, 16 Chicken Chickpea Pita, '
         '17 Egg Hummus Box, 19 Lentil Edamame Salad, or 20 Salmon Chickpea Cup. '
-        'These use ready-cooked ingredients.', s))
+        'These use ready-cooked ingredients. The carrots for Meal 17 can be roasted ahead.', s))
     story.append(Spacer(1, 4))
     story.append(lane_block(
         'Warm and soft  •  spoon or fork',
@@ -582,12 +582,12 @@ def build():
                    'The anchor gives the meal its identity. It is present without crowding out the rest.', s['body'])],
         [Paragraph('SECONDARY PROTEIN', s['tbl_label']),
          Paragraph('<b>The teammate.</b> This could be yogurt with lentils, edamame alongside tofu, '
-                   'an egg with beans, or white beans beside fish. '
+                   'an egg with beans, or lentils beside salmon. '
                    'It adds protein while also bringing a different flavor or texture.', s['body'])],
         [Paragraph('FIBER-RICH INGREDIENTS', s['tbl_label']),
          Paragraph('<b>Part of the structure.</b> Beans, lentils, vegetables, fruit, oats, and whole grains '
-                   'bring fiber. Many also add protein. White beans are not just "the vegetable side" '
-                   'when served with salmon; they do two jobs at once.', s['body'])],
+                   'bring fiber. Many also add protein. Lentils beside salmon, or chickpeas beside salmon, '
+                   'carry both protein and fiber.', s['body'])],
         [Paragraph('FLAVOR + TEXTURE', s['tbl_label']),
          Paragraph('<b>The reason to return.</b> One useful finish is often enough: lemon and dill, '
                    'yogurt and parsley, toasted pepitas, olive oil and oregano, or a little fresh tomato.', s['body'])],
@@ -633,12 +633,12 @@ def build():
         [Paragraph('Lentils + Greek yogurt + roasted peppers', s['tbl_label']),
          Paragraph('Lentils provide plant protein and fiber; yogurt adds a second protein '
                    'and a creamy finish; peppers bring sweetness and color.', s['body'])],
-        [Paragraph('Salmon + white beans + zucchini', s['tbl_label']),
-         Paragraph('Salmon is the anchor; beans carry supporting protein and fiber; '
+        [Paragraph('Salmon + lentils + zucchini', s['tbl_label']),
+         Paragraph('Salmon is the anchor; lentils carry secondary protein and fiber; '
                    'zucchini brings a tender vegetable layer; dill joins everything.', s['body'])],
-        [Paragraph('Egg + pinto beans + avocado + tomato', s['tbl_label']),
+        [Paragraph('Egg + pinto beans + avocado', s['tbl_label']),
          Paragraph('Egg acts as a bridge protein; beans bring protein and fiber; '
-                   'avocado contributes richness; tomato and lime brighten the bites.', s['body'])],
+                   'avocado contributes richness; lime brightens the bites.', s['body'])],
     ]
     extbl = Table(ex_rows, colWidths=[1.8*inch, UW - 1.8*inch])
     extbl.setStyle(TableStyle([
@@ -684,27 +684,28 @@ def build():
         s['lead']))
     story.append(Spacer(1, 4))
 
-    story.append(meal_card('1', 'Raspberry, Orange &amp; Pistachio Yogurt Oats',
+    story.append(meal_card('1', 'Raspberry, Orange and Pistachio Yogurt Oats',
         'Stir 1/4 cup rolled oats into 3/4 cup plain Greek yogurt with 1 tsp orange zest and a little honey. '
+        'Let stand 10 minutes, or prepare the night before. '
         'Top with 1/4 cup fresh raspberries and 1 tbsp chopped toasted pistachios.',
-        'Protein Flip™: Primary: Greek yogurt. Supporting: oats and pistachios. Fiber: oats, raspberries, and pistachios.',
+        'Protein Flip™: Primary: Greek yogurt. Secondary: oats and pistachios. Fiber: oats, raspberries, and pistachios.',
         'Toast the pistachios briefly before serving; it draws out their flavor and makes the bowl taste more considered.', s))
     story.append(meal_card('2', 'Savory White Bean and Cottage Cheese Cup',
         'Mash half of 1/2 cup cannellini beans with 1/2 cup cottage cheese until partly smooth. '
         'Fold in remaining beans, 2 tbsp diced cucumber, 2 tbsp diced roasted red pepper (patted dry), '
         '1 tbsp scallion, 1 tsp dill, 1/4 tsp lemon zest, and 1 tsp lemon juice. Season and drizzle with olive oil.',
-        'Protein Flip™: Shared anchor: white beans and cottage cheese. Fiber: beans and cucumber.',
+        'Protein Flip™: Primary: white beans. Secondary: cottage cheese. Fiber: beans and cucumber.',
         'Pat the roasted peppers dry before folding in; excess moisture softens the beans quickly.', s))
     story.append(meal_card_two_ways(s))
-    story.append(meal_card('4', 'Blueberry, Vanilla &amp; Pecan Overnight Oats',
+    story.append(meal_card('4', 'Blueberry, Vanilla and Pecan Overnight Oats',
         'Combine 1/3 cup rolled oats, 1/2 cup milk, 1/3 cup plain Greek yogurt, 1/2 tsp vanilla, and 1 tsp chia seeds. '
         'Refrigerate overnight. Top with 1/4 cup blueberries and 1 tbsp chopped pecans before eating.',
-        'Protein Flip™: Primary: Greek yogurt. Supporting: oats and chia. Fiber: oats, chia, blueberries, and pecans.',
+        'Protein Flip™: Primary: Greek yogurt. Secondary: oats and chia. Fiber: oats, chia, blueberries, and pecans.',
         'Stir once after 10 minutes so the chia stays evenly distributed throughout the jar.', s))
-    story.append(meal_card('5', 'Egg, Pinto Bean &amp; Avocado Lettuce Bites with Lime Yogurt',
+    story.append(meal_card('5', 'Egg, Pinto Bean and Avocado Lettuce Bites with Lime Yogurt',
         'Mash 1/3 cup pinto beans with lime juice, cumin, and salt. Fold in 1 chopped hard-boiled egg and 2 tbsp diced avocado. '
         'Spoon into small romaine or butter lettuce cups. Add a little plain Greek yogurt mixed with lime juice alongside.',
-        'Protein Flip™: Shared protein: egg and pinto beans. Fiber: beans, avocado, and tomato.',
+        'Protein Flip™: Primary: egg. Secondary: pinto beans. Fiber: beans and avocado.',
         'Season the mashed beans first; they carry the flavor for the entire bite.', s))
 
     # ══════════════════════════════════════════════════════
@@ -718,36 +719,36 @@ def build():
         s['lead']))
     story.append(Spacer(1, 4))
 
-    story.append(meal_card('6', 'Lemony White Bean &amp; Egg Toast with Salted Tomatoes',
+    story.append(meal_card('6', 'Lemony White Bean and Egg Toast with Salted Tomatoes',
         'Mash 1/3 cup cannellini beans with 1 tbsp Greek yogurt, lemon zest, and salt. '
         'Spread on 1 slice toasted whole-grain bread. Top with 1 chopped cooked egg. '
         'Spoon over 1/4 cup halved cherry tomatoes tossed with salt and olive oil. Finish with fresh parsley.',
-        'Protein Flip™: Primary: beans. Supporting: egg and yogurt. Fiber: beans, toast, and tomatoes.',
+        'Protein Flip™: Primary: beans. Secondary: egg and yogurt. Fiber: beans, toast, and tomatoes.',
         'Toast the bread well; the soft bean spread needs a crisp base beneath it.', s))
-    story.append(meal_card('7', 'Ginger, Edamame &amp; Silken Tofu Egg Drop Cup',
+    story.append(meal_card('7', 'Ginger, Edamame and Silken Tofu Egg Drop Cup',
         'Bring 3/4 cup low-sodium broth to a gentle simmer with 1/2 tsp grated ginger and a few drops of tamari. '
         'Add 1/2 cup cooked edamame and 1/3 cup silken tofu in pieces. '
         'Slowly pour in 1 beaten egg while stirring to create soft ribbons. Garnish with scallions.',
-        'Protein Flip™: Shared protein: tofu, edamame, and egg. Fiber: edamame.',
+        'Protein Flip™: Primary: tofu. Secondary: edamame. Supporting: egg. Fiber: edamame.',
         'Keep the broth just below a boil when adding the egg; a full boil breaks the ribbons apart.', s))
-    story.append(meal_card('8', 'Mediterranean Lentils with Lemon Yogurt, Roasted Peppers &amp; Feta',
+    story.append(meal_card('8', 'Mediterranean Lentils with Lemon Yogurt, Roasted Peppers and Feta',
         'Toss 3/4 cup cooked lentils with 1 tsp olive oil, 1 tsp lemon juice, and 1/4 tsp oregano. '
         'Spread lemon yogurt (1/3 cup Greek yogurt + lemon juice + pinch garlic powder) in a shallow bowl. '
         'Spoon lentils over; top with 1/4 cup diced roasted red peppers, 2 tbsp crumbled feta, and chopped parsley.',
-        'Protein Flip™: Primary: lentils. Supporting: yogurt and feta. Fiber: lentils and peppers.',
+        'Protein Flip™: Primary: lentils. Secondary: yogurt and feta. Fiber: lentils and peppers.',
         'Dress the lentils with lemon and olive oil before plating; they carry more flavor that way.', s))
-    story.append(meal_card('9', 'Mediterranean Tuna &amp; White Bean Cup with Lemon-Dijon Yogurt',
+    story.append(meal_card('9', 'Mediterranean Tuna and White Bean Cup with Lemon-Dijon Yogurt',
         'Whisk 2 tbsp Greek yogurt with 1 tsp lemon juice, 1/2 tsp Dijon mustard, and lemon zest. '
         'Toss 1/2 cup cannellini beans with half the dressing. '
         'Fold in 1/4 cup diced cucumber, 2 tbsp diced radish, 1 tsp chopped capers, and parsley. '
         'Fold in 2 oz flaked canned tuna last.',
-        'Protein Flip™: Primary: tuna. Supporting: beans and yogurt. Fiber: beans, cucumber, and radishes.',
+        'Protein Flip™: Primary: tuna. Secondary: beans and yogurt. Fiber: beans, cucumber, and radishes.',
         'Add tuna last and fold gently; keeping the flakes intact improves both texture and presentation.', s))
-    story.append(meal_card('10', 'Tomato, Hummus &amp; Cottage Cheese Plate with Basil-Marinated Tomatoes',
+    story.append(meal_card('10', 'Tomato, Hummus and Cottage Cheese Plate with Basil-Marinated Tomatoes',
         'Toss 1/2 cup halved cherry tomatoes with 1 tsp sherry vinegar, 1 tsp olive oil, fresh basil, and a pinch of salt. '
         'Let stand 3 to 5 minutes. Spread 1/2 cup hummus and 1/2 cup cottage cheese in a shallow bowl. '
         'Spoon tomatoes over. Top with 1 tbsp toasted pine nuts and fresh basil.',
-        'Protein Flip™: Primary: chickpeas in hummus and cottage cheese. Fiber: chickpeas, tomatoes, and pine nuts.',
+        'Protein Flip™: Primary: chickpeas in hummus. Secondary: cottage cheese. Fiber: chickpeas, tomatoes, and pine nuts.',
         'Salt the tomatoes and let them rest first; even a few minutes creates a flavorful, natural dressing.', s))
 
     # ══════════════════════════════════════════════════════
@@ -763,35 +764,35 @@ def build():
         s['lead']))
     story.append(Spacer(1, 4))
 
-    story.append(meal_card('11', 'Ginger Lemon Red Lentil &amp; Chicken Soup with Bok Choy',
+    story.append(meal_card('11', 'Ginger Lemon Red Lentil and Chicken Soup with Bok Choy',
         'Heat 1 tsp olive oil; cook 1/2 tsp grated ginger and 1/4 tsp cumin 30 seconds. '
         'Add 3/4 cup cooked red lentils, 1/2 cup chicken broth, and 1/2 cup chopped bok choy stems. '
         'Simmer 2 to 3 minutes; add leaves and 1 oz shredded cooked chicken. Finish with lemon juice and fresh cilantro.',
-        'Protein Flip™: Primary: red lentils. Supporting: chicken. Fiber: lentils and bok choy.',
+        'Protein Flip™: Primary: red lentils. Secondary: chicken. Fiber: lentils and bok choy.',
         'Stir gently so some lentils break down into the broth; this creates natural creaminess without blending.', s))
-    story.append(meal_card('12', 'Creamy Edamame, Pea &amp; Spinach Soup with Lemon Dill Yogurt',
+    story.append(meal_card('12', 'Creamy Edamame, Pea and Spinach Soup with Lemon Dill Yogurt',
         'Cook 1 grated garlic clove in olive oil 30 seconds. '
         'Add 1 cup frozen edamame, 1/4 cup frozen peas, and 3/4 cup vegetable broth; simmer 4 to 5 minutes. '
         'Add 1 cup fresh spinach; cook 1 minute. Blend with 2 tbsp Greek yogurt until smooth. '
         'Swirl with lemon dill yogurt (3 tbsp Greek yogurt + lemon juice + fresh dill) to serve.',
-        'Protein Flip™: Primary: edamame. Supporting: Greek yogurt and peas. Fiber: edamame, peas, and spinach.',
-        'Blend until fully smooth; edamame takes longer than white beans, so give the blender enough time.', s))
-    story.append(meal_card('13', 'Silken Tofu, Edamame &amp; Shiitake Miso Bowl',
+        'Protein Flip™: Primary: edamame. Secondary: Greek yogurt and peas. Fiber: edamame, peas, and spinach.',
+        'Blend until fully smooth; give edamame extra time.', s))
+    story.append(meal_card('13', 'Silken Tofu, Edamame and Shiitake Miso Bowl',
         'Cook 1/4 cup sliced shiitake mushrooms in sesame oil 2 to 3 minutes. '
         'Add 3/4 cup vegetable broth, 1/4 cup carrot ribbons, and 3/4 cup cooked edamame; simmer 2 to 3 minutes. '
         'Slide in 3/4 cup silken tofu cubes and warm gently on low. '
         'Off heat, stir in 1 tsp white miso dissolved in warm broth and a splash of rice vinegar. '
         'Garnish with scallions and sesame seeds.',
-        'Protein Flip™: Shared protein: tofu and edamame. Fiber: edamame, mushrooms, and carrots.',
+        'Protein Flip™: Primary: tofu. Secondary: edamame. Fiber: edamame, mushrooms, and carrots.',
         'Dissolve miso in a spoonful of warm broth before adding it to the bowl; it distributes evenly without clumping.', s))
-    story.append(meal_card('14', 'Lemony Salmon &amp; Lentil Bowl with Zucchini and Dill Yogurt',
+    story.append(meal_card('14', 'Lemony Salmon and Lentil Bowl with Zucchini and Dill Yogurt',
         'Season 3 oz salmon and sear in olive oil 3 to 5 minutes per side to 145°F. '
         'In the same pan, saute 1/2 cup sliced zucchini; add 2/3 cup cooked lentils, lemon juice, lemon zest, and fresh dill. '
         'Spoon into a bowl; place salmon over. Add lemon dill yogurt (2 tbsp Greek yogurt + lemon juice + Dijon + dill) '
         'and scatter 1 tsp drained capers.',
         'Protein Flip™: Primary: salmon. Secondary: lentils. Supporting: yogurt. Fiber: lentils and zucchini.',
         'Use the same pan for the zucchini and lentils after the salmon; the residual flavor makes the whole bowl more cohesive.', s))
-    story.append(meal_card('15', 'Smoky Black Bean, Tomato &amp; Egg Skillet with Lime Paprika Yogurt',
+    story.append(meal_card('15', 'Smoky Black Bean, Tomato and Egg Skillet with Lime Paprika Yogurt',
         'Bloom minced garlic, cumin, and smoked paprika in olive oil 30 seconds. '
         'Add 1/2 cup diced tomatoes; cook 2 minutes. Add 2/3 cup black beans; lightly mash a quarter. '
         'Fold in 1 cup baby spinach. Make a well, crack in 1 egg, cover, and cook on low 4 to 6 minutes until white is set. '
@@ -811,21 +812,21 @@ def build():
         s['lead']))
     story.append(Spacer(1, 2))
 
-    story.append(meal_card('16', 'Lemon Herb Chicken &amp; Chickpea Pita with Cucumber Yogurt and Sumac',
+    story.append(meal_card('16', 'Lemon Herb Chicken and Chickpea Pita with Cucumber Yogurt and Sumac',
         'Lightly mash half of 2/3 cup chickpeas with olive oil, lemon juice, cumin, garlic powder, and 2 tbsp diced roasted red pepper. '
         'Season 1 oz cooked shredded chicken with lemon juice. '
         'Make cucumber yogurt (1/4 cup Greek yogurt + 1/4 cup finely diced cucumber + lemon zest + parsley). '
         'Fill a halved whole-grain pita with chickpeas, chicken, and cucumber yogurt. Dust with sumac.',
         'Protein Flip™: Primary: chickpeas. Secondary: chicken. Supporting: yogurt. Fiber: chickpeas, pita, and cucumber.',
         'Mash only half the chickpeas; the mix of creamy and whole keeps the filling from turning into a paste.', s))
-    story.append(meal_card('17', 'Egg, Hummus &amp; Cumin-Roasted Carrot Lunch Box with Lemon Za\'atar Yogurt',
-        'Toss 3/4 cup carrot sticks with olive oil, cumin, coriander, salt, and pepper. '
+    story.append(meal_card('17', 'Egg and Hummus Lunch Box with Za\'atar Yogurt',
+        'Optional ahead step: toss 3/4 cup carrot sticks with olive oil, cumin, coriander, salt, and pepper. '
         'Roast at 425°F for 20 to 25 minutes until tender and golden. '
-        'Pack with 1 halved hard-boiled egg, 1/2 cup hummus, lemon za\'atar yogurt '
+        'Assemble the roasted carrots with 1 halved hard-boiled egg, 1/2 cup hummus, za\'atar yogurt '
         '(1/4 cup Greek yogurt + lemon juice + lemon zest + za\'atar), and 4 whole-grain crackers in a separate compartment.',
         'Protein Flip™: Primary: chickpeas in hummus. Secondary: egg. Supporting: yogurt. Fiber: chickpeas, carrots, and crackers.',
         'Roast the carrots until they develop lightly caramelized edges; that sweetness is what makes this box worth returning to.', s))
-    story.append(meal_card('18', 'Smoky Turkey &amp; Black Bean Quesadilla with Lime Cabbage Slaw',
+    story.append(meal_card('18', 'Smoky Turkey and Black Bean Quesadilla with Lime Cabbage Slaw',
         'Lightly mash half of 1/2 cup black beans with cumin, smoked paprika, lime juice, and salt. '
         'Briefly wilt 1/2 cup baby spinach. '
         'Spread beans over half a whole-grain tortilla; add 1 oz shredded turkey, spinach, and 2 tbsp shredded pepper jack. '
@@ -833,14 +834,14 @@ def build():
         'Serve with quick lime cabbage slaw (1/4 cup shredded red cabbage + lime juice + cilantro).',
         'Protein Flip™: Primary: black beans. Secondary: turkey. Supporting: pepper jack. Fiber: black beans, tortilla, spinach, and cabbage.',
         'Toast in a dry skillet on medium-low; the tortilla crisps without additional oil and the cheese has time to melt.', s))
-    story.append(meal_card('19', 'Lemon Dill Lentil &amp; Edamame Salad with Feta and Radish',
+    story.append(meal_card('19', 'Lemon Dill Lentil and Edamame Salad with Feta and Radish',
         'Whisk 1 tsp olive oil, 2 tsp lemon juice, 1/4 tsp Dijon mustard, dried oregano, and lemon zest. '
         'Toss 1/2 cup cooked lentils and 1/2 cup cooked edamame with dressing; rest 2 to 3 minutes. '
         'Fold in 1/3 cup diced cucumber, 2 thinly sliced radishes, fresh dill, and half the feta. '
         'Top with remaining 2 tbsp crumbled feta and fresh dill.',
-        'Protein Flip™: Shared protein: lentils and edamame. Supporting: feta. Fiber: lentils, edamame, cucumber, and radishes.',
+        'Protein Flip™: Primary: lentils. Secondary: edamame. Supporting: feta. Fiber: lentils, edamame, cucumber, and radishes.',
         'Dress the lentils and edamame first and let them rest; they absorb the lemon and seasonings before the vegetables go in.', s))
-    story.append(meal_card('20', 'Mediterranean Salmon &amp; Chickpea Cup with Lemon Caper Yogurt',
+    story.append(meal_card('20', 'Mediterranean Salmon and Chickpea Cup with Lemon Caper Yogurt',
         'Lightly mash about a quarter of 3/4 cup chickpeas with olive oil. '
         'Make lemon caper yogurt (1/4 cup Greek yogurt + 2 tsp lemon juice + lemon zest + 1 tsp finely chopped capers + 1/4 tsp Dijon). '
         'Toss chickpeas with two-thirds of the dressing; fold in 1/4 cup diced roasted red pepper, 1/4 cup diced cucumber, and parsley. '
@@ -948,7 +949,7 @@ def build():
          Paragraph('<font color="white"><b>CARRY-OVER TIP</b></font>', s['meal_body'])],
         [Paragraph('Greek yogurt · rolled oats · silken tofu · almond butter · raspberries · blueberries · mixed berries · pistachios · pecans · chia seeds · cottage cheese · orange · vanilla', s['shop_body']),
          Paragraph('1, 2, 3, 4', s['small']),
-         Paragraph('Keep yogurt and oats stocked together. The tofu and almond butter extend the same shop into Meals 3 and 4.', s['shop_tip'])],
+         Paragraph('Keep yogurt and oats stocked together. Tofu and almond butter belong to Meal 3 only.', s['shop_tip'])],
         [Paragraph('White beans · eggs · cherry tomatoes · avocado · pinto beans · whole-grain bread · parsley · lemon · olive oil · hummus · pine nuts', s['shop_body']),
          Paragraph('5, 6, 10', s['small']),
          Paragraph('A single shop covers three formats: lettuce bites, toast, and a no-cook plate.', s['shop_tip'])],
@@ -957,7 +958,7 @@ def build():
          Paragraph('Keep frozen edamame on hand; it appears in three recipes and covers two cooking styles.', s['shop_tip'])],
         [Paragraph('Green or brown lentils · red lentils · canned tuna · canned salmon · chickpeas · feta · roasted red peppers · cucumber · radishes · whole-grain pita · crackers · capers · dill · Dijon mustard · sumac · za\'atar', s['shop_body']),
          Paragraph('8, 9, 11, 14, 16, 17, 19, 20', s['small']),
-         Paragraph('Lentils go with seven of these eight meals. Cook a large batch once and use across the week.', s['shop_tip'])],
+         Paragraph('Cook one batch of lentils for Meals 8, 11, 14 and 19.', s['shop_tip'])],
         [Paragraph('Black beans · cooked turkey or chicken · whole-grain tortilla · pepper jack cheese · red cabbage · baby spinach · cotija · cumin · smoked paprika · lime · cilantro · Greek yogurt', s['shop_body']),
          Paragraph('15, 18', s['small']),
          Paragraph('These two meals share most of their ingredients. Making both in one week is efficient.', s['shop_tip'])],
@@ -1033,11 +1034,11 @@ def build():
          'More lentils and vegetables, a fuller yogurt finish, and whole-grain bread if it suits the meal. '
          'The protein and fiber are still shared.'),
         ('AN ANIMAL-PROTEIN ANCHOR',
-         'Salmon with cannellini beans, zucchini, and dill yogurt.',
-         'A larger serving of the same salmon-bean-vegetable combination, with farro or roasted potatoes alongside. '
-         'The added grain is part of a complete dinner, not a replacement for the beans.'),
+         'Salmon with lentils, zucchini, and dill yogurt.',
+         'A larger serving of the same salmon, lentil, and zucchini combination, with farro or roasted potatoes alongside. '
+         'The added grain is part of a complete dinner, not a replacement for the lentils.'),
         ('AN EGG-CENTERED PLATE',
-         'Egg, pinto beans, tomato, avocado, and pepitas.',
+         'Egg, pinto beans, avocado, and lime yogurt.',
          'More of the same connected filling with an additional tortilla or extra beans and vegetables. '
          'Eggs remain a bridge protein, not the only part doing the work.'),
     ]:
