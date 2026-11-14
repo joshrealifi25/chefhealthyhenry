@@ -744,7 +744,7 @@ def build():
         'Fold in 2 oz flaked canned tuna last.',
         'Protein Flip™: Primary: tuna. Secondary: beans and yogurt. Fiber: beans, cucumber, and radishes.',
         'Add tuna last and fold gently; keeping the flakes intact improves both texture and presentation.', s))
-    story.append(meal_card('10', 'Tomato, Hummus and Cottage Cheese Plate with Basil-Marinated Tomatoes',
+    story.append(meal_card('10', 'Tomato, Hummus and Cottage Cheese Plate with Basil Tomatoes',
         'Toss 1/2 cup halved cherry tomatoes with 1 tsp sherry vinegar, 1 tsp olive oil, fresh basil, and a pinch of salt. '
         'Let stand 3 to 5 minutes. Spread 1/2 cup hummus and 1/2 cup cottage cheese in a shallow bowl. '
         'Spoon tomatoes over. Top with 1 tbsp toasted pine nuts and fresh basil.',
