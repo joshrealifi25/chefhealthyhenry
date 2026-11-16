@@ -82,7 +82,8 @@ export default function CookbookPage() {
           {cookbooks.map((book) => (
             <div
               key={book.slug}
-              className="flex flex-col overflow-hidden rounded-2xl bg-card shadow-sm ring-1 ring-border/60"
+              id={book.slug}
+              className="flex scroll-mt-24 flex-col overflow-hidden rounded-2xl bg-card shadow-sm ring-1 ring-border/60"
             >
               <div className="relative aspect-[4/3] bg-muted">
                 <Image
