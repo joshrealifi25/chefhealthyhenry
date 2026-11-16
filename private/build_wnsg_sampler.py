@@ -142,6 +142,8 @@ def styles():
                                  textColor=DK_GREEN, spaceAfter=8)
     s['title_sm'] = ParagraphStyle('title_sm', fontName='DJRb', fontSize=20, leading=24,
                                     textColor=DK_GREEN, spaceAfter=6)
+    s['title_fit'] = ParagraphStyle('title_fit', fontName='DJRb', fontSize=17, leading=21,
+                                     textColor=DK_GREEN, spaceAfter=6)
     s['lead'] = ParagraphStyle('lead', fontName='DJS', fontSize=11.5, leading=16,
                                 textColor=BODY_COL, spaceAfter=6)
     s['body'] = ParagraphStyle('body', fontName='DJS', fontSize=10.5, leading=15,
@@ -173,9 +175,10 @@ def styles():
     return s
 
 
-def chapter(story, label, title, s, small=False):
+def chapter(story, label, title, s, small=False, fit=False):
     story.append(Paragraph(label, s['label']))
-    story.append(Paragraph(title, s['title_sm'] if small else s['title']))
+    key = 'title_fit' if fit else ('title_sm' if small else 'title')
+    story.append(Paragraph(title, s[key]))
 
 
 def cream_card(rows, s):
@@ -193,12 +196,8 @@ def cream_card(rows, s):
     return t
 
 
-def ingredient_table(rows, s):
-    header = [
-        Paragraph('INGREDIENT', s['th']),
-        Paragraph('AMOUNT', s['th']),
-        Paragraph('NOTE', s['th']),
-    ]
+def ingredient_table(rows, s, headers=('INGREDIENT', 'AMOUNT', 'NOTE'), widths=(0.34, 0.16, 0.50)):
+    header = [Paragraph(label, s['th']) for label in headers]
     data = [header]
     for name, amount, note in rows:
         data.append([
@@ -206,7 +205,7 @@ def ingredient_table(rows, s):
             Paragraph(amount, s['td']),
             Paragraph(note, s['td_note']),
         ])
-    t = Table(data, colWidths=[UW * 0.34, UW * 0.16, UW * 0.50])
+    t = Table(data, colWidths=[UW * widths[0], UW * widths[1], UW * widths[2]])
     style = [
         ('BACKGROUND', (0, 0), (-1, 0), MD_GREEN),
         ('TOPPADDING', (0, 0), (-1, -1), 5),
@@ -273,43 +272,45 @@ def build():
         s['callout']))
 
     story.append(PageBreak())
-    chapter(story, 'MEAL ONE  •  COLD BREAKFAST', 'Berry, Oat and Greek Yogurt Spoon Bowl.', s, small=True)
+    chapter(story, 'BREAKFAST  •  MEAL 1', 'Raspberry, Orange and Pistachio Yogurt Oats.', s, fit=True)
     story.append(Paragraph(
-        'No stove. No cooking. Assembles in under three minutes. Built for mornings when '
+        'No stove. Ten minutes of resting does the work. Built for mornings when '
         'warmth and time are both off the table.',
         s['lead']))
     story.append(cream_card([
-        [Paragraph('1 | Berry, Oat and Greek Yogurt Spoon Bowl', s['card_title'])],
+        [Paragraph('1 | Raspberry, Orange and Pistachio Yogurt Oats', s['card_title'])],
         [Paragraph(
-            'Mix 1/2 cup plain Greek yogurt, 1/4 cup cooked cooled oats, 1/4 cup berries, and 1 tsp '
-            'ground flax. Finish with cinnamon.',
+            'Stir 1/4 cup rolled oats into 3/4 cup plain Greek yogurt with 1 tsp orange zest and a little honey. '
+            'Let stand 10 minutes, or prepare the night before. '
+            'Top with 1/4 cup fresh raspberries and 1 tbsp chopped toasted pistachios.',
             s['card_body'])],
         [Paragraph(
-            'Protein Flip™: Primary: yogurt. Secondary: oats and flax. Fiber: oats, berries, flax.',
+            'Protein Flip™: Primary: Greek yogurt. Secondary: oats and pistachios. Fiber: oats, raspberries, and pistachios.',
             s['card_pf'])],
         [Paragraph(
-            'Chef tip: Layer the berries on top; their fresh taste cuts through the creamy base.',
+            'Chef tip: Toast the pistachios briefly before serving; it draws out their flavor and makes the bowl taste more considered.',
             s['card_tip'])],
     ], s))
     story.append(Spacer(1, 8))
     story.append(Paragraph('What you need.', s['h2']))
     story.append(ingredient_table([
-        ('Plain Greek yogurt', '1/2 cup', 'Low-fat. Thick and high in protein without the extra fat.'),
-        ('Rolled oats, cooked and cooled', '1/4 cup', 'Cook a batch the night before and refrigerate. They are ready to use cold all week.'),
-        ('Fresh or frozen berries', '1/4 cup', 'Any berry works. Frozen berries thawed overnight add a little extra juice to the bowl.'),
-        ('Ground flaxseed', '1 tsp', 'Adds fiber and a mild nutty finish. Already ground is easiest.'),
-        ('Cinnamon', 'Pinch', 'Just enough to connect the flavors. Add after layering.'),
+        ('Plain Greek yogurt', '3/4 cup', 'Thick and high in protein. The base of the bowl.'),
+        ('Rolled oats', '1/4 cup', 'Stir in uncooked. They soften in 10 minutes, or overnight.'),
+        ('Orange zest', '1 tsp', 'Zest the orange first. It brightens the whole bowl.'),
+        ('Honey', 'A little', 'Just enough to round out the orange.'),
+        ('Fresh raspberries', '1/4 cup', 'Add right before eating so they stay bright.'),
+        ('Pistachios, toasted and chopped', '1 tbsp', 'One minute in a dry pan brings out their flavor.'),
     ], s))
     story.append(Spacer(1, 8))
     story.append(Paragraph('Why this works.', s['h2']))
     story.append(Paragraph(
-        'Yogurt and oats each bring protein. Oats, berries, and flax each bring fiber. The cinnamon '
-        'finish makes the bowl taste intentional rather than assembled. It is a complete meal in a cup '
-        'that takes less effort than opening an app.',
+        'Greek yogurt anchors the bowl. Oats and pistachios add a second layer of protein. '
+        'Oats, raspberries, and pistachios bring the fiber. Orange zest and toasted pistachios make it taste finished. '
+        'It is a complete meal in a cup that takes less effort than opening an app.',
         s['body']))
 
     story.append(PageBreak())
-    chapter(story, 'MEAL TWO  •  FIVE-MINUTE SAVORY PLATE',
+    chapter(story, 'SAVORY PLATE  •  MEAL 8',
             'Mediterranean Lentils with Lemon Yogurt, Roasted Peppers and Feta.', s, small=True)
     story.append(Paragraph(
         'No stove. No heat required if the lentils are already cooked. This is the plate for '
@@ -348,7 +349,7 @@ def build():
         s['body']))
 
     story.append(PageBreak())
-    chapter(story, 'MEAL THREE  •  FAMILY DINNER', 'Lemon Chicken, White Beans and Carrots.', s, small=True)
+    chapter(story, 'FAMILY DINNER  •  DINNER A', 'Lemon Chicken, White Beans and Carrots.', s, small=True)
     story.append(Paragraph(
         'One connected dinner plated two ways. The Portion Smart plate and the family '
         'portion use the same ingredients. Only the amounts differ.',
@@ -370,10 +371,10 @@ def build():
         ('SECONDARY PROTEIN', 'Beans and yogurt', 'Cannellini beans and parsley yogurt. Each brings a different texture.'),
         ('FIBER', 'Beans and carrots', 'The beans do double duty on protein and fiber.'),
         ('FINISH', 'Lemon and herbs', 'Lemon, parsley yogurt, and oregano brighten the plate.'),
-    ], s))
+    ], s, headers=('ROLE', 'INGREDIENT', 'WHAT IT DOES'), widths=(0.32, 0.26, 0.42)))
 
     story.append(PageBreak())
-    chapter(story, 'MEAL THREE  •  PLATED TWO WAYS', 'Cook once. Plate for every appetite.', s)
+    chapter(story, 'DINNER A  •  PLATED TWO WAYS', 'Cook once. Plate for every appetite.', s)
     story.append(Paragraph(
         'The Portion Smart plate and the family portion come from the same pan. Each '
         'receives the chicken, beans, carrots, and yogurt. The amounts differ. The method '
@@ -426,10 +427,11 @@ def build():
     left = [
         Paragraph('<b>MEAL 1</b>', s['label']),
         Paragraph('☐  Plain low-fat Greek yogurt (small container)', s['check']),
-        Paragraph('☐  Rolled oats (1/4 cup cooked and cooled)', s['check']),
-        Paragraph('☐  Fresh or frozen berries (1/4 cup)', s['check']),
-        Paragraph('☐  Ground flaxseed * (1 tsp)', s['check']),
-        Paragraph('☐  Cinnamon (pinch)', s['check']),
+        Paragraph('☐  Rolled oats * (1/4 cup)', s['check']),
+        Paragraph('☐  Orange (1, for zest)', s['check']),
+        Paragraph('☐  Honey (a little)', s['check']),
+        Paragraph('☐  Fresh raspberries (1/4 cup)', s['check']),
+        Paragraph('☐  Pistachios (1 tbsp)', s['check']),
         Paragraph('<b>MEAL 8</b>', s['label']),
         Paragraph('☐  Cooked lentils * (3/4 cup)', s['check']),
         Paragraph('☐  Crumbled feta (2 tbsp)', s['check']),
@@ -479,7 +481,7 @@ def build():
         ('Cooked or canned lentils', 'Meal 8', 'Ready cold. Cook a batch once and use it through the week.'),
         ('Canned cannellini beans', 'Dinner A', 'One can covers Dinner A and extends into soups and toasts.'),
         ('Jarred roasted red peppers', 'Meal 8', 'Refrigerate after opening. Follow the package storage instructions.'),
-        ('Plain rolled oats', 'Meal 1', 'Cook once, refrigerate, and use cold for Meal 1 all week.'),
+        ('Plain rolled oats', 'Meal 1', 'Stir into yogurt the night before for a ready breakfast.'),
         ('Fresh parsley', 'Meal 8 and Dinner A', 'Finishes the lentil plate and the chicken.'),
         ('Olive oil and dried oregano', 'Meal 8 and Dinner A', 'Used in both. Meal 8 also uses lemon juice.'),
     ], s))
@@ -487,24 +489,19 @@ def build():
     story.append(PageBreak())
     chapter(story, 'READY FOR THE FULL GUIDE?', 'The complete system for when nothing sounds good.', s, small=True)
     story.append(Paragraph(
-        'You have just seen how the Protein Flip™ Method works in real life.',
+        'You have just seen how the Protein Flip™ Method works in real life: practical meals you can make when appetite is low and deciding what to eat feels harder than it should.',
         s['lead']))
-    story.append(Paragraph('Not with a complicated recipe.', s['body']))
-    story.append(Paragraph('Not with a perfect plate.', s['body']))
     story.append(Paragraph(
-        'With practical meals you can actually make when appetite is low and deciding what to eat feels harder than it should.',
-        s['body']))
-    story.append(Paragraph(
-        'The full When Nothing Sounds Good guide gives you the rest of the system, so you do not have to keep starting from scratch.',
+        'The full When Nothing Sounds Good guide gives you the rest of the system, ready whenever you need it.',
         s['body']))
     story.append(Paragraph('Inside the full guide.', s['h2']))
     story.append(ingredient_table([
         ('The complete Appetite Compass', 'Start where you are', 'Find a meal by temperature, texture, effort, and flavor.'),
         ('20 chef-built Protein Flip™ meals', 'A full week and more', 'Cold breakfasts, five-minute plates, warm meals, and portable meals.'),
-        ('Five family dinners, two ways', 'One pan', 'Cook once and plate for a Portion Smart appetite and a family portion.'),
+        ('Five family dinners, two ways', 'Cook once.', 'Cook once and plate for a Portion Smart appetite and a family portion.'),
         ('A grocery map', 'Shop connected foods', 'Buy ingredients that turn into several meals.'),
         ('When Hunger Returns', 'The same Method', 'The plate can grow without losing balance, flavor, or satisfaction.'),
-    ], s))
+    ], s, headers=("WHAT'S INSIDE", 'AT A GLANCE', 'WHAT IT DOES'), widths=(0.36, 0.24, 0.40)))
     story.append(Spacer(1, 6))
     story.append(Paragraph('Why people want the full guide.', s['h2']))
     story.append(Paragraph(
