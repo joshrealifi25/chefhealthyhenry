@@ -4,6 +4,11 @@ import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import { flagship, cookbooks } from "@/data/cookbooks";
 
+/** Site paths open here. Checkout and external buy links open in a new tab. */
+function opensInSameTab(buyUrl: string): boolean {
+  return buyUrl.startsWith("/") && !buyUrl.startsWith("/api/");
+}
+
 export const metadata: Metadata = {
   title: "Protein Flip™ Cookbook",
   description:
@@ -115,8 +120,9 @@ export default function CookbookPage() {
                   </span>
                   <a
                     href={book.buyUrl}
-                    target="_blank"
-                    rel="noreferrer"
+                    {...(opensInSameTab(book.buyUrl)
+                      ? {}
+                      : { target: "_blank", rel: "noreferrer" })}
                     className="inline-flex items-center gap-1.5 rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
                   >
                     Buy now <ArrowRight className="size-4" />

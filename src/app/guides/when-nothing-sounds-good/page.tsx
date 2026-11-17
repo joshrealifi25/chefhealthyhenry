@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import { whenNothingSoundsGood } from "@/data/cookbooks";
+import { GUIDE_CHECKOUT_PATH } from "@/lib/lead-source";
 
 const DESCRIPTION =
   "Chef-built meals for low appetite and changing hunger. 20 Protein Flip™ meals, the Appetite Compass, and five family dinners plated two ways. Instant PDF, $19.";
@@ -88,7 +89,7 @@ const FAQS: { q: string; a: ReactNode }[] = [
 function GuideBuyLink() {
   return (
     <a
-      href={whenNothingSoundsGood.buyUrl}
+      href={GUIDE_CHECKOUT_PATH}
       className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-medium text-primary-foreground transition-opacity hover:opacity-90"
     >
       Get the guide, $19 <ArrowRight className="size-4" aria-hidden="true" />
