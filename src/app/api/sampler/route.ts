@@ -33,7 +33,7 @@ export async function GET(req: NextRequest) {
       headers: {
         "Content-Type": "application/pdf",
         "Content-Disposition":
-          'attachment; filename="3-Meals-for-When-Nothing-Sounds-Good.pdf"',
+          'inline; filename="3-Meals-for-When-Nothing-Sounds-Good.pdf"',
         "Cache-Control": "private, no-store",
       },
     });

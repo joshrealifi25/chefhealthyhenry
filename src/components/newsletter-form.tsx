@@ -19,7 +19,8 @@ export function NewsletterForm({ submitLabel = "Get the free guide" }: { submitL
   if (status === "done") {
     return (
       <p role="status" className="text-sm text-primary">
-        Check your inbox. Your free Grocery Store Test is on its way.
+        Check your inbox. Your free Grocery Store Test is on its way. If it
+        doesn&apos;t arrive in a minute or two, check your spam folder.
       </p>
     );
   }
