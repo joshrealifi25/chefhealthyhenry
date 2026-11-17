@@ -16,7 +16,8 @@ export function SamplerForm({ source }: { source: string }) {
   if (status === "done") {
     return (
       <p role="status" className="text-sm text-primary">
-        Check your inbox for 3 Meals for When Nothing Sounds Good.
+        Check your inbox for 3 Meals for When Nothing Sounds Good. If it
+        doesn&apos;t arrive in a minute or two, check your spam folder.
       </p>
     );
   }
