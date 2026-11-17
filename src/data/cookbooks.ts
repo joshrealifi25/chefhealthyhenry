@@ -57,7 +57,7 @@ export const samplerFree: Cookbook = {
   description:
     "A cold breakfast, a five-minute savory plate, and one family dinner plated two ways. Chef-built for low-appetite days. Free PDF, no purchase needed.",
   price: "Free",
-  image: "/images/sampler/cold-breakfast.jpg",
+  image: "/images/sampler-yogurt-oats.jpg",
   buyUrl: "/sampler",
   badge: "Free",
 };
