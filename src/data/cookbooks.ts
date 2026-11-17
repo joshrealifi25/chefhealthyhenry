@@ -50,6 +50,18 @@ export const whenNothingSoundsGood: Cookbook = {
   badge: "Instant PDF",
 };
 
+export const samplerFree: Cookbook = {
+  slug: "wnsg-sampler",
+  title: "When Nothing Sounds Good: Free Sampler",
+  tagline: "Three meals, free",
+  description:
+    "A cold breakfast, a five-minute savory plate, and one family dinner plated two ways. Chef-built for low-appetite days. Free PDF, no purchase needed.",
+  price: "Free",
+  image: "/images/sampler/cold-breakfast.jpg",
+  buyUrl: "/sampler",
+  badge: "Free",
+};
+
 export const cookbooks: Cookbook[] = [
   whenNothingSoundsGood,
   {
@@ -123,4 +135,5 @@ export const cookbooks: Cookbook[] = [
     image: "/images/books/grocery-store-test.png",
     buyUrl: "https://buy.stripe.com/7sY5kEfwn4Ar2oW47T4Vy08",
   },
+  samplerFree,
 ];
