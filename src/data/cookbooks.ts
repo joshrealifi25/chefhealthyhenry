@@ -63,7 +63,6 @@ export const samplerFree: Cookbook = {
 };
 
 export const cookbooks: Cookbook[] = [
-  whenNothingSoundsGood,
   {
     slug: "glp-1-bariatric-success-guide",
     title: "GLP-1 & Bariatric Success Guide",
@@ -135,5 +134,4 @@ export const cookbooks: Cookbook[] = [
     image: "/images/books/grocery-store-test.png",
     buyUrl: "https://buy.stripe.com/7sY5kEfwn4Ar2oW47T4Vy08",
   },
-  samplerFree,
 ];
