@@ -7,7 +7,7 @@
  * A new slug does not need a code change. Anything outside the pattern
  * below is stored as "direct".
  */
-export const SAMPLER_PATH = "/when-nothing-sounds-good";
+export const SAMPLER_PATH = "/sampler";
 
 /** $19 guide checkout. Owned by the guide checkout pull request. */
 export const GUIDE_CHECKOUT_PATH = "/api/checkout/when-nothing-sounds-good";

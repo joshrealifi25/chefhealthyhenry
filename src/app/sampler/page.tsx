@@ -9,7 +9,7 @@ import {
 } from "@/lib/lead-source";
 
 export const metadata: Metadata = {
-  title: "When Nothing Sounds Good",
+  title: "Free Sampler: When Nothing Sounds Good",
   description:
     "Three chef-built meals for low-appetite days: a cold breakfast, a five-minute savory plate, and one family dinner served two ways. Free from Chef Healthy Henry.",
   alternates: { canonical: SAMPLER_PATH },
@@ -18,28 +18,28 @@ export const metadata: Metadata = {
 const OUTCOMES = [
   {
     title: "A cold breakfast",
-    text: "Greek yogurt, cooled oats, berries, and flax. No stove, and it comes together in a few minutes.",
+    text: "Greek yogurt, rolled oats, fresh raspberries, orange zest, and toasted pistachios. No stove, ready in a few minutes.",
   },
   {
     title: "A five-minute savory plate",
-    text: "Lentils, a little feta, roasted pepper, and yogurt. Nothing to heat when deciding feels harder than eating.",
+    text: "Lentils, a little feta, roasted red pepper, and lemon yogurt. Nothing to heat when deciding feels harder than eating.",
   },
   {
     title: "One dinner, two plates",
-    text: "Lemon chicken, white beans, and carrots from one pan. A smaller plate and a family plate, so a small appetite does not mean a second dinner.",
+    text: "Lemon chicken, white beans, and carrots from one pan. A smaller plate and a family plate from the same cook.",
   },
 ];
 
 const SAMPLE_PAGES = [
   {
     src: "/images/sampler/cold-breakfast.jpg",
-    alt: "Sampler page for the berry, oat, and Greek yogurt spoon bowl",
-    caption: "Cold breakfast: berry, oat, and Greek yogurt. No stove.",
+    alt: "Sampler page for raspberry, orange, and pistachio yogurt oats",
+    caption: "Cold breakfast: raspberry, orange, and pistachio yogurt oats. No stove.",
   },
   {
     src: "/images/sampler/savory-plate.jpg",
-    alt: "Sampler page for the lentil, feta, and yogurt plate",
-    caption: "Five-minute plate: lentils, feta, roasted pepper, and yogurt.",
+    alt: "Sampler page for the Mediterranean lentil plate with lemon yogurt",
+    caption: "Five-minute plate: lentils, roasted peppers, feta, and lemon yogurt.",
   },
   {
     src: "/images/sampler/two-plates.jpg",
@@ -51,7 +51,7 @@ const SAMPLE_PAGES = [
 const FAQS = [
   {
     q: "What arrives in the email?",
-    a: "A PDF called 3 Meals for When Nothing Sounds Good: the cold breakfast, the five-minute plate, the family dinner plated two ways, and a seven-item refrigerator list.",
+    a: "A PDF called 3 Meals for When Nothing Sounds Good: a raspberry, orange, and pistachio yogurt oat bowl, a Mediterranean lentil plate, one family dinner plated two ways, and a seven-item refrigerator list.",
   },
   {
     q: "Is there a cost?",

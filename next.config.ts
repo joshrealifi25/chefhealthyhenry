@@ -23,6 +23,13 @@ const nextConfig: NextConfig = {
         destination: "https://chefhealthyhenry.com/:path*",
         permanent: true,
       },
+      // Free sampler landing page moved. Query values on the request,
+      // including UTM tags and ad click IDs, pass through to /sampler.
+      {
+        source: "/when-nothing-sounds-good",
+        destination: "/sampler",
+        permanent: true,
+      },
       // Recipes whose Webflow slugs carried a random import suffix
       // (e.g. -ef6c3) that was cleaned up in the new site. Google still has
       // the old suffixed URLs indexed with real search traffic, so these
