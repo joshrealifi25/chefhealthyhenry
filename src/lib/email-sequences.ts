@@ -57,7 +57,7 @@ export const WNSG_FROM = "Chef Healthy Henry <henry@chefhealthyhenry.com>";
  * Landing page for "See inside" and "Get the free sampler".
  * The page agent owns the real slug. Change this if that slug differs.
  */
-export const WNSG_LANDING_PATH = "/when-nothing-sounds-good";
+export const WNSG_LANDING_PATH = "/sampler";
 
 /**
  * Quote the $10 founding price in the day 5 buyer note.
@@ -697,7 +697,7 @@ export async function unsubscribeMarketingEmails(emailInput: string): Promise<vo
 /** Used by the reading-copy script. Not part of the send API. */
 export function previewMessages(): { file: string; note: string; html: string; subject: string }[] {
   const unsubscribeUrl = "https://chefhealthyhenry.com/api/email/unsubscribe";
-  const landing = "https://chefhealthyhenry.com/when-nothing-sounds-good";
+  const landing = "https://chefhealthyhenry.com/sampler";
   const samples = renderSampleSequence({
     name: "Maya",
     samplerUrl: landing,
