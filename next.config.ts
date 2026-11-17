@@ -87,15 +87,6 @@ const nextConfig: NextConfig = {
       { source: "/recipes/delicious-tofu-saag-with-garam-masala-and-spinach-42lkj", destination: "/recipes/delicious-tofu-saag-with-garam-masala-and-spinach", statusCode: 301 },
       { source: "/recipes/fresh-pistachio-crusted-chicken-and-barley-salad-r0fqz", destination: "/recipes/fresh-pistachio-crusted-chicken-and-barley-salad", statusCode: 301 },
 
-      // Temporary. Ads already link to a guide page that does not exist yet.
-      // 307 is not cached. A real product page will replace this redirect.
-      // Query values on the request are passed through to the destination.
-      {
-        source: "/guides/when-nothing-sounds-good",
-        destination: "/cookbook#when-nothing-sounds-good",
-        permanent: false,
-      },
-
       // Old product + shop pages -> the single cookbook page
       { source: "/product/:path*", destination: "/cookbook", statusCode: 301 },
       { source: "/category/cookbooks", destination: "/cookbook", statusCode: 301 },
