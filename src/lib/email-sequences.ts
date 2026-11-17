@@ -210,10 +210,60 @@ function propValue(raw: unknown): string {
   return "";
 }
 
+function isRateLimitMessage(message: string): boolean {
+  return /too many requests|rate.?limit|429/i.test(message);
+}
+
+/**
+ * The SDK reports HTTP failures as `{ error }` and does not throw.
+ * A 429 is `statusCode: 429` or a rate-limit name or message.
+ */
+function isRateLimitResult(value: unknown): boolean {
+  if (!value || typeof value !== "object" || !("error" in value)) return false;
+  const error = (value as { error?: unknown }).error;
+  if (!error || typeof error !== "object") return false;
+  const record = error as { statusCode?: unknown; message?: unknown; name?: unknown };
+  if (record.statusCode === 429) return true;
+  if (typeof record.name === "string" && isRateLimitMessage(record.name)) return true;
+  return typeof record.message === "string" && isRateLimitMessage(record.message);
+}
+
+/**
+ * Retries a Resend API call on 429 (rate limit) with exponential back-off.
+ * Gives up after maxAttempts and re-throws the last error.
+ * Returned rate-limit results are retried the same way. After the last
+ * attempt that result is handed back so the caller's error handling runs.
+ * Any other error throws on the first attempt.
+ */
+async function withRetry<T>(
+  fn: () => Promise<T>,
+  maxAttempts = 4,
+): Promise<T> {
+  let lastErr: unknown;
+  for (let attempt = 0; attempt < maxAttempts; attempt++) {
+    try {
+      const result = await fn();
+      if (!isRateLimitResult(result) || attempt === maxAttempts - 1) {
+        return result;
+      }
+      lastErr = result;
+    } catch (err) {
+      const message = err instanceof Error ? err.message : String(err);
+      if (!isRateLimitMessage(message) || attempt === maxAttempts - 1) throw err;
+      lastErr = err;
+    }
+    // 200 ms, 400 ms, 800 ms
+    await new Promise((resolve) => setTimeout(resolve, 200 * 2 ** attempt));
+  }
+  throw lastErr;
+}
+
 async function ensureProperties(resend: Resend): Promise<void> {
   if (!propertiesReady) {
     propertiesReady = (async () => {
-      const listed = await resend.contactProperties.list({ limit: 100 });
+      const listed = await withRetry(() =>
+        resend.contactProperties.list({ limit: 100 }),
+      );
       if (listed.error) {
         throw new Error(
           `Could not list contact properties: ${listed.error.message}`,
@@ -222,10 +272,12 @@ async function ensureProperties(resend: Resend): Promise<void> {
       const have = new Set((listed.data?.data ?? []).map((item) => item.key));
       for (const key of PROPERTY_KEYS) {
         if (have.has(key)) continue;
-        const created = await resend.contactProperties.create({
-          key,
-          type: "string",
-        });
+        const created = await withRetry(() =>
+          resend.contactProperties.create({
+            key,
+            type: "string",
+          }),
+        );
         if (!created.error) continue;
         const duplicate =
           created.error.statusCode === 409 ||
@@ -248,7 +300,7 @@ async function readContact(
   resend: Resend,
   email: string,
 ): Promise<{ unsubscribed: boolean; props: PropMap }> {
-  const got = await resend.contacts.get({ email });
+  const got = await withRetry(() => resend.contacts.get({ email }));
   if (got.error || !got.data) {
     return { unsubscribed: false, props: {} };
   }
@@ -267,26 +319,32 @@ async function ensureContact(
   opts: { resubscribe: boolean; joinAudience: boolean },
 ): Promise<{ unsubscribed: boolean; props: PropMap }> {
   const audienceId = opts.joinAudience ? process.env.RESEND_AUDIENCE_ID : undefined;
-  const existing = await resend.contacts.get({ email });
+  const existing = await withRetry(() => resend.contacts.get({ email }));
   if (existing.error || !existing.data) {
-    const created = audienceId
-      ? await resend.contacts.create({ email, audienceId, unsubscribed: false })
-      : await resend.contacts.create({ email, unsubscribed: false });
+    const created = await withRetry(() =>
+      audienceId
+        ? resend.contacts.create({ email, audienceId, unsubscribed: false })
+        : resend.contacts.create({ email, unsubscribed: false }),
+    );
     if (created.error) {
-      const again = await resend.contacts.get({ email });
+      const again = await withRetry(() => resend.contacts.get({ email }));
       if (again.error || !again.data) {
         throw new Error(`Could not save contact: ${created.error.message}`);
       }
     }
   } else if (audienceId) {
-    await resend.contacts.create({ email, audienceId, unsubscribed: false });
+    await withRetry(() =>
+      resend.contacts.create({ email, audienceId, unsubscribed: false }),
+    );
   }
   if (opts.resubscribe) {
-    const updated = await resend.contacts.update({
-      email,
-      unsubscribed: false,
-      ...(audienceId ? { audienceId } : {}),
-    });
+    const updated = await withRetry(() =>
+      resend.contacts.update({
+        email,
+        unsubscribed: false,
+        ...(audienceId ? { audienceId } : {}),
+      }),
+    );
     if (updated.error) {
       throw new Error(`Could not update contact: ${updated.error.message}`);
     }
@@ -299,7 +357,7 @@ async function writeProps(
   email: string,
   properties: Record<string, string | null>,
 ): Promise<void> {
-  const updated = await resend.contacts.update({ email, properties });
+  const updated = await withRetry(() => resend.contacts.update({ email, properties }));
   if (updated.error) {
     throw new Error(`Could not store sequence state: ${updated.error.message}`);
   }
@@ -329,7 +387,7 @@ async function cancelIds(resend: Resend, ids: string[]): Promise<void> {
   await Promise.all(
     ids.map(async (id) => {
       try {
-        const result = await resend.emails.cancel(id);
+        const result = await withRetry(() => resend.emails.cancel(id));
         if (result.error) {
           console.error(
             "email-sequences: could not cancel scheduled email",
@@ -356,21 +414,23 @@ async function sendMessage(
   const scheduledAt =
     delayMs > 0 ? new Date(Date.now() + delayMs).toISOString() : undefined;
   const unsubscribeUrl = unsubscribeUrlFor(email);
-  const result = await resend.emails.send(
-    {
-      from: WNSG_FROM,
-      to: email,
-      replyTo: "henry@chefhealthyhenry.com",
-      subject: message.subject,
-      html: message.html,
-      text: message.text,
-      headers: {
-        "List-Unsubscribe": `<${unsubscribeUrl}>`,
-        "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+  const result = await withRetry(() =>
+    resend.emails.send(
+      {
+        from: WNSG_FROM,
+        to: email,
+        replyTo: "henry@chefhealthyhenry.com",
+        subject: message.subject,
+        html: message.html,
+        text: message.text,
+        headers: {
+          "List-Unsubscribe": `<${unsubscribeUrl}>`,
+          "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+        },
+        ...(scheduledAt ? { scheduledAt } : {}),
       },
-      ...(scheduledAt ? { scheduledAt } : {}),
-    },
-    { idempotencyKey: idempotencyKey(scopeId, message.step) },
+      { idempotencyKey: idempotencyKey(scopeId, message.step) },
+    ),
   );
   if (result.error || !result.data?.id) {
     throw new Error(result.error?.message ?? "Resend did not return an email id");
@@ -677,18 +737,20 @@ export async function unsubscribeMarketingEmails(emailInput: string): Promise<vo
     ...parseStored(contact.props[PROP.buyerIds]).map((item) => item.id),
   ];
   await cancelIds(resend, ids);
-  const updated = await resend.contacts.update({
-    email,
-    unsubscribed: true,
-    properties: {
-      [PROP.sampleIds]: null,
-      [PROP.sampleState]: "unsubscribed",
-      [PROP.recoveryIds]: null,
-      [PROP.recoverySession]: null,
-      [PROP.buyerIds]: null,
-      [PROP.buyerState]: "unsubscribed",
-    },
-  });
+  const updated = await withRetry(() =>
+    resend.contacts.update({
+      email,
+      unsubscribed: true,
+      properties: {
+        [PROP.sampleIds]: null,
+        [PROP.sampleState]: "unsubscribed",
+        [PROP.recoveryIds]: null,
+        [PROP.recoverySession]: null,
+        [PROP.buyerIds]: null,
+        [PROP.buyerState]: "unsubscribed",
+      },
+    }),
+  );
   if (updated.error) {
     throw new Error(`Could not unsubscribe contact: ${updated.error.message}`);
   }
