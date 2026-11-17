@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import { Resend } from "resend";
 import { whenNothingSoundsGood } from "@/data/cookbooks";
+import { GUIDE_CHECKOUT_PATH } from "@/lib/lead-source";
 import {
   createDownloadToken,
   productForPrice,
@@ -149,7 +150,7 @@ export async function POST(req: NextRequest) {
             email,
             name: session.customer_details?.name ?? null,
             sessionId: session.id,
-            checkoutUrl: `${baseUrl}${whenNothingSoundsGood.buyUrl}`,
+            checkoutUrl: `${baseUrl}${GUIDE_CHECKOUT_PATH}`,
           });
         } catch (err) {
           console.error("Guide checkout recovery failed");

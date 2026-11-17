@@ -35,8 +35,8 @@ export const flagship: Cookbook = {
 };
 
 /**
- * Instant PDF. buyUrl is a site path that opens Stripe Checkout.
- * The $19 price id and the private PDF path live in env, not here.
+ * The cookbook card opens the guide page. Checkout for this guide stays
+ * on its own route. The $19 price id and the private PDF path live in env.
  */
 export const whenNothingSoundsGood: Cookbook = {
   slug: "when-nothing-sounds-good",
@@ -46,7 +46,7 @@ export const whenNothingSoundsGood: Cookbook = {
     "A chef's plan for days when a full plate feels like too much: choose what would feel easy to eat, build a three-part small plate, and cook one dinner that works for two appetites.",
   price: "$19",
   image: "/images/books/when-nothing-sounds-good.jpg",
-  buyUrl: "/api/checkout/when-nothing-sounds-good",
+  buyUrl: "/guides/when-nothing-sounds-good",
   badge: "Instant PDF",
 };
 
