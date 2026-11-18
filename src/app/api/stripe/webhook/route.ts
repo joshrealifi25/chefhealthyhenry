@@ -93,8 +93,12 @@ export async function POST(req: NextRequest) {
           to: email,
           subject:
             links.length > 1
-              ? "Your Chef Healthy Henry downloads"
-              : "Your Chef Healthy Henry download",
+              ? "Order confirmed: your cookbooks are ready"
+              : "Order confirmed: your cookbook is ready",
+          headers: {
+            "X-Priority": "1",
+            "Importance": "high",
+          },
           html: deliveryEmailHtml(links),
         });
         if (error) {
