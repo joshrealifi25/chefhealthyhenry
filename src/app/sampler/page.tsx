@@ -99,10 +99,10 @@ export default async function WhenNothingSoundsGoodPage({
         </div>
         <div className="mx-auto w-full max-w-sm">
           <Image
-            src="/images/sampler/cover.jpg"
+            src="/images/sampler-cover.jpg"
             alt="Cover of 3 Meals for When Nothing Sounds Good, the free sampler from Chef Healthy Henry"
-            width={980}
-            height={1268}
+            width={1448}
+            height={1086}
             priority
             className="h-auto w-full rounded-2xl shadow-xl ring-1 ring-border/60"
           />
