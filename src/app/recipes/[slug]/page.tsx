@@ -20,6 +20,8 @@ import { CookModeButton } from "@/components/cook-mode-button";
 import { IngredientsList } from "@/components/ingredients-list";
 import { CookbookCrossSell } from "@/components/cookbook-cross-sell";
 import { YouTubeEmbed } from "@/components/youtube-embed";
+import { InlineLinks } from "@/components/inline-links";
+import { stripInlineLinks } from "@/lib/inline-links";
 import { cn } from "@/lib/utils";
 
 export function generateStaticParams() {
@@ -36,7 +38,9 @@ export async function generateMetadata({
   if (!recipe) return {};
   return {
     title: recipe.seoTitle || recipe.title,
-    description: recipe.seoDescription || recipe.description || recipe.title,
+    description: stripInlineLinks(
+      recipe.seoDescription || recipe.description || recipe.title,
+    ),
     alternates: { canonical: `/recipes/${recipe.slug}` },
   };
 }
@@ -99,7 +103,7 @@ export default async function RecipePage({
     "@context": "https://schema.org",
     "@type": "Recipe",
     name: recipe.title,
-    description: recipe.description || recipe.title,
+    description: stripInlineLinks(recipe.description || recipe.title),
     image: recipe.image ? [`${SITE_URL}${recipe.image}`] : undefined,
     // A named chef with a real profile is an authorship signal search
     // engines and assistants both weigh.
@@ -134,19 +138,19 @@ export default async function RecipePage({
     totalTime: totalMin ? `PT${totalMin}M` : undefined,
     ...(recipe.datePublished && { datePublished: recipe.datePublished }),
     ...(nutrition && { nutrition }),
-    recipeIngredient: recipe.ingredients,
+    recipeIngredient: recipe.ingredients.map(stripInlineLinks),
     recipeInstructions: recipe.directions.map((step, i) => ({
       "@type": "HowToStep",
       position: i + 1,
       url: `${SITE_URL}/recipes/${recipe.slug}#step-${i + 1}`,
-      ...(step.title && { name: step.title }),
-      text: step.text,
+      ...(step.title && { name: stripInlineLinks(step.title) }),
+      text: stripInlineLinks(step.text),
     })),
     ...(recipe.youtubeId && {
       video: {
         "@type": "VideoObject",
         name: `Video: ${recipe.title}`,
-        description: recipe.description || recipe.title,
+        description: stripInlineLinks(recipe.description || recipe.title),
         thumbnailUrl: `https://i.ytimg.com/vi/${recipe.youtubeId}/hqdefault.jpg`,
         contentUrl: `https://www.youtube.com/watch?v=${recipe.youtubeId}`,
         embedUrl: `https://www.youtube-nocookie.com/embed/${recipe.youtubeId}`,
@@ -182,7 +186,7 @@ export default async function RecipePage({
         </h1>
         {recipe.description && (
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            {recipe.description}
+            <InlineLinks text={recipe.description} />
           </p>
         )}
         <div className="mt-6 flex flex-wrap gap-6 text-sm text-muted-foreground">
@@ -252,7 +256,7 @@ export default async function RecipePage({
                     <p className="font-medium text-primary">{step.title}</p>
                   )}
                   <p className="leading-relaxed text-foreground/90">
-                    {step.text}
+                    <InlineLinks text={step.text} />
                   </p>
                 </div>
               </li>
@@ -267,13 +271,13 @@ export default async function RecipePage({
                   className="rounded-2xl bg-secondary/60 p-6"
                 >
                   <h3 className="font-heading text-lg font-semibold text-primary">
-                    {extra.title.replace(/:$/, "")}
+                    <InlineLinks text={extra.title.replace(/:$/, "")} />
                   </h3>
                   <ul className="mt-3 space-y-2 text-[15px] leading-relaxed text-foreground/90">
                     {extra.items.map((item, i) => (
                       <li key={i} className="flex gap-2.5">
                         <span className="mt-2 size-1.5 shrink-0 rounded-full bg-primary/50" />
-                        <ExtraItemText text={item} />
+                        <InlineLinks text={item} />
                       </li>
                     ))}
                   </ul>
@@ -345,20 +349,3 @@ export default async function RecipePage({
   );
 }
 
-/** Renders extras copy and turns [label](/path) into a site link. */
-function ExtraItemText({ text }: { text: string }) {
-  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
-  return (
-    <span>
-      {parts.map((part, i) => {
-        const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
-        if (!match) return <span key={i}>{part}</span>;
-        return (
-          <Link key={i} href={match[2]} className="text-primary hover:underline">
-            {match[1]}
-          </Link>
-        );
-      })}
-    </span>
-  );
-}
