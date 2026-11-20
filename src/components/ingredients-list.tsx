@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { shopUrlForLine } from "@/lib/shop";
-import { hasInternalLink } from "@/lib/inline-links";
+import { hasInlineLink } from "@/lib/inline-links";
 import { AffiliateNote, ShopLink } from "@/components/shop-link";
 import { InlineLinks } from "@/components/inline-links";
 
@@ -59,7 +59,7 @@ const isHeading = (ing: string) => ing.length < 25 && !/\d/.test(ing);
 export function IngredientsList({ ingredients }: { ingredients: string[] }) {
   const [factor, setFactor] = useState(1);
   const hasShop = ingredients.some(
-    (ing) => !isHeading(ing) && !hasInternalLink(ing) && shopUrlForLine(ing)
+    (ing) => !isHeading(ing) && !hasInlineLink(ing) && shopUrlForLine(ing)
   );
 
   return (
@@ -90,7 +90,7 @@ export function IngredientsList({ ingredients }: { ingredients: string[] }) {
               </li>
             );
           }
-          const shopHref = hasInternalLink(ing) ? null : shopUrlForLine(ing);
+          const shopHref = hasInlineLink(ing) ? null : shopUrlForLine(ing);
           return (
             <li key={i} className="flex gap-2.5">
               <span className="mt-2 size-1.5 shrink-0 rounded-full bg-primary/50" />

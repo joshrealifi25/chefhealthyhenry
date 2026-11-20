@@ -3,7 +3,9 @@ export function stripInlineLinks(text: string): string {
   return text.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
 }
 
-/** True when the line already links to a page on this site. */
-export function hasInternalLink(text: string): boolean {
-  return /\[[^\]]+\]\(\/[^)]+\)/.test(text);
+/** True when the line already contains a markdown link.
+ * The ingredient list then skips the separate Shop control, which would
+ * otherwise open the Just Better discount page. */
+export function hasInlineLink(text: string): boolean {
+  return /\[[^\]]+\]\([^)]+\)/.test(text);
 }
