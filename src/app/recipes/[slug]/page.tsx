@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Clock, Users } from "lucide-react";
+import { ArrowLeft, ArrowRight, Clock, Users } from "lucide-react";
 import {
   recipes,
   getRecipe,
@@ -287,6 +287,19 @@ export default async function RecipePage({
           )}
         </section>
       </div>
+
+      {recipe.slug ===
+        "savory-white-bean-cottage-cheese-cup-roasted-red-pepper" && (
+        <p className="mt-10 print:hidden">
+          <Link
+            href="/when-nothing-sounds-good"
+            className="inline-flex items-center gap-1.5 font-medium text-primary hover:underline"
+          >
+            Get the free 3-meal sampler
+            <ArrowRight className="size-4" aria-hidden="true" />
+          </Link>
+        </p>
+      )}
 
       {recipe.nutrition && (
         <div className="mt-10">
