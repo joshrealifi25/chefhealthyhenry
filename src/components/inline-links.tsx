@@ -8,8 +8,9 @@ const TOKEN = /(\[[^\]]+\]\([^)]+\))/g;
 export function InlineLinks({ text }: { text: string }) {
   const parts = text.split(TOKEN);
   return (
-    <>
+    <span>
       {parts.map((part, i) => {
+        if (!part) return null;
         const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
         if (!match) return <span key={i}>{part}</span>;
         return (
@@ -18,6 +19,6 @@ export function InlineLinks({ text }: { text: string }) {
           </Link>
         );
       })}
-    </>
+    </span>
   );
 }
